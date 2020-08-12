@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "ch2o-percentage-peat",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "CH2O-percentage-PEAT",
+    "label": "CH2O-percentage-PEAT",
+    "namespace": "wcrp:input4mips:variable-id:ch2o-percentage-peat",
+    "raw_name": "CH2O-percentage-PEAT",
+    "status": "pending"
+}

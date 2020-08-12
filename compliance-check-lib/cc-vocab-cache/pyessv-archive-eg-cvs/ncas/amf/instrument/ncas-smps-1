@@ -1,0 +1,15 @@
+{
+    "_type": "term", 
+    "canonical_name": "ncas-smps-1", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "description": "NCAS Scanning Mobility Particle Spectrometer unit 1", 
+        "instrument_id": "ncas-smps-1", 
+        "previous_instrument_ids": [
+            "man-smps-1"
+        ]
+    }, 
+    "namespace": "ncas:amf:instrument:ncas-smps-1", 
+    "status": "pending", 
+    "uid": "21748d48-2ce5-41e8-ac5c-572ba11bb601"
+}

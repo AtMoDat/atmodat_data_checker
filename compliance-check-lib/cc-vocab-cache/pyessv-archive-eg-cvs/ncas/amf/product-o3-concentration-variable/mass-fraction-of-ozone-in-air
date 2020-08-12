@@ -1,0 +1,25 @@
+{
+    "_type": "term", 
+    "canonical_name": "mass-fraction-of-ozone-in-air", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: ????", 
+        "chemical_species": "O3", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "long_name": "Mass Fraction of Ozone in air", 
+        "name": "mass_fraction_of_ozone_in_air", 
+        "practical_units": "?", 
+        "standard_name": "mass_fraction_of_ozone_in_air", 
+        "type": "float32", 
+        "units": "?", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "mass_fraction_of_ozone_in_air", 
+    "namespace": "ncas:amf:product-o3-concentration-variable:mass-fraction-of-ozone-in-air", 
+    "raw_name": "mass_fraction_of_ozone_in_air", 
+    "status": "pending", 
+    "uid": "8249a43d-0269-4106-8111-890aceded0a5"
+}

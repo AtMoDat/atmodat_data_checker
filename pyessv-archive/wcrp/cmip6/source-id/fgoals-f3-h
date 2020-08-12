@@ -1,0 +1,59 @@
+{
+    "_type": "term",
+    "canonical_name": "fgoals-f3-h",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_participation": [
+            "CMIP",
+            "HighResMIP",
+            "OMIP"
+        ],
+        "cohort": [
+            "Registered"
+        ],
+        "institution_id": [
+            "CAS"
+        ],
+        "label_extended": "FGOALS-f3-H",
+        "model_component": {
+            "aerosol": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "atmos": {
+                "description": "FAMIL2.2 (Cubed-sphere, c384; 1440 x 720 longitude/latitude; 32 levels; top level 2.16 hPa)",
+                "native_nominal_resolution": "25 km"
+            },
+            "atmosChem": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "land": {
+                "description": "CLM4.0",
+                "native_nominal_resolution": "25 km"
+            },
+            "landIce": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "ocean": {
+                "description": "LICOM3.0 (LICOM3.0, tripolar primarily 0.1deg; 3600 x 2302 longitude/latitude; 55 levels; top grid cell 0-5 m)",
+                "native_nominal_resolution": "10 km"
+            },
+            "ocnBgchem": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "seaIce": {
+                "description": "CICE4.0",
+                "native_nominal_resolution": "10 km"
+            }
+        },
+        "release_year": "2017",
+        "source_id": "FGOALS-f3-H"
+    },
+    "label": "FGOALS-f3-H",
+    "namespace": "wcrp:cmip6:source-id:fgoals-f3-h",
+    "raw_name": "FGOALS-f3-H",
+    "status": "pending"
+}

@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "cnrm-cerfacs",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "CNRM-Cerfacs",
+    "label": "CNRM-Cerfacs",
+    "namespace": "wcrp:input4mips:institution-id:cnrm-cerfacs",
+    "raw_name": "CNRM-Cerfacs",
+    "status": "pending"
+}

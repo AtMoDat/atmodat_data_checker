@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "uci-pi-prarctic-prantarctic-1-0",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "UCI-pi-prArctic-prAntarctic-1-0",
+    "label": "UCI-pi-prArctic-prAntarctic-1-0",
+    "namespace": "wcrp:input4mips:source-id:uci-pi-prarctic-prantarctic-1-0",
+    "raw_name": "UCI-pi-prArctic-prAntarctic-1-0",
+    "status": "pending"
+}

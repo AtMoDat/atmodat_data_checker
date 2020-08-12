@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "zo2min",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "zo2min",
+    "namespace": "ecmwf:c3s-cmip5:variable:zo2min",
+    "status": "pending"
+}

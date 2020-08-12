@@ -1,0 +1,14 @@
+{
+    "_type": "term", 
+    "canonical_name": "radiation-frequency", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "length": "<m>", 
+        "units": "s-1"
+    }, 
+    "label": "radiation_frequency", 
+    "namespace": "ncas:amf:product-brightness-temperature-dimension:radiation-frequency", 
+    "raw_name": "radiation_frequency", 
+    "status": "pending", 
+    "uid": "c1802e88-d486-4c50-8bff-999e05b403d0"
+}

@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "image",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "IMAGE",
+    "label": "IMAGE",
+    "namespace": "wcrp:isimip-ft:impact-model:image",
+    "raw_name": "IMAGE",
+    "status": "pending"
+}

@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "vegtype",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "vegtype",
+    "namespace": "ecmwf:cc4e:thredds-exclude-variables:vegtype",
+    "status": "pending"
+}

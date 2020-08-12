@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "dcppa-hindcast-niff",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Decadal hindcasts begun each year from 1960 to present, or every other year at minimum, but with no information from the future",
+    "label": "dcppA-hindcast-niff",
+    "namespace": "wcrp:primavera:experiment:dcppa-hindcast-niff",
+    "raw_name": "dcppA-hindcast-niff",
+    "status": "pending"
+}

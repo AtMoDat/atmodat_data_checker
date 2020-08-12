@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "primmonz",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "PrimmonZ",
+    "label": "PrimmonZ",
+    "namespace": "wcrp:primavera:cmor-table:primmonz",
+    "raw_name": "PrimmonZ",
+    "status": "pending"
+}

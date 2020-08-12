@@ -1,0 +1,33 @@
+{
+    "_type": "term",
+    "canonical_name": "rain5dayaccummax",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "data": {
+        "description": "Max. 5-day accumulative rainfall",
+        "label_units": "mm",
+        "long_name": "Rainfall accumulation",
+        "plot_label": "Max. 5-day accumulative rainfall (mm)",
+        "strand": [
+            "land strand 1",
+            "land strand 2",
+            "land strand 3 12km",
+            "land strand 3 2km",
+            "marine",
+            "observations"
+        ],
+        "time_averaging": [
+            "total"
+        ],
+        "time_step": [
+            "annual"
+        ],
+        "um_stash": "05216",
+        "units": "mm"
+    },
+    "description": "Max. 5-day accumulative rainfall",
+    "label": "rain5DayAccumMax",
+    "namespace": "ukcp:ukcp18:variable:rain5dayaccummax",
+    "raw_name": "rain5DayAccumMax",
+    "status": "pending",
+    "uid": "5397591f-209b-4054-b355-d625700e7d6c"
+}

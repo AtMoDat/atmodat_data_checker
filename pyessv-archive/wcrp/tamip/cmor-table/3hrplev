@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "3hrplev",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "3hrPlev",
+    "label": "3hrPlev",
+    "namespace": "wcrp:tamip:cmor-table:3hrplev",
+    "raw_name": "3hrPlev",
+    "status": "pending"
+}

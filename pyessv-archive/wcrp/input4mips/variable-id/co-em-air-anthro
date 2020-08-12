@@ -1,0 +1,13 @@
+{
+    "_type": "term",
+    "alternative_names": [
+        "CO_em_AIR_anthro"
+    ],
+    "canonical_name": "co-em-air-anthro",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "CO-em-AIR-anthro",
+    "label": "CO-em-AIR-anthro",
+    "namespace": "wcrp:input4mips:variable-id:co-em-air-anthro",
+    "raw_name": "CO-em-AIR-anthro",
+    "status": "pending"
+}

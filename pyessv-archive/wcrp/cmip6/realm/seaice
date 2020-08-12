@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "seaice",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "description": "Sea Ice",
+    "label": "seaIce",
+    "namespace": "wcrp:cmip6:realm:seaice",
+    "raw_name": "seaIce",
+    "status": "pending"
+}

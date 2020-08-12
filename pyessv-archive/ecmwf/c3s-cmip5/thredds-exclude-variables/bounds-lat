@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "bounds-lat",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "bounds_lat",
+    "label": "bounds_lat",
+    "namespace": "ecmwf:c3s-cmip5:thredds-exclude-variables:bounds-lat",
+    "raw_name": "bounds_lat",
+    "status": "pending"
+}

@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "ens-multimodel-a1b-median",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "ens-multiModel-a1b-median",
+    "label": "ens-multiModel-a1b-median",
+    "namespace": "ecmwf:cc4e:source-data-id:ens-multimodel-a1b-median",
+    "raw_name": "ens-multiModel-a1b-median",
+    "status": "pending"
+}

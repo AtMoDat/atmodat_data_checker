@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "a4sstice",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "As piSST, but with monthly-varying SSTs and sea-ice taken from years 111-140 of each model own abrupt4xCO2 experiment instead of from piControl",
+    "label": "a4SSTice",
+    "namespace": "wcrp:primavera:experiment:a4sstice",
+    "raw_name": "a4SSTice",
+    "status": "pending"
+}

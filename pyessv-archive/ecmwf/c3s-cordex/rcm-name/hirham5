@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "hirham5",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "label": "HIRHAM5",
+    "namespace": "ecmwf:c3s-cordex:rcm-name:hirham5",
+    "raw_name": "HIRHAM5",
+    "status": "pending"
+}

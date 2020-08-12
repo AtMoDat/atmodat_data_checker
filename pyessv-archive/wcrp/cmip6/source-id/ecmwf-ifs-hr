@@ -1,0 +1,57 @@
+{
+    "_type": "term",
+    "canonical_name": "ecmwf-ifs-hr",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_participation": [
+            "HighResMIP"
+        ],
+        "cohort": [
+            "Registered"
+        ],
+        "institution_id": [
+            "ECMWF"
+        ],
+        "label_extended": "ECMWF-IFS-HR (25 km atmosphere and 25 km ocean)",
+        "model_component": {
+            "aerosol": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "atmos": {
+                "description": "IFS (IFS CY43R1, Tco399, cubic octahedral reduced Gaussian grid equivalent to 1600 x 800 longitude/latitude; 91 levels; top level 0.01 hPa)",
+                "native_nominal_resolution": "25 km"
+            },
+            "atmosChem": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "land": {
+                "description": "HTESSEL (as implemented in IFS CY43R1)",
+                "native_nominal_resolution": "25 km"
+            },
+            "landIce": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "ocean": {
+                "description": "NEMO3.4 (NEMO v3.4; ORCA025 tripolar grid; 1442 x 1021 longitude/latitude; 75 levels; top grid cell 0-1 m)",
+                "native_nominal_resolution": "25 km"
+            },
+            "ocnBgchem": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "seaIce": {
+                "description": "LIM2 (LIM v2; ORCA025 tripolar grid; 1442 x 1021 longitude/latitude)",
+                "native_nominal_resolution": "25 km"
+            }
+        },
+        "release_year": "2017",
+        "source_id": "ECMWF-IFS-HR"
+    },
+    "label": "ECMWF-IFS-HR",
+    "namespace": "wcrp:cmip6:source-id:ecmwf-ifs-hr",
+    "raw_name": "ECMWF-IFS-HR",
+    "status": "pending"
+}

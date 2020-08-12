@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "fio",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "label": "FIO",
+    "namespace": "ecmwf:c3s-cmip5:institute:fio",
+    "raw_name": "FIO",
+    "status": "pending"
+}

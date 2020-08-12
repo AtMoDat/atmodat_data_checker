@@ -1,0 +1,22 @@
+{
+    "_type": "term", 
+    "canonical_name": "modified-atmosphere-stability-k-index", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "long_name": "Modified Atmosphere Stability K Index (KOI)", 
+        "name": "modified_atmosphere_stability_k_index", 
+        "type": "float32", 
+        "units": "K", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "modified_atmosphere_stability_k_index", 
+    "namespace": "ncas:amf:product-stability-indices-variable:modified-atmosphere-stability-k-index", 
+    "raw_name": "modified_atmosphere_stability_k_index", 
+    "status": "pending", 
+    "uid": "7a4b5351-c6de-4231-a383-4dc2c4587a39"
+}

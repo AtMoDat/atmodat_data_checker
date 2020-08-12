@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "voc20-chlorinate-em-speciated-voc",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "VOC20-chlorinate-em-speciated-VOC",
+    "label": "VOC20-chlorinate-em-speciated-VOC",
+    "namespace": "wcrp:input4mips:variable-id:voc20-chlorinate-em-speciated-voc",
+    "raw_name": "VOC20-chlorinate-em-speciated-VOC",
+    "status": "pending"
+}

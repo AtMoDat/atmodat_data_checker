@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "lat-vertices",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "lat_vertices",
+    "label": "lat_vertices",
+    "namespace": "ecmwf:c3s-cordex:thredds-exclude-variables:lat-vertices",
+    "raw_name": "lat_vertices",
+    "status": "pending"
+}

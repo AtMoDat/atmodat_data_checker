@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "land",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "land",
+    "namespace": "ecmwf:c3s-cmip5:realm:land",
+    "status": "pending"
+}

@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "ecmwf-system4",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "ecmwf-system4",
+    "namespace": "ecmwf:cc4e:source-data-id:ecmwf-system4",
+    "status": "pending"
+}

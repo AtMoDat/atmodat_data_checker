@@ -1,0 +1,25 @@
+{
+    "_type": "term", 
+    "canonical_name": "mole-fraction-of-nitrous-oxide-in-air", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: ????", 
+        "chemical_species": "N2O", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "long_name": "Mole Fraction of Nitrous Oxide in air", 
+        "name": "mole_fraction_of_nitrous_oxide_in_air", 
+        "practical_units": "?", 
+        "standard_name": "mole_fraction_of_nitrous_oxide_in_air", 
+        "type": "float32", 
+        "units": "?", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "mole_fraction_of_nitrous_oxide_in_air", 
+    "namespace": "ncas:amf:product-n2o-sf6-concentration-variable:mole-fraction-of-nitrous-oxide-in-air", 
+    "raw_name": "mole_fraction_of_nitrous_oxide_in_air", 
+    "status": "pending", 
+    "uid": "de560615-3520-458c-a0ea-479a95cd5ec0"
+}

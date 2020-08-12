@@ -1,0 +1,34 @@
+{
+    "_type": "term",
+    "canonical_name": "land-ssp585",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_id": [
+            "LS3MIP"
+        ],
+        "additional_allowed_model_components": [
+            "BGC"
+        ],
+        "end_year": "2100",
+        "experiment": "future ssp5-8.5 land only",
+        "experiment_id": "land-ssp585",
+        "min_number_yrs_per_sim": "86",
+        "parent_activity_id": [
+            "no parent"
+        ],
+        "parent_experiment_id": [
+            "no parent"
+        ],
+        "required_model_components": [
+            "LAND"
+        ],
+        "start_year": "2015",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "1"
+    },
+    "description": "land only simulation for ssp5-8.5",
+    "namespace": "wcrp:cmip6:experiment-id:land-ssp585",
+    "status": "pending"
+}

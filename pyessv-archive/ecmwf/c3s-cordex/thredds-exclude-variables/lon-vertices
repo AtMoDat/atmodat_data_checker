@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "lon-vertices",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "lon_vertices",
+    "label": "lon_vertices",
+    "namespace": "ecmwf:c3s-cordex:thredds-exclude-variables:lon-vertices",
+    "raw_name": "lon_vertices",
+    "status": "pending"
+}

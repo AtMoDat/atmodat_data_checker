@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "ichec-ec-earth-rcp85-r1i1p1-knmi-racmo22e",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "ICHEC-EC-EARTH-rcp85-r1i1p1-KNMI-RACMO22E",
+    "label": "ICHEC-EC-EARTH-rcp85-r1i1p1-KNMI-RACMO22E",
+    "namespace": "ecmwf:cc4e:source-data-id:ichec-ec-earth-rcp85-r1i1p1-knmi-racmo22e",
+    "raw_name": "ICHEC-EC-EARTH-rcp85-r1i1p1-KNMI-RACMO22E",
+    "status": "pending"
+}

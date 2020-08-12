@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "co-percentage-peat",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "CO-percentage-PEAT",
+    "label": "CO-percentage-PEAT",
+    "namespace": "wcrp:input4mips:variable-id:co-percentage-peat",
+    "raw_name": "CO-percentage-PEAT",
+    "status": "pending"
+}

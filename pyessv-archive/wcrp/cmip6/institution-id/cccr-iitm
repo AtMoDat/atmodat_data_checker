@@ -1,0 +1,16 @@
+{
+    "_type": "term",
+    "canonical_name": "cccr-iitm",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "consortia": [],
+        "coordinates": "73.804219,18.537919",
+        "homepage": "http://cccr.tropmet.res.in",
+        "name": "Centre for Climate Change Research - Indian Institute of Tropical Meteorology",
+        "postalAddress": "Pune, Maharashtra 411 008, India"
+    },
+    "label": "CCCR-IITM",
+    "namespace": "wcrp:cmip6:institution-id:cccr-iitm",
+    "raw_name": "CCCR-IITM",
+    "status": "pending"
+}

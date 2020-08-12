@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "piclim-spaer-anthro",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Prescribed anthropogenic aerosol optical properties. Anthropogenic forcings",
+    "label": "piClim-spAer-anthro",
+    "namespace": "wcrp:primavera:experiment:piclim-spaer-anthro",
+    "raw_name": "piClim-spAer-anthro",
+    "status": "pending"
+}

@@ -1,0 +1,38 @@
+{
+    "_type": "term",
+    "canonical_name": "hist-nolu",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_id": [
+            "LUMIP"
+        ],
+        "additional_allowed_model_components": [
+            "AER",
+            "CHEM",
+            "BGC"
+        ],
+        "end_year": "2014",
+        "experiment": "historical with no land-use change",
+        "experiment_id": "hist-noLu",
+        "min_number_yrs_per_sim": "165",
+        "parent_activity_id": [
+            "CMIP"
+        ],
+        "parent_experiment_id": [
+            "piControl"
+        ],
+        "required_model_components": [
+            "AOGCM"
+        ],
+        "start_year": "1850",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "1"
+    },
+    "description": "Same as CMIP6 historical but with land cover held at 1850, no human activity; concentration driven",
+    "label": "hist-noLu",
+    "namespace": "wcrp:cmip6:experiment-id:hist-nolu",
+    "raw_name": "hist-noLu",
+    "status": "pending"
+}

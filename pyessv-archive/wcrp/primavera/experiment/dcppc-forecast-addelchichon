@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "dcppc-forecast-addelchichon",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Effects of volcanoes on decadal prediction and predictability of forced and internal variability components",
+    "label": "dcppC-forecast-addElChichon",
+    "namespace": "wcrp:primavera:experiment:dcppc-forecast-addelchichon",
+    "raw_name": "dcppC-forecast-addElChichon",
+    "status": "pending"
+}

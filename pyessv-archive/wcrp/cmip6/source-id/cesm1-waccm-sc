@@ -1,0 +1,57 @@
+{
+    "_type": "term",
+    "canonical_name": "cesm1-waccm-sc",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_participation": [
+            "PAMIP"
+        ],
+        "cohort": [
+            "Registered"
+        ],
+        "institution_id": [
+            "UCI"
+        ],
+        "label_extended": "Community Earth System Model 1, with the Whole Atmosphere Community Climate Model and Specified Chemistry",
+        "model_component": {
+            "aerosol": {
+                "description": "MOZART-specified (same grid as atmos)",
+                "native_nominal_resolution": "250 km"
+            },
+            "atmos": {
+                "description": "WACCM4 (1.9x2.5 finite volume grid; 144 x 96 longitude/latitude; 66 levels; top level 5.9e-06 mb)",
+                "native_nominal_resolution": "250 km"
+            },
+            "atmosChem": {
+                "description": "MOZART-specified (same grid as atmos)",
+                "native_nominal_resolution": "250 km"
+            },
+            "land": {
+                "description": "CLM4.0",
+                "native_nominal_resolution": "250 km"
+            },
+            "landIce": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "ocean": {
+                "description": "POP2 (320 x 384 longitude/latitude; 60 levels; top grid cell 0-10 m)",
+                "native_nominal_resolution": "100 km"
+            },
+            "ocnBgchem": {
+                "description": "BEC (same grid as ocean)",
+                "native_nominal_resolution": "100 km"
+            },
+            "seaIce": {
+                "description": "CICE4 (same as grid as ocean)",
+                "native_nominal_resolution": "100 km"
+            }
+        },
+        "release_year": "2011",
+        "source_id": "CESM1-WACCM-SC"
+    },
+    "label": "CESM1-WACCM-SC",
+    "namespace": "wcrp:cmip6:source-id:cesm1-waccm-sc",
+    "raw_name": "CESM1-WACCM-SC",
+    "status": "pending"
+}

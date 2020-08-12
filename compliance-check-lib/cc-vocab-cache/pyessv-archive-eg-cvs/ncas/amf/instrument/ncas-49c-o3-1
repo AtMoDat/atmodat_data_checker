@@ -1,0 +1,15 @@
+{
+    "_type": "term", 
+    "canonical_name": "ncas-49c-o3-1", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "description": "NCAS Thermo 42c O3 Monitor unit 1", 
+        "instrument_id": "ncas-49c-o3-1", 
+        "previous_instrument_ids": [
+            "leeds-o3"
+        ]
+    }, 
+    "namespace": "ncas:amf:instrument:ncas-49c-o3-1", 
+    "status": "pending", 
+    "uid": "e8054c08-d062-4858-b533-e90c2a8980d7"
+}

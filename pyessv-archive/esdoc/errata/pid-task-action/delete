@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "delete",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "label": "Delete",
+    "namespace": "esdoc:errata:pid-task-action:delete",
+    "status": "pending"
+}

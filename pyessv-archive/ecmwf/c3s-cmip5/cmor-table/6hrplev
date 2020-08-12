@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "6hrplev",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "6hrPlev",
+    "label": "6hrPlev",
+    "namespace": "ecmwf:c3s-cmip5:cmor-table:6hrplev",
+    "raw_name": "6hrPlev",
+    "status": "pending"
+}

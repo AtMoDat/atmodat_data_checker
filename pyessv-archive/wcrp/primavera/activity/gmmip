@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "gmmip",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "GMMIP",
+    "label": "GMMIP",
+    "namespace": "wcrp:primavera:activity:gmmip",
+    "raw_name": "GMMIP",
+    "status": "pending"
+}

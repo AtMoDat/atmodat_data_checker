@@ -1,0 +1,40 @@
+{
+    "_type": "term",
+    "canonical_name": "dcppc-ipv-neg",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "data": {
+        "activity_id": [
+            "DCPP"
+        ],
+        "additional_allowed_model_components": [
+            "AER",
+            "CHEM",
+            "BGC"
+        ],
+        "description": "C1.6 Mechanisms and predictability of the hiatus and of similar long timescale variations of both signs",
+        "end_year": "",
+        "experiment": "idealized negative IPV anomaly pattern",
+        "experiment_id": "dcppC-ipv-neg",
+        "min_number_yrs_per_sim": "10",
+        "parent_activity_id": [
+            "CMIP"
+        ],
+        "parent_experiment_id": [
+            "piControl"
+        ],
+        "required_model_components": [
+            "AOGCM"
+        ],
+        "start_year": "",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "1"
+    },
+    "description": "C1.6 Mechanisms and predictability of the hiatus and of similar long timescale variations of both signs",
+    "label": "dcppC-ipv-neg",
+    "namespace": "ukcp:ukcp18:experiment-id:dcppc-ipv-neg",
+    "raw_name": "dcppC-ipv-neg",
+    "status": "pending",
+    "uid": "1d1376dc-498c-439b-a9f9-0ca1df53da0d"
+}

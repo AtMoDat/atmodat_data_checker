@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "so2-percentage-defo",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "SO2-percentage-DEFO",
+    "label": "SO2-percentage-DEFO",
+    "namespace": "wcrp:input4mips:variable-id:so2-percentage-defo",
+    "raw_name": "SO2-percentage-DEFO",
+    "status": "pending"
+}

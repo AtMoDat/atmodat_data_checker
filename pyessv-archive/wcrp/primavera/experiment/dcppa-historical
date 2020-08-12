@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "dcppa-historical",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Historical and future uninitialized simulations to assess the impact of initialization",
+    "label": "dcppA-historical",
+    "namespace": "wcrp:primavera:experiment:dcppa-historical",
+    "raw_name": "dcppA-historical",
+    "status": "pending"
+}

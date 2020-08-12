@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "ustar",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "ustar",
+    "namespace": "ecmwf:c3s-cordex:variable:ustar",
+    "status": "pending"
+}

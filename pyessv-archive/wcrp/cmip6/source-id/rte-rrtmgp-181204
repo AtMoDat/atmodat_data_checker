@@ -1,0 +1,57 @@
+{
+    "_type": "term",
+    "canonical_name": "rte-rrtmgp-181204",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_participation": [
+            "RFMIP"
+        ],
+        "cohort": [
+            "Registered"
+        ],
+        "institution_id": [
+            "RTE-RRTMGP-Consortium"
+        ],
+        "label_extended": "Radiative Transfer for Energetics using RRTM for GCM applications - Parallel (2018-12-04 full-resolution)",
+        "model_component": {
+            "aerosol": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "atmos": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "atmosChem": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "land": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "landIce": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "ocean": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "ocnBgchem": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "seaIce": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            }
+        },
+        "release_year": "2019",
+        "source_id": "RTE-RRTMGP-181204"
+    },
+    "label": "RTE+RRTMGP (2018-12-04 full-resolution)",
+    "namespace": "wcrp:cmip6:source-id:rte-rrtmgp-181204",
+    "raw_name": "RTE-RRTMGP-181204",
+    "status": "pending"
+}

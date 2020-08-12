@@ -1,0 +1,23 @@
+{
+    "_type": "term", 
+    "canonical_name": "brightness-temperature", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time, radiation_frequency", 
+        "long_name": "Brightness Temperature", 
+        "name": "brightness_temperature", 
+        "standard_name": "brightness_temperature", 
+        "type": "float32", 
+        "units": "K", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "brightness_temperature", 
+    "namespace": "ncas:amf:product-brightness-temperature-variable:brightness-temperature", 
+    "raw_name": "brightness_temperature", 
+    "status": "pending", 
+    "uid": "9d493493-700d-46b0-ab8e-e7586c162483"
+}

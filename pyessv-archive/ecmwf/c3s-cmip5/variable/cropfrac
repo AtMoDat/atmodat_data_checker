@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "cropfrac",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "cropFrac",
+    "label": "cropFrac",
+    "namespace": "ecmwf:c3s-cmip5:variable:cropfrac",
+    "raw_name": "cropFrac",
+    "status": "pending"
+}

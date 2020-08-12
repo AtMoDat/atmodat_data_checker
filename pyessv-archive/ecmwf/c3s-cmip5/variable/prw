@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "prw",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "prw",
+    "namespace": "ecmwf:c3s-cmip5:variable:prw",
+    "status": "pending"
+}

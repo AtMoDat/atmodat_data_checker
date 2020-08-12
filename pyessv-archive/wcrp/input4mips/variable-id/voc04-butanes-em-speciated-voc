@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "voc04-butanes-em-speciated-voc",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "VOC04-butanes-em-speciated-VOC",
+    "label": "VOC04-butanes-em-speciated-VOC",
+    "namespace": "wcrp:input4mips:variable-id:voc04-butanes-em-speciated-voc",
+    "raw_name": "VOC04-butanes-em-speciated-VOC",
+    "status": "pending"
+}

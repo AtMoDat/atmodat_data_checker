@@ -1,0 +1,22 @@
+{
+    "_type": "term", 
+    "canonical_name": "laser-pulse-energy", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "long_name": "Laser Pulse Energy (% of maximum)", 
+        "name": "laser_pulse_energy", 
+        "type": "float32", 
+        "units": "%", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "laser_pulse_energy", 
+    "namespace": "ncas:amf:product-aerosol-backscatter-variable:laser-pulse-energy", 
+    "raw_name": "laser_pulse_energy", 
+    "status": "pending", 
+    "uid": "752802d5-3a6a-410a-adb2-56b983800cbb"
+}

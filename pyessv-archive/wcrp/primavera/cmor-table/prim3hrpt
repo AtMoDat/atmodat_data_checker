@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "prim3hrpt",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Prim3hrPt",
+    "label": "Prim3hrPt",
+    "namespace": "wcrp:primavera:cmor-table:prim3hrpt",
+    "raw_name": "Prim3hrPt",
+    "status": "pending"
+}

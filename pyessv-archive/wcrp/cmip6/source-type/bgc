@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "bgc",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "label": "BGC",
+    "namespace": "wcrp:cmip6:source-type:bgc",
+    "raw_name": "BGC",
+    "status": "pending"
+}

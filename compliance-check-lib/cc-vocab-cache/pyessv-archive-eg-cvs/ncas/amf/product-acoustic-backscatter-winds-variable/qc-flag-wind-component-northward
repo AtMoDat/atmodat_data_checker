@@ -1,0 +1,26 @@
+{
+    "_type": "term", 
+    "canonical_name": "qc-flag-wind-component-northward", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "dimension": "time, index", 
+        "flag_meanings": [
+            "not_used", 
+            "good_data", 
+            "suspect_data_value_outside_operational_range_(-20_m_s-1_to_20_m_s-1)", 
+            "bad_data_signal_consensus_poor", 
+            "bad_data_gate_index_exceeds_number_of_measurement_gates_in_use", 
+            "suspect_data_time_stamp_error"
+        ], 
+        "flag_values": "0b,1b, 2b, 3b, 4b, 5b", 
+        "long_name": "Data Quality flag: Northward Wind Component (V)", 
+        "name": "qc_flag_wind_component_northward", 
+        "type": "byte", 
+        "units": "1"
+    }, 
+    "label": "qc_flag_wind_component_northward", 
+    "namespace": "ncas:amf:product-acoustic-backscatter-winds-variable:qc-flag-wind-component-northward", 
+    "raw_name": "qc_flag_wind_component_northward", 
+    "status": "pending", 
+    "uid": "eb2db36d-d9ff-473b-a16c-4f9075852cd9"
+}

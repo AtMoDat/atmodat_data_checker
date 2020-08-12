@@ -1,0 +1,15 @@
+{
+    "_type": "term", 
+    "canonical_name": "ncas-co2-1", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "description": "NCAS Seimens Oxilla CO2 Gas Monitor unit 1", 
+        "instrument_id": "ncas-co2-1", 
+        "previous_instrument_ids": [
+            "wao-siemens-oxzilla"
+        ]
+    }, 
+    "namespace": "ncas:amf:instrument:ncas-co2-1", 
+    "status": "pending", 
+    "uid": "b0b9e1ba-ee33-4455-9bd8-8c14767ae73a"
+}

@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "voc17-other-arom-em-speciated-voc",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "VOC17-other-arom-em-speciated-VOC",
+    "label": "VOC17-other-arom-em-speciated-VOC",
+    "namespace": "wcrp:input4mips:variable-id:voc17-other-arom-em-speciated-voc",
+    "raw_name": "VOC17-other-arom-em-speciated-VOC",
+    "status": "pending"
+}

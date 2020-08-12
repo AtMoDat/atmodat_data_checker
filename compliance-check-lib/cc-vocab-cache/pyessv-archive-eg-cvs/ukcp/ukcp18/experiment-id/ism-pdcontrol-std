@@ -1,0 +1,36 @@
+{
+    "_type": "term",
+    "canonical_name": "ism-pdcontrol-std",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "data": {
+        "activity_id": [
+            "ISMIP6"
+        ],
+        "additional_allowed_model_components": "",
+        "description": "Present-day control simulation for \"offline\" ice sheets",
+        "end_year": "",
+        "experiment": "offline ice sheet forced by ISMIP6-specified AOGCM pdControl output",
+        "experiment_id": "ism-pdControl-std",
+        "min_number_yrs_per_sim": "100",
+        "parent_activity_id": [
+            "no parent"
+        ],
+        "parent_experiment_id": [
+            "no parent"
+        ],
+        "required_model_components": [
+            "ISM"
+        ],
+        "start_year": "",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "1"
+    },
+    "description": "Present-day control simulation for \"offline\" ice sheets",
+    "label": "ism-pdControl-std",
+    "namespace": "ukcp:ukcp18:experiment-id:ism-pdcontrol-std",
+    "raw_name": "ism-pdControl-std",
+    "status": "pending",
+    "uid": "f0183a4d-3938-4bc2-a53f-2f84da634919"
+}

@@ -1,0 +1,12 @@
+{
+    "_type": "term", 
+    "canonical_name": "index", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "length": "<i>", 
+        "units": "1"
+    }, 
+    "namespace": "ncas:amf:product-boundary-layer-temperature-profiles-dimension:index", 
+    "status": "pending", 
+    "uid": "dc3a11a7-4646-4dcf-bfbd-dfa67a79de8f"
+}

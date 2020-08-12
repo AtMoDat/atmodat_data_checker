@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "ichec-ec-earth-rcp85-r3i1p1-dmi-hirham5",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "ICHEC-EC-EARTH-rcp85-r3i1p1-DMI-HIRHAM5",
+    "label": "ICHEC-EC-EARTH-rcp85-r3i1p1-DMI-HIRHAM5",
+    "namespace": "ecmwf:cc4e:source-data-id:ichec-ec-earth-rcp85-r3i1p1-dmi-hirham5",
+    "raw_name": "ICHEC-EC-EARTH-rcp85-r3i1p1-DMI-HIRHAM5",
+    "status": "pending"
+}

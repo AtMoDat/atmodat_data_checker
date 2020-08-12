@@ -1,0 +1,38 @@
+{
+    "_type": "term",
+    "canonical_name": "historical-ext",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "data": {
+        "activity_id": [
+            "CMIP"
+        ],
+        "additional_allowed_model_components": [
+            "AER",
+            "CHEM",
+            "BGC"
+        ],
+        "description": "Extension beyond 2014 of the CMIP6 historical",
+        "end_year": "present",
+        "experiment": "post-2014 all-forcing simulation",
+        "experiment_id": "historical-ext",
+        "min_number_yrs_per_sim": "1",
+        "parent_activity_id": [
+            "CMIP"
+        ],
+        "parent_experiment_id": [
+            "historical"
+        ],
+        "required_model_components": [
+            "AOGCM"
+        ],
+        "start_year": "2015",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "2"
+    },
+    "description": "Extension beyond 2014 of the CMIP6 historical",
+    "namespace": "ukcp:ukcp18:experiment-id:historical-ext",
+    "status": "pending",
+    "uid": "adb18b3b-510d-41b1-a2c4-cb7f698ec666"
+}

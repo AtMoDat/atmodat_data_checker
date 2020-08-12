@@ -1,0 +1,57 @@
+{
+    "_type": "term",
+    "canonical_name": "cam-mpas-hr",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_participation": [
+            "HighResMIP"
+        ],
+        "cohort": [
+            "Registered"
+        ],
+        "institution_id": [
+            "PNNL-WACCEM"
+        ],
+        "label_extended": "CAM MPAS (Community Atmosphere Model - Model for Prediction Across Scales)",
+        "model_component": {
+            "aerosol": {
+                "description": "none, prescribed MACv2-SP",
+                "native_nominal_resolution": "none"
+            },
+            "atmos": {
+                "description": "CAM-MPAS (CAMv5.4 with Grell-Freitas deep convection; MPASv4, C-grid staggered centroidal Voronoi tesselation atmosphere 30 km mesh with 655362 cells and 1966080 edges; 32 levels, top level 40363 m)",
+                "native_nominal_resolution": "25 km"
+            },
+            "atmosChem": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "land": {
+                "description": "CLM (v4.0, same grid as atmos), River Transport Model (v1.0)",
+                "native_nominal_resolution": "25 km"
+            },
+            "landIce": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "ocean": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "ocnBgchem": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "seaIce": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            }
+        },
+        "release_year": "2018",
+        "source_id": "CAM-MPAS-HR"
+    },
+    "label": "CAM-MPAS-HR",
+    "namespace": "wcrp:cmip6:source-id:cam-mpas-hr",
+    "raw_name": "CAM-MPAS-HR",
+    "status": "pending"
+}

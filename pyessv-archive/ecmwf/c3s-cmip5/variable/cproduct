@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "cproduct",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "cProduct",
+    "label": "cProduct",
+    "namespace": "ecmwf:c3s-cmip5:variable:cproduct",
+    "raw_name": "cProduct",
+    "status": "pending"
+}

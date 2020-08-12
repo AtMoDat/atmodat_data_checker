@@ -1,0 +1,34 @@
+{
+    "_type": "term",
+    "canonical_name": "land-hist-wfdei",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_id": [
+            "LS3MIP"
+        ],
+        "additional_allowed_model_components": [
+            "BGC"
+        ],
+        "end_year": "2014",
+        "experiment": "as land-hist with WFDEI forcings",
+        "experiment_id": "land-hist-wfdei",
+        "min_number_yrs_per_sim": "165",
+        "parent_activity_id": [
+            "no parent"
+        ],
+        "parent_experiment_id": [
+            "no parent"
+        ],
+        "required_model_components": [
+            "LAND"
+        ],
+        "start_year": "1850",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "2"
+    },
+    "description": "Land only simulations",
+    "namespace": "wcrp:cmip6:experiment-id:land-hist-wfdei",
+    "status": "pending"
+}

@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "1pctco2-4xext",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Branched from 1pctCO2 run at year 140 and run with CO2 fixed at 4x pre-industrial concentration",
+    "label": "1pctCO2-4xext",
+    "namespace": "wcrp:primavera:experiment:1pctco2-4xext",
+    "raw_name": "1pctCO2-4xext",
+    "status": "pending"
+}

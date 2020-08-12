@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "rlut",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "rlut",
+    "namespace": "ecmwf:c3s-cmip5:variable:rlut",
+    "status": "pending"
+}

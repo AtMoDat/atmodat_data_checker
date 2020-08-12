@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "g3s",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "RCP4.5 2020-2069 and balance with solar constant reduction",
+    "label": "G3S",
+    "namespace": "wcrp:geomip:experiment:g3s",
+    "raw_name": "G3S",
+    "status": "pending"
+}

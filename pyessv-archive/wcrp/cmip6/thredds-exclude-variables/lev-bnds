@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "lev-bnds",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "description": "lev_bnds",
+    "label": "lev_bnds",
+    "namespace": "wcrp:cmip6:thredds-exclude-variables:lev-bnds",
+    "raw_name": "lev_bnds",
+    "status": "pending"
+}

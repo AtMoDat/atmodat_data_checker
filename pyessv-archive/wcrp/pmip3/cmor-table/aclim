@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "aclim",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Aclim",
+    "label": "Aclim",
+    "namespace": "wcrp:pmip3:cmor-table:aclim",
+    "raw_name": "Aclim",
+    "status": "pending"
+}

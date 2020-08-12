@@ -1,0 +1,20 @@
+{
+    "_type": "term", 
+    "canonical_name": "h2oprime", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: point", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time, index", 
+        "long_name": "H2O'", 
+        "name": "h2oprime", 
+        "type": "float32", 
+        "units": "mmol m-3", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "namespace": "ncas:amf:product-flux-components-variable:h2oprime", 
+    "status": "pending", 
+    "uid": "1953592b-5fb1-4d98-b82b-8ea54237d2b8"
+}

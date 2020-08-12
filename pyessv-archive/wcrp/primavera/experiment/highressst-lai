@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "highressst-lai",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Forced global atmosphere-land simulations as highresSST-present, but using an common LAI dataset across models",
+    "label": "highresSST-LAI",
+    "namespace": "wcrp:primavera:experiment:highressst-lai",
+    "raw_name": "highresSST-LAI",
+    "status": "pending"
+}

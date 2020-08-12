@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "nuim-wrf331f",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "NUIM-WRF331F",
+    "label": "NUIM-WRF331F",
+    "namespace": "ecmwf:c3s-cordex:rcm-model:nuim-wrf331f",
+    "raw_name": "NUIM-WRF331F",
+    "status": "pending"
+}

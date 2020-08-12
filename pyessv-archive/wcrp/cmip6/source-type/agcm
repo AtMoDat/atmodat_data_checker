@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "agcm",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "label": "AGCM",
+    "namespace": "wcrp:cmip6:source-type:agcm",
+    "raw_name": "AGCM",
+    "status": "pending"
+}

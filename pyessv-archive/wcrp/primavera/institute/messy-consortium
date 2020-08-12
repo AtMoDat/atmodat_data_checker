@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "messy-consortium",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "label": "MESSy-Consortium",
+    "namespace": "wcrp:primavera:institute:messy-consortium",
+    "raw_name": "MESSy-Consortium",
+    "status": "pending"
+}

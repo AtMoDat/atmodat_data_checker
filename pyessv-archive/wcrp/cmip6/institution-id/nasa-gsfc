@@ -1,0 +1,16 @@
+{
+    "_type": "term",
+    "canonical_name": "nasa-gsfc",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "consortia": [],
+        "coordinates": "-38.998267,76.864800",
+        "homepage": "https://www.nasa.gov/goddard",
+        "name": "National Aeronautics and Space Administration - Goddard Space Flight Centre",
+        "postalAddress": "Greenbelt, MD 20771, USA"
+    },
+    "label": "NASA-GSFC",
+    "namespace": "wcrp:cmip6:institution-id:nasa-gsfc",
+    "raw_name": "NASA-GSFC",
+    "status": "pending"
+}

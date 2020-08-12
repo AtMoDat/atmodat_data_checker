@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "ec-earth-consortium",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "label": "EC-Earth-Consortium",
+    "namespace": "wcrp:primavera:institute:ec-earth-consortium",
+    "raw_name": "EC-Earth-Consortium",
+    "status": "pending"
+}

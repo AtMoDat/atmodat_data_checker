@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "ch4-percentage-agri",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "CH4-percentage-AGRI",
+    "label": "CH4-percentage-AGRI",
+    "namespace": "wcrp:input4mips:variable-id:ch4-percentage-agri",
+    "raw_name": "CH4-percentage-AGRI",
+    "status": "pending"
+}

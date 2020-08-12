@@ -1,0 +1,16 @@
+{
+    "_type": "term",
+    "canonical_name": "cams",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "consortia": [],
+        "coordinates": "116.3246649,39.9463683",
+        "homepage": "http://www.cma.gov.cn",
+        "name": "Chinese Academy of Meteorological Sciences",
+        "postalAddress": "46 Zhongguancun S St, BeiXiaGuan, Haidian Qu, Beijing 100081, China"
+    },
+    "label": "CAMS",
+    "namespace": "wcrp:cmip6:institution-id:cams",
+    "raw_name": "CAMS",
+    "status": "pending"
+}

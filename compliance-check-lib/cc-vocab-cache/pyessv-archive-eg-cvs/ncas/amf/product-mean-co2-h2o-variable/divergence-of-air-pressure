@@ -1,0 +1,22 @@
+{
+    "_type": "term", 
+    "canonical_name": "divergence-of-air-pressure", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: standard_deviation", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "long_name": "Divergence of Air Pressure", 
+        "name": "divergence_of_air_pressure", 
+        "type": "float32", 
+        "units": "hPa", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "divergence_of_air_pressure", 
+    "namespace": "ncas:amf:product-mean-co2-h2o-variable:divergence-of-air-pressure", 
+    "raw_name": "divergence_of_air_pressure", 
+    "status": "pending", 
+    "uid": "07fa1e9e-1dc4-43f7-ae83-c81171db8f43"
+}

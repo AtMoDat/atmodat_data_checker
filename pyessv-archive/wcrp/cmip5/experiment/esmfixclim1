@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "esmfixclim1",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "ESM fixed climate 1",
+    "label": "esmFixClim1",
+    "namespace": "wcrp:cmip5:experiment:esmfixclim1",
+    "raw_name": "esmFixClim1",
+    "status": "pending"
+}

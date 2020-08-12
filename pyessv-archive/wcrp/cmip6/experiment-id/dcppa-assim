@@ -1,0 +1,38 @@
+{
+    "_type": "term",
+    "canonical_name": "dcppa-assim",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_id": [
+            "DCPP"
+        ],
+        "additional_allowed_model_components": [
+            "AER",
+            "CHEM",
+            "BGC"
+        ],
+        "end_year": "2016",
+        "experiment": "Assimilation run paralleling the historical simulation, which may be used to generate hindcast initial conditions",
+        "experiment_id": "dcppA-assim",
+        "min_number_yrs_per_sim": "56",
+        "parent_activity_id": [
+            "no parent"
+        ],
+        "parent_experiment_id": [
+            "no parent"
+        ],
+        "required_model_components": [
+            "AOGCM"
+        ],
+        "start_year": "before 1961",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "2"
+    },
+    "description": "A2.3 Assimilation runs used to generate initial conditions for hindcasts",
+    "label": "dcppA-assim",
+    "namespace": "wcrp:cmip6:experiment-id:dcppa-assim",
+    "raw_name": "dcppA-assim",
+    "status": "pending"
+}

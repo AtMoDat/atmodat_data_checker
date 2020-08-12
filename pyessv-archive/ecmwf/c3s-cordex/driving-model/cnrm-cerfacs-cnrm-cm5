@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "cnrm-cerfacs-cnrm-cm5",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "CNRM-CERFACS-CNRM-CM5",
+    "label": "CNRM-CERFACS-CNRM-CM5",
+    "namespace": "ecmwf:c3s-cordex:driving-model:cnrm-cerfacs-cnrm-cm5",
+    "raw_name": "CNRM-CERFACS-CNRM-CM5",
+    "status": "pending"
+}

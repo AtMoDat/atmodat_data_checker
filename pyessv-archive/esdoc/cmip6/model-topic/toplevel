@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "toplevel",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "description": "Top Level",
+    "label": "Top Level",
+    "namespace": "esdoc:cmip6:model-topic:toplevel",
+    "status": "pending"
+}

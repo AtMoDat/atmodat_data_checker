@@ -1,0 +1,14 @@
+{
+    "_type": "term", 
+    "canonical_name": "index-of-angle", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "length": "<i>", 
+        "units": "1"
+    }, 
+    "label": "index_of_angle", 
+    "namespace": "ncas:amf:product-depolarisation-ratio-dimension:index-of-angle", 
+    "raw_name": "index_of_angle", 
+    "status": "pending", 
+    "uid": "1c486849-70af-4dca-bffb-6f3e5bf354a5"
+}

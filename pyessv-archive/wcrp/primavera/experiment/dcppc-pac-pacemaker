@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "dcppc-pac-pacemaker",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Mechanisms and predictability of the hiatus and of similar long timescale variations of both signs",
+    "label": "dcppC-pac-pacemaker",
+    "namespace": "wcrp:primavera:experiment:dcppc-pac-pacemaker",
+    "raw_name": "dcppC-pac-pacemaker",
+    "status": "pending"
+}

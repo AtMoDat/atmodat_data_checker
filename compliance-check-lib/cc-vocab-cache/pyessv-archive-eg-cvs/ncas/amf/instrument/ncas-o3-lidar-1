@@ -1,0 +1,16 @@
+{
+    "_type": "term", 
+    "canonical_name": "ncas-o3-lidar-1", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "description": "NCAS Mobile O3 lidar unit 1", 
+        "instrument_id": "ncas-o3-lidar-1", 
+        "previous_instrument_ids": [
+            "aber-o3lidar", 
+            "man-o3lidar"
+        ]
+    }, 
+    "namespace": "ncas:amf:instrument:ncas-o3-lidar-1", 
+    "status": "pending", 
+    "uid": "10eb82d9-cc79-43ff-8952-e40af74affe0"
+}

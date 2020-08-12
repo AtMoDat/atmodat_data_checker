@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "umu-whoccram",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "UMU-WHOCCRAM",
+    "label": "UMU-WHOCCRAM",
+    "namespace": "wcrp:isimip-ft:impact-model:umu-whoccram",
+    "raw_name": "UMU-WHOCCRAM",
+    "status": "pending"
+}

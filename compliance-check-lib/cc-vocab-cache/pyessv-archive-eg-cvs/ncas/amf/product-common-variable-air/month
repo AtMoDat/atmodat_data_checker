@@ -1,0 +1,17 @@
+{
+    "_type": "term", 
+    "canonical_name": "month", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "dimension": "time", 
+        "long_name": "Month", 
+        "name": "month", 
+        "type": "int32", 
+        "units": "1", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "namespace": "ncas:amf:product-common-variable-air:month", 
+    "status": "pending", 
+    "uid": "374633e9-c0dd-41f1-b1e0-c6ffdd06a950"
+}

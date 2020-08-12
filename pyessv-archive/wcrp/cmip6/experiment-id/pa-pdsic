@@ -1,0 +1,38 @@
+{
+    "_type": "term",
+    "canonical_name": "pa-pdsic",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_id": [
+            "PAMIP"
+        ],
+        "additional_allowed_model_components": [
+            "AER",
+            "CHEM",
+            "BGC"
+        ],
+        "end_year": "2001",
+        "experiment": "Partially-coupled time slice contrained by present day SIC",
+        "experiment_id": "pa-pdSIC",
+        "min_number_yrs_per_sim": "1",
+        "parent_activity_id": [
+            "CMIP"
+        ],
+        "parent_experiment_id": [
+            "historical"
+        ],
+        "required_model_components": [
+            "AOGCM"
+        ],
+        "start_year": "2000",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "2"
+    },
+    "description": "PA2.1: coupled model present day control constrained by oberved sea ice",
+    "label": "pa-pdSIC",
+    "namespace": "wcrp:cmip6:experiment-id:pa-pdsic",
+    "raw_name": "pa-pdSIC",
+    "status": "pending"
+}

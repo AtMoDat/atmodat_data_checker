@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "solaris-heppa",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "SOLARIS-HEPPA",
+    "label": "SOLARIS-HEPPA",
+    "namespace": "wcrp:input4mips:institution-id:solaris-heppa",
+    "raw_name": "SOLARIS-HEPPA",
+    "status": "pending"
+}

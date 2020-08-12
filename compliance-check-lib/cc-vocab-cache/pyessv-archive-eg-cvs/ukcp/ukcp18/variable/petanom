@@ -1,0 +1,42 @@
+{
+    "_type": "term",
+    "canonical_name": "petanom",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "data": {
+        "anomaly_type": "absolute_change",
+        "cmip6_cmor_tables_row_id": [
+            "??"
+        ],
+        "cmip6_name": "??",
+        "cmip6_standard_name": "??",
+        "description": "Potential evapotranspiration rate",
+        "label_units": "%",
+        "long_name": "Potential evapotranspiration rate",
+        "notes": [
+            "To be post-processed"
+        ],
+        "plot_label": "Potential evapotranspiration rate anomaly (%)",
+        "strand": [
+            "land strand 1",
+            "land strand 2",
+            "land strand 3 12km",
+            "land strand 3 2km",
+            "marine",
+            "observations"
+        ],
+        "time_averaging": [
+            "mean"
+        ],
+        "time_step": [
+            "??"
+        ],
+        "um_stash": "None",
+        "units": "%"
+    },
+    "description": "Potential evapotranspiration rate",
+    "label": "petAnom",
+    "namespace": "ukcp:ukcp18:variable:petanom",
+    "raw_name": "petAnom",
+    "status": "pending",
+    "uid": "b4e8fde0-588d-4828-9ed2-28bd038b3bde"
+}

@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "uofmd-landstate-gcam-ssp460-2-1-f",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "UofMD-landState-GCAM-ssp460-2-1-f",
+    "label": "UofMD-landState-GCAM-ssp460-2-1-f",
+    "namespace": "wcrp:input4mips:source-id:uofmd-landstate-gcam-ssp460-2-1-f",
+    "raw_name": "UofMD-landState-GCAM-ssp460-2-1-f",
+    "status": "pending"
+}

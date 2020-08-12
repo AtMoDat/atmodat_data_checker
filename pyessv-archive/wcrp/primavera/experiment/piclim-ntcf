@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "piclim-ntcf",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Perturbation from 1850 control using 2014 aerosol and ozone precursor emissions",
+    "label": "piClim-NTCF",
+    "namespace": "wcrp:primavera:experiment:piclim-ntcf",
+    "raw_name": "piClim-NTCF",
+    "status": "pending"
+}

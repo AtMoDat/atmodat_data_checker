@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "novolc1990",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Volcano-free hindcasts initiated in 1990",
+    "label": "noVolc1990",
+    "namespace": "wcrp:cmip5:experiment:novolc1990",
+    "raw_name": "noVolc1990",
+    "status": "pending"
+}

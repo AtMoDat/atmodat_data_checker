@@ -1,0 +1,15 @@
+{
+    "_type": "term", 
+    "canonical_name": "ncas-aps-1", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "description": "NCAS Aerodynamic Particle Sizer unit 1", 
+        "instrument_id": "ncas-aps-1", 
+        "previous_instrument_ids": [
+            "uom-3321aps-1"
+        ]
+    }, 
+    "namespace": "ncas:amf:instrument:ncas-aps-1", 
+    "status": "pending", 
+    "uid": "33da2a82-7128-48d9-8ce2-72c4e3e17f5c"
+}

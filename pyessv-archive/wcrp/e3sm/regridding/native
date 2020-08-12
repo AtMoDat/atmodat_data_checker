@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "native",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "native",
+    "namespace": "wcrp:e3sm:regridding:native",
+    "status": "pending"
+}

@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "g3",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "RCP4.5 2020-2069 and balance with SO2 injection",
+    "label": "G3",
+    "namespace": "wcrp:geomip:experiment:g3",
+    "raw_name": "G3",
+    "status": "pending"
+}

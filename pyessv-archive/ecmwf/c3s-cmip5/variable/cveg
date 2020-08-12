@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "cveg",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "cVeg",
+    "label": "cVeg",
+    "namespace": "ecmwf:c3s-cmip5:variable:cveg",
+    "raw_name": "cVeg",
+    "status": "pending"
+}

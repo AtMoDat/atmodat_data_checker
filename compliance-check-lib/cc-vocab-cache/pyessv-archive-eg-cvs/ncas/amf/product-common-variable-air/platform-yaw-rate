@@ -1,0 +1,23 @@
+{
+    "_type": "term", 
+    "canonical_name": "platform-yaw-rate", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "long_name": "Yaw Angle Rate of Change", 
+        "name": "platform_yaw_rate", 
+        "standard_name": "platform_yaw_rate", 
+        "type": "float32", 
+        "units": "degree s-1", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "platform_yaw_rate", 
+    "namespace": "ncas:amf:product-common-variable-air:platform-yaw-rate", 
+    "raw_name": "platform_yaw_rate", 
+    "status": "pending", 
+    "uid": "848327b8-05f5-4920-9f88-67eaa8f92d89"
+}

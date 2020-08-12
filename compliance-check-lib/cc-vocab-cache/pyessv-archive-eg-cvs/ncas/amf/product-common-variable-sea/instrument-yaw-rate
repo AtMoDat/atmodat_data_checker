@@ -1,0 +1,22 @@
+{
+    "_type": "term", 
+    "canonical_name": "instrument-yaw-rate", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "long_name": "Instrument Yaw Angle Rate of Change", 
+        "name": "instrument_yaw_rate", 
+        "type": "float32", 
+        "units": "degree s-1", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "instrument_yaw_rate", 
+    "namespace": "ncas:amf:product-common-variable-sea:instrument-yaw-rate", 
+    "raw_name": "instrument_yaw_rate", 
+    "status": "pending", 
+    "uid": "0a737537-06d0-4ea9-9799-2aa6c1b76831"
+}

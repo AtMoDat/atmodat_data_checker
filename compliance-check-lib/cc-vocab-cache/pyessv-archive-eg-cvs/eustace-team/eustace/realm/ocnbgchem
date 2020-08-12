@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "ocnbgchem",
+    "create_date": "2018-03-22 15:50:19.328077+00:00",
+    "label": "ocnBgchem",
+    "namespace": "eustace-team:eustace:realm:ocnbgchem",
+    "raw_name": "ocnBgchem",
+    "status": "pending",
+    "uid": "3d71bb94-50a5-49e8-b384-b496fb39ebab"
+}

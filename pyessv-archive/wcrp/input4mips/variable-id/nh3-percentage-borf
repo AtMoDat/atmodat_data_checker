@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "nh3-percentage-borf",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "NH3-percentage-BORF",
+    "label": "NH3-percentage-BORF",
+    "namespace": "wcrp:input4mips:variable-id:nh3-percentage-borf",
+    "raw_name": "NH3-percentage-BORF",
+    "status": "pending"
+}

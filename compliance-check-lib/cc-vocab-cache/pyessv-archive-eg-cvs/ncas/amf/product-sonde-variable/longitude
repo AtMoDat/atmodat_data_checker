@@ -1,0 +1,21 @@
+{
+    "_type": "term", 
+    "canonical_name": "longitude", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "axis": "X", 
+        "cell_methods": "time: point", 
+        "dimension": "time", 
+        "long_name": "Longitude", 
+        "name": "longitude", 
+        "standard_name": "longitude", 
+        "type": "float32", 
+        "units": "degrees_east", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "namespace": "ncas:amf:product-sonde-variable:longitude", 
+    "status": "pending", 
+    "uid": "dd3610c1-fcd2-48d3-872a-4036456e11ca"
+}

@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "mri-cgcm3",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "MRI-CGCM3",
+    "label": "MRI-CGCM3",
+    "namespace": "ecmwf:c3s-cmip5:model:mri-cgcm3",
+    "raw_name": "MRI-CGCM3",
+    "status": "pending"
+}

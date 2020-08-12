@@ -1,0 +1,60 @@
+{
+    "_type": "term",
+    "canonical_name": "e3sm-1-1",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_participation": [
+            "C4MIP",
+            "CMIP",
+            "LS3MIP"
+        ],
+        "cohort": [
+            "Registered"
+        ],
+        "institution_id": [
+            "E3SM-Project",
+            "RUBISCO"
+        ],
+        "label_extended": "E3SM 1.1 (Energy Exascale Earth System Model)",
+        "model_component": {
+            "aerosol": {
+                "description": "MAM4 with resuspension, marine organics, and secondary organics (same grid as atmos)",
+                "native_nominal_resolution": "100 km"
+            },
+            "atmos": {
+                "description": "EAM (v1.1, cubed sphere spectral-element grid; 5400 elements with p=3; 1 deg average grid spacing; 90 x 90 x 6 longitude/latitude/cubeface; 72 levels; top level 0.1 hPa)",
+                "native_nominal_resolution": "100 km"
+            },
+            "atmosChem": {
+                "description": "Troposphere specified oxidants for aerosols. Stratosphere linearized interactive ozone (LINOZ v2) (same grid as atmos)",
+                "native_nominal_resolution": "100 km"
+            },
+            "land": {
+                "description": "ELM (v1.1, same grid as atmos; active biogeochemistry using the Converging Trophic Cascade plant and soil carbon and nutrient mechanisms to represent carbon, nitrogen and phosphorus cycles), MOSART (v1.1, 0.5 degree latitude/longitude grid)",
+                "native_nominal_resolution": "100 km"
+            },
+            "landIce": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "ocean": {
+                "description": "MPAS-Ocean (v6.0, oEC60to30 unstructured SVTs mesh with 235160 cells and 714274 edges, variable resolution 60 km to 30 km; 60 levels; top grid cell 0-10 m)",
+                "native_nominal_resolution": "50 km"
+            },
+            "ocnBgchem": {
+                "description": "BEC (Biogeochemical Elemental Cycling model, NPZD-type with C/N/P/Fe/Si/O; same grid as ocean)",
+                "native_nominal_resolution": "50 km"
+            },
+            "seaIce": {
+                "description": "MPAS-Seaice (v6.0; same grid as ocean)",
+                "native_nominal_resolution": "50 km"
+            }
+        },
+        "release_year": "2019",
+        "source_id": "E3SM-1-1"
+    },
+    "label": "E3SM 1.1",
+    "namespace": "wcrp:cmip6:source-id:e3sm-1-1",
+    "raw_name": "E3SM-1-1",
+    "status": "pending"
+}

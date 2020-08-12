@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "land-hist-altstartyear",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Same as land-hist except starting from either 1700 (for models that typically start in 1850) or 1850 (for models that typically start in 1700)",
+    "label": "land-hist-altStartYear",
+    "namespace": "wcrp:primavera:experiment:land-hist-altstartyear",
+    "raw_name": "land-hist-altStartYear",
+    "status": "pending"
+}

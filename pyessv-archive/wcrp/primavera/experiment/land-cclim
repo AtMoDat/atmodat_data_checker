@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "land-cclim",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Same as land-hist except with climate held constant",
+    "label": "land-cClim",
+    "namespace": "wcrp:primavera:experiment:land-cclim",
+    "raw_name": "land-cClim",
+    "status": "pending"
+}

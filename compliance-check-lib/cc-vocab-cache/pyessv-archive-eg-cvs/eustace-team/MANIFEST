@@ -1,0 +1,115 @@
+{
+    "_type": "authority",
+    "canonical_name": "eustace-team",
+    "create_date": "2018-03-22 15:50:19.328077+00:00",
+    "description": "UK Climate Projections",
+    "label": "EUSTACE",
+    "namespace": "eustace-team",
+    "scopes": [
+        {
+            "_type": "scope",
+            "canonical_name": "eustace",
+            "collections": [
+                {
+                    "_type": "collection",
+                    "canonical_name": "frequency",
+                    "create_date": "2018-03-22 15:50:19.328077+00:00",
+                    "description": "EUSTACE CV collection:",
+                    "label": "Frequency",
+                    "namespace": "eustace-team:eustace:frequency",
+                    "term_regex": "^[a-z0-9\\-]*$",
+                    "terms": [
+                        "1hr:1hr",
+                        "1hrclimmon:1hrClimMon",
+                        "3hr:3hr",
+                        "6hr:6hr",
+                        "day:day",
+                        "dec:dec",
+                        "fx:fx",
+                        "mon:mon",
+                        "monclim:monClim",
+                        "subhr:subhr",
+                        "yr:yr"
+                    ],
+                    "uid": "86e8e486-1429-42cf-86c7-c06bd1a41ff0"
+                },
+                {
+                    "_type": "collection",
+                    "canonical_name": "institution-id",
+                    "create_date": "2018-03-22 15:50:19.328077+00:00",
+                    "description": "EUSTACE CV collection:",
+                    "label": "Institution ID",
+                    "namespace": "eustace-team:eustace:institution-id",
+                    "raw_name": "institution_id",
+                    "term_regex": "^[a-z0-9\\-]*$",
+                    "terms": [
+                        "mohc:MOHC",
+                        "ncar:NCAR",
+                        "nerc:NERC",
+                        "noaa-ncep:NOAA-NCEP"
+                    ],
+                    "uid": "52652c97-ca54-47d7-97dd-aaa68424c380"
+                },
+                {
+                    "_type": "collection",
+                    "canonical_name": "realm",
+                    "create_date": "2018-03-22 15:50:19.328077+00:00",
+                    "description": "EUSTACE CV collection:",
+                    "label": "Realm",
+                    "namespace": "eustace-team:eustace:realm",
+                    "term_regex": "^[a-z0-9\\-]*$",
+                    "terms": [
+                        "aerosol:aerosol",
+                        "atmos:atmos",
+                        "atmoschem:atmosChem",
+                        "land:land",
+                        "landice:landIce",
+                        "ocean:ocean",
+                        "ocnbgchem:ocnBgchem",
+                        "seaice:seaIce"
+                    ],
+                    "uid": "d10ff47a-7413-4518-a325-e127e20b087c"
+                },
+                {
+                    "_type": "collection",
+                    "canonical_name": "required-global-attributes",
+                    "create_date": "2018-03-22 15:50:19.328077+00:00",
+                    "description": "EUSTACE CV collection:",
+                    "label": "Required Global Attributes",
+                    "namespace": "eustace-team:eustace:required-global-attributes",
+                    "raw_name": "required_global_attributes",
+                    "term_regex": "^[a-z0-9\\-]*$",
+                    "terms": [
+                        "conventions:Conventions",
+                        "creation-date:creation_date",
+                        "data-specs-version:data_specs_version",
+                        "frequency:frequency",
+                        "institution:institution",
+                        "license:license",
+                        "source:source"
+                    ],
+                    "uid": "7d2d8e56-abc0-4b0e-8088-a27b1a3abc45"
+                }
+            ],
+            "create_date": "2018-03-22 15:50:19.328077+00:00",
+            "description": "Controlled Vocabularies (CVs) for use in eustace",
+            "namespace": "eustace-team:eustace",
+            "uid": "3f88e3a8-5768-4a47-b8dc-bb7e1712a7e7",
+            "url": "https://github.com/eustace-data/EUSTACE_CVs"
+        },
+        {
+            "_type": "scope",
+            "canonical_name": "global",
+            "collections": [],
+            "create_date": "2018-03-22 15:50:19.328077+00:00",
+            "description": "Global controlled Vocabularies (CVs)",
+            "label": "GLOBAL",
+            "namespace": "eustace-team:global",
+            "raw_name": "GLOBAL",
+            "uid": "2f4526c3-d477-4fbd-90f9-21512f77337e",
+            "url": "https://github.com/eustace-data/EUSTACE_CVs"
+        }
+    ],
+    "uid": "9ee5b7cf-95a1-4f64-ac64-d79f1250abc9",
+    "url": "https://tba.tba.com/tba"
+}

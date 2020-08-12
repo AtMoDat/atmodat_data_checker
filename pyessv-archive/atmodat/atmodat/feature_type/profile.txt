@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "profile",
+    "create_date": "2020-08-07 00:00:00+00:00",
+    "label": "profile",
+    "namespace": "atmodat:atmodat:feature_type:profile",
+    "raw_name": "profile",
+    "status": "pending"
+}

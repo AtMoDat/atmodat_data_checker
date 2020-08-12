@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "mpi-m-mpi-esm-mr",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "MPI-M-MPI-ESM-MR",
+    "label": "MPI-M-MPI-ESM-MR",
+    "namespace": "ecmwf:c3s-cordex:driving-model:mpi-m-mpi-esm-mr",
+    "raw_name": "MPI-M-MPI-ESM-MR",
+    "status": "pending"
+}

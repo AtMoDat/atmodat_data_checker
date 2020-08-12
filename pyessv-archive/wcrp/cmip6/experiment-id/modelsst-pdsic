@@ -1,0 +1,38 @@
+{
+    "_type": "term",
+    "canonical_name": "modelsst-pdsic",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_id": [
+            "PAMIP"
+        ],
+        "additional_allowed_model_components": [
+            "AER",
+            "CHEM",
+            "BGC"
+        ],
+        "end_year": "2001",
+        "experiment": "Atmosphere time slice present day control with coupled model SST",
+        "experiment_id": "modelSST-pdSIC",
+        "min_number_yrs_per_sim": "1",
+        "parent_activity_id": [
+            "CMIP"
+        ],
+        "parent_experiment_id": [
+            "amip"
+        ],
+        "required_model_components": [
+            "AGCM"
+        ],
+        "start_year": "2000",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "3"
+    },
+    "description": "PA4.1: atmosphere only model present day control with coupled model SST",
+    "label": "modelSST-pdSIC",
+    "namespace": "wcrp:cmip6:experiment-id:modelsst-pdsic",
+    "raw_name": "modelSST-pdSIC",
+    "status": "pending"
+}

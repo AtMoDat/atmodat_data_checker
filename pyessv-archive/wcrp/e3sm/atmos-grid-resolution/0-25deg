@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "0-25deg",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "0_25deg",
+    "label": "0_25deg",
+    "namespace": "wcrp:e3sm:atmos-grid-resolution:0-25deg",
+    "raw_name": "0_25deg",
+    "status": "pending"
+}

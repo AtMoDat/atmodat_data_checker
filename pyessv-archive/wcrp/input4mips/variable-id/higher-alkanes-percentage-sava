@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "higher-alkanes-percentage-sava",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Higher-Alkanes-percentage-SAVA",
+    "label": "Higher-Alkanes-percentage-SAVA",
+    "namespace": "wcrp:input4mips:variable-id:higher-alkanes-percentage-sava",
+    "raw_name": "Higher-Alkanes-percentage-SAVA",
+    "status": "pending"
+}

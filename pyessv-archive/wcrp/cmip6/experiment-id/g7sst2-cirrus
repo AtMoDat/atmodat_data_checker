@@ -1,0 +1,37 @@
+{
+    "_type": "term",
+    "canonical_name": "g7sst2-cirrus",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_id": [
+            "GeoMIP"
+        ],
+        "additional_allowed_model_components": [
+            "AER",
+            "CHEM"
+        ],
+        "end_year": "",
+        "experiment": "SSTs from year 2100 of SSP5-8.5; forcings and other prescribed conditions from year 2100 of G7cirrus",
+        "experiment_id": "G7SST2-cirrus",
+        "min_number_yrs_per_sim": "10",
+        "parent_activity_id": [
+            "GeoMIP"
+        ],
+        "parent_experiment_id": [
+            "G7cirrus"
+        ],
+        "required_model_components": [
+            "AGCM"
+        ],
+        "start_year": "",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "2"
+    },
+    "description": "Time slice at 2100 (ScenarioMIP Tier 1 high forcing scenario and cirrus thinning according to G7cirrus)",
+    "label": "G7SST2-cirrus",
+    "namespace": "wcrp:cmip6:experiment-id:g7sst2-cirrus",
+    "raw_name": "G7SST2-cirrus",
+    "status": "pending"
+}

@@ -1,0 +1,12 @@
+{
+    "_type": "term", 
+    "canonical_name": "index", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "length": "<i>", 
+        "units": "1"
+    }, 
+    "namespace": "ncas:amf:product-o3-concentration-profile-dimension:index", 
+    "status": "pending", 
+    "uid": "ba02cb0a-49ba-4577-8988-9c8ee06ca232"
+}

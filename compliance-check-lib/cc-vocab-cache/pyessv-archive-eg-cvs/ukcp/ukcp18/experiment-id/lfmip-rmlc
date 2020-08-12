@@ -1,0 +1,40 @@
+{
+    "_type": "term",
+    "canonical_name": "lfmip-rmlc",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "data": {
+        "activity_id": [
+            "LS3MIP"
+        ],
+        "additional_allowed_model_components": [
+            "AER",
+            "CHEM",
+            "BGC"
+        ],
+        "description": "Prescribed land conditions 30yr running mean",
+        "end_year": "2100",
+        "experiment": "prescribed land conditions (from running mean climatology) and initialized from \"historical\" run year 1980",
+        "experiment_id": "lfmip-rmLC",
+        "min_number_yrs_per_sim": "121",
+        "parent_activity_id": [
+            "CMIP"
+        ],
+        "parent_experiment_id": [
+            "historical"
+        ],
+        "required_model_components": [
+            "AOGCM"
+        ],
+        "start_year": "1980",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "2"
+    },
+    "description": "Prescribed land conditions 30yr running mean",
+    "label": "lfmip-rmLC",
+    "namespace": "ukcp:ukcp18:experiment-id:lfmip-rmlc",
+    "raw_name": "lfmip-rmLC",
+    "status": "pending",
+    "uid": "f270dcd3-f8d0-4015-af96-90c2cced6556"
+}

@@ -1,0 +1,19 @@
+{
+    "_type": "term", 
+    "canonical_name": "day-of-year", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "dimension": "time", 
+        "long_name": "Day of Year", 
+        "name": "day_of_year", 
+        "type": "float32", 
+        "units": "1", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "day_of_year", 
+    "namespace": "ncas:amf:product-common-variable-sea:day-of-year", 
+    "raw_name": "day_of_year", 
+    "status": "pending", 
+    "uid": "48f6b911-f22a-4968-8fd3-fd522d71ac47"
+}

@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "ch3cooh-percentage-peat",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "CH3COOH-percentage-PEAT",
+    "label": "CH3COOH-percentage-PEAT",
+    "namespace": "wcrp:input4mips:variable-id:ch3cooh-percentage-peat",
+    "raw_name": "CH3COOH-percentage-PEAT",
+    "status": "pending"
+}

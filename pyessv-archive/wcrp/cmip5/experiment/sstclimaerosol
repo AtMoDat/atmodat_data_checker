@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "sstclimaerosol",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "sstClim with all aerosol forcing",
+    "label": "sstClimAerosol",
+    "namespace": "wcrp:cmip5:experiment:sstclimaerosol",
+    "raw_name": "sstClimAerosol",
+    "status": "pending"
+}

@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "h2-openburning-share",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "H2_openburning_share",
+    "label": "H2_openburning_share",
+    "namespace": "wcrp:input4mips:variable-id:h2-openburning-share",
+    "raw_name": "H2_openburning_share",
+    "status": "pending"
+}

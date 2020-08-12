@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "rcsm6",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "label": "RCSM6",
+    "namespace": "wcrp:cordex:rcm-name:rcsm6",
+    "raw_name": "RCSM6",
+    "status": "pending"
+}

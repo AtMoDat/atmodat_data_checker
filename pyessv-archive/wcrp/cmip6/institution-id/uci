@@ -1,0 +1,16 @@
+{
+    "_type": "term",
+    "canonical_name": "uci",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "consortia": [],
+        "coordinates": "33.643837,-117.844146",
+        "homepage": "https://www.ess.uci.edu",
+        "name": "University of California Irvine",
+        "postalAddress": "University of California Irvine, Department of Earth System Science, Irvine, CA 92697, USA"
+    },
+    "label": "UCI",
+    "namespace": "wcrp:cmip6:institution-id:uci",
+    "raw_name": "UCI",
+    "status": "pending"
+}

@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "slab",
+    "create_date": "2020-08-05 00:00:00+00:00",
+    "label": "slab-ocean used with an AGCM in representing the atmosphere-ocean coupled system",
+    "namespace": "atmodat:atmodat:source-type:slab",
+    "raw_name": "slab",
+    "status": "pending"
+}

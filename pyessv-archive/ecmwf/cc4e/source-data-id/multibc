@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "multibc",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "multiBC",
+    "label": "multiBC",
+    "namespace": "ecmwf:cc4e:source-data-id:multibc",
+    "raw_name": "multiBC",
+    "status": "pending"
+}

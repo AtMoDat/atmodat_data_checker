@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "nwcf2avg",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "nwcf2avg",
+    "namespace": "ecmwf:cc4e:variable:nwcf2avg",
+    "status": "pending"
+}

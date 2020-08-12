@@ -1,0 +1,65 @@
+{
+    "_type": "term",
+    "canonical_name": "awi-cm-1-0-lr",
+    "create_date": "2018-03-28 19:52:17.258367+00:00",
+    "data": {
+        "activity_participation": [
+            "CMIP",
+            "CORDEX",
+            "HighResMIP",
+            "OMIP",
+            "PMIP",
+            "SIMIP",
+            "ScenarioMIP",
+            "VIACSAB"
+        ],
+        "cohort": [
+            "Registered"
+        ],
+        "institution_id": [
+            "AWI"
+        ],
+        "label_extended": "AWI-CM 1.0 LR",
+        "model_component": {
+            "aerosol": {
+                "description": "none",
+                "nominal_resolution": "none"
+            },
+            "atmos": {
+                "description": "ECHAM6.3.02p4 (T63L47 native atmosphere T63 gaussian grid; 192 x 96 longitude/latitude; 47 levels; top level 80 km)",
+                "nominal_resolution": "250 km"
+            },
+            "atmosChem": {
+                "description": "none",
+                "nominal_resolution": "none"
+            },
+            "land": {
+                "description": "JSBACH 3.10",
+                "nominal_resolution": "250 km"
+            },
+            "landIce": {
+                "description": "none",
+                "nominal_resolution": "none"
+            },
+            "ocean": {
+                "description": "FESOM 1.4 (unstructured grid in the horizontal with 126859 wet nodes; 46 levels; top grid cell 0-5 m)",
+                "nominal_resolution": "50 km"
+            },
+            "ocnBgchem": {
+                "description": "none",
+                "nominal_resolution": "none"
+            },
+            "seaIce": {
+                "description": "FESOM 1.4",
+                "nominal_resolution": "50 km"
+            }
+        },
+        "release_year": "2017",
+        "source_id": "AWI-CM-1-0-LR"
+    },
+    "label": "AWI-CM 1.0 LR",
+    "namespace": "ukcp:ukcp18:source-id:awi-cm-1-0-lr",
+    "raw_name": "AWI-CM-1-0-LR",
+    "status": "pending",
+    "uid": "a3c1d37f-0092-4494-8934-be2ead858137"
+}

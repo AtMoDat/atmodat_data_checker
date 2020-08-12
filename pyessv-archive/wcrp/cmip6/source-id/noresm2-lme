@@ -1,0 +1,61 @@
+{
+    "_type": "term",
+    "canonical_name": "noresm2-lme",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_participation": [
+            "C4MIP",
+            "CMIP",
+            "GeoMIP",
+            "LUMIP",
+            "OMIP"
+        ],
+        "cohort": [
+            "Registered"
+        ],
+        "institution_id": [
+            "NCC"
+        ],
+        "label_extended": "NorESM2-LME (low atmosphere-medium ocean resolution, GHG emission driven)",
+        "model_component": {
+            "aerosol": {
+                "description": "OsloAero",
+                "native_nominal_resolution": "250 km"
+            },
+            "atmos": {
+                "description": "CAM-OSLO (2 degree resolution; 144 x 96; 32 levels; top level 3 mb)",
+                "native_nominal_resolution": "250 km"
+            },
+            "atmosChem": {
+                "description": "OsloChemSimp",
+                "native_nominal_resolution": "250 km"
+            },
+            "land": {
+                "description": "CLM",
+                "native_nominal_resolution": "250 km"
+            },
+            "landIce": {
+                "description": "CISM",
+                "native_nominal_resolution": "250 km"
+            },
+            "ocean": {
+                "description": "MICOM (1 degree resolution; 360 x 384; 70 levels; top grid cell minimum 0-2.5 m [native model uses hybrid density and generic upper-layer coordinate interpolated to z-level for contributed data])",
+                "native_nominal_resolution": "100 km"
+            },
+            "ocnBgchem": {
+                "description": "HAMOCC",
+                "native_nominal_resolution": "100 km"
+            },
+            "seaIce": {
+                "description": "CICE",
+                "native_nominal_resolution": "100 km"
+            }
+        },
+        "release_year": "2017",
+        "source_id": "NorESM2-LME"
+    },
+    "label": "NorESM2-LME",
+    "namespace": "wcrp:cmip6:source-id:noresm2-lme",
+    "raw_name": "NorESM2-LME",
+    "status": "pending"
+}

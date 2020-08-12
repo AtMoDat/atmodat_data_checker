@@ -1,0 +1,13 @@
+{
+    "_type": "term", 
+    "canonical_name": "ncas-scanning-radiometer-2", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "description": "NCAS Scanning Microwave Radiometer unit 2", 
+        "instrument_id": "ncas-scanning-radiometer-2", 
+        "previous_instrument_ids": []
+    }, 
+    "namespace": "ncas:amf:instrument:ncas-scanning-radiometer-2", 
+    "status": "pending", 
+    "uid": "a16ab16d-3d25-4d93-9cd1-e728ae29279d"
+}

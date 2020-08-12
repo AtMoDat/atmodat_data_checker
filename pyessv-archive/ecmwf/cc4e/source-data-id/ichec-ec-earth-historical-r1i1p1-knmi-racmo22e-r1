@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "ichec-ec-earth-historical-r1i1p1-knmi-racmo22e-r1",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "ICHEC-EC-EARTH-historical-r1i1p1-KNMI-RACMO22E-r1",
+    "label": "ICHEC-EC-EARTH-historical-r1i1p1-KNMI-RACMO22E-r1",
+    "namespace": "ecmwf:cc4e:source-data-id:ichec-ec-earth-historical-r1i1p1-knmi-racmo22e-r1",
+    "raw_name": "ICHEC-EC-EARTH-historical-r1i1p1-KNMI-RACMO22E-r1",
+    "status": "pending"
+}

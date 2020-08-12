@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "ipsl-ipsl-cm5a-mr-rcp45-r1i1p1-ipsl-ineris-wrf331f",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "IPSL-IPSL-CM5A-MR-rcp45-r1i1p1-IPSL-INERIS-WRF331F",
+    "label": "IPSL-IPSL-CM5A-MR-rcp45-r1i1p1-IPSL-INERIS-WRF331F",
+    "namespace": "ecmwf:cc4e:source-data-id:ipsl-ipsl-cm5a-mr-rcp45-r1i1p1-ipsl-ineris-wrf331f",
+    "raw_name": "IPSL-IPSL-CM5A-MR-rcp45-r1i1p1-IPSL-INERIS-WRF331F",
+    "status": "pending"
+}

@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "hist-resipo",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Pacemaker 20th century historical run that includes all forcing as used in CMIP6 Historical Simulation, and the observational historical SST is restored in the tropical lobe of the IPO domain (20degS-20degN, 175degE-75degW). The HadISST data will be used",
+    "label": "hist-resIPO",
+    "namespace": "wcrp:primavera:experiment:hist-resipo",
+    "raw_name": "hist-resIPO",
+    "status": "pending"
+}

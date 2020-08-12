@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "nmvoc-bulk-percentage-temf",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "NMVOC-bulk-percentage-TEMF",
+    "label": "NMVOC-bulk-percentage-TEMF",
+    "namespace": "wcrp:input4mips:variable-id:nmvoc-bulk-percentage-temf",
+    "raw_name": "NMVOC-bulk-percentage-TEMF",
+    "status": "pending"
+}

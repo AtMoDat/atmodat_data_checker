@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "cclm4-8-17",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "label": "CCLM4-8-17",
+    "namespace": "ecmwf:c3s-cordex:rcm-name:cclm4-8-17",
+    "raw_name": "CCLM4-8-17",
+    "status": "pending"
+}

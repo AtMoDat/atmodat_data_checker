@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "ofx",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Ofx",
+    "label": "Ofx",
+    "namespace": "wcrp:primavera:cmor-table:ofx",
+    "raw_name": "Ofx",
+    "status": "pending"
+}

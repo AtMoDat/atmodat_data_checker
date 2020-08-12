@@ -1,0 +1,22 @@
+{
+    "_type": "term", 
+    "canonical_name": "divergence-of-specific-humidity", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: standard_deviation", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "long_name": "Divergence of Specific Humidity", 
+        "name": "divergence_of_specific_humidity", 
+        "type": "float32", 
+        "units": "kg kg-1", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "divergence_of_specific_humidity", 
+    "namespace": "ncas:amf:product-mean-co2-h2o-variable:divergence-of-specific-humidity", 
+    "raw_name": "divergence_of_specific_humidity", 
+    "status": "pending", 
+    "uid": "bd2005e8-2bd8-4326-8092-924745f11afd"
+}

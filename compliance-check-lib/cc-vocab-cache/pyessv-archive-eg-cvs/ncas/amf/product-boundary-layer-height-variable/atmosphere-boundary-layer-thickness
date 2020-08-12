@@ -1,0 +1,23 @@
+{
+    "_type": "term", 
+    "canonical_name": "atmosphere-boundary-layer-thickness", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "long_name": "Atmospheric Boundary Layer Height (Height above MSL)", 
+        "name": "atmosphere_boundary_layer_thickness", 
+        "standard_name": "atmosphere_boundary_layer_thickness", 
+        "type": "float32", 
+        "units": "m", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "atmosphere_boundary_layer_thickness", 
+    "namespace": "ncas:amf:product-boundary-layer-height-variable:atmosphere-boundary-layer-thickness", 
+    "raw_name": "atmosphere_boundary_layer_thickness", 
+    "status": "pending", 
+    "uid": "45159c2a-dd43-494f-a025-9c4af29041cc"
+}

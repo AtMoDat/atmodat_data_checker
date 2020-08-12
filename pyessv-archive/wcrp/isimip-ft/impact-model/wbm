@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "wbm",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "WBM",
+    "label": "WBM",
+    "namespace": "wcrp:isimip-ft:impact-model:wbm",
+    "raw_name": "WBM",
+    "status": "pending"
+}

@@ -1,0 +1,20 @@
+{
+    "_type": "term", 
+    "canonical_name": "wvmmrbar", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "long_name": "<WVMMR>", 
+        "name": "wvmmrbar", 
+        "type": "float32", 
+        "units": "1", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "namespace": "ncas:amf:product-flux-components-variable:wvmmrbar", 
+    "status": "pending", 
+    "uid": "33a050ee-c88a-4d06-b149-78adefd5a797"
+}

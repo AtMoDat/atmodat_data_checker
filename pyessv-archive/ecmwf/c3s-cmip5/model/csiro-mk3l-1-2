@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "csiro-mk3l-1-2",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "CSIRO-Mk3L-1-2",
+    "label": "CSIRO-Mk3L-1-2",
+    "namespace": "ecmwf:c3s-cmip5:model:csiro-mk3l-1-2",
+    "raw_name": "CSIRO-Mk3L-1-2",
+    "status": "pending"
+}

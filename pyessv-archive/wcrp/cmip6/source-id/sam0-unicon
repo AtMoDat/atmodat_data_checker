@@ -1,0 +1,58 @@
+{
+    "_type": "term",
+    "canonical_name": "sam0-unicon",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_participation": [
+            "CMIP",
+            "ScenarioMIP"
+        ],
+        "cohort": [
+            "Registered"
+        ],
+        "institution_id": [
+            "SNU"
+        ],
+        "label_extended": "SAM0-UNICON (SNU Atmosphere Model version 0 with Unified Convection Scheme)",
+        "model_component": {
+            "aerosol": {
+                "description": "MAM3",
+                "native_nominal_resolution": "100 km"
+            },
+            "atmos": {
+                "description": "CAM5.3 with UNICON (1deg; 288 x 192 longitude/latitude; 30 levels; top level ~2 hPa)",
+                "native_nominal_resolution": "100 km"
+            },
+            "atmosChem": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "land": {
+                "description": "CLM4.0",
+                "native_nominal_resolution": "100 km"
+            },
+            "landIce": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "ocean": {
+                "description": "POP2 (Displaced Pole; 320 x 384 longitude/latitude; 60 levels; top grid cell 0-10 m)",
+                "native_nominal_resolution": "100 km"
+            },
+            "ocnBgchem": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "seaIce": {
+                "description": "CICE4.0",
+                "native_nominal_resolution": "100 km"
+            }
+        },
+        "release_year": "2017",
+        "source_id": "SAM0-UNICON"
+    },
+    "label": "SAM0-UNICON",
+    "namespace": "wcrp:cmip6:source-id:sam0-unicon",
+    "raw_name": "SAM0-UNICON",
+    "status": "pending"
+}

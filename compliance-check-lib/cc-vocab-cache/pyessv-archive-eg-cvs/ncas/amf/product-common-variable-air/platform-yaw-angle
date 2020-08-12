@@ -1,0 +1,23 @@
+{
+    "_type": "term", 
+    "canonical_name": "platform-yaw-angle", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "long_name": "Yaw Angle", 
+        "name": "platform_yaw_angle", 
+        "standard_name": "platform_yaw_angle", 
+        "type": "float32", 
+        "units": "degree", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "platform_yaw_angle", 
+    "namespace": "ncas:amf:product-common-variable-air:platform-yaw-angle", 
+    "raw_name": "platform_yaw_angle", 
+    "status": "pending", 
+    "uid": "b50a2afe-1bd8-4237-b5b9-f67507773609"
+}

@@ -1,0 +1,36 @@
+{
+    "_type": "term",
+    "canonical_name": "esm-ssp585ext",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_id": [
+            "CDRMIP"
+        ],
+        "additional_allowed_model_components": [
+            "AER",
+            "CHEM"
+        ],
+        "end_year": "2300",
+        "experiment": "emission-driven long-term extension of the SSP5-8.5 scenario",
+        "experiment_id": "esm-ssp585ext",
+        "min_number_yrs_per_sim": "200",
+        "parent_activity_id": [
+            "C4MIP"
+        ],
+        "parent_experiment_id": [
+            "esm-ssp585"
+        ],
+        "required_model_components": [
+            "AOGCM",
+            "BGC"
+        ],
+        "start_year": "2101",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "2"
+    },
+    "description": "Long term extension of CO2 emissions driven SSP5-8.5 scenario (used in the CDR-afforestation and CDR-ocean-alk experiments)",
+    "namespace": "wcrp:cmip6:experiment-id:esm-ssp585ext",
+    "status": "pending"
+}

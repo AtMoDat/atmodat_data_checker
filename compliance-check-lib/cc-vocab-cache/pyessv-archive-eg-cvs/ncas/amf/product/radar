@@ -1,0 +1,8 @@
+{
+    "_type": "term", 
+    "canonical_name": "radar", 
+    "create_date": "2018-07-09 13:09:00", 
+    "namespace": "ncas:amf:product:radar", 
+    "status": "pending", 
+    "uid": "efa5df73-49a8-4f9e-a262-dc080dd9f606"
+}

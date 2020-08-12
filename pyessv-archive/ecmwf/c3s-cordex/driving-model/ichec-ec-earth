@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "ichec-ec-earth",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "ICHEC-EC-EARTH",
+    "label": "ICHEC-EC-EARTH",
+    "namespace": "ecmwf:c3s-cordex:driving-model:ichec-ec-earth",
+    "raw_name": "ICHEC-EC-EARTH",
+    "status": "pending"
+}

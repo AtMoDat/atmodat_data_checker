@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "bgc",
+    "create_date": "2020-08-05 00:00:00+00:00",
+    "label": "biogeochemistry model component that at the very least accounts for carbon reservoirs and fluxes in the atmosphere, terrestrial biosphere, and ocean",
+    "namespace": "atmodat:atmodat:source-type:bgc",
+    "raw_name": "bgc",
+    "status": "pending"
+}

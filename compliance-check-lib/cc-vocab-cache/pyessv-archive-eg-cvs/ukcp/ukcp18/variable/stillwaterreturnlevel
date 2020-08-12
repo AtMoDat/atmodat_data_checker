@@ -1,0 +1,32 @@
+{
+    "_type": "term",
+    "canonical_name": "stillwaterreturnlevel",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "data": {
+        "description": "Still water return level",
+        "label_units": "m",
+        "long_name": "Still water return level",
+        "notes": [
+            "Return level to be plotted against return period. Log scale for return period. How will uncertainty be made available? Separate variable?"
+        ],
+        "plot_label": "Still water return level (m)",
+        "strand": [
+            "land strand 1",
+            "land strand 2",
+            "land strand 3 12km",
+            "land strand 3 2km",
+            "marine",
+            "observations"
+        ],
+        "time_step": [
+            "n/a"
+        ],
+        "units": "m"
+    },
+    "description": "Still water return level",
+    "label": "stillWaterReturnLevel",
+    "namespace": "ukcp:ukcp18:variable:stillwaterreturnlevel",
+    "raw_name": "stillWaterReturnLevel",
+    "status": "pending",
+    "uid": "fbaf4c17-dfaa-4845-b67f-d6cc176e76b4"
+}

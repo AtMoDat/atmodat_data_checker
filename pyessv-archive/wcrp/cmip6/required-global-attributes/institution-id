@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "institution-id",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "label": "institution_id",
+    "namespace": "wcrp:cmip6:required-global-attributes:institution-id",
+    "raw_name": "institution_id",
+    "status": "pending"
+}

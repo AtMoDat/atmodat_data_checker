@@ -1,0 +1,38 @@
+{
+    "_type": "term",
+    "canonical_name": "histsst-nolu",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_id": [
+            "AerChemMIP"
+        ],
+        "additional_allowed_model_components": [
+            "AER",
+            "CHEM",
+            "BGC"
+        ],
+        "end_year": "2014",
+        "experiment": "historical SSTs and historical forcing, but with pre-industrial LULCC",
+        "experiment_id": "histSST-noLu",
+        "min_number_yrs_per_sim": "165",
+        "parent_activity_id": [
+            "CMIP"
+        ],
+        "parent_experiment_id": [
+            "piControl"
+        ],
+        "required_model_components": [
+            "AGCM"
+        ],
+        "start_year": "1850",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "1"
+    },
+    "description": "An uncoupled (atmosphere and land) experiment in which sea surface temperatures (SST) and sea ice concentrations (SICONC) are taken from historical (as in existing histSST experiment). All forcing agents to follow historical except LULCC. LULCC set to 1850 (exactly following hist-noLu prescription)",
+    "label": "histSST-noLu",
+    "namespace": "wcrp:cmip6:experiment-id:histsst-nolu",
+    "raw_name": "histSST-noLu",
+    "status": "pending"
+}

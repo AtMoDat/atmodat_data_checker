@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "percentage-borf",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "percentage-BORF",
+    "label": "percentage-BORF",
+    "namespace": "wcrp:input4mips:variable-id:percentage-borf",
+    "raw_name": "percentage-BORF",
+    "status": "pending"
+}

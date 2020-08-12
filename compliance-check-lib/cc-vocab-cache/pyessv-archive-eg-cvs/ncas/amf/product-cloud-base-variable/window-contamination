@@ -1,0 +1,22 @@
+{
+    "_type": "term", 
+    "canonical_name": "window-contamination", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "long_name": "Window Contamination (mV as measured by ADC: 0 - 2500)", 
+        "name": "window_contamination", 
+        "type": "float32", 
+        "units": "1", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "window_contamination", 
+    "namespace": "ncas:amf:product-cloud-base-variable:window-contamination", 
+    "raw_name": "window_contamination", 
+    "status": "pending", 
+    "uid": "bb7a22a6-fdc3-46d4-9b64-b6afeed2abfa"
+}

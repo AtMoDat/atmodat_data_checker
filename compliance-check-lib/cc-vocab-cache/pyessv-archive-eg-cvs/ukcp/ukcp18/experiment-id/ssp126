@@ -1,0 +1,38 @@
+{
+    "_type": "term",
+    "canonical_name": "ssp126",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "data": {
+        "activity_id": [
+            "ScenarioMIP"
+        ],
+        "additional_allowed_model_components": [
+            "AER",
+            "CHEM",
+            "BGC"
+        ],
+        "description": "Future scenario with low radiative forcing by the end of century. Following approximately RCP2.6 global forcing pathway but with new forcing based on SSP1. Concentration-driven. As a tier 2 option, this simulation should be extended to year 2300",
+        "end_year": "2100 or 2300",
+        "experiment": "update of RCP2.6 based on SSP1",
+        "experiment_id": "ssp126",
+        "min_number_yrs_per_sim": "86",
+        "parent_activity_id": [
+            "CMIP"
+        ],
+        "parent_experiment_id": [
+            "historical"
+        ],
+        "required_model_components": [
+            "AOGCM"
+        ],
+        "start_year": "2015",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "1"
+    },
+    "description": "Future scenario with low radiative forcing by the end of century. Following approximately RCP2.6 global forcing pathway but with new forcing based on SSP1. Concentration-driven. As a tier 2 option, this simulation should be extended to year 2300",
+    "namespace": "ukcp:ukcp18:experiment-id:ssp126",
+    "status": "pending",
+    "uid": "9a6d492d-45db-49f5-866d-19c88f4f4478"
+}

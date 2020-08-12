@@ -1,0 +1,21 @@
+{
+    "_type": "term", 
+    "canonical_name": "latitude", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "axis": "Y", 
+        "cell_methods": "time: point", 
+        "dimension": "time", 
+        "long_name": "Latitude", 
+        "name": "latitude", 
+        "standard_name": "latitude", 
+        "type": "float32", 
+        "units": "degrees_north", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "namespace": "ncas:amf:product-sonde-variable:latitude", 
+    "status": "pending", 
+    "uid": "c8f1841e-fcf5-4c13-8ee7-54d5b3ec00cb"
+}

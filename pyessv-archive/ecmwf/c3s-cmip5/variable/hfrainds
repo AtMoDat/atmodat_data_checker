@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "hfrainds",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "hfrainds",
+    "namespace": "ecmwf:c3s-cmip5:variable:hfrainds",
+    "status": "pending"
+}

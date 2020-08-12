@@ -1,0 +1,34 @@
+{
+    "_type": "term",
+    "canonical_name": "ism-asmb-std",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_id": [
+            "ISMIP6"
+        ],
+        "additional_allowed_model_components": [
+            ""
+        ],
+        "end_year": "",
+        "experiment": "offline ice sheet forced by initMIP synthetic atmospheric experiment",
+        "experiment_id": "ism-asmb-std",
+        "min_number_yrs_per_sim": "100",
+        "parent_activity_id": [
+            "ISMIP6"
+        ],
+        "parent_experiment_id": [
+            "ism-ctrl-std"
+        ],
+        "required_model_components": [
+            "ISM"
+        ],
+        "start_year": "",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "1"
+    },
+    "description": "Offline ice sheet simulation with synthetic atmospheric dataset to explore the uncertainty in sea level due to ice sheet initialization",
+    "namespace": "wcrp:cmip6:experiment-id:ism-asmb-std",
+    "status": "pending"
+}

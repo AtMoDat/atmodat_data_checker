@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "cnrm-aladin52",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "CNRM-ALADIN52",
+    "label": "CNRM-ALADIN52",
+    "namespace": "ecmwf:c3s-cordex:rcm-model:cnrm-aladin52",
+    "raw_name": "CNRM-ALADIN52",
+    "status": "pending"
+}

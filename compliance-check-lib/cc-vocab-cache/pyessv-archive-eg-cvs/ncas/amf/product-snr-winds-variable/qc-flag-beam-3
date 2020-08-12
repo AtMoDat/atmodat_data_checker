@@ -1,0 +1,23 @@
+{
+    "_type": "term", 
+    "canonical_name": "qc-flag-beam-3", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "dimension": "time, index", 
+        "flag_meanings": [
+            "not_used", 
+            "good_data", 
+            "bad_data"
+        ], 
+        "flag_values": "0b,1b, 2b", 
+        "long_name": "Data Quality flag: SNR Beam 3", 
+        "name": "qc_flag_beam_3", 
+        "type": "byte", 
+        "units": "1"
+    }, 
+    "label": "qc_flag_beam_3", 
+    "namespace": "ncas:amf:product-snr-winds-variable:qc-flag-beam-3", 
+    "raw_name": "qc_flag_beam_3", 
+    "status": "pending", 
+    "uid": "96b95dda-24c6-4908-8503-61e2ac7891c0"
+}

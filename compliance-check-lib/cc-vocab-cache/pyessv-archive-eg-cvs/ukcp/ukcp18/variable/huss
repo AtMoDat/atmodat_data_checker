@@ -1,0 +1,43 @@
+{
+    "_type": "term",
+    "canonical_name": "huss",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "data": {
+        "cmip6_cmor_tables_row_id": [
+            "704",
+            "705",
+            "707"
+        ],
+        "cmip6_name": "huss",
+        "cmip6_standard_name": "specific_humidity",
+        "description": "Specific humidity",
+        "label_units": "1",
+        "level": "1.5m",
+        "long_name": "Specific humidity",
+        "plot_label": "Specific humidity at 1.5m (1)",
+        "standard_name": "specific_humidity",
+        "strand": [
+            "land strand 1",
+            "land strand 2",
+            "land strand 3 12km",
+            "land strand 3 2km",
+            "marine",
+            "observations"
+        ],
+        "time_averaging": [
+            "instantaneous",
+            "mean"
+        ],
+        "time_step": [
+            "3hr",
+            "day",
+            "mon"
+        ],
+        "um_stash": "03237",
+        "units": "1"
+    },
+    "description": "Specific humidity",
+    "namespace": "ukcp:ukcp18:variable:huss",
+    "status": "pending",
+    "uid": "32b8b9ed-83b9-4a5b-9f49-2cfdf3a6cf18"
+}

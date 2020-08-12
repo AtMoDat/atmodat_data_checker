@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "co-openburning-share",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "CO_openburning_share",
+    "label": "CO_openburning_share",
+    "namespace": "wcrp:input4mips:variable-id:co-openburning-share",
+    "raw_name": "CO_openburning_share",
+    "status": "pending"
+}

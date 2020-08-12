@@ -1,0 +1,21 @@
+{
+    "_type": "term", 
+    "canonical_name": "ambient-aerosol-particle-diameter", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "coordinates": "latitude longitude", 
+        "dimension": "time, index", 
+        "long_name": "Ambient Aerosol Particle Diameter", 
+        "name": "ambient_aerosol_particle_diameter", 
+        "standard_name": "ambient_aerosol_particle_diameter", 
+        "type": "float32", 
+        "units": "um", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "ambient_aerosol_particle_diameter", 
+    "namespace": "ncas:amf:product-aerosol-size-distribution-variable:ambient-aerosol-particle-diameter", 
+    "raw_name": "ambient_aerosol_particle_diameter", 
+    "status": "pending", 
+    "uid": "e22c584a-80cc-48e1-b984-e908be493c24"
+}

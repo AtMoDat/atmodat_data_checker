@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "ua200",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "ua200",
+    "namespace": "ecmwf:c3s-cordex:variable:ua200",
+    "status": "pending"
+}

@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "futuresst-4xco2-solar",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Time slice at 1949 (picontrol) for G1ext to examine radiative forcing of abrupt4xCO2 and G1",
+    "label": "futureSST-4xCO2-solar",
+    "namespace": "wcrp:primavera:experiment:futuresst-4xco2-solar",
+    "raw_name": "futureSST-4xCO2-solar",
+    "status": "pending"
+}

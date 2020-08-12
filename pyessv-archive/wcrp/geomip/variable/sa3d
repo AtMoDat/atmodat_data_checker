@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "sa3d",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "sa3d",
+    "namespace": "wcrp:geomip:variable:sa3d",
+    "status": "pending"
+}

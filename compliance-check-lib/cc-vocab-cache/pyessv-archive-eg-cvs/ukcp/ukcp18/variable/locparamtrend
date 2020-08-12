@@ -1,0 +1,29 @@
+{
+    "_type": "term",
+    "canonical_name": "locparamtrend",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "data": {
+        "description": "Trend in skew surge location parameter",
+        "label_units": "m y-1",
+        "long_name": "Trend in skew surge location parameter",
+        "plot_label": "Trend in skew surge location parameter (m y-1)",
+        "strand": [
+            "land strand 1",
+            "land strand 2",
+            "land strand 3 12km",
+            "land strand 3 2km",
+            "marine",
+            "observations"
+        ],
+        "time_step": [
+            "n/a"
+        ],
+        "units": "m y-1"
+    },
+    "description": "Trend in skew surge location parameter",
+    "label": "locParamTrend",
+    "namespace": "ukcp:ukcp18:variable:locparamtrend",
+    "raw_name": "locParamTrend",
+    "status": "pending",
+    "uid": "7fb2dab8-a576-49d7-a75a-4802117ef9de"
+}

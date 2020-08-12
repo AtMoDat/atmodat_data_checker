@@ -1,0 +1,22 @@
+{
+    "_type": "term", 
+    "canonical_name": "attenuated-aerosol-backscatter-coefficient-cr", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time, index_of_range, index_of_angle", 
+        "long_name": "Attenuated backscatter coefficient (Cross Polarised)", 
+        "name": "attenuated_aerosol_backscatter_coefficient_cr", 
+        "type": "float32", 
+        "units": "m-1 sr-1", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "attenuated_aerosol_backscatter_coefficient_cr", 
+    "namespace": "ncas:amf:product-depolarisation-ratio-variable:attenuated-aerosol-backscatter-coefficient-cr", 
+    "raw_name": "attenuated_aerosol_backscatter_coefficient_cr", 
+    "status": "pending", 
+    "uid": "617ff581-3c6e-400c-9f17-b8738fa3c32e"
+}

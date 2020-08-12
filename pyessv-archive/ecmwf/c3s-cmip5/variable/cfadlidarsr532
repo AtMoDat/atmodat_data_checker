@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "cfadlidarsr532",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "cfadLidarsr532",
+    "label": "cfadLidarsr532",
+    "namespace": "ecmwf:c3s-cmip5:variable:cfadlidarsr532",
+    "raw_name": "cfadLidarsr532",
+    "status": "pending"
+}

@@ -1,0 +1,58 @@
+{
+    "_type": "term",
+    "canonical_name": "giss-e2-1-g-cc",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_participation": [
+            "C4MIP",
+            "CMIP"
+        ],
+        "cohort": [
+            "Registered"
+        ],
+        "institution_id": [
+            "NASA-GISS"
+        ],
+        "label_extended": "GISS-E2-1-G-CC",
+        "model_component": {
+            "aerosol": {
+                "description": "varies with physics-version (p==1 none, p==3 OMA, p==4 TOMAS, p==5 MATRIX)",
+                "native_nominal_resolution": "250 km"
+            },
+            "atmos": {
+                "description": "GISS-E2.1 (2 x 2.5 degrees; 144 x 90 longitude/latitude; 40 levels; top level 0.1 hPa)",
+                "native_nominal_resolution": "250 km"
+            },
+            "atmosChem": {
+                "description": "varies with physics-version (p==1 Non-interactive, p>1 GPUCCINI)",
+                "native_nominal_resolution": "250 km"
+            },
+            "land": {
+                "description": "GISS LSM",
+                "native_nominal_resolution": "250 km"
+            },
+            "landIce": {
+                "description": "Fixed",
+                "native_nominal_resolution": "250 km"
+            },
+            "ocean": {
+                "description": "GISS Ocean (1 deg; 360 x 180 longitude/latitude; 40 levels; top grid cell 0-10m)",
+                "native_nominal_resolution": "100 km"
+            },
+            "ocnBgchem": {
+                "description": "NOBM (NASA Ocean Biogeochemistry Model; same grid as ocean)",
+                "native_nominal_resolution": "100 km"
+            },
+            "seaIce": {
+                "description": "GISS SI (same grid as ocean)",
+                "native_nominal_resolution": "100 km"
+            }
+        },
+        "release_year": "2019",
+        "source_id": "GISS-E2-1-G-CC"
+    },
+    "label": "GISS-E2-1-G-CC",
+    "namespace": "wcrp:cmip6:source-id:giss-e2-1-g-cc",
+    "raw_name": "GISS-E2-1-G-CC",
+    "status": "pending"
+}

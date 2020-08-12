@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "hist-all-nat2",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Historical ALL forcing run with alternates estimate of solar and volcanic forcing",
+    "namespace": "wcrp:primavera:experiment:hist-all-nat2",
+    "status": "pending"
+}

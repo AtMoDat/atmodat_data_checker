@@ -1,0 +1,20 @@
+{
+    "_type": "term", 
+    "canonical_name": "wprimeco2primebar", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "long_name": "<W'CO2'>", 
+        "name": "wprimeco2primebar", 
+        "type": "float32", 
+        "units": "mmol m-2 s-1", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "namespace": "ncas:amf:product-flux-components-variable:wprimeco2primebar", 
+    "status": "pending", 
+    "uid": "4635481c-0d09-407f-84b5-58dd979a5cad"
+}

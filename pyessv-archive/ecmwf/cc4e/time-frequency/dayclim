@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "dayclim",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "dayClim",
+    "label": "dayClim",
+    "namespace": "ecmwf:cc4e:time-frequency:dayclim",
+    "raw_name": "dayClim",
+    "status": "pending"
+}

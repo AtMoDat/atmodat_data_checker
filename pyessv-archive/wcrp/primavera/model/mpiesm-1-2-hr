@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "mpiesm-1-2-hr",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "MPIESM-1-2-HR",
+    "label": "MPIESM-1-2-HR",
+    "namespace": "wcrp:primavera:model:mpiesm-1-2-hr",
+    "raw_name": "MPIESM-1-2-HR",
+    "status": "pending"
+}

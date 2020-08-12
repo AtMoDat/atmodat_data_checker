@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "ichec-ec-earth-rcp45-knmi-racmo22e-ipsl-cdft21-wfdei-1979-2005",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "ICHEC-EC-EARTH-rcp45-KNMI-RACMO22E-IPSL-CDFT21-WFDEI-1979-2005",
+    "label": "ICHEC-EC-EARTH-rcp45-KNMI-RACMO22E-IPSL-CDFT21-WFDEI-1979-2005",
+    "namespace": "ecmwf:cc4e:source-data-id:ichec-ec-earth-rcp45-knmi-racmo22e-ipsl-cdft21-wfdei-1979-2005",
+    "raw_name": "ICHEC-EC-EARTH-rcp45-KNMI-RACMO22E-IPSL-CDFT21-WFDEI-1979-2005",
+    "status": "pending"
+}

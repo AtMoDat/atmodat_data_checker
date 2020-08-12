@@ -1,0 +1,12 @@
+{
+    "_type": "term", 
+    "canonical_name": "longitude", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "length": "<n>", 
+        "units": "degrees_east"
+    }, 
+    "namespace": "ncas:amf:product-common-dimension-air:longitude", 
+    "status": "pending", 
+    "uid": "56aed91b-9bfc-472e-a1c8-76a7785cbe63"
+}

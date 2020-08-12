@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "mek-percentage-peat",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "MEK-percentage-PEAT",
+    "label": "MEK-percentage-PEAT",
+    "namespace": "wcrp:input4mips:variable-id:mek-percentage-peat",
+    "raw_name": "MEK-percentage-PEAT",
+    "status": "pending"
+}

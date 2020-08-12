@@ -1,0 +1,34 @@
+{
+    "_type": "term",
+    "canonical_name": "ism-ssp585-std",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "data": {
+        "activity_id": [
+            "ISMIP6"
+        ],
+        "additional_allowed_model_components": "",
+        "description": "Future climate ScenarioMIP SSP5-8.5 simulation using \"offline\" ice sheet models. Forcing for ice sheet model is the standard dataset based on ScenarioMIP ssp585",
+        "end_year": "2300",
+        "experiment": "offline ice sheet forced by ISMIP6-specified AOGCM ssp585 output",
+        "experiment_id": "ism-ssp585-std",
+        "min_number_yrs_per_sim": "85",
+        "parent_activity_id": [
+            "ISMIP6"
+        ],
+        "parent_experiment_id": [
+            "ism-historical-std"
+        ],
+        "required_model_components": [
+            "ISM"
+        ],
+        "start_year": "2015",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "2"
+    },
+    "description": "Future climate ScenarioMIP SSP5-8.5 simulation using \"offline\" ice sheet models. Forcing for ice sheet model is the standard dataset based on ScenarioMIP ssp585",
+    "namespace": "ukcp:ukcp18:experiment-id:ism-ssp585-std",
+    "status": "pending",
+    "uid": "39cc8ba0-de61-4b54-84da-b9c5e12bc439"
+}

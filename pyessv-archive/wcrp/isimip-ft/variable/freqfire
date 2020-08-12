@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "freqfire",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "freqFire",
+    "label": "freqFire",
+    "namespace": "wcrp:isimip-ft:variable:freqfire",
+    "raw_name": "freqFire",
+    "status": "pending"
+}

@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "nmvoc-em-solid-biofuel",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "NMVOC-em-solid-biofuel",
+    "label": "NMVOC-em-solid-biofuel",
+    "namespace": "wcrp:input4mips:variable-id:nmvoc-em-solid-biofuel",
+    "raw_name": "NMVOC-em-solid-biofuel",
+    "status": "pending"
+}

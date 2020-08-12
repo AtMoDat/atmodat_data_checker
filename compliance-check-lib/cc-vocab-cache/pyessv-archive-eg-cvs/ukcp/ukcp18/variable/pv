@@ -1,0 +1,34 @@
+{
+    "_type": "term",
+    "canonical_name": "pv",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "data": {
+        "description": "Vapour pressure",
+        "label_units": "hPa",
+        "long_name": "partial pressure of water vapour",
+        "notes": [
+            "Obs availability TBC"
+        ],
+        "plot_label": "Vapour pressure (hPa)",
+        "standard_name": "water_vapor_partial_pressure_in_air",
+        "strand": [
+            "land strand 1",
+            "land strand 2",
+            "land strand 3 12km",
+            "land strand 3 2km",
+            "marine",
+            "observations"
+        ],
+        "time_averaging": [
+            "LTA"
+        ],
+        "time_step": [
+            "mon"
+        ],
+        "units": "hPa"
+    },
+    "description": "Vapour pressure",
+    "namespace": "ukcp:ukcp18:variable:pv",
+    "status": "pending",
+    "uid": "6a4c720c-b948-4df8-a536-d7993ced89a7"
+}

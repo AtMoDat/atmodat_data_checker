@@ -1,0 +1,24 @@
+{
+    "_type": "term", 
+    "canonical_name": "qc-flag-channel-2-failure", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "dimension": "time", 
+        "flag_meanings": [
+            "not_used", 
+            "good_data", 
+            "bad_data_channel_failure", 
+            "suspect_data_time_stamp_error"
+        ], 
+        "flag_values": "0b,1b, 2b, 3b", 
+        "long_name": "Data Quality flag: Receiver channel 2 failed", 
+        "name": "qc_flag_channel_2_failure", 
+        "type": "byte", 
+        "units": "1"
+    }, 
+    "label": "qc_flag_channel_2_failure", 
+    "namespace": "ncas:amf:product-brightness-temperature-variable:qc-flag-channel-2-failure", 
+    "raw_name": "qc_flag_channel_2_failure", 
+    "status": "pending", 
+    "uid": "8a7e18f6-16fc-4e3b-b1e5-e0251a7a3ec2"
+}

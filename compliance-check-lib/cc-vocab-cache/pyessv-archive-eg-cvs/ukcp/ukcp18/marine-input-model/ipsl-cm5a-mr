@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "ipsl-cm5a-mr",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "label": "IPSL-CM5A-MR",
+    "namespace": "ukcp:ukcp18:marine-input-model:ipsl-cm5a-mr",
+    "raw_name": "IPSL-CM5A-MR",
+    "status": "pending",
+    "uid": "1656379f-ccea-4634-8e9d-fd69532d421a"
+}

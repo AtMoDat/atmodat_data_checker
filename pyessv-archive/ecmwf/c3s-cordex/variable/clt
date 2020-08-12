@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "clt",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "clt",
+    "namespace": "ecmwf:c3s-cordex:variable:clt",
+    "status": "pending"
+}

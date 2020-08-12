@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "hist-co2",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Historical CO2-only run",
+    "label": "hist-CO2",
+    "namespace": "wcrp:primavera:experiment:hist-co2",
+    "raw_name": "hist-CO2",
+    "status": "pending"
+}

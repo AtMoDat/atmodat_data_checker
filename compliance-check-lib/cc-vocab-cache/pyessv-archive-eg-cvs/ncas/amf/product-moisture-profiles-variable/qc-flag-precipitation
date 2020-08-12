@@ -1,0 +1,24 @@
+{
+    "_type": "term", 
+    "canonical_name": "qc-flag-precipitation", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "dimension": "time", 
+        "flag_meanings": [
+            "not_used", 
+            "good_data", 
+            "suspect_data_precipitation_detected", 
+            "suspect_data_time_stamp_error"
+        ], 
+        "flag_values": "0b,1b, 2b, 3b", 
+        "long_name": "Data Quality flag: Precipitation", 
+        "name": "qc_flag_precipitation", 
+        "type": "byte", 
+        "units": "1"
+    }, 
+    "label": "qc_flag_precipitation", 
+    "namespace": "ncas:amf:product-moisture-profiles-variable:qc-flag-precipitation", 
+    "raw_name": "qc_flag_precipitation", 
+    "status": "pending", 
+    "uid": "b6a93196-3ae0-46f3-9560-9d79999c1931"
+}

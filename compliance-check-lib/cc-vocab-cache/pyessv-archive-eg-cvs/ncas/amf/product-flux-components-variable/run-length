@@ -1,0 +1,21 @@
+{
+    "_type": "term", 
+    "canonical_name": "run-length", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "long_name": "Length of run", 
+        "name": "run_length", 
+        "type": "float32", 
+        "units": "s", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "run_length", 
+    "namespace": "ncas:amf:product-flux-components-variable:run-length", 
+    "raw_name": "run_length", 
+    "status": "pending", 
+    "uid": "b5848a20-d44b-44c5-813d-13890bda0de3"
+}

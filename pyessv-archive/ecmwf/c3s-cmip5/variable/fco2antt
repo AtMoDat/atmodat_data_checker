@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "fco2antt",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "fco2antt",
+    "namespace": "ecmwf:c3s-cmip5:variable:fco2antt",
+    "status": "pending"
+}

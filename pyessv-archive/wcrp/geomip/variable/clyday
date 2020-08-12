@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "clyday",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Clyday",
+    "label": "Clyday",
+    "namespace": "wcrp:geomip:variable:clyday",
+    "raw_name": "Clyday",
+    "status": "pending"
+}

@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "par",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "par",
+    "namespace": "wcrp:geomip:variable:par",
+    "status": "pending"
+}

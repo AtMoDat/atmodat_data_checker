@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "convoffamip",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "offamip with SPOOKIE",
+    "namespace": "wcrp:euclipse:experiment:convoffamip",
+    "status": "pending"
+}

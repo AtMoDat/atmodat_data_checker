@@ -1,0 +1,34 @@
+{
+    "_type": "term",
+    "canonical_name": "ism-historical-self",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_id": [
+            "ISMIP6"
+        ],
+        "additional_allowed_model_components": [
+            ""
+        ],
+        "end_year": "2014",
+        "experiment": "offline ice sheet forced by ISM's own AOGCM historical output",
+        "experiment_id": "ism-historical-self",
+        "min_number_yrs_per_sim": "165",
+        "parent_activity_id": [
+            "ISMIP6"
+        ],
+        "parent_experiment_id": [
+            "ism-piControl-self"
+        ],
+        "required_model_components": [
+            "ISM"
+        ],
+        "start_year": "1850",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "2"
+    },
+    "description": "Historical simulation using \"offline\" ice sheet models. Forcing for ice sheet model is from its own AOGCM",
+    "namespace": "wcrp:cmip6:experiment-id:ism-historical-self",
+    "status": "pending"
+}

@@ -1,0 +1,16 @@
+{
+    "_type": "term",
+    "canonical_name": "mri",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "consortia": [],
+        "coordinates": "140.1254479,36.0550149",
+        "homepage": "http://www.mri-jma.go.jp",
+        "name": "Meteorological Research Institute",
+        "postalAddress": "Tsukuba, Ibaraki 305-0052, Japan"
+    },
+    "label": "MRI",
+    "namespace": "wcrp:cmip6:institution-id:mri",
+    "raw_name": "MRI",
+    "status": "pending"
+}

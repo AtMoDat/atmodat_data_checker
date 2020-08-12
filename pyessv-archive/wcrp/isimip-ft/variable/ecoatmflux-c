@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "ecoatmflux-c",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "ecoatmflux_c",
+    "label": "ecoatmflux_c",
+    "namespace": "wcrp:isimip-ft:variable:ecoatmflux-c",
+    "raw_name": "ecoatmflux_c",
+    "status": "pending"
+}

@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "cf3hr",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "label": "CF3hr",
+    "namespace": "wcrp:cmip6:table-id:cf3hr",
+    "raw_name": "CF3hr",
+    "status": "pending"
+}

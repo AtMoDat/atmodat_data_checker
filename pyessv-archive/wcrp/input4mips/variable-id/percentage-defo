@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "percentage-defo",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "percentage-DEFO",
+    "label": "percentage-DEFO",
+    "namespace": "wcrp:input4mips:variable-id:percentage-defo",
+    "raw_name": "percentage-DEFO",
+    "status": "pending"
+}

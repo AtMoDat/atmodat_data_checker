@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "faf-stress",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "1xCO2 experiment, parallel to piControl, forced over the ocean by surface windstress anomalies obtained from the CMIP5 ensemble mean of 1pctCO2 experiments at the time of 2xCO2",
+    "namespace": "wcrp:primavera:experiment:faf-stress",
+    "status": "pending"
+}

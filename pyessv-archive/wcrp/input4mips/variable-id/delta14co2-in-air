@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "delta14co2-in-air",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Delta14co2-in-air",
+    "label": "Delta14co2-in-air",
+    "namespace": "wcrp:input4mips:variable-id:delta14co2-in-air",
+    "raw_name": "Delta14co2-in-air",
+    "status": "pending"
+}

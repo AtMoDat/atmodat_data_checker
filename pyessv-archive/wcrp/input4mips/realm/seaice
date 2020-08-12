@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "seaice",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "seaIce",
+    "label": "seaIce",
+    "namespace": "wcrp:input4mips:realm:seaice",
+    "raw_name": "seaIce",
+    "status": "pending"
+}

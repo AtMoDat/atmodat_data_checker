@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "access1-3",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "ACCESS1-3",
+    "label": "ACCESS1-3",
+    "namespace": "ecmwf:c3s-cmip5:model:access1-3",
+    "raw_name": "ACCESS1-3",
+    "status": "pending"
+}

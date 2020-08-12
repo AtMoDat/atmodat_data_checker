@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "piclim-o3",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Perturbation from 1850 control using 2014 ozone precursor emissions",
+    "label": "piClim-O3",
+    "namespace": "wcrp:primavera:experiment:piclim-o3",
+    "raw_name": "piClim-O3",
+    "status": "pending"
+}

@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "mohc-hadrem3-ga7-05",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "MOHC-HadREM3-GA7-05",
+    "label": "MOHC-HadREM3-GA7-05",
+    "namespace": "wcrp:cordex:rcm-model:mohc-hadrem3-ga7-05",
+    "raw_name": "MOHC-HadREM3-GA7-05",
+    "status": "pending"
+}

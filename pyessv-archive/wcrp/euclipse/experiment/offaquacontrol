@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "offaquacontrol",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "offaqua planet control",
+    "label": "offaquaControl",
+    "namespace": "wcrp:euclipse:experiment:offaquacontrol",
+    "raw_name": "offaquaControl",
+    "status": "pending"
+}

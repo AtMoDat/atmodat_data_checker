@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "nox-em-solid-biofuel",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "NOx-em-solid-biofuel",
+    "label": "NOx-em-solid-biofuel",
+    "namespace": "wcrp:input4mips:variable-id:nox-em-solid-biofuel",
+    "raw_name": "NOx-em-solid-biofuel",
+    "status": "pending"
+}

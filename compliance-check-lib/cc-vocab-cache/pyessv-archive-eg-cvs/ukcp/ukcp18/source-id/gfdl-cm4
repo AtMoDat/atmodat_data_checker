@@ -1,0 +1,59 @@
+{
+    "_type": "term",
+    "canonical_name": "gfdl-cm4",
+    "create_date": "2018-03-28 19:52:17.258367+00:00",
+    "data": {
+        "activity_participation": [
+            "CMIP",
+            "OMIP"
+        ],
+        "cohort": [
+            "Registered"
+        ],
+        "institution_id": [
+            "NOAA-GFDL"
+        ],
+        "label_extended": "GFDL-CM4",
+        "model_component": {
+            "aerosol": {
+                "description": "interactive",
+                "nominal_resolution": "100 km"
+            },
+            "atmos": {
+                "description": "GFDL-AM4.1 (Cubed-sphere (c96) - 1 degree nominal horizontal resolution; 360 x 180 longitude/latitude; 33 levels; top level 1 hPa)",
+                "nominal_resolution": "100 km"
+            },
+            "atmosChem": {
+                "description": "unnamed (fast chemistry, aerosol only)",
+                "nominal_resolution": "100 km"
+            },
+            "land": {
+                "description": "GFDL-LM4.0",
+                "nominal_resolution": "100 km"
+            },
+            "landIce": {
+                "description": "GFDL-LM4.0",
+                "nominal_resolution": "100 km"
+            },
+            "ocean": {
+                "description": "GFDL-MOM6 (tripolar - nominal 0.25 deg; 1440 x 720 longitude/latitude; 75 levels; top grid cell 0-2 m)",
+                "nominal_resolution": "25 km"
+            },
+            "ocnBgchem": {
+                "description": "none",
+                "nominal_resolution": "none"
+            },
+            "seaIce": {
+                "description": "SIS2",
+                "nominal_resolution": "25 km"
+            }
+        },
+        "release_year": "2017",
+        "source_id": "GFDL-CM4"
+    },
+    "label": "GFDL-CM4",
+    "namespace": "ukcp:ukcp18:source-id:gfdl-cm4",
+    "raw_name": "GFDL-CM4",
+    "status": "pending",
+    "uid": "a88b37c3-f889-44ad-884c-36da6894f7e3"
+}

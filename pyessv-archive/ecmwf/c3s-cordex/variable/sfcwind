@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "sfcwind",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "sfcWind",
+    "label": "sfcWind",
+    "namespace": "ecmwf:c3s-cordex:variable:sfcwind",
+    "raw_name": "sfcWind",
+    "status": "pending"
+}

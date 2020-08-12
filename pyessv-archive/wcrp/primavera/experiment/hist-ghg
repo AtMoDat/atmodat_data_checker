@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "hist-ghg",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Historical well-mixed GHG-only run. Models with interactive chemistry schemes should either turn off the chemistry or use a preindustrial climatology of stratospheric and tropospheric ozone in their radiation schemes. This will ensure that ozone is fixed in all these simulations, and simulated responses in models with and without coupled chemistry are comparable",
+    "label": "hist-GHG",
+    "namespace": "wcrp:primavera:experiment:hist-ghg",
+    "raw_name": "hist-GHG",
+    "status": "pending"
+}

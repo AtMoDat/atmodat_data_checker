@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "oc-em-solid-biofuel",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "OC-em-solid-biofuel",
+    "label": "OC-em-solid-biofuel",
+    "namespace": "wcrp:input4mips:variable-id:oc-em-solid-biofuel",
+    "raw_name": "OC-em-solid-biofuel",
+    "status": "pending"
+}

@@ -1,0 +1,31 @@
+{
+    "_type": "term",
+    "canonical_name": "csiro-arccss",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "consortia": [
+            {
+                "code": "CSIR",
+                "coordinates": "28.2746663,-25.7543385",
+                "homepage": "https://www.csir.co.za",
+                "name": "Council for Scientific and Industrial Research - Natural Resources and the Environment",
+                "postalAddress": "Pretoria, 0001, South Africa"
+            },
+            {
+                "code": "CSIRO",
+                "coordinates": "145.0435415,-38.0028413",
+                "homepage": "https://www.csiro.au/",
+                "name": "Commonwealth Scientific and Industrial Research Organisation",
+                "postalAddress": "Aspendale, Victoria 3195, Australia"
+            }
+        ],
+        "coordinates": "",
+        "homepage": "",
+        "name": "",
+        "postalAddress": ""
+    },
+    "label": "CSIRO-ARCCSS",
+    "namespace": "wcrp:cmip6:institution-id:csiro-arccss",
+    "raw_name": "CSIRO-ARCCSS",
+    "status": "pending"
+}

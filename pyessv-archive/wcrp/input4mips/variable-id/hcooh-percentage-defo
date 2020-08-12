@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "hcooh-percentage-defo",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "HCOOH-percentage-DEFO",
+    "label": "HCOOH-percentage-DEFO",
+    "namespace": "wcrp:input4mips:variable-id:hcooh-percentage-defo",
+    "raw_name": "HCOOH-percentage-DEFO",
+    "status": "pending"
+}

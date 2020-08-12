@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "ch4-em-solid-biofuel-anthro",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "CH4-em-SOLID-BIOFUEL-anthro",
+    "label": "CH4-em-SOLID-BIOFUEL-anthro",
+    "namespace": "wcrp:input4mips:variable-id:ch4-em-solid-biofuel-anthro",
+    "raw_name": "CH4-em-SOLID-BIOFUEL-anthro",
+    "status": "pending"
+}

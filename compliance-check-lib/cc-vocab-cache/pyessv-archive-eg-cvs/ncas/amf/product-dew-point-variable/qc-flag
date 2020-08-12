@@ -1,0 +1,24 @@
+{
+    "_type": "term", 
+    "canonical_name": "qc-flag", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "dimension": "time", 
+        "flag_meanings": [
+            "not_used", 
+            "good_data", 
+            "suspect_data_contact_creator", 
+            "bad_data_do_not_use"
+        ], 
+        "flag_values": "0b,1b, 2b, 3b", 
+        "long_name": "Data Quality flag", 
+        "name": "qc_flag", 
+        "type": "byte", 
+        "units": "1"
+    }, 
+    "label": "qc_flag", 
+    "namespace": "ncas:amf:product-dew-point-variable:qc-flag", 
+    "raw_name": "qc_flag", 
+    "status": "pending", 
+    "uid": "26193628-8508-4003-9b79-dafae819e927"
+}

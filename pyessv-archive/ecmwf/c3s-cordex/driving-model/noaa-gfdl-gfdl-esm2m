@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "noaa-gfdl-gfdl-esm2m",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "NOAA-GFDL-GFDL-ESM2M",
+    "label": "NOAA-GFDL-GFDL-ESM2M",
+    "namespace": "ecmwf:c3s-cordex:driving-model:noaa-gfdl-gfdl-esm2m",
+    "raw_name": "NOAA-GFDL-GFDL-ESM2M",
+    "status": "pending"
+}

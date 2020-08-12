@@ -1,0 +1,20 @@
+{
+    "_type": "term", 
+    "canonical_name": "wprimetsprime", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: point", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time, index", 
+        "long_name": "W'Ts'", 
+        "name": "wprimetsprime", 
+        "type": "float32", 
+        "units": "K m s-1", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "namespace": "ncas:amf:product-flux-components-variable:wprimetsprime", 
+    "status": "pending", 
+    "uid": "293fb7b1-a741-4952-b2e2-79838b52d062"
+}

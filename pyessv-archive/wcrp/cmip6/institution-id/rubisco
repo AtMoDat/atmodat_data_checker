@@ -1,0 +1,80 @@
+{
+    "_type": "term",
+    "canonical_name": "rubisco",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "consortia": [
+            {
+                "code": "ORNL",
+                "coordinates": "35.931193, -84.309671",
+                "homepage": "https://www.ornl.gov",
+                "name": "Oak Ridge National Laboratory",
+                "postalAddress": "Oak Ridge, TN 37831, USA"
+            },
+            {
+                "code": "ANL",
+                "coordinates": "41.718497, -87.978482",
+                "homepage": "https://www.anl.gov",
+                "name": "Argonne National Laboratory",
+                "postalAddress": "Argonne, IL 60439, USA"
+            },
+            {
+                "code": "BNL",
+                "coordinates": "40.864409, -72.874224",
+                "homepage": "https://www.bnl.gov",
+                "name": "Brookhaven National Laboratory",
+                "postalAddress": "Upton, NY 11973, USA"
+            },
+            {
+                "code": "LANL",
+                "coordinates": "35.876342, -106.318815",
+                "homepage": "https://www.lanl.gov",
+                "name": "Los Alamos National Laboratory",
+                "postalAddress": "Los Alamos, NM 87545"
+            },
+            {
+                "code": "LBNL",
+                "coordinates": "37.875086, -122.250964",
+                "homepage": "https://www.lbl.gov",
+                "name": "Lawrence Berkeley National Laboratory",
+                "postalAddress": "Berkeley, CA 94720, USA"
+            },
+            {
+                "code": "NAU",
+                "coordinates": "35.180361, -111.653947",
+                "homepage": "https://nau.edu",
+                "name": "Northern Arizona University",
+                "postalAddress": "Flagstaff, AZ 86011, USA"
+            },
+            {
+                "code": "NCAR",
+                "coordinates": "39.978482, -105.274526",
+                "homepage": "https://ncar.ucar.edu",
+                "name": "National Center for Atmospheric Research",
+                "postalAddress": "Boulder, CO 80305, USA"
+            },
+            {
+                "code": "UCI",
+                "coordinates": "33.640495, -117.844264",
+                "homepage": "https://uci.edu",
+                "name": "University of California Irvine",
+                "postalAddress": "Irvine, CA 92697, USA"
+            },
+            {
+                "code": "UM",
+                "coordinates": "42.278075, -83.738246",
+                "homepage": "https://umich.edu",
+                "name": "University of Michigan",
+                "postalAddress": "Ann Arbor, MI 48109, USA"
+            }
+        ],
+        "coordinates": "35.931193, -84.309671",
+        "homepage": "https://www.ornl.gov/staff-profile/forrest-m-hoffman",
+        "name": "Reducing Uncertainties in Biogeochemical Interactions through Synthesis and Computation",
+        "postalAddress": "ORNL Climate Change Science Institute, Building 4500N Room F106, 1 Bethel Valley Road, Oak Ridge, TN 37831-6301, USA"
+    },
+    "label": "RUBISCO",
+    "namespace": "wcrp:cmip6:institution-id:rubisco",
+    "raw_name": "RUBISCO",
+    "status": "pending"
+}

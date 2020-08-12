@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "mek-percentage-defo",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "MEK-percentage-DEFO",
+    "label": "MEK-percentage-DEFO",
+    "namespace": "wcrp:input4mips:variable-id:mek-percentage-defo",
+    "raw_name": "MEK-percentage-DEFO",
+    "status": "pending"
+}

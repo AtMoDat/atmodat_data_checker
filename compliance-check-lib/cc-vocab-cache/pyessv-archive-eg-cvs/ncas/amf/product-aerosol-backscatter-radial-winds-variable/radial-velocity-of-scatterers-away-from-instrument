@@ -1,0 +1,23 @@
+{
+    "_type": "term", 
+    "canonical_name": "radial-velocity-of-scatterers-away-from-instrument", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time, index_of_range, index_of_angle", 
+        "long_name": "Radial Velocity of Scatterers Away From Instrument", 
+        "name": "radial_velocity_of_scatterers_away_from_instrument", 
+        "standard_name": "radial_velocity_of_scatterers_away_from_instrument", 
+        "type": "float32", 
+        "units": "m s-1", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "radial_velocity_of_scatterers_away_from_instrument", 
+    "namespace": "ncas:amf:product-aerosol-backscatter-radial-winds-variable:radial-velocity-of-scatterers-away-from-instrument", 
+    "raw_name": "radial_velocity_of_scatterers_away_from_instrument", 
+    "status": "pending", 
+    "uid": "30f33821-f88f-4877-843a-755d7d74a01d"
+}

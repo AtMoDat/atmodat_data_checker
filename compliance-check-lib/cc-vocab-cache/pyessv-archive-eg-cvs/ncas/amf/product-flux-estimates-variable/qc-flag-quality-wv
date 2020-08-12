@@ -1,0 +1,24 @@
+{
+    "_type": "term", 
+    "canonical_name": "qc-flag-quality-wv", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "dimension": "time", 
+        "flag_meanings": [
+            "bad_data", 
+            "good_data _good_for_reasearch", 
+            "suspect_data_good_for_general_use", 
+            "suspect_data_requires_further_checking_but_may_be_ok_for_general_use"
+        ], 
+        "flag_values": "0b,1b, 2b, 3b", 
+        "long_name": "Quality flag: WV", 
+        "name": "qc_flag_quality_wv", 
+        "type": "byte", 
+        "units": "1"
+    }, 
+    "label": "qc_flag_quality_wv", 
+    "namespace": "ncas:amf:product-flux-estimates-variable:qc-flag-quality-wv", 
+    "raw_name": "qc_flag_quality_wv", 
+    "status": "pending", 
+    "uid": "999ef153-90a7-46b6-96eb-cc46fb026823"
+}

@@ -1,0 +1,58 @@
+{
+    "_type": "term",
+    "canonical_name": "noresm2-lmec",
+    "create_date": "2018-03-28 19:52:17.258367+00:00",
+    "data": {
+        "activity_participation": [
+            "AerChemMIP"
+        ],
+        "cohort": [
+            "Registered"
+        ],
+        "institution_id": [
+            "NCC"
+        ],
+        "label_extended": "NorESM2-LMEC (low atmosphere-medium ocean resolution, GHG emission driven, complex atmospheric chemistry)",
+        "model_component": {
+            "aerosol": {
+                "description": "OsloAero",
+                "nominal_resolution": ""
+            },
+            "atmos": {
+                "description": "CAM-OSLO (2 degree resolution; 144 x 96; 32 levels; top level 3 mb)",
+                "nominal_resolution": "250 km"
+            },
+            "atmosChem": {
+                "description": "OsloChemComp",
+                "nominal_resolution": ""
+            },
+            "land": {
+                "description": "CLM",
+                "nominal_resolution": ""
+            },
+            "landIce": {
+                "description": "CISM",
+                "nominal_resolution": "250 km"
+            },
+            "ocean": {
+                "description": "MICOM (1 degree resolution; 360 x 384; 70 levels; top grid cell minimum 0-2.5 m [native model uses hybrid density and generic upper-layer coordinate interpolated to z-level for contributed data])",
+                "nominal_resolution": "100 km"
+            },
+            "ocnBgchem": {
+                "description": "HAMOCC",
+                "nominal_resolution": ""
+            },
+            "seaIce": {
+                "description": "CICE",
+                "nominal_resolution": ""
+            }
+        },
+        "release_year": "2017",
+        "source_id": "NorESM2-LMEC"
+    },
+    "label": "NorESM2-LMEC",
+    "namespace": "ukcp:ukcp18:source-id:noresm2-lmec",
+    "raw_name": "NorESM2-LMEC",
+    "status": "pending",
+    "uid": "d7c5eda8-0aa7-40df-8174-b86d8377f9e9"
+}

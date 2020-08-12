@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "climatology-bounds",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "climatology_bounds",
+    "label": "climatology_bounds",
+    "namespace": "ecmwf:cc4e:thredds-exclude-variables:climatology-bounds",
+    "raw_name": "climatology_bounds",
+    "status": "pending"
+}

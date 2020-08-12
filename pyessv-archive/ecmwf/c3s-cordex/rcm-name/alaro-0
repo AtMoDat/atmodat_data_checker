@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "alaro-0",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "label": "ALARO-0",
+    "namespace": "ecmwf:c3s-cordex:rcm-name:alaro-0",
+    "raw_name": "ALARO-0",
+    "status": "pending"
+}

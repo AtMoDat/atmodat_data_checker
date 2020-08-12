@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "indicator-significance",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "indicator_significance",
+    "label": "indicator_significance",
+    "namespace": "ecmwf:cc4e:thredds-exclude-variables:indicator-significance",
+    "raw_name": "indicator_significance",
+    "status": "pending"
+}

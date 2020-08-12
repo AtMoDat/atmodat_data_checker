@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "intppico",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "intppico",
+    "namespace": "ecmwf:c3s-cmip5:variable:intppico",
+    "status": "pending"
+}

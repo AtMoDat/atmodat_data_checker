@@ -1,0 +1,61 @@
+{
+    "_type": "term",
+    "canonical_name": "kiost-esm",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_participation": [
+            "C4MIP",
+            "CMIP",
+            "DynVarMIP",
+            "PMIP",
+            "ScenarioMIP"
+        ],
+        "cohort": [
+            "Registered"
+        ],
+        "institution_id": [
+            "KIOST"
+        ],
+        "label_extended": "KIOST Earth System Model v2",
+        "model_component": {
+            "aerosol": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "atmos": {
+                "description": "GFDL-AM2.0 (cubed sphere (C48); 192 x 96 longitude/latitude; 32 vertical levels; top level 2 hPa)",
+                "native_nominal_resolution": "250 km"
+            },
+            "atmosChem": {
+                "description": "Simple carbon aerosol model (emission type)",
+                "native_nominal_resolution": "250 km"
+            },
+            "land": {
+                "description": "NCAR-CLM4",
+                "native_nominal_resolution": "250 km"
+            },
+            "landIce": {
+                "description": "NCAR-CLM4",
+                "native_nominal_resolution": "250 km"
+            },
+            "ocean": {
+                "description": "GFDL-MOM5.0 (tripolar - nominal 1.0 deg; 360 x 200 longitude/latitude; 52 levels; top grid cell 0-2 m; NK mixed layer scheme)",
+                "native_nominal_resolution": "100 km"
+            },
+            "ocnBgchem": {
+                "description": "TOPAZ2",
+                "native_nominal_resolution": "100 km"
+            },
+            "seaIce": {
+                "description": "GFDL-SIS",
+                "native_nominal_resolution": "100 km"
+            }
+        },
+        "release_year": "2018",
+        "source_id": "KIOST-ESM"
+    },
+    "label": "KIOST-ESM",
+    "namespace": "wcrp:cmip6:source-id:kiost-esm",
+    "raw_name": "KIOST-ESM",
+    "status": "pending"
+}

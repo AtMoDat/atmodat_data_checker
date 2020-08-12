@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "mrlso",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "mrlso",
+    "namespace": "ecmwf:c3s-cmip5:variable:mrlso",
+    "status": "pending"
+}

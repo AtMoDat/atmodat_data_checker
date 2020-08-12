@@ -1,0 +1,36 @@
+{
+    "_type": "term",
+    "canonical_name": "ssp119",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_id": [
+            "ScenarioMIP"
+        ],
+        "additional_allowed_model_components": [
+            "AER",
+            "CHEM",
+            "BGC"
+        ],
+        "end_year": "2100",
+        "experiment": "low-end scenario reaching 1.9 W m-2, based on SSP1",
+        "experiment_id": "ssp119",
+        "min_number_yrs_per_sim": "86",
+        "parent_activity_id": [
+            "CMIP"
+        ],
+        "parent_experiment_id": [
+            "historical"
+        ],
+        "required_model_components": [
+            "AOGCM"
+        ],
+        "start_year": "2015",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "2"
+    },
+    "description": "Future scenario with low radiative forcing throughout reaching about 1.9 W/m2 in 2100 based on SSP1. Concentration-driven",
+    "namespace": "wcrp:cmip6:experiment-id:ssp119",
+    "status": "pending"
+}

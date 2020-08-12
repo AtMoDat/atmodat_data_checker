@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "nasa-gmao",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "label": "NASA-GMAO",
+    "namespace": "ecmwf:c3s-cmip5:institute:nasa-gmao",
+    "raw_name": "NASA-GMAO",
+    "status": "pending"
+}

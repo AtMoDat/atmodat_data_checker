@@ -1,0 +1,44 @@
+{
+    "_type": "term",
+    "canonical_name": "uasanom",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "data": {
+        "anomaly_type": "absolute_change",
+        "cmip6_cmor_tables_row_id": [
+            "1909",
+            "1914"
+        ],
+        "cmip6_name": "uas",
+        "cmip6_standard_name": "eastward_wind",
+        "description": "Eastward wind",
+        "label_units": "m s-1",
+        "level": "10m",
+        "long_name": "Eastward wind component",
+        "plot_label": "Eastward wind anomaly at 10m (m s-1)",
+        "standard_name": "eastward_wind",
+        "strand": [
+            "land strand 1",
+            "land strand 2",
+            "land strand 3 12km",
+            "land strand 3 2km",
+            "marine",
+            "observations"
+        ],
+        "time_averaging": [
+            "instantaneous",
+            "mean"
+        ],
+        "time_step": [
+            "3hr",
+            "day"
+        ],
+        "um_stash": "30201",
+        "units": "m s-1"
+    },
+    "description": "Eastward wind",
+    "label": "uasAnom",
+    "namespace": "ukcp:ukcp18:variable:uasanom",
+    "raw_name": "uasAnom",
+    "status": "pending",
+    "uid": "4bebe45d-7c45-4488-8d9d-7bf67c6e4df9"
+}

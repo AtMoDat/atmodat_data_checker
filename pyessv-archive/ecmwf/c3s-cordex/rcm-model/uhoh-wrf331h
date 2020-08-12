@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "uhoh-wrf331h",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "UHOH-WRF331H",
+    "label": "UHOH-WRF331H",
+    "namespace": "ecmwf:c3s-cordex:rcm-model:uhoh-wrf331h",
+    "raw_name": "UHOH-WRF331H",
+    "status": "pending"
+}

@@ -1,0 +1,24 @@
+{
+    "_type": "term", 
+    "canonical_name": "qc-flag-chbr3", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "dimension": "time", 
+        "flag_meanings": [
+            "not_used", 
+            "good_data", 
+            "suspect_data_gas_concentration_below_calculated_detaction_limit_contact_data_originator_for_more_information.", 
+            "bad_data_do_not_use"
+        ], 
+        "flag_values": "0b,1b, 2b, 3b", 
+        "long_name": "Data Quality flag: CHBr3", 
+        "name": "qc_flag_chbr3", 
+        "type": "byte", 
+        "units": "1"
+    }, 
+    "label": "qc_flag_chbr3", 
+    "namespace": "ncas:amf:product-halocarbon-concentration-variable:qc-flag-chbr3", 
+    "raw_name": "qc_flag_chbr3", 
+    "status": "pending", 
+    "uid": "f8ceeede-31ab-421d-bfc8-b4b97c2d76de"
+}

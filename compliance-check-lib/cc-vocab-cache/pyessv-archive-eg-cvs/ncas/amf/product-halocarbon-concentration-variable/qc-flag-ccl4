@@ -1,0 +1,24 @@
+{
+    "_type": "term", 
+    "canonical_name": "qc-flag-ccl4", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "dimension": "time", 
+        "flag_meanings": [
+            "not_used", 
+            "good_data", 
+            "suspect_data_gas_concentration_below_calculated_detaction_limit_contact_data_originator_for_more_information.", 
+            "bad_data_do_not_use"
+        ], 
+        "flag_values": "0b,1b, 2b, 3b", 
+        "long_name": "Data Quality flag: CCl4", 
+        "name": "qc_flag_ccl4", 
+        "type": "byte", 
+        "units": "1"
+    }, 
+    "label": "qc_flag_ccl4", 
+    "namespace": "ncas:amf:product-halocarbon-concentration-variable:qc-flag-ccl4", 
+    "raw_name": "qc_flag_ccl4", 
+    "status": "pending", 
+    "uid": "7e73c080-bd6c-4c09-b521-bcb83647336a"
+}

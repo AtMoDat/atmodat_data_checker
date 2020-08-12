@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "hcooh-percentage-agri",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "HCOOH-percentage-AGRI",
+    "label": "HCOOH-percentage-AGRI",
+    "namespace": "wcrp:input4mips:variable-id:hcooh-percentage-agri",
+    "raw_name": "HCOOH-percentage-AGRI",
+    "status": "pending"
+}

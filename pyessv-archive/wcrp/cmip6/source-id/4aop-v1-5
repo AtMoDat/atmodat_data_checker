@@ -1,0 +1,57 @@
+{
+    "_type": "term",
+    "canonical_name": "4aop-v1-5",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_participation": [
+            "RFMIP"
+        ],
+        "cohort": [
+            "Registered"
+        ],
+        "institution_id": [
+            "IPSL"
+        ],
+        "label_extended": "Line-By-Line Radiative Transfer Model v1.5, Laboratoire Meteorologie Dynamique, GEISA spectroscopic database",
+        "model_component": {
+            "aerosol": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "atmos": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "atmosChem": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "land": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "landIce": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "ocean": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "ocnBgchem": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "seaIce": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            }
+        },
+        "release_year": "2019",
+        "source_id": "4AOP-v1-5"
+    },
+    "label": "4AOP-v1-5",
+    "namespace": "wcrp:cmip6:source-id:4aop-v1-5",
+    "raw_name": "4AOP-v1-5",
+    "status": "pending"
+}

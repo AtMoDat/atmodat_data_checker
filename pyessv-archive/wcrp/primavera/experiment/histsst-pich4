@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "histsst-pich4",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Historical (non-CH4) WMGHG concentrations and NTCF emissions, 1850 CH4 concentrations",
+    "label": "histSST-piCH4",
+    "namespace": "wcrp:primavera:experiment:histsst-pich4",
+    "raw_name": "histSST-piCH4",
+    "status": "pending"
+}

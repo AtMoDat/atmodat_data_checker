@@ -1,0 +1,47 @@
+{
+    "_type": "term",
+    "canonical_name": "tasminanom",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "data": {
+        "anomaly_type": "absolute_change",
+        "cmip6_cmor_tables_row_id": [
+            "1722",
+            "1723"
+        ],
+        "cmip6_name": "tasmin",
+        "cmip6_standard_name": "air_temperature",
+        "description": "Minimum air temperature",
+        "label_units": "\u00b0C",
+        "level": "1.5m",
+        "long_name": "Minimum air temperature",
+        "notes": [
+            "Use WPS for LS1-3"
+        ],
+        "plot_label": "Minimum air temperature anomaly at 1.5m (\u00b0C)",
+        "standard_name": "air_temperature",
+        "strand": [
+            "land strand 1",
+            "land strand 2",
+            "land strand 3 12km",
+            "land strand 3 2km",
+            "marine",
+            "observations"
+        ],
+        "time_averaging": [
+            "LTA",
+            "min"
+        ],
+        "time_step": [
+            "day",
+            "mon"
+        ],
+        "um_stash": "03236",
+        "units": "degC"
+    },
+    "description": "Minimum air temperature",
+    "label": "tasminAnom",
+    "namespace": "ukcp:ukcp18:variable:tasminanom",
+    "raw_name": "tasminAnom",
+    "status": "pending",
+    "uid": "54c9b25c-7718-4911-a3ea-0c7c23695c34"
+}

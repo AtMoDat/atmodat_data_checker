@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "g6sst2-solar",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Time slice at 2100 (G6solar)",
+    "label": "G6SST2-solar",
+    "namespace": "wcrp:primavera:experiment:g6sst2-solar",
+    "raw_name": "G6SST2-solar",
+    "status": "pending"
+}

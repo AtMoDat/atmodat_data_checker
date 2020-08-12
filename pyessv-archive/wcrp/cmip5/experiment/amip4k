@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "amip4k",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "AMIP plus 4K anomaly",
+    "label": "amip4K",
+    "namespace": "wcrp:cmip5:experiment:amip4k",
+    "raw_name": "amip4K",
+    "status": "pending"
+}

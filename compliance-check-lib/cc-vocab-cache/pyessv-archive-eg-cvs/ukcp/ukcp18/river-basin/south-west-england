@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "south-west-england",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "label": "south_west_england",
+    "namespace": "ukcp:ukcp18:river-basin:south-west-england",
+    "raw_name": "south_west_england",
+    "status": "pending",
+    "uid": "7ba31696-caa9-409a-9d0e-1053fc5992c5"
+}

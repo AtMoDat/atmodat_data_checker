@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "tossq",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "tossq",
+    "namespace": "ecmwf:c3s-cmip5:variable:tossq",
+    "status": "pending"
+}

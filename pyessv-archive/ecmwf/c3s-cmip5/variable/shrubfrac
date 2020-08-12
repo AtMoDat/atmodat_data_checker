@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "shrubfrac",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "shrubFrac",
+    "label": "shrubFrac",
+    "namespace": "ecmwf:c3s-cmip5:variable:shrubfrac",
+    "raw_name": "shrubFrac",
+    "status": "pending"
+}

@@ -1,0 +1,22 @@
+{
+    "_type": "term", 
+    "canonical_name": "sensor-view-angle", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "coordinates": "latitude longitude", 
+        "dimension": "time, index_of_angle", 
+        "long_name": "Scanning head elevation angle", 
+        "name": "sensor_view_angle", 
+        "standard_name": "sensor_view_angle", 
+        "type": "float32", 
+        "units": "degree", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "sensor_view_angle", 
+    "namespace": "ncas:amf:product-depolarisation-ratio-variable:sensor-view-angle", 
+    "raw_name": "sensor_view_angle", 
+    "status": "pending", 
+    "uid": "68a96ba7-fc5a-4c7f-8332-d90af0596689"
+}

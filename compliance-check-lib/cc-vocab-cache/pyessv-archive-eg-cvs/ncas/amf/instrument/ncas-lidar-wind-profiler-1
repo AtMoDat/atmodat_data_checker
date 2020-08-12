@@ -1,0 +1,13 @@
+{
+    "_type": "term", 
+    "canonical_name": "ncas-lidar-wind-profiler-1", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "description": "NCAS Lidar Wind Profiler unit 1", 
+        "instrument_id": "ncas-lidar-wind-profiler-1", 
+        "previous_instrument_ids": []
+    }, 
+    "namespace": "ncas:amf:instrument:ncas-lidar-wind-profiler-1", 
+    "status": "pending", 
+    "uid": "b3c22523-7bdd-4134-8d4e-fd7a273a17cb"
+}

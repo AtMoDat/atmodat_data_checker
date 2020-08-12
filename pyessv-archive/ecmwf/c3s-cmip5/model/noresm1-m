@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "noresm1-m",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "NorESM1-M",
+    "label": "NorESM1-M",
+    "namespace": "ecmwf:c3s-cmip5:model:noresm1-m",
+    "raw_name": "NorESM1-M",
+    "status": "pending"
+}

@@ -1,0 +1,22 @@
+{
+    "_type": "term", 
+    "canonical_name": "signal-to-noise-ratio-of-beam-1", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time, index", 
+        "long_name": "Signal to Noise Ratio of beam 1 (back panel)", 
+        "name": "signal_to_noise_ratio_of_beam_1", 
+        "type": "float32", 
+        "units": "dB", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "signal_to_noise_ratio_of_beam_1", 
+    "namespace": "ncas:amf:product-snr-winds-variable:signal-to-noise-ratio-of-beam-1", 
+    "raw_name": "signal_to_noise_ratio_of_beam_1", 
+    "status": "pending", 
+    "uid": "83d0ced0-b644-4dd1-8cdd-46556e58a93d"
+}

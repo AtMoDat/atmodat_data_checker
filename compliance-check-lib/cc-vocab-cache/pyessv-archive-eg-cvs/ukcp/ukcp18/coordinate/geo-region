@@ -1,0 +1,26 @@
+{
+    "_type": "term",
+    "canonical_name": "geo-region",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "data": {
+        "axis": "",
+        "bounds_values": "",
+        "climatology": "",
+        "formula": "",
+        "long_name": "<depends on type>",
+        "must_have_bounds": "no",
+        "positive": "up",
+        "standard_name": "region",
+        "stored_direction": "",
+        "type": "string array",
+        "units": "",
+        "valid_max": "",
+        "valid_min": "",
+        "value": "One of: 'Administrative Region', 'River Basin', 'Country'"
+    },
+    "label": "geo_region",
+    "namespace": "ukcp:ukcp18:coordinate:geo-region",
+    "raw_name": "geo_region",
+    "status": "pending",
+    "uid": "6616b7b1-2ef1-49da-a8ad-ec4b171fcdc6"
+}

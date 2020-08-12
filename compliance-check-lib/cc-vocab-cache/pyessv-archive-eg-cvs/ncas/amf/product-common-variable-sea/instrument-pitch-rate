@@ -1,0 +1,22 @@
+{
+    "_type": "term", 
+    "canonical_name": "instrument-pitch-rate", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "long_name": "Instrument Pitch Angle Rate of Change", 
+        "name": "instrument_pitch_rate", 
+        "type": "float32", 
+        "units": "degree s-1", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "instrument_pitch_rate", 
+    "namespace": "ncas:amf:product-common-variable-sea:instrument-pitch-rate", 
+    "raw_name": "instrument_pitch_rate", 
+    "status": "pending", 
+    "uid": "570b8696-a4da-4631-8ce6-4c11384dbf3a"
+}

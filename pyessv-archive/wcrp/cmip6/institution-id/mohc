@@ -1,0 +1,45 @@
+{
+    "_type": "term",
+    "canonical_name": "mohc",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "consortia": [
+            {
+                "code": "MOHC",
+                "coordinates": "-3.47577,50.7265528",
+                "homepage": "https://www.metoffice.gov.uk",
+                "name": "Met Office Hadley Centre",
+                "postalAddress": "Fitzroy Road, Exeter, Devon, EX1 3PB, UK"
+            },
+            {
+                "code": "NCAS",
+                "coordinates": "-1.5613477,53.804464",
+                "homepage": "https://www.ncas.ac.uk/",
+                "name": "National Centre for Atmospheric Science",
+                "postalAddress": "71-75 Clarendon Rd, Leeds LS2 9PH, UK"
+            },
+            {
+                "code": "STFC",
+                "coordinates": "-1.7854037,51.5667586",
+                "homepage": "https://stfc.ukri.org/",
+                "name": "Science and Technology Facilities Council",
+                "postalAddress": "Polaris House, North Star Avenue, Swindon SN2 1SZ, UK"
+            },
+            {
+                "code": "CEDA",
+                "coordinates": "-1.3167481,51.573797",
+                "homepage": "http://www.ceda.ac.uk/",
+                "name": "Centre for Environmental Data Analysis",
+                "postalAddress": "Rutherford Appleton Laboratory, Harwell Oxford, UK"
+            }
+        ],
+        "coordinates": "-3.47577,50.7265528",
+        "homepage": "https://www.metoffice.gov.uk",
+        "name": "Met Office Hadley Centre",
+        "postalAddress": "Fitzroy Road, Exeter, Devon, EX1 3PB, UK"
+    },
+    "label": "MOHC",
+    "namespace": "wcrp:cmip6:institution-id:mohc",
+    "raw_name": "MOHC",
+    "status": "pending"
+}

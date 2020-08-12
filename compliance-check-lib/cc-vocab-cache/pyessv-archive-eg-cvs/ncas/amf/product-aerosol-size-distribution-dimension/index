@@ -1,0 +1,12 @@
+{
+    "_type": "term", 
+    "canonical_name": "index", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "length": "<m>", 
+        "units": "1"
+    }, 
+    "namespace": "ncas:amf:product-aerosol-size-distribution-dimension:index", 
+    "status": "pending", 
+    "uid": "153a7085-31d7-49ec-b1e2-2073c5394691"
+}

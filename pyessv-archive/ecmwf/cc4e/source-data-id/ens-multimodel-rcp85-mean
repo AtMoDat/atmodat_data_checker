@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "ens-multimodel-rcp85-mean",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "ens-multiModel-rcp85-mean",
+    "label": "ens-multiModel-rcp85-mean",
+    "namespace": "ecmwf:cc4e:source-data-id:ens-multimodel-rcp85-mean",
+    "raw_name": "ens-multiModel-rcp85-mean",
+    "status": "pending"
+}

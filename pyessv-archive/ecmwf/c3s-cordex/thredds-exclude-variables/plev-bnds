@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "plev-bnds",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "plev_bnds",
+    "label": "plev_bnds",
+    "namespace": "ecmwf:c3s-cordex:thredds-exclude-variables:plev-bnds",
+    "raw_name": "plev_bnds",
+    "status": "pending"
+}

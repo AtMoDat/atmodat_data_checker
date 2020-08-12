@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "g1",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Quadruple preindustrial CO2 and balance with solar constant reduction",
+    "label": "G1",
+    "namespace": "wcrp:geomip:experiment:g1",
+    "raw_name": "G1",
+    "status": "pending"
+}

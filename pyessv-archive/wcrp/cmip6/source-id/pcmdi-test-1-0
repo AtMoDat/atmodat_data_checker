@@ -1,0 +1,57 @@
+{
+    "_type": "term",
+    "canonical_name": "pcmdi-test-1-0",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_participation": [
+            "CMIP"
+        ],
+        "cohort": [
+            "Registered"
+        ],
+        "institution_id": [
+            "PCMDI"
+        ],
+        "label_extended": "PCMDI-test 1.0 (This entry is free text for users to contribute verbose information)",
+        "model_component": {
+            "aerosol": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "atmos": {
+                "description": "Earth1.0-gettingHotter (360 x 180 longitude/latitude; 50 levels; top level 0.1 mb)",
+                "native_nominal_resolution": "1x1 degree"
+            },
+            "atmosChem": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "land": {
+                "description": "Earth1.0",
+                "native_nominal_resolution": "1x1 degree"
+            },
+            "landIce": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "ocean": {
+                "description": "BlueMarble1.0-warming (360 x 180 longitude/latitude; 50 levels; top grid cell 0-10 m)",
+                "native_nominal_resolution": "1x1 degree"
+            },
+            "ocnBgchem": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "seaIce": {
+                "description": "Declining1.0-warming (360 x 180 longitude/latitude)",
+                "native_nominal_resolution": "1x1 degree"
+            }
+        },
+        "release_year": "1989",
+        "source_id": "PCMDI-test-1-0"
+    },
+    "label": "PCMDI-test 1.0",
+    "namespace": "wcrp:cmip6:source-id:pcmdi-test-1-0",
+    "raw_name": "PCMDI-test-1-0",
+    "status": "pending"
+}

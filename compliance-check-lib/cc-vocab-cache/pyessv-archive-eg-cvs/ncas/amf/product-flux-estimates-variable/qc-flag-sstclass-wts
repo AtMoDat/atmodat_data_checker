@@ -1,0 +1,30 @@
+{
+    "_type": "term", 
+    "canonical_name": "qc-flag-sstclass-wts", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "dimension": "time", 
+        "flag_meanings": [
+            "not_used", 
+            "good_data", 
+            "suspect_data", 
+            "suspect_data", 
+            "suspect_data", 
+            "suspect_data", 
+            "suspect_data", 
+            "suspect_data", 
+            "suspect_data", 
+            "bad_data"
+        ], 
+        "flag_values": "0b,1b, 2b, 3b, 4b, 5b, 6b, 7b, 8b, 9b", 
+        "long_name": "Quality flag: Steady State Class WTs", 
+        "name": "qc_flag_sstclass_wts", 
+        "type": "byte", 
+        "units": "1"
+    }, 
+    "label": "qc_flag_sstclass_wts", 
+    "namespace": "ncas:amf:product-flux-estimates-variable:qc-flag-sstclass-wts", 
+    "raw_name": "qc_flag_sstclass_wts", 
+    "status": "pending", 
+    "uid": "7c4e0ef6-ffd9-4306-9a14-826bb9ad97aa"
+}

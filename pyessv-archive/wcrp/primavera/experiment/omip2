@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "omip2",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Global ocean - sea-ice coupled experiment forced with the JRA-55 inter-annually varying atmospheric and river data sets for years 1958-2016. Initial ocean tracer fields are based on observations. All Priority=1 OMIP diagnostics are requested for all five cycles of the 59-year forcing to quantify drift. All OMIP diagnostics (Priority=1,2,3) are requested for the 5th cycle",
+    "namespace": "wcrp:primavera:experiment:omip2",
+    "status": "pending"
+}

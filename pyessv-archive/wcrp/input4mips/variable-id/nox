@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "nox",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "NOx",
+    "label": "NOx",
+    "namespace": "wcrp:input4mips:variable-id:nox",
+    "raw_name": "NOx",
+    "status": "pending"
+}

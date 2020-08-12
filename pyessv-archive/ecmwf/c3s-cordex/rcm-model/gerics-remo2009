@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "gerics-remo2009",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "GERICS-REMO2009",
+    "label": "GERICS-REMO2009",
+    "namespace": "ecmwf:c3s-cordex:rcm-model:gerics-remo2009",
+    "raw_name": "GERICS-REMO2009",
+    "status": "pending"
+}

@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "aladin53",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "label": "ALADIN53",
+    "namespace": "ecmwf:c3s-cordex:rcm-name:aladin53",
+    "raw_name": "ALADIN53",
+    "status": "pending"
+}

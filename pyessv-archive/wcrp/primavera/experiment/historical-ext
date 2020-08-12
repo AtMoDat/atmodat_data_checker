@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "historical-ext",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Extension beyond 2014 of the CMIP6 historical",
+    "namespace": "wcrp:primavera:experiment:historical-ext",
+    "status": "pending"
+}

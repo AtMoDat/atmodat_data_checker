@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "uci-fut2cokhotsk-1-0",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "UCI-fut2COkhotsk-1-0",
+    "label": "UCI-fut2COkhotsk-1-0",
+    "namespace": "wcrp:input4mips:source-id:uci-fut2cokhotsk-1-0",
+    "raw_name": "UCI-fut2COkhotsk-1-0",
+    "status": "pending"
+}

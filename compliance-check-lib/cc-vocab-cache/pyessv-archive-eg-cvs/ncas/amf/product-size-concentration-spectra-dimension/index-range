@@ -1,0 +1,14 @@
+{
+    "_type": "term", 
+    "canonical_name": "index-range", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "length": "<i>", 
+        "units": "1"
+    }, 
+    "label": "index_range", 
+    "namespace": "ncas:amf:product-size-concentration-spectra-dimension:index-range", 
+    "raw_name": "index_range", 
+    "status": "pending", 
+    "uid": "28c8cd57-d740-4571-a580-e777da22e1cc"
+}

@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "auth-met",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "AUTH-Met",
+    "label": "AUTH-Met",
+    "namespace": "ecmwf:c3s-cordex:institute:auth-met",
+    "raw_name": "AUTH-Met",
+    "status": "pending"
+}

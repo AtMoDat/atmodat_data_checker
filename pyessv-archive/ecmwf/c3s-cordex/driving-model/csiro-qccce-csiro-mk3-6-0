@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "csiro-qccce-csiro-mk3-6-0",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "CSIRO-QCCCE-CSIRO-Mk3-6-0",
+    "label": "CSIRO-QCCCE-CSIRO-Mk3-6-0",
+    "namespace": "ecmwf:c3s-cordex:driving-model:csiro-qccce-csiro-mk3-6-0",
+    "raw_name": "CSIRO-QCCCE-CSIRO-Mk3-6-0",
+    "status": "pending"
+}

@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "amip-future4k",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "As CMIP5/CFMIP-2 amipFuture experiment. AMIP experiment where SSTs are subject to a composite SST warming pattern derived from coupled models, scaled to an ice-free ocean mean of 4K",
+    "label": "amip-future4K",
+    "namespace": "wcrp:primavera:experiment:amip-future4k",
+    "raw_name": "amip-future4K",
+    "status": "pending"
+}

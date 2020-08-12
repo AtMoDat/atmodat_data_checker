@@ -1,0 +1,23 @@
+{
+    "_type": "term", 
+    "canonical_name": "mass-concentration-of-nitrate-in-ambient-aerosol-particles-in-air", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: ????", 
+        "chemical_species": "NO3", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "long_name": "Mass concentration of NO3 component of ambient aerosol particles in air", 
+        "name": "mass_concentration_of_nitrate_in_ambient_aerosol_particles_in_air", 
+        "type": "float32", 
+        "units": "ug cm3-1", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "mass_concentration_of_nitrate_in_ambient_aerosol_particles_in_air", 
+    "namespace": "ncas:amf:product-aerosol-no3-so4-nh3-org-concentration-variable:mass-concentration-of-nitrate-in-ambient-aerosol-particles-in-air", 
+    "raw_name": "mass_concentration_of_nitrate_in_ambient_aerosol_particles_in_air", 
+    "status": "pending", 
+    "uid": "912cfe1b-9572-4cd2-8523-491f470e5457"
+}

@@ -1,0 +1,8 @@
+{
+    "_type": "term", 
+    "canonical_name": "aerosol-optical-depth", 
+    "create_date": "2018-07-09 13:09:00", 
+    "namespace": "ncas:amf:product:aerosol-optical-depth", 
+    "status": "pending", 
+    "uid": "b0dfd7d7-68cb-4bb0-9588-0be2049a326e"
+}

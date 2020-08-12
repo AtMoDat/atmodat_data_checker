@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "nmvoc-em-openburning",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "NMVOC_em_openburning",
+    "label": "NMVOC_em_openburning",
+    "namespace": "wcrp:input4mips:variable-id:nmvoc-em-openburning",
+    "raw_name": "NMVOC_em_openburning",
+    "status": "pending"
+}

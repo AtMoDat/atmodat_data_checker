@@ -1,0 +1,39 @@
+{
+    "_type": "term",
+    "canonical_name": "ssp585-withism",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "data": {
+        "activity_id": [
+            "ISMIP6"
+        ],
+        "additional_allowed_model_components": [
+            "AER",
+            "CHEM",
+            "BGC"
+        ],
+        "description": "Future climate from ScenarioMIP SSP5-8.5 simulation that includes interactive ice sheets. Set up follows the standard SSP5-8.5 experiment",
+        "end_year": "2300",
+        "experiment": "ssp585 with interactive ice sheet",
+        "experiment_id": "ssp585-withism",
+        "min_number_yrs_per_sim": "85",
+        "parent_activity_id": [
+            "ISMIP6"
+        ],
+        "parent_experiment_id": [
+            "historical-withism"
+        ],
+        "required_model_components": [
+            "AOGCM",
+            "ISM"
+        ],
+        "start_year": "2015",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "2"
+    },
+    "description": "Future climate from ScenarioMIP SSP5-8.5 simulation that includes interactive ice sheets. Set up follows the standard SSP5-8.5 experiment",
+    "namespace": "ukcp:ukcp18:experiment-id:ssp585-withism",
+    "status": "pending",
+    "uid": "00ca6415-d40c-4e9c-958b-6a22b32b4de1"
+}

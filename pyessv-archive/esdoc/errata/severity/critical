@@ -1,0 +1,12 @@
+{
+    "_type": "term",
+    "canonical_name": "critical",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "color": "#a61c00",
+        "sortOrdinal": 3
+    },
+    "label": "Critical",
+    "namespace": "esdoc:errata:severity:critical",
+    "status": "pending"
+}

@@ -1,0 +1,27 @@
+{
+    "_type": "term",
+    "canonical_name": "skewsurgetrend",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "data": {
+        "description": "21st century Trend in extreme still water level due to storminess change alone",
+        "label_units": "m y-1",
+        "long_name": "21st century Trend in extreme still water level due to storminess change alone",
+        "plot_label": "21st century Trend in extreme still water level due to storminess change alone (m y-1)",
+        "strand": [
+            "observations"
+        ],
+        "time_averaging": [
+            "average rate over 2007-2099"
+        ],
+        "time_step": [
+            "n/a"
+        ],
+        "units": "m y-1"
+    },
+    "description": "21st century Trend in extreme still water level due to storminess change alone",
+    "label": "skewSurgeTrend",
+    "namespace": "ukcp:ukcp18:variable:skewsurgetrend",
+    "raw_name": "skewSurgeTrend",
+    "status": "pending",
+    "uid": "4b45ca0a-3b7a-42a0-a094-a21713c572f2"
+}

@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "historicalghg",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Historical with well-mixed greenhouse gases only",
+    "label": "historicalGHG",
+    "namespace": "wcrp:cmip5:experiment:historicalghg",
+    "raw_name": "historicalGHG",
+    "status": "pending"
+}

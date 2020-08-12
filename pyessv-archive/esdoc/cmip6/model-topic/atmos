@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "atmos",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "label": "Atmosphere",
+    "namespace": "esdoc:cmip6:model-topic:atmos",
+    "status": "pending"
+}

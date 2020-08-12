@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "uom-image-ssp126-1-2-0",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "UoM-IMAGE-ssp126-1-2-0",
+    "label": "UoM-IMAGE-ssp126-1-2-0",
+    "namespace": "wcrp:input4mips:source-id:uom-image-ssp126-1-2-0",
+    "raw_name": "UoM-IMAGE-ssp126-1-2-0",
+    "status": "pending"
+}

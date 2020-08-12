@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "c2h4-percentage-defo",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "C2H4-percentage-DEFO",
+    "label": "C2H4-percentage-DEFO",
+    "namespace": "wcrp:input4mips:variable-id:c2h4-percentage-defo",
+    "raw_name": "C2H4-percentage-DEFO",
+    "status": "pending"
+}

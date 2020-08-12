@@ -1,0 +1,7 @@
+{
+    "_type": "term",
+    "canonical_name": "fixed",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "namespace": "wcrp:cordex-adjust:las-time-delta:fixed",
+    "status": "pending"
+}

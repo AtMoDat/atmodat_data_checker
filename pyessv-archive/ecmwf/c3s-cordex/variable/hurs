@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "hurs",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "hurs",
+    "namespace": "ecmwf:c3s-cordex:variable:hurs",
+    "status": "pending"
+}

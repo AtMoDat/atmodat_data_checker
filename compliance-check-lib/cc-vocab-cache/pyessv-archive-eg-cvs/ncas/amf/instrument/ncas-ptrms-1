@@ -1,0 +1,15 @@
+{
+    "_type": "term", 
+    "canonical_name": "ncas-ptrms-1", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "description": "NCAS Proton Transfer Reaction Mass Spectrometer unit 1", 
+        "instrument_id": "ncas-ptrms-1", 
+        "previous_instrument_ids": [
+            "uea-ptrms"
+        ]
+    }, 
+    "namespace": "ncas:amf:instrument:ncas-ptrms-1", 
+    "status": "pending", 
+    "uid": "135806fe-10f0-43c7-8ff8-0c8cb9e53ef7"
+}

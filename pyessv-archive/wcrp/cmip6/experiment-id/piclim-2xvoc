@@ -1,0 +1,38 @@
+{
+    "_type": "term",
+    "canonical_name": "piclim-2xvoc",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_id": [
+            "AerChemMIP"
+        ],
+        "additional_allowed_model_components": [
+            "BGC"
+        ],
+        "end_year": "",
+        "experiment": "pre-industrial climatological SSTs and forcing, but with doubled emissions of biogenic VOCs",
+        "experiment_id": "piClim-2xVOC",
+        "min_number_yrs_per_sim": "30",
+        "parent_activity_id": [
+            "CMIP"
+        ],
+        "parent_experiment_id": [
+            "piControl"
+        ],
+        "required_model_components": [
+            "AGCM",
+            "AER",
+            "CHEM"
+        ],
+        "start_year": "",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "3"
+    },
+    "description": "1850 control with doubled emissions of biogenic VOCs",
+    "label": "piClim-2xVOC",
+    "namespace": "wcrp:cmip6:experiment-id:piclim-2xvoc",
+    "raw_name": "piClim-2xVOC",
+    "status": "pending"
+}

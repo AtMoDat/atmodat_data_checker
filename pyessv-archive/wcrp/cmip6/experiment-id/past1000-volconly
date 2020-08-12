@@ -1,0 +1,36 @@
+{
+    "_type": "term",
+    "canonical_name": "past1000-volconly",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_id": [
+            "PMIP"
+        ],
+        "additional_allowed_model_components": [
+            "AER",
+            "CHEM",
+            "BGC"
+        ],
+        "end_year": "1849",
+        "experiment": "last millennium experiment using only volcanic forcing",
+        "experiment_id": "past1000-volconly",
+        "min_number_yrs_per_sim": "1000",
+        "parent_activity_id": [
+            "no parent"
+        ],
+        "parent_experiment_id": [
+            "no parent"
+        ],
+        "required_model_components": [
+            "AOGCM"
+        ],
+        "start_year": "850",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "2"
+    },
+    "description": "Parallel experiment to past1000. Instead of the complete forcing set, only volcanic forcing is considered",
+    "namespace": "wcrp:cmip6:experiment-id:past1000-volconly",
+    "status": "pending"
+}

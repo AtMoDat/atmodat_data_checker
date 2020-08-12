@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "lmon",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "label": "Lmon",
+    "namespace": "wcrp:cmip6:table-id:lmon",
+    "raw_name": "Lmon",
+    "status": "pending"
+}

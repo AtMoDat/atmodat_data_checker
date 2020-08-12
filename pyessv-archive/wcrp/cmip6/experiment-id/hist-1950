@@ -1,0 +1,34 @@
+{
+    "_type": "term",
+    "canonical_name": "hist-1950",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_id": [
+            "HighResMIP"
+        ],
+        "additional_allowed_model_components": [
+            "AER"
+        ],
+        "end_year": "2014",
+        "experiment": "coupled historical 1950-2014",
+        "experiment_id": "hist-1950",
+        "min_number_yrs_per_sim": "65",
+        "parent_activity_id": [
+            "HighResMIP"
+        ],
+        "parent_experiment_id": [
+            "spinup-1950"
+        ],
+        "required_model_components": [
+            "AOGCM"
+        ],
+        "start_year": "1950",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "2"
+    },
+    "description": "Coupled integrations with historic external forcings (as in highresSST-present)",
+    "namespace": "wcrp:cmip6:experiment-id:hist-1950",
+    "status": "pending"
+}

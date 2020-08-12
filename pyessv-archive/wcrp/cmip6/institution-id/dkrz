@@ -1,0 +1,16 @@
+{
+    "_type": "term",
+    "canonical_name": "dkrz",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "consortia": [],
+        "coordinates": "9.9742932,53.566859",
+        "homepage": "https://www.dkrz.de",
+        "name": "German Climate Computing Centre",
+        "postalAddress": "Hamburg 20146, Germany"
+    },
+    "label": "DKRZ",
+    "namespace": "wcrp:cmip6:institution-id:dkrz",
+    "raw_name": "DKRZ",
+    "status": "pending"
+}

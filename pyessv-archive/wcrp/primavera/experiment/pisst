@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "pisst",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "An AGCM experiment with monthly-varying SSTs, sea-ice, atmospheric constituents and any other necessary boundary conditions (e.g. vegetation if required) taken from each models own piControl run (using the 30 years of piControl that are parallel to years 111-140 of its abrupt4xCO2 run). Dynamic vegetation should be turned off in all the piSST set of experiments",
+    "label": "piSST",
+    "namespace": "wcrp:primavera:experiment:pisst",
+    "raw_name": "piSST",
+    "status": "pending"
+}

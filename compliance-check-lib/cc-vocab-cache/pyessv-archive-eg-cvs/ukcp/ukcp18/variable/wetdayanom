@@ -1,0 +1,32 @@
+{
+    "_type": "term",
+    "canonical_name": "wetdayanom",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "data": {
+        "anomaly_type": "absolute_change",
+        "description": "Wettest day",
+        "long_name": "Wettest day",
+        "plot_label": "Wettest day anomaly ()",
+        "strand": [
+            "land strand 1",
+            "land strand 2",
+            "land strand 3 12km",
+            "land strand 3 2km",
+            "marine",
+            "observations"
+        ],
+        "time_averaging": [
+            "total"
+        ],
+        "time_step": [
+            "annual"
+        ],
+        "um_stash": "16222"
+    },
+    "description": "Wettest day",
+    "label": "wetdayAnom",
+    "namespace": "ukcp:ukcp18:variable:wetdayanom",
+    "raw_name": "wetdayAnom",
+    "status": "pending",
+    "uid": "79b99f50-304e-4a18-bde2-79e7a22c1607"
+}

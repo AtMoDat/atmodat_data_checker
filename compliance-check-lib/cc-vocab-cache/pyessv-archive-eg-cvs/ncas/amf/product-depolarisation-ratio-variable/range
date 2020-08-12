@@ -1,0 +1,19 @@
+{
+    "_type": "term", 
+    "canonical_name": "range", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "coordinates": "latitude longitude", 
+        "dimension": "time, index_of_range, index_of_angle", 
+        "long_name": "Distance of measurement volume centre point from instrument.", 
+        "name": "range", 
+        "type": "float32", 
+        "units": "m", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "namespace": "ncas:amf:product-depolarisation-ratio-variable:range", 
+    "status": "pending", 
+    "uid": "c9f58e81-550d-4e40-a4af-fe761b2a4229"
+}

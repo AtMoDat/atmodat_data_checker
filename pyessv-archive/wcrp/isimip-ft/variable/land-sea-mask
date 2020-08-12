@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "land-sea-mask",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "land_sea_mask",
+    "label": "land_sea_mask",
+    "namespace": "wcrp:isimip-ft:variable:land-sea-mask",
+    "raw_name": "land_sea_mask",
+    "status": "pending"
+}

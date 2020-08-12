@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "gm",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "gm",
+    "namespace": "wcrp:input4mips:grid-label:gm",
+    "status": "pending"
+}

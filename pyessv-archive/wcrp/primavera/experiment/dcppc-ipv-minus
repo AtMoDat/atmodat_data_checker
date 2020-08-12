@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "dcppc-ipv-minus",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Mechanisms and predictability of the hiatus and of similar long timescale variations of both signs",
+    "label": "dcppC-ipv-minus",
+    "namespace": "wcrp:primavera:experiment:dcppc-ipv-minus",
+    "raw_name": "dcppC-ipv-minus",
+    "status": "pending"
+}

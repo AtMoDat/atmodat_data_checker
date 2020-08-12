@@ -1,0 +1,158 @@
+suite_name: "atmodat_standard_checker:1.0"
+
+checks:
+  #1. check if file is indeed a netCDF
+  - check_id: "file_format_check"
+    parameters: {}
+    check_name: "checklib.register.NCFileSoftwareCheck"
+
+  #2. check global attributes
+
+  #2.a. Type and Existence Check
+  - check_id: "comment_attribute_type_check"
+    parameters: {"attribute": "comment", "type": str, "status": "optional"}
+    check_name: "checklib.register.GlobalAttrTypeCheck"
+
+  - check_id: "contact_attribute_type_check"
+    parameters: {"attribute": "contact", "type": str, "status": "recommended"}
+    check_name: "checklib.register.GlobalAttrTypeCheck"
+
+  - check_id: "conventions_attribute_type_check"
+    parameters: {"attribute": "conventions", "type": str, "status": "mandatory"}
+    check_name: "checklib.register.GlobalAttrTypeCheck"
+
+  - check_id: "creation_date_attribute_type_check"
+    parameters: {"attribute": "creation_date", "type": str, "status": "recommended"}
+    check_name: "checklib.register.GlobalAttrTypeCheck"
+
+  - check_id: "creator_attribute_type_check"
+    parameters: {"attribute": "creator", "type": str, "status": "recommended"}
+    check_name: "checklib.register.GlobalAttrTypeCheck"
+
+  - check_id: "crs_attribute_type_check"
+    parameters: {"attribute": "crs", "type": str, "status": "recommended"}
+    check_name: "checklib.register.GlobalAttrTypeCheck"
+
+  - check_id: "featureType_attribute_type_check"
+    parameters: {"attribute": "featureType", "type": str, "status": "special"}
+    check_name: "checklib.register.GlobalAttrTypeCheck"
+
+  - check_id: "frequency_attribute_type_check"
+    parameters: {"attribute": "frequency", "type": str, "status": "recommended"}
+    check_name: "checklib.register.GlobalAttrTypeCheck"
+
+  - check_id: "further_info_url_attribute_type_check"
+    parameters: {"attribute": "further_info_url", "type": str, "status": "optional"}
+    check_name: "checklib.register.GlobalAttrTypeCheck"
+
+  - check_id: "geospatial_lat_resolution_attribute_type_check"
+    parameters: {"attribute": "geospatial_lat_resolution", "type": str, "status": "recommended"}
+    check_name: "checklib.register.GlobalAttrTypeCheck"
+
+  - check_id: "geospatial_lon_resolution_attribute_type_check"
+    parameters: {"attribute": "geospatial_lon_resolution", "type": str, "status": "recommended"}
+    check_name: "checklib.register.GlobalAttrTypeCheck"
+
+  - check_id: "geospatial_vertical_resolution_attribute_type_check"
+    parameters: {"attribute": "geospatial_vertical_resolution", "type": str, "status": "recommended"}
+    check_name: "checklib.register.GlobalAttrTypeCheck"
+
+  - check_id: "history_attribute_type_check"
+    parameters: {"attribute": "history", "type": str, "status": "recommended"}
+    check_name: "checklib.register.GlobalAttrTypeCheck"
+
+  - check_id: "institution_attribute_type_check"
+    parameters: {"attribute": "institution", "type": str, "status": "mandatory"}
+    check_name: "checklib.register.GlobalAttrTypeCheck"
+
+  - check_id: "institution_id_attribute_type_check"
+    parameters: {"attribute": "institution_id", "type": str, "status": "recommended"}
+    check_name: "checklib.register.GlobalAttrTypeCheck"
+
+  - check_id: "keywords_attribute_type_check"
+    parameters: {"attribute": "keywords", "type": str, "status": "recommended"}
+    check_name: "checklib.register.GlobalAttrTypeCheck"
+
+  - check_id: "keywords_vocabulary_attribute_type_check"
+    parameters: {"attribute": "keywords_vocabulary", "type": str, "status": "optional"}
+    check_name: "checklib.register.GlobalAttrTypeCheck"
+
+  - check_id: "license_attribute_type_check"
+    parameters: {"attribute": "license", "type": str, "status": "recommended"}
+    check_name: "checklib.register.GlobalAttrTypeCheck"
+    
+  - check_id: "metadata_link_type_check"
+    parameters: {"attribute": "metadata_link", "type": str, "status": "optional"}
+    check_name: "checklib.register.GlobalAttrTypeCheck"
+
+  - check_id: "nominal_resolution_type_check"
+    parameters: {"attribute": "nominal_resolution", "type": str, "status": "recommended"}
+    check_name: "checklib.register.GlobalAttrTypeCheck"
+  
+  - check_id: "processing_level_attribute_type_check"
+    parameters: {"attribute": "processing_level", "type": str, "status": "optional"}
+    check_name: "checklib.register.GlobalAttrTypeCheck"
+
+  - check_id: "program_attribute_type_check"
+    parameters: {"attribute": "program", "type": str, "status": "optional"}
+    check_name: "checklib.register.GlobalAttrTypeCheck"
+
+  - check_id: "project_attribute_type_check"
+    parameters: {"attribute": "project", "type": str, "status": "optional"}
+    check_name: "checklib.register.GlobalAttrTypeCheck"
+
+  - check_id: "realm_attribute_type_check"
+    parameters: {"attribute": "realm", "type": str, "status": "recommended"}
+    check_name: "checklib.register.GlobalAttrTypeCheck"
+
+  - check_id: "references_attribute_type_check"
+    parameters: {"attribute": "references", "type": str, "status": "optional"}
+    check_name: "checklib.register.GlobalAttrTypeCheck"
+
+  - check_id: "source_attribute_type_check"
+    parameters: {"attribute": "source", "type": str, "status": "mandatory"}
+    check_name: "checklib.register.GlobalAttrTypeCheck"
+
+  - check_id: "source_type_attribute_type_check"
+    parameters: {"attribute": "source_type", "type": str, "status": "recommended"}
+    check_name: "checklib.register.GlobalAttrTypeCheck"
+
+  - check_id: "standard_name_vocabulary_attribute_type_check"
+    parameters: {"attribute": "standard_name_vocabulary", "type": str, "status": "recommended"}
+    check_name: "checklib.register.GlobalAttrTypeCheck"
+
+  - check_id: "summary_attribute_type_check"
+    parameters: {"attribute": "summary", "type": str, "status": "recommended"}
+    check_name: "checklib.register.GlobalAttrTypeCheck"
+
+  - check_id: "title_attribute_type_check"
+    parameters: {"attribute": "title", "type": str, "status": "recommended"}
+    check_name: "checklib.register.GlobalAttrTypeCheck"
+
+  # 2.b. CV Check
+
+  - check_id: "conventions_attribute_CV_check"
+    parameters: {"attribute": "conventions", "vocab_lookup": "label", "vocabulary_ref": "atmodat:atmodat", "status": "mandatory"}
+    check_name: "checklib.register.GlobalAttrVocabCheckByStatus"
+
+  - check_id: "featureType_attribute_type_check"
+    parameters: {"attribute": "featureType", "type": str, "vocabulary_ref": "atmodat:atmodat", "status": "optional"}
+    check_name: "checklib.register.GlobalAttrVocabCheckByStatus"
+
+  - check_id: "frequency_attribute_check"
+    parameters: {"attribute": "frequency", "vocab_lookup": "label", "vocabulary_ref": "atmodat:atmodat", "status": "required"}
+    check_name: "checklib.register.GlobalAttrVocabCheckByStatus"
+
+  - check_id: "nominal_resolution_attribute_CV_check"
+    parameters: {"attribute": "nominal_resolution", "vocab_lookup": "label", "vocabulary_ref": "atmodat:atmodat", "status": "required"}
+    check_name: "checklib.register.GlobalAttrVocabCheckByStatus"
+
+  - check_id: "realm_attribute_CV_check"
+    parameters: {"attribute": "realm", "vocab_lookup": "label", "vocabulary_ref": "atmodat:atmodat", "status": "required"}
+    check_name: "checklib.register.GlobalAttrVocabCheckByStatus"
+
+  - check_id: "source_type_CV_check"
+    parameters: {"attribute": "source_type", "vocab_lookup": "label", "vocabulary_ref": "atmodat:atmodat", "status": "required"}
+    check_name: "checklib.register.GlobalAttrVocabCheckByStatus"
+
+

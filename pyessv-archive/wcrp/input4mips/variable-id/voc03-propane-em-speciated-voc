@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "voc03-propane-em-speciated-voc",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "VOC03-propane-em-speciated-VOC",
+    "label": "VOC03-propane-em-speciated-VOC",
+    "namespace": "wcrp:input4mips:variable-id:voc03-propane-em-speciated-voc",
+    "raw_name": "VOC03-propane-em-speciated-VOC",
+    "status": "pending"
+}

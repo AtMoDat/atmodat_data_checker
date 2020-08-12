@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "eyr",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Eyr",
+    "label": "Eyr",
+    "namespace": "wcrp:primavera:cmor-table:eyr",
+    "raw_name": "Eyr",
+    "status": "pending"
+}

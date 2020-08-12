@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "zossq",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "zossq",
+    "namespace": "ecmwf:c3s-cmip5:variable:zossq",
+    "status": "pending"
+}

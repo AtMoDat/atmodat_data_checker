@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "med-11",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "HYMEX Mediterranean",
+    "label": "MED-11",
+    "namespace": "wcrp:cordex:domain:med-11",
+    "raw_name": "MED-11",
+    "status": "pending"
+}

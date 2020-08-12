@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "c2h5oh-percentage-defo",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "C2H5OH-percentage-DEFO",
+    "label": "C2H5OH-percentage-DEFO",
+    "namespace": "wcrp:input4mips:variable-id:c2h5oh-percentage-defo",
+    "raw_name": "C2H5OH-percentage-DEFO",
+    "status": "pending"
+}

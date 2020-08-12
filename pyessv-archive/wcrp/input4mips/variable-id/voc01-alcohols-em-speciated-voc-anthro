@@ -1,0 +1,13 @@
+{
+    "_type": "term",
+    "alternative_names": [
+        "VOC01_alcohols_em_speciated_VOC_anthro"
+    ],
+    "canonical_name": "voc01-alcohols-em-speciated-voc-anthro",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "VOC01-alcohols-em-speciated-VOC-anthro",
+    "label": "VOC01-alcohols-em-speciated-VOC-anthro",
+    "namespace": "wcrp:input4mips:variable-id:voc01-alcohols-em-speciated-voc-anthro",
+    "raw_name": "VOC01-alcohols-em-speciated-VOC-anthro",
+    "status": "pending"
+}

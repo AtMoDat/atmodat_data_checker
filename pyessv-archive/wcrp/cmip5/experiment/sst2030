@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "sst2030",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "2030 time-slice",
+    "namespace": "wcrp:cmip5:experiment:sst2030",
+    "status": "pending"
+}

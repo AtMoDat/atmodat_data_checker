@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "sza5",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "sza5",
+    "namespace": "ecmwf:cc4e:thredds-exclude-variables:sza5",
+    "status": "pending"
+}

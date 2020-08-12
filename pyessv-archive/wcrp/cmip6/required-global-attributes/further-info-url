@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "further-info-url",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "label": "further_info_url",
+    "namespace": "wcrp:cmip6:required-global-attributes:further-info-url",
+    "raw_name": "further_info_url",
+    "status": "pending"
+}

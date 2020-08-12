@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "aogcm",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "label": "AOGCM",
+    "namespace": "wcrp:cmip6:source-type:aogcm",
+    "raw_name": "AOGCM",
+    "status": "pending"
+}

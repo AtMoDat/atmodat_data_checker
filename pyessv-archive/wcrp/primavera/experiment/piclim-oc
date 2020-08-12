@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "piclim-oc",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Perturbation from 1850 control using 2014 OC emissions",
+    "label": "piClim-OC",
+    "namespace": "wcrp:primavera:experiment:piclim-oc",
+    "raw_name": "piClim-OC",
+    "status": "pending"
+}

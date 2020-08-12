@@ -1,0 +1,36 @@
+{
+    "_type": "term",
+    "canonical_name": "volc-pinatubo-strat",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_id": [
+            "VolMIP"
+        ],
+        "additional_allowed_model_components": [
+            "AER",
+            "CHEM",
+            "BGC"
+        ],
+        "end_year": "",
+        "experiment": "Pinatubo experiment with partial radiative forcing, includes only stratospheric warming",
+        "experiment_id": "volc-pinatubo-strat",
+        "min_number_yrs_per_sim": "3",
+        "parent_activity_id": [
+            "CMIP"
+        ],
+        "parent_experiment_id": [
+            "piControl"
+        ],
+        "required_model_components": [
+            "AOGCM"
+        ],
+        "start_year": "",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "1"
+    },
+    "description": "As volc-pinatubo-full, but with prescribed perturbation to the total (LW+SW) radiative heating rates",
+    "namespace": "wcrp:cmip6:experiment-id:volc-pinatubo-strat",
+    "status": "pending"
+}

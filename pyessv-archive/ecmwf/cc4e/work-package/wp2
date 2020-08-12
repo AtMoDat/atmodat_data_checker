@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "wp2",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "wp2",
+    "namespace": "ecmwf:cc4e:work-package:wp2",
+    "status": "pending"
+}

@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "ncc-noresm1-m-rcp45-r1i1p1-smhi-rca4-r1",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "NCC-NorESM1-M-rcp45-r1i1p1-SMHI-RCA4-r1",
+    "label": "NCC-NorESM1-M-rcp45-r1i1p1-SMHI-RCA4-r1",
+    "namespace": "ecmwf:cc4e:source-data-id:ncc-noresm1-m-rcp45-r1i1p1-smhi-rca4-r1",
+    "raw_name": "NCC-NorESM1-M-rcp45-r1i1p1-SMHI-RCA4-r1",
+    "status": "pending"
+}

@@ -1,0 +1,12 @@
+{
+    "_type": "term", 
+    "canonical_name": "time", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "length": "<n>", 
+        "units": "seconds since 1970-01-01 00:00:00"
+    }, 
+    "namespace": "ncas:amf:product-common-dimension-sea:time", 
+    "status": "pending", 
+    "uid": "7408e595-2975-445b-8cd6-18cd7a39db03"
+}

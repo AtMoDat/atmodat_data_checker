@@ -1,0 +1,62 @@
+{
+    "_type": "term",
+    "canonical_name": "awi-cm-1-0-hr",
+    "create_date": "2018-03-28 19:52:17.258367+00:00",
+    "data": {
+        "activity_participation": [
+            "CORDEX",
+            "HighResMIP",
+            "OMIP",
+            "SIMIP",
+            "VIACSAB"
+        ],
+        "cohort": [
+            "Registered"
+        ],
+        "institution_id": [
+            "AWI"
+        ],
+        "label_extended": "AWI-CM 1.0 HR",
+        "model_component": {
+            "aerosol": {
+                "description": "none",
+                "nominal_resolution": "none"
+            },
+            "atmos": {
+                "description": "ECHAM6.3.02p4 (T127L95 native atmosphere T127 gaussian grid; 384 x 192 longitude/latitude; 95 levels; top level 80 km)",
+                "nominal_resolution": "100 km"
+            },
+            "atmosChem": {
+                "description": "none",
+                "nominal_resolution": "none"
+            },
+            "land": {
+                "description": "JSBACH 3.10",
+                "nominal_resolution": "100 km"
+            },
+            "landIce": {
+                "description": "none",
+                "nominal_resolution": "none"
+            },
+            "ocean": {
+                "description": "FESOM 1.4 (unstructured grid in the horizontal with 1306775 wet nodes; 46 levels; top grid cell 0-5 m)",
+                "nominal_resolution": "25 km"
+            },
+            "ocnBgchem": {
+                "description": "none",
+                "nominal_resolution": "none"
+            },
+            "seaIce": {
+                "description": "FESOM 1.4",
+                "nominal_resolution": "25 km"
+            }
+        },
+        "release_year": "2017",
+        "source_id": "AWI-CM-1-0-HR"
+    },
+    "label": "AWI-CM 1.0 HR",
+    "namespace": "ukcp:ukcp18:source-id:awi-cm-1-0-hr",
+    "raw_name": "AWI-CM-1-0-HR",
+    "status": "pending",
+    "uid": "1ab6ea6d-a49a-413c-b748-876fa4935c59"
+}

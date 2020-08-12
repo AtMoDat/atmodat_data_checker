@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "hadgem3-gc31-ll",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "HadGEM3-GC31-LL",
+    "label": "HadGEM3-GC31-LL",
+    "namespace": "wcrp:primavera:model:hadgem3-gc31-ll",
+    "raw_name": "HadGEM3-GC31-LL",
+    "status": "pending"
+}

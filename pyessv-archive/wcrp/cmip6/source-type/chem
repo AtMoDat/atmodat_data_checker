@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "chem",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "label": "CHEM",
+    "namespace": "wcrp:cmip6:source-type:chem",
+    "raw_name": "CHEM",
+    "status": "pending"
+}

@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "canrcm4",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "label": "CanRCM4",
+    "namespace": "ecmwf:c3s-cordex:rcm-name:canrcm4",
+    "raw_name": "CanRCM4",
+    "status": "pending"
+}

@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "highressst-p4k",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Similar to CFMIP amip-p4K, add a uniform warming of 4K to highresSST-present SSTs and run the experiment parallel to years 2005-2014 of highresSST-present",
+    "label": "highresSST-p4K",
+    "namespace": "wcrp:primavera:experiment:highressst-p4k",
+    "raw_name": "highresSST-p4K",
+    "status": "pending"
+}

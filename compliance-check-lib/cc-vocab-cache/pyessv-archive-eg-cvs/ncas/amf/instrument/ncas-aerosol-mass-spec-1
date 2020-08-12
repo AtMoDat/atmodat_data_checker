@@ -1,0 +1,15 @@
+{
+    "_type": "term", 
+    "canonical_name": "ncas-aerosol-mass-spec-1", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "description": "NCAS Aerosol Mass Spectrometer unit 1", 
+        "instrument_id": "ncas-aerosol-mass-spec-1", 
+        "previous_instrument_ids": [
+            "man-ams"
+        ]
+    }, 
+    "namespace": "ncas:amf:instrument:ncas-aerosol-mass-spec-1", 
+    "status": "pending", 
+    "uid": "dc4fcabd-0b5e-444c-a011-8d7e47fb6a3f"
+}

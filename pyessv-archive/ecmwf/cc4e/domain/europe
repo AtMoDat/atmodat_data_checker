@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "europe",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "europe",
+    "namespace": "ecmwf:cc4e:domain:europe",
+    "status": "pending"
+}

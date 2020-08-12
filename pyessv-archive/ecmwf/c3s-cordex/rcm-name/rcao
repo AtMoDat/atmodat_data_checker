@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "rcao",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "label": "RCAO",
+    "namespace": "ecmwf:c3s-cordex:rcm-name:rcao",
+    "raw_name": "RCAO",
+    "status": "pending"
+}

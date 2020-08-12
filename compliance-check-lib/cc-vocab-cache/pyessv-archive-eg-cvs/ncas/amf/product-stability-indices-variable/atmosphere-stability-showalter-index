@@ -1,0 +1,23 @@
+{
+    "_type": "term", 
+    "canonical_name": "atmosphere-stability-showalter-index", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "long_name": "Atmosphere Stability Showalter Index (SI)", 
+        "name": "atmosphere_stability_showalter_index", 
+        "standard_name": "atmosphere_stability_showalter_index", 
+        "type": "float32", 
+        "units": "K", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "atmosphere_stability_showalter_index", 
+    "namespace": "ncas:amf:product-stability-indices-variable:atmosphere-stability-showalter-index", 
+    "raw_name": "atmosphere_stability_showalter_index", 
+    "status": "pending", 
+    "uid": "1413639e-9488-46a9-b5e3-80bac74c6722"
+}

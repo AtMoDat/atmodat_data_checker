@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "hoch2cho-percentage-defo",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "HOCH2CHO-percentage-DEFO",
+    "label": "HOCH2CHO-percentage-DEFO",
+    "namespace": "wcrp:input4mips:variable-id:hoch2cho-percentage-defo",
+    "raw_name": "HOCH2CHO-percentage-DEFO",
+    "status": "pending"
+}

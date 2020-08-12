@@ -1,0 +1,12 @@
+{
+    "_type": "term", 
+    "canonical_name": "cvao", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "description": "cape verde atmospheric observatory", 
+        "platform_id": "cvao"
+    }, 
+    "namespace": "ncas:amf:platform:cvao", 
+    "status": "pending", 
+    "uid": "9e632a3e-a2f5-4f3e-a714-e7b6c22b426e"
+}

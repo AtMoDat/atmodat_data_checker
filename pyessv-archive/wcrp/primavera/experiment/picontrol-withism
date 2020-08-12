@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "picontrol-withism",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Pre-industrial control simulation that includes interactive ice sheets",
+    "label": "piControl-withism",
+    "namespace": "wcrp:primavera:experiment:picontrol-withism",
+    "raw_name": "piControl-withism",
+    "status": "pending"
+}

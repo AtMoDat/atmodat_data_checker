@@ -1,0 +1,9 @@
+compliance-checker
+pyessv
+
+#=========================
+# Testing
+pytest
+iris
+xarray
+psutil

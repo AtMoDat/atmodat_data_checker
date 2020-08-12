@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "volc-pinatubo-full",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "1991 Pinatubo forcing as used in the CMIP6 historical simulations. Requires special diagnostics of radiative and latent heating rates. A large number of ensemble members is required to address internal atmospheric variability",
+    "namespace": "wcrp:primavera:experiment:volc-pinatubo-full",
+    "status": "pending"
+}

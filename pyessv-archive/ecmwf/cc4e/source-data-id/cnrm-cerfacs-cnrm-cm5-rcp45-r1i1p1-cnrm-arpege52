@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "cnrm-cerfacs-cnrm-cm5-rcp45-r1i1p1-cnrm-arpege52",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "CNRM-CERFACS-CNRM-CM5-rcp45-r1i1p1-CNRM-ARPEGE52",
+    "label": "CNRM-CERFACS-CNRM-CM5-rcp45-r1i1p1-CNRM-ARPEGE52",
+    "namespace": "ecmwf:cc4e:source-data-id:cnrm-cerfacs-cnrm-cm5-rcp45-r1i1p1-cnrm-arpege52",
+    "raw_name": "CNRM-CERFACS-CNRM-CM5-rcp45-r1i1p1-CNRM-ARPEGE52",
+    "status": "pending"
+}

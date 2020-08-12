@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "cnrm-cerfacs-cnrm-cm5-rcp45-smhi-rca4-ipsl-cdft21-wfdei-1979-2005",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "CNRM-CERFACS-CNRM-CM5-rcp45-SMHI-RCA4-IPSL-CDFT21-WFDEI-1979-2005",
+    "label": "CNRM-CERFACS-CNRM-CM5-rcp45-SMHI-RCA4-IPSL-CDFT21-WFDEI-1979-2005",
+    "namespace": "ecmwf:cc4e:source-data-id:cnrm-cerfacs-cnrm-cm5-rcp45-smhi-rca4-ipsl-cdft21-wfdei-1979-2005",
+    "raw_name": "CNRM-CERFACS-CNRM-CM5-rcp45-SMHI-RCA4-IPSL-CDFT21-WFDEI-1979-2005",
+    "status": "pending"
+}

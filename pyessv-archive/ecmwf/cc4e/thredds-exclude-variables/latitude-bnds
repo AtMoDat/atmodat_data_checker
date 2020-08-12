@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "latitude-bnds",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "latitude_bnds",
+    "label": "latitude_bnds",
+    "namespace": "ecmwf:cc4e:thredds-exclude-variables:latitude-bnds",
+    "raw_name": "latitude_bnds",
+    "status": "pending"
+}

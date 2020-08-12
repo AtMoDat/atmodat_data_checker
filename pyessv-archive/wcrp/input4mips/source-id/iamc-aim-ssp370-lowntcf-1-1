@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "iamc-aim-ssp370-lowntcf-1-1",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "IAMC-AIM-ssp370-lowNTCF-1-1",
+    "label": "IAMC-AIM-ssp370-lowNTCF-1-1",
+    "namespace": "wcrp:input4mips:source-id:iamc-aim-ssp370-lowntcf-1-1",
+    "raw_name": "IAMC-AIM-ssp370-lowNTCF-1-1",
+    "status": "pending"
+}

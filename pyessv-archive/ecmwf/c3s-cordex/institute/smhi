@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "smhi",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "SMHI",
+    "label": "SMHI",
+    "namespace": "ecmwf:c3s-cordex:institute:smhi",
+    "raw_name": "SMHI",
+    "status": "pending"
+}

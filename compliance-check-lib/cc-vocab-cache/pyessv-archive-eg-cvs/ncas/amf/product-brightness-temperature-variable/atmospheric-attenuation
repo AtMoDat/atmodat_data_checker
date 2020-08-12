@@ -1,0 +1,22 @@
+{
+    "_type": "term", 
+    "canonical_name": "atmospheric-attenuation", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time, radiation_frequency", 
+        "long_name": "Atmospheric Attenuation", 
+        "name": "atmospheric_attenuation", 
+        "type": "float32", 
+        "units": "dB", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "atmospheric_attenuation", 
+    "namespace": "ncas:amf:product-brightness-temperature-variable:atmospheric-attenuation", 
+    "raw_name": "atmospheric_attenuation", 
+    "status": "pending", 
+    "uid": "428abd6c-9a57-481f-b423-15e3753eb25d"
+}

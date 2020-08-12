@@ -1,0 +1,15 @@
+{
+    "_type": "term", 
+    "canonical_name": "ncas-filtered-radiometer-1", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "description": "NCAS Filtered Radiometer unit 1", 
+        "instrument_id": "ncas-filtered-radiometer-1", 
+        "previous_instrument_ids": [
+            "leeds-fr-jo1d"
+        ]
+    }, 
+    "namespace": "ncas:amf:instrument:ncas-filtered-radiometer-1", 
+    "status": "pending", 
+    "uid": "a291f1d8-abe3-4442-99b4-818f06ed843e"
+}

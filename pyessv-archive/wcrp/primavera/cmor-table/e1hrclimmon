@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "e1hrclimmon",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "E1hrClimMon",
+    "label": "E1hrClimMon",
+    "namespace": "wcrp:primavera:cmor-table:e1hrclimmon",
+    "raw_name": "E1hrClimMon",
+    "status": "pending"
+}

@@ -1,0 +1,37 @@
+{
+    "_type": "term",
+    "canonical_name": "snowlyinganom",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "data": {
+        "anomaly_type": "absolute_change",
+        "description": "Snow lying",
+        "label_units": "mm",
+        "long_name": "Depth of snow lying on the ground",
+        "notes": [
+            "Availability TBC"
+        ],
+        "plot_label": "Snow lying anomaly (mm)",
+        "standard_name": "surface_snow_binary_mask",
+        "strand": [
+            "land strand 1",
+            "land strand 2",
+            "land strand 3 12km",
+            "land strand 3 2km",
+            "marine",
+            "observations"
+        ],
+        "time_averaging": [
+            "LTA"
+        ],
+        "time_step": [
+            "mon"
+        ],
+        "units": "mm"
+    },
+    "description": "Snow lying",
+    "label": "snowLyingAnom",
+    "namespace": "ukcp:ukcp18:variable:snowlyinganom",
+    "raw_name": "snowLyingAnom",
+    "status": "pending",
+    "uid": "0c33cdb9-bb58-4673-9487-dddbf87b5a12"
+}

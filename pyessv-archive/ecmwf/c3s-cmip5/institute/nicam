@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "nicam",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "label": "NICAM",
+    "namespace": "ecmwf:c3s-cmip5:institute:nicam",
+    "raw_name": "NICAM",
+    "status": "pending"
+}

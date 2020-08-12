@@ -1,0 +1,57 @@
+{
+    "_type": "term",
+    "canonical_name": "rrtmg-lw-4-91",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_participation": [
+            "RFMIP"
+        ],
+        "cohort": [
+            "Registered"
+        ],
+        "institution_id": [
+            "AER"
+        ],
+        "label_extended": "RRTM for GCMs v4.91, longwave",
+        "model_component": {
+            "aerosol": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "atmos": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "atmosChem": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "land": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "landIce": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "ocean": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "ocnBgchem": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "seaIce": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            }
+        },
+        "release_year": "2017",
+        "source_id": "RRTMG-LW-4-91"
+    },
+    "label": "RRTMG-LW 4.91",
+    "namespace": "wcrp:cmip6:source-id:rrtmg-lw-4-91",
+    "raw_name": "RRTMG-LW-4-91",
+    "status": "pending"
+}

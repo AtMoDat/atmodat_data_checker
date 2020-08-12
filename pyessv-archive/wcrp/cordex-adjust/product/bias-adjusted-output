@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "bias-adjusted-output",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "bias-adjusted-output",
+    "namespace": "wcrp:cordex-adjust:product:bias-adjusted-output",
+    "status": "pending"
+}

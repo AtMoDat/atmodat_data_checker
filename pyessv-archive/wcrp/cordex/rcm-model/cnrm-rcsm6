@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "cnrm-rcsm6",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "CNRM-RCSM6",
+    "label": "CNRM-RCSM6",
+    "namespace": "wcrp:cordex:rcm-model:cnrm-rcsm6",
+    "raw_name": "CNRM-RCSM6",
+    "status": "pending"
+}

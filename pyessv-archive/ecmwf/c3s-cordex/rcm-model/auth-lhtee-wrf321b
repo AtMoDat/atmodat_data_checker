@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "auth-lhtee-wrf321b",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "AUTH-LHTEE-WRF321B",
+    "label": "AUTH-LHTEE-WRF321B",
+    "namespace": "ecmwf:c3s-cordex:rcm-model:auth-lhtee-wrf321b",
+    "raw_name": "AUTH-LHTEE-WRF321B",
+    "status": "pending"
+}

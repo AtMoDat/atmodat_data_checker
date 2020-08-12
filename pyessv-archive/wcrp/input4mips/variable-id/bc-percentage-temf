@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "bc-percentage-temf",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "BC-percentage-TEMF",
+    "label": "BC-percentage-TEMF",
+    "namespace": "wcrp:input4mips:variable-id:bc-percentage-temf",
+    "raw_name": "BC-percentage-TEMF",
+    "status": "pending"
+}

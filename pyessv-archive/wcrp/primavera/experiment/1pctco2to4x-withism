@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "1pctco2to4x-withism",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Idealized 1pct/yr CO2 increase to 4xC02 over 140yrs and kept constant at 4xCO2 for an additional 200 to 400 yrs simulation that includes interactive ice sheets",
+    "label": "1pctCO2to4x-withism",
+    "namespace": "wcrp:primavera:experiment:1pctco2to4x-withism",
+    "raw_name": "1pctCO2to4x-withism",
+    "status": "pending"
+}

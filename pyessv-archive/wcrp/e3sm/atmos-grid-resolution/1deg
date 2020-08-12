@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "1deg",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "1deg",
+    "namespace": "wcrp:e3sm:atmos-grid-resolution:1deg",
+    "status": "pending"
+}

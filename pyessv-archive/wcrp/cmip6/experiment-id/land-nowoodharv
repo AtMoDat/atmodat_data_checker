@@ -1,0 +1,37 @@
+{
+    "_type": "term",
+    "canonical_name": "land-nowoodharv",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_id": [
+            "LUMIP"
+        ],
+        "additional_allowed_model_components": [
+            ""
+        ],
+        "end_year": "2014",
+        "experiment": "historical land-only with no wood harvest",
+        "experiment_id": "land-noWoodHarv",
+        "min_number_yrs_per_sim": "165",
+        "parent_activity_id": [
+            "no parent"
+        ],
+        "parent_experiment_id": [
+            "no parent"
+        ],
+        "required_model_components": [
+            "LAND",
+            "BGC"
+        ],
+        "start_year": "1850 or 1700",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "2"
+    },
+    "description": "Same as land-hist but with wood harvest maintained at 1850 amounts/areas",
+    "label": "land-noWoodHarv",
+    "namespace": "wcrp:cmip6:experiment-id:land-nowoodharv",
+    "raw_name": "land-noWoodHarv",
+    "status": "pending"
+}

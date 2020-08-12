@@ -1,0 +1,62 @@
+{
+    "_type": "term",
+    "canonical_name": "cnrm-cm6-1-hr",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_participation": [
+            "CMIP",
+            "DCPP",
+            "GMMIP",
+            "HighResMIP",
+            "OMIP",
+            "ScenarioMIP"
+        ],
+        "cohort": [
+            "Registered"
+        ],
+        "institution_id": [
+            "CNRM-CERFACS"
+        ],
+        "label_extended": "CNRM-CM6-1-HR",
+        "model_component": {
+            "aerosol": {
+                "description": "prescribed monthly fields computed by TACTIC_v2 scheme",
+                "native_nominal_resolution": "100 km"
+            },
+            "atmos": {
+                "description": "Arpege 6.3 (T359; Gaussian Reduced with 181724 grid points in total distributed over 360 latitude circles (with 720 grid points per latitude circle between 32.2degN and 32.2degS reducing to 18 grid points per latitude circle at 89.6degN and 89.6degS); 91 levels; top level 78.4 km)",
+                "native_nominal_resolution": "100 km"
+            },
+            "atmosChem": {
+                "description": "OZL_v2",
+                "native_nominal_resolution": "100 km"
+            },
+            "land": {
+                "description": "Surfex 8.0c",
+                "native_nominal_resolution": "100 km"
+            },
+            "landIce": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "ocean": {
+                "description": "Nemo 3.6 (eORCA025, tripolar primarily 1/4deg; 1442 x 1050 longitude/latitude; 75 levels; top grid cell 0-1 m)",
+                "native_nominal_resolution": "25 km"
+            },
+            "ocnBgchem": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "seaIce": {
+                "description": "Gelato 6.1",
+                "native_nominal_resolution": "25 km"
+            }
+        },
+        "release_year": "2017",
+        "source_id": "CNRM-CM6-1-HR"
+    },
+    "label": "CNRM-CM6-1-HR",
+    "namespace": "wcrp:cmip6:source-id:cnrm-cm6-1-hr",
+    "raw_name": "CNRM-CM6-1-HR",
+    "status": "pending"
+}

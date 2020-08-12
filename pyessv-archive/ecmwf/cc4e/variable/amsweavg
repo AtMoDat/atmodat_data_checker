@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "amsweavg",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "amsweavg",
+    "namespace": "ecmwf:cc4e:variable:amsweavg",
+    "status": "pending"
+}

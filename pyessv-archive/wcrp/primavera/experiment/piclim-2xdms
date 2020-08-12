@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "piclim-2xdms",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "1850 control with doubled emissions of DMS",
+    "label": "piClim-2xDMS",
+    "namespace": "wcrp:primavera:experiment:piclim-2xdms",
+    "raw_name": "piClim-2xDMS",
+    "status": "pending"
+}

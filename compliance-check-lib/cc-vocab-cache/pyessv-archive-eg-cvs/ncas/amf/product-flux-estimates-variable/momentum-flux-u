@@ -1,0 +1,22 @@
+{
+    "_type": "term", 
+    "canonical_name": "momentum-flux-u", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: point", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "long_name": "Momentum flux (-rho.<w'u'>)", 
+        "name": "momentum_flux_u", 
+        "type": "float32", 
+        "units": "kg m-1 s-2", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "momentum_flux_u", 
+    "namespace": "ncas:amf:product-flux-estimates-variable:momentum-flux-u", 
+    "raw_name": "momentum_flux_u", 
+    "status": "pending", 
+    "uid": "07406c84-0b27-4ae9-a7cd-45ec18e89182"
+}

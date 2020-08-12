@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "control-1950",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Coupled integrations, at least one with constant 1950s forcing (CTL) and one or more with historic and then RCP4.5 (as in Forced_Atmos_Land, EXP)",
+    "namespace": "wcrp:primavera:experiment:control-1950",
+    "status": "pending"
+}

@@ -1,0 +1,23 @@
+{
+    "_type": "term", 
+    "canonical_name": "platform-orientation", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "long_name": "Direction in which \"front\" of platform is pointing", 
+        "name": "platform_orientation", 
+        "standard_name": "platform_orientation", 
+        "type": "float32", 
+        "units": "degree", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "platform_orientation", 
+    "namespace": "ncas:amf:product-common-variable-sea:platform-orientation", 
+    "raw_name": "platform_orientation", 
+    "status": "pending", 
+    "uid": "d1a2afd5-0c23-4d92-8155-f9d812822be7"
+}

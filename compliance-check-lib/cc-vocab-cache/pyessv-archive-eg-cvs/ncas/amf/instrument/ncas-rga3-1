@@ -1,0 +1,15 @@
+{
+    "_type": "term", 
+    "canonical_name": "ncas-rga3-1", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "description": "NCAS Reduction Gas Analyser unit 1", 
+        "instrument_id": "ncas-rga3-1", 
+        "previous_instrument_ids": [
+            "wao-rga"
+        ]
+    }, 
+    "namespace": "ncas:amf:instrument:ncas-rga3-1", 
+    "status": "pending", 
+    "uid": "e3be34dc-e72b-4b22-8cdf-a3ab5b7bfcfa"
+}

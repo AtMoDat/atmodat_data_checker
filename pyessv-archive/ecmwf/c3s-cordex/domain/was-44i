@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "was-44i",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "West Asia",
+    "label": "WAS-44i",
+    "namespace": "ecmwf:c3s-cordex:domain:was-44i",
+    "raw_name": "WAS-44i",
+    "status": "pending"
+}

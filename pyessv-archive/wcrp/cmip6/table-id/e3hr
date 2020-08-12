@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "e3hr",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "label": "E3hr",
+    "namespace": "wcrp:cmip6:table-id:e3hr",
+    "raw_name": "E3hr",
+    "status": "pending"
+}

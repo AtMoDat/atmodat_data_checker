@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "l2a26",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Model run without landuse change (after yr 2005) and with atmospheric CO2 from RCP2.6 scenario",
+    "label": "L2A26",
+    "namespace": "wcrp:lucid:experiment:l2a26",
+    "raw_name": "L2A26",
+    "status": "pending"
+}

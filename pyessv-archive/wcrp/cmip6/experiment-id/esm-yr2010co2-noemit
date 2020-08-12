@@ -1,0 +1,38 @@
+{
+    "_type": "term",
+    "canonical_name": "esm-yr2010co2-noemit",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_id": [
+            "CDRMIP"
+        ],
+        "additional_allowed_model_components": [
+            "AER",
+            "CHEM"
+        ],
+        "end_year": "2115",
+        "experiment": "branches from esm-yr2010CO2-control with zero emissions",
+        "experiment_id": "esm-yr2010CO2-noemit",
+        "min_number_yrs_per_sim": "101",
+        "parent_activity_id": [
+            "CDRMIP"
+        ],
+        "parent_experiment_id": [
+            "esm-yr2010CO2-control"
+        ],
+        "required_model_components": [
+            "AOGCM",
+            "BGC"
+        ],
+        "start_year": "2015",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "3"
+    },
+    "description": "Upon initialization from end of year 2015 of esm-yr2010-control CO2 emissions are fixed at zero; all other forcing fixed at 2010 level (part of the CDR-yr2010-pulse experiment)",
+    "label": "esm-yr2010CO2-noemit",
+    "namespace": "wcrp:cmip6:experiment-id:esm-yr2010co2-noemit",
+    "raw_name": "esm-yr2010CO2-noemit",
+    "status": "pending"
+}

@@ -1,0 +1,38 @@
+{
+    "_type": "term",
+    "canonical_name": "pa-futarcsic",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_id": [
+            "PAMIP"
+        ],
+        "additional_allowed_model_components": [
+            "AER",
+            "CHEM",
+            "BGC"
+        ],
+        "end_year": "2001",
+        "experiment": "Partially-coupled time slice constrained by future Arctic SIC",
+        "experiment_id": "pa-futArcSIC",
+        "min_number_yrs_per_sim": "1",
+        "parent_activity_id": [
+            "CMIP"
+        ],
+        "parent_experiment_id": [
+            "historical"
+        ],
+        "required_model_components": [
+            "AOGCM"
+        ],
+        "start_year": "2000",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "2"
+    },
+    "description": "PA2.3: investigate response to Arctic sea ice in coupled model",
+    "label": "pa-futArcSIC",
+    "namespace": "wcrp:cmip6:experiment-id:pa-futarcsic",
+    "raw_name": "pa-futArcSIC",
+    "status": "pending"
+}

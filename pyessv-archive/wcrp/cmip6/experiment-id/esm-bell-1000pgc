@@ -1,0 +1,39 @@
+{
+    "_type": "term",
+    "canonical_name": "esm-bell-1000pgc",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_id": [
+            "C4MIP",
+            "CDRMIP"
+        ],
+        "additional_allowed_model_components": [
+            "AER",
+            "CHEM"
+        ],
+        "end_year": "",
+        "experiment": "emissions driven 1000PgC bell-curve",
+        "experiment_id": "esm-bell-1000PgC",
+        "min_number_yrs_per_sim": "200",
+        "parent_activity_id": [
+            "CMIP"
+        ],
+        "parent_experiment_id": [
+            "esm-piControl"
+        ],
+        "required_model_components": [
+            "AOGCM",
+            "BGC"
+        ],
+        "start_year": "",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "3"
+    },
+    "description": "An emissions-driven simulation (fully interactive CO2), initiated from esm-piControl using CO2 emissions, amounting to 1000 PgC, following a bell-shape curve for 100 years followed by zero-emissions for 100 years",
+    "label": "esm-bell-1000PgC",
+    "namespace": "wcrp:cmip6:experiment-id:esm-bell-1000pgc",
+    "raw_name": "esm-bell-1000PgC",
+    "status": "pending"
+}

@@ -1,0 +1,12 @@
+{
+    "_type": "term", 
+    "canonical_name": "altitude", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "length": "<i>", 
+        "units": "m"
+    }, 
+    "namespace": "ncas:amf:product-aerosol-backscatter-dimension:altitude", 
+    "status": "pending", 
+    "uid": "c89cffa9-bbe9-4d12-9683-58c837fffae5"
+}

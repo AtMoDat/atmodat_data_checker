@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "dpocdtpico",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "dpocdtpico",
+    "namespace": "ecmwf:c3s-cmip5:variable:dpocdtpico",
+    "status": "pending"
+}

@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "piclim-spaer-histall",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Prescribed anthropogenic aerosol optical properties. Aerosol and ozone forcings",
+    "label": "piClim-spAer-histall",
+    "namespace": "wcrp:primavera:experiment:piclim-spaer-histall",
+    "raw_name": "piClim-spAer-histall",
+    "status": "pending"
+}

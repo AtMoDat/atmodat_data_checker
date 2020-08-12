@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "rlat",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "rlat",
+    "namespace": "ecmwf:c3s-cordex:thredds-exclude-variables:rlat",
+    "status": "pending"
+}

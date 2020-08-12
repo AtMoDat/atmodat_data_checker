@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "fgoals-g2",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "FGOALS-g2",
+    "label": "FGOALS-g2",
+    "namespace": "ecmwf:c3s-cmip5:model:fgoals-g2",
+    "raw_name": "FGOALS-g2",
+    "status": "pending"
+}

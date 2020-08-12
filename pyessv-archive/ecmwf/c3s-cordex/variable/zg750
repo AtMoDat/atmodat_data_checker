@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "zg750",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "zg750",
+    "namespace": "ecmwf:c3s-cordex:variable:zg750",
+    "status": "pending"
+}

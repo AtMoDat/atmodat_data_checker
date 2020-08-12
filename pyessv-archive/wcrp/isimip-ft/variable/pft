@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "pft",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "pft",
+    "namespace": "wcrp:isimip-ft:variable:pft",
+    "status": "pending"
+}

@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "eur-44i",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Europe",
+    "label": "EUR-44i",
+    "namespace": "ecmwf:c3s-cordex:domain:eur-44i",
+    "raw_name": "EUR-44i",
+    "status": "pending"
+}

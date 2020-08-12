@@ -1,0 +1,58 @@
+{
+    "_type": "term",
+    "canonical_name": "ec-earth3-hr",
+    "create_date": "2018-03-28 19:52:17.258367+00:00",
+    "data": {
+        "activity_participation": [
+            ""
+        ],
+        "cohort": [
+            "Registered"
+        ],
+        "institution_id": [
+            "EC-Earth-Consortium"
+        ],
+        "label_extended": "EC-Earth 3.3 at high resolution",
+        "model_component": {
+            "aerosol": {
+                "description": "none",
+                "nominal_resolution": "none"
+            },
+            "atmos": {
+                "description": "IFS cy36r4 (TL511, linearly reduced Gaussian grid equivalent to 1024 x 512; 91 levels; top level 0.01 hPa)",
+                "nominal_resolution": ""
+            },
+            "atmosChem": {
+                "description": "none",
+                "nominal_resolution": "none"
+            },
+            "land": {
+                "description": "HTESSEL (land surface scheme built in IFS)",
+                "nominal_resolution": ""
+            },
+            "landIce": {
+                "description": "none",
+                "nominal_resolution": "none"
+            },
+            "ocean": {
+                "description": "NEMO3.6 (tripolar, 1442x1921; 75 levels; top grid cell 5m)",
+                "nominal_resolution": ""
+            },
+            "ocnBgchem": {
+                "description": "none",
+                "nominal_resolution": "none"
+            },
+            "seaIce": {
+                "description": "LIM3",
+                "nominal_resolution": ""
+            }
+        },
+        "release_year": "2017",
+        "source_id": "EC-Earth3-HR"
+    },
+    "label": "EC-Earth3-HR",
+    "namespace": "ukcp:ukcp18:source-id:ec-earth3-hr",
+    "raw_name": "EC-Earth3-HR",
+    "status": "pending",
+    "uid": "c6c181b5-6375-45c5-a06f-74cf7b2ba571"
+}

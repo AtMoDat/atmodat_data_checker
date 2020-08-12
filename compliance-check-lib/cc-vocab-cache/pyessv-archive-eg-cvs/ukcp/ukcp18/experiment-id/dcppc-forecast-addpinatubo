@@ -1,0 +1,43 @@
+{
+    "_type": "term",
+    "canonical_name": "dcppc-forecast-addpinatubo",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "data": {
+        "activity_id": [
+            "DCPP",
+            "VolMIP"
+        ],
+        "additional_allowed_model_components": [
+            "AER",
+            "CHEM",
+            "BGC"
+        ],
+        "description": "C3.6 Effects of volcanoes on decadal prediction and predictability of forced and internal variability components. First full hindcast year is 2015",
+        "end_year": "5 - 10 years after start year",
+        "experiment": "2015 forecast with added Pinatubo forcing",
+        "experiment_id": "dcppC-forecast-addPinatubo",
+        "min_number_yrs_per_sim": "5",
+        "parent_activity_id": [
+            "no parent",
+            "DCPP"
+        ],
+        "parent_experiment_id": [
+            "no parent",
+            "dcppA-assim"
+        ],
+        "required_model_components": [
+            "AOGCM"
+        ],
+        "start_year": "2014",
+        "sub_experiment_id": [
+            "s2014"
+        ],
+        "tier": "1"
+    },
+    "description": "C3.6 Effects of volcanoes on decadal prediction and predictability of forced and internal variability components. First full hindcast year is 2015",
+    "label": "dcppC-forecast-addPinatubo",
+    "namespace": "ukcp:ukcp18:experiment-id:dcppc-forecast-addpinatubo",
+    "raw_name": "dcppC-forecast-addPinatubo",
+    "status": "pending",
+    "uid": "9a2bb3e3-0e11-4e8b-a751-53ef5e9731c2"
+}

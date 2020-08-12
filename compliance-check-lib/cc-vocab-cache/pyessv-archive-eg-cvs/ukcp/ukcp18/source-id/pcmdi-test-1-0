@@ -1,0 +1,58 @@
+{
+    "_type": "term",
+    "canonical_name": "pcmdi-test-1-0",
+    "create_date": "2018-03-28 19:52:17.258367+00:00",
+    "data": {
+        "activity_participation": [
+            "CMIP"
+        ],
+        "cohort": [
+            "Registered"
+        ],
+        "institution_id": [
+            "PCMDI"
+        ],
+        "label_extended": "PCMDI-test 1.0 (This entry is free text for users to contribute verbose information)",
+        "model_component": {
+            "aerosol": {
+                "description": "none",
+                "nominal_resolution": "none"
+            },
+            "atmos": {
+                "description": "Earth1.0-gettingHotter (360x180; 50 levels; top level 0.1 mb)",
+                "nominal_resolution": "1x1 degree"
+            },
+            "atmosChem": {
+                "description": "none",
+                "nominal_resolution": "none"
+            },
+            "land": {
+                "description": "Earth1.0",
+                "nominal_resolution": "1x1 degree"
+            },
+            "landIce": {
+                "description": "none",
+                "nominal_resolution": "none"
+            },
+            "ocean": {
+                "description": "BlueMarble1.0-warming (360x180; 50 levels; top grid cell 0-10m)",
+                "nominal_resolution": "1x1 degree"
+            },
+            "ocnBgchem": {
+                "description": "none",
+                "nominal_resolution": "none"
+            },
+            "seaIce": {
+                "description": "Declining1.0-warming",
+                "nominal_resolution": "1x1 degree"
+            }
+        },
+        "release_year": "1989",
+        "source_id": "PCMDI-test-1-0"
+    },
+    "label": "PCMDI-test 1.0",
+    "namespace": "ukcp:ukcp18:source-id:pcmdi-test-1-0",
+    "raw_name": "PCMDI-test-1-0",
+    "status": "pending",
+    "uid": "d46a72c3-fca4-4468-954e-54295ed2c67e"
+}

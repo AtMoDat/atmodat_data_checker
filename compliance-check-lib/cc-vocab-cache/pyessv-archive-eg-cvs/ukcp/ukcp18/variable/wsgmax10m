@@ -1,0 +1,38 @@
+{
+    "_type": "term",
+    "canonical_name": "wsgmax10m",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "data": {
+        "cmip6_cmor_tables_row_id": [
+            "2037"
+        ],
+        "cmip6_name": "wsgmax10m",
+        "cmip6_standard_name": "wind_speed_of_gust",
+        "description": "Wind gust",
+        "label_units": "m s-1",
+        "level": "10m",
+        "long_name": "Maximum Wind Speed of Gust at 10m",
+        "plot_label": "Wind gust at 10m (m s-1)",
+        "standard_name": "wind_speed_of_gust",
+        "strand": [
+            "land strand 1",
+            "land strand 2",
+            "land strand 3 12km",
+            "land strand 3 2km",
+            "marine",
+            "observations"
+        ],
+        "time_averaging": [
+            "max"
+        ],
+        "time_step": [
+            "3hr"
+        ],
+        "um_stash": "03463",
+        "units": "m s-1"
+    },
+    "description": "Wind gust",
+    "namespace": "ukcp:ukcp18:variable:wsgmax10m",
+    "status": "pending",
+    "uid": "88a67f2b-990b-493f-bde4-d8cc089991ae"
+}

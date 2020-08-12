@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "aer",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "label": "AER",
+    "namespace": "wcrp:cmip6:source-type:aer",
+    "raw_name": "AER",
+    "status": "pending"
+}

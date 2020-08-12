@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "a4sstice-4xco2",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "As a4SSTice, but CO2 is quadrupled, and the increase in CO2 is seen by both the radiation scheme and vegetation",
+    "label": "a4SSTice-4xCO2",
+    "namespace": "wcrp:primavera:experiment:a4sstice-4xco2",
+    "raw_name": "a4SSTice-4xCO2",
+    "status": "pending"
+}

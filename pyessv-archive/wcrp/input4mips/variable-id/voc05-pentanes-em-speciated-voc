@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "voc05-pentanes-em-speciated-voc",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "VOC05-pentanes-em-speciated-VOC",
+    "label": "VOC05-pentanes-em-speciated-VOC",
+    "namespace": "wcrp:input4mips:variable-id:voc05-pentanes-em-speciated-voc",
+    "raw_name": "VOC05-pentanes-em-speciated-VOC",
+    "status": "pending"
+}

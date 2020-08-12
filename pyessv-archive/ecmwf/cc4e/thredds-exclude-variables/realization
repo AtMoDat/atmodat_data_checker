@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "realization",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "realization",
+    "namespace": "ecmwf:cc4e:thredds-exclude-variables:realization",
+    "status": "pending"
+}

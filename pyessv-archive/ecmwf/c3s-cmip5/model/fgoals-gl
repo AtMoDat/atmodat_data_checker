@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "fgoals-gl",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "FGOALS-gl",
+    "label": "FGOALS-gl",
+    "namespace": "ecmwf:c3s-cmip5:model:fgoals-gl",
+    "raw_name": "FGOALS-gl",
+    "status": "pending"
+}

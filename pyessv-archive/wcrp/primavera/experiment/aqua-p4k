@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "aqua-p4k",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Extended version of CMIP5/CFMIP-2 aqua4K experiment. Aquaplanet experiment where SSTs are subject to a uniform warming of 4K",
+    "label": "aqua-p4K",
+    "namespace": "wcrp:primavera:experiment:aqua-p4k",
+    "raw_name": "aqua-p4K",
+    "status": "pending"
+}

@@ -1,0 +1,26 @@
+{
+    "_type": "term", 
+    "canonical_name": "qc-flag-316", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "dimension": "time, index", 
+        "flag_meanings": [
+            "not_used", 
+            "good_data", 
+            "good_data_only_316nm_channel_operating", 
+            "suspect_data_cloudy_profile", 
+            "bad_data_gate_index_exceeds_number_of_measurement_gates_in_use", 
+            "suspect_data_time_stamp_error"
+        ], 
+        "flag_values": "0b,1b, 2b, 3b, 4b, 5b", 
+        "long_name": "Data Quality flag: 316nm", 
+        "name": "qc_flag_316", 
+        "type": "byte", 
+        "units": "1"
+    }, 
+    "label": "qc_flag_316", 
+    "namespace": "ncas:amf:product-aerosol-extinction-variable:qc-flag-316", 
+    "raw_name": "qc_flag_316", 
+    "status": "pending", 
+    "uid": "b6a544c5-9f32-404e-8a74-ac9a373a7fb7"
+}

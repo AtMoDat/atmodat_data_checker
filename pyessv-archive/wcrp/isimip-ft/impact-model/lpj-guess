@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "lpj-guess",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "LPJ-GUESS",
+    "label": "LPJ-GUESS",
+    "namespace": "wcrp:isimip-ft:impact-model:lpj-guess",
+    "raw_name": "LPJ-GUESS",
+    "status": "pending"
+}

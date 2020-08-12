@@ -1,0 +1,29 @@
+{
+    "_type": "term", 
+    "canonical_name": "qc-flag-pitch-angle", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "dimension": "time", 
+        "flag_meanings": [
+            "not_used", 
+            "good_data_angle_<1_degrees", 
+            "suspect_data_angle_between_1_and_2_degrees", 
+            "suspect_data_angle_between_2_and_3_degrees", 
+            "suspect_data_angle_between_3_and_4_degrees", 
+            "suspect_data_angle_between_4_and_5_degrees", 
+            "bad_data_angle_>5_degrees", 
+            "bad_data_data_missing", 
+            "suspect_data_time_stamp_error"
+        ], 
+        "flag_values": "0b,1b, 2b, 3b, 4b, 5b, 6b, 7b, 8b", 
+        "long_name": "Data Quality flag: Motion Stabilisation - Pitch Angle", 
+        "name": "qc_flag_pitch_angle", 
+        "type": "byte", 
+        "units": "1"
+    }, 
+    "label": "qc_flag_pitch_angle", 
+    "namespace": "ncas:amf:product-common-variable-sea:qc-flag-pitch-angle", 
+    "raw_name": "qc_flag_pitch_angle", 
+    "status": "pending", 
+    "uid": "96b3ae5e-ca8c-40ee-9940-8bc5c6fc96ef"
+}

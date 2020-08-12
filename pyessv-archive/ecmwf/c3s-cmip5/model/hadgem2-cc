@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "hadgem2-cc",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "HadGEM2-CC",
+    "label": "HadGEM2-CC",
+    "namespace": "ecmwf:c3s-cmip5:model:hadgem2-cc",
+    "raw_name": "HadGEM2-CC",
+    "status": "pending"
+}

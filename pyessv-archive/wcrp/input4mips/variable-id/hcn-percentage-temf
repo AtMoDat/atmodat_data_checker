@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "hcn-percentage-temf",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "HCN-percentage-TEMF",
+    "label": "HCN-percentage-TEMF",
+    "namespace": "wcrp:input4mips:variable-id:hcn-percentage-temf",
+    "raw_name": "HCN-percentage-TEMF",
+    "status": "pending"
+}

@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "ffire",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "fFire",
+    "label": "fFire",
+    "namespace": "ecmwf:c3s-cmip5:variable:ffire",
+    "raw_name": "fFire",
+    "status": "pending"
+}

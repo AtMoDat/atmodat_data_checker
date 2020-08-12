@@ -1,0 +1,15 @@
+{
+    "_type": "term", 
+    "canonical_name": "ncas-dewpoint-hygrometer-1", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "description": "NCAS Dewpoint Hygrometer unit 1", 
+        "instrument_id": "ncas-dewpoint-hygrometer-1", 
+        "previous_instrument_ids": [
+            "leeds-dph"
+        ]
+    }, 
+    "namespace": "ncas:amf:instrument:ncas-dewpoint-hygrometer-1", 
+    "status": "pending", 
+    "uid": "b91e4421-6d6c-4bb6-8b1a-a92eefb7057f"
+}

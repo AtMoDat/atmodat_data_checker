@@ -1,0 +1,13 @@
+{
+    "_type": "term",
+    "alternative_names": [
+        "VOC07_ethene_em_speciated_VOC_anthro"
+    ],
+    "canonical_name": "voc07-ethene-em-speciated-voc-anthro",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "VOC07-ethene-em-speciated-VOC-anthro",
+    "label": "VOC07-ethene-em-speciated-VOC-anthro",
+    "namespace": "wcrp:input4mips:variable-id:voc07-ethene-em-speciated-voc-anthro",
+    "raw_name": "VOC07-ethene-em-speciated-VOC-anthro",
+    "status": "pending"
+}

@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "concso2",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "concso2",
+    "namespace": "ecmwf:c3s-cmip5:variable:concso2",
+    "status": "pending"
+}

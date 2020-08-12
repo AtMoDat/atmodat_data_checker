@@ -1,0 +1,37 @@
+{
+    "_type": "term",
+    "canonical_name": "land-hist-altstartyear",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_id": [
+            "LUMIP"
+        ],
+        "additional_allowed_model_components": [
+            ""
+        ],
+        "end_year": "2014",
+        "experiment": "historical land-only alternate start year",
+        "experiment_id": "land-hist-altStartYear",
+        "min_number_yrs_per_sim": "165",
+        "parent_activity_id": [
+            "no parent"
+        ],
+        "parent_experiment_id": [
+            "no parent"
+        ],
+        "required_model_components": [
+            "LAND",
+            "BGC"
+        ],
+        "start_year": "1850 or 1700",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "1"
+    },
+    "description": "Same as land-hist except starting from either 1700 (for models that typically start in 1850) or 1850 (for models that typically start in 1700)",
+    "label": "land-hist-altStartYear",
+    "namespace": "wcrp:cmip6:experiment-id:land-hist-altstartyear",
+    "raw_name": "land-hist-altStartYear",
+    "status": "pending"
+}

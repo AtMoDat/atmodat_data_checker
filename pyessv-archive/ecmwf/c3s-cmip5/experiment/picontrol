@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "picontrol",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Pre-industrial control",
+    "label": "piControl",
+    "namespace": "ecmwf:c3s-cmip5:experiment:picontrol",
+    "raw_name": "piControl",
+    "status": "pending"
+}

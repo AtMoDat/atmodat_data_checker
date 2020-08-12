@@ -1,0 +1,24 @@
+{
+    "_type": "term",
+    "canonical_name": "latitude",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "data": {
+        "axis": "Y",
+        "bounds_values": "",
+        "climatology": "",
+        "formula": "",
+        "long_name": "latitude",
+        "must_have_bounds": "yes",
+        "positive": "",
+        "standard_name": "latitude",
+        "stored_direction": "increasing",
+        "type": "double",
+        "units": "degrees_north",
+        "valid_max": "90.0",
+        "valid_min": "-90.0",
+        "value": ""
+    },
+    "namespace": "ukcp:ukcp18:coordinate:latitude",
+    "status": "pending",
+    "uid": "f68a716e-d204-42ce-9bf5-6c8134a3d797"
+}

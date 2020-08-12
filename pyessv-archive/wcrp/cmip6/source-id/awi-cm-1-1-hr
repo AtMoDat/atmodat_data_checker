@@ -1,0 +1,62 @@
+{
+    "_type": "term",
+    "canonical_name": "awi-cm-1-1-hr",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_participation": [
+            "CMIP",
+            "CORDEX",
+            "HighResMIP",
+            "OMIP",
+            "SIMIP",
+            "VIACSAB"
+        ],
+        "cohort": [
+            "Registered"
+        ],
+        "institution_id": [
+            "AWI"
+        ],
+        "label_extended": "AWI-CM 1.1 HR",
+        "model_component": {
+            "aerosol": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "atmos": {
+                "description": "ECHAM6.3.04p1 (T127L95 native atmosphere T127 gaussian grid; 384 x 192 longitude/latitude; 95 levels; top level 80 km)",
+                "native_nominal_resolution": "100 km"
+            },
+            "atmosChem": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "land": {
+                "description": "JSBACH 3.20",
+                "native_nominal_resolution": "100 km"
+            },
+            "landIce": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "ocean": {
+                "description": "FESOM 1.4 (unstructured grid in the horizontal with 1306775 wet nodes; 46 levels; top grid cell 0-5 m)",
+                "native_nominal_resolution": "25 km"
+            },
+            "ocnBgchem": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "seaIce": {
+                "description": "FESOM 1.4",
+                "native_nominal_resolution": "25 km"
+            }
+        },
+        "release_year": "2018",
+        "source_id": "AWI-CM-1-1-HR"
+    },
+    "label": "AWI-CM 1.1 HR",
+    "namespace": "wcrp:cmip6:source-id:awi-cm-1-1-hr",
+    "raw_name": "AWI-CM-1-1-HR",
+    "status": "pending"
+}

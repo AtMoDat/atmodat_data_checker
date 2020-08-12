@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "yrclim",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "yrClim",
+    "label": "yrClim",
+    "namespace": "ecmwf:cc4e:time-frequency:yrclim",
+    "raw_name": "yrClim",
+    "status": "pending"
+}

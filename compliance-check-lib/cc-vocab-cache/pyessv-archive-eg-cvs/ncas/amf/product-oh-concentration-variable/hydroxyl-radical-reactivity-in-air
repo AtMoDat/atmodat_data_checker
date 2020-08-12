@@ -1,0 +1,22 @@
+{
+    "_type": "term", 
+    "canonical_name": "hydroxyl-radical-reactivity-in-air", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: ????", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "long_name": "Hydroxyl Radical Reactivity in air", 
+        "name": "hydroxyl_radical_reactivity_in_air", 
+        "type": "float32", 
+        "units": "s-1", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "hydroxyl_radical_reactivity_in_air", 
+    "namespace": "ncas:amf:product-oh-concentration-variable:hydroxyl-radical-reactivity-in-air", 
+    "raw_name": "hydroxyl_radical_reactivity_in_air", 
+    "status": "pending", 
+    "uid": "7565d537-fe4d-46f5-afed-736fd100c7fe"
+}

@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "noresm2-lmec",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "NorESM2-LMEC",
+    "label": "NorESM2-LMEC",
+    "namespace": "wcrp:primavera:model:noresm2-lmec",
+    "raw_name": "NorESM2-LMEC",
+    "status": "pending"
+}

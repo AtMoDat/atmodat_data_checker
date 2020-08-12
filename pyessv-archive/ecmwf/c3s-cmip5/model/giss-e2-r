@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "giss-e2-r",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "GISS-E2-R",
+    "label": "GISS-E2-R",
+    "namespace": "ecmwf:c3s-cmip5:model:giss-e2-r",
+    "raw_name": "GISS-E2-R",
+    "status": "pending"
+}

@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "1-0",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "1_0",
+    "label": "1_0",
+    "namespace": "wcrp:e3sm:model-version:1-0",
+    "raw_name": "1_0",
+    "status": "pending"
+}

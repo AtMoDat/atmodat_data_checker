@@ -1,0 +1,23 @@
+{
+    "_type": "term", 
+    "canonical_name": "downwelling-shortwave-flux-in-air", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "long_name": "Downwelling Shortwave Radiation in air", 
+        "name": "downwelling_shortwave_flux_in_air", 
+        "standard_name": "downwelling_shortwave_flux_in_air", 
+        "type": "float32", 
+        "units": "W m-2", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "downwelling_shortwave_flux_in_air", 
+    "namespace": "ncas:amf:product-radiation-variable:downwelling-shortwave-flux-in-air", 
+    "raw_name": "downwelling_shortwave_flux_in_air", 
+    "status": "pending", 
+    "uid": "6b3c8b83-c552-4183-a7cb-2e8076c4904c"
+}

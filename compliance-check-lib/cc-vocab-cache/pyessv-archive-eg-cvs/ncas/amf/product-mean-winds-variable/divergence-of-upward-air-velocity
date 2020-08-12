@@ -1,0 +1,22 @@
+{
+    "_type": "term", 
+    "canonical_name": "divergence-of-upward-air-velocity", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: standard_deviation", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "long_name": "Divergence of Upward Air Velocity (Sigma W)", 
+        "name": "divergence_of_upward_air_velocity", 
+        "type": "float32", 
+        "units": "m s-1", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "divergence_of_upward_air_velocity", 
+    "namespace": "ncas:amf:product-mean-winds-variable:divergence-of-upward-air-velocity", 
+    "raw_name": "divergence_of_upward_air_velocity", 
+    "status": "pending", 
+    "uid": "24f9862f-76db-458b-9c3f-50bb6fe51ffa"
+}

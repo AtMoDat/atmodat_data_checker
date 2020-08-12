@@ -1,0 +1,29 @@
+{
+    "_type": "term", 
+    "canonical_name": "qc-flag-stabilisation", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "dimension": "time", 
+        "flag_meanings": [
+            "not_used", 
+            "good_data", 
+            "bad_data_role_angle_exceeded", 
+            "bad_data_pitch_angle_exceeded", 
+            "bad_data_yaw_angle_exceeded", 
+            "bad_data_rate_of_change_of_role_angle_exceeded", 
+            "bad_data_rate_of_change_of_pitch_angle_exceeded", 
+            "bad_data_rate_of_change_of_yaw_angle_exceeded", 
+            "suspect_data_time_stamp_error"
+        ], 
+        "flag_values": "0b,1b, 2b, 3b, 4b, 5b, 6b, 7b, 8b", 
+        "long_name": "Data Quality flag: Motion Stabilisation", 
+        "name": "qc_flag_stabilisation", 
+        "type": "byte", 
+        "units": "1"
+    }, 
+    "label": "qc_flag_stabilisation", 
+    "namespace": "ncas:amf:product-common-variable-air:qc-flag-stabilisation", 
+    "raw_name": "qc_flag_stabilisation", 
+    "status": "pending", 
+    "uid": "10f9cce1-7e20-46f1-8d6e-c613898e7087"
+}

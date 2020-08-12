@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "nmvoc-ch2o-em-speciated-voc-openburning",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "NMVOC_CH2O_em_speciated_VOC_openburning",
+    "label": "NMVOC_CH2O_em_speciated_VOC_openburning",
+    "namespace": "wcrp:input4mips:variable-id:nmvoc-ch2o-em-speciated-voc-openburning",
+    "raw_name": "NMVOC_CH2O_em_speciated_VOC_openburning",
+    "status": "pending"
+}

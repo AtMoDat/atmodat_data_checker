@@ -1,0 +1,37 @@
+{
+    "_type": "term",
+    "canonical_name": "hist-totalo3",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_id": [
+            "DAMIP"
+        ],
+        "additional_allowed_model_components": [
+            "AER",
+            "BGC"
+        ],
+        "end_year": "2020",
+        "experiment": "historical total ozone-only run",
+        "experiment_id": "hist-totalO3",
+        "min_number_yrs_per_sim": "171",
+        "parent_activity_id": [
+            "CMIP"
+        ],
+        "parent_experiment_id": [
+            "piControl"
+        ],
+        "required_model_components": [
+            "AOGCM"
+        ],
+        "start_year": "1850",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "3"
+    },
+    "description": "Historical total ozone-only. In models with coupled chemistry, the chemistry scheme should be turned off, and the simulated ensemble mean monthly mean 3D ozone concentrations from the CMIP6 historical simulations should be prescribed through the depth of the atmosphere. In models without coupled chemistry the same ozone prescribed in the CMIP6 historical simulations should be prescribed",
+    "label": "hist-totalO3",
+    "namespace": "wcrp:cmip6:experiment-id:hist-totalo3",
+    "raw_name": "hist-totalO3",
+    "status": "pending"
+}

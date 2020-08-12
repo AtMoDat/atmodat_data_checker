@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "rgrowth",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "rGrowth",
+    "label": "rGrowth",
+    "namespace": "ecmwf:c3s-cmip5:variable:rgrowth",
+    "raw_name": "rGrowth",
+    "status": "pending"
+}

@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "rotated-pole",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "rotated_pole",
+    "label": "rotated_pole",
+    "namespace": "ecmwf:cc4e:thredds-exclude-variables:rotated-pole",
+    "raw_name": "rotated_pole",
+    "status": "pending"
+}

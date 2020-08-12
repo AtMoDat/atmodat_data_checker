@@ -1,0 +1,20 @@
+{
+    "_type": "term", 
+    "canonical_name": "wbar", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "long_name": "<W>", 
+        "name": "wbar", 
+        "type": "float32", 
+        "units": "m s-1", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "namespace": "ncas:amf:product-flux-components-variable:wbar", 
+    "status": "pending", 
+    "uid": "0ce27865-c6c6-48e4-b921-947e437f43bf"
+}

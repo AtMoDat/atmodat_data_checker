@@ -1,0 +1,12 @@
+{
+    "_type": "term", 
+    "canonical_name": "index", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "length": "<i>", 
+        "units": "1"
+    }, 
+    "namespace": "ncas:amf:product-mean-winds-profile-dimension:index", 
+    "status": "pending", 
+    "uid": "35d2aa8f-6b93-4b5d-833b-e2137a1416e6"
+}

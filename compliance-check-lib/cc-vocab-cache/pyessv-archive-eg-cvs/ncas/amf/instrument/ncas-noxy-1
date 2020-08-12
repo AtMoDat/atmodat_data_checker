@@ -1,0 +1,15 @@
+{
+    "_type": "term", 
+    "canonical_name": "ncas-noxy-1", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "description": "NCAS AQD High Sensitivity NOx Monitor unit 1", 
+        "instrument_id": "ncas-noxy-1", 
+        "previous_instrument_ids": [
+            "cv-noxy"
+        ]
+    }, 
+    "namespace": "ncas:amf:instrument:ncas-noxy-1", 
+    "status": "pending", 
+    "uid": "d3c7c4e6-86be-4eee-82d5-37d33a0432af"
+}

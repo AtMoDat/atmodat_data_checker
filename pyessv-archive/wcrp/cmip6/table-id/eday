@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "eday",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "label": "Eday",
+    "namespace": "wcrp:cmip6:table-id:eday",
+    "raw_name": "Eday",
+    "status": "pending"
+}

@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "msftyyzba",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "msftyyzba",
+    "namespace": "ecmwf:c3s-cmip5:variable:msftyyzba",
+    "status": "pending"
+}

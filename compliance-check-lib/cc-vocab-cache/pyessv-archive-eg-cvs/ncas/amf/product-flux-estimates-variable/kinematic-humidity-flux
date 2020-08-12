@@ -1,0 +1,22 @@
+{
+    "_type": "term", 
+    "canonical_name": "kinematic-humidity-flux", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: point", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "long_name": "Kinematic Humidity Flux (<w'Q'>)", 
+        "name": "kinematic_humidity_flux", 
+        "type": "float32", 
+        "units": "kg kg-1 m s-1", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "kinematic_humidity_flux", 
+    "namespace": "ncas:amf:product-flux-estimates-variable:kinematic-humidity-flux", 
+    "raw_name": "kinematic_humidity_flux", 
+    "status": "pending", 
+    "uid": "48bb6df9-dfd8-42c0-89e3-550eca6388ae"
+}

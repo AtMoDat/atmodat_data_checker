@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "1950-control",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "1950 Control",
+    "label": "1950-Control",
+    "namespace": "wcrp:e3sm:experiment:1950-control",
+    "raw_name": "1950-Control",
+    "status": "pending"
+}

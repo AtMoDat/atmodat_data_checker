@@ -1,0 +1,26 @@
+{
+    "_type": "term", 
+    "canonical_name": "qc-flag-backscatter", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "dimension": "time, index", 
+        "flag_meanings": [
+            "not_used", 
+            "good_data", 
+            "bad_data_value_outside_operational_range", 
+            "bad_data_signal_consensus_poor", 
+            "bad_data_gate_index_exceeds_number_of_measurement_gates_in_use", 
+            "suspect_data_time_stamp_error"
+        ], 
+        "flag_values": "0b,1b, 2b, 3b, 4b, 5b", 
+        "long_name": "Data Quality flag: Backscatter", 
+        "name": "qc_flag_backscatter", 
+        "type": "byte", 
+        "units": "1"
+    }, 
+    "label": "qc_flag_backscatter", 
+    "namespace": "ncas:amf:product-acoustic-backscatter-winds-variable:qc-flag-backscatter", 
+    "raw_name": "qc_flag_backscatter", 
+    "status": "pending", 
+    "uid": "7142fcc5-5c27-449b-a037-b8a790f6ab39"
+}

@@ -1,0 +1,24 @@
+{
+    "_type": "term", 
+    "canonical_name": "qc-flag-org", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "dimension": "time", 
+        "flag_meanings": [
+            "not_used", 
+            "good_data", 
+            "suspect_data_bad_data_to_be_defined", 
+            "suspect_data_time_stamp_error"
+        ], 
+        "flag_values": "0b,1b, 2b, 3b", 
+        "long_name": "Data Quality flag: Organics", 
+        "name": "qc_flag_org", 
+        "type": "byte", 
+        "units": "1"
+    }, 
+    "label": "qc_flag_org", 
+    "namespace": "ncas:amf:product-aerosol-no3-so4-nh3-org-concentration-variable:qc-flag-org", 
+    "raw_name": "qc_flag_org", 
+    "status": "pending", 
+    "uid": "0d8a4ab9-a627-4cb8-88a5-cec118d611bc"
+}

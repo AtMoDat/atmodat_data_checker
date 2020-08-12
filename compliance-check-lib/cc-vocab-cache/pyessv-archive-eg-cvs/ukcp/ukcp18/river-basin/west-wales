@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "west-wales",
+    "create_date": "2018-03-28 19:52:17.258367+00:00",
+    "label": "west_wales",
+    "namespace": "ukcp:ukcp18:river-basin:west-wales",
+    "raw_name": "west_wales",
+    "status": "pending",
+    "uid": "d00b682f-63f9-41fd-947a-0f4f88d55054"
+}

@@ -1,0 +1,46 @@
+{
+    "_type": "term",
+    "canonical_name": "pr",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "data": {
+        "cmip6_cmor_tables_row_id": [
+            "1164",
+            "1166",
+            "1169"
+        ],
+        "cmip6_name": "pr",
+        "cmip6_standard_name": "precipitation_flux",
+        "description": "Precipitation rate",
+        "label_units": "mm/day",
+        "long_name": "Precipitation rate",
+        "notes": [
+            "Precip mass flux (kg/m\u00b2/s, STASH 05216) is numerically equivalent to precip volume flux (mm\u00b3/mm\u00b2/s = mm/s), assuming constant water density of 1000 kg/m\u00b3.",
+            "Use WPS for LS1-3"
+        ],
+        "plot_label": "Precipitation rate (mm/day)",
+        "standard_name": "lwe_precipitation_rate",
+        "strand": [
+            "land strand 1",
+            "land strand 2",
+            "land strand 3 12km",
+            "land strand 3 2km",
+            "marine",
+            "observations"
+        ],
+        "time_averaging": [
+            "LTA",
+            "mean"
+        ],
+        "time_step": [
+            "1hr",
+            "day",
+            "mon"
+        ],
+        "um_stash": "05216",
+        "units": "mm/day"
+    },
+    "description": "Precipitation rate",
+    "namespace": "ukcp:ukcp18:variable:pr",
+    "status": "pending",
+    "uid": "4506cc6b-dc01-45a6-818a-bbaceab56714"
+}

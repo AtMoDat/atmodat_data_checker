@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "voc23-ketones-em-speciated-voc",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "VOC23-ketones-em-speciated-VOC",
+    "label": "VOC23-ketones-em-speciated-VOC",
+    "namespace": "wcrp:input4mips:variable-id:voc23-ketones-em-speciated-voc",
+    "raw_name": "VOC23-ketones-em-speciated-VOC",
+    "status": "pending"
+}

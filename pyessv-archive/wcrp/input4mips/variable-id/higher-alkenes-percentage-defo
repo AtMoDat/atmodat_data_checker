@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "higher-alkenes-percentage-defo",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Higher-Alkenes-percentage-DEFO",
+    "label": "Higher-Alkenes-percentage-DEFO",
+    "namespace": "wcrp:input4mips:variable-id:higher-alkenes-percentage-defo",
+    "raw_name": "Higher-Alkenes-percentage-DEFO",
+    "status": "pending"
+}

@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "aus-44i",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Australasia",
+    "label": "AUS-44i",
+    "namespace": "ecmwf:c3s-cordex:domain:aus-44i",
+    "raw_name": "AUS-44i",
+    "status": "pending"
+}

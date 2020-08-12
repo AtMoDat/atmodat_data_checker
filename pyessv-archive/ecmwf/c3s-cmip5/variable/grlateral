@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "grlateral",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "grLateral",
+    "label": "grLateral",
+    "namespace": "ecmwf:c3s-cmip5:variable:grlateral",
+    "raw_name": "grLateral",
+    "status": "pending"
+}

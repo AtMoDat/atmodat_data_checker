@@ -1,0 +1,12 @@
+{
+    "_type": "term", 
+    "canonical_name": "index", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "length": "<i>", 
+        "units": "1"
+    }, 
+    "namespace": "ncas:amf:product-soil-dimension:index", 
+    "status": "pending", 
+    "uid": "5e190692-ead6-4e50-9924-e33adaffc187"
+}

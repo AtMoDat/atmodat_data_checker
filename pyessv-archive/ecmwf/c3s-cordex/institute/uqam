@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "uqam",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "UQAM",
+    "label": "UQAM",
+    "namespace": "ecmwf:c3s-cordex:institute:uqam",
+    "raw_name": "UQAM",
+    "status": "pending"
+}

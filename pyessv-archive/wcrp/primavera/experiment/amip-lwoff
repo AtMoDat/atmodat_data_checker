@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "amip-lwoff",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "As amip experiment, but with cloud-radiative effects switched off in the LW radiation code",
+    "namespace": "wcrp:primavera:experiment:amip-lwoff",
+    "status": "pending"
+}

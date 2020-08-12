@@ -1,0 +1,36 @@
+{
+    "_type": "term",
+    "canonical_name": "hist-volc",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_id": [
+            "DAMIP"
+        ],
+        "additional_allowed_model_components": [
+            "AER",
+            "CHEM",
+            "BGC"
+        ],
+        "end_year": "2020",
+        "experiment": "historical volcanic-only run",
+        "experiment_id": "hist-volc",
+        "min_number_yrs_per_sim": "171",
+        "parent_activity_id": [
+            "CMIP"
+        ],
+        "parent_experiment_id": [
+            "piControl"
+        ],
+        "required_model_components": [
+            "AOGCM"
+        ],
+        "start_year": "1850",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "3"
+    },
+    "description": "Historical volcanic-only run",
+    "namespace": "wcrp:cmip6:experiment-id:hist-volc",
+    "status": "pending"
+}

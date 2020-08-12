@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "solaris-heppa-3-2",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "SOLARIS-HEPPA-3-2",
+    "label": "SOLARIS-HEPPA-3-2",
+    "namespace": "wcrp:input4mips:source-id:solaris-heppa-3-2",
+    "raw_name": "SOLARIS-HEPPA-3-2",
+    "status": "pending"
+}

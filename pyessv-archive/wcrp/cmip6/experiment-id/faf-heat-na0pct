@@ -1,0 +1,38 @@
+{
+    "_type": "term",
+    "canonical_name": "faf-heat-na0pct",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_id": [
+            "FAFMIP"
+        ],
+        "additional_allowed_model_components": [
+            "AER",
+            "CHEM",
+            "BGC"
+        ],
+        "end_year": "",
+        "experiment": "control plus perturbative surface flux of heat into ocean",
+        "experiment_id": "faf-heat-NA0pct",
+        "min_number_yrs_per_sim": "70",
+        "parent_activity_id": [
+            "CMIP"
+        ],
+        "parent_experiment_id": [
+            "piControl"
+        ],
+        "required_model_components": [
+            "AOGCM"
+        ],
+        "start_year": "",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "2"
+    },
+    "description": "1xCO2 experiment, parallel to piControl, forced over the ocean by the same method and with the same surface net heat flux perturbation field as in faf-heat, except that within part of the North Atlantic ocean the perturbation is zero",
+    "label": "faf-heat-NA0pct",
+    "namespace": "wcrp:cmip6:experiment-id:faf-heat-na0pct",
+    "raw_name": "faf-heat-NA0pct",
+    "status": "pending"
+}

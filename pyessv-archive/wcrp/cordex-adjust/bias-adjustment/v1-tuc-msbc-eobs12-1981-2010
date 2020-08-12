@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "v1-tuc-msbc-eobs12-1981-2010",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "v1-TUC-MSBC-EOBS12-1981-2010",
+    "label": "v1-TUC-MSBC-EOBS12-1981-2010",
+    "namespace": "wcrp:cordex-adjust:bias-adjustment:v1-tuc-msbc-eobs12-1981-2010",
+    "raw_name": "v1-TUC-MSBC-EOBS12-1981-2010",
+    "status": "pending"
+}

@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "ssp585-withism",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Future climate from ScenarioMIP SSP5-8.5 simulation that includes interactive ice sheets. Set up follows the standard SSP5-8.5 experiment",
+    "namespace": "wcrp:primavera:experiment:ssp585-withism",
+    "status": "pending"
+}

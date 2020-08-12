@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "dcppc-atl-control",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Mechanisms and predictability of the hiatus and of similar long timescale variations of both signs",
+    "label": "dcppC-atl-control",
+    "namespace": "wcrp:primavera:experiment:dcppc-atl-control",
+    "raw_name": "dcppC-atl-control",
+    "status": "pending"
+}

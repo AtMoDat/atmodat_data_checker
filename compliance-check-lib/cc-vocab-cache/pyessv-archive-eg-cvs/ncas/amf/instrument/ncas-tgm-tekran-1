@@ -1,0 +1,13 @@
+{
+    "_type": "term", 
+    "canonical_name": "ncas-tgm-tekran-1", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "description": "NCAS Mercury Monitor unit 1", 
+        "instrument_id": "ncas-tgm-tekran-1", 
+        "previous_instrument_ids": []
+    }, 
+    "namespace": "ncas:amf:instrument:ncas-tgm-tekran-1", 
+    "status": "pending", 
+    "uid": "3f74331e-e705-405a-9d13-146eb17a473c"
+}

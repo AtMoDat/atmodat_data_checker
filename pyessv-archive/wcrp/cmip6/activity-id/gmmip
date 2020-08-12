@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "gmmip",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "label": "GMMIP",
+    "namespace": "wcrp:cmip6:activity-id:gmmip",
+    "raw_name": "GMMIP",
+    "status": "pending"
+}

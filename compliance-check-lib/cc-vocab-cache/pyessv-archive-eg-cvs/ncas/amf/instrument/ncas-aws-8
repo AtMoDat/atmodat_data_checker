@@ -1,0 +1,15 @@
+{
+    "_type": "term", 
+    "canonical_name": "ncas-aws-8", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "description": "NCAS Automatic Weather Station unit 8", 
+        "instrument_id": "ncas-aws-8", 
+        "previous_instrument_ids": [
+            "cv-met-campbell"
+        ]
+    }, 
+    "namespace": "ncas:amf:instrument:ncas-aws-8", 
+    "status": "pending", 
+    "uid": "ca838724-7136-4660-afaf-779939873809"
+}

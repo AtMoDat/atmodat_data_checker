@@ -1,0 +1,40 @@
+{
+    "_type": "term",
+    "canonical_name": "g6solar",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "data": {
+        "activity_id": [
+            "GeoMIP"
+        ],
+        "additional_allowed_model_components": [
+            "AER",
+            "CHEM",
+            "BGC"
+        ],
+        "description": "Using solar irradiance reduction, return the radiative forcing from a background of the ScenarioMIP high forcing to the ScenarioMIP middle forcing",
+        "end_year": "2100",
+        "experiment": "total solar irradiance reduction to reduce net forcing from SSP585 to SSP245",
+        "experiment_id": "G6solar",
+        "min_number_yrs_per_sim": "86",
+        "parent_activity_id": [
+            "CMIP"
+        ],
+        "parent_experiment_id": [
+            "historical"
+        ],
+        "required_model_components": [
+            "AOGCM"
+        ],
+        "start_year": "2015",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "1"
+    },
+    "description": "Using solar irradiance reduction, return the radiative forcing from a background of the ScenarioMIP high forcing to the ScenarioMIP middle forcing",
+    "label": "G6solar",
+    "namespace": "ukcp:ukcp18:experiment-id:g6solar",
+    "raw_name": "G6solar",
+    "status": "pending",
+    "uid": "b3e37056-2a9c-4a7c-9027-56dcd2415afa"
+}

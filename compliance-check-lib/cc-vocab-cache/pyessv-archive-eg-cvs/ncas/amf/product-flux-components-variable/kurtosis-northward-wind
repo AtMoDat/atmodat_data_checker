@@ -1,0 +1,22 @@
+{
+    "_type": "term", 
+    "canonical_name": "kurtosis-northward-wind", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: point", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "long_name": "Kurtosis of Northward Wind Component (V rotated to run)", 
+        "name": "kurtosis_northward_wind", 
+        "type": "float32", 
+        "units": "1", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "kurtosis_northward_wind", 
+    "namespace": "ncas:amf:product-flux-components-variable:kurtosis-northward-wind", 
+    "raw_name": "kurtosis_northward_wind", 
+    "status": "pending", 
+    "uid": "08cc28ad-e93e-4b7c-ac8e-f5777615038f"
+}

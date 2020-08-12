@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "timeSeries",
+    "create_date": "2020-08-07 00:00:00+00:00",
+    "label": "timeSeries",
+    "namespace": "atmodat:atmodat:feature_type:timeSeries",
+    "raw_name": "timeSeries",
+    "status": "pending"
+}

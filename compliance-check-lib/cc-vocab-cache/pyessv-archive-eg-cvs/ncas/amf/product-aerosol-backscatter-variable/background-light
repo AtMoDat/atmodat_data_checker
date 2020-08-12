@@ -1,0 +1,22 @@
+{
+    "_type": "term", 
+    "canonical_name": "background-light", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "long_name": "Background Light (mV as measured by ADC: 0 - 2500)", 
+        "name": "background_light", 
+        "type": "float32", 
+        "units": "mV", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "background_light", 
+    "namespace": "ncas:amf:product-aerosol-backscatter-variable:background-light", 
+    "raw_name": "background_light", 
+    "status": "pending", 
+    "uid": "199a8cbb-7179-4942-b023-9ebd215e400d"
+}

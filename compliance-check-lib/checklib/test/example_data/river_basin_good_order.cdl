@@ -1,0 +1,88 @@
+netcdf river_basin_good_order {
+dimensions:
+	ensemble_member = 1 ;
+	region = 27 ;
+	strlen = 21 ;
+	time = 1 ;
+	bnds = 2 ;
+variables:
+	float ensemble_member(ensemble_member) ;
+		ensemble_member:units = "" ;
+		ensemble_member:long_name = "Ensemble member" ;
+	float pr(ensemble_member, time, region) ;
+		pr:_FillValue = 1.e+20f ;
+		pr:units = "kg m-2 s-1" ;
+		pr:long_name = "precipitation flux" ;
+		pr:standard_name = "precipitation_flux" ;
+		pr:coordinates = "geo_region season_year" ;
+	char geo_region(region, strlen) ;
+		geo_region:long_name = "River basin" ;
+		geo_region:standard_name = "region" ;
+	double time_bounds(time, bnds) ;
+	float time(time) ;
+		time:units = "days since 1901-12-15 00:00:00" ;
+		time:calendar = "360_day" ;
+		time:standard_name = "time" ;
+		time:bounds = "time_bounds" ;
+
+// global attributes:
+		:institution_id = "MOHC" ;
+		:domain = "uk" ;
+		:scenario = "rcp85" ;
+		:creator_name = "***Your name***" ;
+		:title = "***Title of my data set***" ;
+		:creator_email = "***Your email***" ;
+		:ensemble_member_id = "r001i1p00090" ;
+		:baseline_period = "1981-2000" ;
+		:collection = "land-gcm" ;
+		:creation_date = "2018-03-31 12:00:00" ;
+		:project = "ukcp18" ;
+		:source = "***The method of production of the original data. If it was model-generated, source should name the model and its version, as specifically as could be useful.***" ;
+		:frequency = "mon" ;
+		:references = "https://www.metoffice.gov.uk/***NEW**UKCP**SITE***" ;
+		:contact = "***Required from Fai***" ;
+		:version = "v20180331" ;
+		:dataset_id = "ukcp18-land-gcm-uk-river-all" ;
+		:resolution = "river" ;
+		:institution = "Met Office Hadley Centre (MOHC), FitzRoy Road, Exeter, Devon, EX1 3PB, UK." ;
+data:
+
+ ensemble_member = _ ;
+
+ pr =
+  _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _ ;
+
+ geo_region =
+  "anglian",
+  "argyll",
+  "channel_islands",
+  "clyde",
+  "dee",
+  "forth",
+  "humber",
+  "isle_of_man",
+  "neagh_bann",
+  "north_east_scotland",
+  "north_eastern_ireland",
+  "north_highland",
+  "north_west_england",
+  "north_western_ireland",
+  "northumbria",
+  "orkney_and_shetlands",
+  "republic_of_ireland",
+  "severn",
+  "solway",
+  "south_east_england",
+  "south_west_england",
+  "tay",
+  "thames",
+  "tweed",
+  "west_highland",
+  "west_wales" ,
+  "western_wales" ;
+
+ time_bounds =
+  _, _ ;
+
+ time = _ ;
+}

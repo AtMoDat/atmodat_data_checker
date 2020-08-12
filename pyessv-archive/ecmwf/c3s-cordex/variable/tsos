@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "tsos",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "tsos",
+    "namespace": "ecmwf:c3s-cordex:variable:tsos",
+    "status": "pending"
+}

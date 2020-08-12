@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "ipsl-cm5a-mr",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "IPSL-CM5A-MR",
+    "label": "IPSL-CM5A-MR",
+    "namespace": "ecmwf:c3s-cmip5:model:ipsl-cm5a-mr",
+    "raw_name": "IPSL-CM5A-MR",
+    "status": "pending"
+}

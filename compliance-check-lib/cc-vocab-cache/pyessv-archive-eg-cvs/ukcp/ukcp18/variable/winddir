@@ -1,0 +1,30 @@
+{
+    "_type": "term",
+    "canonical_name": "winddir",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "data": {
+        "description": "Wind direction",
+        "label_units": "degrees",
+        "level": "10m",
+        "long_name": "Direction of wind at 10m",
+        "plot_label": "Wind direction at 10m (degrees)",
+        "strand": [
+            "land strand 1",
+            "land strand 2",
+            "land strand 3 12km",
+            "land strand 3 2km",
+            "marine",
+            "observations"
+        ],
+        "time_step": [
+            "day"
+        ],
+        "units": "degrees"
+    },
+    "description": "Wind direction",
+    "label": "windDir",
+    "namespace": "ukcp:ukcp18:variable:winddir",
+    "raw_name": "windDir",
+    "status": "pending",
+    "uid": "59e4d186-84c4-4cba-8183-5d35350d1f48"
+}

@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "atmos",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "description": "Atmosphere",
+    "namespace": "wcrp:cmip6:realm:atmos",
+    "status": "pending"
+}

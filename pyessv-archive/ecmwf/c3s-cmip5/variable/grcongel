@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "grcongel",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "grCongel",
+    "label": "grCongel",
+    "namespace": "ecmwf:c3s-cmip5:variable:grcongel",
+    "raw_name": "grCongel",
+    "status": "pending"
+}

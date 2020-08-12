@@ -1,0 +1,38 @@
+{
+    "_type": "term",
+    "canonical_name": "ssp370pdsst",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_id": [
+            "AerChemMIP"
+        ],
+        "additional_allowed_model_components": [
+            "CHEM",
+            "BGC"
+        ],
+        "end_year": "2100",
+        "experiment": "SSP3-7.0, with SSTs prescribed as present day",
+        "experiment_id": "ssp370pdSST",
+        "min_number_yrs_per_sim": "86",
+        "parent_activity_id": [
+            "CMIP"
+        ],
+        "parent_experiment_id": [
+            "historical"
+        ],
+        "required_model_components": [
+            "AGCM",
+            "AER"
+        ],
+        "start_year": "2015",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "2"
+    },
+    "description": "Experimental set up as ssp370SST except sea surface temperatures (SST) and sea ice concentrations (SICONC) are from a 2005-2014 climatology. Diagnostics are as ssp370SST",
+    "label": "ssp370pdSST",
+    "namespace": "wcrp:cmip6:experiment-id:ssp370pdsst",
+    "raw_name": "ssp370pdSST",
+    "status": "pending"
+}

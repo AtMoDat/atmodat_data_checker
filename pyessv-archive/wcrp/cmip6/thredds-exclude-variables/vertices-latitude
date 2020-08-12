@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "vertices-latitude",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "description": "vertices_latitude",
+    "label": "vertices_latitude",
+    "namespace": "wcrp:cmip6:thredds-exclude-variables:vertices-latitude",
+    "raw_name": "vertices_latitude",
+    "status": "pending"
+}

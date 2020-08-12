@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "ipsl",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "IPSL",
+    "label": "IPSL",
+    "namespace": "wcrp:cordex-adjust:institute:ipsl",
+    "raw_name": "IPSL",
+    "status": "pending"
+}

@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "control-slab",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Slab control run for volc-pinatubo-slab",
+    "namespace": "wcrp:primavera:experiment:control-slab",
+    "status": "pending"
+}

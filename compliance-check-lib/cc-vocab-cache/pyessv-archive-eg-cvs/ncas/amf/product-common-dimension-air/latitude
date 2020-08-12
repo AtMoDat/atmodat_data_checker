@@ -1,0 +1,12 @@
+{
+    "_type": "term", 
+    "canonical_name": "latitude", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "length": "<n>", 
+        "units": "degrees_north"
+    }, 
+    "namespace": "ncas:amf:product-common-dimension-air:latitude", 
+    "status": "pending", 
+    "uid": "6f898e30-0464-413c-baa9-9be1233b4085"
+}

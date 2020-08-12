@@ -1,0 +1,38 @@
+{
+    "_type": "term",
+    "canonical_name": "hist-all-nat2",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "data": {
+        "activity_id": [
+            "DAMIP"
+        ],
+        "additional_allowed_model_components": [
+            "AER",
+            "CHEM",
+            "BGC"
+        ],
+        "description": "Historical ALL forcing run with alternates estimate of solar and volcanic forcing",
+        "end_year": "2020",
+        "experiment": "historical ALL-forcing run with alternate estimates of natural forcing",
+        "experiment_id": "hist-all-nat2",
+        "min_number_yrs_per_sim": "171",
+        "parent_activity_id": [
+            "CMIP"
+        ],
+        "parent_experiment_id": [
+            "piControl"
+        ],
+        "required_model_components": [
+            "AOGCM"
+        ],
+        "start_year": "1850",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "3"
+    },
+    "description": "Historical ALL forcing run with alternates estimate of solar and volcanic forcing",
+    "namespace": "ukcp:ukcp18:experiment-id:hist-all-nat2",
+    "status": "pending",
+    "uid": "27a1a5ee-87e3-4be3-a1cd-bf0cc62f7eb4"
+}

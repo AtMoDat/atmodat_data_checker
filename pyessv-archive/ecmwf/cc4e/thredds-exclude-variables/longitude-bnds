@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "longitude-bnds",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "longitude_bnds",
+    "label": "longitude_bnds",
+    "namespace": "ecmwf:cc4e:thredds-exclude-variables:longitude-bnds",
+    "raw_name": "longitude_bnds",
+    "status": "pending"
+}

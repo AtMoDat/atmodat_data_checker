@@ -1,0 +1,63 @@
+{
+    "_type": "term",
+    "canonical_name": "bnu-esm-1-1",
+    "create_date": "2018-03-28 19:52:17.258367+00:00",
+    "data": {
+        "activity_participation": [
+            "C4MIP",
+            "CMIP",
+            "GMMIP",
+            "GeoMIP",
+            "OMIP",
+            "ScenarioMIP"
+        ],
+        "cohort": [
+            "Registered"
+        ],
+        "institution_id": [
+            "BNU"
+        ],
+        "label_extended": "BNU-ESM 1.1",
+        "model_component": {
+            "aerosol": {
+                "description": "CAM-chem; semi-interactive",
+                "nominal_resolution": "250 km"
+            },
+            "atmos": {
+                "description": "CAM4 (2deg; 144 x 96 longitude/latitude; 26 levels; top level 2.194 mb)",
+                "nominal_resolution": "250 km"
+            },
+            "atmosChem": {
+                "description": "none",
+                "nominal_resolution": "none"
+            },
+            "land": {
+                "description": "CoLM version 2014 with carbon-nitrogen interactions",
+                "nominal_resolution": "250 km"
+            },
+            "landIce": {
+                "description": "none",
+                "nominal_resolution": "none"
+            },
+            "ocean": {
+                "description": "MOM4p1 (tripolar, primarily 1deg latitude/longitude, down to 1/3deg within 30deg of the equatorial tropics; 360 x 200 longitude/latitude; 50 levels; top grid cell 0-10 m)",
+                "nominal_resolution": "100 km"
+            },
+            "ocnBgchem": {
+                "description": "Dynamic ecosystem-carbon model version 1",
+                "nominal_resolution": "100 km"
+            },
+            "seaIce": {
+                "description": "CICE4.1",
+                "nominal_resolution": "100 km"
+            }
+        },
+        "release_year": "2016",
+        "source_id": "BNU-ESM-1-1"
+    },
+    "label": "BNU-ESM 1.1",
+    "namespace": "ukcp:ukcp18:source-id:bnu-esm-1-1",
+    "raw_name": "BNU-ESM-1-1",
+    "status": "pending",
+    "uid": "47fab160-460c-4387-9882-4f05e446285c"
+}

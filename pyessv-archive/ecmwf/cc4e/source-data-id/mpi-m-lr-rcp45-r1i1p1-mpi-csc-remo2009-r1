@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "mpi-m-lr-rcp45-r1i1p1-mpi-csc-remo2009-r1",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "MPI-M-LR-rcp45-r1i1p1-MPI-CSC-REMO2009-r1",
+    "label": "MPI-M-LR-rcp45-r1i1p1-MPI-CSC-REMO2009-r1",
+    "namespace": "ecmwf:cc4e:source-data-id:mpi-m-lr-rcp45-r1i1p1-mpi-csc-remo2009-r1",
+    "raw_name": "MPI-M-LR-rcp45-r1i1p1-MPI-CSC-REMO2009-r1",
+    "status": "pending"
+}

@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "nox-percentage-agri",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "NOx-percentage-AGRI",
+    "label": "NOx-percentage-AGRI",
+    "namespace": "wcrp:input4mips:variable-id:nox-percentage-agri",
+    "raw_name": "NOx-percentage-AGRI",
+    "status": "pending"
+}

@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "bounds-lon",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "bounds_lon",
+    "label": "bounds_lon",
+    "namespace": "ecmwf:c3s-cordex:thredds-exclude-variables:bounds-lon",
+    "raw_name": "bounds_lon",
+    "status": "pending"
+}

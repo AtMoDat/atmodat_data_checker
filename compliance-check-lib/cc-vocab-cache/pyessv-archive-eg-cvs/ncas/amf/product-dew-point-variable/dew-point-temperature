@@ -1,0 +1,23 @@
+{
+    "_type": "term", 
+    "canonical_name": "dew-point-temperature", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: ????", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "long_name": "Dew \\Frost point Temperature", 
+        "name": "dew_point_temperature", 
+        "standard_name": "dew_point_temperature", 
+        "type": "float32", 
+        "units": "K", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "dew_point_temperature", 
+    "namespace": "ncas:amf:product-dew-point-variable:dew-point-temperature", 
+    "raw_name": "dew_point_temperature", 
+    "status": "pending", 
+    "uid": "e33633a0-c56c-41ce-a328-5e4adca49bd0"
+}

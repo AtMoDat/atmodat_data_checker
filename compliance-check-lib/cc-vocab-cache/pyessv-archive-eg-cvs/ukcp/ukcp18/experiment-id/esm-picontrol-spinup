@@ -1,0 +1,40 @@
+{
+    "_type": "term",
+    "canonical_name": "esm-picontrol-spinup",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "data": {
+        "activity_id": [
+            "CMIP"
+        ],
+        "additional_allowed_model_components": [
+            "AER",
+            "CHEM"
+        ],
+        "description": "DECK: spin-up portion of the control (emission-driven)",
+        "end_year": "",
+        "experiment": "pre-industrial control simulation with CO2 concentration calculated (spin-up)",
+        "experiment_id": "esm-piControl-spinup",
+        "min_number_yrs_per_sim": "100",
+        "parent_activity_id": [
+            "no parent"
+        ],
+        "parent_experiment_id": [
+            "no parent"
+        ],
+        "required_model_components": [
+            "AOGCM",
+            "BGC"
+        ],
+        "start_year": "",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "2"
+    },
+    "description": "DECK: spin-up portion of the control (emission-driven)",
+    "label": "esm-piControl-spinup",
+    "namespace": "ukcp:ukcp18:experiment-id:esm-picontrol-spinup",
+    "raw_name": "esm-piControl-spinup",
+    "status": "pending",
+    "uid": "965f03b1-8d90-4ef4-9b81-6d03b01d3dec"
+}

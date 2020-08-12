@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "3hrpt",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "3hrPt",
+    "label": "3hrPt",
+    "namespace": "wcrp:input4mips:frequency:3hrpt",
+    "raw_name": "3hrPt",
+    "status": "pending"
+}

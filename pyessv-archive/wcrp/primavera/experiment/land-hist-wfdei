@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "land-hist-wfdei",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Land only simulations",
+    "namespace": "wcrp:primavera:experiment:land-hist-wfdei",
+    "status": "pending"
+}

@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "wrf350i",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "label": "WRF350I",
+    "namespace": "ecmwf:c3s-cordex:rcm-name:wrf350i",
+    "raw_name": "WRF350I",
+    "status": "pending"
+}

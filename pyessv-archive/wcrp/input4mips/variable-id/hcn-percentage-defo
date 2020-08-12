@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "hcn-percentage-defo",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "HCN-percentage-DEFO",
+    "label": "HCN-percentage-DEFO",
+    "namespace": "wcrp:input4mips:variable-id:hcn-percentage-defo",
+    "raw_name": "HCN-percentage-DEFO",
+    "status": "pending"
+}

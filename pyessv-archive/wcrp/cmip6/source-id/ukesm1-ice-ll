@@ -1,0 +1,58 @@
+{
+    "_type": "term",
+    "canonical_name": "ukesm1-ice-ll",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_participation": [
+            "ISMIP6"
+        ],
+        "cohort": [
+            "Registered"
+        ],
+        "institution_id": [
+            "MOHC",
+            "NERC"
+        ],
+        "label_extended": "UKESM1.ice-N96ORCA1",
+        "model_component": {
+            "aerosol": {
+                "description": "UKCA-GLOMAP-mode",
+                "native_nominal_resolution": "250 km"
+            },
+            "atmos": {
+                "description": "MetUM-HadGEM3-GA7.1 (N96; 192 x 144 longitude/latitude; 85 levels; top level 85 km)",
+                "native_nominal_resolution": "250 km"
+            },
+            "atmosChem": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "land": {
+                "description": "JULES-ISMIP6-1.0",
+                "native_nominal_resolution": "250 km"
+            },
+            "landIce": {
+                "description": "BISICLES-UKESM-ISMIP6-1.0",
+                "native_nominal_resolution": "5 km"
+            },
+            "ocean": {
+                "description": "NEMO-HadGEM3-GO6.0 (eORCA1 tripolar primarily 1 deg with meridional refinement down to 1/3 degree in the tropics; 360 x 330 longitude/latitude; 75 levels; top grid cell 0-1 m)",
+                "native_nominal_resolution": "100 km"
+            },
+            "ocnBgchem": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "seaIce": {
+                "description": "CICE-HadGEM3-GSI8 (eORCA1 tripolar primarily 1 deg; 360 x 330 longitude/latitude)",
+                "native_nominal_resolution": "100 km"
+            }
+        },
+        "release_year": "2019",
+        "source_id": "UKESM1-ice-LL"
+    },
+    "label": "UKESM1.ice-LL",
+    "namespace": "wcrp:cmip6:source-id:ukesm1-ice-ll",
+    "raw_name": "UKESM1-ice-LL",
+    "status": "pending"
+}

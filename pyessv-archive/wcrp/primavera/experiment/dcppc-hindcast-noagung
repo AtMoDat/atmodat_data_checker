@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "dcppc-hindcast-noagung",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Effects of volcanoes on decadal prediction and predictability of forced and internal variability components",
+    "label": "dcppC-hindcast-noAgung",
+    "namespace": "wcrp:primavera:experiment:dcppc-hindcast-noagung",
+    "raw_name": "dcppC-hindcast-noAgung",
+    "status": "pending"
+}

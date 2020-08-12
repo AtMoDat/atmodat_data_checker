@@ -1,0 +1,25 @@
+{
+    "_type": "term", 
+    "canonical_name": "mole-fraction-of-sulfur-dioxide-in-air", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: ????", 
+        "chemical_species": "SO2", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "long_name": "Mole Fraction of Sulfur Dioxide in air", 
+        "name": "mole_fraction_of_sulfur_dioxide_in_air", 
+        "practical_units": "?", 
+        "standard_name": "mole_fraction_of_sulfur_dioxide_in_air", 
+        "type": "float32", 
+        "units": "?", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "mole_fraction_of_sulfur_dioxide_in_air", 
+    "namespace": "ncas:amf:product-so2-concentration-variable:mole-fraction-of-sulfur-dioxide-in-air", 
+    "raw_name": "mole_fraction_of_sulfur_dioxide_in_air", 
+    "status": "pending", 
+    "uid": "d221cc11-bb5f-4b3a-beef-333892835f26"
+}

@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "imongre",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "label": "ImonGre",
+    "namespace": "wcrp:cmip6:table-id:imongre",
+    "raw_name": "ImonGre",
+    "status": "pending"
+}

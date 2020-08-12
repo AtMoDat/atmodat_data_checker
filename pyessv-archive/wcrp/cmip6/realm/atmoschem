@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "atmoschem",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "description": "Atmospheric Chemistry",
+    "label": "atmosChem",
+    "namespace": "wcrp:cmip6:realm:atmoschem",
+    "raw_name": "atmosChem",
+    "status": "pending"
+}

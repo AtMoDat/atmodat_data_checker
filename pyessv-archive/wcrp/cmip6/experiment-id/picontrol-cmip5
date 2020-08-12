@@ -1,0 +1,38 @@
+{
+    "_type": "term",
+    "canonical_name": "picontrol-cmip5",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_id": [
+            "CMIP"
+        ],
+        "additional_allowed_model_components": [
+            "AER",
+            "CHEM",
+            "BGC"
+        ],
+        "end_year": "",
+        "experiment": "pre-industrial control (CMIP5-era [1850-2005] forcing)",
+        "experiment_id": "piControl-cmip5",
+        "min_number_yrs_per_sim": "500",
+        "parent_activity_id": [
+            "CMIP"
+        ],
+        "parent_experiment_id": [
+            "piControl-spinup-cmip5"
+        ],
+        "required_model_components": [
+            "AOGCM"
+        ],
+        "start_year": "",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "2"
+    },
+    "description": "DECK: control (CMIP5-era pre-industrial forcing)",
+    "label": "piControl-cmip5",
+    "namespace": "wcrp:cmip6:experiment-id:picontrol-cmip5",
+    "raw_name": "piControl-cmip5",
+    "status": "pending"
+}

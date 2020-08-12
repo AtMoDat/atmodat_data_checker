@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "mpi-m-mpi-esm-lr-rcp85-smhi-rca4-ipsl-cdft22-wfdei-helioclim-1985-2005",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "MPI-M-MPI-ESM-LR-rcp85-SMHI-RCA4-IPSL-CDFT22-WFDEI-HELIOCLIM-1985-2005",
+    "label": "MPI-M-MPI-ESM-LR-rcp85-SMHI-RCA4-IPSL-CDFT22-WFDEI-HELIOCLIM-1985-2005",
+    "namespace": "ecmwf:cc4e:source-data-id:mpi-m-mpi-esm-lr-rcp85-smhi-rca4-ipsl-cdft22-wfdei-helioclim-1985-2005",
+    "raw_name": "MPI-M-MPI-ESM-LR-rcp85-SMHI-RCA4-IPSL-CDFT22-WFDEI-HELIOCLIM-1985-2005",
+    "status": "pending"
+}

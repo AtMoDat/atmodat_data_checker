@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "uci",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "UCI",
+    "label": "UCI",
+    "namespace": "wcrp:input4mips:institution-id:uci",
+    "raw_name": "UCI",
+    "status": "pending"
+}

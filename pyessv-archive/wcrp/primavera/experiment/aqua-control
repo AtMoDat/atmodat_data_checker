@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "aqua-control",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Extended version of CMIP5/CFMIP-2 aquaControl experiment. Aquaplanet (no land) experiment with no seasonal cycle forced with specified zonally symmetric SSTs",
+    "namespace": "wcrp:primavera:experiment:aqua-control",
+    "status": "pending"
+}

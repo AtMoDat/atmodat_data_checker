@@ -1,0 +1,25 @@
+{
+    "_type": "term", 
+    "canonical_name": "mole-fraction-of-carbon-tetrachloride-in-air", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: ????", 
+        "chemical_species": "CCl4", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "long_name": "Mole Fraction of Carbon Tetrachloride in air", 
+        "name": "mole_fraction_of_carbon_tetrachloride_in_air", 
+        "practical_units": "?", 
+        "standard_name": "mole_fraction_of_carbon_tetrachloride_in_air", 
+        "type": "float32", 
+        "units": "?", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "mole_fraction_of_carbon_tetrachloride_in_air", 
+    "namespace": "ncas:amf:product-halocarbon-concentration-variable:mole-fraction-of-carbon-tetrachloride-in-air", 
+    "raw_name": "mole_fraction_of_carbon_tetrachloride_in_air", 
+    "status": "pending", 
+    "uid": "13e9b4c3-9f68-45e6-a957-0d998708802f"
+}

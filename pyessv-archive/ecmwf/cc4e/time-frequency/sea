@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "sea",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "sea",
+    "namespace": "ecmwf:cc4e:time-frequency:sea",
+    "status": "pending"
+}

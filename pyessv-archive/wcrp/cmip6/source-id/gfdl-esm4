@@ -1,0 +1,65 @@
+{
+    "_type": "term",
+    "canonical_name": "gfdl-esm4",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_participation": [
+            "AerChemMIP",
+            "C4MIP",
+            "CDRMIP",
+            "CMIP",
+            "DAMIP",
+            "DynVarMIP",
+            "LUMIP",
+            "RFMIP",
+            "ScenarioMIP"
+        ],
+        "cohort": [
+            "Registered"
+        ],
+        "institution_id": [
+            "NOAA-GFDL"
+        ],
+        "label_extended": "GFDL-ESM4",
+        "model_component": {
+            "aerosol": {
+                "description": "interactive",
+                "native_nominal_resolution": "100 km"
+            },
+            "atmos": {
+                "description": "GFDL-AM4.1 (Cubed-sphere (c96) - 1 degree nominal horizontal resolution; 360 x 180 longitude/latitude; 49 levels; top level 1 Pa)",
+                "native_nominal_resolution": "100 km"
+            },
+            "atmosChem": {
+                "description": "GFDL-ATMCHEM4.1 (full atmospheric chemistry)",
+                "native_nominal_resolution": "100 km"
+            },
+            "land": {
+                "description": "GFDL-LM4.1",
+                "native_nominal_resolution": "100 km"
+            },
+            "landIce": {
+                "description": "GFDL-LM4.1",
+                "native_nominal_resolution": "100 km"
+            },
+            "ocean": {
+                "description": "GFDL-OM4p5 (GFDL-MOM6, tripolar - nominal 0.5 deg; 720 x 576 longitude/latitude; 75 levels; top grid cell 0-2 m)",
+                "native_nominal_resolution": "50 km"
+            },
+            "ocnBgchem": {
+                "description": "GFDL-COBALTv2",
+                "native_nominal_resolution": "50 km"
+            },
+            "seaIce": {
+                "description": "GFDL-SIM4p5 (GFDL-SIS2.0, tripolar - nominal 0.5 deg; 720 x 576 longitude/latitude; 5 layers; 5 thickness categories)",
+                "native_nominal_resolution": "50 km"
+            }
+        },
+        "release_year": "2018",
+        "source_id": "GFDL-ESM4"
+    },
+    "label": "GFDL-ESM4",
+    "namespace": "wcrp:cmip6:source-id:gfdl-esm4",
+    "raw_name": "GFDL-ESM4",
+    "status": "pending"
+}

@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "a-bnds",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "a_bnds",
+    "label": "a_bnds",
+    "namespace": "ecmwf:cc4e:thredds-exclude-variables:a-bnds",
+    "raw_name": "a_bnds",
+    "status": "pending"
+}

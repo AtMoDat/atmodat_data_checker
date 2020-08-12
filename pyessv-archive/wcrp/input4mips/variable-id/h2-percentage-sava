@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "h2-percentage-sava",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "H2-percentage-SAVA",
+    "label": "H2-percentage-SAVA",
+    "namespace": "wcrp:input4mips:variable-id:h2-percentage-sava",
+    "raw_name": "H2-percentage-SAVA",
+    "status": "pending"
+}

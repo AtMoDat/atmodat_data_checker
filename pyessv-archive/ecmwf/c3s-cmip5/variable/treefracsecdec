@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "treefracsecdec",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "treeFracSecDec",
+    "label": "treeFracSecDec",
+    "namespace": "ecmwf:c3s-cmip5:variable:treefracsecdec",
+    "raw_name": "treeFracSecDec",
+    "status": "pending"
+}

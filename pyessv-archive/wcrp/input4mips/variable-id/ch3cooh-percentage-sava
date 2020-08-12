@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "ch3cooh-percentage-sava",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "CH3COOH-percentage-SAVA",
+    "label": "CH3COOH-percentage-SAVA",
+    "namespace": "wcrp:input4mips:variable-id:ch3cooh-percentage-sava",
+    "raw_name": "CH3COOH-percentage-SAVA",
+    "status": "pending"
+}

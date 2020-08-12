@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "amip-a3-1850-allf",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "AMIP A3 1850 all forcings",
+    "label": "amip-a3-1850-allF",
+    "namespace": "wcrp:e3sm:experiment:amip-a3-1850-allf",
+    "raw_name": "amip-a3-1850-allF",
+    "status": "pending"
+}

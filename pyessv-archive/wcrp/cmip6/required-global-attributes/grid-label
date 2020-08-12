@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "grid-label",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "label": "grid_label",
+    "namespace": "wcrp:cmip6:required-global-attributes:grid-label",
+    "raw_name": "grid_label",
+    "status": "pending"
+}

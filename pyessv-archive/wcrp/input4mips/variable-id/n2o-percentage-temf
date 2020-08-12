@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "n2o-percentage-temf",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "N2O-percentage-TEMF",
+    "label": "N2O-percentage-TEMF",
+    "namespace": "wcrp:input4mips:variable-id:n2o-percentage-temf",
+    "raw_name": "N2O-percentage-TEMF",
+    "status": "pending"
+}

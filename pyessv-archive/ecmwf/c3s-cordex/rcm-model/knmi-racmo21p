@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "knmi-racmo21p",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "KNMI-RACMO21P",
+    "label": "KNMI-RACMO21P",
+    "namespace": "ecmwf:c3s-cordex:rcm-model:knmi-racmo21p",
+    "raw_name": "KNMI-RACMO21P",
+    "status": "pending"
+}

@@ -1,0 +1,12 @@
+{
+    "_type": "term",
+    "canonical_name": "low",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "color": "#e6b8af",
+        "sortOrdinal": 0
+    },
+    "label": "Low",
+    "namespace": "esdoc:errata:severity:low",
+    "status": "pending"
+}

@@ -1,0 +1,30 @@
+{
+    "_type": "term", 
+    "canonical_name": "qc-flag-sstclass-wu", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "dimension": "time", 
+        "flag_meanings": [
+            "not_used", 
+            "good_data", 
+            "suspect_data", 
+            "suspect_data", 
+            "suspect_data", 
+            "suspect_data", 
+            "suspect_data", 
+            "suspect_data", 
+            "suspect_data", 
+            "bad_data"
+        ], 
+        "flag_values": "0b,1b, 2b, 3b, 4b, 5b, 6b, 7b, 8b, 9b", 
+        "long_name": "Quality flag: Steady State Class WU", 
+        "name": "qc_flag_sstclass_wu", 
+        "type": "byte", 
+        "units": "1"
+    }, 
+    "label": "qc_flag_sstclass_wu", 
+    "namespace": "ncas:amf:product-flux-estimates-variable:qc-flag-sstclass-wu", 
+    "raw_name": "qc_flag_sstclass_wu", 
+    "status": "pending", 
+    "uid": "9e800c1f-1c0c-4fb8-9823-813fc1ae565d"
+}

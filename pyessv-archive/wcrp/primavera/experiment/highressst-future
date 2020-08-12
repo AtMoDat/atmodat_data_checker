@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "highressst-future",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Extend Forced_Atmos_land to 2050 with agreed forcings (with option to extend further to 2100)",
+    "label": "highresSST-future",
+    "namespace": "wcrp:primavera:experiment:highressst-future",
+    "raw_name": "highresSST-future",
+    "status": "pending"
+}

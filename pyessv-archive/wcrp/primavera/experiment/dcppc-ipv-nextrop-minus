@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "dcppc-ipv-nextrop-minus",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Mechanisms and predictability of the hiatus and of similar long timescale variations of both signs",
+    "label": "dcppC-ipv-nextrop-minus",
+    "namespace": "wcrp:primavera:experiment:dcppc-ipv-nextrop-minus",
+    "raw_name": "dcppC-ipv-nextrop-minus",
+    "status": "pending"
+}

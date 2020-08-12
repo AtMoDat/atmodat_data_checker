@@ -1,0 +1,13 @@
+{
+    "_type": "term", 
+    "canonical_name": "ncas-pan-gc-1", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "description": "NCAS Peroxyacetyl Nitrates Gas Chromatograph unit 1", 
+        "instrument_id": "ncas-pan-gc-1", 
+        "previous_instrument_ids": []
+    }, 
+    "namespace": "ncas:amf:instrument:ncas-pan-gc-1", 
+    "status": "pending", 
+    "uid": "78a4db91-7cdf-4cfc-a7e4-d5baa52b1b40"
+}

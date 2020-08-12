@@ -1,0 +1,58 @@
+{
+    "_type": "term",
+    "canonical_name": "miroc-es2h-nb",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_participation": [
+            "AerChemMIP",
+            "CMIP"
+        ],
+        "cohort": [
+            "Registered"
+        ],
+        "institution_id": [
+            "MIROC"
+        ],
+        "label_extended": "MIROC-ES2H with No BiogenicCycle",
+        "model_component": {
+            "aerosol": {
+                "description": "SPRINTARS6.0",
+                "native_nominal_resolution": "250 km"
+            },
+            "atmos": {
+                "description": "CCSR AGCM (T85; 256 x 128 longitude/latitude; 81 levels; top level 0.004 hPa)",
+                "native_nominal_resolution": "250 km"
+            },
+            "atmosChem": {
+                "description": "CHASER4.0 (T42; 128 x 64 longitude/latitude; 81 levels; top level 0.004 hPa)",
+                "native_nominal_resolution": "500 km"
+            },
+            "land": {
+                "description": "MATSIRO6",
+                "native_nominal_resolution": "250 km"
+            },
+            "landIce": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "ocean": {
+                "description": "COCO4.9 (tripolar primarily 1deg; 360 x 256 longitude/latitude; 63 levels; top grid cell 0-2 m)",
+                "native_nominal_resolution": "100 km"
+            },
+            "ocnBgchem": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "seaIce": {
+                "description": "COCO4.9",
+                "native_nominal_resolution": "100 km"
+            }
+        },
+        "release_year": "2019",
+        "source_id": "MIROC-ES2H-NB"
+    },
+    "label": "MIROC-ES2H-NB",
+    "namespace": "wcrp:cmip6:source-id:miroc-es2h-nb",
+    "raw_name": "MIROC-ES2H-NB",
+    "status": "pending"
+}

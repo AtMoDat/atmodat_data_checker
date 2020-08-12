@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "seasonal-mean",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "label": "seasonal mean",
+    "namespace": "wcrp:cordex-adjust:las-time-delta:seasonal-mean",
+    "raw_name": "seasonal mean",
+    "status": "pending"
+}

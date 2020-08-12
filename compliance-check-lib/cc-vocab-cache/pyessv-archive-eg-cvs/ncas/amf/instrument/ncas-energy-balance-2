@@ -1,0 +1,13 @@
+{
+    "_type": "term", 
+    "canonical_name": "ncas-energy-balance-2", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "description": "NCAS Energy Balance Station unit 2 - Kipp&Zonen radiation sensor", 
+        "instrument_id": "ncas-energy-balance-2", 
+        "previous_instrument_ids": []
+    }, 
+    "namespace": "ncas:amf:instrument:ncas-energy-balance-2", 
+    "status": "pending", 
+    "uid": "ca4b13d7-e800-499e-a516-2696d286d588"
+}

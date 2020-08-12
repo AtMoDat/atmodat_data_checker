@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "hist-sol",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Historical solar-only transient simulation using settings from CMIP6 historical simulation but fixed GHG&ODS (1850 level)",
+    "namespace": "wcrp:primavera:experiment:hist-sol",
+    "status": "pending"
+}

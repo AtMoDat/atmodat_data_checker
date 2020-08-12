@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "ipsl-ipsl-cm5a-mr",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "IPSL-IPSL-CM5A-MR",
+    "label": "IPSL-IPSL-CM5A-MR",
+    "namespace": "ecmwf:c3s-cordex:driving-model:ipsl-ipsl-cm5a-mr",
+    "raw_name": "IPSL-IPSL-CM5A-MR",
+    "status": "pending"
+}

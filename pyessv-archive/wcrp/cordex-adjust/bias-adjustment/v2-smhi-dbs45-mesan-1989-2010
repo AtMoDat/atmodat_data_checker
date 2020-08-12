@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "v2-smhi-dbs45-mesan-1989-2010",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "v2-SMHI-DBS45-MESAN-1989-2010",
+    "label": "v2-SMHI-DBS45-MESAN-1989-2010",
+    "namespace": "wcrp:cordex-adjust:bias-adjustment:v2-smhi-dbs45-mesan-1989-2010",
+    "raw_name": "v2-SMHI-DBS45-MESAN-1989-2010",
+    "status": "pending"
+}

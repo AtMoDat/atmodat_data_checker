@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "miroc4h",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "MIROC4h",
+    "label": "MIROC4h",
+    "namespace": "ecmwf:c3s-cmip5:model:miroc4h",
+    "raw_name": "MIROC4h",
+    "status": "pending"
+}

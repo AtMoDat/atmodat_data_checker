@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "cllcalipso",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "cllcalipso",
+    "namespace": "ecmwf:c3s-cmip5:variable:cllcalipso",
+    "status": "pending"
+}

@@ -1,0 +1,23 @@
+{
+    "_type": "term", 
+    "canonical_name": "qc-flag-kurtosis-v", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "dimension": "time", 
+        "flag_meanings": [
+            "bad_data", 
+            "good_data", 
+            "suspect_data"
+        ], 
+        "flag_values": "0b,1b, 2b", 
+        "long_name": "Quality flag: Kurtosis V", 
+        "name": "qc_flag_kurtosis_v", 
+        "type": "byte", 
+        "units": "1"
+    }, 
+    "label": "qc_flag_kurtosis_v", 
+    "namespace": "ncas:amf:product-flux-estimates-variable:qc-flag-kurtosis-v", 
+    "raw_name": "qc_flag_kurtosis_v", 
+    "status": "pending", 
+    "uid": "2a82b5f4-d967-4cdd-aae5-732a552f3b9a"
+}

@@ -1,0 +1,16 @@
+{
+    "_type": "term",
+    "canonical_name": "csiro",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "consortia": [],
+        "coordinates": "145.0435415,-38.0028413",
+        "homepage": "https://www.csiro.au/",
+        "name": "Commonwealth Scientific and Industrial Research Organisation",
+        "postalAddress": "Aspendale, Victoria 3195, Australia"
+    },
+    "label": "CSIRO",
+    "namespace": "wcrp:cmip6:institution-id:csiro",
+    "raw_name": "CSIRO",
+    "status": "pending"
+}

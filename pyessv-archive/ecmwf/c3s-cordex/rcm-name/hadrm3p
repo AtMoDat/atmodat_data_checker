@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "hadrm3p",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "label": "HadRM3P",
+    "namespace": "ecmwf:c3s-cordex:rcm-name:hadrm3p",
+    "raw_name": "HadRM3P",
+    "status": "pending"
+}

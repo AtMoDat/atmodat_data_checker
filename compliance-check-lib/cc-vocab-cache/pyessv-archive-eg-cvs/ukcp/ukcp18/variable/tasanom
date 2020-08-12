@@ -1,0 +1,50 @@
+{
+    "_type": "term",
+    "canonical_name": "tasanom",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "data": {
+        "anomaly_type": "absolute_change",
+        "cmip6_cmor_tables_row_id": [
+            "1706",
+            "1710",
+            "1712"
+        ],
+        "cmip6_name": "tas",
+        "cmip6_standard_name": "air_temperature",
+        "description": "Mean air temperature",
+        "label_units": "\u00b0C",
+        "level": "1.5m",
+        "long_name": "Mean air temperature",
+        "notes": [
+            "Use WPS for LS1-3"
+        ],
+        "plot_label": "Mean air temperature anomaly at 1.5m (\u00b0C)",
+        "standard_name": "air_temperature",
+        "strand": [
+            "land strand 1",
+            "land strand 2",
+            "land strand 3 12km",
+            "land strand 3 2km",
+            "marine",
+            "observations"
+        ],
+        "time_averaging": [
+            "LTA",
+            "instantaneous",
+            "mean"
+        ],
+        "time_step": [
+            "3hr",
+            "day",
+            "mon"
+        ],
+        "um_stash": "03236",
+        "units": "degC"
+    },
+    "description": "Mean air temperature",
+    "label": "tasAnom",
+    "namespace": "ukcp:ukcp18:variable:tasanom",
+    "raw_name": "tasAnom",
+    "status": "pending",
+    "uid": "e3bccc80-6075-4e55-ac81-47d15f99f99b"
+}

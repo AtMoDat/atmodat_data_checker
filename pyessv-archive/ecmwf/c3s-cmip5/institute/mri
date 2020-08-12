@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "mri",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "label": "MRI",
+    "namespace": "ecmwf:c3s-cmip5:institute:mri",
+    "raw_name": "MRI",
+    "status": "pending"
+}

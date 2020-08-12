@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "sam-44",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "South America",
+    "label": "SAM-44",
+    "namespace": "ecmwf:c3s-cordex:domain:sam-44",
+    "raw_name": "SAM-44",
+    "status": "pending"
+}

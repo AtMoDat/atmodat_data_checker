@@ -1,0 +1,35 @@
+{
+    "_type": "term",
+    "canonical_name": "evspsbl",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "data": {
+        "cmip6_name": "evspsbl",
+        "cmip6_standard_name": "water_evaporation_flux",
+        "description": "Evaporation rate",
+        "label_units": "mm/day",
+        "long_name": "Evaporation rate",
+        "plot_label": "Evaporation rate (mm/day)",
+        "standard_name": "water_evaporation_flux",
+        "strand": [
+            "land strand 1",
+            "land strand 2",
+            "land strand 3 12km",
+            "land strand 3 2km",
+            "marine",
+            "observations"
+        ],
+        "time_averaging": [
+            "mean"
+        ],
+        "time_step": [
+            "day",
+            "mon"
+        ],
+        "um_stash": "3223",
+        "units": "mm/day"
+    },
+    "description": "Evaporation rate",
+    "namespace": "ukcp:ukcp18:variable:evspsbl",
+    "status": "pending",
+    "uid": "108bf6b0-1559-43aa-9111-5bb41ef94da8"
+}

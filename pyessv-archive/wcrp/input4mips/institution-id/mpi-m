@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "mpi-m",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "MPI-M",
+    "label": "MPI-M",
+    "namespace": "wcrp:input4mips:institution-id:mpi-m",
+    "raw_name": "MPI-M",
+    "status": "pending"
+}

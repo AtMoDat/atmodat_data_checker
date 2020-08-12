@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "hadgem3-ra",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "label": "HadGEM3-RA",
+    "namespace": "ecmwf:c3s-cordex:rcm-name:hadgem3-ra",
+    "raw_name": "HadGEM3-RA",
+    "status": "pending"
+}

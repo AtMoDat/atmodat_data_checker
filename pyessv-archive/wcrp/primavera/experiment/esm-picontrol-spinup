@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "esm-picontrol-spinup",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "DECK: spin-up portion of the control (emission-driven)",
+    "label": "esm-piControl-spinup",
+    "namespace": "wcrp:primavera:experiment:esm-picontrol-spinup",
+    "raw_name": "esm-piControl-spinup",
+    "status": "pending"
+}

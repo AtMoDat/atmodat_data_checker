@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "edayz",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "EdayZ",
+    "label": "EdayZ",
+    "namespace": "wcrp:primavera:cmor-table:edayz",
+    "raw_name": "EdayZ",
+    "status": "pending"
+}

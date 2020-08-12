@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "model-agreement",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "model_agreement",
+    "label": "model_agreement",
+    "namespace": "ecmwf:cc4e:thredds-exclude-variables:model-agreement",
+    "raw_name": "model_agreement",
+    "status": "pending"
+}

@@ -1,0 +1,23 @@
+{
+    "_type": "term", 
+    "canonical_name": "atmosphere-mass-content-of-cloud-liquid-water", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: ????", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "long_name": "Atmosphere Mass Content of Cloud Liquid Water", 
+        "name": "atmosphere_mass_content_of_cloud_liquid_water", 
+        "standard_name": "atmosphere_mass_content_of_cloud_liquid_water", 
+        "type": "float32", 
+        "units": "kg m-2", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "atmosphere_mass_content_of_cloud_liquid_water", 
+    "namespace": "ncas:amf:product-liquid-water-content-variable:atmosphere-mass-content-of-cloud-liquid-water", 
+    "raw_name": "atmosphere_mass_content_of_cloud_liquid_water", 
+    "status": "pending", 
+    "uid": "abce9958-22fb-48b7-9a9d-fd65cb3538e8"
+}

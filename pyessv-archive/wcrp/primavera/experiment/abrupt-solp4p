@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "abrupt-solp4p",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Conceptually similar to abrupt 4xCO2 DECK experiment, except that the solar constant rather than CO2 is abruptly increased by 4pct",
+    "namespace": "wcrp:primavera:experiment:abrupt-solp4p",
+    "status": "pending"
+}

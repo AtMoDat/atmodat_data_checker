@@ -1,0 +1,25 @@
+{
+    "_type": "term", 
+    "canonical_name": "mole-fraction-of-carbon-dioxide-in-air", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: ????", 
+        "chemical_species": "CO2", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "long_name": "Mole Fraction of Carbon Dioxide in air", 
+        "name": "mole_fraction_of_carbon_dioxide_in_air", 
+        "practical_units": "?", 
+        "standard_name": "mole_fraction_of_carbon_dioxide_in_air", 
+        "type": "float32", 
+        "units": "?", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "mole_fraction_of_carbon_dioxide_in_air", 
+    "namespace": "ncas:amf:product-co2-concentration-variable:mole-fraction-of-carbon-dioxide-in-air", 
+    "raw_name": "mole_fraction_of_carbon_dioxide_in_air", 
+    "status": "pending", 
+    "uid": "0aca4cf1-5285-49f4-97cb-901debba06b1"
+}

@@ -1,0 +1,24 @@
+{
+    "_type": "term", 
+    "canonical_name": "qc-flag-so4", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "dimension": "time", 
+        "flag_meanings": [
+            "not_used", 
+            "good_data", 
+            "suspect_data_bad_data_to_be_defined", 
+            "suspect_data_time_stamp_error"
+        ], 
+        "flag_values": "0b,1b, 2b, 3b", 
+        "long_name": "Data Quality flag: SO4", 
+        "name": "qc_flag_so4", 
+        "type": "byte", 
+        "units": "1"
+    }, 
+    "label": "qc_flag_so4", 
+    "namespace": "ncas:amf:product-aerosol-no3-so4-nh3-org-concentration-variable:qc-flag-so4", 
+    "raw_name": "qc_flag_so4", 
+    "status": "pending", 
+    "uid": "58407230-abee-4e53-8a0a-19fff24c1259"
+}

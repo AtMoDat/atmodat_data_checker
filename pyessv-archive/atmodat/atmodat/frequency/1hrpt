@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "1hrpt",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "label": "1hrPt",
+    "namespace": "wcrp:cmip6:frequency:1hrpt",
+    "raw_name": "1hrPt",
+    "status": "pending"
+}

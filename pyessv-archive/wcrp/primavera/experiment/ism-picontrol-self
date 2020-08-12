@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "ism-picontrol-self",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Pre-industrial control simulation for offline ice sheets",
+    "label": "ism-piControl-self",
+    "namespace": "wcrp:primavera:experiment:ism-picontrol-self",
+    "raw_name": "ism-piControl-self",
+    "status": "pending"
+}

@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "nh3-openburning-share",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "NH3_openburning_share",
+    "label": "NH3_openburning_share",
+    "namespace": "wcrp:input4mips:variable-id:nh3-openburning-share",
+    "raw_name": "NH3_openburning_share",
+    "status": "pending"
+}

@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "awi-hirham5",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "AWI-HIRHAM5",
+    "label": "AWI-HIRHAM5",
+    "namespace": "ecmwf:c3s-cordex:rcm-model:awi-hirham5",
+    "raw_name": "AWI-HIRHAM5",
+    "status": "pending"
+}

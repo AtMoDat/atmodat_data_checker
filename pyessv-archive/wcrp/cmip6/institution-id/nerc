@@ -1,0 +1,16 @@
+{
+    "_type": "term",
+    "canonical_name": "nerc",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "consortia": [],
+        "coordinates": "-1.7858819,51.5674569",
+        "homepage": "https://nerc.ukri.org",
+        "name": "Natural Environment Research Council",
+        "postalAddress": "Polaris House, North Star Avenue, Swindon, UK"
+    },
+    "label": "NERC",
+    "namespace": "wcrp:cmip6:institution-id:nerc",
+    "raw_name": "NERC",
+    "status": "pending"
+}

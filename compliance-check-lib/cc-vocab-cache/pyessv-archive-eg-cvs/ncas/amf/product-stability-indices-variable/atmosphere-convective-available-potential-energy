@@ -1,0 +1,23 @@
+{
+    "_type": "term", 
+    "canonical_name": "atmosphere-convective-available-potential-energy", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "long_name": "Atmosphere Convective Available Potential Energy (CAPE)", 
+        "name": "atmosphere_convective_available_potential_energy", 
+        "standard_name": "atmosphere_convective_available_potential_energy", 
+        "type": "float32", 
+        "units": "J kg-1", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "atmosphere_convective_available_potential_energy", 
+    "namespace": "ncas:amf:product-stability-indices-variable:atmosphere-convective-available-potential-energy", 
+    "raw_name": "atmosphere_convective_available_potential_energy", 
+    "status": "pending", 
+    "uid": "5120b033-b219-455c-b5eb-58407f50a54a"
+}

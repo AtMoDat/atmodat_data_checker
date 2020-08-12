@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "wrf381p",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "label": "WRF381P",
+    "namespace": "ecmwf:c3s-cordex:rcm-name:wrf381p",
+    "raw_name": "WRF381P",
+    "status": "pending"
+}

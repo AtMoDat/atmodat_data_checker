@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "ceds-2016-06-18-sectordimv2",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "CEDS-2016-06-18-sectorDimV2",
+    "label": "CEDS-2016-06-18-sectorDimV2",
+    "namespace": "wcrp:input4mips:source-id:ceds-2016-06-18-sectordimv2",
+    "raw_name": "CEDS-2016-06-18-sectorDimV2",
+    "status": "pending"
+}

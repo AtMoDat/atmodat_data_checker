@@ -1,0 +1,11 @@
+{
+    "_type": "term",
+    "canonical_name": "onhold",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "color": "#ff9900"
+    },
+    "label": "On Hold",
+    "namespace": "esdoc:errata:status:onhold",
+    "status": "pending"
+}

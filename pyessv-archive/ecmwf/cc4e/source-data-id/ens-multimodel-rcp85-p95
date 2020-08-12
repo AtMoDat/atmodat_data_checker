@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "ens-multimodel-rcp85-p95",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "ens-multiModel-rcp85-p95",
+    "label": "ens-multiModel-rcp85-p95",
+    "namespace": "ecmwf:cc4e:source-data-id:ens-multimodel-rcp85-p95",
+    "raw_name": "ens-multiModel-rcp85-p95",
+    "status": "pending"
+}

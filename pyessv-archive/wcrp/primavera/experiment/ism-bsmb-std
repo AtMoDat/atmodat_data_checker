@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "ism-bsmb-std",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Offline ice sheet simulation with synthetic oceanic dataset to explore the uncertainty in sea level due to ice sheet initialization",
+    "namespace": "wcrp:primavera:experiment:ism-bsmb-std",
+    "status": "pending"
+}

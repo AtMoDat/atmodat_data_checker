@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "tamip200907",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "5 day hindcast for tamip hindcast group 200907",
+    "namespace": "wcrp:tamip:experiment:tamip200907",
+    "status": "pending"
+}

@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "mpi-m-mpi-esm-lr-rcp45-mpi-csc-remo2009-ipsl-cdft21-wfdei-1979-2005",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "MPI-M-MPI-ESM-LR-rcp45-MPI-CSC-REMO2009-IPSL-CDFT21-WFDEI-1979-2005",
+    "label": "MPI-M-MPI-ESM-LR-rcp45-MPI-CSC-REMO2009-IPSL-CDFT21-WFDEI-1979-2005",
+    "namespace": "ecmwf:cc4e:source-data-id:mpi-m-mpi-esm-lr-rcp45-mpi-csc-remo2009-ipsl-cdft21-wfdei-1979-2005",
+    "raw_name": "MPI-M-MPI-ESM-LR-rcp45-MPI-CSC-REMO2009-IPSL-CDFT21-WFDEI-1979-2005",
+    "status": "pending"
+}

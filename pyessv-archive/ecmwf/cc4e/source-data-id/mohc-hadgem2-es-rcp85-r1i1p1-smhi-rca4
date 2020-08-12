@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "mohc-hadgem2-es-rcp85-r1i1p1-smhi-rca4",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "MOHC-HadGEM2-ES-rcp85-r1i1p1-SMHI-RCA4",
+    "label": "MOHC-HadGEM2-ES-rcp85-r1i1p1-SMHI-RCA4",
+    "namespace": "ecmwf:cc4e:source-data-id:mohc-hadgem2-es-rcp85-r1i1p1-smhi-rca4",
+    "raw_name": "MOHC-HadGEM2-ES-rcp85-r1i1p1-SMHI-RCA4",
+    "status": "pending"
+}

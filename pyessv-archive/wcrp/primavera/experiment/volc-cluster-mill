@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "volc-cluster-mill",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Parallel experiment to volc-cluster-ctrl but with initial conditions taken from last millennium simulation to account for the effects of a more realistic history of past natural forcing. All forcings except volcanic kept constant from year AD 1790 on",
+    "namespace": "wcrp:primavera:experiment:volc-cluster-mill",
+    "status": "pending"
+}

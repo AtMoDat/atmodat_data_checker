@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "co-em-solid-biofuel",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "CO-em-solid-biofuel",
+    "label": "CO-em-solid-biofuel",
+    "namespace": "wcrp:input4mips:variable-id:co-em-solid-biofuel",
+    "raw_name": "CO-em-solid-biofuel",
+    "status": "pending"
+}

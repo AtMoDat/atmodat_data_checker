@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "piclim-aer",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Perturbation from 1850 control using 2014 aerosol emissions",
+    "label": "piClim-aer",
+    "namespace": "wcrp:primavera:experiment:piclim-aer",
+    "raw_name": "piClim-aer",
+    "status": "pending"
+}

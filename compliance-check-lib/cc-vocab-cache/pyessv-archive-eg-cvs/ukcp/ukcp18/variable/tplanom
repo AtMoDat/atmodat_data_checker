@@ -1,0 +1,30 @@
+{
+    "_type": "term",
+    "canonical_name": "tplanom",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "data": {
+        "anomaly_type": "absolute_change",
+        "description": "Target protection level",
+        "label_units": "m",
+        "long_name": "???",
+        "plot_label": "Target protection level anomaly (m)",
+        "strand": [
+            "land strand 1",
+            "land strand 2",
+            "land strand 3 12km",
+            "land strand 3 2km",
+            "marine",
+            "observations"
+        ],
+        "time_step": [
+            "use-by date"
+        ],
+        "units": "m"
+    },
+    "description": "Target protection level",
+    "label": "tplAnom",
+    "namespace": "ukcp:ukcp18:variable:tplanom",
+    "raw_name": "tplAnom",
+    "status": "pending",
+    "uid": "9f1b26b9-50df-4497-9925-cf8b71dc5016"
+}

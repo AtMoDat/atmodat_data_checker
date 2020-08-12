@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "csoil",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "cSoil",
+    "label": "cSoil",
+    "namespace": "wcrp:isimip-ft:variable:csoil",
+    "raw_name": "cSoil",
+    "status": "pending"
+}

@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "rldcs",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "rldcs",
+    "namespace": "ecmwf:c3s-cmip5:variable:rldcs",
+    "status": "pending"
+}

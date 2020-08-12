@@ -1,0 +1,22 @@
+{
+    "_type": "term", 
+    "canonical_name": "rain-drop-diameter", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time, index_range, index_bin", 
+        "long_name": "Rain Drop Diameter", 
+        "name": "rain_drop_diameter", 
+        "type": "float32", 
+        "units": "mm", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "rain_drop_diameter", 
+    "namespace": "ncas:amf:product-size-concentration-spectra-variable:rain-drop-diameter", 
+    "raw_name": "rain_drop_diameter", 
+    "status": "pending", 
+    "uid": "79ae0898-6bc6-41e4-b58f-e0fe69449ec9"
+}

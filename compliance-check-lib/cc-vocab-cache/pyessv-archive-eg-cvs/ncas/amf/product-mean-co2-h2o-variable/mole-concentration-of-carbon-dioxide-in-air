@@ -1,0 +1,23 @@
+{
+    "_type": "term", 
+    "canonical_name": "mole-concentration-of-carbon-dioxide-in-air", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "long_name": "Mole Concentration of Carbon Dioxide in air", 
+        "name": "mole_concentration_of_carbon_dioxide_in_air", 
+        "standard_name": "mole_concentration_of_carbon_dioxide_in_air", 
+        "type": "float32", 
+        "units": "mmol m-3", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "mole_concentration_of_carbon_dioxide_in_air", 
+    "namespace": "ncas:amf:product-mean-co2-h2o-variable:mole-concentration-of-carbon-dioxide-in-air", 
+    "raw_name": "mole_concentration_of_carbon_dioxide_in_air", 
+    "status": "pending", 
+    "uid": "3dea3d19-a746-4b26-a6c7-2704373c763e"
+}

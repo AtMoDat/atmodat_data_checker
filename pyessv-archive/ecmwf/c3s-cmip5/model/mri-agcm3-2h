@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "mri-agcm3-2h",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "MRI-AGCM3-2H",
+    "label": "MRI-AGCM3-2H",
+    "namespace": "ecmwf:c3s-cmip5:model:mri-agcm3-2h",
+    "raw_name": "MRI-AGCM3-2H",
+    "status": "pending"
+}

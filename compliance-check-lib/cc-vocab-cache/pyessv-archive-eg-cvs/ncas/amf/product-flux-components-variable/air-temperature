@@ -1,0 +1,22 @@
+{
+    "_type": "term", 
+    "canonical_name": "air-temperature", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: point", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time, index", 
+        "long_name": "Licor Air Temperature (T)", 
+        "name": "air_temperature", 
+        "type": "float32", 
+        "units": "K", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "air_temperature", 
+    "namespace": "ncas:amf:product-flux-components-variable:air-temperature", 
+    "raw_name": "air_temperature", 
+    "status": "pending", 
+    "uid": "63d432da-ab73-4923-93bc-a5bd561eda25"
+}

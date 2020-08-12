@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "rwcf1",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "rwcf1",
+    "namespace": "ecmwf:cc4e:variable:rwcf1",
+    "status": "pending"
+}

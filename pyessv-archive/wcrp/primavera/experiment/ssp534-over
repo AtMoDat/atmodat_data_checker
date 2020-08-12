@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "ssp534-over",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "21st century overshoot scenario relative to SSP5_34. Branches from SS5_85 at 2040 with emissions reduced to zero by 2070 and negative thereafter",
+    "namespace": "wcrp:primavera:experiment:ssp534-over",
+    "status": "pending"
+}

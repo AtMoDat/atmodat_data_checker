@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "ocnbgchem",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "ocnBgchem",
+    "label": "ocnBgchem",
+    "namespace": "ecmwf:c3s-cmip5:realm:ocnbgchem",
+    "raw_name": "ocnBgchem",
+    "status": "pending"
+}

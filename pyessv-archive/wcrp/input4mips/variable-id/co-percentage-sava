@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "co-percentage-sava",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "CO-percentage-SAVA",
+    "label": "CO-percentage-SAVA",
+    "namespace": "wcrp:input4mips:variable-id:co-percentage-sava",
+    "raw_name": "CO-percentage-SAVA",
+    "status": "pending"
+}

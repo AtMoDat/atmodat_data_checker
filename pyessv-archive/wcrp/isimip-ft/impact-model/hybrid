@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "hybrid",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Hybrid",
+    "label": "Hybrid",
+    "namespace": "wcrp:isimip-ft:impact-model:hybrid",
+    "raw_name": "Hybrid",
+    "status": "pending"
+}

@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "noresm2-lm",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "NorESM2-LM",
+    "label": "NorESM2-LM",
+    "namespace": "wcrp:primavera:model:noresm2-lm",
+    "raw_name": "NorESM2-LM",
+    "status": "pending"
+}

@@ -1,0 +1,22 @@
+{
+    "_type": "term", 
+    "canonical_name": "standard-deviation-upward-air-velocity", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: standard_deviation", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "long_name": "Standard Deviation Upward Air Velocity (sigma W)", 
+        "name": "standard_deviation_upward_air_velocity", 
+        "type": "float32", 
+        "units": "m s-1", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "standard_deviation_upward_air_velocity", 
+    "namespace": "ncas:amf:product-flux-components-variable:standard-deviation-upward-air-velocity", 
+    "raw_name": "standard_deviation_upward_air_velocity", 
+    "status": "pending", 
+    "uid": "e2acca24-ec58-498a-aca3-2a423ace553e"
+}

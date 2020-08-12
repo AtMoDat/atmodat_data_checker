@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "piclim-histnat",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Time-varying forcing from volcanos, solar variability, etc. SST and sea ice fixed at preindustrial control. Interactive vegetation",
+    "label": "piClim-histnat",
+    "namespace": "wcrp:primavera:experiment:piclim-histnat",
+    "raw_name": "piClim-histnat",
+    "status": "pending"
+}

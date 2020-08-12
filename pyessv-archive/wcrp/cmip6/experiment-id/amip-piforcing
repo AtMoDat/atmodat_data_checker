@@ -1,0 +1,37 @@
+{
+    "_type": "term",
+    "canonical_name": "amip-piforcing",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_id": [
+            "CFMIP"
+        ],
+        "additional_allowed_model_components": [
+            "AER",
+            "CHEM"
+        ],
+        "end_year": "2014",
+        "experiment": "AMIP SSTs with pre-industrial anthropogenic and natural forcing",
+        "experiment_id": "amip-piForcing",
+        "min_number_yrs_per_sim": "145",
+        "parent_activity_id": [
+            "no parent"
+        ],
+        "parent_experiment_id": [
+            "no parent"
+        ],
+        "required_model_components": [
+            "AGCM"
+        ],
+        "start_year": "1870",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "2"
+    },
+    "description": "Identical to standard AMIP experiment but from 1870-present with constant pre-industrial forcing levels (anthropogenic and natural)",
+    "label": "amip-piForcing",
+    "namespace": "wcrp:cmip6:experiment-id:amip-piforcing",
+    "raw_name": "amip-piForcing",
+    "status": "pending"
+}

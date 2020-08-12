@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "ccmi-hist-nat-1-0",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "CCMI-hist-nat-1-0",
+    "label": "CCMI-hist-nat-1-0",
+    "namespace": "wcrp:input4mips:source-id:ccmi-hist-nat-1-0",
+    "raw_name": "CCMI-hist-nat-1-0",
+    "status": "pending"
+}

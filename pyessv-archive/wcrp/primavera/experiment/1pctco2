@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "1pctco2",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "DECK: 1pctCO2",
+    "label": "1pctCO2",
+    "namespace": "wcrp:primavera:experiment:1pctco2",
+    "raw_name": "1pctCO2",
+    "status": "pending"
+}

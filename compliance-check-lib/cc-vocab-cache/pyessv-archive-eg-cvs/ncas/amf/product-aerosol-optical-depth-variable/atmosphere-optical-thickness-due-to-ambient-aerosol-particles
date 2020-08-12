@@ -1,0 +1,23 @@
+{
+    "_type": "term", 
+    "canonical_name": "atmosphere-optical-thickness-due-to-ambient-aerosol-particles", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: ????", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time, index", 
+        "long_name": "Atmosphere Optical Thickness Due to Ambient Aerosol Particles", 
+        "name": "atmosphere_optical_thickness_due_to_ambient_aerosol_particles", 
+        "standard_name": "atmosphere_optical_thickness_due_to_ambient_aerosol_particles", 
+        "type": "float32", 
+        "units": "1", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "atmosphere_optical_thickness_due_to_ambient_aerosol_particles", 
+    "namespace": "ncas:amf:product-aerosol-optical-depth-variable:atmosphere-optical-thickness-due-to-ambient-aerosol-particles", 
+    "raw_name": "atmosphere_optical_thickness_due_to_ambient_aerosol_particles", 
+    "status": "pending", 
+    "uid": "aaf1ca8e-a460-45e4-bc16-fa669dd1c43a"
+}

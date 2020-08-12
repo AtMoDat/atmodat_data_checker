@@ -1,0 +1,13 @@
+{
+    "_type": "term",
+    "canonical_name": "noaa-ncep",
+    "create_date": "2018-03-22 15:50:19.328077+00:00",
+    "data": {
+        "postal_address": "National Oceanic and Atmospheric Administration, National Centers for Environmental Prediction, Camp Springs, MD 20746, USA"
+    },
+    "label": "NOAA-NCEP",
+    "namespace": "eustace-team:eustace:institution-id:noaa-ncep",
+    "raw_name": "NOAA-NCEP",
+    "status": "pending",
+    "uid": "7199d948-2244-442e-ab7e-bd003d3c596c"
+}

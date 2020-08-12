@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "emac-2-53-aerchem",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "EMAC-2-53-AerChem",
+    "label": "EMAC-2-53-AerChem",
+    "namespace": "wcrp:primavera:model:emac-2-53-aerchem",
+    "raw_name": "EMAC-2-53-AerChem",
+    "status": "pending"
+}

@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "iamc-gcam4-ssp460-1-1",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "IAMC-GCAM4-ssp460-1-1",
+    "label": "IAMC-GCAM4-ssp460-1-1",
+    "namespace": "wcrp:input4mips:source-id:iamc-gcam4-ssp460-1-1",
+    "raw_name": "IAMC-GCAM4-ssp460-1-1",
+    "status": "pending"
+}

@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "amip-lfmip-pdlc",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Prescribed land conditions 1980-2014 climate; AMIP SSTs",
+    "label": "amip-lfmip-pdLC",
+    "namespace": "wcrp:primavera:experiment:amip-lfmip-pdlc",
+    "raw_name": "amip-lfmip-pdLC",
+    "status": "pending"
+}

@@ -1,0 +1,23 @@
+{
+    "_type": "term", 
+    "canonical_name": "qc-flag-nox", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "dimension": "time", 
+        "flag_meanings": [
+            "not_used", 
+            "good_data", 
+            "bad_data_do_not_use"
+        ], 
+        "flag_values": "0b,1b, 2b, 3b", 
+        "long_name": "Data Quality flag: NOx", 
+        "name": "qc_flag_nox", 
+        "type": "byte", 
+        "units": "1"
+    }, 
+    "label": "qc_flag_nox", 
+    "namespace": "ncas:amf:product-nox-noxy-concentration-variable:qc-flag-nox", 
+    "raw_name": "qc_flag_nox", 
+    "status": "pending", 
+    "uid": "d41c7191-2c41-4504-82b6-17a17ed9ba84"
+}

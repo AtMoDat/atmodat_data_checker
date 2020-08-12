@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "npproot",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "nppRoot",
+    "label": "nppRoot",
+    "namespace": "ecmwf:c3s-cmip5:variable:npproot",
+    "raw_name": "nppRoot",
+    "status": "pending"
+}

@@ -1,0 +1,13 @@
+{
+    "_type": "term", 
+    "canonical_name": "ncas-cpc-3762-4", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "description": "NCAS 3762 Condensation Particle Counter unit 4", 
+        "instrument_id": "ncas-cpc-3762-4", 
+        "previous_instrument_ids": []
+    }, 
+    "namespace": "ncas:amf:instrument:ncas-cpc-3762-4", 
+    "status": "pending", 
+    "uid": "ef7a2ae1-f517-46c6-a25a-157297d5bd06"
+}

@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "lambert-conformal",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Lambert_Conformal",
+    "label": "Lambert_Conformal",
+    "namespace": "ecmwf:c3s-cordex:thredds-exclude-variables:lambert-conformal",
+    "raw_name": "Lambert_Conformal",
+    "status": "pending"
+}

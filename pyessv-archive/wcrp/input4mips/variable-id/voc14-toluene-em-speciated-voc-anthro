@@ -1,0 +1,13 @@
+{
+    "_type": "term",
+    "alternative_names": [
+        "VOC14_toluene_em_speciated_VOC_anthro"
+    ],
+    "canonical_name": "voc14-toluene-em-speciated-voc-anthro",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "VOC14-toluene-em-speciated-VOC-anthro",
+    "label": "VOC14-toluene-em-speciated-VOC-anthro",
+    "namespace": "wcrp:input4mips:variable-id:voc14-toluene-em-speciated-voc-anthro",
+    "raw_name": "VOC14-toluene-em-speciated-VOC-anthro",
+    "status": "pending"
+}

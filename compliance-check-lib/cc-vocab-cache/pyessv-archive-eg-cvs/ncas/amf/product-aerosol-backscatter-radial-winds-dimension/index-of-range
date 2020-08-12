@@ -1,0 +1,14 @@
+{
+    "_type": "term", 
+    "canonical_name": "index-of-range", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "length": "<r>", 
+        "units": "1"
+    }, 
+    "label": "index_of_range", 
+    "namespace": "ncas:amf:product-aerosol-backscatter-radial-winds-dimension:index-of-range", 
+    "raw_name": "index_of_range", 
+    "status": "pending", 
+    "uid": "a9828573-78c6-474d-a4d4-8454de6afffe"
+}

@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "imonant",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "ImonAnt",
+    "label": "ImonAnt",
+    "namespace": "wcrp:primavera:cmor-table:imonant",
+    "raw_name": "ImonAnt",
+    "status": "pending"
+}

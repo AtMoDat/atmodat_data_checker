@@ -1,0 +1,23 @@
+{
+    "_type": "term", 
+    "canonical_name": "qc-flag-h2", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "dimension": "time", 
+        "flag_meanings": [
+            "not_used", 
+            "good_data", 
+            "suspect_data_data_not_quality_controlled", 
+            "bad_data_do_not_use"
+        ], 
+        "flag_values": "0b,1b, 2b, 3b", 
+        "long_name": "Data Quality flag: H2", 
+        "type": "byte", 
+        "units": "1"
+    }, 
+    "label": "qc_flag_h2", 
+    "namespace": "ncas:amf:product-co-h2-concentration-variable:qc-flag-h2", 
+    "raw_name": "qc_flag_h2", 
+    "status": "pending", 
+    "uid": "320c1f7e-b8bd-46e5-8b80-eacc28c29d41"
+}

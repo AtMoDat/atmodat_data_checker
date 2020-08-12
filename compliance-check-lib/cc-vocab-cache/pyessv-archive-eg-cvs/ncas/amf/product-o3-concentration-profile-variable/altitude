@@ -1,0 +1,21 @@
+{
+    "_type": "term", 
+    "canonical_name": "altitude", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "axis": "Z", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time, index", 
+        "long_name": "Geometric height above geoid (WGS84).", 
+        "name": "altitude", 
+        "standard_name": "altitude", 
+        "type": "float32", 
+        "units": "m", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "namespace": "ncas:amf:product-o3-concentration-profile-variable:altitude", 
+    "status": "pending", 
+    "uid": "f5eb4f72-0975-4449-9bee-f62a29966f1d"
+}

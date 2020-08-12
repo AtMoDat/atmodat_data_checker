@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "mohc-hadgem3-ra",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "MOHC-HadGEM3-RA",
+    "label": "MOHC-HadGEM3-RA",
+    "namespace": "ecmwf:c3s-cordex:rcm-model:mohc-hadgem3-ra",
+    "raw_name": "MOHC-HadGEM3-RA",
+    "status": "pending"
+}

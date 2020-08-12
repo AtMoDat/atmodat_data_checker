@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "esm-picontrol",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "DECK: control (emission-driven)",
+    "label": "esm-piControl",
+    "namespace": "wcrp:primavera:experiment:esm-picontrol",
+    "raw_name": "esm-piControl",
+    "status": "pending"
+}

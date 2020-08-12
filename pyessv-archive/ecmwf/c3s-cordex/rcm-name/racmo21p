@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "racmo21p",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "label": "RACMO21P",
+    "namespace": "ecmwf:c3s-cordex:rcm-name:racmo21p",
+    "raw_name": "RACMO21P",
+    "status": "pending"
+}

@@ -1,0 +1,22 @@
+{
+    "_type": "term", 
+    "canonical_name": "sonic-temperature-theta", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: point", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time, index", 
+        "long_name": "Sonic Temperature (Theta) corrected for sidewind and humidity", 
+        "name": "sonic_temperature_theta", 
+        "type": "float32", 
+        "units": "K", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "sonic_temperature_theta", 
+    "namespace": "ncas:amf:product-flux-components-variable:sonic-temperature-theta", 
+    "raw_name": "sonic_temperature_theta", 
+    "status": "pending", 
+    "uid": "abc761ff-ef13-492a-9b7f-4d2b6ac2a3de"
+}

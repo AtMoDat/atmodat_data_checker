@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "amip-a1-1850-aerof",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "AMIP A1 1850 aerosol forcing",
+    "label": "amip-a1-1850-aeroF",
+    "namespace": "wcrp:e3sm:experiment:amip-a1-1850-aerof",
+    "raw_name": "amip-a1-1850-aeroF",
+    "status": "pending"
+}

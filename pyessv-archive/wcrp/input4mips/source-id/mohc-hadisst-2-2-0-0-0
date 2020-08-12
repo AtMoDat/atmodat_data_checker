@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "mohc-hadisst-2-2-0-0-0",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "MOHC-HadISST-2-2-0-0-0",
+    "label": "MOHC-HadISST-2-2-0-0-0",
+    "namespace": "wcrp:input4mips:source-id:mohc-hadisst-2-2-0-0-0",
+    "raw_name": "MOHC-HadISST-2-2-0-0-0",
+    "status": "pending"
+}

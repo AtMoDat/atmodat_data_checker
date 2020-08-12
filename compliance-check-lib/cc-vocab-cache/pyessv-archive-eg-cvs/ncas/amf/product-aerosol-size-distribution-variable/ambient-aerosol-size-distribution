@@ -1,0 +1,22 @@
+{
+    "_type": "term", 
+    "canonical_name": "ambient-aerosol-size-distribution", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: ????", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time, index", 
+        "long_name": "Ambient Aerosol Size Distribution", 
+        "name": "ambient_aerosol_size_distribution", 
+        "type": "float32", 
+        "units": "cm3-1 um-1", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "ambient_aerosol_size_distribution", 
+    "namespace": "ncas:amf:product-aerosol-size-distribution-variable:ambient-aerosol-size-distribution", 
+    "raw_name": "ambient_aerosol_size_distribution", 
+    "status": "pending", 
+    "uid": "07657e18-e758-4334-8fc9-4600baebe084"
+}

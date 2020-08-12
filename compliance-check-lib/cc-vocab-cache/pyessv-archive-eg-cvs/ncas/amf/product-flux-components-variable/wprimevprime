@@ -1,0 +1,20 @@
+{
+    "_type": "term", 
+    "canonical_name": "wprimevprime", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: point", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time, index", 
+        "long_name": "W'V'", 
+        "name": "wprimevprime", 
+        "type": "float32", 
+        "units": "m2 s-2", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "namespace": "ncas:amf:product-flux-components-variable:wprimevprime", 
+    "status": "pending", 
+    "uid": "6b66127f-2e47-4c0b-b173-4ad4a28ab7d5"
+}

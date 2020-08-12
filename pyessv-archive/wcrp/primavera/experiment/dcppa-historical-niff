@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "dcppa-historical-niff",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Uninitialized climate simulations as in DCPP-A2.2, but with no information from the future",
+    "label": "dcppA-historical-niff",
+    "namespace": "wcrp:primavera:experiment:dcppa-historical-niff",
+    "raw_name": "dcppA-historical-niff",
+    "status": "pending"
+}

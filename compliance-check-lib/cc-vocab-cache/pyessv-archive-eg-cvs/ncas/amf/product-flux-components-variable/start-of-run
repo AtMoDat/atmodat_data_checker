@@ -1,0 +1,21 @@
+{
+    "_type": "term", 
+    "canonical_name": "start-of-run", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "long_name": "Start of run (seconds since 1970-01-01)", 
+        "name": "start_of_run", 
+        "type": "float64", 
+        "units": "seconds since 1970-01-01 00:00:00", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "start_of_run", 
+    "namespace": "ncas:amf:product-flux-components-variable:start-of-run", 
+    "raw_name": "start_of_run", 
+    "status": "pending", 
+    "uid": "ea73b77d-c11c-4b5f-877f-396cebca2ee5"
+}

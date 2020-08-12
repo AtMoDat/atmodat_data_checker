@@ -1,0 +1,24 @@
+{
+    "_type": "term", 
+    "canonical_name": "qc-flag", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "dimension": "time", 
+        "flag_meanings": [
+            "not_used", 
+            "good_data", 
+            "bad_data_gas_concentration_outside_instrument_operational_range", 
+            "suspect_data_time_stamp_error"
+        ], 
+        "flag_values": "0b,1b, 2b, 3b", 
+        "long_name": "Data Quality flag", 
+        "name": "qc_flag", 
+        "type": "byte", 
+        "units": "1"
+    }, 
+    "label": "qc_flag", 
+    "namespace": "ncas:amf:product-oh-concentration-variable:qc-flag", 
+    "raw_name": "qc_flag", 
+    "status": "pending", 
+    "uid": "f2eea49f-d081-431d-8d41-11dbe0b7cad0"
+}

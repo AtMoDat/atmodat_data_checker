@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "hoch2cho-percentage-peat",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "HOCH2CHO-percentage-PEAT",
+    "label": "HOCH2CHO-percentage-PEAT",
+    "namespace": "wcrp:input4mips:variable-id:hoch2cho-percentage-peat",
+    "raw_name": "HOCH2CHO-percentage-PEAT",
+    "status": "pending"
+}

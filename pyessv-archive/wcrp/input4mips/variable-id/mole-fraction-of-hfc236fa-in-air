@@ -1,0 +1,11 @@
+{
+    "_type": "term",
+    "alternative_names": [
+        "mole_fraction_of_hfc236fa_in_air"
+    ],
+    "canonical_name": "mole-fraction-of-hfc236fa-in-air",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "mole-fraction-of-hfc236fa-in-air",
+    "namespace": "wcrp:input4mips:variable-id:mole-fraction-of-hfc236fa-in-air",
+    "status": "pending"
+}

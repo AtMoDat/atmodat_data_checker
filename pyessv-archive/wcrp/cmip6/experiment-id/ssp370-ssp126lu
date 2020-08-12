@@ -1,0 +1,38 @@
+{
+    "_type": "term",
+    "canonical_name": "ssp370-ssp126lu",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_id": [
+            "LUMIP"
+        ],
+        "additional_allowed_model_components": [
+            "AER",
+            "CHEM",
+            "BGC"
+        ],
+        "end_year": "2100",
+        "experiment": "SSP3-7.0 with SSP1-2.6 land use",
+        "experiment_id": "ssp370-ssp126Lu",
+        "min_number_yrs_per_sim": "86",
+        "parent_activity_id": [
+            "CMIP"
+        ],
+        "parent_experiment_id": [
+            "historical"
+        ],
+        "required_model_components": [
+            "AOGCM"
+        ],
+        "start_year": "2015",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "1"
+    },
+    "description": "Additional land use policy sensitivity simulation for high radiative forcing scenario, keep all forcings the same as ScenarioMIP SSP3-7 (deforestation scenario), but replace land use from SSP1-2.6 (afforestation) scenario; concentration-driven",
+    "label": "ssp370-ssp126Lu",
+    "namespace": "wcrp:cmip6:experiment-id:ssp370-ssp126lu",
+    "raw_name": "ssp370-ssp126Lu",
+    "status": "pending"
+}

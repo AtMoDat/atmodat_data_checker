@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "aqua-p4k-lwoff",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "As aqua-p4K experiment, but with cloud-radiative effects switched off in the LW radiation code",
+    "label": "aqua-p4K-lwoff",
+    "namespace": "wcrp:primavera:experiment:aqua-p4k-lwoff",
+    "raw_name": "aqua-p4K-lwoff",
+    "status": "pending"
+}

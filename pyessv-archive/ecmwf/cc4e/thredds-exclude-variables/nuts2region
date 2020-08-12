@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "nuts2region",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "nuts2region",
+    "namespace": "ecmwf:cc4e:thredds-exclude-variables:nuts2region",
+    "status": "pending"
+}

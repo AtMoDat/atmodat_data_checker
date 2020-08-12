@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "mek-percentage-temf",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "MEK-percentage-TEMF",
+    "label": "MEK-percentage-TEMF",
+    "namespace": "wcrp:input4mips:variable-id:mek-percentage-temf",
+    "raw_name": "MEK-percentage-TEMF",
+    "status": "pending"
+}

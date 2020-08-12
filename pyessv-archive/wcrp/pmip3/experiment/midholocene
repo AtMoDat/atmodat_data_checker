@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "midholocene",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Mid-Holocene",
+    "label": "midHolocene",
+    "namespace": "wcrp:pmip3:experiment:midholocene",
+    "raw_name": "midHolocene",
+    "status": "pending"
+}

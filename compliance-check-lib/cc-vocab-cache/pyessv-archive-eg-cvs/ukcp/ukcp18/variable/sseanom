@@ -1,0 +1,34 @@
+{
+    "_type": "term",
+    "canonical_name": "sseanom",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "data": {
+        "anomaly_type": "absolute_change",
+        "description": "Sea surface elevation above the mean level",
+        "label_units": "m",
+        "long_name": "Sea surface elevation",
+        "notes": [
+            "For week-long case studies"
+        ],
+        "plot_label": "Sea surface elevation above the mean level anomaly (m)",
+        "standard_name": "sea_surface_height_above_mean_sea_level",
+        "strand": [
+            "land strand 1",
+            "land strand 2",
+            "land strand 3 12km",
+            "land strand 3 2km",
+            "marine",
+            "observations"
+        ],
+        "time_step": [
+            "1hr"
+        ],
+        "units": "m"
+    },
+    "description": "Sea surface elevation above the mean level",
+    "label": "sseAnom",
+    "namespace": "ukcp:ukcp18:variable:sseanom",
+    "raw_name": "sseAnom",
+    "status": "pending",
+    "uid": "8f517b10-59f4-4c51-8a54-7eec90c03b7e"
+}

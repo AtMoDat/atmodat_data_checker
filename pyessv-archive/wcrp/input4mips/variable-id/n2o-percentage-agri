@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "n2o-percentage-agri",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "N2O-percentage-AGRI",
+    "label": "N2O-percentage-AGRI",
+    "namespace": "wcrp:input4mips:variable-id:n2o-percentage-agri",
+    "raw_name": "N2O-percentage-AGRI",
+    "status": "pending"
+}

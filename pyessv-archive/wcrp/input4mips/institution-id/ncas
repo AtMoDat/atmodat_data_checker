@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "ncas",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "NCAS",
+    "label": "NCAS",
+    "namespace": "wcrp:input4mips:institution-id:ncas",
+    "raw_name": "NCAS",
+    "status": "pending"
+}

@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "benzene-em-speciated-vocs",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "benzene-em-speciated-VOCs",
+    "label": "benzene-em-speciated-VOCs",
+    "namespace": "wcrp:input4mips:variable-id:benzene-em-speciated-vocs",
+    "raw_name": "benzene-em-speciated-VOCs",
+    "status": "pending"
+}

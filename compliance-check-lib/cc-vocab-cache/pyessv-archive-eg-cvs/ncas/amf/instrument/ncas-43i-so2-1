@@ -1,0 +1,13 @@
+{
+    "_type": "term", 
+    "canonical_name": "ncas-43i-so2-1", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "description": "NCAS Thermo 42i SO2 Monitor unit 1", 
+        "instrument_id": "ncas-43i-so2-1", 
+        "previous_instrument_ids": []
+    }, 
+    "namespace": "ncas:amf:instrument:ncas-43i-so2-1", 
+    "status": "pending", 
+    "uid": "82882585-77cd-496c-8514-d9b52910cd06"
+}

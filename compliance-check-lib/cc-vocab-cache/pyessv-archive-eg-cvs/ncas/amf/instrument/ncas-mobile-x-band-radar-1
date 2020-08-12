@@ -1,0 +1,15 @@
+{
+    "_type": "term", 
+    "canonical_name": "ncas-mobile-x-band-radar-1", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "description": "NCAS X-Band Mobile Radar unit 1", 
+        "instrument_id": "ncas-mobile-x-band-radar-1", 
+        "previous_instrument_ids": [
+            "ncas-mobile-xband-radar"
+        ]
+    }, 
+    "namespace": "ncas:amf:instrument:ncas-mobile-x-band-radar-1", 
+    "status": "pending", 
+    "uid": "8957ea83-5235-4e3f-bc0c-251bebe2a909"
+}

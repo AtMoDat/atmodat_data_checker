@@ -1,0 +1,16 @@
+{
+    "_type": "term",
+    "canonical_name": "inpe",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "consortia": [],
+        "coordinates": "-45.8633628,-23.2069329",
+        "homepage": "http://www.inpe.br",
+        "name": "National Institute for Space Research",
+        "postalAddress": "Cachoeira Paulista, SP 12630-000, Brazil"
+    },
+    "label": "INPE",
+    "namespace": "wcrp:cmip6:institution-id:inpe",
+    "raw_name": "INPE",
+    "status": "pending"
+}

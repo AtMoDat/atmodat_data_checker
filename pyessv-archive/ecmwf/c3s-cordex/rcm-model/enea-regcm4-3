@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "enea-regcm4-3",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "ENEA-RegCM4-3",
+    "label": "ENEA-RegCM4-3",
+    "namespace": "ecmwf:c3s-cordex:rcm-model:enea-regcm4-3",
+    "raw_name": "ENEA-RegCM4-3",
+    "status": "pending"
+}

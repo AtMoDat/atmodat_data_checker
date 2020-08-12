@@ -1,0 +1,136 @@
+{
+    "_type": "term",
+    "canonical_name": "messy-consortium",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "consortia": [
+            {
+                "code": "DLR",
+                "coordinates": "13.0538611,53.330336",
+                "homepage": "https://www.dlr.de/pa/en/",
+                "name": "German Aerospace Center",
+                "postalAddress": "Kalkhorstweg 53, 17235 Neustrelitz, Germany"
+            },
+            {
+                "code": "KIT",
+                "coordinates": "8.4261962,49.0917445",
+                "homepage": "http://www.klima-umwelt.kit.edu/english/",
+                "name": "Karlsruhe Institut of Technology - Climate and Environment Centre",
+                "postalAddress": "Karlsruhe 76131, Germany"
+            },
+            {
+                "code": "Julich Research Centre",
+                "coordinates": "6.3961949,50.9017598",
+                "homepage": "http://www.fz-juelich.de/",
+                "name": "Julich Research Centre",
+                "postalAddress": "52428 Julich, Germany"
+            },
+            {
+                "code": "MPI-C",
+                "coordinates": "8.2268112,49.9909825",
+                "homepage": "https://www.mpg.de",
+                "name": "Max Planck Institute for Chemistry",
+                "postalAddress": "Hahn-Meitner-Weg 1, 55128 Mainz, Germany"
+            },
+            {
+                "code": "The Cyprus Institute",
+                "coordinates": "33.381372,35.141418",
+                "homepage": "https://www.cyi.ac.cy/",
+                "name": "The Cyprus Institute",
+                "postalAddress": "Nicosia, Cyprus"
+            },
+            {
+                "code": "Free University of Berlin",
+                "coordinates": "13.28749,52.4525296",
+                "homepage": "https://www.fu-berlin.de/",
+                "name": "Free University of Berlin",
+                "postalAddress": "Kaiserswerther Str. 16-18, 14195 Berlin, Germany"
+            },
+            {
+                "code": "UHH",
+                "coordinates": "9.9846195,53.5665641",
+                "homepage": "https://www.uni-hamburg.de",
+                "name": "University of Hamburg",
+                "postalAddress": "Hamburg 20148, Germany"
+            },
+            {
+                "code": "KAUST",
+                "coordinates": "39.104697,22.309465",
+                "homepage": "https://www.kaust.edu.sa/",
+                "name": "King Abdullah University of Science and Technology",
+                "postalAddress": "Thuwal 23955, Saudi Arabia"
+            },
+            {
+                "code": "Sun Yat-sen University",
+                "coordinates": "113.298883,23.0965384",
+                "homepage": "http://www.sysu.edu.cn/",
+                "name": "Sun Yat-sen University",
+                "postalAddress": "135 Xingang W Rd, BinJiang Lu, Haizhu Qu, Guangzhou Shi, Guangdong Sheng, China"
+            },
+            {
+                "code": "Aarhus University",
+                "coordinates": "9.9846195,53.5665641",
+                "homepage": "https://international.au.dk/",
+                "name": "10.2030118,56.1681384",
+                "postalAddress": "Nordre Ringgade 1, 8000 Aarhus C, Denmark"
+            },
+            {
+                "code": "TUDelft",
+                "coordinates": "4.3732982,52.0021256",
+                "homepage": "https://www.tudelft.nl/",
+                "name": "Delft University of Technology",
+                "postalAddress": "Mekelweg 5, 2628 CD Delft, Netherlands"
+            },
+            {
+                "code": "WUR",
+                "coordinates": "5.6635809,51.9845591",
+                "homepage": "https://www.wur.nl/",
+                "name": "Wageningen University and Research",
+                "postalAddress": "6708 PB Wageningen, Netherlands"
+            },
+            {
+                "code": "Bonn University",
+                "coordinates": "7.0708102,50.731177",
+                "homepage": "https://www.meteo.uni-bonn.de/",
+                "name": "Institute for Meteorology - Bonn University",
+                "postalAddress": "Auf dem H\u00fcgel 20, 53121 Bonn, Germany"
+            },
+            {
+                "code": "CMA",
+                "coordinates": "116.324554,39.9477812",
+                "homepage": "http://www.cma.gov.cn/",
+                "name": "China Meteorological Administration",
+                "postalAddress": "BeiXiaGuan, Haidian Qu, Beijing Shi, China"
+            },
+            {
+                "code": "University of Connecticut",
+                "coordinates": "-72.2539805,41.8077414",
+                "homepage": "https://uconn.edu/",
+                "name": "University of Connecticut",
+                "postalAddress": "Storrs, Connecticut 06269, USA"
+            },
+            {
+                "code": "University of Johannes Gutenberg",
+                "coordinates": "8.2415552,49.9924943",
+                "homepage": "http://www.uni-mainz.de/",
+                "name": "University of Johannes Gutenberg",
+                "postalAddress": "Saarstra\u00dfe 21, 55122 Mainz, Germany"
+            },
+            {
+                "code": "IGCE",
+                "coordinates": "37.5756359,55.7107927",
+                "homepage": "",
+                "name": "Institute of Global Climate and Ecology of Roshydromet and RAS",
+                "postalAddress": "Leninsky Ave, 14, Moskva, Russia"
+            }
+        ],
+        "coordinates": "",
+        "homepage": "https://www.messy-interface.org",
+        "name": "",
+        "postalAddress": ""
+    },
+    "label": "MESSy-Consortium",
+    "namespace": "wcrp:cmip6:institution-id:messy-consortium",
+    "raw_name": "MESSy-Consortium",
+    "status": "pending"
+}

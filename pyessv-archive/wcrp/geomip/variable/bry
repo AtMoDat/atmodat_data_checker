@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "bry",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Bry",
+    "label": "Bry",
+    "namespace": "wcrp:geomip:variable:bry",
+    "raw_name": "Bry",
+    "status": "pending"
+}

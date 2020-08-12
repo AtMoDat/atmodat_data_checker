@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "g6sulfur",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Using equatorial SO2 injection, return the radiative forcing from a background of the ScenarioMIP high forcing to the ScenarioMIP middle forcing",
+    "label": "G6sulfur",
+    "namespace": "wcrp:primavera:experiment:g6sulfur",
+    "raw_name": "G6sulfur",
+    "status": "pending"
+}

@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "esm-hist",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "CMIP6 historical (CO2 emission-driven)",
+    "namespace": "wcrp:primavera:experiment:esm-hist",
+    "status": "pending"
+}

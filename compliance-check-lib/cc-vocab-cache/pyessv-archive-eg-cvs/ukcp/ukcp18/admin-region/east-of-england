@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "east-of-england",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "label": "east_of_england",
+    "namespace": "ukcp:ukcp18:admin-region:east-of-england",
+    "raw_name": "east_of_england",
+    "status": "pending",
+    "uid": "02ba3b17-f592-4141-920a-a71cb2f6def9"
+}

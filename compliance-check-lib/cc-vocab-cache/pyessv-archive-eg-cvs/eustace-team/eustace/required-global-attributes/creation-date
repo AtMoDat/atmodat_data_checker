@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "creation-date",
+    "create_date": "2018-03-22 15:50:19.328077+00:00",
+    "label": "creation_date",
+    "namespace": "eustace-team:eustace:required-global-attributes:creation-date",
+    "raw_name": "creation_date",
+    "status": "pending",
+    "uid": "21002180-0eda-47fd-8528-a811e1b55b66"
+}

@@ -1,0 +1,24 @@
+{
+    "_type": "term", 
+    "canonical_name": "qc-flag-cleaning", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "dimension": "time", 
+        "flag_meanings": [
+            "not_used", 
+            "good_data", 
+            "bad_data_sensor_being_cleaned", 
+            "suspect_data_time_stamp_error"
+        ], 
+        "flag_values": "0b,1b, 2b, 3b", 
+        "long_name": "Data Quality flag: sensor cleaning", 
+        "name": "qc_flag_cleaning", 
+        "type": "byte", 
+        "units": "1"
+    }, 
+    "label": "qc_flag_cleaning", 
+    "namespace": "ncas:amf:product-radiation-variable:qc-flag-cleaning", 
+    "raw_name": "qc_flag_cleaning", 
+    "status": "pending", 
+    "uid": "5a6c0626-af53-43c2-b096-d73546d76c85"
+}

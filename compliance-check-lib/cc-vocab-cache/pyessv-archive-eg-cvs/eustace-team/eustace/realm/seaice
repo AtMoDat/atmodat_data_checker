@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "seaice",
+    "create_date": "2018-03-22 15:50:19.328077+00:00",
+    "label": "seaIce",
+    "namespace": "eustace-team:eustace:realm:seaice",
+    "raw_name": "seaIce",
+    "status": "pending",
+    "uid": "48f5fbf4-2da2-493a-8009-47d4e312f1ec"
+}

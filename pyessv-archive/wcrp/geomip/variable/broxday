@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "broxday",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "BrOxday",
+    "label": "BrOxday",
+    "namespace": "wcrp:geomip:variable:broxday",
+    "raw_name": "BrOxday",
+    "status": "pending"
+}

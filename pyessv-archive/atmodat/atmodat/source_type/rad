@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "rad",
+    "create_date": "2020-08-05 00:00:00+00:00",
+    "label": "radiation component of an atmospheric model run 'offline'",
+    "namespace": "atmodat:atmodat:source-type:rad",
+    "raw_name": "rad",
+    "status": "pending"
+}

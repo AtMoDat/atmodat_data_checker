@@ -1,0 +1,74 @@
+{
+    "_type": "term",
+    "canonical_name": "mri-esm2-0",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_participation": [
+            "AerChemMIP",
+            "C4MIP",
+            "CFMIP",
+            "CMIP",
+            "CORDEX",
+            "DAMIP",
+            "DCPP",
+            "DynVarMIP",
+            "FAFMIP",
+            "GMMIP",
+            "GeoMIP",
+            "LS3MIP",
+            "OMIP",
+            "PMIP",
+            "RFMIP",
+            "SIMIP",
+            "ScenarioMIP",
+            "VolMIP"
+        ],
+        "cohort": [
+            "Registered"
+        ],
+        "institution_id": [
+            "MRI"
+        ],
+        "label_extended": "MRI-ESM2.0",
+        "model_component": {
+            "aerosol": {
+                "description": "MASINGAR mk2r4 (TL95; 192 x 96 longitude/latitude; 80 levels; top level 0.01 hPa)",
+                "native_nominal_resolution": "250 km"
+            },
+            "atmos": {
+                "description": "MRI-AGCM3.5 (TL159; 320 x 160 longitude/latitude; 80 levels; top level 0.01 hPa)",
+                "native_nominal_resolution": "100 km"
+            },
+            "atmosChem": {
+                "description": "MRI-CCM2.1 (T42; 128 x 64 longitude/latitude; 80 levels; top level 0.01 hPa)",
+                "native_nominal_resolution": "250 km"
+            },
+            "land": {
+                "description": "HAL 1.0",
+                "native_nominal_resolution": "100 km"
+            },
+            "landIce": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "ocean": {
+                "description": "MRI.COM4.4 (tripolar primarily 0.5 deg latitude/1 deg longitude with meridional refinement down to 0.3 deg within 10 degrees north and south of the equator; 360 x 364 longitude/latitude; 61 levels; top grid cell 0-2 m)",
+                "native_nominal_resolution": "100 km"
+            },
+            "ocnBgchem": {
+                "description": "MRI.COM4.4",
+                "native_nominal_resolution": "100 km"
+            },
+            "seaIce": {
+                "description": "MRI.COM4.4",
+                "native_nominal_resolution": "100 km"
+            }
+        },
+        "release_year": "2017",
+        "source_id": "MRI-ESM2-0"
+    },
+    "label": "MRI-ESM2.0",
+    "namespace": "wcrp:cmip6:source-id:mri-esm2-0",
+    "raw_name": "MRI-ESM2-0",
+    "status": "pending"
+}

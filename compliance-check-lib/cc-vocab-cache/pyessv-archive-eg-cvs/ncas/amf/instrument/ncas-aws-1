@@ -1,0 +1,13 @@
+{
+    "_type": "term", 
+    "canonical_name": "ncas-aws-1", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "description": "NCAS Automatic Weather Station unit 1", 
+        "instrument_id": "ncas-aws-1", 
+        "previous_instrument_ids": []
+    }, 
+    "namespace": "ncas:amf:instrument:ncas-aws-1", 
+    "status": "pending", 
+    "uid": "866e6ac5-37ac-4c77-927f-ef3b9c770857"
+}

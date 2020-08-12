@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "ssp370sst",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Future SSP3-7.0, with SSTs prescribed from ssp370",
+    "label": "ssp370SST",
+    "namespace": "wcrp:primavera:experiment:ssp370sst",
+    "raw_name": "ssp370SST",
+    "status": "pending"
+}

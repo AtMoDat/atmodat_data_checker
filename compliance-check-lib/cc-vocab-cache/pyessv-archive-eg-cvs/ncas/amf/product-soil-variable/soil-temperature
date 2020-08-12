@@ -1,0 +1,23 @@
+{
+    "_type": "term", 
+    "canonical_name": "soil-temperature", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time, index", 
+        "long_name": "Soil Temperature", 
+        "name": "soil_temperature", 
+        "standard_name": "soil_temperature", 
+        "type": "float32", 
+        "units": "K", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "soil_temperature", 
+    "namespace": "ncas:amf:product-soil-variable:soil-temperature", 
+    "raw_name": "soil_temperature", 
+    "status": "pending", 
+    "uid": "d0d0e460-4010-48b2-958c-1eac5aa52bab"
+}

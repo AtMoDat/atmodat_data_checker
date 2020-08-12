@@ -1,0 +1,73 @@
+{
+    "_type": "term",
+    "canonical_name": "e3sm-project",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "consortia": [
+            {
+                "code": "LLNL",
+                "coordinates": "-121.7120818,37.6855669",
+                "homepage": "https://www.llnl.gov/",
+                "name": "Lawrence Livermore National Laboratory",
+                "postalAddress": "Livermore, CA 94550, USA"
+            },
+            {
+                "code": "ANL",
+                "coordinates": "-87.9807607,41.7183082",
+                "homepage": "https://www.anl.gov/",
+                "name": "Argonne National Laboratory",
+                "postalAddress": "Argonne, IL 60439, USA"
+            },
+            {
+                "code": "BNL",
+                "coordinates": "-72.8772459,40.8650217",
+                "homepage": "https://www.bnl.gov/",
+                "name": "Brookhaven National Laboratory",
+                "postalAddress": "Upton, NY 11973, USA"
+            },
+            {
+                "code": "LANL",
+                "coordinates": "-106.2893507,35.8440625",
+                "homepage": "https://www.lanl.gov/",
+                "name": "Los Alamos National Laboratory",
+                "postalAddress": "Los Alamos, NM 87545, USA"
+            },
+            {
+                "code": "LBNL",
+                "coordinates": "-122.2489404,37.8760999",
+                "homepage": "https://www.lbl.gov/",
+                "name": "Lawrence Berkeley National Laboratory",
+                "postalAddress": "Berkeley, CA 94720, USA"
+            },
+            {
+                "code": "ORNL",
+                "coordinates": "-84.3122027,35.9311973",
+                "homepage": "https://www.ornl.gov/",
+                "name": "Oak Ridge National Laboratory",
+                "postalAddress": "Oak Ridge, TN 37831, USA"
+            },
+            {
+                "code": "PNNL",
+                "coordinates": "-119.281751,46.3449569",
+                "homepage": "https://www.pnnl.gov/",
+                "name": "Pacific Northwest National Laboratory",
+                "postalAddress": "Richland, WA 99352, USA"
+            },
+            {
+                "code": "SNL",
+                "coordinates": "-106.5361761,35.0571864",
+                "homepage": "https://www.sandia.gov/",
+                "name": "Sandia National Laboratories",
+                "postalAddress": "Albuquerque, NM 87185, USA"
+            }
+        ],
+        "coordinates": "",
+        "homepage": "https://e3sm.org",
+        "name": "",
+        "postalAddress": "LLNL Climate Program, c/o David C. Bader, Principal Investigator, L-103, 7000 East Avenue, Livermore, CA 94550, USA"
+    },
+    "label": "E3SM-Project",
+    "namespace": "wcrp:cmip6:institution-id:e3sm-project",
+    "raw_name": "E3SM-Project",
+    "status": "pending"
+}

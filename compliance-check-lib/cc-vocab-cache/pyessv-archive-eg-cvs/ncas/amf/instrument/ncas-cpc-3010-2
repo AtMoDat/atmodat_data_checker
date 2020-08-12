@@ -1,0 +1,15 @@
+{
+    "_type": "term", 
+    "canonical_name": "ncas-cpc-3010-2", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "description": "NCAS 3010 Condensation Particle Counter unit 2", 
+        "instrument_id": "ncas-cpc-3010-2", 
+        "previous_instrument_ids": [
+            "uom-3010cpc-2"
+        ]
+    }, 
+    "namespace": "ncas:amf:instrument:ncas-cpc-3010-2", 
+    "status": "pending", 
+    "uid": "5a867aaa-1e91-4163-98f5-a98a0222e007"
+}

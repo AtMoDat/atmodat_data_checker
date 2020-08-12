@@ -1,0 +1,24 @@
+{
+    "_type": "term",
+    "canonical_name": "height2m",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "data": {
+        "axis": "Z",
+        "bounds_values": "",
+        "climatology": "",
+        "formula": "",
+        "long_name": "height",
+        "must_have_bounds": "no",
+        "positive": "up",
+        "standard_name": "height",
+        "stored_direction": "increasing",
+        "type": "double",
+        "units": "m",
+        "valid_max": "10.0",
+        "valid_min": "1.0",
+        "value": "2."
+    },
+    "namespace": "ukcp:ukcp18:coordinate:height2m",
+    "status": "pending",
+    "uid": "4326b9f5-2573-4e32-af0b-ba9d58b6bca5"
+}

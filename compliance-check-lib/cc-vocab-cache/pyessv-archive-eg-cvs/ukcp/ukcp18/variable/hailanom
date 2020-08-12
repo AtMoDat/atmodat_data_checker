@@ -1,0 +1,37 @@
+{
+    "_type": "term",
+    "canonical_name": "hailanom",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "data": {
+        "anomaly_type": "absolute_change",
+        "description": "Hail (Graupel)",
+        "label_units": "1",
+        "long_name": "??",
+        "notes": [
+            "Intended we'll still do these, but as LS3 they're not a priority at present"
+        ],
+        "plot_label": "Hail (Graupel) anomaly (1)",
+        "strand": [
+            "land strand 1",
+            "land strand 2",
+            "land strand 3 12km",
+            "land strand 3 2km",
+            "marine",
+            "observations"
+        ],
+        "time_averaging": [
+            "mean"
+        ],
+        "time_step": [
+            "day"
+        ],
+        "um_stash": "21102",
+        "units": "1"
+    },
+    "description": "Hail (Graupel)",
+    "label": "hailAnom",
+    "namespace": "ukcp:ukcp18:variable:hailanom",
+    "raw_name": "hailAnom",
+    "status": "pending",
+    "uid": "6364f4d1-e326-4b47-aebe-e236dc73e2fa"
+}

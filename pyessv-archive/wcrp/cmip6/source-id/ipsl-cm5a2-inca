@@ -1,0 +1,57 @@
+{
+    "_type": "term",
+    "canonical_name": "ipsl-cm5a2-inca",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_participation": [
+            "AerChemMIP"
+        ],
+        "cohort": [
+            "Registered"
+        ],
+        "institution_id": [
+            "IPSL"
+        ],
+        "label_extended": "IPSL-CM5A2-INCA",
+        "model_component": {
+            "aerosol": {
+                "description": "INCA v6 NMHC-AER-S",
+                "native_nominal_resolution": "500 km"
+            },
+            "atmos": {
+                "description": "LMDZ (APv5; 96 x 96 longitude/latitude; 39 levels; top level 80000 m)",
+                "native_nominal_resolution": "500 km"
+            },
+            "atmosChem": {
+                "description": "INCA v6 NMHC-AER-S",
+                "native_nominal_resolution": "500 km"
+            },
+            "land": {
+                "description": "ORCHIDEE (IPSLCM5A2.1, Water/Carbon/Energy mode)",
+                "native_nominal_resolution": "500 km"
+            },
+            "landIce": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "ocean": {
+                "description": "NEMO-OPA (v3.6, ORCA2 tripolar primarily 2deg; 182 x 149 longitude/latitude; 31 levels; top grid cell 0-10 m)",
+                "native_nominal_resolution": "250 km"
+            },
+            "ocnBgchem": {
+                "description": "NEMO-PISCES",
+                "native_nominal_resolution": "250 km"
+            },
+            "seaIce": {
+                "description": "NEMO-LIM2",
+                "native_nominal_resolution": "250 km"
+            }
+        },
+        "release_year": "2019",
+        "source_id": "IPSL-CM5A2-INCA"
+    },
+    "label": "IPSL-CM5A2-INCA",
+    "namespace": "wcrp:cmip6:source-id:ipsl-cm5a2-inca",
+    "raw_name": "IPSL-CM5A2-INCA",
+    "status": "pending"
+}

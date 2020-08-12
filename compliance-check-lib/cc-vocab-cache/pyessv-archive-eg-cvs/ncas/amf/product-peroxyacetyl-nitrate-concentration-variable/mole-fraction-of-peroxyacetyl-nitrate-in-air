@@ -1,0 +1,25 @@
+{
+    "_type": "term", 
+    "canonical_name": "mole-fraction-of-peroxyacetyl-nitrate-in-air", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: ????", 
+        "chemical_species": "C2H3NO5", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "long_name": "Mole Fraction of Peroxyacetyl Nitrate in air", 
+        "name": "mole_fraction_of_peroxyacetyl_nitrate_in_air", 
+        "practical_units": "?", 
+        "standard_name": "mole_fraction_of_peroxyacetyl_nitrate_in_air", 
+        "type": "float32", 
+        "units": "?", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "mole_fraction_of_peroxyacetyl_nitrate_in_air", 
+    "namespace": "ncas:amf:product-peroxyacetyl-nitrate-concentration-variable:mole-fraction-of-peroxyacetyl-nitrate-in-air", 
+    "raw_name": "mole_fraction_of_peroxyacetyl_nitrate_in_air", 
+    "status": "pending", 
+    "uid": "52880cce-8637-4bb8-b530-cd72b5fa60ad"
+}

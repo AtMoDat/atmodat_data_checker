@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "piclim-anthro",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "As in RFMIP-ERF-PI-Cntrl but with present-day anthropogenic forcing (greenhouse gases, aerosols and land-use)",
+    "label": "piClim-anthro",
+    "namespace": "wcrp:primavera:experiment:piclim-anthro",
+    "raw_name": "piClim-anthro",
+    "status": "pending"
+}

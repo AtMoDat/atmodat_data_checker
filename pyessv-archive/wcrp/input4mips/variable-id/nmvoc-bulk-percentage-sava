@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "nmvoc-bulk-percentage-sava",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "NMVOC-bulk-percentage-SAVA",
+    "label": "NMVOC-bulk-percentage-SAVA",
+    "namespace": "wcrp:input4mips:variable-id:nmvoc-bulk-percentage-sava",
+    "raw_name": "NMVOC-bulk-percentage-SAVA",
+    "status": "pending"
+}

@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "racmo22e",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "label": "RACMO22E",
+    "namespace": "ecmwf:c3s-cordex:rcm-name:racmo22e",
+    "raw_name": "RACMO22E",
+    "status": "pending"
+}

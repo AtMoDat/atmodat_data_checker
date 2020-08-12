@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "cnrm-aladin64",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "CNRM-ALADIN64",
+    "label": "CNRM-ALADIN64",
+    "namespace": "wcrp:cordex:rcm-model:cnrm-aladin64",
+    "raw_name": "CNRM-ALADIN64",
+    "status": "pending"
+}

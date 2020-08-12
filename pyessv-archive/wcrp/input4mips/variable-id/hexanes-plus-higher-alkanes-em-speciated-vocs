@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "hexanes-plus-higher-alkanes-em-speciated-vocs",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "hexanes-plus-higher-alkanes-em-speciated-VOCs",
+    "label": "hexanes-plus-higher-alkanes-em-speciated-VOCs",
+    "namespace": "wcrp:input4mips:variable-id:hexanes-plus-higher-alkanes-em-speciated-vocs",
+    "raw_name": "hexanes-plus-higher-alkanes-em-speciated-VOCs",
+    "status": "pending"
+}

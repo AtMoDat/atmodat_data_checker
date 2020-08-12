@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "primo6hr",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "PrimO6hr",
+    "label": "PrimO6hr",
+    "namespace": "wcrp:primavera:cmor-table:primo6hr",
+    "raw_name": "PrimO6hr",
+    "status": "pending"
+}

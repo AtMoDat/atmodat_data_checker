@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "smhi-rca4",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "SMHI-RCA4",
+    "label": "SMHI-RCA4",
+    "namespace": "ecmwf:c3s-cordex:rcm-model:smhi-rca4",
+    "raw_name": "SMHI-RCA4",
+    "status": "pending"
+}

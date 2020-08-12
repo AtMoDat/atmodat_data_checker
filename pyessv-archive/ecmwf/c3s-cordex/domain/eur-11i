@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "eur-11i",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "High-res. Europe",
+    "label": "EUR-11i",
+    "namespace": "ecmwf:c3s-cordex:domain:eur-11i",
+    "raw_name": "EUR-11i",
+    "status": "pending"
+}

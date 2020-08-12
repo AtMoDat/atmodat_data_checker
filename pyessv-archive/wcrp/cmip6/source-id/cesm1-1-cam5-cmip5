@@ -1,0 +1,58 @@
+{
+    "_type": "term",
+    "canonical_name": "cesm1-1-cam5-cmip5",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_participation": [
+            "CMIP",
+            "DCPP"
+        ],
+        "cohort": [
+            "Registered"
+        ],
+        "institution_id": [
+            "NCAR"
+        ],
+        "label_extended": "CESM1-1-CAM5-CMIP5",
+        "model_component": {
+            "aerosol": {
+                "description": "MAM3 (same grid as atmos)",
+                "native_nominal_resolution": "100 km"
+            },
+            "atmos": {
+                "description": "CAM5.2 (0.9x1.25 finite volume grid; 288 x 192 longitude/latitude; 32 levels; top level 2.25 mb)",
+                "native_nominal_resolution": "100 km"
+            },
+            "atmosChem": {
+                "description": "MAM3 (same grid as atmos)",
+                "native_nominal_resolution": "100 km"
+            },
+            "land": {
+                "description": "CLM4 (same grid as atmos)",
+                "native_nominal_resolution": "100 km"
+            },
+            "landIce": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "ocean": {
+                "description": "POP2 (320x384 longitude/latitude; 60 levels; top grid cell 0-10 m)",
+                "native_nominal_resolution": "100 km"
+            },
+            "ocnBgchem": {
+                "description": "BEC (same grid as ocean)",
+                "native_nominal_resolution": "100 km"
+            },
+            "seaIce": {
+                "description": "CICE4 (same grid as ocean)",
+                "native_nominal_resolution": "100 km"
+            }
+        },
+        "release_year": "2011",
+        "source_id": "CESM1-1-CAM5-CMIP5"
+    },
+    "label": "CESM1-1-CAM5-CMIP5",
+    "namespace": "wcrp:cmip6:source-id:cesm1-1-cam5-cmip5",
+    "raw_name": "CESM1-1-CAM5-CMIP5",
+    "status": "pending"
+}

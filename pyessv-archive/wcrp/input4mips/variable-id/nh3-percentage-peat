@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "nh3-percentage-peat",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "NH3-percentage-PEAT",
+    "label": "NH3-percentage-PEAT",
+    "namespace": "wcrp:input4mips:variable-id:nh3-percentage-peat",
+    "raw_name": "NH3-percentage-PEAT",
+    "status": "pending"
+}

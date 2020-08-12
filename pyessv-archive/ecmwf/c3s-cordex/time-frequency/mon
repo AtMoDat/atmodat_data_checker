@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "mon",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "mon",
+    "namespace": "ecmwf:c3s-cordex:time-frequency:mon",
+    "status": "pending"
+}

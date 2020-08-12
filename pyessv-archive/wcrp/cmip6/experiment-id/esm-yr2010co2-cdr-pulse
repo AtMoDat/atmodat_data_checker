@@ -1,0 +1,38 @@
+{
+    "_type": "term",
+    "canonical_name": "esm-yr2010co2-cdr-pulse",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_id": [
+            "CDRMIP"
+        ],
+        "additional_allowed_model_components": [
+            "AER",
+            "CHEM"
+        ],
+        "end_year": "2115",
+        "experiment": "instantaneous 100 Gt C removal from industrial era atmosphere",
+        "experiment_id": "esm-yr2010CO2-cdr-pulse",
+        "min_number_yrs_per_sim": "101",
+        "parent_activity_id": [
+            "CDRMIP"
+        ],
+        "parent_experiment_id": [
+            "esm-yr2010CO2-control"
+        ],
+        "required_model_components": [
+            "AOGCM",
+            "BGC"
+        ],
+        "start_year": "2015",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "3"
+    },
+    "description": "Upon initialization from end of year 2015 of esm-yr2010CO2-control instantaneously remove 100 Gt C (\"negative pulse\"; part of the CDR-yr2010-pulse experiment",
+    "label": "esm-yr2010CO2-cdr-pulse",
+    "namespace": "wcrp:cmip6:experiment-id:esm-yr2010co2-cdr-pulse",
+    "raw_name": "esm-yr2010CO2-cdr-pulse",
+    "status": "pending"
+}

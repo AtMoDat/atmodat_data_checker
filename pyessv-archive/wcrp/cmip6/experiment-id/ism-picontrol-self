@@ -1,0 +1,36 @@
+{
+    "_type": "term",
+    "canonical_name": "ism-picontrol-self",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_id": [
+            "ISMIP6"
+        ],
+        "additional_allowed_model_components": [
+            ""
+        ],
+        "end_year": "",
+        "experiment": "offline ice sheet forced by ISM's own AOGCM piControl output",
+        "experiment_id": "ism-piControl-self",
+        "min_number_yrs_per_sim": "500",
+        "parent_activity_id": [
+            "no parent"
+        ],
+        "parent_experiment_id": [
+            "no parent"
+        ],
+        "required_model_components": [
+            "ISM"
+        ],
+        "start_year": "",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "1"
+    },
+    "description": "Pre-industrial control simulation for \"offline\" ice sheets",
+    "label": "ism-piControl-self",
+    "namespace": "wcrp:cmip6:experiment-id:ism-picontrol-self",
+    "raw_name": "ism-piControl-self",
+    "status": "pending"
+}

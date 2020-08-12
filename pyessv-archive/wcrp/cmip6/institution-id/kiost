@@ -1,0 +1,16 @@
+{
+    "_type": "term",
+    "canonical_name": "kiost",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "consortia": [],
+        "coordinates": "129.07761,35.075381",
+        "homepage": "http://www.kiost.ac.kr",
+        "name": "Korea Institute of Ocean Science and Technology",
+        "postalAddress": "Busan 49111, South Korea"
+    },
+    "label": "KIOST",
+    "namespace": "wcrp:cmip6:institution-id:kiost",
+    "raw_name": "KIOST",
+    "status": "pending"
+}

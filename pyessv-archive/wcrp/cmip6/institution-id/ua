@@ -1,0 +1,16 @@
+{
+    "_type": "term",
+    "canonical_name": "ua",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "consortia": [],
+        "coordinates": "-110.9548639,32.2297642",
+        "homepage": "https://www.geo.arizona.edu",
+        "name": "University of Arizona - Department of Geosciences",
+        "postalAddress": "Tucson, AZ 85721, USA"
+    },
+    "label": "UA",
+    "namespace": "wcrp:cmip6:institution-id:ua",
+    "raw_name": "UA",
+    "status": "pending"
+}

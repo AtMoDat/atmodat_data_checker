@@ -1,0 +1,22 @@
+{
+    "_type": "term", 
+    "canonical_name": "sonic-air-temperature", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: point", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time, index", 
+        "long_name": "Sonic temperature (Ts) corrected for sidewind", 
+        "name": "sonic_air_temperature", 
+        "type": "float32", 
+        "units": "K", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "sonic_air_temperature", 
+    "namespace": "ncas:amf:product-flux-components-variable:sonic-air-temperature", 
+    "raw_name": "sonic_air_temperature", 
+    "status": "pending", 
+    "uid": "d564ebbb-c343-4094-bb21-0f8471860edb"
+}

@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "historical-h2",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Historical H2",
+    "namespace": "wcrp:e3sm:experiment:historical-h2",
+    "status": "pending"
+}

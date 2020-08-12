@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "3hrmean",
+    "create_date": "2018-05-18 12:07:40.096000+00:00",
+    "label": "3hrMean",
+    "namespace": "ukcp:ukcp18:frequency:3hrmean",
+    "raw_name": "3hrMean",
+    "status": "pending",
+    "uid": "7521411d-ef71-41a0-bcc7-833260a17d6f"
+}

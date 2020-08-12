@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "csoilfast",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "cSoilFast",
+    "label": "cSoilFast",
+    "namespace": "ecmwf:c3s-cmip5:variable:csoilfast",
+    "raw_name": "cSoilFast",
+    "status": "pending"
+}

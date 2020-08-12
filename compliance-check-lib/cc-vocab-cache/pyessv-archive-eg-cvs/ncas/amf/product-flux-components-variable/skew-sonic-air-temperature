@@ -1,0 +1,22 @@
+{
+    "_type": "term", 
+    "canonical_name": "skew-sonic-air-temperature", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: point", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "long_name": "Skew Sonic AirTemperature (Ts)", 
+        "name": "skew_sonic_air_temperature", 
+        "type": "float32", 
+        "units": "1", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "skew_sonic_air_temperature", 
+    "namespace": "ncas:amf:product-flux-components-variable:skew-sonic-air-temperature", 
+    "raw_name": "skew_sonic_air_temperature", 
+    "status": "pending", 
+    "uid": "760d2381-079e-44b1-81fa-f2a0daf8fde9"
+}

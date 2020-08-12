@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "mohc-highressst-future-1-0-0",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "MOHC-highresSST-future-1-0-0",
+    "label": "MOHC-highresSST-future-1-0-0",
+    "namespace": "wcrp:input4mips:source-id:mohc-highressst-future-1-0-0",
+    "raw_name": "MOHC-highresSST-future-1-0-0",
+    "status": "pending"
+}

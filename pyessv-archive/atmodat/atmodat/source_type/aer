@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "aer",
+    "create_date": "2020-08-05 00:00:00+00:00",
+    "label": "aerosol treatment in an atmospheric model where concentrations are calculated based on emissions, transformation, and removal processes (rather than being prescribed or omitted entirely)",
+    "namespace": "atmodat:atmodat:source-type:AER",
+    "raw_name": "aer",
+    "status": "pending"
+}

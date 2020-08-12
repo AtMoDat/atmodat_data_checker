@@ -1,0 +1,59 @@
+{
+    "_type": "term",
+    "canonical_name": "icon-esm-lr",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_participation": [
+            "CMIP",
+            "OMIP",
+            "SIMIP"
+        ],
+        "cohort": [
+            "Registered"
+        ],
+        "institution_id": [
+            "MPI-M"
+        ],
+        "label_extended": "ICON-ESM-LR",
+        "model_component": {
+            "aerosol": {
+                "description": "none, prescribed MACv2-SP",
+                "native_nominal_resolution": "250 km"
+            },
+            "atmos": {
+                "description": "ICON-A (icosahedral/triangles; 160 km; 47 levels; top level 80 km)",
+                "native_nominal_resolution": "100 km"
+            },
+            "atmosChem": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "land": {
+                "description": "JSBACH4.20",
+                "native_nominal_resolution": "250 km"
+            },
+            "landIce": {
+                "description": "none/prescribed",
+                "native_nominal_resolution": "none"
+            },
+            "ocean": {
+                "description": "ICON-O (icosahedral/triangles; 40 km; 40 levels; top grid cell 0-12 m)",
+                "native_nominal_resolution": "50 km"
+            },
+            "ocnBgchem": {
+                "description": "HAMOCC",
+                "native_nominal_resolution": "50 km"
+            },
+            "seaIce": {
+                "description": "unnamed (thermodynamic (Semtner zero-layer) dynamic (Hibler 79) sea ice model)",
+                "native_nominal_resolution": "50 km"
+            }
+        },
+        "release_year": "2017",
+        "source_id": "ICON-ESM-LR"
+    },
+    "label": "ICON-ESM-LR",
+    "namespace": "wcrp:cmip6:source-id:icon-esm-lr",
+    "raw_name": "ICON-ESM-LR",
+    "status": "pending"
+}

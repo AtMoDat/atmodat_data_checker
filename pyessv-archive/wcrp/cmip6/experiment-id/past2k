@@ -1,0 +1,36 @@
+{
+    "_type": "term",
+    "canonical_name": "past2k",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_id": [
+            "PMIP"
+        ],
+        "additional_allowed_model_components": [
+            "AER",
+            "CHEM",
+            "BGC"
+        ],
+        "end_year": "1849",
+        "experiment": "last two millennia experiment",
+        "experiment_id": "past2k",
+        "min_number_yrs_per_sim": "1849",
+        "parent_activity_id": [
+            "no parent"
+        ],
+        "parent_experiment_id": [
+            "no parent"
+        ],
+        "required_model_components": [
+            "AOGCM"
+        ],
+        "start_year": "1",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "3"
+    },
+    "description": "Experiment extending the past1000 simulation back in time to include the first millennium CE. Main forcings: trace gases, volcanoes, solar variability, land-use. past1000 forcings data sets include the first millennium, except for land-use. For the latter, a linear ramp-up to 850CE values is recommended",
+    "namespace": "wcrp:cmip6:experiment-id:past2k",
+    "status": "pending"
+}

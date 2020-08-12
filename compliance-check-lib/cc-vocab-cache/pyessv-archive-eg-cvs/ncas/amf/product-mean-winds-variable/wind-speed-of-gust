@@ -1,0 +1,23 @@
+{
+    "_type": "term", 
+    "canonical_name": "wind-speed-of-gust", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "long_name": "Maximum Wind Speed Observed in Averaging Period", 
+        "name": "wind_speed_of_gust", 
+        "standard_name": "wind_speed_of_gust", 
+        "type": "float32", 
+        "units": "m s-1", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "wind_speed_of_gust", 
+    "namespace": "ncas:amf:product-mean-winds-variable:wind-speed-of-gust", 
+    "raw_name": "wind_speed_of_gust", 
+    "status": "pending", 
+    "uid": "3ec51218-8aea-4a81-99a3-cfc87e24a5ff"
+}

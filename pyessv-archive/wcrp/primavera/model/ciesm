@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "ciesm",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "CIESM",
+    "label": "CIESM",
+    "namespace": "wcrp:primavera:model:ciesm",
+    "raw_name": "CIESM",
+    "status": "pending"
+}

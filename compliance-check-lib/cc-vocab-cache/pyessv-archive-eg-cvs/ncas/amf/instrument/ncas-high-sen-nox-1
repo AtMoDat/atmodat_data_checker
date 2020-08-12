@@ -1,0 +1,13 @@
+{
+    "_type": "term", 
+    "canonical_name": "ncas-high-sen-nox-1", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "description": "NCAS High Semsitivity NOx Monitor unit 1", 
+        "instrument_id": "ncas-high-sen-nox-1", 
+        "previous_instrument_ids": []
+    }, 
+    "namespace": "ncas:amf:instrument:ncas-high-sen-nox-1", 
+    "status": "pending", 
+    "uid": "0b3c1cdd-dbff-434a-bdd5-835baee2e980"
+}

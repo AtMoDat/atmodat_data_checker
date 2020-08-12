@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "50-km",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "label": "50 km",
+    "namespace": "wcrp:cmip6:nominal-resolution:50-km",
+    "raw_name": "50 km",
+    "status": "pending"
+}

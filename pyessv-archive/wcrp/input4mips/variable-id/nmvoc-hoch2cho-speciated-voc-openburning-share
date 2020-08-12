@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "nmvoc-hoch2cho-speciated-voc-openburning-share",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "NMVOC_HOCH2CHO_speciated_VOC_openburning_share",
+    "label": "NMVOC_HOCH2CHO_speciated_VOC_openburning_share",
+    "namespace": "wcrp:input4mips:variable-id:nmvoc-hoch2cho-speciated-voc-openburning-share",
+    "raw_name": "NMVOC_HOCH2CHO_speciated_VOC_openburning_share",
+    "status": "pending"
+}

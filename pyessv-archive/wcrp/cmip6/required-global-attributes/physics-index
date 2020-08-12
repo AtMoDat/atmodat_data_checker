@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "physics-index",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "label": "physics_index",
+    "namespace": "wcrp:cmip6:required-global-attributes:physics-index",
+    "raw_name": "physics_index",
+    "status": "pending"
+}

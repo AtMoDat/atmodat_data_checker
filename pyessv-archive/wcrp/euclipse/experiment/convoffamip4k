@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "convoffamip4k",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "offAMIP plus 4K anomaly with SPOOKIE",
+    "label": "convoffamip4K",
+    "namespace": "wcrp:euclipse:experiment:convoffamip4k",
+    "raw_name": "convoffamip4K",
+    "status": "pending"
+}

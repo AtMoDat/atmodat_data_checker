@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "lumip",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "LUMIP",
+    "label": "LUMIP",
+    "namespace": "wcrp:primavera:activity:lumip",
+    "raw_name": "LUMIP",
+    "status": "pending"
+}

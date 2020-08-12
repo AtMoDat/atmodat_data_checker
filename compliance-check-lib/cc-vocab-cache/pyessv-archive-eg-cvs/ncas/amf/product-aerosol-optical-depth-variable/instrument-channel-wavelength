@@ -1,0 +1,21 @@
+{
+    "_type": "term", 
+    "canonical_name": "instrument-channel-wavelength", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "coordinates": "latitude longitude", 
+        "dimension": "index", 
+        "long_name": "Instrument Channel Wavelength", 
+        "name": "instrument_channel_wavelength", 
+        "type": "float32", 
+        "units": "nm", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "instrument_channel_wavelength", 
+    "namespace": "ncas:amf:product-aerosol-optical-depth-variable:instrument-channel-wavelength", 
+    "raw_name": "instrument_channel_wavelength", 
+    "status": "pending", 
+    "uid": "09583419-39b5-4528-b3be-b53c37cfaee2"
+}

@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "hist-pintcf",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Historical WMGHG and halocarbons concentrations, 1850 NTCF emissions",
+    "label": "hist-piNTCF",
+    "namespace": "wcrp:primavera:experiment:hist-pintcf",
+    "raw_name": "hist-piNTCF",
+    "status": "pending"
+}

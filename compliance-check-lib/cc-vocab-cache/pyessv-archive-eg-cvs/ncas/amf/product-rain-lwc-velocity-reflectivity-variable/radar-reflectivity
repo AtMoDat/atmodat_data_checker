@@ -1,0 +1,22 @@
+{
+    "_type": "term", 
+    "canonical_name": "radar-reflectivity", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time, index", 
+        "long_name": "Radar Reflectivity (Z)", 
+        "name": "radar_reflectivity", 
+        "type": "float32", 
+        "units": "dBZ", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "radar_reflectivity", 
+    "namespace": "ncas:amf:product-rain-lwc-velocity-reflectivity-variable:radar-reflectivity", 
+    "raw_name": "radar_reflectivity", 
+    "status": "pending", 
+    "uid": "6c0e70be-f627-4c99-9447-7f0988d50f09"
+}

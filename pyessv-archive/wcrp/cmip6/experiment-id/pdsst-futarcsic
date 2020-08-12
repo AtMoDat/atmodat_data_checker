@@ -1,0 +1,38 @@
+{
+    "_type": "term",
+    "canonical_name": "pdsst-futarcsic",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_id": [
+            "PAMIP"
+        ],
+        "additional_allowed_model_components": [
+            "AER",
+            "CHEM",
+            "BGC"
+        ],
+        "end_year": "2001",
+        "experiment": "Atmosphere time slice with present day SST and future Arctic SIC",
+        "experiment_id": "pdSST-futArcSIC",
+        "min_number_yrs_per_sim": "1",
+        "parent_activity_id": [
+            "CMIP"
+        ],
+        "parent_experiment_id": [
+            "amip"
+        ],
+        "required_model_components": [
+            "AGCM"
+        ],
+        "start_year": "2000",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "1"
+    },
+    "description": "PA1.6: investigate response to Arctic sea ice and its role in polar amplification",
+    "label": "pdSST-futArcSIC",
+    "namespace": "wcrp:cmip6:experiment-id:pdsst-futarcsic",
+    "raw_name": "pdSST-futArcSIC",
+    "status": "pending"
+}

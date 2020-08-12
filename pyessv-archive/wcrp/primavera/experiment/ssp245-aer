@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "ssp245-aer",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Extension of aerosol-only run under SSP2-4.5",
+    "namespace": "wcrp:primavera:experiment:ssp245-aer",
+    "status": "pending"
+}

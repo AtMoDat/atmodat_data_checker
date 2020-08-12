@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "prsnadjust",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "prsnAdjust",
+    "label": "prsnAdjust",
+    "namespace": "wcrp:isimip-ft:variable:prsnadjust",
+    "raw_name": "prsnAdjust",
+    "status": "pending"
+}

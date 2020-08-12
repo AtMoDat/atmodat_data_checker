@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "height10m",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "height10m",
+    "namespace": "ecmwf:c3s-cordex:thredds-exclude-variables:height10m",
+    "status": "pending"
+}

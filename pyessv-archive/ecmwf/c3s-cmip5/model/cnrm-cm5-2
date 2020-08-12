@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "cnrm-cm5-2",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "CNRM-CM5-2",
+    "label": "CNRM-CM5-2",
+    "namespace": "ecmwf:c3s-cmip5:model:cnrm-cm5-2",
+    "raw_name": "CNRM-CM5-2",
+    "status": "pending"
+}

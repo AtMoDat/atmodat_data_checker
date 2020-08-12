@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "wa",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "WA",
+    "label": "WA",
+    "namespace": "wcrp:isimip-ft:sector-short:wa",
+    "raw_name": "WA",
+    "status": "pending"
+}

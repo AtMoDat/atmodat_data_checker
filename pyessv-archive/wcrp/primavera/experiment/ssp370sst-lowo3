@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "ssp370sst-lowo3",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Future SSP3-7.0 with reduced ozone precursor emissions (from ssp370-lowNTCF), prescribed SSTs",
+    "label": "ssp370SST-lowO3",
+    "namespace": "wcrp:primavera:experiment:ssp370sst-lowo3",
+    "raw_name": "ssp370SST-lowO3",
+    "status": "pending"
+}

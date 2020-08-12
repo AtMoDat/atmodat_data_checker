@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "cmcc-cesm",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "CMCC-CESM",
+    "label": "CMCC-CESM",
+    "namespace": "ecmwf:c3s-cmip5:model:cmcc-cesm",
+    "raw_name": "CMCC-CESM",
+    "status": "pending"
+}

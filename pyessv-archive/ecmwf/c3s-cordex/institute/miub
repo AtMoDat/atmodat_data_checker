@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "miub",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "MIUB",
+    "label": "MIUB",
+    "namespace": "ecmwf:c3s-cordex:institute:miub",
+    "raw_name": "MIUB",
+    "status": "pending"
+}

@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "ogcm",
+    "create_date": "2020-08-05 00:00:00+00:00",
+    "label": "ocean general circulation model run uncoupled from an AGCM but, usually including a sea-ice model",
+    "namespace": "atmodat:atmodat:source-type:ogcm",
+    "raw_name": "ogcm",
+    "status": "pending"
+}

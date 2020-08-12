@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "std-lons",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "std_lons",
+    "label": "std_lons",
+    "namespace": "ecmwf:cc4e:thredds-exclude-variables:std-lons",
+    "raw_name": "std_lons",
+    "status": "pending"
+}

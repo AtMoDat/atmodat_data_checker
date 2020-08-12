@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "nmvoc-ch3cooh",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "NMVOC-CH3COOH",
+    "label": "NMVOC-CH3COOH",
+    "namespace": "wcrp:input4mips:variable-id:nmvoc-ch3cooh",
+    "raw_name": "NMVOC-CH3COOH",
+    "status": "pending"
+}

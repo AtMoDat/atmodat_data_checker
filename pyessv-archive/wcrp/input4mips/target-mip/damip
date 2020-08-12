@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "damip",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "DAMIP",
+    "label": "DAMIP",
+    "namespace": "wcrp:input4mips:target-mip:damip",
+    "raw_name": "DAMIP",
+    "status": "pending"
+}

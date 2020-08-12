@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "cf3hr",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "cf3hr",
+    "namespace": "ecmwf:c3s-cmip5:cmor-table:cf3hr",
+    "status": "pending"
+}

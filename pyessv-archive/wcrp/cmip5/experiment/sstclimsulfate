@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "sstclimsulfate",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "sstClim with sulfate aerosol forcing",
+    "label": "sstClimSulfate",
+    "namespace": "wcrp:cmip5:experiment:sstclimsulfate",
+    "raw_name": "sstClimSulfate",
+    "status": "pending"
+}

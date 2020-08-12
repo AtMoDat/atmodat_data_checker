@@ -1,0 +1,31 @@
+{
+    "_type": "term",
+    "canonical_name": "sse",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "data": {
+        "description": "Sea surface elevation above the mean level",
+        "label_units": "m",
+        "long_name": "Sea surface elevation",
+        "notes": [
+            "For week-long case studies"
+        ],
+        "plot_label": "Sea surface elevation above the mean level (m)",
+        "standard_name": "sea_surface_height_above_mean_sea_level",
+        "strand": [
+            "land strand 1",
+            "land strand 2",
+            "land strand 3 12km",
+            "land strand 3 2km",
+            "marine",
+            "observations"
+        ],
+        "time_step": [
+            "1hr"
+        ],
+        "units": "m"
+    },
+    "description": "Sea surface elevation above the mean level",
+    "namespace": "ukcp:ukcp18:variable:sse",
+    "status": "pending",
+    "uid": "12628eb4-7007-4946-aeb8-e82b99120e47"
+}

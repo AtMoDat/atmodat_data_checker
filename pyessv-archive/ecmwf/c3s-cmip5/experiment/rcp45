@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "rcp45",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "RCP4.5",
+    "namespace": "ecmwf:c3s-cmip5:experiment:rcp45",
+    "status": "pending"
+}

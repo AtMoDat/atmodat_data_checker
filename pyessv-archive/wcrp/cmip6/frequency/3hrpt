@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "3hrpt",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "label": "3hrPt",
+    "namespace": "wcrp:cmip6:frequency:3hrpt",
+    "raw_name": "3hrPt",
+    "status": "pending"
+}

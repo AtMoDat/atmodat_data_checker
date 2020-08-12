@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "atmoschem",
+    "create_date": "2020-08-05 00:00:00+00:00",
+    "description": "Atmospheric Chemistry",
+    "label": "atmosChem",
+    "namespace": "atmodat:atmodat:realm:atmoschem",
+    "raw_name": "atmosChem",
+    "status": "pending"
+}

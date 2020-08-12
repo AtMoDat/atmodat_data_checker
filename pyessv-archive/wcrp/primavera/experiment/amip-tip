@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "amip-tip",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "The topography of the TIP is modified by setting surface elevations to 500m; to understand the combined thermal and mechanical forcing of the TIP. Same model as DECK",
+    "label": "amip-TIP",
+    "namespace": "wcrp:primavera:experiment:amip-tip",
+    "raw_name": "amip-TIP",
+    "status": "pending"
+}

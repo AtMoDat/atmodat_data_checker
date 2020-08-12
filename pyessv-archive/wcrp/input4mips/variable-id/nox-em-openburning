@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "nox-em-openburning",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "NOx_em_openburning",
+    "label": "NOx_em_openburning",
+    "namespace": "wcrp:input4mips:variable-id:nox-em-openburning",
+    "raw_name": "NOx_em_openburning",
+    "status": "pending"
+}

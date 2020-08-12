@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "lat-bnds",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "lat_bnds",
+    "label": "lat_bnds",
+    "namespace": "ecmwf:c3s-cmip5:thredds-exclude-variables:lat-bnds",
+    "raw_name": "lat_bnds",
+    "status": "pending"
+}

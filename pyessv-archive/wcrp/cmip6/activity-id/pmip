@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "pmip",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "label": "PMIP",
+    "namespace": "wcrp:cmip6:activity-id:pmip",
+    "raw_name": "PMIP",
+    "status": "pending"
+}

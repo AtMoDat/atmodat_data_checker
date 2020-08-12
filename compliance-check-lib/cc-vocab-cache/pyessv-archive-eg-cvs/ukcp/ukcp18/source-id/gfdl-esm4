@@ -1,0 +1,68 @@
+{
+    "_type": "term",
+    "canonical_name": "gfdl-esm4",
+    "create_date": "2018-03-28 19:52:17.258367+00:00",
+    "data": {
+        "activity_participation": [
+            "AerChemMIP",
+            "C4MIP",
+            "CFMIP",
+            "CMIP",
+            "DAMIP",
+            "DynVarMIP",
+            "GMMIP",
+            "LUMIP",
+            "OMIP",
+            "RFMIP",
+            "ScenarioMIP"
+        ],
+        "cohort": [
+            "Registered"
+        ],
+        "institution_id": [
+            "NOAA-GFDL"
+        ],
+        "label_extended": "GFDL-ESM4",
+        "model_component": {
+            "aerosol": {
+                "description": "interactive",
+                "nominal_resolution": "100 km"
+            },
+            "atmos": {
+                "description": "GFDL-AM4.1 (Cubed-sphere (c96) - 1 degree nominal horizontal resolution; 360 x 180 longitude/latitude; 49 levels; top level 1 Pa)",
+                "nominal_resolution": "100 km"
+            },
+            "atmosChem": {
+                "description": "GFDL-ATMCHEM4.1 (full atmospheric chemistry)",
+                "nominal_resolution": "100 km"
+            },
+            "land": {
+                "description": "GFDL-LM4.1",
+                "nominal_resolution": "100 km"
+            },
+            "landIce": {
+                "description": "GFDL-LM4.1",
+                "nominal_resolution": "100 km"
+            },
+            "ocean": {
+                "description": "GFDL-MOM6 (tripolar - nominal 0.5 deg; 720 x 360 longitude/latitude; 75 levels; top grid cell 0-2 m)",
+                "nominal_resolution": "50 km"
+            },
+            "ocnBgchem": {
+                "description": "COBALT 2.0",
+                "nominal_resolution": "50 km"
+            },
+            "seaIce": {
+                "description": "SIS2",
+                "nominal_resolution": "50 km"
+            }
+        },
+        "release_year": "2017",
+        "source_id": "GFDL-ESM4"
+    },
+    "label": "GFDL-ESM4",
+    "namespace": "ukcp:ukcp18:source-id:gfdl-esm4",
+    "raw_name": "GFDL-ESM4",
+    "status": "pending",
+    "uid": "2573ae89-192d-4d8e-b54e-b65fc4b56884"
+}

@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "cesm1-waccm",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "CESM1-WACCM",
+    "label": "CESM1-WACCM",
+    "namespace": "ecmwf:c3s-cmip5:model:cesm1-waccm",
+    "raw_name": "CESM1-WACCM",
+    "status": "pending"
+}

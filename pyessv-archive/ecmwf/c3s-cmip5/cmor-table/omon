@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "omon",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Omon",
+    "label": "Omon",
+    "namespace": "ecmwf:c3s-cmip5:cmor-table:omon",
+    "raw_name": "Omon",
+    "status": "pending"
+}

@@ -1,0 +1,24 @@
+{
+    "_type": "term", 
+    "canonical_name": "qc-flag-sf6", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "dimension": "time", 
+        "flag_meanings": [
+            "not_used", 
+            "good_data", 
+            "suspect_data_unspecified_instrument_performance_issues_contact_data_originator_for_more_information", 
+            "suspect_data_time_stamp_error"
+        ], 
+        "flag_values": "0b,1b, 2b, 3b", 
+        "long_name": "Data Quality flag: SF6", 
+        "name": "qc_flag_sf6", 
+        "type": "byte", 
+        "units": "1"
+    }, 
+    "label": "qc_flag_sf6", 
+    "namespace": "ncas:amf:product-n2o-sf6-concentration-variable:qc-flag-sf6", 
+    "raw_name": "qc_flag_sf6", 
+    "status": "pending", 
+    "uid": "60ed22f0-b57a-4262-b700-50768a57a189"
+}

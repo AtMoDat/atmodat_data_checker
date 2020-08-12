@@ -1,0 +1,39 @@
+{
+    "_type": "term",
+    "canonical_name": "a4sstice-4xco2",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "data": {
+        "activity_id": [
+            "CFMIP"
+        ],
+        "additional_allowed_model_components": [
+            "AER",
+            "CHEM"
+        ],
+        "description": "As a4SSTice, but CO2 is quadrupled, and the increase in CO2 is seen by both the radiation scheme and vegetation",
+        "end_year": "",
+        "experiment": "as piSST but with SSTs and sea ice from abrupt4xCO2, and 4xCO2 seen by radiation and vegetation",
+        "experiment_id": "a4SSTice-4xCO2",
+        "min_number_yrs_per_sim": "30",
+        "parent_activity_id": [
+            "CMIP"
+        ],
+        "parent_experiment_id": [
+            "abrupt4xCO2"
+        ],
+        "required_model_components": [
+            "AGCM"
+        ],
+        "start_year": "",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "2"
+    },
+    "description": "As a4SSTice, but CO2 is quadrupled, and the increase in CO2 is seen by both the radiation scheme and vegetation",
+    "label": "a4SSTice-4xCO2",
+    "namespace": "ukcp:ukcp18:experiment-id:a4sstice-4xco2",
+    "raw_name": "a4SSTice-4xCO2",
+    "status": "pending",
+    "uid": "a5c6e76e-ed37-40ec-ba0f-cf5454baf730"
+}

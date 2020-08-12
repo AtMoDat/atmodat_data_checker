@@ -1,0 +1,14 @@
+{
+    "_type": "term", 
+    "canonical_name": "emily.norton@ncas.ac.uk", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "name": "Emily Norton", 
+        "orcid": "https://orcid.org/0000-0002-8879-9325", 
+        "previous_emails": [], 
+        "primary_email": "emily.norton@ncas.ac.uk"
+    }, 
+    "namespace": "ncas:amf:scientist:emily.norton@ncas.ac.uk", 
+    "status": "pending", 
+    "uid": "6a5c2b17-d27b-46a1-9000-b62e0e941082"
+}

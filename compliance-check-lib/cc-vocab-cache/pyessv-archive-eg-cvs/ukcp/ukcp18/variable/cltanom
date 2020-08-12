@@ -1,0 +1,45 @@
+{
+    "_type": "term",
+    "canonical_name": "cltanom",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "data": {
+        "anomaly_type": "percentage_change",
+        "cmip6_cmor_tables_row_id": [
+            "206",
+            "209"
+        ],
+        "cmip6_name": "clt",
+        "cmip6_standard_name": "cloud_area_fraction",
+        "description": "Total cloud",
+        "label_units": "%",
+        "long_name": "Cloud area fraction",
+        "notes": [
+            "NCIC have sunshine hours"
+        ],
+        "plot_label": "Total cloud anomaly (%)",
+        "standard_name": "cloud_area_fraction",
+        "strand": [
+            "land strand 1",
+            "land strand 2",
+            "land strand 3 12km",
+            "land strand 3 2km",
+            "marine",
+            "observations"
+        ],
+        "time_averaging": [
+            "mean"
+        ],
+        "time_step": [
+            "day",
+            "mon"
+        ],
+        "um_stash": "02204",
+        "units": "%"
+    },
+    "description": "Total cloud",
+    "label": "cltAnom",
+    "namespace": "ukcp:ukcp18:variable:cltanom",
+    "raw_name": "cltAnom",
+    "status": "pending",
+    "uid": "89539d34-3928-43bb-9704-1c8c01f3491d"
+}

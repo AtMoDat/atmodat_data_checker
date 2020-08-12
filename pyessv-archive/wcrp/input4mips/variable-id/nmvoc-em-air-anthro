@@ -1,0 +1,13 @@
+{
+    "_type": "term",
+    "alternative_names": [
+        "NMVOC_em_AIR_anthro"
+    ],
+    "canonical_name": "nmvoc-em-air-anthro",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "NMVOC-em-AIR-anthro",
+    "label": "NMVOC-em-AIR-anthro",
+    "namespace": "wcrp:input4mips:variable-id:nmvoc-em-air-anthro",
+    "raw_name": "NMVOC-em-AIR-anthro",
+    "status": "pending"
+}

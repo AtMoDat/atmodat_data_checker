@@ -1,0 +1,22 @@
+{
+    "_type": "term", 
+    "canonical_name": "instrument-pitch-angle", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "long_name": "Instrument Pitch Angle", 
+        "name": "instrument_pitch_angle", 
+        "type": "float32", 
+        "units": "degree", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "instrument_pitch_angle", 
+    "namespace": "ncas:amf:product-common-variable-sea:instrument-pitch-angle", 
+    "raw_name": "instrument_pitch_angle", 
+    "status": "pending", 
+    "uid": "f7189a83-11c5-4477-b0a5-7490ffa32c92"
+}

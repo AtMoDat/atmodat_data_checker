@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "canam4",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "CanAM4",
+    "label": "CanAM4",
+    "namespace": "ecmwf:c3s-cmip5:model:canam4",
+    "raw_name": "CanAM4",
+    "status": "pending"
+}

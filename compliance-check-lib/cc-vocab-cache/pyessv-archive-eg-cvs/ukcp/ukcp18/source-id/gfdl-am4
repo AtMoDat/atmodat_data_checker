@@ -1,0 +1,58 @@
+{
+    "_type": "term",
+    "canonical_name": "gfdl-am4",
+    "create_date": "2018-03-28 19:52:17.258367+00:00",
+    "data": {
+        "activity_participation": [
+            "CMIP"
+        ],
+        "cohort": [
+            "Registered"
+        ],
+        "institution_id": [
+            "NOAA-GFDL"
+        ],
+        "label_extended": "GFDL-AM4",
+        "model_component": {
+            "aerosol": {
+                "description": "interactive",
+                "nominal_resolution": "100 km"
+            },
+            "atmos": {
+                "description": "GFDL-AM4.0 (Cubed-sphere (c96) - 1 degree nominal horizontal resolution; 360 x 180 longitude/latitude; 33 levels; top level 1 hPa)",
+                "nominal_resolution": "100 km"
+            },
+            "atmosChem": {
+                "description": "fast chemistry, aerosol only",
+                "nominal_resolution": "100 km"
+            },
+            "land": {
+                "description": "GFDL-LM4.0",
+                "nominal_resolution": "100 km"
+            },
+            "landIce": {
+                "description": "GFDL-LM4.0",
+                "nominal_resolution": "100 km"
+            },
+            "ocean": {
+                "description": "none",
+                "nominal_resolution": "none"
+            },
+            "ocnBgchem": {
+                "description": "none",
+                "nominal_resolution": "none"
+            },
+            "seaIce": {
+                "description": "none",
+                "nominal_resolution": "none"
+            }
+        },
+        "release_year": "2017",
+        "source_id": "GFDL-AM4"
+    },
+    "label": "GFDL-AM4",
+    "namespace": "ukcp:ukcp18:source-id:gfdl-am4",
+    "raw_name": "GFDL-AM4",
+    "status": "pending",
+    "uid": "9dfb20ed-a72f-47c6-acc9-04328e0274bb"
+}

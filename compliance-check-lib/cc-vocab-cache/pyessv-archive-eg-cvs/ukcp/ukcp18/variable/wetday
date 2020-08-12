@@ -1,0 +1,31 @@
+{
+    "_type": "term",
+    "canonical_name": "wetday",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "data": {
+        "description": "Wettest day",
+        "label_units": "1",
+        "long_name": "Wettest day",
+        "plot_label": "Wettest day (1)",
+        "strand": [
+            "land strand 1",
+            "land strand 2",
+            "land strand 3 12km",
+            "land strand 3 2km",
+            "marine",
+            "observations"
+        ],
+        "time_averaging": [
+            "total"
+        ],
+        "time_step": [
+            "annual"
+        ],
+        "um_stash": "16222",
+        "units": "1"
+    },
+    "description": "Wettest day",
+    "namespace": "ukcp:ukcp18:variable:wetday",
+    "status": "pending",
+    "uid": "2cefdbaf-4c00-4517-a82a-280fb0bcb867"
+}

@@ -1,0 +1,13 @@
+{
+    "_type": "term",
+    "alternative_names": [
+        "NMVOC_em_anthro"
+    ],
+    "canonical_name": "nmvoc-em-anthro",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "NMVOC-em-anthro",
+    "label": "NMVOC-em-anthro",
+    "namespace": "wcrp:input4mips:variable-id:nmvoc-em-anthro",
+    "raw_name": "NMVOC-em-anthro",
+    "status": "pending"
+}

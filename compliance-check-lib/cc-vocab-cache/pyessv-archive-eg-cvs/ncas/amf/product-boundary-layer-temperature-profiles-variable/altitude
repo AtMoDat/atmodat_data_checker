@@ -1,0 +1,21 @@
+{
+    "_type": "term", 
+    "canonical_name": "altitude", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "axis": "Z", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time, index", 
+        "long_name": "Geometric height above geoid (WGS84).", 
+        "name": "altitude", 
+        "standard_name": "altitude", 
+        "type": "float32", 
+        "units": "m", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "namespace": "ncas:amf:product-boundary-layer-temperature-profiles-variable:altitude", 
+    "status": "pending", 
+    "uid": "f776ecc6-6ce9-4591-a6e9-58a6d65f7fde"
+}

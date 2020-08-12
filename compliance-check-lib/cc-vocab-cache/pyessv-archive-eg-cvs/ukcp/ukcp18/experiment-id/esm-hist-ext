@@ -1,0 +1,38 @@
+{
+    "_type": "term",
+    "canonical_name": "esm-hist-ext",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "data": {
+        "activity_id": [
+            "CMIP"
+        ],
+        "additional_allowed_model_components": [
+            "AER",
+            "CHEM"
+        ],
+        "description": "Extension beyond 2014 of the CMIP6 historical (CO2 emission-driven)",
+        "end_year": "",
+        "experiment": "post-2014 all-forcing simulation with atmospheric CO2 concentration calculated",
+        "experiment_id": "esm-hist-ext",
+        "min_number_yrs_per_sim": "1",
+        "parent_activity_id": [
+            "CMIP"
+        ],
+        "parent_experiment_id": [
+            "esm-hist"
+        ],
+        "required_model_components": [
+            "AOGCM",
+            "BGC"
+        ],
+        "start_year": "2015",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "2"
+    },
+    "description": "Extension beyond 2014 of the CMIP6 historical (CO2 emission-driven)",
+    "namespace": "ukcp:ukcp18:experiment-id:esm-hist-ext",
+    "status": "pending",
+    "uid": "9550fd52-6b84-49ff-b51f-63243734d7f0"
+}

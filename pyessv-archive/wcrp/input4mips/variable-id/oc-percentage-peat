@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "oc-percentage-peat",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "OC-percentage-PEAT",
+    "label": "OC-percentage-PEAT",
+    "namespace": "wcrp:input4mips:variable-id:oc-percentage-peat",
+    "raw_name": "OC-percentage-PEAT",
+    "status": "pending"
+}

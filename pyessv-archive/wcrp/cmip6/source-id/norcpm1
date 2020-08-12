@@ -1,0 +1,58 @@
+{
+    "_type": "term",
+    "canonical_name": "norcpm1",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_participation": [
+            "CMIP",
+            "DCPP"
+        ],
+        "cohort": [
+            "Registered"
+        ],
+        "institution_id": [
+            "NCC"
+        ],
+        "label_extended": "Norwegian Climate Prediction Model version 1",
+        "model_component": {
+            "aerosol": {
+                "description": "OsloAero4.1 (same grid as atmos)",
+                "native_nominal_resolution": "250 km"
+            },
+            "atmos": {
+                "description": "CAM-OSLO4.1 (2 degree resolution; 144 x 96 longitude/latitude; 26 levels; top level ~2 hPa)",
+                "native_nominal_resolution": "250 km"
+            },
+            "atmosChem": {
+                "description": "OsloChemSimp4.1 (same grid as atmos)",
+                "native_nominal_resolution": "250 km"
+            },
+            "land": {
+                "description": "CLM4 (same grid as atmos)",
+                "native_nominal_resolution": "250 km"
+            },
+            "landIce": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "ocean": {
+                "description": "MICOM1.1 (1 degree resolution; 320 x 384 longitude/latitude; 53 levels; top grid cell 0-2.5 m [native model uses hybrid density and generic upper-layer coordinate interpolated to z-level for contributed data])",
+                "native_nominal_resolution": "100 km"
+            },
+            "ocnBgchem": {
+                "description": "HAMOCC5.1 (same grid as ocean)",
+                "native_nominal_resolution": "100 km"
+            },
+            "seaIce": {
+                "description": "CICE4 (same grid as ocean)",
+                "native_nominal_resolution": "100 km"
+            }
+        },
+        "release_year": "2019",
+        "source_id": "NorCPM1"
+    },
+    "label": "NorCPM1",
+    "namespace": "wcrp:cmip6:source-id:norcpm1",
+    "raw_name": "NorCPM1",
+    "status": "pending"
+}

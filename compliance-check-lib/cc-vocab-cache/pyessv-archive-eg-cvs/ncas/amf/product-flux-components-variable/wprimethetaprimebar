@@ -1,0 +1,20 @@
+{
+    "_type": "term", 
+    "canonical_name": "wprimethetaprimebar", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "long_name": "<W'Theta'>", 
+        "name": "wprimethetaprimebar", 
+        "type": "float32", 
+        "units": "K m s-1", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "namespace": "ncas:amf:product-flux-components-variable:wprimethetaprimebar", 
+    "status": "pending", 
+    "uid": "02a0203c-e494-4a76-ad2a-2d7341ad8300"
+}

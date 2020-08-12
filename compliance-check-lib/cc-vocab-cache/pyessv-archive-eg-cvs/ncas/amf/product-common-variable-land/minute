@@ -1,0 +1,17 @@
+{
+    "_type": "term", 
+    "canonical_name": "minute", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "dimension": "time", 
+        "long_name": "Minute", 
+        "name": "minute", 
+        "type": "int32", 
+        "units": "1", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "namespace": "ncas:amf:product-common-variable-land:minute", 
+    "status": "pending", 
+    "uid": "276cb453-90a1-433c-b468-84baa1f24acf"
+}

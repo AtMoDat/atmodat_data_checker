@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "cnrm",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "CNRM",
+    "label": "CNRM",
+    "namespace": "ecmwf:c3s-cordex:institute:cnrm",
+    "raw_name": "CNRM",
+    "status": "pending"
+}

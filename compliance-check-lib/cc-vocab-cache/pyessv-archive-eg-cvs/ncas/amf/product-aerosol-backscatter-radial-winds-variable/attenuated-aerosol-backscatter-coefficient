@@ -1,0 +1,22 @@
+{
+    "_type": "term", 
+    "canonical_name": "attenuated-aerosol-backscatter-coefficient", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time, index_of_range, index_of_angle", 
+        "long_name": "Attenuated Aerosol Backscatter Coefficient", 
+        "name": "attenuated_aerosol_backscatter_coefficient", 
+        "type": "float32", 
+        "units": "m-1 sr-1", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "attenuated_aerosol_backscatter_coefficient", 
+    "namespace": "ncas:amf:product-aerosol-backscatter-radial-winds-variable:attenuated-aerosol-backscatter-coefficient", 
+    "raw_name": "attenuated_aerosol_backscatter_coefficient", 
+    "status": "pending", 
+    "uid": "fc9cc44d-06c0-4c37-8993-c0d2b032beb5"
+}

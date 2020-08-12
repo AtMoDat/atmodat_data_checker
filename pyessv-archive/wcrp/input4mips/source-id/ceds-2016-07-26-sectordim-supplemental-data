@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "ceds-2016-07-26-sectordim-supplemental-data",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "CEDS-2016-07-26-sectorDim-supplemental-data",
+    "label": "CEDS-2016-07-26-sectorDim-supplemental-data",
+    "namespace": "wcrp:input4mips:source-id:ceds-2016-07-26-sectordim-supplemental-data",
+    "raw_name": "CEDS-2016-07-26-sectorDim-supplemental-data",
+    "status": "pending"
+}

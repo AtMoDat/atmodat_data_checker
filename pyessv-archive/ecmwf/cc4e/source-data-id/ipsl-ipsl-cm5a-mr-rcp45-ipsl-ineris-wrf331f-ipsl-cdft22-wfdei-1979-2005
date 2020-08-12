@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "ipsl-ipsl-cm5a-mr-rcp45-ipsl-ineris-wrf331f-ipsl-cdft22-wfdei-1979-2005",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "IPSL-IPSL-CM5A-MR-rcp45-IPSL-INERIS-WRF331F-IPSL-CDFT22-WFDEI-1979-2005",
+    "label": "IPSL-IPSL-CM5A-MR-rcp45-IPSL-INERIS-WRF331F-IPSL-CDFT22-WFDEI-1979-2005",
+    "namespace": "ecmwf:cc4e:source-data-id:ipsl-ipsl-cm5a-mr-rcp45-ipsl-ineris-wrf331f-ipsl-cdft22-wfdei-1979-2005",
+    "raw_name": "IPSL-IPSL-CM5A-MR-rcp45-IPSL-INERIS-WRF331F-IPSL-CDFT22-WFDEI-1979-2005",
+    "status": "pending"
+}

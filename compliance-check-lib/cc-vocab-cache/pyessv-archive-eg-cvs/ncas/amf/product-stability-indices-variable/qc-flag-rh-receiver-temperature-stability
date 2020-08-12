@@ -1,0 +1,28 @@
+{
+    "_type": "term", 
+    "canonical_name": "qc-flag-rh-receiver-temperature-stability", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "dimension": "time", 
+        "flag_meanings": [
+            "not_used", 
+            "good_data_temperature_stability_in_the_range_0_to_5mK", 
+            "suspect_data_temperature_stability_in_the_range_5_to_10mK", 
+            "suspect_data_temperature_stability_in_the_range_10_to_50mK", 
+            "suspect_data_temperature_stability_in_the_range_50_to_100mK", 
+            "suspect_data_temperature_stability_in_the_range_100_to_500mK", 
+            "bad_data_temperature_stability_>500mK", 
+            "suspect_data_time_stamp_error"
+        ], 
+        "flag_values": "0b,1b, 2b, 3b, 4b, 5b, 6b, 7b", 
+        "long_name": "Data Quality flag: Thermal stability of moisture receiver bank", 
+        "name": "qc_flag_rh_receiver_temperature_stability", 
+        "type": "byte", 
+        "units": "1"
+    }, 
+    "label": "qc_flag_rh_receiver_temperature_stability", 
+    "namespace": "ncas:amf:product-stability-indices-variable:qc-flag-rh-receiver-temperature-stability", 
+    "raw_name": "qc_flag_rh_receiver_temperature_stability", 
+    "status": "pending", 
+    "uid": "eb11fb70-963c-47dd-9039-5262e9986751"
+}

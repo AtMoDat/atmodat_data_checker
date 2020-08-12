@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "midpliocene-eoi400",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "main forcings : trace gases, orography, ice-sheet",
+    "label": "midPliocene-eoi400",
+    "namespace": "wcrp:primavera:experiment:midpliocene-eoi400",
+    "raw_name": "midPliocene-eoi400",
+    "status": "pending"
+}

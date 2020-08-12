@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "co-percentage-temf",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "CO-percentage-TEMF",
+    "label": "CO-percentage-TEMF",
+    "namespace": "wcrp:input4mips:variable-id:co-percentage-temf",
+    "raw_name": "CO-percentage-TEMF",
+    "status": "pending"
+}

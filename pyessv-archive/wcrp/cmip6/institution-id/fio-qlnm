@@ -1,0 +1,31 @@
+{
+    "_type": "term",
+    "canonical_name": "fio-qlnm",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "consortia": [
+            {
+                "code": "FIO",
+                "coordinates": "120.4591235,36.102526",
+                "homepage": "http://www.fio.org.cn",
+                "name": "First Institute of Oceanography",
+                "postalAddress": "State Oceanic Administration, Qingdao 266061, China"
+            },
+            {
+                "code": "QLNM",
+                "coordinates": "120.335152,36.0648556",
+                "homepage": "http://www.qnlm.ac",
+                "name": "Laboratory for Regional Oceanography and Numerical Modeling",
+                "postalAddress": "Qingdao National Laboratory for Marine Science and Technology, Qingdao 266237, China"
+            }
+        ],
+        "coordinates": "",
+        "homepage": "",
+        "name": "",
+        "postalAddress": ""
+    },
+    "label": "FIO-QLNM",
+    "namespace": "wcrp:cmip6:institution-id:fio-qlnm",
+    "raw_name": "FIO-QLNM",
+    "status": "pending"
+}

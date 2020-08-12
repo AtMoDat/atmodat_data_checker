@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "gcm-derived",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "gcm-derived",
+    "namespace": "ecmwf:cc4e:source-type:gcm-derived",
+    "status": "pending"
+}

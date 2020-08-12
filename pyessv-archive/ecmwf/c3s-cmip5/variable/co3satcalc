@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "co3satcalc",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "co3satcalc",
+    "namespace": "ecmwf:c3s-cmip5:variable:co3satcalc",
+    "status": "pending"
+}

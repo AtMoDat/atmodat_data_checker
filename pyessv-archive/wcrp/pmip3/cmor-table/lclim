@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "lclim",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Lclim",
+    "label": "Lclim",
+    "namespace": "wcrp:pmip3:cmor-table:lclim",
+    "raw_name": "Lclim",
+    "status": "pending"
+}

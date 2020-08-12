@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "ismip6",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "label": "ISMIP6",
+    "namespace": "wcrp:cmip6:activity-id:ismip6",
+    "raw_name": "ISMIP6",
+    "status": "pending"
+}

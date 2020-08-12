@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "trajectory",
+    "create_date": "2020-08-07 00:00:00+00:00",
+    "label": "trajectory",
+    "namespace": "atmodat:atmodat:feature_type:trajectory",
+    "raw_name": "trajectory",
+    "status": "pending"
+}

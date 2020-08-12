@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "ant-44i",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Antarctica",
+    "label": "ANT-44i",
+    "namespace": "ecmwf:c3s-cordex:domain:ant-44i",
+    "raw_name": "ANT-44i",
+    "status": "pending"
+}

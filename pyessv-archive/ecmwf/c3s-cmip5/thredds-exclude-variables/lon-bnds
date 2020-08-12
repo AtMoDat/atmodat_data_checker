@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "lon-bnds",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "lon_bnds",
+    "label": "lon_bnds",
+    "namespace": "ecmwf:c3s-cmip5:thredds-exclude-variables:lon-bnds",
+    "raw_name": "lon_bnds",
+    "status": "pending"
+}

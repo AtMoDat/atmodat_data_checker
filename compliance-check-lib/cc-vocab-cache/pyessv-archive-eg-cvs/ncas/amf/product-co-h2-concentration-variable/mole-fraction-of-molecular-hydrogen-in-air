@@ -1,0 +1,24 @@
+{
+    "_type": "term", 
+    "canonical_name": "mole-fraction-of-molecular-hydrogen-in-air", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: ????", 
+        "chemical_species": "H2", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "long_name": "Mole Fraction of molecular Hydrogen in air", 
+        "name": "mole_fraction_of_molecular_hydrogen_in_air", 
+        "practical_units": "?", 
+        "type": "float32", 
+        "units": "?", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "mole_fraction_of_molecular_hydrogen_in_air", 
+    "namespace": "ncas:amf:product-co-h2-concentration-variable:mole-fraction-of-molecular-hydrogen-in-air", 
+    "raw_name": "mole_fraction_of_molecular_hydrogen_in_air", 
+    "status": "pending", 
+    "uid": "6b803692-9e90-4008-a029-c8f780a4b98e"
+}

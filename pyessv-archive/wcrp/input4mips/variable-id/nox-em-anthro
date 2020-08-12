@@ -1,0 +1,13 @@
+{
+    "_type": "term",
+    "alternative_names": [
+        "NOx_em_anthro"
+    ],
+    "canonical_name": "nox-em-anthro",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "NOx-em-anthro",
+    "label": "NOx-em-anthro",
+    "namespace": "wcrp:input4mips:variable-id:nox-em-anthro",
+    "raw_name": "NOx-em-anthro",
+    "status": "pending"
+}

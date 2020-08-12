@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "ec-earth3-aerchem",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "EC-Earth3-AerChem",
+    "label": "EC-Earth3-AerChem",
+    "namespace": "wcrp:primavera:model:ec-earth3-aerchem",
+    "raw_name": "EC-Earth3-AerChem",
+    "status": "pending"
+}

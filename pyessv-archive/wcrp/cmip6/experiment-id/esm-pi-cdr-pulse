@@ -1,0 +1,36 @@
+{
+    "_type": "term",
+    "canonical_name": "esm-pi-cdr-pulse",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_id": [
+            "CDRMIP"
+        ],
+        "additional_allowed_model_components": [
+            "AER",
+            "CHEM"
+        ],
+        "end_year": "",
+        "experiment": "pulse removal of 100 Gt carbon from pre-industrial atmosphere",
+        "experiment_id": "esm-pi-cdr-pulse",
+        "min_number_yrs_per_sim": "100",
+        "parent_activity_id": [
+            "CMIP"
+        ],
+        "parent_experiment_id": [
+            "esm-piControl"
+        ],
+        "required_model_components": [
+            "AOGCM",
+            "BGC"
+        ],
+        "start_year": "",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "1"
+    },
+    "description": "100 Gt C instantly removed (negative pulse) from a pre-industrial atmosphere (part of the CDR-pi-pulse experiment)",
+    "namespace": "wcrp:cmip6:experiment-id:esm-pi-cdr-pulse",
+    "status": "pending"
+}

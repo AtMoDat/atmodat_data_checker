@@ -1,0 +1,23 @@
+{
+    "_type": "term", 
+    "canonical_name": "humidity-mixing-ratio", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "long_name": "Humidity Mixing Ratio", 
+        "name": "humidity_mixing_ratio", 
+        "standard_name": "humidity_mixing_ratio", 
+        "type": "float32", 
+        "units": "1", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "humidity_mixing_ratio", 
+    "namespace": "ncas:amf:product-mean-co2-h2o-variable:humidity-mixing-ratio", 
+    "raw_name": "humidity_mixing_ratio", 
+    "status": "pending", 
+    "uid": "a8ea37ea-1356-4e1c-89e3-971815404b17"
+}

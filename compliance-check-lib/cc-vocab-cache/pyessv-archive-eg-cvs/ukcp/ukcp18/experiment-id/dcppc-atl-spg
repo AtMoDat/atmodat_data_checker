@@ -1,0 +1,47 @@
+{
+    "_type": "term",
+    "canonical_name": "dcppc-atl-spg",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "data": {
+        "activity_id": [
+            "DCPP"
+        ],
+        "additional_allowed_model_components": [
+            "AER",
+            "CHEM",
+            "BGC"
+        ],
+        "description": "C2.1 (and C2.2) Mechanisms and predictability of the hiatus and of similar long timescale variations of both signs. First full hindcast year follows start year (e.g., for s1992, first full hindcast year is 1993)",
+        "end_year": "5 - 10 years after start year",
+        "experiment": "predictability of 1990s warming of Atlantic sub-polar gyre",
+        "experiment_id": "dcppC-atl-spg",
+        "min_number_yrs_per_sim": "5",
+        "parent_activity_id": [
+            "no parent"
+        ],
+        "parent_experiment_id": [
+            "no parent"
+        ],
+        "required_model_components": [
+            "AOGCM"
+        ],
+        "start_year": "A year in the range 1992-1999",
+        "sub_experiment_id": [
+            "s1992",
+            "s1993",
+            "s1994",
+            "s1995",
+            "s1996",
+            "s1997",
+            "s1998",
+            "s1999"
+        ],
+        "tier": "3"
+    },
+    "description": "C2.1 (and C2.2) Mechanisms and predictability of the hiatus and of similar long timescale variations of both signs. First full hindcast year follows start year (e.g., for s1992, first full hindcast year is 1993)",
+    "label": "dcppC-atl-spg",
+    "namespace": "ukcp:ukcp18:experiment-id:dcppc-atl-spg",
+    "raw_name": "dcppC-atl-spg",
+    "status": "pending",
+    "uid": "814a12b0-dba8-420b-8c68-4ad65cf3d38f"
+}

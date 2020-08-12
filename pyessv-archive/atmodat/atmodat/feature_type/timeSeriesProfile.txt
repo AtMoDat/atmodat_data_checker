@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "timeSeriesProfile",
+    "create_date": "2020-08-07 00:00:00+00:00",
+    "label": "timeSeriesProfile",
+    "namespace": "atmodat:atmodat:feature_type:timeSeriesProfile",
+    "raw_name": "timeSeriesProfile",
+    "status": "pending"
+}

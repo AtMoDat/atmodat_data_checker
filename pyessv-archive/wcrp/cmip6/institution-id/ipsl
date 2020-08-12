@@ -1,0 +1,45 @@
+{
+    "_type": "term",
+    "canonical_name": "ipsl",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "consortia": [
+            {
+                "code": "IPSL",
+                "coordinates": "2.3551085,48.8463839",
+                "homepage": "https://www.ipsl.fr",
+                "name": "Institute Pierre Simon Laplace",
+                "postalAddress": "Paris 75252, France"
+            },
+            {
+                "code": "IPSL-X",
+                "coordinates": "2.2075416,48.7122475",
+                "homepage": "https://www.ipsl.fr",
+                "name": "Institute Pierre Simon Laplace - Site Polytechnique",
+                "postalAddress": "Ecole Polytechnique, 91128 Palaiseau, France"
+            },
+            {
+                "code": "TGCC",
+                "coordinates": "2.1913282,48.5966081",
+                "homepage": "http://www-hpc.cea.fr/",
+                "name": "High-Computing Centre - Atomic Energy Commission",
+                "postalAddress": "2 Rue de la Piquetterie, 91680 Bruy\u00e8res-le-Ch\u00e2tel, France"
+            },
+            {
+                "code": "IDRIS",
+                "coordinates": "2.175324,48.707193",
+                "homepage": "http://www.idris.fr/",
+                "name": "Institute of Development and Informatics and Scientific Resources",
+                "postalAddress": "University of Paris-Saclay, 91403 Orsay, France"
+            }
+        ],
+        "coordinates": "",
+        "homepage": "",
+        "name": "Institute Pierre Simon Laplace",
+        "postalAddress": "Paris 75252, France"
+    },
+    "label": "IPSL",
+    "namespace": "wcrp:cmip6:institution-id:ipsl",
+    "raw_name": "IPSL",
+    "status": "pending"
+}

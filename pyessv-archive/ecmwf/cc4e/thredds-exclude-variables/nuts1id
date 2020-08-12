@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "nuts1id",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "nuts1id",
+    "namespace": "ecmwf:cc4e:thredds-exclude-variables:nuts1id",
+    "status": "pending"
+}

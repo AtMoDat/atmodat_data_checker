@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "vectri",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "VECTRI",
+    "label": "VECTRI",
+    "namespace": "wcrp:isimip-ft:impact-model:vectri",
+    "raw_name": "VECTRI",
+    "status": "pending"
+}

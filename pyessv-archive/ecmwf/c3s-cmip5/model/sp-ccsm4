@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "sp-ccsm4",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "SP-CCSM4",
+    "label": "SP-CCSM4",
+    "namespace": "ecmwf:c3s-cmip5:model:sp-ccsm4",
+    "raw_name": "SP-CCSM4",
+    "status": "pending"
+}

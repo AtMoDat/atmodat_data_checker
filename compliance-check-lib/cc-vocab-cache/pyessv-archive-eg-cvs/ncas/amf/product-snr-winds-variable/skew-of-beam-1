@@ -1,0 +1,22 @@
+{
+    "_type": "term", 
+    "canonical_name": "skew-of-beam-1", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: skew", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time, index", 
+        "long_name": "Skew of beam 1 (back panel)", 
+        "name": "skew_of_beam_1", 
+        "type": "float32", 
+        "units": "m s-1", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "skew_of_beam_1", 
+    "namespace": "ncas:amf:product-snr-winds-variable:skew-of-beam-1", 
+    "raw_name": "skew_of_beam_1", 
+    "status": "pending", 
+    "uid": "92096bbe-72be-487b-a5d0-9dd2c589e888"
+}

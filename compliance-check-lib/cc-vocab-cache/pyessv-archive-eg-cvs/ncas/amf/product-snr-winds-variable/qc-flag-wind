@@ -1,0 +1,23 @@
+{
+    "_type": "term", 
+    "canonical_name": "qc-flag-wind", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "dimension": "time, index", 
+        "flag_meanings": [
+            "not_used", 
+            "good_data", 
+            "bad_data"
+        ], 
+        "flag_values": "0b,1b, 2b", 
+        "long_name": "Data Quality flag: Mean Winds", 
+        "name": "qc_flag_wind", 
+        "type": "byte", 
+        "units": "1"
+    }, 
+    "label": "qc_flag_wind", 
+    "namespace": "ncas:amf:product-snr-winds-variable:qc-flag-wind", 
+    "raw_name": "qc_flag_wind", 
+    "status": "pending", 
+    "uid": "0237a9c2-77be-40ad-9222-5b1c315e5e77"
+}

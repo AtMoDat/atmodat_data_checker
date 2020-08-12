@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "intpcalcite",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "intpcalcite",
+    "namespace": "ecmwf:c3s-cmip5:variable:intpcalcite",
+    "status": "pending"
+}

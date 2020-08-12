@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "oc-percentage-agri",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "OC-percentage-AGRI",
+    "label": "OC-percentage-AGRI",
+    "namespace": "wcrp:input4mips:variable-id:oc-percentage-agri",
+    "raw_name": "OC-percentage-AGRI",
+    "status": "pending"
+}

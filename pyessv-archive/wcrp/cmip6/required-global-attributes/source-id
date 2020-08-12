@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "source-id",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "label": "source_id",
+    "namespace": "wcrp:cmip6:required-global-attributes:source-id",
+    "raw_name": "source_id",
+    "status": "pending"
+}

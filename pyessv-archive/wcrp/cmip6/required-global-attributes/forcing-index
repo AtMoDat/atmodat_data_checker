@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "forcing-index",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "label": "forcing_index",
+    "namespace": "wcrp:cmip6:required-global-attributes:forcing-index",
+    "raw_name": "forcing_index",
+    "status": "pending"
+}

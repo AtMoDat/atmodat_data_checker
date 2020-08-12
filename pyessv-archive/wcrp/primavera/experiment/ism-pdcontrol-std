@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "ism-pdcontrol-std",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Present-day control simulation for offline ice sheets",
+    "label": "ism-pdControl-std",
+    "namespace": "wcrp:primavera:experiment:ism-pdcontrol-std",
+    "raw_name": "ism-pdControl-std",
+    "status": "pending"
+}

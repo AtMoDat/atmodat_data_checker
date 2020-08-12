@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "1pctco2ndep-bgc",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Biogeochemically-coupled specified concentration simulation in which CO2 increases at a rate of 1pct per year until quadrupling, plus an additional scenario of anthropogenic nitrogen deposition",
+    "label": "1pctCO2Ndep-bgc",
+    "namespace": "wcrp:primavera:experiment:1pctco2ndep-bgc",
+    "raw_name": "1pctCO2Ndep-bgc",
+    "status": "pending"
+}

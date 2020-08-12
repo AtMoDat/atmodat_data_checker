@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "dcppc-amv-plus",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Mechanisms and predictability of the hiatus and of similar long timescale variations of both signs",
+    "label": "dcppC-amv-plus",
+    "namespace": "wcrp:primavera:experiment:dcppc-amv-plus",
+    "raw_name": "dcppC-amv-plus",
+    "status": "pending"
+}

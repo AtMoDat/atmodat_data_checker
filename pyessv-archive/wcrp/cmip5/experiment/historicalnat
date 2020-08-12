@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "historicalnat",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Historical with natural forcing only",
+    "label": "historicalNat",
+    "namespace": "wcrp:cmip5:experiment:historicalnat",
+    "raw_name": "historicalNat",
+    "status": "pending"
+}

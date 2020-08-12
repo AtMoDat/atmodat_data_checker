@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "ethyne-em-speciated-vocs",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "ethyne-em-speciated-VOCs",
+    "label": "ethyne-em-speciated-VOCs",
+    "namespace": "wcrp:input4mips:variable-id:ethyne-em-speciated-vocs",
+    "raw_name": "ethyne-em-speciated-VOCs",
+    "status": "pending"
+}

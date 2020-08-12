@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "pcmdi",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "label": "PCMDI",
+    "namespace": "wcrp:primavera:institute:pcmdi",
+    "raw_name": "PCMDI",
+    "status": "pending"
+}

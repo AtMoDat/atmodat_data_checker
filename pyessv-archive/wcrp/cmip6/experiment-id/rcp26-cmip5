@@ -1,0 +1,36 @@
+{
+    "_type": "term",
+    "canonical_name": "rcp26-cmip5",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_id": [
+            "ScenarioMIP"
+        ],
+        "additional_allowed_model_components": [
+            "AER",
+            "CHEM",
+            "BGC"
+        ],
+        "end_year": "2100 or 2300",
+        "experiment": "future projection based on CMIP5-era RCP2.6 scenario (CMIP5-era [2006-2100] forcing)",
+        "experiment_id": "rcp26-cmip5",
+        "min_number_yrs_per_sim": "95",
+        "parent_activity_id": [
+            "CMIP"
+        ],
+        "parent_experiment_id": [
+            "historical-cmip5"
+        ],
+        "required_model_components": [
+            "AOGCM"
+        ],
+        "start_year": "2006",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "3"
+    },
+    "description": "future scenario with low radiative forcing by the end of century. Following RCP2.6 global forcing pathway. Concentration-driven (CMIP5-era [2006-2100] forcing)",
+    "namespace": "wcrp:cmip6:experiment-id:rcp26-cmip5",
+    "status": "pending"
+}

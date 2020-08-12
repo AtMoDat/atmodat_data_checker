@@ -1,0 +1,24 @@
+{
+    "_type": "term", 
+    "canonical_name": "mole-fraction-of-carbon-monoxide-in-air", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: ????", 
+        "chemical_species": "CO", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "long_name": "Mole fraction of Carbon Monoxide in ambient air", 
+        "name": "mole_fraction_of_carbon_monoxide_in_air", 
+        "standard_name": "mole_fraction_of_carbon_monoxide_in_air", 
+        "type": "float32", 
+        "units": "?", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "mole_fraction_of_carbon_monoxide_in_air", 
+    "namespace": "ncas:amf:product-co-concentration-variable:mole-fraction-of-carbon-monoxide-in-air", 
+    "raw_name": "mole_fraction_of_carbon_monoxide_in_air", 
+    "status": "pending", 
+    "uid": "a92bc0d0-9a83-4bed-942c-42d3406e7a7f"
+}

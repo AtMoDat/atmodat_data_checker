@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "ch4-em-openburning",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "CH4_em_openburning",
+    "label": "CH4_em_openburning",
+    "namespace": "wcrp:input4mips:variable-id:ch4-em-openburning",
+    "raw_name": "CH4_em_openburning",
+    "status": "pending"
+}

@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "ism-amip-std",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Offline ice sheet evolution for the last few decades forced by amip",
+    "namespace": "wcrp:primavera:experiment:ism-amip-std",
+    "status": "pending"
+}

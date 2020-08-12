@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "higher-alkenes-percentage-peat",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Higher-Alkenes-percentage-PEAT",
+    "label": "Higher-Alkenes-percentage-PEAT",
+    "namespace": "wcrp:input4mips:variable-id:higher-alkenes-percentage-peat",
+    "raw_name": "Higher-Alkenes-percentage-PEAT",
+    "status": "pending"
+}

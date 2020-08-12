@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "voc21-methanal-em-speciated-voc",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "VOC21-methanal-em-speciated-VOC",
+    "label": "VOC21-methanal-em-speciated-VOC",
+    "namespace": "wcrp:input4mips:variable-id:voc21-methanal-em-speciated-voc",
+    "raw_name": "VOC21-methanal-em-speciated-VOC",
+    "status": "pending"
+}

@@ -1,0 +1,38 @@
+{
+    "_type": "term",
+    "canonical_name": "esm-yr2010co2-control",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_id": [
+            "CDRMIP"
+        ],
+        "additional_allowed_model_components": [
+            "AER",
+            "CHEM"
+        ],
+        "end_year": "2115",
+        "experiment": "historical emissions followed by fixed 2010 emissions (both model-diagnosed)",
+        "experiment_id": "esm-yr2010CO2-control",
+        "min_number_yrs_per_sim": "266",
+        "parent_activity_id": [
+            "CDRMIP"
+        ],
+        "parent_experiment_id": [
+            "esm-piControl"
+        ],
+        "required_model_components": [
+            "AOGCM",
+            "BGC"
+        ],
+        "start_year": "1850",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "3"
+    },
+    "description": "Forced with CO2 emissions diagnosed from historical and yr2010CO2 simulations and all other forcings the same as in that simulation (part of the CDR-yr2010-pulse experiment)",
+    "label": "esm-yr2010CO2-control",
+    "namespace": "wcrp:cmip6:experiment-id:esm-yr2010co2-control",
+    "raw_name": "esm-yr2010CO2-control",
+    "status": "pending"
+}

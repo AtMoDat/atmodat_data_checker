@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "b-bnds",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "b_bnds",
+    "label": "b_bnds",
+    "namespace": "ecmwf:c3s-cordex:thredds-exclude-variables:b-bnds",
+    "raw_name": "b_bnds",
+    "status": "pending"
+}

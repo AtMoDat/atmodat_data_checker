@@ -1,0 +1,58 @@
+{
+    "_type": "term",
+    "canonical_name": "miroc-es2h",
+    "create_date": "2018-03-28 19:52:17.258367+00:00",
+    "data": {
+        "activity_participation": [
+            ""
+        ],
+        "cohort": [
+            "Registered"
+        ],
+        "institution_id": [
+            "MIROC"
+        ],
+        "label_extended": "MIROC-ES2H",
+        "model_component": {
+            "aerosol": {
+                "description": "SPRINTARS6.0",
+                "nominal_resolution": ""
+            },
+            "atmos": {
+                "description": "CCSR AGCM (T85; 256 x 128 longitude/latitude; 81 levels; top level 0.004 hPa)",
+                "nominal_resolution": ""
+            },
+            "atmosChem": {
+                "description": "CHASER4.0",
+                "nominal_resolution": ""
+            },
+            "land": {
+                "description": "MATSIRO6.0+VISIT-e ver.1.0",
+                "nominal_resolution": ""
+            },
+            "landIce": {
+                "description": "none",
+                "nominal_resolution": "none"
+            },
+            "ocean": {
+                "description": "COCO4.9 (tripolar primarily 1deg; 360 x 256 longitude/latitude; 63 levels; top grid cell 0-2 m)",
+                "nominal_resolution": ""
+            },
+            "ocnBgchem": {
+                "description": "OECO ver.2.0; NPZD-type with C/N/P/Fe/O cycles",
+                "nominal_resolution": ""
+            },
+            "seaIce": {
+                "description": "COCO4.9",
+                "nominal_resolution": ""
+            }
+        },
+        "release_year": "2017",
+        "source_id": "MIROC-ES2H"
+    },
+    "label": "MIROC-ES2H",
+    "namespace": "ukcp:ukcp18:source-id:miroc-es2h",
+    "raw_name": "MIROC-ES2H",
+    "status": "pending",
+    "uid": "fa392b71-b54b-4e06-9833-9eb018f0c581"
+}

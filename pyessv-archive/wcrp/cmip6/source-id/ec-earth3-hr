@@ -1,0 +1,59 @@
+{
+    "_type": "term",
+    "canonical_name": "ec-earth3-hr",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_participation": [
+            "CMIP",
+            "DCPP",
+            "HighResMIP"
+        ],
+        "cohort": [
+            "Registered"
+        ],
+        "institution_id": [
+            "EC-Earth-Consortium"
+        ],
+        "label_extended": "EC-Earth3-HR",
+        "model_component": {
+            "aerosol": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "atmos": {
+                "description": "IFS cy36r4 (TL511, linearly reduced Gaussian grid equivalent to 1024 x 512 longitude/latitude; 91 levels; top level 0.01 hPa)",
+                "native_nominal_resolution": "50 km"
+            },
+            "atmosChem": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "land": {
+                "description": "HTESSEL (land surface scheme built in IFS)",
+                "native_nominal_resolution": "50 km"
+            },
+            "landIce": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "ocean": {
+                "description": "NEMO3.6 (ORCA025 tripolar primarily 0.25 degrees; 1442 x 1921 longitude/latitude; 75 levels; top grid cell 0-1 m)",
+                "native_nominal_resolution": "25 km"
+            },
+            "ocnBgchem": {
+                "description": "none",
+                "native_nominal_resolution": "none"
+            },
+            "seaIce": {
+                "description": "LIM3",
+                "native_nominal_resolution": "25 km"
+            }
+        },
+        "release_year": "2019",
+        "source_id": "EC-Earth3-HR"
+    },
+    "label": "EC-Earth3-HR",
+    "namespace": "wcrp:cmip6:source-id:ec-earth3-hr",
+    "raw_name": "EC-Earth3-HR",
+    "status": "pending"
+}

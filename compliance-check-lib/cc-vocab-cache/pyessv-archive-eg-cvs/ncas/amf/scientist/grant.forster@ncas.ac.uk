@@ -1,0 +1,14 @@
+{
+    "_type": "term", 
+    "canonical_name": "grant.forster@ncas.ac.uk", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "name": "Grant Forster", 
+        "orcid": "https://orcid.org/0000-0003-1783-9307", 
+        "previous_emails": [], 
+        "primary_email": "grant.forster@ncas.ac.uk"
+    }, 
+    "namespace": "ncas:amf:scientist:grant.forster@ncas.ac.uk", 
+    "status": "pending", 
+    "uid": "4c87403f-f4f8-4bef-b0db-1e9f57a5ce41"
+}

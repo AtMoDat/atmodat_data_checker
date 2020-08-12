@@ -1,0 +1,59 @@
+{
+    "_type": "term",
+    "canonical_name": "ukesm1-0-ll",
+    "create_date": "2018-03-28 19:52:17.258367+00:00",
+    "data": {
+        "activity_participation": [
+            ""
+        ],
+        "cohort": [
+            "Registered"
+        ],
+        "institution_id": [
+            "MOHC",
+            "NERC"
+        ],
+        "label_extended": "UKESM1.0-N96ORCA1",
+        "model_component": {
+            "aerosol": {
+                "description": "UKCA-GLOMAP-mode",
+                "nominal_resolution": ""
+            },
+            "atmos": {
+                "description": "MetUM-HadGEM3-GA7.1 (192 x 144 N96; 85 levels; top level 85km)",
+                "nominal_resolution": ""
+            },
+            "atmosChem": {
+                "description": "UKCA-StratTrop",
+                "nominal_resolution": ""
+            },
+            "land": {
+                "description": "JULES-HadGEM3-GL7.1",
+                "nominal_resolution": ""
+            },
+            "landIce": {
+                "description": "BISICLES (only active in ISMIP experiments)",
+                "nominal_resolution": ""
+            },
+            "ocean": {
+                "description": "NEMO-HadGEM3-GO6.0 (ORCA1 tripolar primarily 1 deg latitude/longitude with meridional refinement down to 1/3 degree in the tropics; 75 levels; top grid cell 0-1m)",
+                "nominal_resolution": ""
+            },
+            "ocnBgchem": {
+                "description": "MEDUSA2",
+                "nominal_resolution": ""
+            },
+            "seaIce": {
+                "description": "CICE-HadGEM3-GSI8 (ORCA1 tripolar primarily 1 deg latitude/longitude)",
+                "nominal_resolution": ""
+            }
+        },
+        "release_year": "2017",
+        "source_id": "UKESM1-0-LL"
+    },
+    "label": "UKESM1.0-LL",
+    "namespace": "ukcp:ukcp18:source-id:ukesm1-0-ll",
+    "raw_name": "UKESM1-0-LL",
+    "status": "pending",
+    "uid": "f7ace1e9-7a38-4e40-9bb0-2bdc2fcacb27"
+}

@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "so2-percentage-agri",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "SO2-percentage-AGRI",
+    "label": "SO2-percentage-AGRI",
+    "namespace": "wcrp:input4mips:variable-id:so2-percentage-agri",
+    "raw_name": "SO2-percentage-AGRI",
+    "status": "pending"
+}

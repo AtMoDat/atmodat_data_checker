@@ -1,0 +1,41 @@
+{
+    "_type": "term",
+    "canonical_name": "vas",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "data": {
+        "cmip6_cmor_tables_row_id": [
+            "1957",
+            "1962"
+        ],
+        "cmip6_name": "vas",
+        "cmip6_standard_name": "northward_wind",
+        "description": "Northward wind",
+        "label_units": "m s-1",
+        "level": "10m",
+        "long_name": "Northward wind component",
+        "plot_label": "Northward wind at 10m (m s-1)",
+        "standard_name": "northward_wind",
+        "strand": [
+            "land strand 1",
+            "land strand 2",
+            "land strand 3 12km",
+            "land strand 3 2km",
+            "marine",
+            "observations"
+        ],
+        "time_averaging": [
+            "instantaneous",
+            "mean"
+        ],
+        "time_step": [
+            "3hr",
+            "day"
+        ],
+        "um_stash": "30202",
+        "units": "m s-1"
+    },
+    "description": "Northward wind",
+    "namespace": "ukcp:ukcp18:variable:vas",
+    "status": "pending",
+    "uid": "19878db0-1001-4d17-a668-d5992e0e493d"
+}

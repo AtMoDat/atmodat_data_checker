@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "rcp85",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "RCP8.5",
+    "namespace": "ecmwf:c3s-cordex:experiment:rcp85",
+    "status": "pending"
+}

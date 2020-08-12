@@ -1,0 +1,36 @@
+{
+    "_type": "term",
+    "canonical_name": "tasmaxhottestdayanom",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "data": {
+        "anomaly_type": "absolute_change",
+        "description": "Maximum air temperature on the hottest day",
+        "label_units": "\u00b0C",
+        "level": "1.5m",
+        "long_name": "Maximum air temperature on the hottest day",
+        "plot_label": "Maximum air temperature on the hottest day anomaly at 1.5m (\u00b0C)",
+        "standard_name": "air temperature",
+        "strand": [
+            "land strand 1",
+            "land strand 2",
+            "land strand 3 12km",
+            "land strand 3 2km",
+            "marine",
+            "observations"
+        ],
+        "time_averaging": [
+            "mean"
+        ],
+        "time_step": [
+            "annual"
+        ],
+        "um_stash": "03236",
+        "units": "degC"
+    },
+    "description": "Maximum air temperature on the hottest day",
+    "label": "tasmaxHottestDayAnom",
+    "namespace": "ukcp:ukcp18:variable:tasmaxhottestdayanom",
+    "raw_name": "tasmaxHottestDayAnom",
+    "status": "pending",
+    "uid": "7bc52379-92d8-4ab2-97ab-26ace7c3ffba"
+}

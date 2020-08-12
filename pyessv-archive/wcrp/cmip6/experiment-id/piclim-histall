@@ -1,0 +1,38 @@
+{
+    "_type": "term",
+    "canonical_name": "piclim-histall",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_id": [
+            "RFMIP"
+        ],
+        "additional_allowed_model_components": [
+            "AER",
+            "CHEM",
+            "BGC"
+        ],
+        "end_year": "2100",
+        "experiment": "transient effective radiative forcing",
+        "experiment_id": "piClim-histall",
+        "min_number_yrs_per_sim": "251",
+        "parent_activity_id": [
+            "CMIP"
+        ],
+        "parent_experiment_id": [
+            "piControl"
+        ],
+        "required_model_components": [
+            "AGCM"
+        ],
+        "start_year": "1850",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "2"
+    },
+    "description": "Time-varying forcing. SST and sea ice fixed at preindustrial control. Interactive vegetation",
+    "label": "piClim-histall",
+    "namespace": "wcrp:cmip6:experiment-id:piclim-histall",
+    "raw_name": "piClim-histall",
+    "status": "pending"
+}

@@ -1,0 +1,12 @@
+{
+    "_type": "term", 
+    "canonical_name": "index", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "length": "<i>", 
+        "units": "1"
+    }, 
+    "namespace": "ncas:amf:product-full-troposphere-temperature-profiles-dimension:index", 
+    "status": "pending", 
+    "uid": "ebc3ecbc-4254-4f13-bcfc-2bf81a15fec6"
+}

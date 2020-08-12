@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "ecmwf-ifs-hr",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "ECMWF-IFS-HR",
+    "label": "ECMWF-IFS-HR",
+    "namespace": "wcrp:primavera:model:ecmwf-ifs-hr",
+    "raw_name": "ECMWF-IFS-HR",
+    "status": "pending"
+}

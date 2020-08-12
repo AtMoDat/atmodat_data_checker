@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "piclim-so2",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Perturbation from 1850 control using 2014 SO2 emissions",
+    "label": "piClim-SO2",
+    "namespace": "wcrp:primavera:experiment:piclim-so2",
+    "raw_name": "piClim-SO2",
+    "status": "pending"
+}

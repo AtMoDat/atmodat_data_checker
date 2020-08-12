@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "c10h16-percentage-agri",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "C10H16-percentage-AGRI",
+    "label": "C10H16-percentage-AGRI",
+    "namespace": "wcrp:input4mips:variable-id:c10h16-percentage-agri",
+    "raw_name": "C10H16-percentage-AGRI",
+    "status": "pending"
+}

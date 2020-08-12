@@ -1,0 +1,13 @@
+{
+    "_type": "term", 
+    "canonical_name": "ncas-co-2", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "description": "NCAS Ametek CO Monitor unit 2", 
+        "instrument_id": "ncas-co-2", 
+        "previous_instrument_ids": []
+    }, 
+    "namespace": "ncas:amf:instrument:ncas-co-2", 
+    "status": "pending", 
+    "uid": "7ee6ddb9-500a-465b-89a5-6f2c07d333b3"
+}

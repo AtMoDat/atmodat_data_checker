@@ -1,0 +1,9 @@
+{
+    "_type": "term",
+    "canonical_name": "nerc",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "label": "NERC",
+    "namespace": "wcrp:primavera:institute:nerc",
+    "raw_name": "NERC",
+    "status": "pending"
+}

@@ -1,0 +1,51 @@
+{
+    "_type": "term",
+    "canonical_name": "hursanom",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "data": {
+        "anomaly_type": "percentage_change",
+        "cmip6_cmor_tables_row_id": [
+            "678",
+            "679",
+            "681"
+        ],
+        "cmip6_name": "hurs",
+        "cmip6_standard_name": "relative_humidity",
+        "description": "Relative humidity",
+        "label_units": "%",
+        "level": "1.5m",
+        "long_name": "Relative humidity",
+        "notes": [
+            "Post-process from instantaneous temp and spec humidity",
+            "Use WPS for LS1-3"
+        ],
+        "plot_label": "Relative humidity anomaly at 1.5m (%)",
+        "standard_name": "relative_humidity",
+        "strand": [
+            "land strand 1",
+            "land strand 2",
+            "land strand 3 12km",
+            "land strand 3 2km",
+            "marine",
+            "observations"
+        ],
+        "time_averaging": [
+            "LTA",
+            "instantaneous",
+            "mean"
+        ],
+        "time_step": [
+            "3hr",
+            "day",
+            "mon"
+        ],
+        "um_stash": "Not in stash",
+        "units": "%"
+    },
+    "description": "Relative humidity",
+    "label": "hursAnom",
+    "namespace": "ukcp:ukcp18:variable:hursanom",
+    "raw_name": "hursAnom",
+    "status": "pending",
+    "uid": "280ef29f-aa83-43a4-b230-ea986c488ff2"
+}

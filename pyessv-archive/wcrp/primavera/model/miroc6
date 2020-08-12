@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "miroc6",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "MIROC6",
+    "label": "MIROC6",
+    "namespace": "wcrp:primavera:model:miroc6",
+    "raw_name": "MIROC6",
+    "status": "pending"
+}

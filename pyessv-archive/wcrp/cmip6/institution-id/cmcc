@@ -1,0 +1,16 @@
+{
+    "_type": "term",
+    "canonical_name": "cmcc",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "consortia": [],
+        "coordinates": "18.1695737,40.352697",
+        "homepage": "https://www.cmcc.it",
+        "name": "Euro-Mediterranean Centre on Climate Change",
+        "postalAddress": "Lecce 73100, Italy"
+    },
+    "label": "CMCC",
+    "namespace": "wcrp:cmip6:institution-id:cmcc",
+    "raw_name": "CMCC",
+    "status": "pending"
+}

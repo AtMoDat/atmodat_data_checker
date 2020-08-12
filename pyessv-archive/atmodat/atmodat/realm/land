@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "land",
+    "create_date": "2020-08-05 00:00:00+00:00",
+    "description": "Land Surface",
+    "namespace": "atmodat:atmodat:realm:land",
+    "status": "pending"
+}

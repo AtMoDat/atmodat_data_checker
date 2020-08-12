@@ -1,0 +1,22 @@
+{
+    "_type": "term", 
+    "canonical_name": "rain-liquid-water-content", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: mean", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time, index", 
+        "long_name": "Rain Liquid Water Content", 
+        "name": "rain_liquid_water_content", 
+        "type": "float32", 
+        "units": "g m-3", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "rain_liquid_water_content", 
+    "namespace": "ncas:amf:product-rain-lwc-velocity-reflectivity-variable:rain-liquid-water-content", 
+    "raw_name": "rain_liquid_water_content", 
+    "status": "pending", 
+    "uid": "035ba0b9-116f-4748-a9c9-e8ff7ccbc31c"
+}

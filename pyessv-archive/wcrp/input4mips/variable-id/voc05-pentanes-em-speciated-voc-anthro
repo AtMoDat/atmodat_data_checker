@@ -1,0 +1,13 @@
+{
+    "_type": "term",
+    "alternative_names": [
+        "VOC05_pentanes_em_speciated_VOC_anthro"
+    ],
+    "canonical_name": "voc05-pentanes-em-speciated-voc-anthro",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "VOC05-pentanes-em-speciated-VOC-anthro",
+    "label": "VOC05-pentanes-em-speciated-VOC-anthro",
+    "namespace": "wcrp:input4mips:variable-id:voc05-pentanes-em-speciated-voc-anthro",
+    "raw_name": "VOC05-pentanes-em-speciated-VOC-anthro",
+    "status": "pending"
+}

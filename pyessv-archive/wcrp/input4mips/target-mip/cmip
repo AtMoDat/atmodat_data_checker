@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "cmip",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "CMIP",
+    "label": "CMIP",
+    "namespace": "wcrp:input4mips:target-mip:cmip",
+    "raw_name": "CMIP",
+    "status": "pending"
+}

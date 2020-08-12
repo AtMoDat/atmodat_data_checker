@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "g2",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "1 percent per yr CO2 increase from preindustrial and balance with solar constant reduction",
+    "label": "G2",
+    "namespace": "wcrp:geomip:experiment:g2",
+    "raw_name": "G2",
+    "status": "pending"
+}

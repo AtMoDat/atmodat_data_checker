@@ -1,0 +1,16 @@
+{
+    "_type": "term",
+    "canonical_name": "bnu",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "consortia": [],
+        "coordinates": "116.3640728,39.9619578",
+        "homepage": "http://english.bnu.edu.cn",
+        "name": "Beijing Normal University",
+        "postalAddress": "19 Xinjiekou Outer St, BeiTaiPingZhuang, Haidian Qu, Beijing 100875, China"
+    },
+    "label": "BNU",
+    "namespace": "wcrp:cmip6:institution-id:bnu",
+    "raw_name": "BNU",
+    "status": "pending"
+}

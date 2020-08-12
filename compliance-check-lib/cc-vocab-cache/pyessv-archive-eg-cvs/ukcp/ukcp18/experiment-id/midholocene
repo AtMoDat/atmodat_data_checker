@@ -1,0 +1,40 @@
+{
+    "_type": "term",
+    "canonical_name": "midholocene",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "data": {
+        "activity_id": [
+            "PMIP"
+        ],
+        "additional_allowed_model_components": [
+            "AER",
+            "CHEM",
+            "BGC"
+        ],
+        "description": "main forcings: trace gases, orbital parameters, dust (forcing, or feedback if dust cycle represented in model)",
+        "end_year": "",
+        "experiment": "mid-Holocene",
+        "experiment_id": "midHolocene",
+        "min_number_yrs_per_sim": "200",
+        "parent_activity_id": [
+            "no parent"
+        ],
+        "parent_experiment_id": [
+            "no parent"
+        ],
+        "required_model_components": [
+            "AOGCM"
+        ],
+        "start_year": "",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "1"
+    },
+    "description": "main forcings: trace gases, orbital parameters, dust (forcing, or feedback if dust cycle represented in model)",
+    "label": "midHolocene",
+    "namespace": "ukcp:ukcp18:experiment-id:midholocene",
+    "raw_name": "midHolocene",
+    "status": "pending",
+    "uid": "abc5745d-7ebc-4bf2-8ed7-e21adeeac5a5"
+}

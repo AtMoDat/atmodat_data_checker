@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "rlat-bnds",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "description": "rlat_bnds",
+    "label": "rlat_bnds",
+    "namespace": "wcrp:cmip6:thredds-exclude-variables:rlat-bnds",
+    "raw_name": "rlat_bnds",
+    "status": "pending"
+}

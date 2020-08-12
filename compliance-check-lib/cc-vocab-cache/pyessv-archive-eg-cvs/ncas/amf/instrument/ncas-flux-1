@@ -1,0 +1,13 @@
+{
+    "_type": "term", 
+    "canonical_name": "ncas-flux-1", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "description": "NCAS Flux Station unit 1", 
+        "instrument_id": "ncas-flux-1", 
+        "previous_instrument_ids": []
+    }, 
+    "namespace": "ncas:amf:instrument:ncas-flux-1", 
+    "status": "pending", 
+    "uid": "e43251e5-afc7-4fd9-99ef-c78dafbf74b9"
+}

@@ -1,0 +1,23 @@
+{
+    "_type": "term", 
+    "canonical_name": "qc-flag-skew-w", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "dimension": "time", 
+        "flag_meanings": [
+            "bad_data", 
+            "good_data", 
+            "suspect_data"
+        ], 
+        "flag_values": "0b,1b, 2b", 
+        "long_name": "Quality flag: Skew W", 
+        "name": "qc_flag_skew_w", 
+        "type": "byte", 
+        "units": "1"
+    }, 
+    "label": "qc_flag_skew_w", 
+    "namespace": "ncas:amf:product-flux-estimates-variable:qc-flag-skew-w", 
+    "raw_name": "qc_flag_skew_w", 
+    "status": "pending", 
+    "uid": "0aec83d2-77b8-4ae1-a11d-5ce6f50d6d04"
+}

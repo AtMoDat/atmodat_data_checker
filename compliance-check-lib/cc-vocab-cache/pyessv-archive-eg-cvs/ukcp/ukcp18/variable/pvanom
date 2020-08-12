@@ -1,0 +1,37 @@
+{
+    "_type": "term",
+    "canonical_name": "pvanom",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "data": {
+        "anomaly_type": "absolute_change",
+        "description": "Vapour pressure",
+        "label_units": "hPa",
+        "long_name": "partial pressure of water vapour",
+        "notes": [
+            "Obs availability TBC"
+        ],
+        "plot_label": "Vapour pressure anomaly (hPa)",
+        "standard_name": "water_vapor_partial_pressure_in_air",
+        "strand": [
+            "land strand 1",
+            "land strand 2",
+            "land strand 3 12km",
+            "land strand 3 2km",
+            "marine",
+            "observations"
+        ],
+        "time_averaging": [
+            "LTA"
+        ],
+        "time_step": [
+            "mon"
+        ],
+        "units": "hPa"
+    },
+    "description": "Vapour pressure",
+    "label": "pvAnom",
+    "namespace": "ukcp:ukcp18:variable:pvanom",
+    "raw_name": "pvAnom",
+    "status": "pending",
+    "uid": "583ed84a-de7d-4161-84a7-d9b16bb7f59f"
+}

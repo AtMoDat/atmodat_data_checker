@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "auth-met-wrf331a",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "AUTH-Met-WRF331A",
+    "label": "AUTH-Met-WRF331A",
+    "namespace": "ecmwf:c3s-cordex:rcm-model:auth-met-wrf331a",
+    "raw_name": "AUTH-Met-WRF331A",
+    "status": "pending"
+}

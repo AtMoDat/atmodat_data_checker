@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "sspxy",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Future scenario with low radiative forcing by the end of century. Following a forcing pathway below RCP2.6. Specific SSP and 2100 forcing level to be finalized with IAM groups within next few months. Concentration-driven",
+    "namespace": "wcrp:primavera:experiment:sspxy",
+    "status": "pending"
+}

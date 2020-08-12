@@ -1,0 +1,57 @@
+{
+    "_type": "term",
+    "canonical_name": "gfdl-esm2m",
+    "create_date": "2017-06-21 00:00:00+00:00",
+    "data": {
+        "activity_participation": [
+            "FAFMIP"
+        ],
+        "cohort": [
+            "Registered"
+        ],
+        "institution_id": [
+            "NOAA-GFDL"
+        ],
+        "label_extended": "GFDL-ESM2M",
+        "model_component": {
+            "aerosol": {
+                "description": "prescribed",
+                "native_nominal_resolution": "250 km"
+            },
+            "atmos": {
+                "description": "GFDL-AM2 (144 x 90 longitude/latitude; 24 levels; top level 1 hPa)",
+                "native_nominal_resolution": "250 km"
+            },
+            "atmosChem": {
+                "description": "prescribed",
+                "native_nominal_resolution": "250 km"
+            },
+            "land": {
+                "description": "GFDL-LM3.0",
+                "native_nominal_resolution": "250 km"
+            },
+            "landIce": {
+                "description": "GFDL-LM3.0",
+                "native_nominal_resolution": "250 km"
+            },
+            "ocean": {
+                "description": "GFDL-MOM4p1 (tripolar - nominal 1 deg; 360 x 200 longitude/latitude; 50 levels; top grid cell 0-10 m)",
+                "native_nominal_resolution": "100 km"
+            },
+            "ocnBgchem": {
+                "description": "GFDL-TOPAZ2",
+                "native_nominal_resolution": "100 km"
+            },
+            "seaIce": {
+                "description": "GFDL-SIM2 (GFDL-SIS, tripolar - nominal 1 deg; 360 x 200 longitude/latitude; 3 layers; 5 thickness categories)",
+                "native_nominal_resolution": "100 km"
+            }
+        },
+        "release_year": "2012",
+        "source_id": "GFDL-ESM2M"
+    },
+    "label": "GFDL-ESM2M",
+    "namespace": "wcrp:cmip6:source-id:gfdl-esm2m",
+    "raw_name": "GFDL-ESM2M",
+    "status": "pending"
+}

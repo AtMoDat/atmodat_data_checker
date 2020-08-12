@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "c8h10-percentage-sava",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "C8H10-percentage-SAVA",
+    "label": "C8H10-percentage-SAVA",
+    "namespace": "wcrp:input4mips:variable-id:c8h10-percentage-sava",
+    "raw_name": "C8H10-percentage-SAVA",
+    "status": "pending"
+}

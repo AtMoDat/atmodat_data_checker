@@ -1,0 +1,40 @@
+{
+    "_type": "term",
+    "canonical_name": "esm-ssp585-ssp126lu",
+    "create_date": "2018-05-24 10:35:23.348105",
+    "data": {
+        "activity_id": [
+            "LUMIP"
+        ],
+        "additional_allowed_model_components": [
+            "AER",
+            "CHEM"
+        ],
+        "description": "Additional land use policy sensitivity simulation for high radiative forcing scenario, keep all forcings the same as in C4MIP esmssp5-8.5 scenario except use SSP1-2.6 land use; emission driven",
+        "end_year": "2100",
+        "experiment": "emissions-driven SSP5-8.5 with SSP1-2.6 land use",
+        "experiment_id": "esm-ssp585-ssp126Lu",
+        "min_number_yrs_per_sim": "86",
+        "parent_activity_id": [
+            "CMIP"
+        ],
+        "parent_experiment_id": [
+            "esm-hist"
+        ],
+        "required_model_components": [
+            "AOGCM",
+            "BGC"
+        ],
+        "start_year": "2015",
+        "sub_experiment_id": [
+            "none"
+        ],
+        "tier": "1"
+    },
+    "description": "Additional land use policy sensitivity simulation for high radiative forcing scenario, keep all forcings the same as in C4MIP esmssp5-8.5 scenario except use SSP1-2.6 land use; emission driven",
+    "label": "esm-ssp585-ssp126Lu",
+    "namespace": "ukcp:ukcp18:experiment-id:esm-ssp585-ssp126lu",
+    "raw_name": "esm-ssp585-ssp126Lu",
+    "status": "pending",
+    "uid": "8c36a687-88cc-41bb-ba14-7074d5c8ccaa"
+}

@@ -1,0 +1,24 @@
+{
+    "_type": "term", 
+    "canonical_name": "mole-fraction-of-methyl-iodide-in-air", 
+    "create_date": "2018-07-09 13:09:00", 
+    "data": {
+        "_FillValue": -1e+20, 
+        "cell_methods": "time: ????", 
+        "chemical_species": "CH3I", 
+        "coordinates": "latitude longitude", 
+        "dimension": "time", 
+        "long_name": "Mole Fraction of Methyl Iodide in air", 
+        "name": "mole_fraction_of_methyl_iodide_in_air", 
+        "practical_units": "?", 
+        "type": "float32", 
+        "units": "?", 
+        "valid_max": "<derived from file>", 
+        "valid_min": "<derived from file>"
+    }, 
+    "label": "mole_fraction_of_methyl_iodide_in_air", 
+    "namespace": "ncas:amf:product-halocarbon-concentration-variable:mole-fraction-of-methyl-iodide-in-air", 
+    "raw_name": "mole_fraction_of_methyl_iodide_in_air", 
+    "status": "pending", 
+    "uid": "f2bf4118-5a3d-45ea-a320-81cd75397ec1"
+}

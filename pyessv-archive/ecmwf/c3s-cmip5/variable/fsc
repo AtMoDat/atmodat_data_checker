@@ -1,0 +1,8 @@
+{
+    "_type": "term",
+    "canonical_name": "fsc",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "fsc",
+    "namespace": "ecmwf:c3s-cmip5:variable:fsc",
+    "status": "pending"
+}

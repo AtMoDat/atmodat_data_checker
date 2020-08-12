@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "h08",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "H08",
+    "label": "H08",
+    "namespace": "wcrp:isimip-ft:impact-model:h08",
+    "raw_name": "H08",
+    "status": "pending"
+}

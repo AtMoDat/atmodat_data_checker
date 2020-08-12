@@ -1,0 +1,10 @@
+{
+    "_type": "term",
+    "canonical_name": "1pctco2-bgc",
+    "create_date": "2019-04-02 00:00:00+00:00",
+    "description": "Biogeochemically-coupled specified concentration simulation in which CO2 increases at a rate of 1pct per year until quadrupling",
+    "label": "1pctCO2-bgc",
+    "namespace": "wcrp:primavera:experiment:1pctco2-bgc",
+    "raw_name": "1pctCO2-bgc",
+    "status": "pending"
+}
