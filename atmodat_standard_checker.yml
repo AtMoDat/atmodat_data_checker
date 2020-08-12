@@ -129,11 +129,7 @@ checks:
     parameters: {"attribute": "title", "type": str, "status": "recommended"}
     check_name: "checklib.register.GlobalAttrTypeCheck"
 
-  # 2.b. CV Check
-
-  - check_id: "conventions_attribute_CV_check"
-    parameters: {"attribute": "conventions", "vocab_lookup": "label", "vocabulary_ref": "atmodat:atmodat", "status": "mandatory"}
-    check_name: "checklib.register.GlobalAttrVocabCheckByStatus"
+  # 2.b. CV Checks
 
   - check_id: "featureType_attribute_type_check"
     parameters: {"attribute": "featureType", "type": str, "vocabulary_ref": "atmodat:atmodat", "status": "optional"}
