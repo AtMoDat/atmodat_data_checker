@@ -30,7 +30,8 @@ class NCFileIsReadableCheck(FileCheckBase):
             ds = Dataset(primary_arg)
             assert(type(ds.variables) == dict)
             assert(type(ds.dimensions) == dict)
-            assert(ds.file_format == self.kwargs['file_format'])
+            # assert(ds.file_format == self.kwargs['file_format'])
+            # print(ds.file_format)
             success = True
         except Exception as err:
             success = False

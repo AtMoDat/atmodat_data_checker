@@ -35,7 +35,7 @@ class DateISO8601Check(NCFileCheckBase):
     message_templates = ["'{attribute}' global attribute value does not match ISO 8601 format"]
     level = "HIGH"
 
-    def get_result(self, primary_arg):
+    def _get_result(self, primary_arg):
         ds = primary_arg
 
         score = nc_util.check_global_attr_ISO8601(ds, self.kwargs["attribute"])
@@ -60,7 +60,7 @@ class GlobalAttrTypeCheck(NCFileCheckBase):
                          "type '{type}'."]
     level = "HIGH"
 
-    def get_result(self, primary_arg):
+    def _get_result(self, primary_arg):
         ds = primary_arg
 
         score = nc_util.check_global_attr_type(ds, self.kwargs["attribute"], self.kwargs["type"],
