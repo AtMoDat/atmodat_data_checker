@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "wetnh4",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "wetnh4",
-    "namespace": "ecmwf:c3s-cmip5:variable:wetnh4",
-    "status": "pending"
-}

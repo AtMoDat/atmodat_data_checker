@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "aermonz",
-    "create_date": "2017-06-21 00:00:00+00:00",
-    "label": "AERmonZ",
-    "namespace": "wcrp:cmip6:table-id:aermonz",
-    "raw_name": "AERmonZ",
-    "status": "pending"
-}

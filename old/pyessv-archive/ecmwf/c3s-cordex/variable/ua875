@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "ua875",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "ua875",
-    "namespace": "ecmwf:c3s-cordex:variable:ua875",
-    "status": "pending"
-}

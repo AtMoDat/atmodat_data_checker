@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "cmip2",
-    "create_date": "2017-06-21 00:00:00+00:00",
-    "label": "CMIP2",
-    "namespace": "wcrp:global:mip-era:cmip2",
-    "raw_name": "CMIP2",
-    "status": "pending"
-}

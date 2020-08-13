@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "p700",
-    "create_date": "2017-06-21 00:00:00+00:00",
-    "description": "p700",
-    "namespace": "wcrp:cmip6:thredds-exclude-variables:p700",
-    "status": "pending"
-}

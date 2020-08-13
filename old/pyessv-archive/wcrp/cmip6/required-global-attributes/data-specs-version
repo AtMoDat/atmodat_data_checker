@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "data-specs-version",
-    "create_date": "2017-06-21 00:00:00+00:00",
-    "label": "data_specs_version",
-    "namespace": "wcrp:cmip6:required-global-attributes:data-specs-version",
-    "raw_name": "data_specs_version",
-    "status": "pending"
-}

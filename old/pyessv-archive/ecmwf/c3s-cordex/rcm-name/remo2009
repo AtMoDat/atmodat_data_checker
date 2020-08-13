@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "remo2009",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "label": "REMO2009",
-    "namespace": "ecmwf:c3s-cordex:rcm-name:remo2009",
-    "raw_name": "REMO2009",
-    "status": "pending"
-}

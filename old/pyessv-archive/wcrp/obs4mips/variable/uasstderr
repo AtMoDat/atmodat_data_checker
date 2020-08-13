@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "uasstderr",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "label": "uasStderr",
-    "namespace": "wcrp:obs4mips:variable:uasstderr",
-    "raw_name": "uasStderr",
-    "status": "pending"
-}

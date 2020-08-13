@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "o2min",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "o2min",
-    "namespace": "ecmwf:c3s-cmip5:variable:o2min",
-    "status": "pending"
-}

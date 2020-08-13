@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "slab",
-    "create_date": "2017-06-21 00:00:00+00:00",
-    "label": "SLAB",
-    "namespace": "wcrp:cmip6:source-type:slab",
-    "raw_name": "SLAB",
-    "status": "pending"
-}

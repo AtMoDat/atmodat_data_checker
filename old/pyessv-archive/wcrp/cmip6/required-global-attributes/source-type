@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "source-type",
-    "create_date": "2017-06-21 00:00:00+00:00",
-    "label": "source_type",
-    "namespace": "wcrp:cmip6:required-global-attributes:source-type",
-    "raw_name": "source_type",
-    "status": "pending"
-}

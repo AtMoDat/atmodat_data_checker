@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "tnhusmp",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "tnhusmp",
-    "namespace": "ecmwf:c3s-cmip5:variable:tnhusmp",
-    "status": "pending"
-}

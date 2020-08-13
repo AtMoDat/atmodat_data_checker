@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "nimr-kma",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "label": "NIMR-KMA",
-    "namespace": "ecmwf:c3s-cmip5:institute:nimr-kma",
-    "raw_name": "NIMR-KMA",
-    "status": "pending"
-}

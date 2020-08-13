@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "sic",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "sic",
-    "namespace": "ecmwf:c3s-cordex:variable:sic",
-    "status": "pending"
-}

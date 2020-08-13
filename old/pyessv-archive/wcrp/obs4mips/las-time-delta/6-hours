@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "6-hours",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "label": "6 hours",
-    "namespace": "wcrp:obs4mips:las-time-delta:6-hours",
-    "raw_name": "6 hours",
-    "status": "pending"
-}

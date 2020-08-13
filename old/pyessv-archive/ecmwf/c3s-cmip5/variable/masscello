@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "masscello",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "masscello",
-    "namespace": "ecmwf:c3s-cmip5:variable:masscello",
-    "status": "pending"
-}

@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "tsice",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "tsice",
-    "namespace": "ecmwf:c3s-cmip5:variable:tsice",
-    "status": "pending"
-}

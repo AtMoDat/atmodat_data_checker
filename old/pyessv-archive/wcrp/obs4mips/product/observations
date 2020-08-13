@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "observations",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "observations",
-    "namespace": "wcrp:obs4mips:product:observations",
-    "status": "pending"
-}

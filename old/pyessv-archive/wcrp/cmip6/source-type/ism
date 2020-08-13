@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "ism",
-    "create_date": "2017-06-21 00:00:00+00:00",
-    "label": "ISM",
-    "namespace": "wcrp:cmip6:source-type:ism",
-    "raw_name": "ISM",
-    "status": "pending"
-}

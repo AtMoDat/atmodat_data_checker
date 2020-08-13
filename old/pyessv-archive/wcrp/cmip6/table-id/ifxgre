@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "ifxgre",
-    "create_date": "2017-06-21 00:00:00+00:00",
-    "label": "IfxGre",
-    "namespace": "wcrp:cmip6:table-id:ifxgre",
-    "raw_name": "IfxGre",
-    "status": "pending"
-}

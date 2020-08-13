@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "simip",
-    "create_date": "2017-06-21 00:00:00+00:00",
-    "label": "SIMIP",
-    "namespace": "wcrp:cmip6:activity-id:simip",
-    "raw_name": "SIMIP",
-    "status": "pending"
-}

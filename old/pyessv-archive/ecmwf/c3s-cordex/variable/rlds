@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "rlds",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "rlds",
-    "namespace": "ecmwf:c3s-cordex:variable:rlds",
-    "status": "pending"
-}

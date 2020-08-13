@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "ism-historical-self",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "Historical simulation using offline ice sheet models. Forcing for ice sheet model is from its own AOGCM",
-    "namespace": "wcrp:primavera:experiment:ism-historical-self",
-    "status": "pending"
-}

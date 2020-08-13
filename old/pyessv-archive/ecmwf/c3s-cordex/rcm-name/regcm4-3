@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "regcm4-3",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "label": "RegCM4-3",
-    "namespace": "ecmwf:c3s-cordex:rcm-name:regcm4-3",
-    "raw_name": "RegCM4-3",
-    "status": "pending"
-}

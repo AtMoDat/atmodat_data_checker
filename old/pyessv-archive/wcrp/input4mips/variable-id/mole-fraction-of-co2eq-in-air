@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "mole-fraction-of-co2eq-in-air",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "mole-fraction-of-co2eq-in-air",
-    "namespace": "wcrp:input4mips:variable-id:mole-fraction-of-co2eq-in-air",
-    "status": "pending"
-}

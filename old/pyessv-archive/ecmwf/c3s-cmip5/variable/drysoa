@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "drysoa",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "drysoa",
-    "namespace": "ecmwf:c3s-cmip5:variable:drysoa",
-    "status": "pending"
-}

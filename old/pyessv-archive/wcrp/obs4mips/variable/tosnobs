@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "tosnobs",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "label": "tosNobs",
-    "namespace": "wcrp:obs4mips:variable:tosnobs",
-    "raw_name": "tosNobs",
-    "status": "pending"
-}

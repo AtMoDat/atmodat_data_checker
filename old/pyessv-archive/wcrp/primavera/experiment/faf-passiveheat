@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "faf-passiveheat",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "1xCO2 experiment, parallel to piControl, with a flux of passive tracer added at the ocean surface at the same rate as the surface net heat flux anomaly applied in the FAFMIP heat experiment",
-    "namespace": "wcrp:primavera:experiment:faf-passiveheat",
-    "status": "pending"
-}

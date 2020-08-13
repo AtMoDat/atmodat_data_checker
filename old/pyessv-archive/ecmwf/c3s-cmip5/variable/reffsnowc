@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "reffsnowc",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "reffsnowc",
-    "namespace": "ecmwf:c3s-cmip5:variable:reffsnowc",
-    "status": "pending"
-}

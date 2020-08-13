@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "ism-lig127k-std",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "Last interglacial simulation of ice sheet evolution driven by PMIP lig127k",
-    "namespace": "wcrp:primavera:experiment:ism-lig127k-std",
-    "status": "pending"
-}

@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "ssp585-over-bgc",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "Concentration-driven future scenario simulation, biogeochemically-coupled",
-    "namespace": "wcrp:primavera:experiment:ssp585-over-bgc",
-    "status": "pending"
-}

@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "rootd",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "rootd",
-    "namespace": "ecmwf:c3s-cordex:variable:rootd",
-    "status": "pending"
-}

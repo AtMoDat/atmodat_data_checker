@@ -1,8 +1,0 @@
-{
-    "_type": "term", 
-    "canonical_name": "brightness-temperature", 
-    "create_date": "2018-07-09 13:09:00", 
-    "namespace": "ncas:amf:product:brightness-temperature", 
-    "status": "pending", 
-    "uid": "27476fa0-03e6-4df7-bdf9-1dde06e32e26"
-}

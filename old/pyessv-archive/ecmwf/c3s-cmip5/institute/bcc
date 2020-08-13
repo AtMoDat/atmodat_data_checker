@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "bcc",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "label": "BCC",
-    "namespace": "ecmwf:c3s-cmip5:institute:bcc",
-    "raw_name": "BCC",
-    "status": "pending"
-}

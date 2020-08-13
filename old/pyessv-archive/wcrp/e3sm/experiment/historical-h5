@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "historical-h5",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "Historical H5",
-    "namespace": "wcrp:e3sm:experiment:historical-h5",
-    "status": "pending"
-}

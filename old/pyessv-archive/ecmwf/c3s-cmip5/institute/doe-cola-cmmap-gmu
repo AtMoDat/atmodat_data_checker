@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "doe-cola-cmmap-gmu",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "label": "DOE-COLA-CMMAP-GMU",
-    "namespace": "ecmwf:c3s-cmip5:institute:doe-cola-cmmap-gmu",
-    "raw_name": "DOE-COLA-CMMAP-GMU",
-    "status": "pending"
-}

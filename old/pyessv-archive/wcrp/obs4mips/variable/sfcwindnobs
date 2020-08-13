@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "sfcwindnobs",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "label": "sfcWindNobs",
-    "namespace": "wcrp:obs4mips:variable:sfcwindnobs",
-    "raw_name": "sfcWindNobs",
-    "status": "pending"
-}

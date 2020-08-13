@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "orog",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "orog",
-    "namespace": "ecmwf:c3s-cordex:variable:orog",
-    "status": "pending"
-}

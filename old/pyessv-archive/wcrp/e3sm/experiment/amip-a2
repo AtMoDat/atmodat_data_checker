@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "amip-a2",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "AMIP A2",
-    "namespace": "wcrp:e3sm:experiment:amip-a2",
-    "status": "pending"
-}

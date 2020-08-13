@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "mpi-m",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "label": "MPI-M",
-    "namespace": "ecmwf:c3s-cmip5:institute:mpi-m",
-    "raw_name": "MPI-M",
-    "status": "pending"
-}

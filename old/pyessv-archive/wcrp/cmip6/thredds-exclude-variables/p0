@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "p0",
-    "create_date": "2017-06-21 00:00:00+00:00",
-    "description": "p0",
-    "namespace": "wcrp:cmip6:thredds-exclude-variables:p0",
-    "status": "pending"
-}

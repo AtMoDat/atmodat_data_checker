@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "realization-index",
-    "create_date": "2017-06-21 00:00:00+00:00",
-    "label": "realization_index",
-    "namespace": "wcrp:cmip6:required-global-attributes:realization-index",
-    "raw_name": "realization_index",
-    "status": "pending"
-}

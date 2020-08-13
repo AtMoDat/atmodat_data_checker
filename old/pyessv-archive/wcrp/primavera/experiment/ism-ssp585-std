@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "ism-ssp585-std",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "Future climate ScenarioMIP SSP5-8.5 simulation using offline ice sheet models. Forcing for ice sheet model is the standard dataset based on ScenarioMIP ssp585",
-    "namespace": "wcrp:primavera:experiment:ism-ssp585-std",
-    "status": "pending"
-}

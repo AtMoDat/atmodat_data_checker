@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "s2007",
-    "create_date": "2017-06-21 00:00:00+00:00",
-    "description": "initialized near end of year 2007",
-    "namespace": "wcrp:cmip6:sub-experiment-id:s2007",
-    "status": "pending"
-}

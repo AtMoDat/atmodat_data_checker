@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "plev8",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "plev8",
-    "namespace": "ecmwf:c3s-cmip5:thredds-exclude-variables:plev8",
-    "status": "pending"
-}

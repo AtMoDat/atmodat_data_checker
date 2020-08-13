@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "18-6km",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "18-6km",
-    "namespace": "wcrp:e3sm:ocean-grid-resolution:18-6km",
-    "status": "pending"
-}

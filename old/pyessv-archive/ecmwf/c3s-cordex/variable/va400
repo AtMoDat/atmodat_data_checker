@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "va400",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "va400",
-    "namespace": "ecmwf:c3s-cordex:variable:va400",
-    "status": "pending"
-}

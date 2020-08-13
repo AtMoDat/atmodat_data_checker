@@ -1,8 +1,0 @@
-{
-    "_type": "term", 
-    "canonical_name": "mean-winds", 
-    "create_date": "2018-07-09 13:09:00", 
-    "namespace": "ncas:amf:product:mean-winds", 
-    "status": "pending", 
-    "uid": "d97dcf12-6044-4d03-999d-ad33b5747c1a"
-}

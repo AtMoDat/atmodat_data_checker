@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "alev1",
-    "create_date": "2017-06-21 00:00:00+00:00",
-    "description": "alev1",
-    "namespace": "wcrp:cmip6:thredds-exclude-variables:alev1",
-    "status": "pending"
-}

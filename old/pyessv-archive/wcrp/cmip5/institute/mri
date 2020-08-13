@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "mri",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "label": "MRI",
-    "namespace": "wcrp:cmip5:institute:mri",
-    "raw_name": "MRI",
-    "status": "pending"
-}

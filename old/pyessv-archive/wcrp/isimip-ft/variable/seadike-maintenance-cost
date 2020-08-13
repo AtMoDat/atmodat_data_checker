@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "seadike-maintenance-cost",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "seadike-maintenance-cost",
-    "namespace": "wcrp:isimip-ft:variable:seadike-maintenance-cost",
-    "status": "pending"
-}

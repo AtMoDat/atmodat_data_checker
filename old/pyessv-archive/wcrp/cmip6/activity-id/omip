@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "omip",
-    "create_date": "2017-06-21 00:00:00+00:00",
-    "label": "OMIP",
-    "namespace": "wcrp:cmip6:activity-id:omip",
-    "raw_name": "OMIP",
-    "status": "pending"
-}

@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "intdic",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "intdic",
-    "namespace": "ecmwf:c3s-cmip5:variable:intdic",
-    "status": "pending"
-}

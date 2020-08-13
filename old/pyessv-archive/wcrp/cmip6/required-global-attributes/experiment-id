@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "experiment-id",
-    "create_date": "2017-06-21 00:00:00+00:00",
-    "label": "experiment_id",
-    "namespace": "wcrp:cmip6:required-global-attributes:experiment-id",
-    "raw_name": "experiment_id",
-    "status": "pending"
-}

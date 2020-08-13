@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "olayer100m",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "olayer100m",
-    "namespace": "ecmwf:c3s-cordex:thredds-exclude-variables:olayer100m",
-    "status": "pending"
-}

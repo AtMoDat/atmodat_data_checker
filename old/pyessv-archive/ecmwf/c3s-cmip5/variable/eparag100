@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "eparag100",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "eparag100",
-    "namespace": "ecmwf:c3s-cmip5:variable:eparag100",
-    "status": "pending"
-}

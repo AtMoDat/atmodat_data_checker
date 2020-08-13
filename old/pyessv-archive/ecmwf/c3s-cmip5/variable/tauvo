@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "tauvo",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "tauvo",
-    "namespace": "ecmwf:c3s-cmip5:variable:tauvo",
-    "status": "pending"
-}

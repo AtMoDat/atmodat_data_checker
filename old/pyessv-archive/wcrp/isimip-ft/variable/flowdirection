@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "flowdirection",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "flowdirection",
-    "namespace": "wcrp:isimip-ft:variable:flowdirection",
-    "status": "pending"
-}

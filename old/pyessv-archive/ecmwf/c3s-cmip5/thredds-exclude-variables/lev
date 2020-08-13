@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "lev",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "lev",
-    "namespace": "ecmwf:c3s-cmip5:thredds-exclude-variables:lev",
-    "status": "pending"
-}

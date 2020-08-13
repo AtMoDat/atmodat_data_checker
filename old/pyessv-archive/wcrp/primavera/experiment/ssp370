@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "ssp370",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "Future scenario with high radiative forcing by the end of century. Reaches about 7.0 W/m2 by 2100; fills gap in RCP forcing pathways between 6.0 and 8.5 W/m2. Concentration-driven",
-    "namespace": "wcrp:primavera:experiment:ssp370",
-    "status": "pending"
-}

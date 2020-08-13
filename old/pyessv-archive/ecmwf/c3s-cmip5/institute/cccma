@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "cccma",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "label": "CCCma",
-    "namespace": "ecmwf:c3s-cmip5:institute:cccma",
-    "raw_name": "CCCma",
-    "status": "pending"
-}

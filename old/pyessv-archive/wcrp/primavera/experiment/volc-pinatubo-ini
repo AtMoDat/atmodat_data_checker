@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "volc-pinatubo-ini",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "As volc-pinatubo-full, but as decadal prediction runs. Joint experiment with DCPP, forcing input and implementation of the forcing fully comply with the VolMIP protocol",
-    "namespace": "wcrp:primavera:experiment:volc-pinatubo-ini",
-    "status": "pending"
-}

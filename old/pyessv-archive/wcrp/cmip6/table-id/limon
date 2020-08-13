@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "limon",
-    "create_date": "2017-06-21 00:00:00+00:00",
-    "label": "LImon",
-    "namespace": "wcrp:cmip6:table-id:limon",
-    "raw_name": "LImon",
-    "status": "pending"
-}

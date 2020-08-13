@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "clfr200",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "clfr200",
-    "namespace": "ecmwf:c3s-cordex:variable:clfr200",
-    "status": "pending"
-}
