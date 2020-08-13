@@ -1,12 +1,13 @@
 from setuptools import setup, find_packages
+from checklib import __version__
 
 setup(
     name                 = "atmodat_check_lib",
     description          = "Compliance Check Library for AtMoDat Standard - python library of compliance checks",
+    version              = __version__,
     author               = "xxx",
     author_email         = "xxx@abc.de",
-    scripts              =[],
-    entry_points         = {},
+    packages             = find_packages(),
 )
 
 

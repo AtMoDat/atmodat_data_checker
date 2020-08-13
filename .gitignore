@@ -101,3 +101,6 @@ ENV/
 .mypy_cache/
 .idea
 .pytest_cache
+
+# Ignore netcdf
+*.nc
