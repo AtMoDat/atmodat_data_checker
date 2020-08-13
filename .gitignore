@@ -104,3 +104,4 @@ ENV/
 
 # Ignore netcdf
 *.nc
+*~

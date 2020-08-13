@@ -1,7 +1,7 @@
 import inspect
 
 from atmodat_checklib.register.nc_file_checks_atmodat_register import *
-
+from atmodat_checklib.register.format_checks_atmodat_register import *
 
 def get_check_class(id):
     """
