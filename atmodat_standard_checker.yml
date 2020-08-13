@@ -1,10 +1,10 @@
 suite_name: "atmodat_standard_checker_mandatory:0.1"
 
 checks:
-#1. check if file is indeed a netCDF
-  - check_id: "file_readability_check"
-    parameters: {}
-    check_name: "atmodat_checklib.register.NCFileIsReadableCheck"
+# #1. check if file is indeed a netCDF
+#   - check_id: "file_readability_check"
+#     parameters: {}
+#     check_name: "atmodat_checklib.register.NCFileIsReadableCheck"
 
 #   # jkretz: Is this check actually needed???
   # - check_id: "file_software_check"
@@ -13,7 +13,7 @@ checks:
 
  #2. check global attributes
   - check_id: "conventions_attribute_type_check"
-    parameters: {"attribute": "Conventions", "type": str, "status": "mandatory"}
+    parameters: {"attribute": "conventions", "type": str, "status": "mandatory"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
 
   - check_id: "institution_attribute_type_check"
@@ -22,5 +22,81 @@ checks:
 
   - check_id: "source_attribute_type_check"
     parameters: {"attribute": "source", "type": str, "status": "mandatory"}
+    check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
+
+suite_name: "atmodat_standard_checker_recommended:0.1"
+checks:
+  #1. check global attributes
+
+  - check_id: "contact_attribute_type_check"
+    parameters: {"attribute": "contact", "type": str, "status": "recommended"}
+    check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
+
+  - check_id: "creation_date_attribute_type_check"
+    parameters: {"attribute": "creation_date", "type": str, "status": "recommended"}
+    check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
+
+  - check_id: "creator_attribute_type_check"
+    parameters: {"attribute": "creator", "type": str, "status": "recommended"}
+    check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
+
+  - check_id: "crs_attribute_type_check"
+    parameters: {"attribute": "crs", "type": str, "status": "recommended"}
+    check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
+
+  - check_id: "frequency_attribute_type_check"
+    parameters: {"attribute": "frequency", "type": str, "status": "recommended"}
+    check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
+
+  - check_id: "geospatial_lat_resolution_attribute_type_check"
+    parameters: {"attribute": "geospatial_lat_resolution", "type": str, "status": "recommended"}
+    check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
+
+  - check_id: "geospatial_lon_resolution_attribute_type_check"
+    parameters: {"attribute": "geospatial_lon_resolution", "type": str, "status": "recommended"}
+    check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
+
+  - check_id: "geospatial_vertical_resolution_attribute_type_check"
+    parameters: {"attribute": "geospatial_vertical_resolution", "type": str, "status": "recommended"}
+    check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
+
+  - check_id: "history_attribute_type_check"
+    parameters: {"attribute": "history", "type": str, "status": "recommended"}
+    check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
+
+  - check_id: "institution_id_attribute_type_check"
+    parameters: {"attribute": "institution_id", "type": str, "status": "recommended"}
+    check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
+
+  - check_id: "keywords_attribute_type_check"
+    parameters: {"attribute": "keywords", "type": str, "status": "recommended"}
+    check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
+
+  - check_id: "license_attribute_type_check"
+    parameters: {"attribute": "license", "type": str, "status": "recommended"}
+    check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
+
+  - check_id: "nominal_resolution_type_check"
+    parameters: {"attribute": "nominal_resolution", "type": str, "status": "recommended"}
+    check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
+
+  - check_id: "realm_attribute_type_check"
+    parameters: {"attribute": "realm", "type": str, "status": "recommended"}
+    check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
+
+  - check_id: "source_type_attribute_type_check"
+    parameters: {"attribute": "source_type", "type": str, "status": "recommended"}
+    check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
+
+  - check_id: "standard_name_vocabulary_attribute_type_check"
+    parameters: {"attribute": "standard_name_vocabulary", "type": str, "status": "recommended"}
+    check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
+
+  - check_id: "summary_attribute_type_check"
+    parameters: {"attribute": "summary", "type": str, "status": "recommended"}
+    check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
+
+  - check_id: "title_attribute_type_check"
+    parameters: {"attribute": "title", "type": str, "status": "recommended"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
 
