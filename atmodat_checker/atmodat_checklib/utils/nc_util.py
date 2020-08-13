@@ -13,7 +13,7 @@ def check_global_attr_type(ds, attr, attr_type, status):
     :param status: status (mandatory or sth. else) [string]
     :return: Integer (0: not found; 1: found (incorrect type); 2: found and correct type.
     """
-    if status == "mandatory" and not attr in ds.ncattrs():
+    if  not attr in ds.ncattrs():
         return 0
 
     global_attr = getattr(ds, attr)
