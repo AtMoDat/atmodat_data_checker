@@ -1,0 +1,6 @@
+[submodule "compliance-check-lib"]
+	path = compliance-check-lib
+	url = https://github.com/cedadev/compliance-check-lib
+[submodule "cc-yaml"]
+	path = cc-yaml
+	url = https://github.com/cedadev/cc-yaml
