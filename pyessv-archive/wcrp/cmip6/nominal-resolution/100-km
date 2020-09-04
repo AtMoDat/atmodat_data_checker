@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "100-km",
-    "create_date": "2017-06-21 00:00:00+00:00",
-    "label": "100 km",
-    "namespace": "wcrp:cmip6:nominal-resolution:100-km",
-    "raw_name": "100 km",
-    "status": "pending"
-}

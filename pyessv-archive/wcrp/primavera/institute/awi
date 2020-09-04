@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "awi",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "label": "AWI",
-    "namespace": "wcrp:primavera:institute:awi",
-    "raw_name": "AWI",
-    "status": "pending"
-}

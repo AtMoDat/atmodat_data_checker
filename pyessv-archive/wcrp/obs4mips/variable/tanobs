@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "tanobs",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "label": "taNobs",
-    "namespace": "wcrp:obs4mips:variable:tanobs",
-    "raw_name": "taNobs",
-    "status": "pending"
-}

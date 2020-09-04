@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "ssp126",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "Future scenario with low radiative forcing by the end of century. Following approximately RCP2.6 global forcing pathway but with new forcing based on SSP1. Concentration-driven",
-    "namespace": "wcrp:primavera:experiment:ssp126",
-    "status": "pending"
-}

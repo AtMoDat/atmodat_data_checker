@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "tnta",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "tnta",
-    "namespace": "ecmwf:c3s-cmip5:variable:tnta",
-    "status": "pending"
-}

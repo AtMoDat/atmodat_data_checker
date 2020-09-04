@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "volmip",
-    "create_date": "2017-06-21 00:00:00+00:00",
-    "label": "VolMIP",
-    "namespace": "wcrp:cmip6:activity-id:volmip",
-    "raw_name": "VolMIP",
-    "status": "pending"
-}

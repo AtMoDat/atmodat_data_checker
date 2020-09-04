@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "mrsos",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "mrsos",
-    "namespace": "ecmwf:c3s-cordex:variable:mrsos",
-    "status": "pending"
-}

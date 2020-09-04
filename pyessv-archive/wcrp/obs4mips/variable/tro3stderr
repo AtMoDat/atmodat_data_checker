@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "tro3stderr",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "label": "tro3Stderr",
-    "namespace": "wcrp:obs4mips:variable:tro3stderr",
-    "raw_name": "tro3Stderr",
-    "status": "pending"
-}

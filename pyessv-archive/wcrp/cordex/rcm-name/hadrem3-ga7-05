@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "hadrem3-ga7-05",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "label": "HadREM3-GA7-05",
-    "namespace": "wcrp:cordex:rcm-name:hadrem3-ga7-05",
-    "raw_name": "HadREM3-GA7-05",
-    "status": "pending"
-}

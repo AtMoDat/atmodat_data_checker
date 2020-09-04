@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "sites",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "sites",
-    "namespace": "wcrp:tamip:cmor-table:sites",
-    "status": "pending"
-}

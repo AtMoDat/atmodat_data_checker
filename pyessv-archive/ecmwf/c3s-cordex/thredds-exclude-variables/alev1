@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "alev1",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "alev1",
-    "namespace": "ecmwf:c3s-cordex:thredds-exclude-variables:alev1",
-    "status": "pending"
-}

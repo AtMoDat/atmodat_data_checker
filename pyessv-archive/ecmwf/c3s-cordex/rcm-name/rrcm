@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "rrcm",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "label": "RRCM",
-    "namespace": "ecmwf:c3s-cordex:rcm-name:rrcm",
-    "raw_name": "RRCM",
-    "status": "pending"
-}

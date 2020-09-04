@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "seaflood-cost",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "seaflood-cost",
-    "namespace": "wcrp:isimip-ft:variable:seaflood-cost",
-    "status": "pending"
-}

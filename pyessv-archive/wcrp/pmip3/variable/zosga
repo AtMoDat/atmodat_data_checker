@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "zosga",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "zosga",
-    "namespace": "wcrp:pmip3:variable:zosga",
-    "status": "pending"
-}

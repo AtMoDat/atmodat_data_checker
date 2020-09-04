@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "ipsl",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "label": "IPSL",
-    "namespace": "ecmwf:c3s-cmip5:institute:ipsl",
-    "raw_name": "IPSL",
-    "status": "pending"
-}

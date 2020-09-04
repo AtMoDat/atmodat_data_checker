@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "husnobs",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "label": "husNobs",
-    "namespace": "wcrp:obs4mips:variable:husnobs",
-    "raw_name": "husNobs",
-    "status": "pending"
-}

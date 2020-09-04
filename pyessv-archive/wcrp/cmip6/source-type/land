@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "land",
-    "create_date": "2017-06-21 00:00:00+00:00",
-    "label": "LAND",
-    "namespace": "wcrp:cmip6:source-type:land",
-    "raw_name": "LAND",
-    "status": "pending"
-}

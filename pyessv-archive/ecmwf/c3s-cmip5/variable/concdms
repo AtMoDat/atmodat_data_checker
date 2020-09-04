@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "concdms",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "concdms",
-    "namespace": "ecmwf:c3s-cmip5:variable:concdms",
-    "status": "pending"
-}

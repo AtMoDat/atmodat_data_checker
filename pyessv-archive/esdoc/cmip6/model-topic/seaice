@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "seaice",
-    "create_date": "2017-06-21 00:00:00+00:00",
-    "label": "Sea Ice",
-    "namespace": "esdoc:cmip6:model-topic:seaice",
-    "raw_name": "seaIce",
-    "status": "pending"
-}

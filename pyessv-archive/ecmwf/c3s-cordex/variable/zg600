@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "zg600",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "zg600",
-    "namespace": "ecmwf:c3s-cordex:variable:zg600",
-    "status": "pending"
-}

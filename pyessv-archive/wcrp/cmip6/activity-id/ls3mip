@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "ls3mip",
-    "create_date": "2017-06-21 00:00:00+00:00",
-    "label": "LS3MIP",
-    "namespace": "wcrp:cmip6:activity-id:ls3mip",
-    "raw_name": "LS3MIP",
-    "status": "pending"
-}

@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "vasnobs",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "label": "vasNobs",
-    "namespace": "wcrp:obs4mips:variable:vasnobs",
-    "raw_name": "vasNobs",
-    "status": "pending"
-}

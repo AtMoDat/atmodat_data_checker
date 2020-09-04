@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "aerday",
-    "create_date": "2017-06-21 00:00:00+00:00",
-    "label": "AERday",
-    "namespace": "wcrp:cmip6:table-id:aerday",
-    "raw_name": "AERday",
-    "status": "pending"
-}

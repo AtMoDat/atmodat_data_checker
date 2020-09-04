@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "mlotstsq",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "mlotstsq",
-    "namespace": "ecmwf:c3s-cmip5:variable:mlotstsq",
-    "status": "pending"
-}

@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "omip2-spunup",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "Same as the omipv2 experiment except that it is not initialized with observed climatologies; rather it is initialized with results from at least a 2000-year spin up of the coupled physical-biogeochemical models. Also it includes radiocarbon to evaluate deep-ocean circulation",
-    "namespace": "wcrp:primavera:experiment:omip2-spunup",
-    "status": "pending"
-}

@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "cttisccp-unweighted",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "label": "cttisccp_unweighted",
-    "namespace": "wcrp:obs4mips:variable:cttisccp-unweighted",
-    "raw_name": "cttisccp_unweighted",
-    "status": "pending"
-}

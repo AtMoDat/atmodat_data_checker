@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "decadal1967",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "10- or 30-year run initialized in year 1967",
-    "namespace": "wcrp:cmip5:experiment:decadal1967",
-    "status": "pending"
-}

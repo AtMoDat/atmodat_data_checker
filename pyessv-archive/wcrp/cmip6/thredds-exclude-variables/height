@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "height",
-    "create_date": "2017-06-21 00:00:00+00:00",
-    "description": "height",
-    "namespace": "wcrp:cmip6:thredds-exclude-variables:height",
-    "status": "pending"
-}

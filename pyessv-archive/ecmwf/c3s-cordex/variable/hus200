@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "hus200",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "hus200",
-    "namespace": "ecmwf:c3s-cordex:variable:hus200",
-    "status": "pending"
-}

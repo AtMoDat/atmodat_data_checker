@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "oline",
-    "create_date": "2017-06-21 00:00:00+00:00",
-    "description": "oline",
-    "namespace": "wcrp:cmip6:thredds-exclude-variables:oline",
-    "status": "pending"
-}

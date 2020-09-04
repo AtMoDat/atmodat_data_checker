@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "ocnbgchem",
-    "create_date": "2017-06-21 00:00:00+00:00",
-    "label": "Ocean Biogeochemistry",
-    "namespace": "esdoc:cmip6:model-topic:ocnbgchem",
-    "raw_name": "ocnBgchem",
-    "status": "pending"
-}

@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "crcm5",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "label": "CRCM5",
-    "namespace": "ecmwf:c3s-cordex:rcm-name:crcm5",
-    "raw_name": "CRCM5",
-    "status": "pending"
-}

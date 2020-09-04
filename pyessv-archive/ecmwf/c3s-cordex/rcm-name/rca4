@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "rca4",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "label": "RCA4",
-    "namespace": "ecmwf:c3s-cordex:rcm-name:rca4",
-    "raw_name": "RCA4",
-    "status": "pending"
-}

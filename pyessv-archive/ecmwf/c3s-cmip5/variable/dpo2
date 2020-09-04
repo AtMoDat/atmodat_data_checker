@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "dpo2",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "dpo2",
-    "namespace": "ecmwf:c3s-cmip5:variable:dpo2",
-    "status": "pending"
-}

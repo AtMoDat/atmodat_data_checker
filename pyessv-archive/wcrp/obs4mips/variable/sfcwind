@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "sfcwind",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "label": "sfcWind",
-    "namespace": "wcrp:obs4mips:variable:sfcwind",
-    "raw_name": "sfcWind",
-    "status": "pending"
-}

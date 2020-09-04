@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "cnrm-cerfacs",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "label": "CNRM-CERFACS",
-    "namespace": "ecmwf:c3s-cmip5:institute:cnrm-cerfacs",
-    "raw_name": "CNRM-CERFACS",
-    "status": "pending"
-}

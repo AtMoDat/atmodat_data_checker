@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "abs550aer",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "abs550aer",
-    "namespace": "ecmwf:c3s-cmip5:variable:abs550aer",
-    "status": "pending"
-}

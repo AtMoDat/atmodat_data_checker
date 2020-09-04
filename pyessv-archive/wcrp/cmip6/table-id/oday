@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "oday",
-    "create_date": "2017-06-21 00:00:00+00:00",
-    "label": "Oday",
-    "namespace": "wcrp:cmip6:table-id:oday",
-    "raw_name": "Oday",
-    "status": "pending"
-}

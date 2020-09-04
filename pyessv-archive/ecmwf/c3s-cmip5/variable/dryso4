@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "dryso4",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "dryso4",
-    "namespace": "ecmwf:c3s-cmip5:variable:dryso4",
-    "status": "pending"
-}

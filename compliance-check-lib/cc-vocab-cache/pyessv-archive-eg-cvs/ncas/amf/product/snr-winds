@@ -1,8 +1,0 @@
-{
-    "_type": "term", 
-    "canonical_name": "snr-winds", 
-    "create_date": "2018-07-09 13:09:00", 
-    "namespace": "ncas:amf:product:snr-winds", 
-    "status": "pending", 
-    "uid": "07db0c0f-b74e-405a-a306-f4571b059ebb"
-}

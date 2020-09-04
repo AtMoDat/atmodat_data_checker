@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "ocean",
-    "create_date": "2017-06-21 00:00:00+00:00",
-    "label": "Ocean",
-    "namespace": "esdoc:cmip6:model-topic:ocean",
-    "status": "pending"
-}

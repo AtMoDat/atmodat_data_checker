@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "wetbc",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "wetbc",
-    "namespace": "ecmwf:c3s-cmip5:variable:wetbc",
-    "status": "pending"
-}

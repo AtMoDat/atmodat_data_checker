@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "p840",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "p840",
-    "namespace": "ecmwf:c3s-cordex:thredds-exclude-variables:p840",
-    "status": "pending"
-}

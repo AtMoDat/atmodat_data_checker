@@ -1,8 +1,0 @@
-{
-    "_type": "term", 
-    "canonical_name": "co2-concentration", 
-    "create_date": "2018-07-09 13:09:00", 
-    "namespace": "ncas:amf:product:co2-concentration", 
-    "status": "pending", 
-    "uid": "76223be4-4bee-45ae-a856-384607bfebbc"
-}

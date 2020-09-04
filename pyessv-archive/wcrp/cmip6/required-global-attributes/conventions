@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "conventions",
-    "create_date": "2017-06-21 00:00:00+00:00",
-    "label": "Conventions",
-    "namespace": "wcrp:cmip6:required-global-attributes:conventions",
-    "raw_name": "Conventions",
-    "status": "pending"
-}

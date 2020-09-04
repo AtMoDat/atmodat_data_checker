@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "no3",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "no3",
-    "namespace": "ecmwf:c3s-cmip5:variable:no3",
-    "status": "pending"
-}

@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "pressure1",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "pressure1",
-    "namespace": "ecmwf:c3s-cmip5:thredds-exclude-variables:pressure1",
-    "status": "pending"
-}

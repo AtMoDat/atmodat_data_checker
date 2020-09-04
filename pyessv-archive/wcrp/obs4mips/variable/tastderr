@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "tastderr",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "label": "taStderr",
-    "namespace": "wcrp:obs4mips:variable:tastderr",
-    "raw_name": "taStderr",
-    "status": "pending"
-}

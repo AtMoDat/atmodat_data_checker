@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "rlat",
-    "create_date": "2017-06-21 00:00:00+00:00",
-    "description": "rlat",
-    "namespace": "wcrp:cmip6:thredds-exclude-variables:rlat",
-    "status": "pending"
-}

@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "amip-hld",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "The topography of the highlands in Africa, N. America and S. America TP is modified by setting surface elevations to a certain height (500m). Same model as DECK",
-    "namespace": "wcrp:primavera:experiment:amip-hld",
-    "status": "pending"
-}

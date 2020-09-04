@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "tsmax",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "tsmax",
-    "namespace": "ecmwf:c3s-cordex:variable:tsmax",
-    "status": "pending"
-}

@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "p500",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "p500",
-    "namespace": "ecmwf:c3s-cordex:thredds-exclude-variables:p500",
-    "status": "pending"
-}

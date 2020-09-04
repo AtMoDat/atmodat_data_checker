@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "time",
-    "create_date": "2017-06-21 00:00:00+00:00",
-    "description": "time",
-    "namespace": "wcrp:cmip6:thredds-exclude-variables:time",
-    "status": "pending"
-}

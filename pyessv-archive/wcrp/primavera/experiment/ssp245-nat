@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "ssp245-nat",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "Extension of natural-only run under SSP2-4.5",
-    "namespace": "wcrp:primavera:experiment:ssp245-nat",
-    "status": "pending"
-}

@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "1-hour",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "label": "1 hour",
-    "namespace": "wcrp:obs4mips:las-time-delta:1-hour",
-    "raw_name": "1 hour",
-    "status": "pending"
-}

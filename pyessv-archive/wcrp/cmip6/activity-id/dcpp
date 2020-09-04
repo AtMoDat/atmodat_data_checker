@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "dcpp",
-    "create_date": "2017-06-21 00:00:00+00:00",
-    "label": "DCPP",
-    "namespace": "wcrp:cmip6:activity-id:dcpp",
-    "raw_name": "DCPP",
-    "status": "pending"
-}

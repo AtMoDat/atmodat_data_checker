@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "swit",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "swit",
-    "namespace": "ecmwf:c3s-cmip5:variable:swit",
-    "status": "pending"
-}

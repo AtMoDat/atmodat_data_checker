@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "simon",
-    "create_date": "2017-06-21 00:00:00+00:00",
-    "label": "SImon",
-    "namespace": "wcrp:cmip6:table-id:simon",
-    "raw_name": "SImon",
-    "status": "pending"
-}

@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "husstderr",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "label": "husStderr",
-    "namespace": "wcrp:obs4mips:variable:husstderr",
-    "raw_name": "husStderr",
-    "status": "pending"
-}

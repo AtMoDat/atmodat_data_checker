@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "deforest-globe",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "Idealized deforestation experiment, 20 million km2 forest removed linearly over a period of 50 years, with an additional 30 years with no specified change in forest cover; all other forcings held constant",
-    "namespace": "wcrp:primavera:experiment:deforest-globe",
-    "status": "pending"
-}

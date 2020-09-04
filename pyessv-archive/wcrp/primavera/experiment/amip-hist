@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "amip-hist",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "Extended AMIP run that covers 1870-2014. All natural and anthropogenic historical forcings as used in CMIP6 Historical Simulation will be included. AGCM resolution as CMIP6 Historical Simulation. The HadISST data will be used",
-    "namespace": "wcrp:primavera:experiment:amip-hist",
-    "status": "pending"
-}

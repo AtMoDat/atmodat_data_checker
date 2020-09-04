@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "h2o",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "h2o",
-    "namespace": "ecmwf:c3s-cmip5:variable:h2o",
-    "status": "pending"
-}

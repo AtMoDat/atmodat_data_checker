@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "grid",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "grid",
-    "namespace": "wcrp:obs4mips:data-structure:grid",
-    "status": "pending"
-}

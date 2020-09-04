@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "time-series",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "time-series",
-    "namespace": "wcrp:e3sm:data-type:time-series",
-    "status": "pending"
-}

@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "lig127k",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "main forcings : orbital parameters, ice-sheet, trace gases",
-    "namespace": "wcrp:primavera:experiment:lig127k",
-    "status": "pending"
-}

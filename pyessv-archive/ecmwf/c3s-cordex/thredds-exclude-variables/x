@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "x",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "x",
-    "namespace": "ecmwf:c3s-cordex:thredds-exclude-variables:x",
-    "status": "pending"
-}

@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "n2o",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "n2o",
-    "namespace": "ecmwf:c3s-cmip5:variable:n2o",
-    "status": "pending"
-}

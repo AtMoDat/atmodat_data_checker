@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "lasg-cess",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "label": "LASG-CESS",
-    "namespace": "ecmwf:c3s-cmip5:institute:lasg-cess",
-    "raw_name": "LASG-CESS",
-    "status": "pending"
-}

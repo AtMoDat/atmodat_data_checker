@@ -1,8 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "volc-pinatubo-strat",
-    "create_date": "2019-04-02 00:00:00+00:00",
-    "description": "As volc-pinatubo-full, but with prescribed perturbation to the total (LW+SW) radiative heating rates",
-    "namespace": "wcrp:primavera:experiment:volc-pinatubo-strat",
-    "status": "pending"
-}
