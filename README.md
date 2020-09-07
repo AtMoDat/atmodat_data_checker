@@ -55,11 +55,7 @@ export PYESSV_ARCHIVE_HOME=$PWD/pyessv-archive
 ```
 
 ## Run tests
-This repository contains the `atmodat_standard_checker.yml` YAML file that contains the necessary checks. It holds checks suites for "mandatory" and "recommended" attributes of the AtMoDat Standard. For checking mandatory attributes run:
+This repository contains the `atmodat_standard_checker_mandatory.yml` and `atmodat_standard_checker_recommended.yml` YAML files that contains the necessary checks. For running the mandatory and recommended checks, you can use the `run_checks.bash`:
 ```
-cchecker.py --y atmodat_standard_checker.yml --test atmodat_standard_checker_mandatory:0.1 file_to_test.nc
-```
-or recommended attributes, respectively:
-```
-cchecker.py --y atmodat_standard_checker.yml --test atmodat_standard_checker_recommended:0.1 file_to_test.nc
+./run_checks.bash file_to_check.nc
 ```
