@@ -10,6 +10,10 @@ checks:
     parameters: {"attribute": "creation_date", "type": str, "status": "recommended"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
 
+  - check_id: "creation_date_iso8601_check"
+    parameters: {"attribute": "creation_date", "status": "recommended"}
+    check_name: "atmodat_checklib.register.DateISO8601Check"
+
   - check_id: "creator_attribute_type_check"
     parameters: {"attribute": "creator", "type": str, "status": "recommended"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
