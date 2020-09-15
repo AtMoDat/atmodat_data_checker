@@ -77,3 +77,4 @@ In alphabetic order:
 ## Acknowledgements:
 
 The ATMODAT Standard checker was created within the AtMoDat project (Atmospheric Model Data, https://www.atmodat.de). AtMoDat is funded by the German Federal Ministry for Education and Research within the framework of Atmosphaeren-Modelldaten: Datenqualitaet, Kurationskriterien und DOI-Branding (FKZ 16QK02A).
+ 
