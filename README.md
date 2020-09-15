@@ -60,3 +60,19 @@ This repository contains the `atmodat_standard_checker_mandatory.yml` and `atmod
 ```
 ./run_checks.bash file_to_check.nc
 ```
+
+## Contributors:
+
+In alphabetic order:
+
+* [Ag Stephens](https://github.com/agstephens)
+* [Amandine Kaiser](https://github.com/am-kaiser), [ORCID: 0000-0002-2756-9964](https://orcid.org/0000-0002-2756-9964)
+* [Anette Ganske](https://github.com/anganske), [ORCID: 0000-0003-1043-4964](https://orcid.org/0000-0003-1043-4964)
+* Angelina Kraft, [ORCID: 0000-0002-6454-335X](https://orcid.org/0000-0002-6454-335X)
+* [Daniel Heydebreck](https://github.com/neumannd), [ORCID: 0000-0001-8574-9093](https://orcid.org/0000-0001-8574-9093)
+* [Hugo Ricketts](https://github.com/gapintheclouds)
+* [Jan Kretzschmar](https://github.com/jkretz), [ORCID: 0000-0002-8013-5831](http://orcid.org/0000-0002-8013-5831)
+
+## Acknowledgements:
+
+The ATMODAT Standard checker was created within the AtMoDat project (Atmospheric Model Data, https://www.atmodat.de). AtMoDat is funded by the German Federal Ministry for Education and Research within the framework of Atmosphaeren-Modelldaten: Datenqualitaet, Kurationskriterien und DOI-Branding (FKZ 16QK02A).
