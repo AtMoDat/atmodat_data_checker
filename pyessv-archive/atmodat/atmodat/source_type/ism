@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "ism",
-    "create_date": "2020-08-05 00:00:00+00:00",
-    "label": "ice-sheet model that includes ice-flow",
-    "namespace": "atmodat:atmodat:source-type:ism",
-    "raw_name": "ism",
-    "status": "pending"
-}

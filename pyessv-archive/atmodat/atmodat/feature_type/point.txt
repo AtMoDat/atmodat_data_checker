@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "point",
-    "create_date": "2020-08-07 00:00:00+00:00",
-    "label": "point",
-    "namespace": "atmodat:atmodat:feature_type:point",
-    "raw_name": "point",
-    "status": "pending"
-}
