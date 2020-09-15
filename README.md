@@ -52,7 +52,7 @@ cd ..
 ```
 5. Point `pyessv` at the "archive" where AtMoDat controlled vocabulary is stored
 ```
-export PYESSV_ARCHIVE_HOME=$PWD/pyessv-archive
+export PYESSV_ARCHIVE_HOME=$PWD/AtMoDat_CVs/pyessv-archive
 ```
 
 ## Run tests
@@ -72,6 +72,7 @@ In alphabetic order:
 * [Daniel Heydebreck](https://github.com/neumannd), [ORCID: 0000-0001-8574-9093](https://orcid.org/0000-0001-8574-9093)
 * [Hugo Ricketts](https://github.com/gapintheclouds)
 * [Jan Kretzschmar](https://github.com/jkretz), [ORCID: 0000-0002-8013-5831](http://orcid.org/0000-0002-8013-5831)
+
 
 ## Acknowledgements:
 
