@@ -8,8 +8,8 @@ Its core funtionallity is based on the [IOOS compliance checker](https://github.
 
 1. Clone this repository and update submodules (compliance-check-lib and cc-yaml)
 ```
-git clone [URL] (!!! adaption needed !!!)
-cd atmodat_standard_checker (!!! adaption needed !!!)
+git clone https://github.com/AtMoDat/atmodat_standard_checker.git
+cd atmodat_standard_checker 
 git submodule init
 git submodule update
 ```
@@ -30,23 +30,24 @@ conda install -c conda-forge compliance-checker pip -y
 
 4. Install relevant checker packages:
 - cc-yaml
-```
+```diff
 cd cc-yaml
-pip install --editable . --no-deps
+# pip install --editable . --no-deps (only necessary for developers)
 pip install -r requirements.txt
 cd ..
 ```
 - compliance-check-lib
-```
+```diff
 cd compliance-check-lib
-pip install --editable . --no-deps
+# pip install --editable . --no-deps (only necessary for developers)
 pip install -r requirements.txt
 cd ..
 ```
 - atmodat-checker
-```
-cd atmodat-checker
-pip install --editable . --no-deps
+```diff
+cd atmodat_checker
+# pip install --editable . --no-deps (only necessary for developers)
+pip install
 cd ..
 ```
 5. Point `pyessv` at the "archive" where AtMoDat controlled vocabulary is stored
