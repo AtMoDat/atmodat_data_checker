@@ -54,8 +54,8 @@ class DateISO8601Check(NCFileCheckBase):
     short_name = "Global attribute: {attribute}"
     defaults = {}
     required_args = ['attribute']
-    message_templates = ["'{status}' '{attribute}' global attribute is not present.",
-                         "'{status}' '{attribute}' global attribute value does not match ISO8601"]
+    message_templates = ["{status} {attribute} global attribute is not present.",
+                         "{status} {attribute} global attribute value does not match ISO8601"]
     level = "HIGH"
 
     def _get_result(self, primary_arg):
