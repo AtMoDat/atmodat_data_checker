@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "monc",
-    "create_date": "2017-06-21 00:00:00+00:00",
-    "label": "monC",
-    "namespace": "wcrp:cmip6:frequency:monc",
-    "raw_name": "monC",
-    "status": "pending"
-}

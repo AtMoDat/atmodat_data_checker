@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "subhrpt",
-    "create_date": "2017-06-21 00:00:00+00:00",
-    "label": "subhrPt",
-    "namespace": "wcrp:cmip6:frequency:subhrpt",
-    "raw_name": "subhrPt",
-    "status": "pending"
-}

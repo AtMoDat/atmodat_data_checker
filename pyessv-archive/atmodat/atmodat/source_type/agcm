@@ -1,9 +1,0 @@
-{
-    "_type": "term",
-    "canonical_name": "agcm",
-    "create_date": "2020-08-05 00:00:00+00:00",
-    "label": "atmospheric general circulation model run with prescribed ocean surface conditions and usually a model of the land surface",
-    "namespace": "atmodat:atmodat:source-type:agcm",
-    "raw_name": "agcm",
-    "status": "pending"
-}
