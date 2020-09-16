@@ -2,11 +2,11 @@
 
 This is a python library that contains checks to ensure compliance with the AtMoDat Standard.
 
-Its core funtionallity is based on the [IOOS compliance checker](https://github.com/ioos/compliance-checker). The AtMoDat Standard Compliance Checks library makes use of [cc-yaml](https://github.com/cedadev/cc-yaml) which provides a plugin for the [IOOS compliance checker](https://github.com/ioos/compliance-checker) that generates check suites from YAML descriptions. Furthermore, the [Compliance Check Library](https://github.com/cedadev/compliance-check-lib) is used as the basis to define generic, reusable compliance checks. This repository is an extension of this library as it holds specfifc checks to ensure compliance with the AtMoDat Standard.
+Its core funtionallity is based on the [IOOS compliance checker](https://github.com/ioos/compliance-checker). The AtMoDat Standard Compliance Checks library makes use of [cc-yaml](https://github.com/cedadev/cc-yaml) which provides a plugin for the [IOOS compliance checker](https://github.com/ioos/compliance-checker) that generates check suites from YAML descriptions. Furthermore, the [Compliance Check Library](https://github.com/cedadev/compliance-check-lib) is used as the basis to define generic, reusable compliance checks. This repository is an extension of this library as it holds specfifc checks to ensure compliance with the AtMoDat Standard. Moreover, it contains checks to verify the compliance to the [AtMoDat CVs](https://github.com/AtMoDat/AtMoDat_CVs).
 
 ## Installation (only tested on a linux machine)
 
-1. Clone this repository and update submodules (compliance-check-lib and cc-yaml)
+1. Clone this repository and update submodules (compliance-check-lib, cc-yaml and AtMoDat_CVs)
 ```
 git clone https://github.com/AtMoDat/atmodat_standard_checker.git
 cd atmodat_standard_checker 
@@ -76,5 +76,5 @@ In alphabetic order:
 
 ## Acknowledgements:
 
-The ATMODAT Standard checker was created within the AtMoDat project (Atmospheric Model Data, https://www.atmodat.de). AtMoDat is funded by the German Federal Ministry for Education and Research within the framework of Atmosphaeren-Modelldaten: Datenqualitaet, Kurationskriterien und DOI-Branding (FKZ 16QK02A).
+The ATMODAT Standard checker was created within the AtMoDat project (Atmospheric Model Data, https://www.atmodat.de). AtMoDat is funded by the German Federal Ministry for Education and Research within the framework of Atmosphären-Modelldaten: Datenqualität, Kurationskriterien und DOI-Branding (FKZ 16QK02A).
  
