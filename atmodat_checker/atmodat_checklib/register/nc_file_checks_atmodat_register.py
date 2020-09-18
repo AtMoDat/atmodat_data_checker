@@ -21,7 +21,30 @@ class NCFileCheckBase(CallableCheckBase):
         if not isinstance(primary_arg, Dataset):
             raise FileError("Object for testing is not a netCDF4 Dataset: {}".format(str(primary_arg)))
 
-        
+
+class GobalAttrResolutionFormatCheck(NCFileCheckBase):
+    """
+    The global attribute '{attribute}' must be in number+unit format .
+    """
+    short_name = "Global attribute: {attribute}"
+    defaults = {}
+    required_args = ['attribute']
+    message_templates = ["'{status}' '{attribute}' global attribute is not present.",
+                         "'{status}' '{attribute}' No valid value+unit combination"]
+
+    def _get_result(self, primary_arg):
+        ds = primary_arg
+
+        score = nc_util.check_global_attribute_resolution_format(ds, self.kwargs["attribute"])
+        messages = []
+
+        if score < self.out_of:
+            messages.append(self.get_messages()[score])
+
+        return Result(self.level, (score, self.out_of),
+                      self.get_short_name(), messages)
+
+
 class GlobalAttrTypeCheck(NCFileCheckBase):
     """
     The global attribute '{attribute}' must have a valid type '{type}'.
