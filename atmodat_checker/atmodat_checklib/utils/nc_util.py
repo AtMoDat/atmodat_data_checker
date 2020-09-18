@@ -92,7 +92,7 @@ def value_unit_format_conformity(resol_string):
         for val in val_unit_dict.keys():
             if not val_unit_dict[val]:
                 # Missing units
-                return 1
+                return 2
             else:
                 unit_valid = True
                 for units in val_unit_dict[val]:
@@ -100,10 +100,10 @@ def value_unit_format_conformity(resol_string):
                         unit_valid = False
         if unit_valid:
             # All okay
-            return 2
+            return 4
         else:
             # Unrecognized unit
-            return 1
+            return 3
 
 
 def isfloat(value):
@@ -132,7 +132,7 @@ def split_value_unit(string_in):
             val_space = float(substring)
             val_unit_dict_out[val_space] = []
             for substring_loop in string_in.split(' ')[(ns+1)::]:
-                if not isfloat(substring_loop) and not re.match(var_unit_re, substring):
+                if not isfloat(substring_loop) and not re.match(var_unit_re, substring_loop):
                     val_unit_dict_out[val_space].append(substring_loop)
         elif re.match(var_unit_re, substring) or not isfloat(substring) and not val_space:
             if re.match(var_unit_re, substring):

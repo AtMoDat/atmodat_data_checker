@@ -30,7 +30,9 @@ class GobalAttrResolutionFormatCheck(NCFileCheckBase):
     defaults = {}
     required_args = ['attribute']
     message_templates = ["'{status}' '{attribute}' global attribute is not present.",
-                         "'{status}' '{attribute}' No valid value+unit combination"]
+                         "'{status}' '{attribute}' No valid value+unit combination (missing value)",
+                         "'{status}' '{attribute}' No valid value+unit combination (missing unit)",
+                         "'{status}' '{attribute}' No valid value+unit combination (invalid unit)"]
 
     def _get_result(self, primary_arg):
         ds = primary_arg
