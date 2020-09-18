@@ -4,6 +4,8 @@ This is a python library that contains checks to ensure compliance with the AtMo
 
 Its core funtionallity is based on the [IOOS compliance checker](https://github.com/ioos/compliance-checker). The AtMoDat Standard Compliance Checks library makes use of [cc-yaml](https://github.com/cedadev/cc-yaml) which provides a plugin for the [IOOS compliance checker](https://github.com/ioos/compliance-checker) that generates check suites from YAML descriptions. Furthermore, the [Compliance Check Library](https://github.com/cedadev/compliance-check-lib) is used as the basis to define generic, reusable compliance checks. This repository is an extension of this library as it holds specfifc checks to ensure compliance with the AtMoDat Standard. Moreover, it contains checks to verify the compliance to the [AtMoDat CVs](https://github.com/AtMoDat/AtMoDat_CVs).
 
+In addition the compliance to the CF Conventions 1.4 or higher is verified with the [CF checker](https://github.com/cedadev/cf-checker).
+
 ## Installation (only tested on a linux machine)
 
 1. Clone this repository and update submodules (compliance-check-lib, cc-yaml and AtMoDat_CVs)
@@ -50,13 +52,19 @@ cd atmodat_checker
 pip install
 cd ..
 ```
+
 5. Point `pyessv` at the "archive" where AtMoDat controlled vocabulary is stored
 ```
 export PYESSV_ARCHIVE_HOME=$PWD/AtMoDat_CVs/pyessv-archive
 ```
 
+6. Install CF Checker
+```
+pip install cfchecker
+```
+
 ## Run tests
-This repository contains the `atmodat_standard_checker_mandatory.yml` and `atmodat_standard_checker_recommended.yml` YAML files that contains the necessary checks. For running the mandatory and recommended checks, you can use the `run_checks.bash`:
+This repository contains the `atmodat_standard_checker_mandatory.yml` and `atmodat_standard_checker_recommended.yml` YAML files that contains the necessary checks. For running the mandatory and recommended checks, you can use the `run_checks.bash`. This file also contains the call for the CF checker:
 ```
 ./run_checks.bash file_to_check.nc
 ```
