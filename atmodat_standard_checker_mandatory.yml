@@ -6,7 +6,7 @@ checks:
 
   - check_id: "file_readability_check"
     parameters: {}
-    check_name: "atmodat_checklib.register.NCFileIsReadableCheck"
+    check_name: "atmodat_checklib.register.FileIsNetCDF"
 
 #2. check global attributes
 
