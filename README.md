@@ -35,21 +35,21 @@ conda install -c conda-forge compliance-checker pip -y
 ```diff
 cd cc-yaml
 # pip install --editable . --no-deps (only necessary for developers)
-pip install -r requirements.txt
+pip install .
 cd ..
 ```
 - compliance-check-lib
 ```diff
 cd compliance-check-lib
 # pip install --editable . --no-deps (only necessary for developers)
-pip install -r requirements.txt
+pip install .
 cd ..
 ```
 - atmodat-checker
 ```diff
 cd atmodat_checker
 # pip install --editable . --no-deps (only necessary for developers)
-pip install
+pip install .
 cd ..
 ```
 
