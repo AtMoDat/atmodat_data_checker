@@ -1,14 +1,15 @@
+---
 suite_name: "atmodat_standard_checker_mandatory:1.0"
 
 checks:
 
-#1. check if file is indeed a netCDF
+  # 1. check if file is indeed a netCDF
 
   - check_id: "file_readability_check"
-    parameters: {}
+    parameters: { }
     check_name: "atmodat_checklib.register.FileIsNetCDF"
 
-#2. check global attributes
+  # 2. check global attributes
 
   - check_id: "conventions_attribute_type_check"
     parameters: {"attribute": "Conventions", "type": str, "status": "mandatory"}

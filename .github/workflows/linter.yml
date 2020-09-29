@@ -1,0 +1,23 @@
+# this action runs the super linter. It is a simple combination of various linters, written in bash, to help validate the source code of this repository.
+name: linter
+
+# this linter will run on pushes to the master branch and pull requests for the master branch
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Super-Linter
+        uses: github/super-linter@v3.11.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VALIDATE_PYTHON_PYLINT: false
+          VALIDATE_PYTHON_BLACK: false
+          VALIDATE_ALL_CODEBASE: false
