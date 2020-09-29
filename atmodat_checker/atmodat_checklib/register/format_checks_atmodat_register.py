@@ -7,10 +7,7 @@ given the file path.
 
 """
 
-from collections import OrderedDict
-
 from compliance_checker.base import Result
-
 from checklib.register.file_checks_register import FileCheckBase
 
 
@@ -26,9 +23,9 @@ class FileIsNetCDF(FileCheckBase):
         from netCDF4 import Dataset
 
         try:
-            ds = Dataset(self._get_filepath(primary_arg))
+            Dataset(self._get_filepath(primary_arg))
             success = True
-        except Exception as err:
+        except Exception:
             success = False
 
         messages = []
@@ -41,4 +38,3 @@ class FileIsNetCDF(FileCheckBase):
 
         return Result(self.level, (score, self.out_of),
                       self.get_short_name(), messages)
-

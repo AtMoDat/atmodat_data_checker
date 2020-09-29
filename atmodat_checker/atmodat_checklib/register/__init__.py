@@ -1,7 +1,14 @@
-import inspect
+"""
+__init__.py
+==========================
+
+init file
+
+"""
 
 from atmodat_checklib.register.nc_file_checks_atmodat_register import *
 from atmodat_checklib.register.format_checks_atmodat_register import *
+
 
 def get_check_class(id):
     """
@@ -13,6 +20,5 @@ def get_check_class(id):
     try:
         assert id.endswith("Check")
         return eval(id)
-    except:
+    except Exception:
         raise Exception("Cannot identify Check with identifier: {}".format(id))
-

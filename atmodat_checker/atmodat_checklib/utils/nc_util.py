@@ -6,15 +6,16 @@ from cfunits import Units
 
 def check_global_attr_type(ds, attr, attr_type):
     """
-    Checks globals attribute values in a NetCDF Dataset and returns integer regarding
-    whether the `attr` matches `attr_type`.
+    Checks globals attribute values in a NetCDF Dataset and returns integer
+    regarding whether the `attr` matches `attr_type`.
 
     Note: Problems may occur with numpy types (int32, int 64, ...)
 
     :param ds: netCDF4 Dataset object
     :param attr: global attribute name [string]
     :param attr_type: a numpy type [string]
-    :return: Integer (0: not found; 1: found (incorrect type); 2: found and correct type.
+    :return: Integer (0: not found; 1: found (incorrect type); 2: found
+    and correct type.
     """
     if attr not in ds.ncattrs():
         return 0
@@ -29,8 +30,8 @@ def check_global_attr_type(ds, attr, attr_type):
 
 def check_global_attr_iso8601(ds, attr):
     """
-    Checks globals attribute values in a NetCDF Dataset and returns integer regarding
-    whether the `attr` matches ISO8601 format.
+    Checks globals attribute values in a NetCDF Dataset and returns integer
+    regarding whether the `attr` matches ISO8601 format.
 
     :param ds: netCDF4 Dataset object
     :param attr: global attribute name [string]
@@ -63,8 +64,8 @@ def check_iso8601_conformity(date_string):
 
 def check_global_attribute_resolution_format(ds, attr):
     """
-    Checks global attribute values in a NetCDF Dataset and returns integer regarding
-    whether the `attr` matches number+unit format
+    Checks global attribute values in a NetCDF Dataset and returns integer
+    regarding whether the `attr` matches number+unit format
 
     :param ds: netCDF4 Dataset object
     :param attr: global attribute name [string]
@@ -131,7 +132,7 @@ def split_value_unit(string_in):
         if isfloat(substring):
             val_space = float(substring)
             val_unit_dict_out[val_space] = []
-            for substring_loop in string_in.split(' ')[(ns+1)::]:
+            for substring_loop in string_in.split(' ')[(ns + 1)::]:
                 if not isfloat(substring_loop) and not re.match(var_unit_re, substring_loop):
                     val_unit_dict_out[val_space].append(substring_loop)
         elif re.match(var_unit_re, substring) or not isfloat(substring) and not val_space:
