@@ -22,3 +22,9 @@ checks:
   - check_id: "source_attribute_type_check"
     parameters: {"attribute": "source", "type": str, "status": "mandatory"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
+
+  # 3. Check if CF-Conventions Version is 1.4 or greater
+
+  - check_id: "cf_conventions_version_check"
+    parameters: {"attribute": "Conventions", "type": str, "status": "mandatory"}
+    check_name: "atmodat_checklib.register.CFConventionsVersionCheck"
