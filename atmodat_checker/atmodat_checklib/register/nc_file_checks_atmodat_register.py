@@ -22,6 +22,30 @@ class NCFileCheckBase(CallableCheckBase):
             raise FileError("Object for testing is not a netCDF4 Dataset: {}".format(str(primary_arg)))
 
 
+class CFConventionsVersionCheck(NCFileCheckBase):
+    """
+    The version number of CF-Conventions in the global attribute '{attribute}' must be 1.4 or greater.
+    """
+    short_name = "Global attribute: {attribute}"
+    defaults = {}
+    required_args = ['attribute']
+    message_templates = ["'{status}' '{attribute}' global attribute is not present.",
+                         "Invald CF Convention version number in '{attribute}' global attribute"]
+
+    def _get_result(self, primary_arg):
+        ds = primary_arg
+
+        cf_min_version = 1.4
+        score = nc_util.check_cfconventions_version_number(ds, self.kwargs["attribute"], cf_min_version)
+        messages = []
+
+        if score < self.out_of:
+            messages.append(self.get_messages()[score])
+
+        return Result(self.level, (score, self.out_of),
+                      self.get_short_name(), messages)
+
+
 class GobalAttrResolutionFormatCheck(NCFileCheckBase):
     """
     The global attribute '{attribute}' must be in number+unit format .

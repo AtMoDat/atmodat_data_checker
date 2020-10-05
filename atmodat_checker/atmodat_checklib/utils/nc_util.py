@@ -4,6 +4,39 @@ import re
 from cfunits import Units
 
 
+def check_cfconventions_version_number(ds, attr, cf_min_version):
+    """
+    Checks global attribute values in a NetCDF Dataset and returns integer
+    regarding whether the `attr` matches number+unit format
+
+    :param ds: netCDF4 Dataset object
+    :param attr: global attribute name [string]
+    :param cf_min_version: Minimum version number needed
+    :return: Integer (0: incorrect format; 1: correct format).
+    """
+
+    if attr not in ds.ncattrs():
+        return 0
+    global_attr = getattr(ds, attr)
+
+    cf_version = None
+    if ',' in global_attr:
+        global_attr_split = global_attr.split(',')
+        for conv in global_attr_split:
+            if 'cf' in conv.lower():
+                cf_version = float(re.findall(r"[+]?\d*\.\d+|\d+", conv)[0])
+    else:
+        global_attr_split = global_attr.split(' ')
+        for conv in global_attr_split:
+            if 'cf' in conv.lower():
+                cf_version = float(re.findall(r"[+]?\d*\.\d+|\d+", conv)[0])
+
+    if cf_version < cf_min_version:
+        return 1
+    else:
+        return 2
+
+
 def check_global_attr_type(ds, attr, attr_type):
     """
     Checks globals attribute values in a NetCDF Dataset and returns integer
