@@ -90,11 +90,6 @@ checks:
 
   # 2. CV Checks
 
-  - check_id: "featureType_attribute_type_check"
-    parameters: {"attribute": "featureType", "type": str,
-                 "vocabulary_ref": "atmodat:atmodat", "status": "optional"}
-    check_name: "atmodat_checklib.register.GlobalAttrVocabCheckByStatus"
-
   - check_id: "frequency_attribute_check"
     parameters: {"attribute": "frequency", "vocab_lookup": "label",
                  "vocabulary_ref": "atmodat:atmodat", "status": "required"}
