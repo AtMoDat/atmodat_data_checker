@@ -8,11 +8,6 @@ checks:
     parameters: {"attribute": "contact", "type": str, "status": "recommended"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
 
-  - check_id: "creation_date_attribute_type_check"
-    parameters: {"attribute": "creation_date", "type": str,
-                 "status": "recommended"}
-    check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
-
   - check_id: "creation_date_iso8601_check"
     parameters: {"attribute": "creation_date", "status": "recommended"}
     check_name: "atmodat_checklib.register.DateISO8601Check"
@@ -23,10 +18,6 @@ checks:
 
   - check_id: "crs_attribute_type_check"
     parameters: {"attribute": "crs", "type": str, "status": "recommended"}
-    check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
-
-  - check_id: "frequency_attribute_type_check"
-    parameters: {"attribute": "frequency", "type": str, "status": "recommended"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
 
   - check_id: "history_attribute_type_check"
@@ -44,20 +35,6 @@ checks:
 
   - check_id: "license_attribute_type_check"
     parameters: {"attribute": "license", "type": str, "status": "recommended"}
-    check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
-
-  - check_id: "nominal_resolution_type_check"
-    parameters: {"attribute": "nominal_resolution", "type": str,
-                 "status": "recommended"}
-    check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
-
-  - check_id: "realm_attribute_type_check"
-    parameters: {"attribute": "realm", "type": str, "status": "recommended"}
-    check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
-
-  - check_id: "source_type_attribute_type_check"
-    parameters: {"attribute": "source_type", "type": str,
-                 "status": "recommended"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
 
   - check_id: "standard_name_vocabulary_attribute_type_check"
