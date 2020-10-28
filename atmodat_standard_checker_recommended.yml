@@ -29,21 +29,6 @@ checks:
     parameters: {"attribute": "frequency", "type": str, "status": "recommended"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
 
-  - check_id: "geospatial_lat_resolution_attribute_type_check"
-    parameters: {"attribute": "geospatial_lat_resolution", "type": str,
-                 "status": "recommended"}
-    check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
-
-  - check_id: "geospatial_lon_resolution_attribute_type_check"
-    parameters: {"attribute": "geospatial_lon_resolution", "type": str,
-                 "status": "recommended"}
-    check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
-
-  - check_id: "geospatial_vertical_resolution_attribute_type_check"
-    parameters: {"attribute": "geospatial_vertical_resolution", "type": str,
-                 "status": "recommended"}
-    check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
-
   - check_id: "history_attribute_type_check"
     parameters: {"attribute": "history", "type": str, "status": "recommended"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
