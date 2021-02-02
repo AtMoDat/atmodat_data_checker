@@ -2,7 +2,7 @@
 
 This is a python library that contains checks to ensure compliance with the AtMoDat Standard.
 
-Its core funtionallity is based on the [IOOS compliance checker](https://github.com/ioos/compliance-checker). The AtMoDat Standard Compliance Checks library makes use of [cc-yaml](https://github.com/cedadev/cc-yaml) which provides a plugin for the [IOOS compliance checker](https://github.com/ioos/compliance-checker) that generates check suites from YAML descriptions. Furthermore, the [Compliance Check Library](https://github.com/cedadev/compliance-check-lib) is used as the basis to define generic, reusable compliance checks. This repository is an extension of this library as it holds specfifc checks to ensure compliance with the AtMoDat Standard. Moreover, it contains checks to verify the compliance to the [AtMoDat CVs](https://github.com/AtMoDat/AtMoDat_CVs).
+Its core functionality is based on the [IOOS compliance checker](https://github.com/ioos/compliance-checker). The AtMoDat Standard Compliance Checks library makes use of [cc-yaml](https://github.com/cedadev/cc-yaml) which provides a plugin for the [IOOS compliance checker](https://github.com/ioos/compliance-checker) that generates check suites from YAML descriptions. Furthermore, the [Compliance Check Library](https://github.com/cedadev/compliance-check-lib) is used as the basis to define generic, reusable compliance checks. This repository is an extension of this library as it holds specific checks to ensure compliance with the AtMoDat Standard. Moreover, it contains checks to verify the compliance to the [AtMoDat CVs](https://github.com/AtMoDat/AtMoDat_CVs).
 
 In addition the compliance to the CF Conventions 1.4 or higher is verified with the [CF checker](https://github.com/cedadev/cf-checker).
 
@@ -11,8 +11,8 @@ In addition the compliance to the CF Conventions 1.4 or higher is verified with 
 1. Clone this repository and update submodules (compliance-check-lib, cc-yaml and AtMoDat_CVs)
 
 ```bash
-git clone https://github.com/AtMoDat/atmodat_standard_checker.git
-cd atmodat_standard_checker
+git clone https://github.com/AtMoDat/atmodat_data_checker.git
+cd atmodat_data_checker
 git submodule init
 git submodule update
 ```
@@ -28,12 +28,18 @@ rm -f Miniconda3-latest-Linux-x86_64.sh
 3. Create conda environment and install the IOOS compliance checker via conda:
 
 ```bash
-conda create --name atmodat_checker -y
-conda activate atmodat_checker
+conda create --name atmodat_data_checker -y
+conda activate atmodat_data_checker
 conda install -c conda-forge compliance-checker pip -y
 ```
 
-4. Install relevant checker packages:
+4. Install pyessv:
+
+```bash
+pip install pyessv
+```
+
+5. Install relevant checker packages:
 
 - cc-yaml
 
@@ -56,7 +62,7 @@ cd ..
 - atmodat-checker
 
 ```bash
-cd atmodat_checker
+cd atmodat_data_checker
 # pip install --editable . --no-deps (only necessary for developers)
 pip install .
 cd ..
