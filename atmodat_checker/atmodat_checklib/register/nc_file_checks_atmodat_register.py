@@ -50,7 +50,7 @@ class GobalAttrResolutionFormatCheck(NCFileCheckBase):
     """
     The global attribute '{attribute}' must be in number+unit format .
     """
-    short_name = "Global attribute: {attribute}"
+    short_name = "Global attribute: {attribute} format check"
     defaults = {}
     required_args = ['attribute']
     message_templates = ["'{status}' '{attribute}' global attribute is not present.",
