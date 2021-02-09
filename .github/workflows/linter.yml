@@ -1,12 +1,16 @@
-# this action runs the super linter. It is a simple combination of various linters, written in bash, to help validate the source code of this repository.
+---
+# this action runs the super linter. It is a simple combination of
+#various linters, written in bash, to help validate the source code
+# of this repository.
 name: linter
 
-# this linter will run on pushes to the master branch and pull requests for the master branch
+# this linter will run on pushes to the master branch and
+# pull requests for the master branch
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   build:
@@ -21,3 +25,6 @@ jobs:
           VALIDATE_PYTHON_PYLINT: false
           VALIDATE_PYTHON_BLACK: false
           VALIDATE_ALL_CODEBASE: false
+          VALIDATE_JSCPD: false
+          VALIDATE_MARKDOWN: false
+          VALIDATE_PYTHON_ISORT: false
