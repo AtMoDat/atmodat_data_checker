@@ -8,11 +8,6 @@ checks:
     parameters: {"attribute": "contact", "type": str, "status": "recommended"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
 
-  - check_id: "creation_date_attribute_type_check"
-    parameters: {"attribute": "creation_date", "type": str,
-                 "status": "recommended"}
-    check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
-
   - check_id: "creation_date_iso8601_check"
     parameters: {"attribute": "creation_date", "status": "recommended"}
     check_name: "atmodat_checklib.register.DateISO8601Check"
@@ -23,25 +18,6 @@ checks:
 
   - check_id: "crs_attribute_type_check"
     parameters: {"attribute": "crs", "type": str, "status": "recommended"}
-    check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
-
-  - check_id: "frequency_attribute_type_check"
-    parameters: {"attribute": "frequency", "type": str, "status": "recommended"}
-    check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
-
-  - check_id: "geospatial_lat_resolution_attribute_type_check"
-    parameters: {"attribute": "geospatial_lat_resolution", "type": str,
-                 "status": "recommended"}
-    check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
-
-  - check_id: "geospatial_lon_resolution_attribute_type_check"
-    parameters: {"attribute": "geospatial_lon_resolution", "type": str,
-                 "status": "recommended"}
-    check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
-
-  - check_id: "geospatial_vertical_resolution_attribute_type_check"
-    parameters: {"attribute": "geospatial_vertical_resolution", "type": str,
-                 "status": "recommended"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
 
   - check_id: "history_attribute_type_check"
@@ -61,20 +37,6 @@ checks:
     parameters: {"attribute": "license", "type": str, "status": "recommended"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
 
-  - check_id: "nominal_resolution_type_check"
-    parameters: {"attribute": "nominal_resolution", "type": str,
-                 "status": "recommended"}
-    check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
-
-  - check_id: "realm_attribute_type_check"
-    parameters: {"attribute": "realm", "type": str, "status": "recommended"}
-    check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
-
-  - check_id: "source_type_attribute_type_check"
-    parameters: {"attribute": "source_type", "type": str,
-                 "status": "recommended"}
-    check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
-
   - check_id: "standard_name_vocabulary_attribute_type_check"
     parameters: {"attribute": "standard_name_vocabulary", "type": str,
                  "status": "recommended"}
@@ -90,44 +52,39 @@ checks:
 
   # 2. CV Checks
 
-  - check_id: "featureType_attribute_type_check"
-    parameters: {"attribute": "featureType", "type": str,
-                 "vocabulary_ref": "atmodat:atmodat", "status": "optional"}
-    check_name: "atmodat_checklib.register.GlobalAttrVocabCheckByStatus"
-
   - check_id: "frequency_attribute_check"
     parameters: {"attribute": "frequency", "vocab_lookup": "label",
-                 "vocabulary_ref": "atmodat:atmodat", "status": "required"}
+                 "vocabulary_ref": "atmodat:atmodat", "status": "recommended"}
     check_name: "atmodat_checklib.register.GlobalAttrVocabCheckByStatus"
 
   - check_id: "nominal_resolution_attribute_CV_check"
     parameters: {"attribute": "nominal_resolution", "vocab_lookup": "label",
-                 "vocabulary_ref": "atmodat:atmodat", "status": "required"}
+                 "vocabulary_ref": "atmodat:atmodat", "status": "recommended"}
     check_name: "atmodat_checklib.register.GlobalAttrVocabCheckByStatus"
 
   - check_id: "realm_attribute_CV_check"
     parameters: {"attribute": "realm", "vocab_lookup": "label",
-                 "vocabulary_ref": "atmodat:atmodat", "status": "required"}
+                 "vocabulary_ref": "atmodat:atmodat", "status": "recommended"}
     check_name: "atmodat_checklib.register.GlobalAttrVocabCheckByStatus"
 
   - check_id: "source_type_CV_check"
     parameters: {"attribute": "source_type", "vocab_lookup": "label",
-                 "vocabulary_ref": "atmodat:atmodat", "status": "required"}
+                 "vocabulary_ref": "atmodat:atmodat", "status": "recommended"}
     check_name: "atmodat_checklib.register.GlobalAttrVocabCheckByStatus"
 
   # 3. Check for valid value+unit combination in *resolution global attributes
 
   - check_id: "global_attribute_resolution_format_check_lat_resolution"
-    parameters: {"attribute": 'geospatial_lat_resolution',
+    parameters: {"attribute": "geospatial_lat_resolution",
                  "status": "recommended"}
     check_name: "atmodat_checklib.register.GobalAttrResolutionFormatCheck"
 
   - check_id: "global_attribute_resolution_format_check_lon_resolution"
-    parameters: {"attribute": 'geospatial_lon_resolution',
+    parameters: {"attribute": "geospatial_lon_resolution",
                  "status": "recommended"}
     check_name: "atmodat_checklib.register.GobalAttrResolutionFormatCheck"
 
   - check_id: "global_attribute_resolution_format_check_vertical_resolution"
-    parameters: {"attribute": 'geospatial_vertical_resolution',
+    parameters: {"attribute": "geospatial_vertical_resolution",
                  "status": "recommended"}
     check_name: "atmodat_checklib.register.GobalAttrResolutionFormatCheck"

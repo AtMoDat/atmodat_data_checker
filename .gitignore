@@ -105,3 +105,6 @@ ENV/
 # Ignore netcdf
 *.nc
 *~
+
+# Ignore checker_output
+checker_output/

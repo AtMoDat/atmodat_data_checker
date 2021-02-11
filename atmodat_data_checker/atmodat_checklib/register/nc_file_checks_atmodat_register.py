@@ -26,7 +26,7 @@ class CFConventionsVersionCheck(NCFileCheckBase):
     """
     The version number of CF-Conventions in the global attribute '{attribute}' must be 1.4 or greater.
     """
-    short_name = "Global attribute: {attribute}"
+    short_name = "CF-Conventions version 1.4 or greater"
     defaults = {}
     required_args = ['attribute']
     message_templates = ["'{status}' '{attribute}' global attribute is not present.",
@@ -50,7 +50,7 @@ class GobalAttrResolutionFormatCheck(NCFileCheckBase):
     """
     The global attribute '{attribute}' must be in number+unit format .
     """
-    short_name = "Global attribute: {attribute}"
+    short_name = "Global attribute: {attribute} format check"
     defaults = {}
     required_args = ['attribute']
     message_templates = ["'{status}' '{attribute}' global attribute is not present.",
@@ -103,8 +103,8 @@ class DateISO8601Check(NCFileCheckBase):
     short_name = "Global attribute: {attribute}"
     defaults = {}
     required_args = ['attribute']
-    message_templates = ["{status} {attribute} global attribute is not present.",
-                         "{status} {attribute} global attribute value does not match ISO8601"]
+    message_templates = ["'{status}' '{attribute}' global attribute is not present.",
+                         "'{status}' '{attribute}' global attribute value does not match ISO8601"]
     level = "HIGH"
 
     def _get_result(self, primary_arg):
@@ -128,8 +128,8 @@ class GlobalAttrVocabCheckByStatus(NCFileCheckBase):
     short_name = "Global attribute: {attribute}"
     defaults = {"vocab_lookup": "canonical_name"}
     required_args = ['attribute', 'status']
-    message_templates = ["{status} {attribute} global attribute is not present.",
-                         "{status} {attribute} global attribute value is invalid."]
+    message_templates = ["'{status}' '{attribute}' global attribute is not present.",
+                         "'{status}' '{attribute}' global attribute value is invalid."]
     level = "HIGH"
 
     def _get_result(self, primary_arg):

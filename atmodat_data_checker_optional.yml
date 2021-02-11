@@ -39,3 +39,10 @@ checks:
   - check_id: "references_attribute_type_check"
     parameters: {"attribute": "references", "type": str, "status": "optional"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
+
+  # 2. CV Checks
+
+  - check_id: "featureType_attribute_type_check"
+    parameters: {"attribute": "featureType", "type": str,
+                 "vocabulary_ref": "atmodat:atmodat", "status": "optional"}
+    check_name: "atmodat_checklib.register.GlobalAttrVocabCheckByStatus"

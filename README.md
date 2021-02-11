@@ -82,11 +82,17 @@ pip install cfchecker
 
 ## Run tests
 
-This repository contains the `atmodat_standard_checker_mandatory.yml`, `atmodat_standard_checker_recommended.yml` and  `atmodat_standard_checker_optional.yml` YAML files that contain the necessary checks. For running the mandatory, recommended and optional checks, you can use the `run_checks.bash`. This file also contains the call for the CF checker:
+This repository contains the `atmodat_standard_checker_mandatory.yml`, `atmodat_standard_checker_recommended.yml` and  `atmodat_standard_checker_optional.yml` YAML files that contain the necessary checks. For running the mandatory, recommended and optional checks in one go, you can use `run_checks.py` python scirpt. The call to the CF checker is also included. The results of the checks will be outputted in the `checker_output` directory.
 
+To run checkers on a single file, use:
 ```bash
-./run_checks.bash file_to_check.nc
+python run_checks.py -f file_to_check.nc
 ```
+To run the checker on all *.nc files of a directory, use:
+```bash
+python run_checks.py -p file_path
+```
+For more information use `python run_checks.py --help`
 
 ## Contributors
 
