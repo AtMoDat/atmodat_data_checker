@@ -106,5 +106,5 @@ ENV/
 *.nc
 *~
 
-# Ignore content of checker_output
-checker_output/*
+# Ignore checker_output
+checker_output/

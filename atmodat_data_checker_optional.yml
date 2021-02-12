@@ -1,5 +1,5 @@
 ---
-suite_name: "atmodat_standard_checker_optional:1.0"
+suite_name: "atmodat_data_checker_optional:1.0"
 checks:
 
   # 1. check global attributes
