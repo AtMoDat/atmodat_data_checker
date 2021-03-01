@@ -1,5 +1,6 @@
 import os
 import argparse
+import time
 
 import atmodat_data_checker.result_output.output_directory as output_directory
 import atmodat_data_checker.result_output.summary_creation as summary_creation
@@ -51,6 +52,11 @@ def return_files_in_directory_tree(ipath):
 
 
 if __name__ == "__main__":
+
+    # start timer
+    start_time = time.time()
+
+    # read comman line input
     args = comand_line_parse()
 
     verbose = args.verbose
@@ -79,5 +85,8 @@ if __name__ == "__main__":
 
     # Create summary of results
     summary_creation.create_output_summary()
+
+    # Calculate run time of this script
+    print("--- %s seconds ---" % (time.time() - start_time))
 
     exit()
