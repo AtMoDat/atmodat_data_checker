@@ -14,7 +14,15 @@ def delete_file(file):
 
 def extract_overview_output_json(ifile_in):
     """extracts information from given json file and returns them as a dictionary"""
-    summary = {}
+    keys = ['data_file','check_type','scored_points','possible_points','error','name', 'msgs']
+    summary = {key: None for key in keys}
+
+    summary['error'] = []
+    summary['name'] = []
+    summary['msgs'] = []
+
+    summary['name'][0] = 1
+
     with open(output_directory.opath + ifile_in) as f:
         data = json.load(f)
         for key, value in data.items():
@@ -26,8 +34,21 @@ def extract_overview_output_json(ifile_in):
                         summary['scored_points'] = value_2
                     elif key_2 == 'possible_points':
                         summary['possible_points'] = value_2
-
-    if summary['possible_points'] == summary['scored_points']:
+                    elif key_2 == 'high_priorities':
+                        for index, item in enumerate(value_2):
+                            for key_3, value_3 in item.items():
+                                if key_3 == 'value' and value_3[0] != value_3[0]:
+                                    summary['error'][index] = True
+                                elif key_3 == 'value':
+                                    summary['error'][index] = False
+                                elif key_3 == 'name':
+                                    print(summary['name'])
+                                    print(value_3)
+                                    summary['name'][index] = str(value_3)
+                                elif key_3 == 'msgs':
+                                    summary['msgs'][index]= str(value_3)
+    print(summary)
+    if summary['error']:
         delete_file(ifile_in)
 
     return summary
@@ -53,7 +74,7 @@ def create_output_summary():
                                                ignore_index=True)
         elif file.endswith("_cfchecks_result.txt"):
             cf_errors = cf_errors + int(extracts_error_summary_cf_check(file))
-    print(json_summary)
+
     scored_points = [str(int(json_summary['scored_points'].sum()))]
     possible_points = [str(int(json_summary['possible_points'].sum()))]
 
