@@ -1,8 +1,7 @@
 """module to create output directory"""
 
-from pathlib import Path
 from datetime import datetime
-
+from pathlib import Path
 
 global opath, opath_base
 
@@ -18,4 +17,3 @@ if opath_base:
     opath = opath_base + '/checker_output/' + now_formatted
 else:
     opath = 'checker_output/' + now_formatted
-

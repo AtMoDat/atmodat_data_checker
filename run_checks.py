@@ -1,5 +1,5 @@
-import os
 import argparse
+import os
 import time
 
 import atmodat_data_checker.result_output.output_directory as output_directory
@@ -7,6 +7,7 @@ import atmodat_data_checker.result_output.summary_creation as summary_creation
 
 
 def run_checks(ifile_in, verbose_in):
+    """run all checks"""
     # Types of checks to be performed
     check_types = ["mandatory", "recommended", "optional"]
 
@@ -16,24 +17,27 @@ def run_checks(ifile_in, verbose_in):
     # Run checks
     for check in check_types:
         os.system(
-            'cchecker.py --y ' + output_directory.opath_base + '/atmodat_data_checker_' + check + '.yml -f json_new -o '
-            + output_directory.opath + filename_base + '_' + check + '_result.json --test atmodat_data_checker_'
-            + check + ':1.0 ' + ifile_in)
+            'cchecker.py --y ' + output_directory.opath_base + '/atmodat_data_checker_' + check
+            + '.yml -f json_new -o ' + output_directory.opath + filename_base + '_' + check
+            + '_result.json --test atmodat_data_checker_' + check + ':1.0 ' + ifile_in)
         if verbose_in:
             os.system('cchecker.py --y ' + output_directory.opath_base + '/atmodat_data_checker_'
                       + check + '.yml --test atmodat_data_checker_' + check + ':1.0 ' + ifile_in)
     os.system(
-        'cfchecks -v auto ' + ifile_in + '>> ' + output_directory.opath + filename_base + '_cfchecks_result.txt')
+        'cfchecks -v auto ' + ifile_in + '>> ' + output_directory.opath + filename_base
+        + '_cfchecks_result.txt')
     if verbose_in:
         os.system('cfchecks -v auto ' + ifile_in)
     return
 
 
 def comand_line_parse():
+    """parse comman line input"""
     # Parser for command line options
     parser = argparse.ArgumentParser(description="Run the AtMoDat checks suits.")
     parser.add_argument("-v", "--verbose",
-                        help="Print output of checkers (longer runtime due to double call of checkers)",
+                        help="Print output of checkers (longer runtime due to double call of "
+                             "checkers)",
                         action="store_true",
                         default=False)
     group = parser.add_mutually_exclusive_group()
@@ -42,9 +46,10 @@ def comand_line_parse():
     return parser.parse_args()
 
 
-def return_files_in_directory_tree(ipath):
+def return_files_in_directory_tree(input_path):
+    """return all files in directory tree"""
     file_names = []
-    for root,d_names,f_names in os.walk(ipath):
+    for root, d_names, f_names in os.walk(input_path):
         for f in f_names:
             file_names.append(os.path.join(root, f))
 
@@ -56,7 +61,7 @@ if __name__ == "__main__":
     # start timer
     start_time = time.time()
 
-    # read comman line input
+    # read command line input
     args = comand_line_parse()
 
     verbose = args.verbose
