@@ -98,7 +98,8 @@ def write_short_summary(json_summary, cf_errors):
                 int(json_summary['scored_points'].loc[json_summary['testname'] == check].sum())))
             possible_points.append(str(int(
                 json_summary['possible_points'].loc[json_summary['testname'] == check].sum())))
-            f.write("Total scored " + check + " points: " + scored_points[index + 1] + '/' + possible_points[index + 1] + '\n')
+            f.write("Total scored " + check + " points: " + scored_points[index + 1] + '/'
+                    + possible_points[index + 1] + '\n')
 
         f.write("Total number CF checker errors: " + str(cf_errors))
 
