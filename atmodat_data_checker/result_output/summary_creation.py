@@ -56,7 +56,7 @@ def extract_overview_output_json(ifile_in):
             summary[summary_keys[4]] = extract_from_nested_json(data, summary_keys[4])
             # remove empty lists
             summary[summary_keys[4]] = [x for x in summary[summary_keys[4]] if x != []]
-            # make lists into strings 
+            # make lists into strings
             summary[summary_keys[4]] = [x[0] for x in summary[summary_keys[4]]]
             summary[summary_keys[4]] = ', '.join([str(elem) for elem in summary[summary_keys[4]]])
             # remove "'" from strings
@@ -98,8 +98,7 @@ def write_short_summary(json_summary, cf_errors):
                 int(json_summary['scored_points'].loc[json_summary['testname'] == check].sum())))
             possible_points.append(str(int(
                 json_summary['possible_points'].loc[json_summary['testname'] == check].sum())))
-            f.write("Total scored " + check + " points: " + scored_points[index + 1] + '/' +
-                    possible_points[index + 1] + '\n')
+            f.write("Total scored " + check + " points: " + scored_points[index + 1] + '/' + possible_points[index + 1] + '\n')
 
         f.write("Total number CF checker errors: " + str(cf_errors))
 

@@ -17,8 +17,8 @@ def run_checks(ifile_in, verbose_in):
     # Run checks
     for check in check_types:
         os.system(
-            'cchecker.py --y ' + output_directory.opath_base + '/atmodat_data_checker_' + check
-            + '.yml -f json_new -o ' + output_directory.opath + filename_base + '_' + check
+            'cchecker.py --y ' + output_directory.opath_base + '/atmodat_data_checker_' + check +
+            '.yml -f json_new -o ' + output_directory.opath + filename_base + '_' + check
             + '_result.json --test atmodat_data_checker_' + check + ':1.0 ' + ifile_in)
         if verbose_in:
             os.system('cchecker.py --y ' + output_directory.opath_base + '/atmodat_data_checker_'
@@ -32,7 +32,7 @@ def run_checks(ifile_in, verbose_in):
 
 
 def comand_line_parse():
-    """parse comman line input"""
+    """parse command line input"""
     # Parser for command line options
     parser = argparse.ArgumentParser(description="Run the AtMoDat checks suits.")
     parser.add_argument("-v", "--verbose",

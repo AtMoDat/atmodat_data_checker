@@ -9,7 +9,7 @@ global opath, opath_base
 now = datetime.now()
 now_formatted = now.strftime("%Y%m%d_%H%M") + '/'
 
-# Get parent of parent directory of current file 
+# Get parent of parent directory of current file
 opath_base = str(Path(__file__).resolve().parents[2])
 
 # Define output path for result files
