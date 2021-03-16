@@ -10,7 +10,7 @@ import atmodat_data_checker.result_output.output_directory as output_directory
 
 def delete_file(file):
     """deletes given file"""
-    os.remove(output_directory.opath + file)
+    os.remove(file)
 
 
 def extract_from_nested_json(obj, key):
@@ -37,19 +37,16 @@ def extract_from_nested_json(obj, key):
 def extract_overview_output_json(ifile_in):
     """extracts information from given json file and returns them as a dictionary"""
 
-    with open(output_directory.opath + ifile_in) as f:
+    with open(ifile_in) as f:
         data = json.load(f)
 
+        # define keys and create empty directory
         summary_keys = ['source_name', 'testname', 'scored_points', 'possible_points', 'msgs']
         summary = {key: None for key in summary_keys}
 
-        summary[summary_keys[0]] = extract_from_nested_json(data, summary_keys[0])[0]
-        summary[summary_keys[1]] = extract_from_nested_json(data, summary_keys[1])[0]
-        # reformat name of performed test to only get mandatory, recommended or optional
-        summary[summary_keys[1]] = summary[summary_keys[1]].split("_")[-1].split(':')[0]
-
-        summary[summary_keys[2]] = extract_from_nested_json(data, summary_keys[2])[0]
-        summary[summary_keys[3]] = extract_from_nested_json(data, summary_keys[3])[0]
+        # extract information from json file
+        for sum_key in summary_keys[:-1]:
+            summary[sum_key] = extract_from_nested_json(data, sum_key)[0]
 
         # if scored points unequal possible points
         if summary[summary_keys[2]] != summary[summary_keys[3]]:
@@ -58,12 +55,16 @@ def extract_overview_output_json(ifile_in):
             summary[summary_keys[4]] = [x for x in summary[summary_keys[4]] if x != []]
             # make lists into strings
             summary[summary_keys[4]] = [x[0] for x in summary[summary_keys[4]]]
-            summary[summary_keys[4]] = ', '.join([str(elem) for elem in summary[summary_keys[4]]])
+            summary[summary_keys[4]] = ', '.join(
+                [str(elem) for elem in summary[summary_keys[4]]])
             # remove "'" from strings
             summary[summary_keys[4]] = summary[summary_keys[4]].replace("'", "")
         else:
             # delete file if no errors occurred
             delete_file(ifile_in)
+
+        # reformat name of performed test to only get mandatory, recommended or optional
+        summary[summary_keys[1]] = summary[summary_keys[1]].split("_")[-1].split(':')[0]
 
     return summary
 
@@ -71,7 +72,7 @@ def extract_overview_output_json(ifile_in):
 def extracts_error_summary_cf_check(ifile_in):
     """extracts information from given txt file and returns them as a string"""
     substr = 'ERRORS detected:'
-    with open(output_directory.opath + ifile_in) as f:
+    with open(ifile_in) as f:
         data = f.read()
         for line in data.strip().split('\n'):
             if substr in line:
@@ -109,14 +110,15 @@ def write_detailed_json_summary(json_summary):
     with open(output_directory.opath + 'detailed_summary.csv', 'w+') as f:
         f.write("This is a detailed summary of the results from the atmodat data checker. \n")
         f.write("Version of the checker: " + str(1.0) + "\n \n")
-        json_summary.to_csv(f, index=False, header=True, sep=';')
+        json_summary.to_csv(f, index=False, header=True, sep=',')
 
 
 def create_output_summary():
     """main function to create summary output"""
     json_summary = pd.DataFrame()
     cf_errors = 0
-    for file in os.listdir(output_directory.opath):
+    files = output_directory.return_files_in_directory_tree(output_directory.opath)
+    for file in files:
         if file.endswith("_result.json"):
             json_summary = json_summary.append(extract_overview_output_json(file),
                                                ignore_index=True)

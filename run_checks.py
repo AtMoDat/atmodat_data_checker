@@ -8,21 +8,24 @@ import atmodat_data_checker.result_output.summary_creation as summary_creation
 
 def run_checks(ifile_in, verbose_in):
     """run all checks"""
-    # Types of checks to be performed
-    check_types = ["mandatory", "recommended", "optional"]
 
     # Get base filename and output path
     filename_base = ifile_in.split("/")[-1].rstrip('.nc')
 
+    # Types of checks to be performed
+    check_types = ["mandatory", "recommended", "optional"]
+
     # Run checks
     for check in check_types:
         os.system(
-            'cchecker.py --y ' + output_directory.opath_base + '/atmodat_data_checker_' + check
-            + '.yml -f json_new -o ' + output_directory.opath + filename_base + '_' + check
+            'cchecker.py --y ' + output_directory.opath_base
+            + '/atmodat_data_checker_' + check + '.yml -f json_new -o ' + output_directory.opath
+            + '/' + check + '/' + filename_base + '_' + check
             + '_result.json --test atmodat_data_checker_' + check + ':1.0 ' + ifile_in)
         if verbose_in:
-            os.system('cchecker.py --y ' + output_directory.opath_base + '/atmodat_data_checker_'
-                      + check + '.yml --test atmodat_data_checker_' + check + ':1.0 ' + ifile_in)
+            os.system('cchecker.py --y ' + output_directory.opath_base
+                      + '/atmodat_data_checker_ ' + check + '.yml --test atmodat_data_checker_'
+                      + check + ':1.0 ' + ifile_in)
     os.system(
         'cfchecks -v auto ' + ifile_in + '>> ' + output_directory.opath + filename_base
         + '_cfchecks_result.txt')
@@ -31,7 +34,7 @@ def run_checks(ifile_in, verbose_in):
     return
 
 
-def comand_line_parse():
+def command_line_parse():
     """parse command line input"""
     # Parser for command line options
     parser = argparse.ArgumentParser(description="Run the AtMoDat checks suits.")
@@ -40,20 +43,14 @@ def comand_line_parse():
                              "checkers)",
                         action="store_true",
                         default=False)
+    parser.add_argument("-s", "--summary", help="Create summary of checker output.",
+                        action="store_true",
+                        default=False)
     group = parser.add_mutually_exclusive_group()
     group.add_argument("-f", "--file", help="Processes the given file")
     group.add_argument("-p", "--path", help="Processes all files in a given directory")
+
     return parser.parse_args()
-
-
-def return_files_in_directory_tree(input_path):
-    """return all files in directory tree"""
-    file_names = []
-    for root, d_names, f_names in os.walk(input_path):
-        for f in f_names:
-            file_names.append(os.path.join(root, f))
-
-    return file_names
 
 
 if __name__ == "__main__":
@@ -62,19 +59,19 @@ if __name__ == "__main__":
     start_time = time.time()
 
     # read command line input
-    args = comand_line_parse()
+    args = command_line_parse()
 
     verbose = args.verbose
     ifile = args.file
     ipath = args.path
+    parsed_summary = args.summary
 
     # Check that either ifile or ipath exist
     if not ifile and not ipath:
         raise AssertionError('No file and path given')
 
-    # Create output directory if it does not exist already
-    if not os.path.isdir(output_directory.opath):
-        os.system('mkdir -p ' + output_directory.opath)
+    # Create directory for checker output
+    output_directory.create_directories()
 
     # Run checks
     if ifile and not ipath:
@@ -83,13 +80,14 @@ if __name__ == "__main__":
         else:
             print('Skipping ' + ifile + ' as it does not end with ".nc'"")
     elif ipath and not ifile:
-        files = return_files_in_directory_tree(ipath)
+        files = output_directory.return_files_in_directory_tree(ipath)
         for file in files:
             if file.endswith(".nc"):
                 run_checks(file, verbose)
 
-    # Create summary of results
-    summary_creation.create_output_summary()
+    # Create summary of results if specified
+    if parsed_summary:
+        summary_creation.create_output_summary()
 
     # Calculate run time of this script
     print("--- %s seconds ---" % (time.time() - start_time))
