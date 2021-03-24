@@ -79,7 +79,7 @@ def extracts_error_summary_cf_check(ifile_in):
                 return line.split(':')[-1].strip()
 
 
-def write_short_summary(json_summary, cf_errors):
+def write_short_summary(json_summary, cf_errors, file_counter):
     """create file which contains the short version of the summary"""
     # sum scored and possible points over output from all tested data files
     scored_points = [str(int(json_summary['scored_points'].sum()))]
@@ -91,6 +91,7 @@ def write_short_summary(json_summary, cf_errors):
     with open(output_directory.opath + 'short_summary.txt', 'w+') as f:
         f.write("This is a short summary of the results from the atmodat data checker. \n")
         f.write("Version of the checker: " + str(1.0) + "\n \n")
+        f.write("Number of checked files: " + str(file_counter) + '\n \n')
         f.write("Total scored points: " + scored_points[0] + '/' + possible_points[0] + '\n')
 
         for index, check in enumerate(check_types):
@@ -113,7 +114,7 @@ def write_detailed_json_summary(json_summary):
         json_summary.to_csv(f, index=False, header=True, sep=',')
 
 
-def create_output_summary():
+def create_output_summary(file_counter):
     """main function to create summary output"""
     json_summary = pd.DataFrame()
     cf_errors = 0
@@ -125,5 +126,5 @@ def create_output_summary():
         elif file.endswith("_cfchecks_result.txt"):
             cf_errors = cf_errors + int(extracts_error_summary_cf_check(file))
 
-    write_short_summary(json_summary, cf_errors)
+    write_short_summary(json_summary, cf_errors, file_counter)
     write_detailed_json_summary(json_summary)
