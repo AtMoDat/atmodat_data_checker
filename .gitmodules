@@ -1,9 +1,3 @@
-[submodule "compliance-check-lib"]
-	path = compliance-check-lib
-	url = https://github.com/cedadev/compliance-check-lib
-[submodule "cc-yaml"]
-	path = cc-yaml
-	url = https://github.com/cedadev/cc-yaml
 [submodule "AtMoDat_CVs"]
 	path = AtMoDat_CVs
 	url = https://github.com/AtMoDat/AtMoDat_CVs.git
