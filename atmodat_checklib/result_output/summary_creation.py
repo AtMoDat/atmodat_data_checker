@@ -5,7 +5,7 @@ import os
 
 import pandas as pd
 
-import atmodat_data_checker.result_output.output_directory as output_directory
+import atmodat_checklib.result_output.output_directory as output_directory
 
 
 def delete_file(file):
