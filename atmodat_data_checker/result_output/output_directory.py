@@ -35,6 +35,6 @@ def create_directories():
     check_types = ["mandatory", "recommended", "optional", "CF"]
     # Create directory to store output from checker if it does not exist already
     if not os.path.isdir(opath):
-        os.system('mkdir -p ' + opath)
+        os.mkdir(opath)
         for check in check_types:
-            os.system('mkdir -p ' + opath + '/' + check)
+            os.mkdir(opath + '/' + check)
