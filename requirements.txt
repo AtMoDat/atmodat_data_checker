@@ -1,0 +1,6 @@
+pandas
+compliance-checker
+pyessv
+cc-yaml @ git+https://github.com/cedadev/cc-yaml@master
+compliance-check-lib @ git+https://github.com/cedadev/compliance-check-lib@master
+cfchecker
