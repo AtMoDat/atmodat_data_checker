@@ -11,7 +11,6 @@ __contact__ = "heil@dkrz.de"
 __license__ = "Apache licence"
 
 
-
 # Populate long description setting with content of README
 #
 # Use markdown format read me file as GitHub will render it automatically
@@ -56,18 +55,13 @@ setup(
         'Topic :: System :: Systems Administration :: Authentication/Directory',
         'Topic :: Software Development :: Libraries :: Python Modules'
     ],
-    description="Compliance Check Library for AtMoDat Standard - python library of compliance checks.", 
+    description="Compliance Check Library for AtMoDat Standard - python library of compliance checks.",
 
     license=__license__,
 
     # This qualifier can be used to selectively exclude Python versions -
     # in this case early Python 2 and 3 releases
     python_requires='>=3.6.0',
-#   entry_points={
-#       'console_scripts': [
-#           'b2f=mdingestion.cli:cli',
-#       ],
-#   },
     install_requires=requirements,
     long_description=_long_description,
     long_description_content_type='text/markdown',
@@ -79,7 +73,7 @@ setup(
     test_suite='tests',
     tests_require=test_requirements,
     # extras_require={"docs": docs_requirements},
-    url='https://github.com/AtMoDat/atmodat_data_checker', 
+    url='https://github.com/AtMoDat/atmodat_data_checker',
     version=__version__,
     zip_safe=False,
 )
