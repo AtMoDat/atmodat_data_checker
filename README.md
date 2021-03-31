@@ -92,6 +92,10 @@ To run the checker on all *.nc files of a directory, use:
 ```bash
 python run_checks.py -p file_path
 ```
+To create summary of checker ouput add the ````-s```` flag, e.g.:
+```bash
+python run_checks.py -s -p file_path
+```
 For more information use `python run_checks.py --help`
 
 ## Contributors
