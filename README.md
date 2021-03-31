@@ -8,7 +8,7 @@ In addition the compliance to the CF Conventions 1.4 or higher is verified with 
 
 ## Installation (only tested on a linux machine)
 
-1. Clone this repository and update submodules (compliance-check-lib, cc-yaml and AtMoDat_CVs)
+1. Clone this repository and update submodule (AtMoDat_CVs)
 
 ```bash
 git clone https://github.com/AtMoDat/atmodat_data_checker.git
@@ -28,44 +28,14 @@ rm -f Miniconda3-latest-Linux-x86_64.sh
 3. Create conda environment and install the IOOS compliance checker via conda:
 
 ```bash
-conda create --name atmodat_data_checker -y
-conda activate atmodat_data_checker
-conda install -c conda-forge compliance-checker pip -y
+conda env create                   # environment name is retrieved from environment.yml
+conda activate atmodat
 ```
 
-4. Install pyessv:
+4. Install atmodat-checker
 
 ```bash
-pip install pyessv
-```
-
-5. Install relevant checker packages:
-
-- cc-yaml
-
-```bash
-cd cc-yaml
-# pip install --editable . --no-deps (only necessary for developers)
-pip install .
-cd ..
-```
-
-- compliance-check-lib
-
-```bash
-cd compliance-check-lib
-# pip install --editable . --no-deps (only necessary for developers)
-pip install .
-cd ..
-```
-
-- atmodat-checker
-
-```bash
-cd atmodat_data_checker
-# pip install --editable . --no-deps (only necessary for developers)
-pip install .
-cd ..
+pip install -e .
 ```
 
 5. Point `pyessv` at the "archive" where AtMoDat controlled vocabulary is stored
@@ -74,11 +44,6 @@ cd ..
 export PYESSV_ARCHIVE_HOME=$PWD/AtMoDat_CVs/pyessv-archive
 ```
 
-6. Install CF Checker
-
-```bash
-pip install cfchecker
-```
 
 ## Run tests
 
