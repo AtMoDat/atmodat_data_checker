@@ -70,6 +70,7 @@ setup(
     name="atmodat_check_lib",
     packages=find_packages(include=["atmodat_check_lib", "atmodat_check_lib.*"]),
     setup_requires=setup_requirements,
+    scripts=["run_checks.py"],
     test_suite='tests',
     tests_require=test_requirements,
     # extras_require={"docs": docs_requirements},
