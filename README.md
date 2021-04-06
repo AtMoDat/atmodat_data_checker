@@ -13,8 +13,6 @@ In addition the compliance to the CF Conventions 1.4 or higher is verified with 
 ```bash
 git clone https://github.com/AtMoDat/atmodat_data_checker.git
 cd atmodat_data_checker
-git submodule init
-git submodule update
 ```
 
 2. Install Python 3 via conda if necessary:
@@ -28,7 +26,7 @@ rm -f Miniconda3-latest-Linux-x86_64.sh
 3. Create conda environment and install the IOOS compliance checker via conda:
 
 ```bash
-conda env create                   # environment name is retrieved from environment.yml
+conda env create         # environment name is retrieved from environment.yml
 conda activate atmodat
 ```
 
@@ -51,15 +49,15 @@ This repository contains the `atmodat_standard_checker_mandatory.yml`, `atmodat_
 
 To run checkers on a single file, use:
 ```bash
-python run_checks.py -f file_to_check.nc
+run_checks.py -f file_to_check.nc
 ```
 To run the checker on all *.nc files of a directory, use:
 ```bash
-python run_checks.py -p file_path
+run_checks.py -p file_path
 ```
 To create summary of checker ouput add the ````-s```` flag, e.g.:
 ```bash
-python run_checks.py -s -p file_path
+run_checks.py -s -p file_path
 ```
 For more information use `python run_checks.py --help`
 
