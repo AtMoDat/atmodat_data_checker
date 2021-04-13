@@ -1,9 +1,11 @@
+#!/usr/bin/env python
+
 import argparse
 import os
 import time
 
-import atmodat_data_checker.result_output.output_directory as output_directory
-import atmodat_data_checker.result_output.summary_creation as summary_creation
+import atmodat_checklib.result_output.output_directory as output_directory
+import atmodat_checklib.result_output.summary_creation as summary_creation
 
 
 def run_checks(ifile_in, verbose_in):
