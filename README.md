@@ -6,7 +6,7 @@ Its core functionality is based on the [IOOS compliance checker](https://github.
 
 In addition the compliance to the CF Conventions 1.4 or higher is verified with the [CF checker](https://github.com/cedadev/cf-checker).
 
-## Installation (only tested on a linux machine)
+## Installation (tested on a Linux machines and Mac OS)
 
 1. Clone this repository and update submodule (AtMoDat_CVs)
 
