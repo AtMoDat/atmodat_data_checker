@@ -13,6 +13,8 @@ In addition the compliance to the CF Conventions 1.4 or higher is verified with 
 ```bash
 git clone https://github.com/AtMoDat/atmodat_data_checker.git
 cd atmodat_data_checker
+git submodule init
+git submodule update
 ```
 
 2. Install Python 3 via conda if necessary:
