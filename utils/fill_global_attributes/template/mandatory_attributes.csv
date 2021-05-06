@@ -1,0 +1,4 @@
+attribute,use,overwrite,string
+Conventions,false,true,
+institution,false,true,
+source,false,true,
