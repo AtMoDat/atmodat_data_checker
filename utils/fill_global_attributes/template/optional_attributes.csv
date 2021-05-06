@@ -1,0 +1,9 @@
+attribute,use,overwrite,string
+comment,false,true,
+further_info_url,false,true,
+keywords_vocabulary,false,true,
+metadata_link,false,true,
+processing_level,false,true,
+program,false,true,
+project,false,true,
+references,false,true,
