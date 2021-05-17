@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-
 import os
 import warnings
 import argparse
@@ -56,19 +55,26 @@ if __name__ == "__main__":
 
     var_att_list = var_att_in.keys()
     var_att_modify = ['long_name', 'standard_name', 'units']
+    var_olddir_list = []
     for ifile in ifile_list:
         f = Dataset(ifile, 'a')
-        for var in f.variables:
+        for var in list(f.variables):
             if var in var_att_list:
                 for att in var_att_modify:
                     if var_att_in[var][att]:
                         f.variables[var].setncattr(att, var_att_in[var][att])
                 if var_att_in[var]['var_new']:
                     f.renameVariable(var, var_att_in[var]['var_new'])
-        f.close()
         for var in var_att_list:
             if var in ifile and var_att_in[var]['var_new']:
+                var_olddir = ifile.rstrip(ifile.split('/')[-1])
+                var_olddir_list.append(var_olddir)
+                var_newdir = var_olddir.replace(var, var_att_in[var]['var_new'])
+                if not os.path.isdir(var_newdir):
+                    os.makedirs(var_newdir)
                 ifile_new = ifile.replace(var, var_att_in[var]['var_new'])
                 os.rename(ifile, ifile_new)
+    for olddir in set(var_olddir_list):
+        os.rmdir(olddir)
+                
     exit()
-
