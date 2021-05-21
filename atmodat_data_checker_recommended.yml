@@ -50,6 +50,10 @@ checks:
     parameters: {"attribute": "title", "type": str, "status": "recommended"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
 
+  - check_id: "vertical_resolution_attribute_type_check"
+    parameters: {"attribute": "geospatial_vertical_resolution", "type": str, "status": "recommended"}
+    check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
+
   # 2. CV Checks
 
   - check_id: "frequency_attribute_check"
@@ -81,10 +85,5 @@ checks:
 
   - check_id: "global_attribute_resolution_format_check_lon_resolution"
     parameters: {"attribute": "geospatial_lon_resolution",
-                 "status": "recommended"}
-    check_name: "atmodat_checklib.register.GobalAttrResolutionFormatCheck"
-
-  - check_id: "global_attribute_resolution_format_check_vertical_resolution"
-    parameters: {"attribute": "geospatial_vertical_resolution",
                  "status": "recommended"}
     check_name: "atmodat_checklib.register.GobalAttrResolutionFormatCheck"
