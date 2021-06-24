@@ -7,7 +7,7 @@ A register of checks for NetCDF4 files.
 """
 
 from netCDF4 import Dataset
-from compliance_checker.base import Result
+from compliance_checker.base import Result, BaseCheck
 from checklib.register.callable_check_base import CallableCheckBase
 from atmodat_checklib.utils import nc_util
 from atmodat_checklib.utils.ess_vocabs_utils import ESSVocabsAtmodat
@@ -21,6 +21,13 @@ class NCFileCheckBase(CallableCheckBase):
         if not isinstance(primary_arg, Dataset):
             raise FileError("Object for testing is not a netCDF4 Dataset: {}".format(str(primary_arg)))
 
+    def _atmodat_status_to_level(self, status):
+        # jkretz: At the momement, low-level checks are not outputed by the IOOS compliance checker.
+        # The weight of the low-level checks is set to 4 (BaseCheck.HIGH+BaseCheck.LOW) to circumvent this
+        atmodat_status = {'mandatory': BaseCheck.HIGH, 'recommended': BaseCheck.MEDIUM,
+                          'optional': BaseCheck.HIGH+BaseCheck.LOW}
+        self.level = atmodat_status[status]
+
 
 class CFConventionsVersionCheck(NCFileCheckBase):
     """
@@ -33,6 +40,7 @@ class CFConventionsVersionCheck(NCFileCheckBase):
                          "Invald CF Convention version number in '{attribute}' global attribute"]
 
     def _get_result(self, primary_arg):
+        self._atmodat_status_to_level(self.kwargs["status"])
         ds = primary_arg
 
         cf_min_version = 1.4
@@ -59,6 +67,7 @@ class GobalAttrResolutionFormatCheck(NCFileCheckBase):
                          "'{status}' '{attribute}' No valid value+unit combination (invalid unit)"]
 
     def _get_result(self, primary_arg):
+        self._atmodat_status_to_level(self.kwargs["status"])
         ds = primary_arg
 
         score = nc_util.check_global_attribute_resolution_format(ds, self.kwargs["attribute"])
@@ -81,9 +90,9 @@ class GlobalAttrTypeCheck(NCFileCheckBase):
     message_templates = ["'{status}' '{attribute}' global attribute is not present.",
                          "'{status}' '{attribute}' global attribute value does not match "
                          "type '{type}'."]
-    level = "HIGH"
 
     def _get_result(self, primary_arg):
+        self._atmodat_status_to_level(self.kwargs["status"])
         ds = primary_arg
 
         score = nc_util.check_global_attr_type(ds, self.kwargs["attribute"], self.kwargs["type"],)
@@ -105,9 +114,9 @@ class DateISO8601Check(NCFileCheckBase):
     required_args = ['attribute']
     message_templates = ["'{status}' '{attribute}' global attribute is not present.",
                          "'{status}' '{attribute}' global attribute value does not match ISO8601"]
-    level = "HIGH"
 
     def _get_result(self, primary_arg):
+        self._atmodat_status_to_level(self.kwargs["status"])
         ds = primary_arg
 
         score = nc_util.check_global_attr_iso8601(ds, self.kwargs["attribute"])
@@ -130,9 +139,9 @@ class GlobalAttrVocabCheckByStatus(NCFileCheckBase):
     required_args = ['attribute', 'status']
     message_templates = ["'{status}' '{attribute}' global attribute is not present.",
                          "'{status}' '{attribute}' global attribute value is invalid."]
-    level = "HIGH"
 
     def _get_result(self, primary_arg):
+        self._atmodat_status_to_level(self.kwargs["status"])
         ds = primary_arg
         vocabs = ESSVocabsAtmodat(*self.vocabulary_ref.split(":")[:2])
 
