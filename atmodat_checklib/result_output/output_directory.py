@@ -32,7 +32,7 @@ def return_files_in_directory_tree(input_path):
 
 def create_directories():
     # Types of checks to be performed
-    check_types = ["mandatory", "recommended", "optional", "CF"]
+    check_types = ["atmodat", "CF"]
     # Create directory to store output from checker if it does not exist already
     if not os.path.isdir(opath):
         os.makedirs(opath)

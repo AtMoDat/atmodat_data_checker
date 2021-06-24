@@ -2,9 +2,8 @@
 
 import json
 import os
-
+from atmodat_checklib import __version__
 import pandas as pd
-
 import atmodat_checklib.result_output.output_directory as output_directory
 
 
@@ -41,30 +40,12 @@ def extract_overview_output_json(ifile_in):
         data = json.load(f)
 
         # define keys and create empty directory
-        summary_keys = ['source_name', 'testname', 'scored_points', 'possible_points', 'msgs']
+        summary_keys = ['source_name', 'testname', 'high_priorities', 'medium_priorities', 'low_priorities']
         summary = {key: None for key in summary_keys}
 
         # extract information from json file
-        for sum_key in summary_keys[:-1]:
+        for sum_key in summary_keys:
             summary[sum_key] = extract_from_nested_json(data, sum_key)[0]
-
-        # if scored points unequal possible points
-        if summary[summary_keys[2]] != summary[summary_keys[3]]:
-            summary[summary_keys[4]] = extract_from_nested_json(data, summary_keys[4])
-            # remove empty lists
-            summary[summary_keys[4]] = [x for x in summary[summary_keys[4]] if x != []]
-            # make lists into strings
-            summary[summary_keys[4]] = [x[0] for x in summary[summary_keys[4]]]
-            summary[summary_keys[4]] = ', '.join(
-                [str(elem) for elem in summary[summary_keys[4]]])
-            # remove "'" from strings
-            summary[summary_keys[4]] = summary[summary_keys[4]].replace("'", "")
-        else:
-            # delete file if no errors occurred
-            delete_file(ifile_in)
-
-        # reformat name of performed test to only get mandatory, recommended or optional
-        summary[summary_keys[1]] = summary[summary_keys[1]].split("_")[-1].split(':')[0]
 
     return summary
 
@@ -81,29 +62,30 @@ def extracts_error_summary_cf_check(ifile_in):
 
 def write_short_summary(json_summary, cf_errors, file_counter):
     """create file which contains the short version of the summary"""
-    # sum scored and possible points over output from all tested data files
-    scored_points = [str(int(json_summary['scored_points'].sum()))]
-    possible_points = [str(int(json_summary['possible_points'].sum()))]
 
-    check_types = ["mandatory", "recommended", "optional"]
+    prio_dict = {'high_priorities': 'Mandatory', 'medium_priorities': 'Recommended', 'low_priorities': 'Optional'}
+    passed_checks = {'all': [0, 0]}
+    for prio in prio_dict.keys():
+        passed_checks[prio] = [0, 0]
+        checks_prio = json_summary[prio]
+        for checks in checks_prio:
+            for check in checks:
+                passed_checks[prio][0] += 1
+                passed_checks['all'][0] += 1
+                if check['value'][0] == check['value'][1]:
+                    passed_checks[prio][1] += 1
+                    passed_checks['all'][1] += 1
 
     # write summary of results into summary file
     with open(output_directory.opath + 'short_summary.txt', 'w+') as f:
         f.write("This is a short summary of the results from the atmodat data checker. \n")
-        f.write("Version of the checker: " + str(1.0) + "\n \n")
+        f.write("Version of the checker: " + str(__version__) + "\n")
+        f.write("Checking against: " + json_summary['testname'][0] + "\n \n")
         f.write("Number of checked files: " + str(file_counter) + '\n \n')
-        f.write("Total scored points: " + scored_points[0] + '/' + possible_points[0] + '\n')
-
-        for index, check in enumerate(check_types):
-            # sum scored and possible points over output in different categories
-            scored_points.append(str(
-                int(json_summary['scored_points'].loc[json_summary['testname'] == check].sum())))
-            possible_points.append(str(int(
-                json_summary['possible_points'].loc[json_summary['testname'] == check].sum())))
-            f.write("Total scored " + check + " points: " + scored_points[index + 1] + '/'
-                    + possible_points[index + 1] + '\n')
-
-        f.write("Total number CF checker errors: " + str(cf_errors))
+        f.write("Total checks passed: " + str(passed_checks['all'][1]) + '/' + str(passed_checks['all'][0]) + '\n')
+        for prio in prio_dict.keys():
+            f.write(prio_dict[prio]+" checks passed: " + str(passed_checks[prio][1]) + '/' + str(passed_checks[prio][0]) + '\n')
+        f.write("CF checker errors: " + str(cf_errors))
 
 
 def write_detailed_json_summary(json_summary):
@@ -127,4 +109,6 @@ def create_output_summary(file_counter):
             cf_errors = cf_errors + int(extracts_error_summary_cf_check(file))
 
     write_short_summary(json_summary, cf_errors, file_counter)
-    write_detailed_json_summary(json_summary)
+    
+    # This is disabled for now
+    # write_detailed_json_summary(json_summary)
