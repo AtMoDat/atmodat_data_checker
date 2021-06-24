@@ -84,7 +84,8 @@ def write_short_summary(json_summary, cf_errors, file_counter):
         f.write("Number of checked files: " + str(file_counter) + '\n \n')
         f.write("Total checks passed: " + str(passed_checks['all'][1]) + '/' + str(passed_checks['all'][0]) + '\n')
         for prio in prio_dict.keys():
-            f.write(prio_dict[prio]+" checks passed: " + str(passed_checks[prio][1]) + '/' + str(passed_checks[prio][0]) + '\n')
+            f.write(prio_dict[prio] + " checks passed: " + str(passed_checks[prio][1]) + '/'
+                    + str(passed_checks[prio][0]) + '\n')
         f.write("CF checker errors: " + str(cf_errors))
 
 
@@ -109,6 +110,5 @@ def create_output_summary(file_counter):
             cf_errors = cf_errors + int(extracts_error_summary_cf_check(file))
 
     write_short_summary(json_summary, cf_errors, file_counter)
-    
     # This is disabled for now
     # write_detailed_json_summary(json_summary)

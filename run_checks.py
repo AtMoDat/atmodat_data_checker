@@ -15,13 +15,12 @@ def run_checks(ifile_in, verbose_in):
     filename_base = ifile_in.split("/")[-1].rstrip('.nc')
 
     # AtMoDat-Checker
-    os.system(
-            'cchecker.py --y ' + output_directory.opath_base
-            + '/atmodat_standard_checks.yml -f json_new -o ' + output_directory.opath + '/atmodat/' + filename_base +
-            '_result.json --test atmodat_standard:3.0 ' + ifile_in)
+    os.system('cchecker.py --y ' + output_directory.opath_base + '/atmodat_standard_checks.yml -f json_new -o '
+              + output_directory.opath + '/atmodat/' + filename_base + '_result.json --test atmodat_standard:3.0 '
+              + ifile_in)
     if verbose_in:
-        os.system('cchecker.py --y ' + output_directory.opath_base +
-                  '/atmodat_standard_checks.yml --test atmodat_standard:3.0 ' + ifile_in)
+        os.system('cchecker.py --y ' + output_directory.opath_base
+                  + '/atmodat_standard_checks.yml --test atmodat_standard:3.0 ' + ifile_in)
 
     # CF-Checker
     os.system(

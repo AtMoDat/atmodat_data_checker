@@ -25,7 +25,7 @@ class NCFileCheckBase(CallableCheckBase):
         # jkretz: At the momement, low-level checks are not outputed by the IOOS compliance checker.
         # The weight of the low-level checks is set to 4 (BaseCheck.HIGH+BaseCheck.LOW) to circumvent this
         atmodat_status = {'mandatory': BaseCheck.HIGH, 'recommended': BaseCheck.MEDIUM,
-                          'optional': BaseCheck.HIGH+BaseCheck.LOW}
+                          'optional': BaseCheck.HIGH + BaseCheck.LOW}
         self.level = atmodat_status[status]
 
 
