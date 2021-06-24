@@ -28,4 +28,5 @@ jobs:
           VALIDATE_JSCPD: false
           VALIDATE_MARKDOWN: false
           VALIDATE_PYTHON_ISORT: false
-	  VALIDATE_PYTHON_MYPY: false
+          VALIDATE_PYTHON_MYPY: false
+
