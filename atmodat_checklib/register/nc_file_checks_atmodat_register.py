@@ -30,7 +30,7 @@ class CFConventionsVersionCheck(NCFileCheckBase):
     defaults = {}
     required_args = ['attribute']
     message_templates = ["'{status}' '{attribute}' global attribute is not present.",
-                         "Invald CF Convention version number in '{attribute}' global attribute"]
+                         "Invalid CF Convention version number in '{attribute}' global attribute"]
 
     def _get_result(self, primary_arg):
         ds = primary_arg
