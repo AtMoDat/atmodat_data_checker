@@ -32,8 +32,8 @@ conda env create         # environment name is retrieved from environment.yml
 conda activate atmodat
 ```
 
-4. Install atmodat-checker
-
+4. Install atmodat-checker 
+   (also use this command to update your local atmodat-checker installation after you e.g. git cloned a new branch of the checker) 
 ```bash
 pip install -e .
 ```
