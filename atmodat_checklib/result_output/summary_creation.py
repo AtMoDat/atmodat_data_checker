@@ -1,7 +1,7 @@
 """module to create summary of results from output of atmodat data checker"""
 
 import json
-import os, sys
+import os
 import pandas as pd
 
 import atmodat_checklib.result_output.output_directory as output_directory
@@ -81,9 +81,9 @@ def extracts_error_summary_cf_check(ifile_in):
 def write_short_summary(json_summary, cf_errors, file_counter, opath):
     """create file which contains the short version of the summary"""
     # sum scored and possible points over output from all tested data files
-    scored_points = [str(int(json_summary['scored_points'].sum()))]
-    possible_points = [str(int(json_summary['possible_points'].sum()))]
-
+    if isinstance(json_summary, pd.DataFrame):
+        scored_points = [str(int(json_summary['scored_points'].sum()))]
+        possible_points = [str(int(json_summary['possible_points'].sum()))]
     check_types = ["mandatory", "recommended", "optional"]
 
     # write summary of results into summary file
@@ -91,18 +91,18 @@ def write_short_summary(json_summary, cf_errors, file_counter, opath):
         f.write("Short summary of atmodat data checker result. \n")
         f.write("Version of the checker: " + str(1.0) + "\n \n")
         f.write("Number of checked files: " + str(file_counter) + '\n \n')
-        f.write("Total scored points: " + scored_points[0] + '/' + possible_points[0] + '\n')
-
-        for index, check in enumerate(check_types):
-            # sum scored and possible points over output in different categories
-            scored_points.append(str(
-                int(json_summary['scored_points'].loc[json_summary['testname'] == check].sum())))
-            possible_points.append(str(int(
-                json_summary['possible_points'].loc[json_summary['testname'] == check].sum())))
-            f.write("Total scored " + check + " points: " + scored_points[index + 1] + '/'
-                    + possible_points[index + 1] + '\n')
-
-        f.write("Total number CF checker errors: " + str(cf_errors))
+        if isinstance(json_summary, pd.DataFrame):
+            f.write("Total scored points: " + scored_points[0] + '/' + possible_points[0] + '\n')
+            for index, check in enumerate(check_types):
+                # sum scored and possible points over output in different categories
+                scored_points.append(str(
+                    int(json_summary['scored_points'].loc[json_summary['testname'] == check].sum())))
+                possible_points.append(str(int(
+                    json_summary['possible_points'].loc[json_summary['testname'] == check].sum())))
+                f.write("Total scored " + check + " points: " + scored_points[index + 1] + '/'
+                        + possible_points[index + 1] + '\n')
+        if cf_errors is not None:
+            f.write("Total number CF checker errors: " + str(cf_errors))
 
 
 def write_detailed_json_summary(json_summary, opath):
@@ -113,17 +113,27 @@ def write_detailed_json_summary(json_summary, opath):
         json_summary.to_csv(f, index=False, header=True, sep=',')
 
 
-def create_output_summary(file_counter, opath):
+def create_output_summary(file_counter, opath, check_types_in):
     """main function to create summary output"""
-    json_summary = pd.DataFrame()
-    cf_errors = 0
+
+    if 'mandatory' in check_types_in or 'recommended' in check_types_in or 'optional' in check_types_in:
+        json_summary = pd.DataFrame()
+    else:
+        json_summary = None
+
+    if 'CF' in check_types_in:
+        cf_errors = 0
+    else:
+        cf_errors = None
+
     files = output_directory.return_files_in_directory_tree(opath)
     for file in files:
-        if file.endswith("_result.json"):
+        if file.endswith("_result.json") and isinstance(json_summary, pd.DataFrame):
             json_summary = json_summary.append(extract_overview_output_json(file),
                                                ignore_index=True)
-        elif file.endswith("_cfchecks_result.txt"):
+        elif file.endswith("_cfchecks_result.txt") and cf_errors:
             cf_errors = cf_errors + int(extracts_error_summary_cf_check(file))
 
     write_short_summary(json_summary, cf_errors, file_counter, opath)
-    write_detailed_json_summary(json_summary, opath)
+    if isinstance(json_summary, pd.DataFrame):
+        write_detailed_json_summary(json_summary, opath)

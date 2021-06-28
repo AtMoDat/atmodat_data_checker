@@ -2,6 +2,7 @@
 
 import os
 
+
 def create_directories(opath, check_types):
     # Create directory to store output from checker if it does not exist already
     if not os.path.isdir(opath):
@@ -18,5 +19,3 @@ def return_files_in_directory_tree(input_path):
             file_names.append(os.path.join(root, f))
 
     return file_names
-
-
