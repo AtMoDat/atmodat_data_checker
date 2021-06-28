@@ -10,7 +10,7 @@ import atmodat_checklib.result_output.summary_creation as summary_creation
 idiryml = str(Path(__file__).resolve().parents[0])
 
 
-def run_checks(ifile_in, verbose_in, check_types_in):
+def run_checks(ifile_in, verbose_in, check_types_in, cfversion_in):
     """run all checks"""
     # Get base filename and output path
     filename_base = ifile_in.split("/")[-1].rstrip('.nc')
@@ -29,10 +29,10 @@ def run_checks(ifile_in, verbose_in, check_types_in):
                           + check + ':1.0 ' + ifile_in)
         else:
             os.system(
-                'cfchecks -v ' + cfversion + ' ' + ifile_in + '>> ' + opath + '/CF/' + filename_base
+                'cfchecks -v ' + cfversion_in + ' ' + ifile_in + '>> ' + opath + '/CF/' + filename_base
                 + '_cfchecks_result.txt')
             if verbose_in:
-                os.system('cfchecks -v ' + cfversion + ' ' + ifile_in)
+                os.system('cfchecks -v ' + cfversion_in + ' ' + ifile_in)
     return
 
 
@@ -122,7 +122,7 @@ if __name__ == "__main__":
     file_counter = 0
     if ifile and not ipath:
         if ifile.endswith(".nc"):
-            run_checks(ifile, verbose, check_types)
+            run_checks(ifile, verbose, check_types, cfversion)
             file_counter = file_counter + 1
         else:
             print('Skipping ' + ifile + ' as it does not end with ".nc'"")
@@ -130,7 +130,7 @@ if __name__ == "__main__":
         files = output_directory.return_files_in_directory_tree(ipath)
         for file in files:
             if file.endswith(".nc"):
-                run_checks(file, verbose, check_types)
+                run_checks(file, verbose, check_types, cfversion)
                 file_counter = file_counter + 1
 
     # Create summary of results if specified
