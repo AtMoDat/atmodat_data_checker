@@ -60,55 +60,59 @@ def extracts_error_summary_cf_check(ifile_in):
                 return line.split(':')[-1].strip()
 
 
-def write_short_summary(json_summary, cf_errors, file_counter):
+def write_short_summary(json_summary, cf_errors, file_counter, opath):
     """create file which contains the short version of the summary"""
-
     prio_dict = {'high_priorities': 'Mandatory', 'medium_priorities': 'Recommended', 'low_priorities': 'Optional'}
     passed_checks = {'all': [0, 0]}
-    for prio in prio_dict.keys():
-        passed_checks[prio] = [0, 0]
-        checks_prio = json_summary[prio]
-        for checks in checks_prio:
-            for check in checks:
-                passed_checks[prio][0] += 1
-                passed_checks['all'][0] += 1
-                if check['value'][0] == check['value'][1]:
-                    passed_checks[prio][1] += 1
-                    passed_checks['all'][1] += 1
+    if isinstance(json_summary, pd.DataFrame):
+        for prio in prio_dict.keys():
+            passed_checks[prio] = [0, 0]
+            checks_prio = json_summary[prio]
+            for checks in checks_prio:
+                for check in checks:
+                    passed_checks[prio][0] += 1
+                    passed_checks['all'][0] += 1
+                    if check['value'][0] == check['value'][1]:
+                        passed_checks[prio][1] += 1
+                        passed_checks['all'][1] += 1
 
     # write summary of results into summary file
-    with open(output_directory.opath + 'short_summary.txt', 'w+') as f:
+    with open(opath + '/short_summary.txt', 'w+') as f:
         f.write("This is a short summary of the results from the atmodat data checker. \n")
         f.write("Version of the checker: " + str(__version__) + "\n")
-        f.write("Checking against: " + json_summary['testname'][0] + "\n \n")
+        if isinstance(json_summary, pd.DataFrame):
+            f.write("Checking against: " + json_summary['testname'][0] + "\n \n")
         f.write("Number of checked files: " + str(file_counter) + '\n \n')
-        f.write("Total checks passed: " + str(passed_checks['all'][1]) + '/' + str(passed_checks['all'][0]) + '\n')
-        for prio in prio_dict.keys():
-            f.write(prio_dict[prio] + " checks passed: " + str(passed_checks[prio][1]) + '/'
-                    + str(passed_checks[prio][0]) + '\n')
-        f.write("CF checker errors: " + str(cf_errors))
+        if isinstance(json_summary, pd.DataFrame):
+            f.write("Total checks passed: " + str(passed_checks['all'][1]) + '/' + str(passed_checks['all'][0]) + '\n')
+            for prio in prio_dict.keys():
+                f.write(prio_dict[prio] + " checks passed: " + str(passed_checks[prio][1]) + '/'
+                        + str(passed_checks[prio][0]) + '\n')
+        if cf_errors is not None:
+            f.write("CF checker errors: " + str(cf_errors))
 
 
-def write_detailed_json_summary(json_summary):
-    """write detailed summary of results into summary file"""
-    with open(output_directory.opath + 'detailed_summary.csv', 'w+') as f:
-        f.write("This is a detailed summary of the results from the atmodat data checker. \n")
-        f.write("Version of the checker: " + str(1.0) + "\n \n")
-        json_summary.to_csv(f, index=False, header=True, sep=',')
-
-
-def create_output_summary(file_counter):
+def create_output_summary(file_counter, opath, check_types_in):
     """main function to create summary output"""
-    json_summary = pd.DataFrame()
-    cf_errors = 0
-    files = output_directory.return_files_in_directory_tree(output_directory.opath)
+
+    if 'atmodat' in check_types_in:
+        json_summary = pd.DataFrame()
+    else:
+        json_summary = None
+
+    if 'CF' in check_types_in:
+        cf_errors = 0
+    else:
+        cf_errors = None
+
+    files = output_directory.return_files_in_directory_tree(opath)
     for file in files:
-        if file.endswith("_result.json"):
+        if file.endswith("_result.json") and isinstance(json_summary, pd.DataFrame):
             json_summary = json_summary.append(extract_overview_output_json(file),
                                                ignore_index=True)
-        elif file.endswith("_cfchecks_result.txt"):
+        elif file.endswith("_cfchecks_result.txt") and cf_errors:
             cf_errors = cf_errors + int(extracts_error_summary_cf_check(file))
 
-    write_short_summary(json_summary, cf_errors, file_counter)
-    # This is disabled for now
-    # write_detailed_json_summary(json_summary)
+    write_short_summary(json_summary, cf_errors, file_counter, opath)
+    # TODO: Reimplemnt detailed output
+    return
