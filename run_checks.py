@@ -75,15 +75,15 @@ if __name__ == "__main__":
     verbose = args.verbose
     ifile = args.file
     ipath = args.path
-    opaths = args.opath
+    opath_in = args.opath
     cfversion = args.cfversion
     whatchecks = args.whatchecks
     parsed_summary = args.summary
 
     # Define output path for checker output
-    if opaths:
+    if opath_in:
         # user-defined path
-        opath = opaths
+        opath = opath_in
     else:
         # default path with subdirectory containing timestamp of check
         opathe = start_time.now().strftime("%Y%m%d_%H%M") + '/'
