@@ -101,7 +101,7 @@ if __name__ == "__main__":
 
     # Check that either ifile or ipath exist
     if not ifile and not ipath:
-        raise AssertionError('No file and path given')
+        raise RuntimeError('No file and path given')
 
     check_types = ['atmodat', 'CF']
     if whatchecks == 'CF':
