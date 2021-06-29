@@ -27,7 +27,7 @@ checks:
   # Check if CF-Conventions Version is 1.4 or greater
 
   - check_id: "cf_conventions_version_check"
-    parameters: {"attribute": "Conventions", "type": str, "status": "mandatory"}
+    parameters: {"attribute": "Conventions", "cf_min_version": 1.4, "status": "mandatory"}
     check_name: "atmodat_checklib.register.CFConventionsVersionCheck"
 
   ####################################### Recommended checks #######################################

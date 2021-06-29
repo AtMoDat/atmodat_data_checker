@@ -119,9 +119,9 @@ def write_long_summary(json_summary_in, opath_in):
                         for key in data_table[prio_cat].keys():
                             data_table[prio_cat][key].append('')
                     data_table[prio_cat]['File'].append(file_name)
-                    msgs = check['msgs'][0].split("' ")
-                    data_table[prio_cat]['Global Attribute'].append(msgs[1].replace("'", ""))
-                    data_table[prio_cat]['Error Message'].append(msgs[2].replace(".", ""))
+                    msgs = check['msgs'][0].split("'")
+                    data_table[prio_cat]['Global Attribute'].append(msgs[1])
+                    data_table[prio_cat]['Error Message'].append(msgs[2].lstrip())
                     data_table[prio_cat]['Check level'].append(prio_dict[prio_cat])
                     file_name_old = file_name
 

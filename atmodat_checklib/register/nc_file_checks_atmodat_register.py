@@ -31,20 +31,19 @@ class NCFileCheckBase(CallableCheckBase):
 
 class CFConventionsVersionCheck(NCFileCheckBase):
     """
-    The version number of CF-Conventions in the global attribute '{attribute}' must be 1.4 or greater.
+    The version number of CF-Conventions in the global attribute '{attribute}' must be greater than given value.
     """
-    short_name = "CF-Conventions version 1.4 or greater"
+    short_name = "CF-Conventions greater than given value"
     defaults = {}
-    required_args = ['attribute']
-    message_templates = ["'{status}' '{attribute}' global attribute is not present.",
-                         "Invalid CF Convention version number in '{attribute}' global attribute"]
+    required_args = ['attribute', 'cf_min_version']
+    message_templates = ["'{attribute}' global attribute is not present",
+                         "'{attribute}' Invalid CF Convention version number"]
 
     def _get_result(self, primary_arg):
         self._atmodat_status_to_level(self.kwargs["status"])
         ds = primary_arg
 
-        cf_min_version = 1.4
-        score = nc_util.check_cfconventions_version_number(ds, self.kwargs["attribute"], cf_min_version)
+        score = nc_util.check_cfconventions_version_number(ds, self.kwargs["attribute"], self.kwargs["cf_min_version"])
         messages = []
 
         if score < self.out_of:
@@ -61,10 +60,10 @@ class GobalAttrResolutionFormatCheck(NCFileCheckBase):
     short_name = "Global attribute: {attribute} format check"
     defaults = {}
     required_args = ['attribute']
-    message_templates = ["'{status}' '{attribute}' global attribute is not present.",
-                         "'{status}' '{attribute}' No valid value+unit combination (missing value)",
-                         "'{status}' '{attribute}' No valid value+unit combination (missing unit)",
-                         "'{status}' '{attribute}' No valid value+unit combination (invalid unit)"]
+    message_templates = ["'{attribute}' global attribute is not present.",
+                         "'{attribute}' No valid value+unit combination (missing value)",
+                         "'{attribute}' No valid value+unit combination (missing unit)",
+                         "'{attribute}' No valid value+unit combination (invalid unit)"]
 
     def _get_result(self, primary_arg):
         self._atmodat_status_to_level(self.kwargs["status"])
@@ -87,9 +86,8 @@ class GlobalAttrTypeCheck(NCFileCheckBase):
     short_name = "Global attribute: {attribute}"
     defaults = {}
     required_args = ['attribute', 'type', 'status']
-    message_templates = ["'{status}' '{attribute}' global attribute is not present.",
-                         "'{status}' '{attribute}' global attribute value does not match "
-                         "type '{type}'."]
+    message_templates = ["'{attribute}' global attribute is not present",
+                         "'{attribute}' global attribute value does not match type '{type}'"]
 
     def _get_result(self, primary_arg):
         self._atmodat_status_to_level(self.kwargs["status"])
@@ -112,8 +110,8 @@ class DateISO8601Check(NCFileCheckBase):
     short_name = "Global attribute: {attribute}"
     defaults = {}
     required_args = ['attribute']
-    message_templates = ["'{status}' '{attribute}' global attribute is not present.",
-                         "'{status}' '{attribute}' global attribute value does not match ISO8601"]
+    message_templates = ["'{attribute}' global attribute is not present",
+                         "'{attribute}' global attribute value does not match ISO8601"]
 
     def _get_result(self, primary_arg):
         self._atmodat_status_to_level(self.kwargs["status"])
@@ -137,8 +135,8 @@ class GlobalAttrVocabCheckByStatus(NCFileCheckBase):
     short_name = "Global attribute: {attribute}"
     defaults = {"vocab_lookup": "canonical_name"}
     required_args = ['attribute', 'status']
-    message_templates = ["'{status}' '{attribute}' global attribute is not present.",
-                         "'{status}' '{attribute}' global attribute value is invalid."]
+    message_templates = ["'{attribute}' global attribute is not present",
+                         "'{attribute}' global attribute value is invalid"]
 
     def _get_result(self, primary_arg):
         self._atmodat_status_to_level(self.kwargs["status"])
