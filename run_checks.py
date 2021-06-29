@@ -14,19 +14,16 @@ def run_checks(ifile_in, verbose_in, check_types_in, cfversion_in):
     """run all checks"""
     # Get base filename and output path
     filename_base = ifile_in.split("/")[-1].rstrip('.nc')
-
-    # Run checks
     for check in check_types_in:
         if check != 'CF':
             os.system(
                 'cchecker.py --y ' + idiryml
-                + '/atmodat_data_checker_' + check + '.yml -f json_new -o ' + opath
+                + '/atmodat_standard_checks.yml -f json_new -o ' + opath
                 + '/' + check + '/' + filename_base + '_' + check
-                + '_result.json --test atmodat_data_checker_' + check + ':1.0 ' + ifile_in)
+                + '_result.json --test atmodat_standard:3.0 ' + ifile_in)
             if verbose_in:
                 os.system('cchecker.py --y ' + idiryml
-                          + '/atmodat_data_checker_ ' + check + '.yml --test atmodat_data_checker_'
-                          + check + ':1.0 ' + ifile_in)
+                          + '/atmodat_standard_checks.yml --test atmodat_standard:3.0 ' + ifile_in)
         else:
             os.system(
                 'cfchecks -v ' + cfversion_in + ' ' + ifile_in + '>> ' + opath + '/CF/' + filename_base
@@ -66,10 +63,9 @@ def command_line_parse():
 
 if __name__ == "__main__":
 
-    # Types of ATMODAT checks to be performed
-    atcheck_types = ["mandatory", "recommended", "optional"]
     # record start time
     start_time = datetime.now()
+
     # read command line input
     args = command_line_parse()
     verbose = args.verbose
@@ -105,15 +101,13 @@ if __name__ == "__main__":
 
     # Check that either ifile or ipath exist
     if not ifile and not ipath:
-        raise AssertionError('No file and path given')
+        raise RuntimeError('No file and path given')
 
+    check_types = ['atmodat', 'CF']
     if whatchecks == 'CF':
-        check_types = ['CF']
+        check_types.remove('atmodat')
     elif whatchecks == 'AT':
-        check_types = atcheck_types
-    else:
-        check_types = atcheck_types
-        check_types.append('CF')
+        check_types.remove('CF')
 
     # Create directory for checker output
     output_directory.create_directories(opath, check_types)

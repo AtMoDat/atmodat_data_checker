@@ -21,5 +21,7 @@ def return_files_in_directory_tree(input_path):
     for root, d_names, f_names in os.walk(input_path):
         for f in f_names:
             file_names.append(os.path.join(root, f))
+    if not file_names:
+        raise RuntimeError('Given direcotry contains no netCDF files')
 
     return file_names

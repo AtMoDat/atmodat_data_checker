@@ -2,9 +2,11 @@
 
 import json
 import os
+from atmodat_checklib import __version__
 import pandas as pd
-
 import atmodat_checklib.result_output.output_directory as output_directory
+import datetime
+import csv
 
 
 def delete_file(file):
@@ -40,87 +42,107 @@ def extract_overview_output_json(ifile_in):
         data = json.load(f)
 
         # define keys and create empty directory
-        summary_keys = ['source_name', 'testname', 'scored_points', 'possible_points', 'msgs']
+        summary_keys = ['source_name', 'testname', 'high_priorities', 'medium_priorities', 'low_priorities']
         summary = {key: None for key in summary_keys}
 
         # extract information from json file
-        for sum_key in summary_keys[:-1]:
+        for sum_key in summary_keys:
             summary[sum_key] = extract_from_nested_json(data, sum_key)[0]
-
-        # if scored points unequal possible points
-        if summary[summary_keys[2]] != summary[summary_keys[3]]:
-            summary[summary_keys[4]] = extract_from_nested_json(data, summary_keys[4])
-            # remove empty lists
-            summary[summary_keys[4]] = [x for x in summary[summary_keys[4]] if x != []]
-            # make lists into strings
-            summary[summary_keys[4]] = [x[0] for x in summary[summary_keys[4]]]
-            summary[summary_keys[4]] = ', '.join(
-                [str(elem) for elem in summary[summary_keys[4]]])
-            # remove "'" from strings
-            summary[summary_keys[4]] = summary[summary_keys[4]].replace("'", "")
-        else:
-            # delete file if no errors occurred
-            delete_file(ifile_in)
-
-        # reformat name of performed test to only get mandatory, recommended or optional
-        summary[summary_keys[1]] = summary[summary_keys[1]].split("_")[-1].split(':')[0]
+        summary['file'] = ifile_in
 
     return summary
 
 
-def extracts_error_summary_cf_check(ifile_in):
+def extracts_error_summary_cf_check(ifile_in, errors_in):
     """extracts information from given txt file and returns them as a string"""
-    substr = 'ERRORS detected:'
+    std_name = 'Using Standard Name Table Version '
     with open(ifile_in) as f:
         data = f.read()
         for line in data.strip().split('\n'):
-            if substr in line:
-                return line.split(':')[-1].strip()
+            if std_name in line:
+                std_name_table_out = line.replace(std_name, '').split(' ')[0]
+            if 'ERRORS detected:' in line:
+                errors_detected = errors_in + int(line.split(':')[-1].strip())
+    return errors_detected, std_name_table_out
 
 
-def write_short_summary(json_summary, cf_errors, file_counter, opath):
+def write_short_summary(json_summary, cf_errors, file_counter, std_name_table_in, opath_in):
     """create file which contains the short version of the summary"""
-    # sum scored and possible points over output from all tested data files
+    prio_dict = {'high_priorities': 'Mandatory', 'medium_priorities': 'Recommended', 'low_priorities': 'Optional'}
+    passed_checks = {'all': [0, 0]}
     if isinstance(json_summary, pd.DataFrame):
-        scored_points = [str(int(json_summary['scored_points'].sum()))]
-        possible_points = [str(int(json_summary['possible_points'].sum()))]
-    check_types = ["mandatory", "recommended", "optional"]
+        for prio in prio_dict.keys():
+            passed_checks[prio] = [0, 0]
+            checks_prio = json_summary[prio]
+            for checks in checks_prio:
+                for check in checks:
+                    passed_checks[prio][0] += 1
+                    passed_checks['all'][0] += 1
+                    if check['value'][0] == check['value'][1]:
+                        passed_checks[prio][1] += 1
+                        passed_checks['all'][1] += 1
 
     # write summary of results into summary file
-    with open(opath + '/short_summary.txt', 'w+') as f:
-        f.write("Short summary of atmodat data checker result. \n")
-        f.write("Version of the checker: " + str(1.0) + "\n \n")
-        f.write("Number of checked files: " + str(file_counter) + '\n \n')
+    with open(opath_in + '/short_summary.txt', 'w+') as f:
+        f.write("Short summary AtMoDat Data Checker: \n \n")
         if isinstance(json_summary, pd.DataFrame):
-            f.write("Total scored points: " + scored_points[0] + '/' + possible_points[0] + '\n')
-            for index, check in enumerate(check_types):
-                # sum scored and possible points over output in different categories
-                scored_points.append(str(
-                    int(json_summary['scored_points'].loc[json_summary['testname'] == check].sum())))
-                possible_points.append(str(int(
-                    json_summary['possible_points'].loc[json_summary['testname'] == check].sum())))
-                f.write("Total scored " + check + " points: " + scored_points[index + 1] + '/'
-                        + possible_points[index + 1] + '\n')
+            f.write("Checking against: " + json_summary['testname'][0] + ", CF table version: "
+                    + std_name_table_in + "\n")
+        f.write("Version of the checker: " + str(__version__) + " (Checked at: "
+                + datetime.datetime.now().isoformat() + ")" + "\n \n")
+        f.write("Number of checked files: " + str(file_counter) + '\n')
+        if isinstance(json_summary, pd.DataFrame):
+            f.write("Total checks passed: " + str(passed_checks['all'][1]) + '/' + str(passed_checks['all'][0]) + '\n')
+            for prio in prio_dict.keys():
+                f.write(prio_dict[prio] + " checks passed: " + str(passed_checks[prio][1]) + '/'
+                        + str(passed_checks[prio][0]) + '\n')
         if cf_errors is not None:
-            f.write("Total number CF checker errors: " + str(cf_errors))
+            f.write("CF checker errors: " + str(cf_errors))
 
 
-def write_detailed_json_summary(json_summary, opath):
-    """write detailed summary of results into summary file"""
-    with open(opath + '/detailed_summary.csv', 'w+') as f:
-        f.write("This is a detailed summary of the results from the atmodat data checker. \n")
-        f.write("Version of the checker: " + str(1.0) + "\n \n")
-        json_summary.to_csv(f, index=False, header=True, sep=',')
+def write_long_summary(json_summary_in, opath_in):
+    prio_cat_all = ['high_priorities', 'medium_priorities', 'low_priorities']
+    prio_dict = {'high_priorities': 'mandatory', 'medium_priorities': 'recommended', 'low_priorities': 'optional'}
+    files_check = json_summary_in['file']
+
+    data_table = {}
+    for prio_cat in prio_cat_all:
+        data_table[prio_cat] = {}
+        data_prio = json_summary_in[prio_cat]
+        data_table[prio_cat] = {'File': [], 'Check level': [], 'Global Attribute': [], 'Error Message': []}
+        file_name_old = []
+        for nf, file in enumerate(files_check):
+            file_name = file.split('/')[-1].replace('_atmodat_result.json', '.nc')
+            for check in data_prio[nf]:
+                if check['value'][0] != check['value'][1]:
+                    if file_name_old != file_name:
+                        for key in data_table[prio_cat].keys():
+                            data_table[prio_cat][key].append('')
+                    data_table[prio_cat]['File'].append(file_name)
+                    msgs = check['msgs'][0].split("'")
+                    data_table[prio_cat]['Global Attribute'].append(msgs[1])
+                    data_table[prio_cat]['Error Message'].append(msgs[2].lstrip())
+                    data_table[prio_cat]['Check level'].append(prio_dict[prio_cat])
+                    file_name_old = file_name
+
+        with open(opath_in + '/long_summary_' + prio_dict[prio_cat] + '.csv', 'w', newline='') as file:
+            writer = csv.writer(file)
+            writer.writerow(list(data_table[prio_cat].keys()))
+            for row in zip(data_table[prio_cat]['File'], data_table[prio_cat]['Check level'],
+                           data_table[prio_cat]['Global Attribute'], data_table[prio_cat]['Error Message']):
+                writer.writerow((list(row)))
+    return
 
 
 def create_output_summary(file_counter, opath, check_types_in):
     """main function to create summary output"""
 
-    if 'mandatory' in check_types_in or 'recommended' in check_types_in or 'optional' in check_types_in:
+    if 'atmodat' in check_types_in:
         json_summary = pd.DataFrame()
     else:
         json_summary = None
 
+    std_name_table = None
     if 'CF' in check_types_in:
         cf_errors = 0
     else:
@@ -131,9 +153,9 @@ def create_output_summary(file_counter, opath, check_types_in):
         if file.endswith("_result.json") and isinstance(json_summary, pd.DataFrame):
             json_summary = json_summary.append(extract_overview_output_json(file),
                                                ignore_index=True)
-        elif file.endswith("_cfchecks_result.txt") and cf_errors:
-            cf_errors = cf_errors + int(extracts_error_summary_cf_check(file))
+        elif file.endswith("_cfchecks_result.txt"):
+            cf_errors, std_name_table = extracts_error_summary_cf_check(file, cf_errors)
 
-    write_short_summary(json_summary, cf_errors, file_counter, opath)
-    if isinstance(json_summary, pd.DataFrame):
-        write_detailed_json_summary(json_summary, opath)
+    write_short_summary(json_summary, cf_errors, file_counter, std_name_table, opath)
+    write_long_summary(json_summary, opath)
+    return
