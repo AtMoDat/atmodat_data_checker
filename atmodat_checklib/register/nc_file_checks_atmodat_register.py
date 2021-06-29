@@ -29,22 +29,29 @@ class NCFileCheckBase(CallableCheckBase):
         self.level = atmodat_status[status]
 
 
-class CFConventionsVersionCheck(NCFileCheckBase):
+class ConventionsVersionCheck(NCFileCheckBase):
     """
-    The version number of CF-Conventions in the global attribute '{attribute}' must be greater than given value.
+    The version number given in the global attribute '{attribute}' must be within a valid range
     """
-    short_name = "CF-Conventions greater than given value"
+    short_name = "{convention_type} version number in valid range"
     defaults = {}
-    required_args = ['attribute', 'cf_min_version']
-    message_templates = ["'{attribute}' global attribute is not present",
-                         "'{attribute}' Invalid CF Convention version number"]
+    required_args = ['attribute', 'convention_type', 'min_version', 'max_version']
+    message_templates = ["'{attribute}' global attribute is not present", ""]
 
     def _get_result(self, primary_arg):
         self._atmodat_status_to_level(self.kwargs["status"])
         ds = primary_arg
 
-        score = nc_util.check_cfconventions_version_number(ds, self.kwargs["attribute"], self.kwargs["cf_min_version"])
+        score = nc_util.check_conventions_version_number(ds, self.kwargs["attribute"], self.kwargs["convention_type"],
+                                                         self.kwargs["min_version"], self.kwargs["max_version"])
         messages = []
+
+        if self.kwargs["convention_type"] == 'CF':
+            self.message_templates[1] = "'{attribute}' {convention_type} Convention version not in valid range of " \
+                                        "{min_version} to {max_version}"
+        elif self.kwargs["convention_type"] == 'ATMODAT':
+            self.message_templates[1] = "'{attribute}' {convention_type} Standard version given is not in accordance " \
+                                        "with performed checks"
 
         if score < self.out_of:
             messages.append(self.get_messages()[score])
@@ -81,12 +88,13 @@ class GobalAttrResolutionFormatCheck(NCFileCheckBase):
 
 class GlobalAttrTypeCheck(NCFileCheckBase):
     """
-    The global attribute '{attribute}' must have a valid type '{type}'.
+    The global attribute '{attribute}' must have a valid type '{type}' and should not be empty.
     """
     short_name = "Global attribute: {attribute}"
     defaults = {}
     required_args = ['attribute', 'type', 'status']
     message_templates = ["'{attribute}' global attribute is not present",
+                         "'{attribute}' global attribute is empty",
                          "'{attribute}' global attribute value does not match type '{type}'"]
 
     def _get_result(self, primary_arg):

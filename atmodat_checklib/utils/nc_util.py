@@ -4,14 +4,16 @@ import re
 from cfunits import Units
 
 
-def check_cfconventions_version_number(ds, attr, cf_min_version):
+def check_conventions_version_number(ds, attr, conv_type, min_ver, max_ver):
     """
     Checks global attribute values in a NetCDF Dataset and returns integer
     regarding whether the `attr` matches number+unit format
 
     :param ds: netCDF4 Dataset object
     :param attr: global attribute name [string]
-    :param cf_min_version: Minimum version number needed
+    :param conv_type: Name of convention string to be checked for version
+    :param min_ver: Minimum version allowed
+    :param max_ver: Maximum version allowed
     :return: Integer (0: incorrect format; 1: correct format).
     """
 
@@ -19,19 +21,25 @@ def check_cfconventions_version_number(ds, attr, cf_min_version):
         return 0
     global_attr = getattr(ds, attr)
 
-    cf_version = None
-    if ',' in global_attr:
-        global_attr_split = global_attr.split(',')
+    version = None
+    if ' ' in global_attr:
+        global_attr_split = global_attr.split(' ')
         for conv in global_attr_split:
-            if 'cf' in conv.lower():
-                cf_version = float(re.findall(r"[+]?\d*\.\d+|\d+", conv)[0])
+            if conv_type in conv:
+                version = float(re.findall(r"[+]?\d*\.\d+|\d+", conv)[0])
+
     else:
         global_attr_split = global_attr.split(' ')
         for conv in global_attr_split:
-            if 'cf' in conv.lower():
-                cf_version = float(re.findall(r"[+]?\d*\.\d+|\d+", conv)[0])
+            if conv_type in conv:
+                version = float(re.findall(r"[+]?\d*\.\d+|\d+", conv)[0])
 
-    if cf_version < cf_min_version:
+    if conv_type == 'CF':
+        range_check = min_ver <= version <= max_ver
+    elif conv_type == 'ATMODAT':
+        range_check = (version == min_ver)
+
+    if not range_check:
         return 1
     else:
         return 2
@@ -55,10 +63,13 @@ def check_global_attr_type(ds, attr, attr_type):
 
     global_attr = getattr(ds, attr)
 
-    if np.dtype(type(global_attr)) != np.dtype(attr_type):
+    if len(global_attr) == 0:
         return 1
 
-    return 2
+    if np.dtype(type(global_attr)) != np.dtype(attr_type):
+        return 2
+
+    return 3
 
 
 def check_global_attr_iso8601(ds, attr):
