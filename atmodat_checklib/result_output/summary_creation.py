@@ -84,12 +84,16 @@ def write_short_summary(json_summary, cf_errors, file_counter, std_name_table_in
 
     # write summary of results into summary file
     with open(opath_in + '/short_summary.txt', 'w+') as f:
-        f.write("Short summary AtMoDat Data Checker: \n \n")
+        f.write("Short summary of checks: \n \n")
         if isinstance(json_summary, pd.DataFrame):
-            f.write("Checking against: " + json_summary['testname'][0] + ", CF table version: "
-                    + std_name_table_in + "\n")
-        f.write("Version of the checker: " + str(__version__) + " (Checked at: "
-                + datetime.datetime.now().isoformat() + ")" + "\n \n")
+            text_out = "Checking against: " + json_summary['testname'][0]
+            if std_name_table_in is not None:
+                text_out = text_out + ", CF table version: " + std_name_table_in + "\n"
+            else:
+                text_out = text_out + "\n"
+            f.write(text_out)
+            f.write("Version of the AtMoDat checker: " + str(__version__) + "\n")
+        f.write("Checked at: " + datetime.datetime.now().isoformat() + "\n \n")
         f.write("Number of checked files: " + str(file_counter) + '\n')
         if isinstance(json_summary, pd.DataFrame):
             f.write("Total checks passed: " + str(passed_checks['all'][1]) + '/' + str(passed_checks['all'][0]) + '\n')
@@ -101,6 +105,10 @@ def write_short_summary(json_summary, cf_errors, file_counter, std_name_table_in
 
 
 def write_long_summary(json_summary_in, opath_in):
+
+    if json_summary_in is None:
+        return
+
     prio_cat_all = ['high_priorities', 'medium_priorities', 'low_priorities']
     prio_dict = {'high_priorities': 'mandatory', 'medium_priorities': 'recommended', 'low_priorities': 'optional'}
     files_check = json_summary_in['file']
