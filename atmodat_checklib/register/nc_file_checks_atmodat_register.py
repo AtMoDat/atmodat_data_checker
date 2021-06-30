@@ -10,7 +10,7 @@ from netCDF4 import Dataset
 from compliance_checker.base import Result, BaseCheck
 from checklib.register.callable_check_base import CallableCheckBase
 from atmodat_checklib.utils import nc_util
-from atmodat_checklib.utils.ess_vocabs_utils import ESSVocabsAtmodat
+from checklib.cvs.ess_vocabs import ESSVocabs
 from checklib.code.errors import FileError
 
 
@@ -151,9 +151,9 @@ class GlobalAttrVocabCheckByStatus(NCFileCheckBase):
     def _get_result(self, primary_arg):
         self._atmodat_status_to_level(self.kwargs["status"])
         ds = primary_arg
-        vocabs = ESSVocabsAtmodat(*self.vocabulary_ref.split(":")[:2])
+        vocabs = ESSVocabs(*self.vocabulary_ref.split(":")[:2])
 
-        score = vocabs.check_global_attribute(ds, self.kwargs["attribute"], property_check=self.kwargs["vocab_lookup"])
+        score = vocabs.check_global_attribute(ds, self.kwargs["attribute"], property=self.kwargs["vocab_lookup"])
         messages = []
 
         if score < self.out_of:
