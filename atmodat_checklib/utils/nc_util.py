@@ -22,22 +22,15 @@ def check_conventions_version_number(ds, attr, conv_type, min_ver, max_ver):
     global_attr = getattr(ds, attr)
 
     version = None
-    if ' ' in global_attr:
-        global_attr_split = global_attr.split(' ')
-        for conv in global_attr_split:
-            if conv_type in conv:
-                version = float(re.findall(r"[+]?\d*\.\d+|\d+", conv)[0])
-
-    else:
-        global_attr_split = global_attr.split(' ')
-        for conv in global_attr_split:
-            if conv_type in conv:
-                version = float(re.findall(r"[+]?\d*\.\d+|\d+", conv)[0])
+    global_attr_split = global_attr.split(' ')
+    for conv in global_attr_split:
+        if conv_type in conv:
+            version = float(re.findall(r"[+]?\d*\.\d+|\d+", conv)[0])
 
     if conv_type == 'CF':
         range_check = min_ver <= version <= max_ver
     elif conv_type == 'ATMODAT':
-        range_check = (version == min_ver)
+        range_check = (version == min_ver) and (version == max_ver)
 
     if not range_check:
         return 1
@@ -55,8 +48,8 @@ def check_global_attr_type(ds, attr, attr_type):
     :param ds: netCDF4 Dataset object
     :param attr: global attribute name [string]
     :param attr_type: a numpy type [string]
-    :return: Integer (0: not found; 1: found (incorrect type); 2: found
-    and correct type.
+    :return: Integer (0: not found; 1: found (but rmpty); 2: found (incorrect type);
+    3: and correct type).
     """
     if attr not in ds.ncattrs():
         return 0
