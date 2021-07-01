@@ -5,9 +5,11 @@ Unit tests for the contents of the atmodat_checklib.register.nc_file_checks_atmo
 """
 import numpy as np
 import pytest
-from atmodat_checklib.register.nc_file_checks_atmodat_register import *
+from atmodat_checklib.register.nc_file_checks_atmodat_register import ConventionsVersionCheck, \
+    GlobalAttrTypeCheck, DateISO8601Check
 import datetime
 import pytz
+from netCDF4 import Dataset
 
 
 @pytest.fixture(scope="session")
