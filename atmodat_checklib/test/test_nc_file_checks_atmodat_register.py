@@ -1,12 +1,12 @@
 """
-test_nc_utils.py
+test_nc_file_checks_atmodat_register.py
 ======================
 Unit tests for the contents of the atmodat_checklib.register.nc_file_checks_atmodat_register module.
 """
 import numpy as np
 import pytest
 from atmodat_checklib.register.nc_file_checks_atmodat_register import ConventionsVersionCheck, \
-    GlobalAttrTypeCheck, DateISO8601Check
+    GlobalAttrTypeCheck, DateISO8601Check, GobalAttrResolutionFormatCheck
 import datetime
 import pytz
 from netCDF4 import Dataset
@@ -171,3 +171,58 @@ def test_date_iso8601_check_invalid_timestring(empty_netcdf):
         resp = x(ds)
         assert(resp.value == (1, 2)), resp.msgs
         ds.close()
+
+
+def test_gobal_attr_resolution_format_check_missing(empty_netcdf):
+    ds = write_global_attribute(empty_netcdf)
+    for attr in ['geospatial_lon_resolution', 'geospatial_lat_resolution', 'geospatial_vertical_resolution']:
+        x = GobalAttrResolutionFormatCheck(kwargs={"status": "recommended", "attribute": attr})
+        resp = x(ds)
+        assert(resp.value == (0, 4)), resp.msgs
+
+
+def test_gobal_attr_resolution_format_check_no_value(empty_netcdf):
+    for attr in ['geospatial_lon_resolution', 'geospatial_lat_resolution', 'geospatial_vertical_resolution']:
+        for unit in ['W', ' W', 'W ']:
+            attr_dict = {attr: unit}
+            ds = write_global_attribute(empty_netcdf, **attr_dict)
+            x = GobalAttrResolutionFormatCheck(kwargs={"status": "recommended", "attribute": attr})
+            resp = x(ds)
+            assert(resp.value == (1, 4)), resp.msgs
+            ds.close()
+
+
+def test_gobal_attr_resolution_format_check_no_unit(empty_netcdf):
+    for val in [1, 1.0]:
+        for attr in ['geospatial_lon_resolution', 'geospatial_lat_resolution', 'geospatial_vertical_resolution']:
+            attr_dict = {attr: str(val)}
+            ds = write_global_attribute(empty_netcdf, **attr_dict)
+            x = GobalAttrResolutionFormatCheck(kwargs={"status": "recommended", "attribute": attr})
+            resp = x(ds)
+            assert(resp.value == (2, 4)), resp.msgs
+            ds.close()
+
+
+def test_gobal_attr_resolution_format_check_invalid_unit(empty_netcdf):
+    for val in [1, 1.0]:
+        for unit in ['m/ss', 'Ai']:
+            for attr in ['geospatial_lon_resolution', 'geospatial_lat_resolution', 'geospatial_vertical_resolution']:
+                attr_dict = {attr: str(val) + ' ' + unit}
+                ds = write_global_attribute(empty_netcdf, **attr_dict)
+                x = GobalAttrResolutionFormatCheck(kwargs={"status": "recommended", "attribute": attr})
+                resp = x(ds)
+                assert(resp.value == (3, 4)), resp.msgs
+                ds.close()
+
+
+def test_gobal_attr_resolution_format_check_correct(empty_netcdf):
+    for val in [1, 1.0]:
+        for unit in ['W', 'J', 'm/s']:
+            for attr in ['geospatial_lon_resolution', 'geospatial_lat_resolution', 'geospatial_vertical_resolution']:
+                attr_dict = {attr: str(val) + ' ' + unit}
+                ds = write_global_attribute(empty_netcdf, **attr_dict)
+                x = GobalAttrResolutionFormatCheck(kwargs={"status": "recommended", "attribute": attr})
+                resp = x(ds)
+                assert(resp.value == (4, 4)), resp.msgs
+                ds.close()
+

@@ -81,10 +81,6 @@ checks:
     parameters: {"attribute": "title", "type": str, "status": "recommended"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
 
-  - check_id: "vertical_resolution_attribute_type_check"
-    parameters: {"attribute": "geospatial_vertical_resolution", "type": str, "status": "recommended"}
-    check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
-
   # Check against controlled vocabullary
 
   - check_id: "frequency_attribute_check"
@@ -118,6 +114,10 @@ checks:
     parameters: {"attribute": "geospatial_lon_resolution",
                  "status": "recommended"}
     check_name: "atmodat_checklib.register.GobalAttrResolutionFormatCheck"
+
+  - check_id: "vertical_resolution_attribute_type_check"
+    parameters: {"attribute": "geospatial_vertical_resolution", "type": str, "status": "recommended"}
+    check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
 
   ####################################### Optional checks #######################################
 
