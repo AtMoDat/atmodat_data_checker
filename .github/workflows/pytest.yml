@@ -33,4 +33,4 @@ jobs:
         run: 
           pytest
         env:
-          PYESSV_ARCHIVE_HOME: ${GITHUB_WORKSPACE}/AtMoDat_CVs/pyessv-archive
+          PYESSV_ARCHIVE_HOME: ${{ github.workspace }}/AtMoDat_CVs/pyessv-archive
