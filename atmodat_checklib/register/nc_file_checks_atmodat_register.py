@@ -53,6 +53,8 @@ class ConventionsVersionCheck(NCFileCheckBase):
             self.message_templates[1] = "'{attribute}' {convention_type} Standard version given is not in accordance " \
                                         "with performed checks"
 
+        self._define_messages(messages)
+
         if score < self.out_of:
             messages.append(self.get_messages()[score])
 
