@@ -1,7 +1,7 @@
 import numpy as np
-import datetime
 import re
 from cfunits import Units
+import dateutil.parser as parser
 
 
 def check_conventions_version_number(ds, attr, conv_type, min_ver, max_ver):
@@ -27,6 +27,7 @@ def check_conventions_version_number(ds, attr, conv_type, min_ver, max_ver):
         if conv_type in conv:
             version = float(re.findall(r"[+]?\d*\.\d+|\d+", conv)[0])
 
+    range_check = None
     if conv_type == 'CF':
         range_check = min_ver <= version <= max_ver
     elif conv_type == 'ATMODAT':
@@ -80,20 +81,8 @@ def check_global_attr_iso8601(ds, attr):
 
     global_attr = getattr(ds, attr)
 
-    return check_iso8601_conformity(global_attr)
-
-
-def check_iso8601_conformity(date_string):
-
-    # Timezone related replacements
-    if date_string.endswith('Z'):
-        date_string = date_string.replace('Z', '+00:00')
-    # Replace comma with decimal point
-    if ',' in date_string:
-        date_string = date_string.replace(',', '.')
-
     try:
-        datetime.datetime.fromisoformat(date_string)
+        parser.isoparse(global_attr)
         return 2
     except ValueError:
         return 1
