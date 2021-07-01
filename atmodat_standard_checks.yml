@@ -12,10 +12,6 @@ checks:
 
   # Check global attributes
 
-  - check_id: "conventions_attribute_type_check"
-    parameters: {"attribute": "Conventions", "type": str, "status": "mandatory"}
-    check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
-
   - check_id: "institution_attribute_type_check"
     parameters: {"attribute": "institution", "type": str, "status": "recommended"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
