@@ -14,7 +14,8 @@ def check_conventions_version_number(ds, attr, conv_type, min_ver, max_ver):
     :param conv_type: Name of convention string to be checked for version
     :param min_ver: Minimum version allowed
     :param max_ver: Maximum version allowed
-    :return: Integer (0: incorrect format; 1: correct format).
+    :return: Integer (0: not found; 1: convention to be checked fot not found; 2: convention out of valid range;
+    3: all correct)
     """
 
     if attr not in ds.ncattrs():
@@ -27,15 +28,19 @@ def check_conventions_version_number(ds, attr, conv_type, min_ver, max_ver):
         if conv_type in conv:
             version = float(re.findall(r"[+]?\d*\.\d+|\d+", conv)[0])
 
+    if not version:
+        return 1
+
+    range_check = None
     if conv_type == 'CF':
         range_check = min_ver <= version <= max_ver
     elif conv_type == 'ATMODAT':
         range_check = (version == min_ver) and (version == max_ver)
 
     if not range_check:
-        return 1
-    else:
         return 2
+    else:
+        return 3
 
 
 def check_global_attr_type(ds, attr, attr_type):
