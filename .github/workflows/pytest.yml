@@ -14,6 +14,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+      - name: Checkout submodules
+        run: git submodule update --init --recursive
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v2
         with:
@@ -26,6 +28,7 @@ jobs:
         run: |
           conda env update --file environment.yml --name base
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          export PYESSV_ARCHIVE_HOME=$PWD/AtMoDat_CVs/pyessv-archive
       - name: Test with pytest
         run: |
           conda install pytest
