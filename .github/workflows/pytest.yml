@@ -28,8 +28,9 @@ jobs:
         run: |
           conda env update --file environment.yml --name base
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-          export PYESSV_ARCHIVE_HOME=$PWD/AtMoDat_CVs/pyessv-archive
-      - name: Test with pytest
-        run: |
           conda install pytest
+      - name: Test with pytest
+        run: 
           pytest
+        env:
+          PYESSV_ARCHIVE_HOME: $PWD/AtMoDat_CVs/pyessv-archive
