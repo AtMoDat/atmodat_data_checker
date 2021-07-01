@@ -48,7 +48,7 @@ def check_global_attr_type(ds, attr, attr_type):
     :param ds: netCDF4 Dataset object
     :param attr: global attribute name [string]
     :param attr_type: a numpy type [string]
-    :return: Integer (0: not found; 1: found (but rmpty); 2: found (incorrect type);
+    :return: Integer (0: not found; 1: found (but empty); 2: found (incorrect type);
     3: and correct type).
     """
     if attr not in ds.ncattrs():
@@ -56,7 +56,7 @@ def check_global_attr_type(ds, attr, attr_type):
 
     global_attr = getattr(ds, attr)
 
-    if len(global_attr) == 0:
+    if len(str(global_attr)) == 0:
         return 1
 
     if np.dtype(type(global_attr)) != np.dtype(attr_type):
