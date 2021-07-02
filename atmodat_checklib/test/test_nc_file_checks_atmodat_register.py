@@ -11,6 +11,8 @@ import datetime
 import pytz
 from netCDF4 import Dataset
 
+msgs_incorrect = "Incorrect output message"
+
 
 @pytest.fixture(scope="session")
 def empty_netcdf(tmpdir_factory):
@@ -26,6 +28,14 @@ def write_global_attribute(empty_netcdf, **kwargs):
     return f
 
 
+def assert_output_msgs_len(resp_in):
+    msgs = resp_in.msgs
+    if resp_in.value[0] == resp_in.value[1]:
+        assert(len(msgs) == 0)
+    else:
+        assert(len(msgs[0].split("'")) == 3), "Incorrect format of error message"
+
+
 def test_cf_conventions_in_range(empty_netcdf):
     min_range, max_range = 1.4, 1.8
     for val in np.linspace(min_range, max_range, 5):
@@ -33,6 +43,7 @@ def test_cf_conventions_in_range(empty_netcdf):
         x = ConventionsVersionCheck(kwargs={"status": "mandatory", "attribute": "Conventions", "convention_type": "CF",
                                             "min_version": min_range, "max_version": max_range})
         resp = x(ds)
+        assert_output_msgs_len(resp)
         assert(resp.value == (3, 3)), resp.msgs
         ds.close()
 
@@ -44,6 +55,7 @@ def test_cf_conventions_greater_than_range(empty_netcdf):
     x = ConventionsVersionCheck(kwargs={"status": "mandatory", "attribute": "Conventions", "convention_type": "CF",
                                         "min_version": min_range, "max_version": max_range})
     resp = x(ds)
+    assert_output_msgs_len(resp)
     assert(resp.value == (2, 3)), resp.msgs
     ds.close()
 
@@ -55,6 +67,7 @@ def test_cf_conventions_less_than_range(empty_netcdf):
     x = ConventionsVersionCheck(kwargs={"status": "mandatory", "attribute": "Conventions", "convention_type": "CF",
                                         "min_version": min_range, "max_version": max_range})
     resp = x(ds)
+    assert_output_msgs_len(resp)
     assert(resp.value == (2, 3)), resp.msgs
     ds.close()
 
@@ -65,6 +78,7 @@ def test_cf_conventions_conventions_missing(empty_netcdf):
     x = ConventionsVersionCheck(kwargs={"status": "mandatory", "attribute": "Conventions", "convention_type": "CF",
                                         "min_version": min_range, "max_version": max_range})
     resp = x(ds)
+    assert_output_msgs_len(resp)
     assert(resp.value == (0, 3)), resp.msgs
     ds.close()
 
@@ -75,6 +89,7 @@ def test_atmodat_conventions_not_present(empty_netcdf):
     x = ConventionsVersionCheck(kwargs={"status": "mandatory", "attribute": "Conventions", "convention_type": "ATMODAT",
                                         "min_version": min_range, "max_version": max_range})
     resp = x(ds)
+    assert_output_msgs_len(resp)
     assert(resp.value == (0, 3)), resp.msgs
     ds.close()
 
@@ -86,6 +101,7 @@ def test_atmodat_conventions_version_match(empty_netcdf):
     x = ConventionsVersionCheck(kwargs={"status": "mandatory", "attribute": "Conventions", "convention_type": "ATMODAT",
                                         "min_version": min_range, "max_version": max_range})
     resp = x(ds)
+    assert_output_msgs_len(resp)
     assert(resp.value == (3, 3)), resp.msgs
     ds.close()
 
@@ -97,44 +113,58 @@ def test_atmodat_conventions_version_no_match(empty_netcdf):
     x = ConventionsVersionCheck(kwargs={"status": "mandatory", "attribute": "Conventions", "convention_type": "ATMODAT",
                                         "min_version": min_range, "max_version": max_range})
     resp = x(ds)
+    assert_output_msgs_len(resp)
     assert(resp.value == (2, 3)), resp.msgs
     ds.close()
 
 
 def test_global_attr_type_check_missing(empty_netcdf):
     ds = write_global_attribute(empty_netcdf)
-    x = GlobalAttrTypeCheck(kwargs={"status": "mandatory", "attribute": "foo", "type": str})
+    x = GlobalAttrTypeCheck(kwargs={"status": "mandatory", "attribute": "foo", "type": "str"})
     resp = x(ds)
-    assert(resp.value == (0, 3)), resp.msgs
+    assert_output_msgs_len(resp)
+    assert(resp.value == (0, 4)), resp.msgs
+    ds.close()
+
+
+def test_global_attr_type_unsupported_type(empty_netcdf):
+    ds = write_global_attribute(empty_netcdf, foo='bar')
+    x = GlobalAttrTypeCheck(kwargs={"status": "mandatory", "attribute": "foo", "type": "foobar"})
+    resp = x(ds)
+    assert_output_msgs_len(resp)
+    assert(resp.value == (1, 4)), resp.msgs
     ds.close()
 
 
 def test_global_attr_type_check_empty(empty_netcdf):
     ds = write_global_attribute(empty_netcdf, foo='')
-    x = GlobalAttrTypeCheck(kwargs={"status": "mandatory", "attribute": "foo", "type": str})
+    x = GlobalAttrTypeCheck(kwargs={"status": "mandatory", "attribute": "foo", "type": "str"})
     resp = x(ds)
-    assert(resp.value == (1, 3)), resp.msgs
+    assert_output_msgs_len(resp)
+    assert(resp.value == (2, 4)), resp.msgs
     ds.close()
 
 
 def test_global_attr_type_check_wrong_type(empty_netcdf):
-    type_dict = {str: [1, 1.0], int: ['foo', 1.0], float: ['foo', 1]}
+    type_dict = {"int": ['foo', 1.0], "str": [1, 1.0], "float": ['foo', 1]}
     for key, values in type_dict.items():
         for value in values:
             ds = write_global_attribute(empty_netcdf, foo=value)
             x = GlobalAttrTypeCheck(kwargs={"status": "mandatory", "attribute": "foo", "type": key})
             resp = x(ds)
-            assert(resp.value == (2, 3)), resp.msgs
+            assert_output_msgs_len(resp)
+            assert(resp.value == (3, 4)), resp.msgs
             ds.close()
 
 
 def test_global_attr_type_check_correct_type(empty_netcdf):
-    type_dict = {str: 'bar', int: 1, float: 1.0}
+    type_dict = {"str": 'bar', "int": 1, "float": 1.0}
     for key, value in type_dict.items():
         ds = write_global_attribute(empty_netcdf, foo=value)
         x = GlobalAttrTypeCheck(kwargs={"status": "mandatory", "attribute": "foo", "type": key})
         resp = x(ds)
-        assert(resp.value == (3, 3)), resp.msgs
+        assert_output_msgs_len(resp)
+        assert(resp.value == (4, 4)), resp.msgs
         ds.close()
 
 
@@ -142,6 +172,7 @@ def test_date_iso8601_check_missing(empty_netcdf):
     ds = write_global_attribute(empty_netcdf)
     x = DateISO8601Check(kwargs={"status": "recommended", "attribute": "creation_date"})
     resp = x(ds)
+    assert_output_msgs_len(resp)
     assert(resp.value == (0, 2)), resp.msgs
     ds.close()
 
@@ -157,6 +188,7 @@ def test_date_iso8601_check_valid_timestring(empty_netcdf):
         ds = write_global_attribute(empty_netcdf, creation_date=timestring)
         x = DateISO8601Check(kwargs={"status": "recommended", "attribute": "creation_date"})
         resp = x(ds)
+        assert_output_msgs_len(resp)
         assert(resp.value == (2, 2)), resp.msgs
         ds.close()
 
@@ -169,16 +201,19 @@ def test_date_iso8601_check_invalid_timestring(empty_netcdf):
         ds = write_global_attribute(empty_netcdf, creation_date=timestring)
         x = DateISO8601Check(kwargs={"status": "recommended", "attribute": "creation_date"})
         resp = x(ds)
+        assert_output_msgs_len(resp)
         assert(resp.value == (1, 2)), resp.msgs
         ds.close()
 
 
 def test_gobal_attr_resolution_format_check_missing(empty_netcdf):
-    ds = write_global_attribute(empty_netcdf)
     for attr in ['geospatial_lon_resolution', 'geospatial_lat_resolution', 'geospatial_vertical_resolution']:
+        ds = write_global_attribute(empty_netcdf)
         x = GobalAttrResolutionFormatCheck(kwargs={"status": "recommended", "attribute": attr})
         resp = x(ds)
+        assert_output_msgs_len(resp)
         assert(resp.value == (0, 4)), resp.msgs
+        ds.close()
 
 
 def test_gobal_attr_resolution_format_check_no_value(empty_netcdf):
@@ -188,6 +223,7 @@ def test_gobal_attr_resolution_format_check_no_value(empty_netcdf):
             ds = write_global_attribute(empty_netcdf, **attr_dict)
             x = GobalAttrResolutionFormatCheck(kwargs={"status": "recommended", "attribute": attr})
             resp = x(ds)
+            assert_output_msgs_len(resp)
             assert(resp.value == (1, 4)), resp.msgs
             ds.close()
 
@@ -199,6 +235,7 @@ def test_gobal_attr_resolution_format_check_no_unit(empty_netcdf):
             ds = write_global_attribute(empty_netcdf, **attr_dict)
             x = GobalAttrResolutionFormatCheck(kwargs={"status": "recommended", "attribute": attr})
             resp = x(ds)
+            assert_output_msgs_len(resp)
             assert(resp.value == (2, 4)), resp.msgs
             ds.close()
 
@@ -211,6 +248,7 @@ def test_gobal_attr_resolution_format_check_invalid_unit(empty_netcdf):
                 ds = write_global_attribute(empty_netcdf, **attr_dict)
                 x = GobalAttrResolutionFormatCheck(kwargs={"status": "recommended", "attribute": attr})
                 resp = x(ds)
+                assert_output_msgs_len(resp)
                 assert(resp.value == (3, 4)), resp.msgs
                 ds.close()
 
@@ -223,6 +261,6 @@ def test_gobal_attr_resolution_format_check_correct(empty_netcdf):
                 ds = write_global_attribute(empty_netcdf, **attr_dict)
                 x = GobalAttrResolutionFormatCheck(kwargs={"status": "recommended", "attribute": attr})
                 resp = x(ds)
+                assert_output_msgs_len(resp)
                 assert(resp.value == (4, 4)), resp.msgs
                 ds.close()
-

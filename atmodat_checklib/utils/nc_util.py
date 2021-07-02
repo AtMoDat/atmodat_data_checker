@@ -2,6 +2,7 @@ import numpy as np
 import re
 from cfunits import Units
 import dateutil.parser as parser
+from checklib.code.errors import ParameterError
 
 
 def check_conventions_version_number(ds, attr, conv_type, min_ver, max_ver):
@@ -27,7 +28,7 @@ def check_conventions_version_number(ds, attr, conv_type, min_ver, max_ver):
     for conv in global_attr_split:
         if conv_type in conv:
             version = float(re.findall(r"[+]?\d*\.\d+|\d+", conv)[0])
-            
+
     if not version:
         return 1
 
@@ -61,13 +62,22 @@ def check_global_attr_type(ds, attr, attr_type):
 
     global_attr = getattr(ds, attr)
 
-    if len(str(global_attr)) == 0:
+    if attr_type == 'int':
+        attr_type_class = int
+    elif attr_type == 'float':
+        attr_type_class = float
+    elif attr_type == 'str':
+        attr_type_class = str
+    else:
         return 1
 
-    if np.dtype(type(global_attr)) != np.dtype(attr_type):
+    if len(str(global_attr)) == 0:
         return 2
 
-    return 3
+    if np.dtype(type(global_attr)) != np.dtype(attr_type_class):
+        return 3
+
+    return 4
 
 
 def check_global_attr_iso8601(ds, attr):

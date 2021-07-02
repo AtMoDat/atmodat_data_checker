@@ -7,11 +7,11 @@ checks:
   # Check global attributes
 
   - check_id: "institution_attribute_type_check"
-    parameters: {"attribute": "institution", "type": str, "status": "mandatory"}
+    parameters: {"attribute": "institution", "type": "str", "status": "mandatory"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
 
   - check_id: "source_attribute_type_check"
-    parameters: {"attribute": "source", "type": str, "status": "mandatory"}
+    parameters: {"attribute": "source", "type": "str", "status": "mandatory"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
 
   # Check if Conventions version is within given range
@@ -30,7 +30,7 @@ checks:
   # Check global attributes
 
   - check_id: "contact_attribute_type_check"
-    parameters: {"attribute": "contact", "type": str, "status": "recommended"}
+    parameters: {"attribute": "contact", "type": "str", "status": "recommended"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
 
   - check_id: "creation_date_iso8601_check"
@@ -38,41 +38,41 @@ checks:
     check_name: "atmodat_checklib.register.DateISO8601Check"
 
   - check_id: "creator_attribute_type_check"
-    parameters: {"attribute": "creator", "type": str, "status": "recommended"}
+    parameters: {"attribute": "creator", "type": "str", "status": "recommended"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
 
   - check_id: "crs_attribute_type_check"
-    parameters: {"attribute": "crs", "type": str, "status": "recommended"}
+    parameters: {"attribute": "crs", "type": "str", "status": "recommended"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
 
   - check_id: "history_attribute_type_check"
-    parameters: {"attribute": "history", "type": str, "status": "recommended"}
+    parameters: {"attribute": "history", "type": "str", "status": "recommended"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
 
   - check_id: "institution_id_attribute_type_check"
-    parameters: {"attribute": "institution_id", "type": str,
+    parameters: {"attribute": "institution_id", "type": "str",
                  "status": "recommended"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
 
   - check_id: "keywords_attribute_type_check"
-    parameters: {"attribute": "keywords", "type": str, "status": "recommended"}
+    parameters: {"attribute": "keywords", "type": "str", "status": "recommended"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
 
   - check_id: "license_attribute_type_check"
-    parameters: {"attribute": "license", "type": str, "status": "recommended"}
+    parameters: {"attribute": "license", "type": "str", "status": "recommended"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
 
   - check_id: "standard_name_vocabulary_attribute_type_check"
-    parameters: {"attribute": "standard_name_vocabulary", "type": str,
+    parameters: {"attribute": "standard_name_vocabulary", "type": "str",
                  "status": "recommended"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
 
   - check_id: "summary_attribute_type_check"
-    parameters: {"attribute": "summary", "type": str, "status": "recommended"}
+    parameters: {"attribute": "summary", "type": "str", "status": "recommended"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
 
   - check_id: "title_attribute_type_check"
-    parameters: {"attribute": "title", "type": str, "status": "recommended"}
+    parameters: {"attribute": "title", "type": "str", "status": "recommended"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
 
   # Check against controlled vocabullary
@@ -110,7 +110,7 @@ checks:
     check_name: "atmodat_checklib.register.GobalAttrResolutionFormatCheck"
 
   - check_id: "vertical_resolution_attribute_type_check"
-    parameters: {"attribute": "geospatial_vertical_resolution", "type": str, "status": "recommended"}
+    parameters: {"attribute": "geospatial_vertical_resolution", "type": "str", "status": "recommended"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
 
   ####################################### Optional checks #######################################
@@ -118,44 +118,44 @@ checks:
   # Check global attributes
 
   - check_id: "comment_attribute_type_check"
-    parameters: {"attribute": "comment", "type": str, "status": "optional"}
+    parameters: {"attribute": "comment", "type": "str", "status": "optional"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
 
   - check_id: "further_info_url_attribute_type_check"
-    parameters: {"attribute": "further_info_url", "type": str,
+    parameters: {"attribute": "further_info_url", "type": "str",
                  "status": "optional"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
 
   - check_id: "keywords_vocabulary_attribute_type_check"
-    parameters: {"attribute": "keywords_vocabulary", "type": str,
+    parameters: {"attribute": "keywords_vocabulary", "type": "str",
                  "status": "optional"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
 
   - check_id: "metadata_link_attribute_type_check"
-    parameters: {"attribute": "metadata_link", "type": str,
+    parameters: {"attribute": "metadata_link", "type": "str",
                  "status": "optional"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
 
   - check_id: "processing_level_attribute_type_check"
-    parameters: {"attribute": "processing_level", "type": str,
+    parameters: {"attribute": "processing_level", "type": "str",
                  "status": "optional"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
 
   - check_id: "program_attribute_type_check"
-    parameters: {"attribute": "program", "type": str, "status": "optional"}
+    parameters: {"attribute": "program", "type": "str", "status": "optional"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
 
   - check_id: "project_attribute_type_check"
-    parameters: {"attribute": "project", "type": str, "status": "optional"}
+    parameters: {"attribute": "project", "type": "str", "status": "optional"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
 
   - check_id: "references_attribute_type_check"
-    parameters: {"attribute": "references", "type": str, "status": "optional"}
+    parameters: {"attribute": "references", "type": "str", "status": "optional"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
 
   # Check against controlled vocabullary
 
   - check_id: "featureType_attribute_type_check"
-    parameters: {"attribute": "featureType", "type": str,
+    parameters: {"attribute": "featureType", "type": "str",
                  "vocabulary_ref": "atmodat:atmodat", "status": "optional"}
     check_name: "atmodat_checklib.register.GlobalAttrVocabCheckByStatus"
