@@ -4,16 +4,10 @@ suite_name: "atmodat_standard:3.0"
 checks:
 
   ####################################### Mandatory checks #######################################
-  # Check if file is indeed a netCDF
-
-  - check_id: "file_readability_check"
-    parameters: { }
-    check_name: "atmodat_checklib.register.FileIsNetCDF"
-
   # Check global attributes
 
   - check_id: "institution_attribute_type_check"
-    parameters: {"attribute": "institution", "type": str, "status": "recommended"}
+    parameters: {"attribute": "institution", "type": str, "status": "mandatory"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
 
   - check_id: "source_attribute_type_check"

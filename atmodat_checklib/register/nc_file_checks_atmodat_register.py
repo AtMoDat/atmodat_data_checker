@@ -22,8 +22,10 @@ class NCFileCheckBase(CallableCheckBase):
             raise FileError("Object for testing is not a netCDF4 Dataset: {}".format(str(primary_arg)))
 
     def _atmodat_status_to_level(self, status):
-        # jkretz: At the momement, low-level checks are not outputed by the IOOS compliance checker.
-        # The weight of the low-level checks is set to 4 (BaseCheck.HIGH+BaseCheck.LOW) to circumvent this
+        """
+        jkretz: At the momement, low-level checks are not outputed by the IOOS compliance checker.
+        The weight of the low-level checks is set to 4 (BaseCheck.HIGH+BaseCheck.LOW) to circumvent this
+        """
         atmodat_status = {'mandatory': BaseCheck.HIGH, 'recommended': BaseCheck.MEDIUM,
                           'optional': BaseCheck.HIGH + BaseCheck.LOW}
         self.level = atmodat_status[status]
@@ -36,7 +38,7 @@ class ConventionsVersionCheck(NCFileCheckBase):
     short_name = "{convention_type} version number in valid range"
     defaults = {}
     required_args = ['attribute', 'convention_type', 'min_version', 'max_version']
-    message_templates = ["'{attribute}' global attribute is not present", ""]
+    message_templates = ["'{attribute}' global attribute is not present", "", ""]
 
     def _get_result(self, primary_arg):
         self._atmodat_status_to_level(self.kwargs["status"])
@@ -47,11 +49,15 @@ class ConventionsVersionCheck(NCFileCheckBase):
         messages = []
 
         if self.kwargs["convention_type"] == 'CF':
-            self.message_templates[1] = "'{attribute}' {convention_type} Convention version not in valid range of " \
+            self.message_templates[1] = "'{attribute}' {convention_type} Convention information not present"
+            self.message_templates[2] = "'{attribute}' {convention_type} Convention version not in valid range of " \
                                         "{min_version} to {max_version}"
         elif self.kwargs["convention_type"] == 'ATMODAT':
-            self.message_templates[1] = "'{attribute}' {convention_type} Standard version given is not in accordance " \
+            self.message_templates[1] = "'{attribute}' {convention_type} Standard information not present"
+            self.message_templates[2] = "'{attribute}' {convention_type} Standard version given is not in accordance " \
                                         "with performed checks"
+
+        self._define_messages(messages)
 
         if score < self.out_of:
             messages.append(self.get_messages()[score])
