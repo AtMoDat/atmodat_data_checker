@@ -22,8 +22,10 @@ class NCFileCheckBase(CallableCheckBase):
             raise FileError("Object for testing is not a netCDF4 Dataset: {}".format(str(primary_arg)))
 
     def _atmodat_status_to_level(self, status):
-        # jkretz: At the momement, low-level checks are not outputed by the IOOS compliance checker.
-        # The weight of the low-level checks is set to 4 (BaseCheck.HIGH+BaseCheck.LOW) to circumvent this
+        """
+        jkretz: At the momement, low-level checks are not outputed by the IOOS compliance checker.
+        The weight of the low-level checks is set to 4 (BaseCheck.HIGH+BaseCheck.LOW) to circumvent this
+        """
         atmodat_status = {'mandatory': BaseCheck.HIGH, 'recommended': BaseCheck.MEDIUM,
                           'optional': BaseCheck.HIGH + BaseCheck.LOW}
         self.level = atmodat_status[status]
