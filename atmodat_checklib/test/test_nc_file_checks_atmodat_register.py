@@ -33,7 +33,7 @@ def test_cf_conventions_in_range(empty_netcdf):
         x = ConventionsVersionCheck(kwargs={"status": "mandatory", "attribute": "Conventions", "convention_type": "CF",
                                             "min_version": min_range, "max_version": max_range})
         resp = x(ds)
-        assert(resp.value == (2, 2)), resp.msgs
+        assert(resp.value == (3, 3)), resp.msgs
         ds.close()
 
 
@@ -44,7 +44,7 @@ def test_cf_conventions_greater_than_range(empty_netcdf):
     x = ConventionsVersionCheck(kwargs={"status": "mandatory", "attribute": "Conventions", "convention_type": "CF",
                                         "min_version": min_range, "max_version": max_range})
     resp = x(ds)
-    assert(resp.value == (1, 2)), resp.msgs
+    assert(resp.value == (2, 3)), resp.msgs
     ds.close()
 
 
@@ -55,7 +55,7 @@ def test_cf_conventions_less_than_range(empty_netcdf):
     x = ConventionsVersionCheck(kwargs={"status": "mandatory", "attribute": "Conventions", "convention_type": "CF",
                                         "min_version": min_range, "max_version": max_range})
     resp = x(ds)
-    assert(resp.value == (1, 2)), resp.msgs
+    assert(resp.value == (2, 3)), resp.msgs
     ds.close()
 
 
@@ -65,7 +65,7 @@ def test_cf_conventions_conventions_missing(empty_netcdf):
     x = ConventionsVersionCheck(kwargs={"status": "mandatory", "attribute": "Conventions", "convention_type": "CF",
                                         "min_version": min_range, "max_version": max_range})
     resp = x(ds)
-    assert(resp.value == (0, 2)), resp.msgs
+    assert(resp.value == (0, 3)), resp.msgs
     ds.close()
 
 
@@ -75,7 +75,7 @@ def test_atmodat_conventions_not_present(empty_netcdf):
     x = ConventionsVersionCheck(kwargs={"status": "mandatory", "attribute": "Conventions", "convention_type": "ATMODAT",
                                         "min_version": min_range, "max_version": max_range})
     resp = x(ds)
-    assert(resp.value == (0, 2)), resp.msgs
+    assert(resp.value == (0, 3)), resp.msgs
     ds.close()
 
 
@@ -86,7 +86,7 @@ def test_atmodat_conventions_version_match(empty_netcdf):
     x = ConventionsVersionCheck(kwargs={"status": "mandatory", "attribute": "Conventions", "convention_type": "ATMODAT",
                                         "min_version": min_range, "max_version": max_range})
     resp = x(ds)
-    assert(resp.value == (2, 2)), resp.msgs
+    assert(resp.value == (3, 3)), resp.msgs
     ds.close()
 
 
@@ -97,7 +97,7 @@ def test_atmodat_conventions_version_no_match(empty_netcdf):
     x = ConventionsVersionCheck(kwargs={"status": "mandatory", "attribute": "Conventions", "convention_type": "ATMODAT",
                                         "min_version": min_range, "max_version": max_range})
     resp = x(ds)
-    assert(resp.value == (1, 2)), resp.msgs
+    assert(resp.value == (2, 3)), resp.msgs
     ds.close()
 
 
