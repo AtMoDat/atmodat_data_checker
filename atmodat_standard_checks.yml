@@ -4,31 +4,27 @@ suite_name: "atmodat_standard:3.0"
 checks:
 
   ####################################### Mandatory checks #######################################
-  # Check if file is indeed a netCDF
-
-  - check_id: "file_readability_check"
-    parameters: { }
-    check_name: "atmodat_checklib.register.FileIsNetCDF"
-
   # Check global attributes
 
-  - check_id: "conventions_attribute_type_check"
-    parameters: {"attribute": "Conventions", "type": str, "status": "mandatory"}
-    check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
-
   - check_id: "institution_attribute_type_check"
-    parameters: {"attribute": "institution", "type": str, "status": "recommended"}
+    parameters: {"attribute": "institution", "type": str, "status": "mandatory"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
 
   - check_id: "source_attribute_type_check"
     parameters: {"attribute": "source", "type": str, "status": "mandatory"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
 
-  # Check if CF-Conventions Version is 1.4 or greater
-
+  # Check if Conventions version is within given range
   - check_id: "cf_conventions_version_check"
-    parameters: {"attribute": "Conventions", "cf_min_version": 1.4, "status": "mandatory"}
-    check_name: "atmodat_checklib.register.CFConventionsVersionCheck"
+    parameters: {"attribute": "Conventions", "convention_type": "CF", "min_version": 1.4, "max_version": 1.8,
+                 "status": "mandatory"}
+    check_name: "atmodat_checklib.register.ConventionsVersionCheck"
+
+  # Check if AtMoDat version matches the version against which checks should be performed
+  - check_id: "atmodat_conventions_version_check"
+    parameters: {"attribute": "Conventions", "convention_type": "ATMODAT", "min_version": 3.0, "max_version": 3.0,
+                 "status": "mandatory"}
+    check_name: "atmodat_checklib.register.ConventionsVersionCheck"
 
   ####################################### Recommended checks #######################################
   # Check global attributes

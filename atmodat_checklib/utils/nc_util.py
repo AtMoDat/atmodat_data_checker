@@ -4,37 +4,43 @@ import re
 from cfunits import Units
 
 
-def check_cfconventions_version_number(ds, attr, cf_min_version):
+def check_conventions_version_number(ds, attr, conv_type, min_ver, max_ver):
     """
     Checks global attribute values in a NetCDF Dataset and returns integer
     regarding whether the `attr` matches number+unit format
 
     :param ds: netCDF4 Dataset object
     :param attr: global attribute name [string]
-    :param cf_min_version: Minimum version number needed
-    :return: Integer (0: incorrect format; 1: correct format).
+    :param conv_type: Name of convention string to be checked for version
+    :param min_ver: Minimum version allowed
+    :param max_ver: Maximum version allowed
+    :return: Integer (0: not found; 1: convention to be checked fot not found; 2: convention out of valid range;
+    3: all correct)
     """
 
     if attr not in ds.ncattrs():
         return 0
     global_attr = getattr(ds, attr)
 
-    cf_version = None
-    if ',' in global_attr:
-        global_attr_split = global_attr.split(',')
-        for conv in global_attr_split:
-            if 'cf' in conv.lower():
-                cf_version = float(re.findall(r"[+]?\d*\.\d+|\d+", conv)[0])
-    else:
-        global_attr_split = global_attr.split(' ')
-        for conv in global_attr_split:
-            if 'cf' in conv.lower():
-                cf_version = float(re.findall(r"[+]?\d*\.\d+|\d+", conv)[0])
+    version = None
+    global_attr_split = global_attr.split(' ')
+    for conv in global_attr_split:
+        if conv_type in conv:
+            version = float(re.findall(r"[+]?\d*\.\d+|\d+", conv)[0])
 
-    if cf_version < cf_min_version:
+    if not version:
         return 1
-    else:
+
+    range_check = None
+    if conv_type == 'CF':
+        range_check = min_ver <= version <= max_ver
+    elif conv_type == 'ATMODAT':
+        range_check = (version == min_ver) and (version == max_ver)
+
+    if not range_check:
         return 2
+    else:
+        return 3
 
 
 def check_global_attr_type(ds, attr, attr_type):
@@ -47,18 +53,21 @@ def check_global_attr_type(ds, attr, attr_type):
     :param ds: netCDF4 Dataset object
     :param attr: global attribute name [string]
     :param attr_type: a numpy type [string]
-    :return: Integer (0: not found; 1: found (incorrect type); 2: found
-    and correct type.
+    :return: Integer (0: not found; 1: found (but empty); 2: found (incorrect type);
+    3: and correct type).
     """
     if attr not in ds.ncattrs():
         return 0
 
     global_attr = getattr(ds, attr)
 
-    if np.dtype(type(global_attr)) != np.dtype(attr_type):
+    if len(str(global_attr)) == 0:
         return 1
 
-    return 2
+    if np.dtype(type(global_attr)) != np.dtype(attr_type):
+        return 2
+
+    return 3
 
 
 def check_global_attr_iso8601(ds, attr):
