@@ -105,7 +105,6 @@ class GlobalAttrTypeCheck(NCFileCheckBase):
                          "'{attribute}' global attribute is empty",
                          "'{attribute}' global attribute value does not match type {type}"]
 
-
     def _get_result(self, primary_arg):
         self._atmodat_status_to_level(self.kwargs["status"])
         ds = primary_arg
