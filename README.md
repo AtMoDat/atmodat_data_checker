@@ -52,7 +52,7 @@ To run checkers on a single file, use:
 ```bash
 run_checks.py -f file_to_check.nc
 ```
-To run the checker on all *.nc files of a directory, use:
+To run the checker on all *.nc files of a directory (including all sub-directories), use:
 ```bash
 run_checks.py -p file_path
 ```
@@ -60,6 +60,27 @@ To create summary of checker ouput add the ````-s```` flag, e.g.:
 ```bash
 run_checks.py -s -p file_path
 ```
+To define a custom path where the checker output shall be written, use:
+```bash
+run_checks.py -op output_path -p file_path
+```
+To define a CF version against which the file(s) shall be checked, use:
+```bash
+run_checks.py -cfv 1.6 -p file_path
+```
+Valid are versions from 1.3 to 1.8. Default is ````-cfv auto````. 
+
+To define if the file(s) shall be checked only against the ATMODAT Standard (AT) or the CF Conventions (CF), specify either ````-check AT```` or ````-check CF````.
+Default is ````-check both````. 
+```bash
+run_checks.py -check AT -p file_path
+```
+You can combine different optional arguments, for example:
+```bash
+run_checks.py -s -op mychecks -check both -cfv 1.4 -p file_path
+```
+
+
 For more information use `python run_checks.py --help`
 
 ## Contributors

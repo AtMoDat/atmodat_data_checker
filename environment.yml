@@ -10,4 +10,3 @@ dependencies:
   - compliance-checker
   # tests
   - pytest
-  - flake8

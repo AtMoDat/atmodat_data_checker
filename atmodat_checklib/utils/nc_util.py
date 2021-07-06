@@ -1,7 +1,8 @@
 import numpy as np
-import datetime
 import re
 from cfunits import Units
+import dateutil.parser as parser
+from checklib.code.errors import ParameterError
 
 
 def check_conventions_version_number(ds, attr, conv_type, min_ver, max_ver):
@@ -61,13 +62,22 @@ def check_global_attr_type(ds, attr, attr_type):
 
     global_attr = getattr(ds, attr)
 
-    if len(str(global_attr)) == 0:
+    if attr_type == 'int':
+        attr_type_class = int
+    elif attr_type == 'float':
+        attr_type_class = float
+    elif attr_type == 'str':
+        attr_type_class = str
+    else:
         return 1
 
-    if np.dtype(type(global_attr)) != np.dtype(attr_type):
+    if len(str(global_attr)) == 0:
         return 2
 
-    return 3
+    if np.dtype(type(global_attr)) != np.dtype(attr_type_class):
+        return 3
+
+    return 4
 
 
 def check_global_attr_iso8601(ds, attr):
@@ -85,20 +95,8 @@ def check_global_attr_iso8601(ds, attr):
 
     global_attr = getattr(ds, attr)
 
-    return check_iso8601_conformity(global_attr)
-
-
-def check_iso8601_conformity(date_string):
-
-    # Timezone related replacements
-    if date_string.endswith('Z'):
-        date_string = date_string.replace('Z', '+00:00')
-    # Replace comma with decimal point
-    if ',' in date_string:
-        date_string = date_string.replace(',', '.')
-
     try:
-        datetime.datetime.fromisoformat(date_string)
+        parser.isoparse(global_attr)
         return 2
     except ValueError:
         return 1
