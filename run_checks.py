@@ -116,8 +116,11 @@ if __name__ == "__main__":
     file_counter = 0
     if ifile and not ipath:
         if ifile.endswith(".nc"):
-            run_checks(ifile, verbose, check_types, cfversion)
-            file_counter = file_counter + 1
+            if os.path.isfile(ifile):
+                run_checks(ifile, verbose, check_types, cfversion)
+                file_counter = file_counter + 1
+            else:
+                raise RuntimeError('File: ' + ifile + ' does not exist')
         else:
             print('Skipping ' + ifile + ' as it does not end with ".nc'"")
     elif ipath and not ifile:
