@@ -1,0 +1,11 @@
+# conda env create -f environment.yml
+name: atmodat
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - pip
+  - python>=3.6
+  - pandas
+  - compliance-checker
+  - xarray
