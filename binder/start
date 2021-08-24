@@ -1,0 +1,5 @@
+#!/bin/bash
+
+export PYESSV_ARCHIVE_HOME="$PWD/AtMoDat_CVs/pyessv-archive"
+
+exec "$@"
