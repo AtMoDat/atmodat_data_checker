@@ -28,8 +28,9 @@ jobs:
         run: |
           conda env update --file environment.yml --name base
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          echo ${CONDA}/share/udunits/udunits2.xml
         env:
-            UDUNITS2_XML_PATH: $CONDA/share/udunits/udunits2.xml
+            UDUNITS2_XML_PATH: /usr/share/xml/udunits/udunits2.xml
       - name: Test with pytest
         run: 
           pytest
