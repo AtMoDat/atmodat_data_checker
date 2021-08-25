@@ -1,12 +1,17 @@
 # ATMODAT Standard Compliance Checker
 
+
 This is a python library that contains checks to ensure compliance with the ATMODAT Standard.
 
 Its core functionality is based on the [IOOS compliance checker](https://github.com/ioos/compliance-checker). The ATMODAT Standard Compliance Checker library makes use of [cc-yaml](https://github.com/cedadev/cc-yaml), which provides a plugin for the [IOOS compliance checker](https://github.com/ioos/compliance-checker) that generates check suites from YAML descriptions. Furthermore, the [Compliance Check Library](https://github.com/cedadev/compliance-check-lib) is used as the basis to define generic, reusable compliance checks. This repository is an extension of this library as it holds specific checks to ensure compliance with the ATMODAT Standard.
 
-In addition the compliance to the CF Conventions 1.4 or higher is verified with the [CF checker](https://github.com/cedadev/cf-checker).
+In addition, the compliance to the CF Conventions 1.4 or higher is verified with the [CF checker](https://github.com/cedadev/cf-checker).
 
-## Installation (tested on Linux and Mac OS)
+We set up a binder where you can try out the functionalities of the ATMODAT Standard Compliance Checker:
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/AtMoDat/atmodat_data_checker/HEAD?filepath=notebooks)
+
+## Installation (tested on Linux and macOS)
 
 1. Clone this repository
 
@@ -35,7 +40,7 @@ conda activate atmodat
 pip install -U -e .
 ```
 
-5. Initalize and update the [ATMODAT CVs](https://github.com/AtMoDat/AtMoDat_CVs) submodule, which contains the controlled vocabulary for the ATMODAT Standard.
+5. Initialize and update the [ATMODAT CVs](https://github.com/AtMoDat/AtMoDat_CVs) submodule, which contains the controlled vocabulary for the ATMODAT Standard.
 
 ```bash
 git submodule init
