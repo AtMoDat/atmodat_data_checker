@@ -1,4 +1,4 @@
 set -e
 
 pip install -U -e .
-git clone https://github.com/AtMoDat/demo_data.git
+git clone https://github.com/AtMoDat/demo_data.git ../notebooks
