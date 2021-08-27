@@ -2,7 +2,6 @@
 name: atmodat
 channels:
   - conda-forge
-  - defaults
 dependencies:
   - pip
   - python>=3.6
@@ -10,3 +9,5 @@ dependencies:
   - compliance-checker
   - cfunits
   - xarray
+  - nco
+  - cdo
