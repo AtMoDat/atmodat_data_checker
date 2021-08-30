@@ -15,7 +15,7 @@ def check_conventions_version_number(ds, attr, conv_type, min_ver, max_ver):
     :param conv_type: Name of convention string to be checked for version
     :param min_ver: Minimum version allowed
     :param max_ver: Maximum version allowed
-    :return: Integer (0: not found; 1: convention to be checked fot not found; 2: convention out of valid range;
+    :return: Integer (0: not found; 1: convention to be checked for not found; 2: convention out of valid range;
     3: all correct)
     """
 
