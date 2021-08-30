@@ -14,6 +14,10 @@ checks:
     parameters: {"attribute": "source", "type": "str", "status": "mandatory"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
 
+  - check_id: "source_attribute_type_check"
+    parameters: {"attribute": "Conventions", "type": "str", "status": "mandatory"}
+    check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
+
   # Check if Conventions version is within given range
   - check_id: "cf_conventions_version_check"
     parameters: {"attribute": "Conventions", "convention_type": "CF", "min_version": 1.4, "max_version": 1.8,
@@ -102,12 +106,12 @@ checks:
   - check_id: "global_attribute_resolution_format_check_lat_resolution"
     parameters: {"attribute": "geospatial_lat_resolution",
                  "status": "recommended"}
-    check_name: "atmodat_checklib.register.GobalAttrResolutionFormatCheck"
+    check_name: "atmodat_checklib.register.GlobalAttrResolutionFormatCheck"
 
   - check_id: "global_attribute_resolution_format_check_lon_resolution"
     parameters: {"attribute": "geospatial_lon_resolution",
                  "status": "recommended"}
-    check_name: "atmodat_checklib.register.GobalAttrResolutionFormatCheck"
+    check_name: "atmodat_checklib.register.GlobalAttrResolutionFormatCheck"
 
   - check_id: "vertical_resolution_attribute_type_check"
     parameters: {"attribute": "geospatial_vertical_resolution", "type": "str", "status": "recommended"}
