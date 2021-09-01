@@ -24,6 +24,13 @@ def run_checks(ifile_in, verbose_in, check_types_in, cfversion_in):
             if verbose_in:
                 os.system('cchecker.py --y ' + idiryml
                           + '/atmodat_standard_checks.yml --test atmodat_standard:3.0 ' + ifile_in)
+                if 'CF' in check_types_in:
+                    print('')
+                    print('')
+                    print('==============================================================================')
+                    print('===============================CF-Checker=====================================')
+                    print('==============================================================================')
+                    print('')
         else:
             os.system(
                 'cfchecks -v ' + cfversion_in + ' ' + ifile_in + '>> ' + opath + '/CF/' + filename_base
