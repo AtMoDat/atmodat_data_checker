@@ -10,5 +10,4 @@ dependencies:
   - cfunits
   - xarray
   - nco
-  - cdo
   - matplotlib
