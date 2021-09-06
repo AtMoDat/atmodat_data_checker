@@ -14,7 +14,7 @@ checks:
     parameters: {"attribute": "source", "type": "str", "status": "mandatory"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
 
-  - check_id: "convention_attribute_type_check"
+  - check_id: "source_attribute_type_check"
     parameters: {"attribute": "Conventions", "type": "str", "status": "mandatory"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
 
