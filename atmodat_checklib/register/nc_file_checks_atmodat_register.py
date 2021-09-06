@@ -10,7 +10,7 @@ from netCDF4 import Dataset
 from compliance_checker.base import Result, BaseCheck
 from checklib.register.callable_check_base import CallableCheckBase
 from atmodat_checklib.utils import nc_util
-from checklib.cvs.ess_vocabs import ESSVocabs
+from atmodat_checklib.utils.ess_vocabs import ESSVocabs
 from checklib.code.errors import FileError
 
 
@@ -157,7 +157,7 @@ class GlobalAttrVocabCheckByStatus(NCFileCheckBase):
     defaults = {"vocab_lookup": "canonical_name"}
     required_args = ['attribute', 'status']
     message_templates = ["'{attribute}' global attribute is not present",
-                         "'{attribute}' global attribute value is invalid"]
+                         "'{attribute}' global attribute value is not in controlled vocabulary"]
 
     def _get_result(self, primary_arg):
         self._atmodat_status_to_level(self.kwargs["status"])
