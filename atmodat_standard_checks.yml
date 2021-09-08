@@ -157,9 +157,8 @@ checks:
     parameters: {"attribute": "references", "type": "str", "status": "optional"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
 
-  # Check against controlled vocabullary
-
+  # Check against controlled vocabulary
   - check_id: "featureType_attribute_type_check"
-    parameters: {"attribute": "featureType", "type": "str",
+    parameters: {"attribute": "featureType", "vocab_lookup": "label",
                  "vocabulary_ref": "atmodat:atmodat", "status": "optional"}
     check_name: "atmodat_checklib.register.GlobalAttrVocabCheckByStatus"
