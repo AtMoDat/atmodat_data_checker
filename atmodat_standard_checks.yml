@@ -14,7 +14,7 @@ checks:
     parameters: {"attribute": "source", "type": "str", "status": "mandatory"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
 
-  - check_id: "source_attribute_type_check"
+  - check_id: "conventions_attribute_type_check"
     parameters: {"attribute": "Conventions", "type": "str", "status": "mandatory"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
 
@@ -77,6 +77,10 @@ checks:
 
   - check_id: "title_attribute_type_check"
     parameters: {"attribute": "title", "type": "str", "status": "recommended"}
+    check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
+
+  - check_id: "product_version_type_check"
+    parameters: {"attribute": "product_version", "type": "str", "status": "recommended"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
 
   # Check against controlled vocabullary
