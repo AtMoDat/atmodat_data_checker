@@ -161,7 +161,7 @@ def create_output_summary(file_counter, opath, check_types_in):
         if file.endswith("_result.json") and isinstance(json_summary, pd.DataFrame):
             json_summary = json_summary.append(extract_overview_output_json(file),
                                                ignore_index=True)
-        elif file.endswith("_cfchecks_result.txt"):
+        elif file.endswith("_CF_result.txt"):
             cf_errors, std_name_table = extracts_error_summary_cf_check(file, cf_errors)
 
     write_short_summary(json_summary, cf_errors, file_counter, std_name_table, opath)
