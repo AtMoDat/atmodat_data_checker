@@ -39,7 +39,7 @@ def assert_output_msgs_len(resp_in):
 
 
 def load_cv_json(att_in):
-    ipath_json = '../../AtMoDat_CVs/AtMoDat_CV_json/'
+    ipath_json = 'AtMoDat_CVs/AtMoDat_CV_json/'
     with open(ipath_json+'AtMoDat_'+att_in+'.json') as jsonFile:
         jsonObject = json.load(jsonFile)
         jsonFile.close()
