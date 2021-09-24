@@ -86,22 +86,22 @@ checks:
   # Check against controlled vocabullary
 
   - check_id: "frequency_attribute_check"
-    parameters: {"attribute": "frequency", "vocab_lookup": "label",
+    parameters: {"attribute": "frequency", "vocab_lookup": "frequency:label",
                  "vocabulary_ref": "atmodat:atmodat", "status": "recommended"}
     check_name: "atmodat_checklib.register.GlobalAttrVocabCheckByStatus"
 
   - check_id: "nominal_resolution_attribute_CV_check"
-    parameters: {"attribute": "nominal_resolution", "vocab_lookup": "label",
+    parameters: {"attribute": "nominal_resolution", "vocab_lookup": "nominal_resolution:label",
                  "vocabulary_ref": "atmodat:atmodat", "status": "recommended"}
     check_name: "atmodat_checklib.register.GlobalAttrVocabCheckByStatus"
 
   - check_id: "realm_attribute_CV_check"
-    parameters: {"attribute": "realm", "vocab_lookup": "label",
+    parameters: {"attribute": "realm", "vocab_lookup": "realm:label",
                  "vocabulary_ref": "atmodat:atmodat", "status": "recommended"}
     check_name: "atmodat_checklib.register.GlobalAttrVocabCheckByStatus"
 
   - check_id: "source_type_CV_check"
-    parameters: {"attribute": "source_type", "vocab_lookup": "label",
+    parameters: {"attribute": "source_type", "vocab_lookup": "source_type:label",
                  "vocabulary_ref": "atmodat:atmodat", "status": "recommended"}
     check_name: "atmodat_checklib.register.GlobalAttrVocabCheckByStatus"
 
@@ -163,6 +163,6 @@ checks:
 
   # Check against controlled vocabulary
   - check_id: "featureType_attribute_type_check"
-    parameters: {"attribute": "featureType", "vocab_lookup": "label",
+    parameters: {"attribute": "featureType", "vocab_lookup": "featureType:label",
                  "vocabulary_ref": "atmodat:atmodat", "status": "optional"}
     check_name: "atmodat_checklib.register.GlobalAttrVocabCheckByStatus"

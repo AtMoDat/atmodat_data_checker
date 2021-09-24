@@ -41,9 +41,9 @@ def assert_output_msgs_len(resp_in):
 def load_cv_json(att_in):
     ipath_json = 'AtMoDat_CVs/AtMoDat_CV_json/'
     with open(ipath_json + 'AtMoDat_' + att_in + '.json') as jsonFile:
-        jsonObject = json.load(jsonFile)
+        json_object = json.load(jsonFile)
         jsonFile.close()
-    return jsonObject[att_in]
+    return json_object[att_in]
 
 
 def test_controlled_vocab_correct(empty_netcdf):
@@ -51,7 +51,7 @@ def test_controlled_vocab_correct(empty_netcdf):
         cv_elements = load_cv_json(att)
         for cv_element in cv_elements:
             ds = write_global_attribute(empty_netcdf, **{att: cv_element})
-            x = GlobalAttrVocabCheckByStatus(kwargs={"attribute": att, "vocab_lookup": "label",
+            x = GlobalAttrVocabCheckByStatus(kwargs={"attribute": att, "vocab_lookup": att + ":label",
                                                      "vocabulary_ref": "atmodat:atmodat", "status": "optional"})
             resp = x(ds)
             assert_output_msgs_len(resp)
@@ -64,7 +64,7 @@ def test_controlled_vocab_incorrect(empty_netcdf):
         cv_elements = load_cv_json(att)
         for cv_element in cv_elements:
             ds = write_global_attribute(empty_netcdf, **{att: cv_element + 'bla'})
-            x = GlobalAttrVocabCheckByStatus(kwargs={"attribute": att, "vocab_lookup": "label",
+            x = GlobalAttrVocabCheckByStatus(kwargs={"attribute": att, "vocab_lookup": att + ":label",
                                                      "vocabulary_ref": "atmodat:atmodat", "status": "optional"})
             resp = x(ds)
             assert_output_msgs_len(resp)
@@ -75,7 +75,7 @@ def test_controlled_vocab_incorrect(empty_netcdf):
 def test_controlled_vocab_missing(empty_netcdf):
     for att in attribute_list:
         ds = write_global_attribute(empty_netcdf)
-        x = GlobalAttrVocabCheckByStatus(kwargs={"attribute": att, "vocab_lookup": "label",
+        x = GlobalAttrVocabCheckByStatus(kwargs={"attribute": att, "vocab_lookup": att + ":label",
                                                  "vocabulary_ref": "atmodat:atmodat", "status": "optional"})
         resp = x(ds)
         assert_output_msgs_len(resp)
