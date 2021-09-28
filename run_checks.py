@@ -136,7 +136,6 @@ if __name__ == "__main__":
         check_types.remove('CF')
 
     # Create directory for checker output
-    opath = idiryml + '/checker_output/tmp/'
     output_directory.create_directories(opath, check_types)
 
     # Run checks
