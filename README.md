@@ -104,7 +104,7 @@ In alphabetic order:
 - [Ag Stephens](https://github.com/agstephens)
 - [Amandine Kaiser](https://github.com/am-kaiser), [ORCID: 0000-0002-2756-9964](https://orcid.org/0000-0002-2756-9964)
 - [Anette Ganske](https://github.com/anganske), [ORCID: 0000-0003-1043-4964](https://orcid.org/0000-0003-1043-4964)
-- [Angelika Heil](https://github.com/atmodatcode), [ORCID: 0000-0002-0131-1404](https://orcid.org/0000-0002-0131-1404)
+- [Angelika Heil](https://github.com/atmodatcode), [ORCID: 0000-0002-8768-5027](https://orcid.org/0000-0002-8768-5027)
 - Angelina Kraft, [ORCID: 0000-0002-6454-335X](https://orcid.org/0000-0002-6454-335X)
 - [Daniel Heydebreck](https://github.com/neumannd), [ORCID: 0000-0001-8574-9093](https://orcid.org/0000-0001-8574-9093)
 - [Hugo Ricketts](https://github.com/gapintheclouds)
