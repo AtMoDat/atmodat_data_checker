@@ -164,7 +164,7 @@ class GlobalAttrVocabCheckByStatus(NCFileCheckBase):
         ds = primary_arg
         vocabs = ESSVocabs(*self.vocabulary_ref.split(":")[:2])
 
-        score = vocabs.check_global_attribute(ds, self.kwargs["attribute"], property=self.kwargs["vocab_lookup"])
+        score = vocabs.check_global_attribute(ds, self.kwargs["attribute"], vocab_lookup=self.kwargs["vocab_lookup"])
         messages = []
 
         if score < self.out_of:
