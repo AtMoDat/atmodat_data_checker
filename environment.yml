@@ -9,5 +9,7 @@ dependencies:
   - pandas
   - compliance-checker
   - cfunits
+  - udunits2
+  - git
   # tests
   - pytest
