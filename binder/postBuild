@@ -1,0 +1,5 @@
+set -e
+
+pip install -U -e .
+git clone https://github.com/AtMoDat/demo_data.git
+ln -s /home/jovyan/demo_data /home/jovyan/notebooks/demo_data 

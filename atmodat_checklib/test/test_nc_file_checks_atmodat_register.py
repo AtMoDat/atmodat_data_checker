@@ -6,12 +6,14 @@ Unit tests for the contents of the atmodat_checklib.register.nc_file_checks_atmo
 import numpy as np
 import pytest
 from atmodat_checklib.register.nc_file_checks_atmodat_register import ConventionsVersionCheck, \
-    GlobalAttrTypeCheck, DateISO8601Check, GobalAttrResolutionFormatCheck
+    GlobalAttrTypeCheck, DateISO8601Check, GlobalAttrResolutionFormatCheck, GlobalAttrVocabCheckByStatus
 import datetime
 import pytz
+import json
 from netCDF4 import Dataset
 
 msgs_incorrect = "Incorrect output message"
+attribute_list = ['featureType', 'frequency', 'nominal_resolution', 'realm', 'source_type']
 
 
 @pytest.fixture(scope="session")
@@ -34,6 +36,51 @@ def assert_output_msgs_len(resp_in):
         assert(len(msgs) == 0)
     else:
         assert(len(msgs[0].split("'")) == 3), "Incorrect format of error message"
+
+
+def load_cv_json(att_in):
+    ipath_json = 'AtMoDat_CVs/AtMoDat_CV_json/'
+    with open(ipath_json + 'AtMoDat_' + att_in + '.json') as jsonFile:
+        json_object = json.load(jsonFile)
+        jsonFile.close()
+    return json_object[att_in]
+
+
+def test_controlled_vocab_correct(empty_netcdf):
+    for att in attribute_list:
+        cv_elements = load_cv_json(att)
+        for cv_element in cv_elements:
+            ds = write_global_attribute(empty_netcdf, **{att: cv_element})
+            x = GlobalAttrVocabCheckByStatus(kwargs={"attribute": att, "vocab_lookup": att + ":label",
+                                                     "vocabulary_ref": "atmodat:atmodat", "status": "optional"})
+            resp = x(ds)
+            assert_output_msgs_len(resp)
+            assert(resp.value == (2, 2)), resp.msgs
+            ds.close()
+
+
+def test_controlled_vocab_incorrect(empty_netcdf):
+    for att in attribute_list:
+        cv_elements = load_cv_json(att)
+        for cv_element in cv_elements:
+            ds = write_global_attribute(empty_netcdf, **{att: cv_element + 'bla'})
+            x = GlobalAttrVocabCheckByStatus(kwargs={"attribute": att, "vocab_lookup": att + ":label",
+                                                     "vocabulary_ref": "atmodat:atmodat", "status": "optional"})
+            resp = x(ds)
+            assert_output_msgs_len(resp)
+            assert(resp.value == (1, 2)), resp.msgs
+            ds.close()
+
+
+def test_controlled_vocab_missing(empty_netcdf):
+    for att in attribute_list:
+        ds = write_global_attribute(empty_netcdf)
+        x = GlobalAttrVocabCheckByStatus(kwargs={"attribute": att, "vocab_lookup": att + ":label",
+                                                 "vocabulary_ref": "atmodat:atmodat", "status": "optional"})
+        resp = x(ds)
+        assert_output_msgs_len(resp)
+        assert(resp.value == (0, 2)), resp.msgs
+        ds.close()
 
 
 def test_cf_conventions_in_range(empty_netcdf):
@@ -78,8 +125,7 @@ def test_cf_conventions_conventions_missing(empty_netcdf):
     x = ConventionsVersionCheck(kwargs={"status": "mandatory", "attribute": "Conventions", "convention_type": "CF",
                                         "min_version": min_range, "max_version": max_range})
     resp = x(ds)
-    assert_output_msgs_len(resp)
-    assert(resp.value == (0, 3)), resp.msgs
+    assert(resp is None), resp.msgs
     ds.close()
 
 
@@ -89,8 +135,7 @@ def test_atmodat_conventions_not_present(empty_netcdf):
     x = ConventionsVersionCheck(kwargs={"status": "mandatory", "attribute": "Conventions", "convention_type": "ATMODAT",
                                         "min_version": min_range, "max_version": max_range})
     resp = x(ds)
-    assert_output_msgs_len(resp)
-    assert(resp.value == (0, 3)), resp.msgs
+    assert(resp is None), resp.msgs
     ds.close()
 
 
@@ -209,7 +254,7 @@ def test_date_iso8601_check_invalid_timestring(empty_netcdf):
 def test_gobal_attr_resolution_format_check_missing(empty_netcdf):
     for attr in ['geospatial_lon_resolution', 'geospatial_lat_resolution', 'geospatial_vertical_resolution']:
         ds = write_global_attribute(empty_netcdf)
-        x = GobalAttrResolutionFormatCheck(kwargs={"status": "recommended", "attribute": attr})
+        x = GlobalAttrResolutionFormatCheck(kwargs={"status": "recommended", "attribute": attr})
         resp = x(ds)
         assert_output_msgs_len(resp)
         assert(resp.value == (0, 4)), resp.msgs
@@ -221,7 +266,7 @@ def test_gobal_attr_resolution_format_check_no_value(empty_netcdf):
         for unit in ['W', ' W', 'W ']:
             attr_dict = {attr: unit}
             ds = write_global_attribute(empty_netcdf, **attr_dict)
-            x = GobalAttrResolutionFormatCheck(kwargs={"status": "recommended", "attribute": attr})
+            x = GlobalAttrResolutionFormatCheck(kwargs={"status": "recommended", "attribute": attr})
             resp = x(ds)
             assert_output_msgs_len(resp)
             assert(resp.value == (1, 4)), resp.msgs
@@ -233,7 +278,7 @@ def test_gobal_attr_resolution_format_check_no_unit(empty_netcdf):
         for attr in ['geospatial_lon_resolution', 'geospatial_lat_resolution', 'geospatial_vertical_resolution']:
             attr_dict = {attr: str(val)}
             ds = write_global_attribute(empty_netcdf, **attr_dict)
-            x = GobalAttrResolutionFormatCheck(kwargs={"status": "recommended", "attribute": attr})
+            x = GlobalAttrResolutionFormatCheck(kwargs={"status": "recommended", "attribute": attr})
             resp = x(ds)
             assert_output_msgs_len(resp)
             assert(resp.value == (2, 4)), resp.msgs
@@ -246,7 +291,7 @@ def test_gobal_attr_resolution_format_check_invalid_unit(empty_netcdf):
             for attr in ['geospatial_lon_resolution', 'geospatial_lat_resolution', 'geospatial_vertical_resolution']:
                 attr_dict = {attr: str(val) + ' ' + unit}
                 ds = write_global_attribute(empty_netcdf, **attr_dict)
-                x = GobalAttrResolutionFormatCheck(kwargs={"status": "recommended", "attribute": attr})
+                x = GlobalAttrResolutionFormatCheck(kwargs={"status": "recommended", "attribute": attr})
                 resp = x(ds)
                 assert_output_msgs_len(resp)
                 assert(resp.value == (3, 4)), resp.msgs
@@ -259,7 +304,7 @@ def test_gobal_attr_resolution_format_check_correct(empty_netcdf):
             for attr in ['geospatial_lon_resolution', 'geospatial_lat_resolution', 'geospatial_vertical_resolution']:
                 attr_dict = {attr: str(val) + ' ' + unit}
                 ds = write_global_attribute(empty_netcdf, **attr_dict)
-                x = GobalAttrResolutionFormatCheck(kwargs={"status": "recommended", "attribute": attr})
+                x = GlobalAttrResolutionFormatCheck(kwargs={"status": "recommended", "attribute": attr})
                 resp = x(ds)
                 assert_output_msgs_len(resp)
                 assert(resp.value == (4, 4)), resp.msgs

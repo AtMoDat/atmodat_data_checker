@@ -93,10 +93,9 @@ def write_short_summary(json_summary, cf_errors, file_counter, std_name_table_in
                 text_out = text_out + "\n"
             f.write(text_out)
             f.write("Version of the AtMoDat checker: " + str(__version__) + "\n")
-        f.write("Checked at: " + datetime.datetime.now().isoformat() + "\n \n")
+        f.write("Checked at: " + datetime.datetime.now().isoformat(timespec='seconds') + "\n \n")
         f.write("Number of checked files: " + str(file_counter) + '\n')
         if isinstance(json_summary, pd.DataFrame):
-            f.write("Total checks passed: " + str(passed_checks['all'][1]) + '/' + str(passed_checks['all'][0]) + '\n')
             for prio in prio_dict.keys():
                 f.write(prio_dict[prio] + " checks passed: " + str(passed_checks[prio][1]) + '/'
                         + str(passed_checks[prio][0]) + '\n')
@@ -161,7 +160,7 @@ def create_output_summary(file_counter, opath, check_types_in):
         if file.endswith("_result.json") and isinstance(json_summary, pd.DataFrame):
             json_summary = json_summary.append(extract_overview_output_json(file),
                                                ignore_index=True)
-        elif file.endswith("_cfchecks_result.txt"):
+        elif file.endswith("_CF_result.txt"):
             cf_errors, std_name_table = extracts_error_summary_cf_check(file, cf_errors)
 
     write_short_summary(json_summary, cf_errors, file_counter, std_name_table, opath)

@@ -2,12 +2,12 @@
 name: atmodat
 channels:
   - conda-forge
-  - defaults
 dependencies:
   - pip
   - python>=3.6
   - pandas
   - compliance-checker
   - cfunits
-  # tests
-  - pytest
+  - xarray
+  - nco
+  - matplotlib

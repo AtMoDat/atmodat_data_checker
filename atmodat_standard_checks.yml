@@ -14,6 +14,10 @@ checks:
     parameters: {"attribute": "source", "type": "str", "status": "mandatory"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
 
+  - check_id: "conventions_attribute_type_check"
+    parameters: {"attribute": "Conventions", "type": "str", "status": "mandatory"}
+    check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
+
   # Check if Conventions version is within given range
   - check_id: "cf_conventions_version_check"
     parameters: {"attribute": "Conventions", "convention_type": "CF", "min_version": 1.4, "max_version": 1.8,
@@ -75,25 +79,29 @@ checks:
     parameters: {"attribute": "title", "type": "str", "status": "recommended"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
 
+  - check_id: "product_version_type_check"
+    parameters: {"attribute": "product_version", "type": "str", "status": "recommended"}
+    check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
+
   # Check against controlled vocabullary
 
   - check_id: "frequency_attribute_check"
-    parameters: {"attribute": "frequency", "vocab_lookup": "label",
+    parameters: {"attribute": "frequency", "vocab_lookup": "frequency:label",
                  "vocabulary_ref": "atmodat:atmodat", "status": "recommended"}
     check_name: "atmodat_checklib.register.GlobalAttrVocabCheckByStatus"
 
   - check_id: "nominal_resolution_attribute_CV_check"
-    parameters: {"attribute": "nominal_resolution", "vocab_lookup": "label",
+    parameters: {"attribute": "nominal_resolution", "vocab_lookup": "nominal_resolution:label",
                  "vocabulary_ref": "atmodat:atmodat", "status": "recommended"}
     check_name: "atmodat_checklib.register.GlobalAttrVocabCheckByStatus"
 
   - check_id: "realm_attribute_CV_check"
-    parameters: {"attribute": "realm", "vocab_lookup": "label",
+    parameters: {"attribute": "realm", "vocab_lookup": "realm:label",
                  "vocabulary_ref": "atmodat:atmodat", "status": "recommended"}
     check_name: "atmodat_checklib.register.GlobalAttrVocabCheckByStatus"
 
   - check_id: "source_type_CV_check"
-    parameters: {"attribute": "source_type", "vocab_lookup": "label",
+    parameters: {"attribute": "source_type", "vocab_lookup": "source_type:label",
                  "vocabulary_ref": "atmodat:atmodat", "status": "recommended"}
     check_name: "atmodat_checklib.register.GlobalAttrVocabCheckByStatus"
 
@@ -102,12 +110,12 @@ checks:
   - check_id: "global_attribute_resolution_format_check_lat_resolution"
     parameters: {"attribute": "geospatial_lat_resolution",
                  "status": "recommended"}
-    check_name: "atmodat_checklib.register.GobalAttrResolutionFormatCheck"
+    check_name: "atmodat_checklib.register.GlobalAttrResolutionFormatCheck"
 
   - check_id: "global_attribute_resolution_format_check_lon_resolution"
     parameters: {"attribute": "geospatial_lon_resolution",
                  "status": "recommended"}
-    check_name: "atmodat_checklib.register.GobalAttrResolutionFormatCheck"
+    check_name: "atmodat_checklib.register.GlobalAttrResolutionFormatCheck"
 
   - check_id: "vertical_resolution_attribute_type_check"
     parameters: {"attribute": "geospatial_vertical_resolution", "type": "str", "status": "recommended"}
@@ -153,9 +161,8 @@ checks:
     parameters: {"attribute": "references", "type": "str", "status": "optional"}
     check_name: "atmodat_checklib.register.GlobalAttrTypeCheck"
 
-  # Check against controlled vocabullary
-
+  # Check against controlled vocabulary
   - check_id: "featureType_attribute_type_check"
-    parameters: {"attribute": "featureType", "type": "str",
+    parameters: {"attribute": "featureType", "vocab_lookup": "featureType:label",
                  "vocabulary_ref": "atmodat:atmodat", "status": "optional"}
     check_name: "atmodat_checklib.register.GlobalAttrVocabCheckByStatus"

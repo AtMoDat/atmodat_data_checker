@@ -59,14 +59,19 @@ class ConventionsVersionCheck(NCFileCheckBase):
 
         self._define_messages(messages)
 
-        if score < self.out_of:
-            messages.append(self.get_messages()[score])
+        if score == 0:
+            # The existence of the "Conventions" attribute is already checked by GlobalAttrTypeCheck, so no output of an
+            # error message is needed here
+            return
+        else:
+            if score < self.out_of:
+                messages.append(self.get_messages()[score])
 
-        return Result(self.level, (score, self.out_of),
-                      self.get_short_name(), messages)
+            return Result(self.level, (score, self.out_of),
+                          self.get_short_name(), messages)
 
 
-class GobalAttrResolutionFormatCheck(NCFileCheckBase):
+class GlobalAttrResolutionFormatCheck(NCFileCheckBase):
     """
     The global attribute '{attribute}' must be in number+unit format .
     """
@@ -159,7 +164,7 @@ class GlobalAttrVocabCheckByStatus(NCFileCheckBase):
         ds = primary_arg
         vocabs = ESSVocabs(*self.vocabulary_ref.split(":")[:2])
 
-        score = vocabs.check_global_attribute(ds, self.kwargs["attribute"], property=self.kwargs["vocab_lookup"])
+        score = vocabs.check_global_attribute(ds, self.kwargs["attribute"], vocab_lookup=self.kwargs["vocab_lookup"])
         messages = []
 
         if score < self.out_of:
