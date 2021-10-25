@@ -22,6 +22,7 @@ def main():
     verbose = args.verbose
     ifile = args.file
     ipath = args.path
+    ipath_norec = args.path_no_recursive
     opath_in = args.opath
     cfversion = args.cfversion
     whatchecks = args.whatchecks
@@ -51,7 +52,7 @@ def main():
             whatchecks = 'both'
 
     # Check that either ifile or ipath exist
-    if not ifile and not ipath:
+    if not ifile and not ipath and not ipath_norec:
         raise RuntimeError('No file and path given')
 
     check_types = ['atmodat', 'CF']
@@ -65,7 +66,7 @@ def main():
 
     # Run checks
     file_counter = 0
-    if ifile and not ipath:
+    if ifile and not (ipath or ipath_norec):
         if ifile.endswith(".nc"):
             if os.path.isfile(ifile):
                 run_checks([ifile], verbose, check_types, cfversion, opath, idiryml)
@@ -74,8 +75,11 @@ def main():
                 raise RuntimeError('File: ' + ifile + ' does not exist')
         else:
             print('Skipping ' + ifile + ' as it does not end with ".nc'"")
-    elif ipath and not ifile:
-        files_all = output_directory.return_files_in_directory_tree(ipath)
+    elif (ipath or ipath_norec) and not ifile:
+        if ipath:
+            files_all = output_directory.return_files_in_directory_tree(ipath)
+        else:
+            files_all = output_directory.return_files_in_directory(ipath_norec)
         file_nc = []
         [file_nc.append(file) for file in files_all if file.endswith(".nc")]
         if len(file_nc) == 0:
@@ -216,7 +220,9 @@ def command_line_parse():
                         default=False)
     group = parser.add_mutually_exclusive_group()
     group.add_argument("-f", "--file", help="Processes the given file")
-    group.add_argument("-p", "--path", help="Processes all files in a given directory")
+    group.add_argument("-p", "--path", help="Processes all files in a given path and subdirectories "
+                                            "(recursive file search)")
+    group.add_argument("-pnr", "--path_no_recursive", help="Processes all files in a given directory")
 
     return parser.parse_args()
 
