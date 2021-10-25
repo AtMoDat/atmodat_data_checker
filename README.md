@@ -11,92 +11,113 @@ We set up a binder where you can try out the functionalities of the ATMODAT Stan
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/AtMoDat/atmodat_data_checker/HEAD?filepath=notebooks)
 
-## Installation (tested on Linux and macOS)
+## Installation (tested on Linux, macOS and Windows)
 
-1. Clone this repository
+1. Install Miniconda or Anaconda (if not already done). Follow the [respective instructions](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html#regular-installation) for your operating system.
 
-```bash
-git clone https://github.com/AtMoDat/atmodat_data_checker.git
-cd atmodat_data_checker
-```
 
-2. Install Python 3 via conda if necessary:
+2. Open a Terminal / Anaconda Prompt (under Windows)
 
-```bash
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-sh Miniconda3-latest-Linux-x86_64.sh -p $HOME/miniconda3 -b
-rm -f Miniconda3-latest-Linux-x86_64.sh
-```
 
-3. Create conda environment and install the IOOS compliance checker via conda:
+3. If not already installed, a version of git is needed to clone repository of the checker from GitHub. It can be installed using conda:
+    ```bash
+   conda install -c anaconda git
+    ```
+   Clone this repository:
 
-```bash
-conda env create         # environment name is retrieved from environment.yml
-conda activate atmodat
-```
+   ```bash
+   git clone https://github.com/AtMoDat/atmodat_data_checker.git
+   cd atmodat_data_checker
+   ```
 
-4. Install (and upgrade) atmodat-checker
-```bash
-pip install -U -e .
-```
+4. Create conda environment and install the needed anaconda packages:
+   ```bash
+   conda env create -f environment.yml
+   conda activate atmodat
+   ```
 
-5. Initialize and update the [ATMODAT CVs](https://github.com/AtMoDat/AtMoDat_CVs) submodule, which contains the controlled vocabulary for the ATMODAT Standard.
+5. Install (and upgrade) atmodat-checker
+   ```bash
+   pip install -U -e .
+   ```
 
-```bash
-git submodule init
-git submodule update
-```
+6. Initialize and update the [ATMODAT CVs](https://github.com/AtMoDat/AtMoDat_CVs) submodule, which contains the controlled vocabulary for the ATMODAT Standard.
+   ```bash
+   git submodule init
+   git submodule update
+   ```
 
-6. Point `pyessv` to the `pyessv-archive` where ATMODAT controlled vocabulary is stored
+7. Set the `PYESSV_ARCHIVE_HOME` path  to where the `pyessv-archive` with the ATMODAT controlled vocabulary is stored. 
 
-```bash
-export PYESSV_ARCHIVE_HOME=$PWD/AtMoDat_CVs/pyessv-archive
-```
+   For Linux/macOS use this command:
+   ```
+   export PYESSV_ARCHIVE_HOME=${path_to_atmodat_checker}/AtMoDat_CVs/pyessv-archive
+   ```
+   and replace `${path_to_atmodat_checker}` with the absolute path to the directory of the `atmodat_data_checker`. 
+   
+   For regular usage of the checker, we recommend adding this line to your `.bashrc` or `.bash_profile`. 
 
-7. For regular usage of the ATMODAT Standard Checker, it is recommended to put the line given in 6. into your `.bashrc` or `.bash_profile`. Replace the `$PWD` with the absolute path. 
+   For Windows use this command:
+   ```
+   set PYESSV_ARCHIVE_HOME "${path_to_atmodat_checker}\AtMoDat_CVs\pyessv-archive"
+   ```
+   and replace `${path_to_atmodat_checker}` with the absolute path to the directory of the `atmodat_data_checker`.
+
+   For regular usage of the checker, we recommend to permanently adding this path using:
+   ```
+   setx PYESSV_ARCHIVE_HOME "${path_to_atmodat_checker}\AtMoDat_CVs\pyessv-archive"
+   ```
+
+8. It might be necessary to also set the `UDUNITS2_XML_PATH` path, which has to point to the `udunits2.xml` (see also [here](https://ncas-cms.github.io/cfunits/installation.html#dependencies)).
+
+   It is located in the `atmodat` conda environment. As a first step, find the base path to the `atmodat` conda environment (which we will call `atmodat_condapath`). 
+
+   You will find the `udunits2.xml` in `${atmodat_condapath}/share/udunits/` (for Linux/macOS) or `${atmodat_condapath}\Library\share\udunits` (for Windows). As for step 7, set the `UDUNITS2_XML_PATH` variable to the `udunits2.xml`.  
 
 
 ## How to run the ATMODAT Standard Checker
 
-The command `run_checks.py` can be executed from any directory from within the `atmodat` conda environment. It will perform checks to evaluate the compliance with the ATMODAT Standard.  Compliance with the CF Conventions is checked by a call to the [CF checker](https://github.com/cedadev/cf-checker). The results of the performed checks are provided in the `checker_output` directory. 
-By default, run_checks.py assumes writing permissions in the path where the atmodat checker is installed. If this is not the case, you must specify an output directory where you possess writing permissions with the -op output_path.
+The command `run_checks` can be executed from any directory from within the `atmodat` conda environment. It will perform checks to evaluate the compliance with the ATMODAT Standard.  Compliance with the CF Conventions is checked by a call to the [CF checker](https://github.com/cedadev/cf-checker). The results of the performed checks are provided in the `checker_output` directory. 
+By default, `run_checks` assumes writing permissions in the path where the atmodat checker is installed. If this is not the case, you must specify an output directory where you possess writing permissions with the -op output_path.
 
 * To check a single file, use:
-```bash
-run_checks.py -f file_to_check.nc
-```
+   ```bash
+   run_checks -f file_to_check.nc
+   ```
 * To run the checker on all `*.nc` files of a directory (including all sub-directories), use:
-```bash
-run_checks.py -p file_path
-```
-* To create a summary of the checks performed, add the ````-s```` flag, e.g.:
-```bash
-run_checks.py -s -p file_path
-```
+   ```bash
+   run_checks -p file_path
+   ```
+* To create a summary of the checks performed, add the `-s` flag, e.g.:
+   ```bash
+   run_checks -s -p file_path
+   ```
 * To define a custom path into which the checker output shall be written, use:
-```bash
-run_checks.py -op output_path -p file_path
-```
+   ```bash
+   run_checks -op output_path -p file_path
+   ```
 * To define the CF version against which the file(s) shall be checked, use:
-```bash
-run_checks.py -cfv 1.6 -p file_path
-```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Valid are versions from 1.4 to 1.8. Default is ````-cfv auto````. 
+   ```bash
+   run_checks -cfv 1.6 -p file_path
+   ```
+   Valid are versions from 1.4 to 1.8. Default is `-cfv auto`.
 
-* To define whether the file(s) shall be checked only against the ATMODAT Standard (AT) or the CF Conventions (CF), specify either ````-check AT```` or ````-check CF````. 
-```bash
-run_checks.py -check AT -p file_path
-```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Default is ````-check both````.
+
+* To define whether the file(s) shall be checked only against the ATMODAT Standard (AT) or the CF Conventions (CF), specify either `-check AT` or `-check CF`. 
+  ```bash
+   run_checks -check AT -p file_path
+  ```
+   Default is `-check both`.
+
 
 * You can combine different optional arguments, for example:
-```bash
-run_checks.py -s -op mychecks -check both -cfv 1.4 -p file_path
-```
+   ```bash
+   run_checks -s -op mychecks -check both -cfv 1.4 -p file_path
+  ```
 * For more information use:
-```bash
-python run_checks.py --help`
-```
+  ```bash
+  run_checks --help
+  ```
 
 ## Contributors
 

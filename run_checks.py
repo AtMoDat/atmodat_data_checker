@@ -8,86 +8,10 @@ import atmodat_checklib.result_output.output_directory as output_directory
 import atmodat_checklib.result_output.summary_creation as summary_creation
 import subprocess
 
-idiryml = str(Path(__file__).resolve().parents[0])
 
+def main():
 
-def run_checks(ifile_in, verbose_in, check_types_in, cfversion_in):
-    """run all checks"""
-    # Get base filename and output path
-    filenames_base = [f.split("/")[-1].rstrip('.nc') for f in ifile_in]
-    ifile_in_string = " ".join(ifile_in)
-    for check in check_types_in:
-        if check != 'CF':
-            ofiles_checker = [opath + check + '/' + filename_base + '_' + check + '_result.json'
-                              for filename_base in filenames_base]
-            ofiles_checker = ['-o ' + ofile for ofile in ofiles_checker]
-            ofiles_checker_string = " ".join(ofiles_checker)
-            cmd = 'cchecker.py --y ' + idiryml + '/atmodat_standard_checks.yml -f json_new -f text ' + \
-                  ofiles_checker_string + ' --test atmodat_standard:3.0 ' + ifile_in_string
-            subprocess.run(cmd, shell=True)
-        else:
-            cmd = 'cfchecks -v ' + cfversion_in + ' ' + ifile_in_string
-            output_string = subprocess.run(cmd, shell=True, capture_output=True, text=True).stdout
-            split_string = 'CHECKING NetCDF FILE'
-            output_string_files = output_string.split(split_string)[1::]
-            for ofile_data_cf in zip(filenames_base, output_string_files):
-                ofile_cf = opath + 'CF/' + ofile_data_cf[0] + '_' + check + '_result.txt'
-                with open(ofile_cf, 'w', encoding='utf-8') as f_cf:
-                    f_cf.write(split_string + ofile_data_cf[1])
-    for filename_base in filenames_base:
-        for check in check_types_in:
-            file_verbose = opath + check + '/' + filename_base + '_' + check + '_result.txt'
-            if verbose_in:
-                with open(file_verbose, 'r', encoding='utf-8') as f_verbose:
-                    if check == 'CF':
-                        print('')
-                        print('==============================================================================')
-                        print('===============================CF-Checker=====================================')
-                        print('==============================================================================')
-                        print('')
-                        print(f_verbose.read())
-                    elif check == 'atmodat':
-                        print('')
-                        print('==============================================================================')
-                        print('===============================AtMoDat-Checks=================================')
-                        print('==============================================================================')
-                        print('')
-                        print(f_verbose.read())
-            # Clean-up
-            if check == 'atmodat':
-                os.remove(file_verbose)
-    return
-
-
-def command_line_parse():
-    """parse command line input"""
-    # Parser for command line options
-    parser = argparse.ArgumentParser(description="Run the AtMoDat checks suits.")
-    parser.add_argument("-v", "--verbose",
-                        help="Print output of checkers (longer runtime due to double call of checkers)",
-                        action="store_true",
-                        default=False)
-    parser.add_argument("-op", "--opath", help="Define custom path where checker output shall be written",
-                        default=False)
-    parser.add_argument("-cfv", "--cfversion", help="Define custom CF table version against which the file shall be "
-                                                    "checked. Valid are versions from 1.3 to 1.8.  "
-                                                    "Example: \"-cfv 1.6\". Default is 'auto'",
-                        default='auto')
-    parser.add_argument("-check", "--whatchecks", help="Define if AtMoDat or CF check or both shall be executed. "
-                                                       "Valid options: AT, CF, both. Example: \"-check CF\". "
-                                                       "Default is 'both'",
-                        default='both')
-    parser.add_argument("-s", "--summary", help="Create summary of checker output",
-                        action="store_true",
-                        default=False)
-    group = parser.add_mutually_exclusive_group()
-    group.add_argument("-f", "--file", help="Processes the given file")
-    group.add_argument("-p", "--path", help="Processes all files in a given directory")
-
-    return parser.parse_args()
-
-
-if __name__ == "__main__":
+    idiryml = str(Path(__file__).resolve().parents[0])
 
     # record start time
     start_time = datetime.now()
@@ -143,7 +67,7 @@ if __name__ == "__main__":
     if ifile and not ipath:
         if ifile.endswith(".nc"):
             if os.path.isfile(ifile):
-                run_checks([ifile], verbose, check_types, cfversion)
+                run_checks([ifile], verbose, check_types, cfversion, opath, idiryml)
                 file_counter = 1
             else:
                 raise RuntimeError('File: ' + ifile + ' does not exist')
@@ -156,7 +80,7 @@ if __name__ == "__main__":
         if len(file_nc) == 0:
             raise RuntimeError('No netCDF files found in: ' + ipath)
         else:
-            run_checks(file_nc, verbose, check_types, cfversion)
+            run_checks(file_nc, verbose, check_types, cfversion, opath, idiryml)
             file_counter = len(file_nc)
 
     # Create summary of results if specified
@@ -165,3 +89,83 @@ if __name__ == "__main__":
 
     # Calculate run time of this script
     print("--- %.4f seconds for checking %s files---" % ((datetime.now() - start_time).total_seconds(), file_counter))
+
+
+def run_checks(ifile_in, verbose_in, check_types_in, cfversion_in, opath_file, idiryml_in):
+    """run all checks"""
+    # Get base filename and output path
+    filenames_base = [os.path.basename(os.path.realpath(f)).rstrip('.nc') for f in ifile_in]
+    ifile_in_string = " ".join(ifile_in)
+    for check in check_types_in:
+        if check != 'CF':
+            ofiles_checker = [opath_file + check + '/' + filename_base + '_' + check + '_result.json'
+                              for filename_base in filenames_base]
+            ofiles_checker = ['-o ' + ofile for ofile in ofiles_checker]
+            ofiles_checker_string = " ".join(ofiles_checker)
+            cmd = 'compliance-checker --y ' + idiryml_in + '/atmodat_standard_checks.yml -f json_new -f text ' + \
+                  ofiles_checker_string + ' --test atmodat_standard:3.0 ' + ifile_in_string
+            subprocess.run(cmd, shell=True)
+        else:
+            cmd = 'cfchecks -v ' + cfversion_in + ' ' + ifile_in_string
+            output_string = subprocess.run(cmd, shell=True, capture_output=True, text=True).stdout
+            split_string = 'CHECKING NetCDF FILE'
+            output_string_files = output_string.split(split_string)[1::]
+            for ofile_data_cf in zip(filenames_base, output_string_files):
+                ofile_cf = opath_file + 'CF/' + ofile_data_cf[0] + '_' + check + '_result.txt'
+                with open(ofile_cf, 'w', encoding='utf-8') as f_cf:
+                    f_cf.write(split_string + ofile_data_cf[1])
+    for filename_base in filenames_base:
+        for check in check_types_in:
+            file_verbose = opath_file + check + '/' + filename_base + '_' + check + '_result.txt'
+            if verbose_in:
+                with open(file_verbose, 'r', encoding='utf-8') as f_verbose:
+                    if check == 'CF':
+                        print('')
+                        print('==============================================================================')
+                        print('===============================CF-Checker=====================================')
+                        print('==============================================================================')
+                        print('')
+                        print(f_verbose.read())
+                    elif check == 'atmodat':
+                        print('')
+                        print('==============================================================================')
+                        print('===============================AtMoDat-Checks=================================')
+                        print('==============================================================================')
+                        print('')
+                        print(f_verbose.read())
+            # Clean-up
+            if check == 'atmodat':
+                os.remove(file_verbose)
+    return
+
+
+def command_line_parse():
+    """parse command line input"""
+    # Parser for command line options
+    parser = argparse.ArgumentParser(description="Run the AtMoDat checks suits.")
+    parser.add_argument("-v", "--verbose",
+                        help="Print output of checkers (longer runtime due to double call of checkers)",
+                        action="store_true",
+                        default=False)
+    parser.add_argument("-op", "--opath", help="Define custom path where checker output shall be written",
+                        default=False)
+    parser.add_argument("-cfv", "--cfversion", help="Define custom CF table version against which the file shall be "
+                                                    "checked. Valid are versions from 1.3 to 1.8.  "
+                                                    "Example: \"-cfv 1.6\". Default is 'auto'",
+                        default='auto')
+    parser.add_argument("-check", "--whatchecks", help="Define if AtMoDat or CF check or both shall be executed. "
+                                                       "Valid options: AT, CF, both. Example: \"-check CF\". "
+                                                       "Default is 'both'",
+                        default='both')
+    parser.add_argument("-s", "--summary", help="Create summary of checker output",
+                        action="store_true",
+                        default=False)
+    group = parser.add_mutually_exclusive_group()
+    group.add_argument("-f", "--file", help="Processes the given file")
+    group.add_argument("-p", "--path", help="Processes all files in a given directory")
+
+    return parser.parse_args()
+
+
+if __name__ == "__main__":
+    main()
