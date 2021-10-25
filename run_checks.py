@@ -29,7 +29,7 @@ def main():
     # Define output path for checker output
     if opath_in:
         # user-defined path
-        opath = opath_in
+        opath = opath_in + '/'
     else:
         # default path with subdirectory containing timestamp of check
         opathe = start_time.now().strftime("%Y%m%d_%H%M") + '/'

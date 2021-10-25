@@ -77,7 +77,8 @@ We set up a binder where you can try out the functionalities of the ATMODAT Stan
 
 ## How to run the ATMODAT Standard Checker
 
-The command `run_checks` can be executed from any directory from within the `atmodat` conda environment. It will perform checks to evaluate the compliance with the ATMODAT Standard.  Compliance with the CF Conventions is checked by a call to the [CF checker](https://github.com/cedadev/cf-checker). The results of the performed checks are provided in the `checker_output` directory.
+The command `run_checks` can be executed from any directory from within the `atmodat` conda environment. It will perform checks to evaluate the compliance with the ATMODAT Standard.  Compliance with the CF Conventions is checked by a call to the [CF checker](https://github.com/cedadev/cf-checker). The results of the performed checks are provided in the `checker_output` directory. 
+By default, `run_checks` assumes writing permissions in the path where the atmodat checker is installed. If this is not the case, you must specify an output directory where you possess writing permissions with the -op output_path.
 
 * To check a single file, use:
    ```bash
