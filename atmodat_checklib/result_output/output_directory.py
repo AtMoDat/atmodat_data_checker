@@ -25,3 +25,14 @@ def return_files_in_directory_tree(input_path):
         raise RuntimeError('Given direcotry contains no netCDF files')
 
     return file_names
+
+
+def return_files_in_directory(input_path):
+    """return all files in directory tree"""
+    file_names = []
+    for f_names in os.listdir(input_path):
+        file_names.append(os.path.join(input_path, f_names))
+    if not file_names:
+        raise RuntimeError('Given direcotry contains no netCDF files')
+
+    return file_names

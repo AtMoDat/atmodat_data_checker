@@ -7,6 +7,8 @@ All notable changes to this project will be documented in this file.
 - Add possibility to run the AtMoDaT Standard Compliance Checker in a binder
 - Make the AtMoDaT Standard Compliance Checker compatible with Windows (#69)
 - Add Changelog.md (#79)
+- Fix command-line string size issue (#80)
+- Add non-recursive file search when path to multiple files is provided (-pnr option) (#81)
 ### Changed:
 - Add cfunits to environment.yml to fix tests (#52)
 - Large revision of README.md (#51)
