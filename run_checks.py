@@ -7,6 +7,7 @@ from pathlib import Path
 import atmodat_checklib.result_output.output_directory as output_directory
 import atmodat_checklib.result_output.summary_creation as summary_creation
 import subprocess
+import numpy as np
 
 
 def main():
@@ -91,23 +92,76 @@ def main():
     print("--- %.4f seconds for checking %s files---" % ((datetime.now() - start_time).total_seconds(), file_counter))
 
 
+def utf8len(string_in):
+    return len(string_in.encode('utf-8'))
+
+
+def cmd_string_checker(io_in, idiryml_in):
+    # String of input and output files
+    ifile_in_string = " ".join(io_in[0])
+    ofiles_checker_string = " ".join(io_in[1])
+
+    # Output string creation
+    return 'compliance-checker --y ' + idiryml_in + '/atmodat_standard_checks.yml -f json_new -f text ' + \
+           ofiles_checker_string + ' --test atmodat_standard:3.0 ' + ifile_in_string
+
+
+def cmd_string_cf(ifiles_in, cf_version_in):
+    ifile_in_string = " ".join(ifiles_in)
+    return 'cfchecks -v ' + cf_version_in + ' ' + ifile_in_string
+
+
+def cmd_string_creation(check_in, ifiles_in, opath_file_in, filenames_base_in, idiryml_in, cf_version_in):
+    max_string_len = 131072
+    cmd_out = []
+    if check_in == 'atmodat':
+
+        # List of output files
+        ofiles_checker = [opath_file_in + check_in + '/' + filename_base + '_' + check_in + '_result.json'
+                          for filename_base in filenames_base_in]
+        ofiles_checker = ['-o ' + ofile for ofile in ofiles_checker]
+
+        # Output string creation
+        tmp_cmd_out = cmd_string_checker((ifiles_in, ofiles_checker), idiryml_in)
+        num_split = int(np.ceil(utf8len(tmp_cmd_out) / max_string_len))
+        if num_split > len(ifiles_in):
+            num_split = len(ifiles_in)
+
+        # Split if size of string exceeds max_string_len
+        if num_split < 2:
+            cmd_out.append(tmp_cmd_out)
+        else:
+            for io_files in zip(np.array_split(ifiles_in, num_split), np.array_split(ofiles_checker, num_split)):
+                cmd_out.append(cmd_string_checker(io_files, idiryml_in))
+
+    elif check_in == 'CF':
+        tmp_cmd_out = cmd_string_cf(ifiles_in, cf_version_in)
+        num_split = int(np.ceil(utf8len(tmp_cmd_out) / max_string_len))
+        if num_split > len(ifiles_in):
+            num_split = len(ifiles_in)
+        if num_split < 2:
+            cmd_out.append(tmp_cmd_out)
+        else:
+            for split_ifiles in np.array_split(ifiles_in, num_split):
+                cmd_out.append(cmd_string_cf(split_ifiles, cf_version_in))
+    return cmd_out
+
+
 def run_checks(ifile_in, verbose_in, check_types_in, cfversion_in, opath_file, idiryml_in):
     """run all checks"""
     # Get base filename and output path
     filenames_base = [os.path.basename(os.path.realpath(f)).rstrip('.nc') for f in ifile_in]
-    ifile_in_string = " ".join(ifile_in)
     for check in check_types_in:
-        if check != 'CF':
-            ofiles_checker = [opath_file + check + '/' + filename_base + '_' + check + '_result.json'
-                              for filename_base in filenames_base]
-            ofiles_checker = ['-o ' + ofile for ofile in ofiles_checker]
-            ofiles_checker_string = " ".join(ofiles_checker)
-            cmd = 'compliance-checker --y ' + idiryml_in + '/atmodat_standard_checks.yml -f json_new -f text ' + \
-                  ofiles_checker_string + ' --test atmodat_standard:3.0 ' + ifile_in_string
-            subprocess.run(cmd, shell=True)
-        else:
-            cmd = 'cfchecks -v ' + cfversion_in + ' ' + ifile_in_string
-            output_string = subprocess.run(cmd, shell=True, capture_output=True, text=True).stdout
+        if check == 'atmodat':
+            cmd_checker = cmd_string_creation(check, ifile_in, opath_file, filenames_base, idiryml_in, cfversion_in)
+            for cmd in cmd_checker:
+                subprocess.run(cmd, shell=True)
+        elif check == 'CF':
+            cmd_cf = cmd_string_creation(check, ifile_in, opath_file, filenames_base, idiryml_in, cfversion_in)
+            output_string_all = []
+            for cmd in cmd_cf:
+                output_string_all.append(subprocess.run(cmd, shell=True, capture_output=True, text=True).stdout)
+            output_string = ''.join(output_string_all)
             split_string = 'CHECKING NetCDF FILE'
             output_string_files = output_string.split(split_string)[1::]
             for ofile_data_cf in zip(filenames_base, output_string_files):
