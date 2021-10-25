@@ -14,6 +14,7 @@ echo "Installing atmodat checker in environment" "{$env_name}"
 
 conda env create         # environment name is retrieved from environment.yml
 
+# shellcheck disable=SC1090
 source ~/anaconda3/bin/activate "$env_name"      #-- equivalent to conda activate ${env_name} in terminal
 #source ~/anaconda3/etc/profile.d/conda.sh
 
