@@ -4,12 +4,5 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - pip
   - python>=3.6
-  - pandas
-  - compliance-checker
-  - cfunits
-  - udunits2
-  - git
-  # tests
-  - pytest
+  - mamba

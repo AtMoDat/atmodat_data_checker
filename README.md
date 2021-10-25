@@ -30,10 +30,11 @@ We set up a binder where you can try out the functionalities of the ATMODAT Stan
    cd atmodat_data_checker
    ```
 
-4. Create conda environment and install the needed anaconda packages:
+4. Create conda environment and install the needed anaconda packages (via mamba):
    ```bash
    conda env create -f environment.yml
    conda activate atmodat
+   mamba install --file mamba_requirements.txt
    ```
 
 5. Install (and upgrade) atmodat-checker

@@ -1,0 +1,7 @@
+pip
+pandas
+compliance-checker
+cfunits
+udunits2
+git
+pytest
