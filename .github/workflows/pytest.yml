@@ -24,6 +24,7 @@ jobs:
             echo "$CONDA"/bin >> "$GITHUB_PATH"
       - name: Install dependencies
         run: |
+          conda config --add channels conda-forge
           conda env update --file environment.yml --name base
           if [ -f mamba_requirements.txt ]; then mamba install --file mamba_requirements.txt; fi
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
