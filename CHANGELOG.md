@@ -9,6 +9,7 @@ All notable changes to this project will be documented in this file.
 - Add Changelog.md (#79)
 - Fix command-line string size issue (#80)
 - Add non-recursive file search when path to multiple files is provided (-pnr option) (#81)
+- Use mamba to install required conda packages (#83)
 ### Changed:
 - Add cfunits to environment.yml to fix tests (#52)
 - Large revision of README.md (#51)
