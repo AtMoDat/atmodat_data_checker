@@ -120,6 +120,9 @@ By default, `run_checks` assumes writing permissions in the path where the atmod
   ```bash
   run_checks --help
   ```
+  
+## Known Issues
+* Presently, there is an unresolved issue in the CF checker (v 4.1.0, [see here](https://github.com/cedadev/cf-checker/issues/75)). Until it will get resolved, this issue will output an error that is related to the `formula_terms` attribute in so-called boundary variables. As this is related to the CF checker, we will simply ignore errors that are related to this issue in the `short_summary` output of the checker.
 
 ## Contributors
 
