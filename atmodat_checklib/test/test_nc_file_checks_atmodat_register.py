@@ -5,8 +5,8 @@ Unit tests for the contents of the atmodat_checklib.register.nc_file_checks_atmo
 """
 import numpy as np
 import pytest
-from atmodat_checklib.register.nc_file_checks_atmodat_register import ConventionsVersionCheck, \
-    GlobalAttrTypeCheck, DateISO8601Check, GlobalAttrResolutionFormatCheck, GlobalAttrVocabCheckByStatus
+# from atmodat_checklib.register.nc_file_checks_atmodat_register import ConventionsVersionCheck, \
+#     GlobalAttrTypeCheck, DateISO8601Check, GlobalAttrResolutionFormatCheck, GlobalAttrVocabCheckByStatus
 import datetime
 import pytz
 import json
