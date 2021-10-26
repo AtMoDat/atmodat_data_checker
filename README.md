@@ -34,6 +34,7 @@ We set up a binder where you can try out the functionalities of the ATMODAT Stan
    ```bash
    conda env create -f environment.yml
    conda activate atmodat
+   conda config --add channels conda-forge
    mamba install --file mamba_requirements.txt
    ```
 
