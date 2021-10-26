@@ -34,5 +34,4 @@ jobs:
         run: 
           pytest
         env:
-          PYESSV_ARCHIVE_HOME: ${{ github.workspace }}/AtMoDat_CVs/pyessv-archive
           UDUNITS2_XML_PATH: /usr/share/miniconda/share/udunits/udunits2.xml

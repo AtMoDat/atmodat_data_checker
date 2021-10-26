@@ -4,13 +4,22 @@ import argparse
 import os
 from datetime import datetime
 from pathlib import Path
-import atmodat_checklib.result_output.output_directory as output_directory
-import atmodat_checklib.result_output.summary_creation as summary_creation
 import subprocess
 import numpy as np
 
+import atmodat_checklib.result_output.output_directory as output_directory
+import atmodat_checklib.result_output.summary_creation as summary_creation
+from atmodat_checklib.utils.env_util import  set_env_variables
+
 
 def main():
+
+    # Set environment variables
+    udunits2_xml_path, pyessv_archive_home = set_env_variables()
+    if not os.environ['PYESSV_ARCHIVE_HOME']:
+        os.environ['PYESSV_ARCHIVE_HOME'] = pyessv_archive_home
+    if not os.environ['UDUNITS2_XML_PATH']:
+        os.environ['UDUNITS2_XML_PATH'] = udunits2_xml_path
 
     idiryml = str(Path(__file__).resolve().parents[0])
 
@@ -227,5 +236,6 @@ def command_line_parse():
     return parser.parse_args()
 
 
-if __name__ == "__main__":
-    main()
+main()
+# if __name__ == "__main__":
+#     main()

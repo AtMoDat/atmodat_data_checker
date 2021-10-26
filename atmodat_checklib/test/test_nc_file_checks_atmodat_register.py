@@ -11,9 +11,22 @@ import datetime
 import pytz
 import json
 from netCDF4 import Dataset
+import os
+from atmodat_checklib.utils.env_util import set_env_variables
+
 
 msgs_incorrect = "Incorrect output message"
 attribute_list = ['featureType', 'frequency', 'nominal_resolution', 'realm', 'source_type']
+
+
+@pytest.fixture(autouse=True)
+def set_env_variables_pytest():
+    udunits2_xml_path, pyessv_archive_home = set_env_variables()
+
+    if not os.environ['PYESSV_ARCHIVE_HOME']:
+        os.environ['PYESSV_ARCHIVE_HOME'] = pyessv_archive_home
+    if not os.environ['UDUNITS2_XML_PATH']:
+        os.environ['UDUNITS2_XML_PATH'] = udunits2_xml_path
 
 
 @pytest.fixture(scope="session")
