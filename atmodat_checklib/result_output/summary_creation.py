@@ -53,7 +53,7 @@ def extract_overview_output_json(ifile_in):
     return summary
 
 
-def extracts_error_summary_cf_check(ifile_in, errors_in):
+def extracts_error_summary_cf_check(ifile_in, errors_in, incorrect_formula_term_error_in):
     """extracts information from given txt file and returns them as a string"""
     std_name = 'Using Standard Name Table Version '
     with open(ifile_in) as f:
@@ -61,12 +61,16 @@ def extracts_error_summary_cf_check(ifile_in, errors_in):
         for line in data.strip().split('\n'):
             if std_name in line:
                 std_name_table_out = line.replace(std_name, '').split(' ')[0]
-            if 'ERRORS detected:' in line:
-                errors_detected = errors_in + int(line.split(':')[-1].strip())
-    return errors_detected, std_name_table_out
+            if line.startswith('ERROR:'):
+                if '4.3.3' not in line:
+                    errors_in += 1
+                else:
+                    incorrect_formula_term_error_in = True
+    return errors_in, std_name_table_out, incorrect_formula_term_error_in
 
 
-def write_short_summary(json_summary, cf_errors, file_counter, std_name_table_in, opath_in):
+def write_short_summary(json_summary, cf_errors, incorrect_formula_term_error_in,
+                        file_counter, std_name_table_in, opath_in):
     """create file which contains the short version of the summary"""
     prio_dict = {'high_priorities': 'Mandatory', 'medium_priorities': 'Recommended', 'low_priorities': 'Optional'}
     passed_checks = {'all': [0, 0]}
@@ -100,7 +104,12 @@ def write_short_summary(json_summary, cf_errors, file_counter, std_name_table_in
                 f.write(prio_dict[prio] + " checks passed: " + str(passed_checks[prio][1]) + '/'
                         + str(passed_checks[prio][0]) + '\n')
         if cf_errors is not None:
-            f.write("CF checker errors: " + str(cf_errors))
+            if incorrect_formula_term_error_in:
+                f.write("CF checker errors: " + str(cf_errors) + ' (Ignoring errors related to formula_terms '
+                                                                 'in boundary variables. See Known Issues sections in '
+                                                                 'the README.md)')
+            else:
+                f.write("CF checker errors: " + str(cf_errors))
 
 
 def write_long_summary(json_summary_in, opath_in):
@@ -151,9 +160,11 @@ def create_output_summary(file_counter, opath, check_types_in):
 
     std_name_table = None
     if 'CF' in check_types_in:
+        incorrect_formula_term_error = False
         cf_errors = 0
     else:
         cf_errors = None
+        incorrect_formula_term_error = None
 
     files = output_directory.return_files_in_directory_tree(opath)
     for file in files:
@@ -161,8 +172,9 @@ def create_output_summary(file_counter, opath, check_types_in):
             json_summary = json_summary.append(extract_overview_output_json(file),
                                                ignore_index=True)
         elif file.endswith("_CF_result.txt"):
-            cf_errors, std_name_table = extracts_error_summary_cf_check(file, cf_errors)
+            cf_errors, std_name_table, incorrect_formula_term_error = \
+                extracts_error_summary_cf_check(file, cf_errors, incorrect_formula_term_error)
 
-    write_short_summary(json_summary, cf_errors, file_counter, std_name_table, opath)
+    write_short_summary(json_summary, cf_errors, incorrect_formula_term_error, file_counter, std_name_table, opath)
     write_long_summary(json_summary, opath)
     return
