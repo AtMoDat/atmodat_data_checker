@@ -10,9 +10,6 @@ def set_env_variables():
     except KeyError:
         atmodat_conda_envpath = os.environ["CONDA"]
 
-    if not atmodat_conda_envpath.endswith('atmodat'):
-        raise RuntimeError('Not in atmodat conda environment')
-
     # UDUNITS2_XML_PATH
     udunits2_xml_path_out = atmodat_conda_envpath + '/share/udunits/udunits2.xml'
 

@@ -16,10 +16,8 @@ def main():
 
     # Set environment variables
     udunits2_xml_path, pyessv_archive_home = set_env_variables()
-    if not os.environ['PYESSV_ARCHIVE_HOME']:
-        os.environ['PYESSV_ARCHIVE_HOME'] = pyessv_archive_home
-    if not os.environ['UDUNITS2_XML_PATH']:
-        os.environ['UDUNITS2_XML_PATH'] = udunits2_xml_path
+    os.environ['PYESSV_ARCHIVE_HOME'] = pyessv_archive_home
+    os.environ['UDUNITS2_XML_PATH'] = udunits2_xml_path
 
     idiryml = str(Path(__file__).resolve().parents[0])
 
