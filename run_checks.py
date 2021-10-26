@@ -9,7 +9,7 @@ import numpy as np
 
 import atmodat_checklib.result_output.output_directory as output_directory
 import atmodat_checklib.result_output.summary_creation as summary_creation
-from atmodat_checklib.utils.env_util import  set_env_variables
+from atmodat_checklib.utils.env_util import set_env_variables
 
 
 def main():

@@ -5,7 +5,11 @@ from pathlib import Path
 def set_env_variables():
 
     # Verify we are in atmodat conda environment
-    atmodat_conda_envpath = os.environ["CONDA_PREFIX"]
+    try:
+        atmodat_conda_envpath = os.environ["CONDA_PREFIX"]
+    except KeyError:
+        atmodat_conda_envpath = os.environ["CONDA"]
+
     if not atmodat_conda_envpath.endswith('atmodat'):
         raise RuntimeError('Not in atmodat conda environment')
 

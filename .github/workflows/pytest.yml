@@ -22,6 +22,7 @@ jobs:
         run: |
             # "$CONDA" is an environment variable pointing to the root of the miniconda directory
             echo "$CONDA"/bin >> "$GITHUB_PATH"
+            echo "$CONDA"
       - name: Install dependencies
         run: |
           conda config --add channels conda-forge
@@ -33,5 +34,3 @@ jobs:
       - name: Test with pytest
         run: 
           pytest
-        env:
-          UDUNITS2_XML_PATH: /usr/share/miniconda/share/udunits/udunits2.xml
