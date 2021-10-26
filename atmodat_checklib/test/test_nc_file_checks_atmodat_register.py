@@ -7,8 +7,6 @@ Unit tests for the contents of the atmodat_checklib.register.nc_file_checks_atmo
 
 import numpy as np
 import pytest
-# from atmodat_checklib.register.nc_file_checks_atmodat_register import ConventionsVersionCheck, \
-#     GlobalAttrTypeCheck, DateISO8601Check, GlobalAttrResolutionFormatCheck, GlobalAttrVocabCheckByStatus
 import datetime
 import pytz
 import json
@@ -25,7 +23,7 @@ udunits2_xml_path, pyessv_archive_home = set_env_variables()
 os.environ['PYESSV_ARCHIVE_HOME'] = pyessv_archive_home
 os.environ['UDUNITS2_XML_PATH'] = udunits2_xml_path
 from atmodat_checklib.register.nc_file_checks_atmodat_register import ConventionsVersionCheck, \
-    GlobalAttrTypeCheck, DateISO8601Check, GlobalAttrResolutionFormatCheck, GlobalAttrVocabCheckByStatus
+    GlobalAttrTypeCheck, DateISO8601Check, GlobalAttrResolutionFormatCheck, GlobalAttrVocabCheckByStatus  # noqa: E402
 
 
 @pytest.fixture(scope="session")
