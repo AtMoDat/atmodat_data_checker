@@ -2,6 +2,7 @@ import os
 from pathlib import Path
 import platform
 
+
 def set_env_variables():
 
     # Verify we are in atmodat conda environment
