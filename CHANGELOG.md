@@ -19,6 +19,7 @@ All notable changes to this project will be documented in this file.
 - Fix command-line string size issue (#80)
 - Use mamba to install required conda packages (#83)
 - Ignoring errors related to formula_terms in boundary variables (#84)
+- Set environment variables during runtime of checker (#85)
 
 ### Removed:
 
