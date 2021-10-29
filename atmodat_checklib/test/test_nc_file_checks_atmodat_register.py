@@ -3,17 +3,27 @@ test_nc_file_checks_atmodat_register.py
 ======================
 Unit tests for the contents of the atmodat_checklib.register.nc_file_checks_atmodat_register module.
 """
+
+
 import numpy as np
 import pytest
-from atmodat_checklib.register.nc_file_checks_atmodat_register import ConventionsVersionCheck, \
-    GlobalAttrTypeCheck, DateISO8601Check, GlobalAttrResolutionFormatCheck, GlobalAttrVocabCheckByStatus
 import datetime
 import pytz
 import json
 from netCDF4 import Dataset
+import os
+from atmodat_checklib.utils.env_util import set_env_variables
+
 
 msgs_incorrect = "Incorrect output message"
 attribute_list = ['featureType', 'frequency', 'nominal_resolution', 'realm', 'source_type']
+
+
+udunits2_xml_path, pyessv_archive_home = set_env_variables()
+os.environ['PYESSV_ARCHIVE_HOME'] = pyessv_archive_home
+os.environ['UDUNITS2_XML_PATH'] = udunits2_xml_path
+from atmodat_checklib.register.nc_file_checks_atmodat_register import ConventionsVersionCheck, \
+    GlobalAttrTypeCheck, DateISO8601Check, GlobalAttrResolutionFormatCheck, GlobalAttrVocabCheckByStatus  # noqa: E402
 
 
 @pytest.fixture(scope="session")

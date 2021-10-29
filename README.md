@@ -1,6 +1,5 @@
 # ATMODAT Standard Compliance Checker
 
-
 This is a python library that contains checks to ensure compliance with the ATMODAT Standard.
 
 Its core functionality is based on the [IOOS compliance checker](https://github.com/ioos/compliance-checker). The ATMODAT Standard Compliance Checker library makes use of [cc-yaml](https://github.com/cedadev/cc-yaml), which provides a plugin for the [IOOS compliance checker](https://github.com/ioos/compliance-checker) that generates check suites from YAML descriptions. Furthermore, the [Compliance Check Library](https://github.com/cedadev/compliance-check-lib) is used as the basis to define generic, reusable compliance checks. This repository is an extension of this library as it holds specific checks to ensure compliance with the ATMODAT Standard.
@@ -48,34 +47,6 @@ We set up a binder where you can try out the functionalities of the ATMODAT Stan
    git submodule init
    git submodule update
    ```
-
-7. Set the `PYESSV_ARCHIVE_HOME` path  to where the `pyessv-archive` with the ATMODAT controlled vocabulary is stored. 
-
-   For Linux/macOS use this command:
-   ```
-   export PYESSV_ARCHIVE_HOME=${path_to_atmodat_checker}/AtMoDat_CVs/pyessv-archive
-   ```
-   and replace `${path_to_atmodat_checker}` with the absolute path to the directory of the `atmodat_data_checker`. 
-   
-   For regular usage of the checker, we recommend adding this line to your `.bashrc` or `.bash_profile`. 
-
-   For Windows use this command:
-   ```
-   set PYESSV_ARCHIVE_HOME "${path_to_atmodat_checker}\AtMoDat_CVs\pyessv-archive"
-   ```
-   and replace `${path_to_atmodat_checker}` with the absolute path to the directory of the `atmodat_data_checker`.
-
-   For regular usage of the checker, we recommend to permanently adding this path using:
-   ```
-   setx PYESSV_ARCHIVE_HOME "${path_to_atmodat_checker}\AtMoDat_CVs\pyessv-archive"
-   ```
-
-8. It might be necessary to also set the `UDUNITS2_XML_PATH` path, which has to point to the `udunits2.xml` (see also [here](https://ncas-cms.github.io/cfunits/installation.html#dependencies)).
-
-   It is located in the `atmodat` conda environment. As a first step, find the base path to the `atmodat` conda environment (which we will call `atmodat_condapath`). 
-
-   You will find the `udunits2.xml` in `${atmodat_condapath}/share/udunits/` (for Linux/macOS) or `${atmodat_condapath}\Library\share\udunits` (for Windows). As for step 7, set the `UDUNITS2_XML_PATH` variable to the `udunits2.xml`.  
-
 
 ## How to run the ATMODAT Standard Checker
 

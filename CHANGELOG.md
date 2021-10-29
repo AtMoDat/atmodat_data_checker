@@ -3,7 +3,7 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 ### Added:
-- Check file existance when running on single file (#48)
+- Check file existence when running on single file (#48)
 - Add possibility to run the AtMoDaT Standard Compliance Checker in a binder
 - Make the AtMoDaT Standard Compliance Checker compatible with Windows (#69)
 - Add Changelog.md (#79)
@@ -12,13 +12,14 @@ All notable changes to this project will be documented in this file.
 ### Changed:
 - Add cfunits to environment.yml to fix tests (#52)
 - Large revision of README.md (#51)
-- Avoid checking for existance the Conventions attribute multiple times (#54)
+- Avoid checking for existence the Conventions attribute multiple times (#54)
 - Fixing CV checks (#59) and adapt checker to run with new compliance-check-lib version (#68)
 - Speed up checking of multiple files (#66)
 - Fixing -op option 
 - Fix command-line string size issue (#80)
 - Use mamba to install required conda packages (#83)
 - Ignoring errors related to formula_terms in boundary variables (#84)
+- Set environment variables during runtime of checker (#85)
 
 ### Removed:
 
