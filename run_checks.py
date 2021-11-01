@@ -172,6 +172,12 @@ def run_checks(ifile_in, verbose_in, check_types_in, cfversion_in, opath_file, i
     # Get base filename and output path
     filenames_base = [os.path.basename(os.path.realpath(f)).rstrip('.nc') for f in ifile_in]
     for check in check_types_in:
+
+        # Remove preexisting checker output
+        opath_checks = os.path.join(opath_file, check, '')
+        for old_file in os.listdir(opath_checks):
+            os.remove(os.path.join(opath_checks, old_file))
+
         if check == 'atmodat':
             cmd_checker = cmd_string_creation(check, ifile_in, opath_file, filenames_base, idiryml_in, cfversion_in)
             for cmd in cmd_checker:
