@@ -4,7 +4,7 @@ import warnings
 import argparse
 import pandas as pd
 from netCDF4 import Dataset
-
+import numpy as np
 
 def command_line_parse():
     """parse command line input"""
@@ -64,6 +64,9 @@ if __name__ == "__main__":
                 for att in var_att_modify:
                     if var_att_in[var][att]:
                         f.variables[var].setncattr(att, var_att_in[var][att])
+                    else:
+                        if hasattr(f.variables[var], att):
+                            f.variables[var].delncattr(att)
                 if var_att_in[var]['varname_new']:
                     f.renameVariable(var, var_att_in[var]['varname_new'])
         for var in var_att_list:
