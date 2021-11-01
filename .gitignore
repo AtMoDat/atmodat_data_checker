@@ -107,4 +107,4 @@ ENV/
 *~
 
 # Ignore checker_output
-checker_output/
+atmodat_checker_output/

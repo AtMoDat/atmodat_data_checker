@@ -36,13 +36,16 @@ def main():
     parsed_summary = args.summary
 
     # Define output path for checker output
+    # user-defined opath
     if opath_in:
-        # user-defined path
-        opath = opath_in + '/'
+        if opath_in.strip() == '/':
+            raise RuntimeError('Root directory should not be defined as output path!')
+        opath = opath_in
+    # predefined opath
     else:
         # default path with subdirectory containing timestamp of check
-        opathe = start_time.now().strftime("%Y%m%d_%H%M") + '/'
-        opath = idiryml + '/checker_output/' + opathe
+        opath = idiryml
+    opath = os.path.join(opath, 'atmodat_checker_output', '')
 
     # Define version of CF table against which the files shall be checked.
     # Default is auto --> CF table version parsed from global attribute 'Conventions'.
@@ -69,14 +72,14 @@ def main():
         check_types.remove('CF')
 
     # Create directory for checker output
-    output_directory.create_directories(opath, check_types)
+    opath_run = output_directory.create_directories(opath, check_types)
 
     # Run checks
     file_counter = 0
     if ifile and not (ipath or ipath_norec):
         if ifile.endswith(".nc"):
             if os.path.isfile(ifile):
-                run_checks([ifile], verbose, check_types, cfversion, opath, idiryml)
+                run_checks([ifile], verbose, check_types, cfversion, opath_run, idiryml)
                 file_counter = 1
             else:
                 raise RuntimeError('File: ' + ifile + ' does not exist')
@@ -92,12 +95,18 @@ def main():
         if len(file_nc) == 0:
             raise RuntimeError('No netCDF files found in: ' + ipath)
         else:
-            run_checks(file_nc, verbose, check_types, cfversion, opath, idiryml)
+            run_checks(file_nc, verbose, check_types, cfversion, opath_run, idiryml)
             file_counter = len(file_nc)
 
     # Create summary of results if specified
     if parsed_summary:
-        summary_creation.create_output_summary(file_counter, opath, check_types)
+        summary_creation.create_output_summary(file_counter, opath_run, check_types)
+
+    # Create a symbolic link to latest checker output
+    latest_link = os.path.join(opath, 'latest')
+    if os.path.isdir(latest_link):
+        os.unlink(latest_link)
+    os.symlink(opath_run, os.path.join(opath, 'latest'))
 
     # Calculate run time of this script
     print("--- %.4f seconds for checking %s files---" % ((datetime.now() - start_time).total_seconds(), file_counter))
@@ -234,6 +243,5 @@ def command_line_parse():
     return parser.parse_args()
 
 
-main()
-# if __name__ == "__main__":
-#     main()
+if __name__ == "__main__":
+    main()
