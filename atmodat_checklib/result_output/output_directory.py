@@ -1,18 +1,19 @@
 """module output_directory.py to create output directory"""
 
 import os
-import shutil
+from datetime import datetime
 
 
 def create_directories(opath, check_types):
+    opath = os.path.join(opath, datetime.now().strftime("%Y%m%d_%H%M"), "")
     # Create directory to store output from checker if it does not exist already
     if not os.path.isdir(opath):
         os.makedirs(opath)
-    else:
-        shutil.rmtree(opath + '/')
-        os.makedirs(opath)
     for check in check_types:
-        os.makedirs(opath + '/' + check)
+        check_dir = opath + check
+        if not os.path.isdir(check_dir):
+            os.makedirs(check_dir)
+    return opath
 
 
 def return_files_in_directory_tree(input_path):
