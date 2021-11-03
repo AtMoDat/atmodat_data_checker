@@ -4,10 +4,11 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 ### Added:
 - Check file existence when running on single file (#48)
-- Add possibility to run the AtMoDaT Standard Compliance Checker in a binder
+- Add possibility to run the ATMODAT Standard Compliance Checker in a binder
 - Make the AtMoDaT Standard Compliance Checker compatible with Windows (#69)
 - Add Changelog.md (#79)
 - Add non-recursive file search when path to multiple files is provided (-pnr option) (#81)
+- Add information on how to update the ATMODAT Standard Compliance Checker (and related packages)
 
 ### Changed:
 - Add cfunits to environment.yml to fix tests (#52)
@@ -20,6 +21,7 @@ All notable changes to this project will be documented in this file.
 - Use mamba to install required conda packages (#83)
 - Ignoring errors related to formula_terms in boundary variables (#84)
 - Set environment variables during runtime of checker (#85)
+- Do not delete content of output directory (#88)
 
 ### Removed:
 
