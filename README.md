@@ -47,13 +47,15 @@ We set up a binder where you can try out the functionalities of the ATMODAT Stan
    git submodule init
    git submodule update
    ```
-   
-7. The ATMODAT Standard Compliance Checker and related packages can be updated to its latest version as follows:
-   ```bash
-   git pull origin master || git submodule update
-   mamba update --file mamba_requirements.txt
-   pip install -U -e .
-   ```
+
+## Update the preinstalled checker 
+The ATMODAT Standard Compliance Checker and related packages can be updated to its latest version (GitHub master branch) as follows:
+```bash
+git checkout master
+git pull origin master || git submodule update
+mamba update --file mamba_requirements.txt
+pip install -U -e .
+```
 
 ## How to run the ATMODAT Standard Checker
 
