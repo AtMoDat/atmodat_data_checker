@@ -67,7 +67,7 @@ setup(
     include_package_data=True,
     keywords='admodat',
     name="atmodat_check_lib",
-    packages=find_packages(include=["atmodat_check_lib", "atmodat_check_lib.*"]),
+    packages=find_packages(include=["atmodat_checklib", "atmodat_checklib.*"]),
     setup_requires=setup_requirements,
     scripts=["run_checks.py"],
     entry_points={'console_scripts': ['run_checks = run_checks:main']},
