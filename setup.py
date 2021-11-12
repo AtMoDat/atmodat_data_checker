@@ -69,6 +69,7 @@ setup(
     name="atmodat_check_lib",
     packages=find_packages(include=["atmodat_check_lib", "atmodat_check_lib.*"]),
     setup_requires=setup_requirements,
+    scripts=["run_checks.py"],
     entry_points={'console_scripts': ['run_checks = run_checks:main']},
     test_suite='tests',
     tests_require=test_requirements,
