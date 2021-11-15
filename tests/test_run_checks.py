@@ -17,7 +17,7 @@ os.environ['UDUNITS2_XML_PATH'] = udunits2_xml_path
 
 
 def run_checks_on_files(tmpdir, ifiles):
-    atmodat_base_path = os.path.join(str(Path(__file__).resolve().parents[2]), '')
+    atmodat_base_path = os.path.join(str(Path(__file__).resolve().parents[1]), '')
     run_checks(ifiles, False, ['atmodat', 'CF'], 'auto', tmpdir, atmodat_base_path)
     json_summary, cf_errors = create_output_summary(tmpdir)
 
