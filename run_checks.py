@@ -122,7 +122,7 @@ def cmd_string_checker(io_in, idiryml_in):
     ofiles_checker_string = " ".join(io_in[1])
 
     # Output string creation
-    return 'compliance-checker --y ' + idiryml_in + '/atmodat_standard_checks.yml -f json_new -f text ' + \
+    return 'compliance-checker --y ' + idiryml_in + 'atmodat_standard_checks.yml -f json_new -f text ' + \
            ofiles_checker_string + ' --test atmodat_standard:3.0 ' + ifile_in_string
 
 
