@@ -215,7 +215,8 @@ def run_checks(ifile_in, verbose_in, check_types_in, cfversion_in, opath_file, i
                         print(f_verbose.read())
             # Clean-up
             if check == 'atmodat':
-                os.remove(file_verbose)
+                if os.path.isfile(file_verbose):
+                    os.remove(file_verbose)
     return
 
 
