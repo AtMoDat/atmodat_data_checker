@@ -9,7 +9,7 @@ All notable changes to this project will be documented in this file.
 - Add Changelog.md (#79)
 - Add non-recursive file search when path to multiple files is provided (-pnr option) (#81)
 - Add information on how to update the ATMODAT Standard Compliance Checker (and related packages)
-- Add tests for run_checks.py (match expected number of missing attributes from demo_data) (#xx)
+- Add tests for run_checks.py (check for expected number of missing attributes in demo_data) (#97)
 
 ### Changed:
 - Add cfunits to environment.yml to fix tests (#52)
