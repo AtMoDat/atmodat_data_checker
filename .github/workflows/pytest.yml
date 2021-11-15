@@ -28,7 +28,7 @@ jobs:
           conda config --add channels conda-forge
           conda env update --file environment.yml --name base
           if [ -f mamba_requirements.txt ]; then mamba install --file mamba_requirements.txt; fi
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          if [ -f requirements.txt ]; then pip install -e ; fi
       - name: Checkout submodules
         run: git submodule update --init --recursive
       - name: Test with pytest
