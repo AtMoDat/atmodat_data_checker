@@ -5,3 +5,4 @@ cfunits
 udunits2
 git
 pytest
+gitpython
