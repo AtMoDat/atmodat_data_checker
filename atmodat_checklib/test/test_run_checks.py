@@ -7,6 +7,7 @@ import pandas as pd
 from atmodat_checklib.utils.env_util import set_env_variables
 from git import Repo
 from pathlib import Path
+import json
 
 
 prio_dict = {'high_priorities': 'Mandatory', 'medium_priorities': 'Recommended', 'low_priorities': 'Optional'}
@@ -37,7 +38,6 @@ def run_checks_on_files(tmpdir, ifiles):
 
 def create_output_summary(opath):
     """main function to create summary output"""
-
     json_summary_out, cf_errors_out, incorrect_formula_term_error = {}, {}, None
     files = output_directory.return_files_in_directory_tree(opath)
     for file in files:
@@ -53,6 +53,7 @@ def create_output_summary(opath):
 
 
 def test_expected_attributes_present(tmpdir):
+
     for check in ['atmodat', 'CF']:
         tmpdir.mkdir(check)
     tmp_dir_test = os.path.join(str(tmpdir), '')
@@ -60,35 +61,15 @@ def test_expected_attributes_present(tmpdir):
     tmpdir_demo = tmpdir.mkdir('demo_data')
     git_url = 'https://github.com/AtMoDat/demo_data.git'
     Repo.clone_from(git_url, tmpdir_demo)
+    with open(os.path.join(str(tmpdir_demo), 'test_results_atmodat_standard_latest.json'), 'r') as json_file:
+        file_check = json.load(json_file)
     file_list = [os.path.join(str(tmpdir_demo), f) for f in os.listdir(tmpdir_demo) if f.endswith('.nc')]
     passed_json_checks = run_checks_on_files(tmp_dir_test, file_list)
-
-    file_check = {}
-    file_check['ALL_ATMODAT_ATTRIBUTES.nc'] = {}
-    file_check['ALL_ATMODAT_ATTRIBUTES.nc']['high_priorities'] = [5, 5]
-    file_check['ALL_ATMODAT_ATTRIBUTES.nc']['medium_priorities'] = [19, 19]
-    file_check['ALL_ATMODAT_ATTRIBUTES.nc']['low_priorities'] = [9, 9]
-    file_check['NO_ATTRIBUTES.nc'] = {}
-    file_check['NO_ATTRIBUTES.nc']['high_priorities'] = [3, 0]
-    file_check['NO_ATTRIBUTES.nc']['medium_priorities'] = [19, 0]
-    file_check['NO_ATTRIBUTES.nc']['low_priorities'] = [9, 0]
-    file_check['CMIP6_ATTRIBUTES.nc'] = {}
-    file_check['CMIP6_ATTRIBUTES.nc']['high_priorities'] = [5, 4]
-    file_check['CMIP6_ATTRIBUTES.nc']['medium_priorities'] = [19, 10]
-    file_check['CMIP6_ATTRIBUTES.nc']['low_priorities'] = [9, 2]
-    file_check['MINUM_ATMODAT_ATTRIBUTES.nc'] = {}
-    file_check['MINUM_ATMODAT_ATTRIBUTES.nc']['high_priorities'] = [5, 5]
-    file_check['MINUM_ATMODAT_ATTRIBUTES.nc']['medium_priorities'] = [19, 0]
-    file_check['MINUM_ATMODAT_ATTRIBUTES.nc']['low_priorities'] = [9, 0]
-    file_check['WRONG_STANDARDNAME.nc'] = {}
-    file_check['WRONG_STANDARDNAME.nc']['high_priorities'] = [5, 5]
-    file_check['WRONG_STANDARDNAME.nc']['medium_priorities'] = [19, 0]
-    file_check['WRONG_STANDARDNAME.nc']['low_priorities'] = [9, 0]
 
     for file in file_check.keys():
         for json_file in passed_json_checks.keys():
             if file.rstrip('.nc') in json_file:
                 for prio_check in file_check[file].keys():
                     error_string_out = 'Number of expected ' + prio_dict[prio_check] + ' checks to pass in ' \
-                                       + file + ' incorrect'
+                                       + file + ' incorrect!'
                     assert(passed_json_checks[json_file][prio_check] == file_check[file][prio_check]), error_string_out
