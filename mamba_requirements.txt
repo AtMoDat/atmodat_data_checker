@@ -1,6 +1,6 @@
 pip
 pandas
-compliance-checker
+compliance-checker==4.3.2
 cfunits
 udunits2
 git
