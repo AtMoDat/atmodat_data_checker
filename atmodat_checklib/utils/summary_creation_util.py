@@ -4,7 +4,7 @@ import json
 import os
 from atmodat_checklib import __version__
 import pandas as pd
-import atmodat_checklib.result_output.output_directory as output_directory
+import atmodat_checklib.utils.output_directory_util as output_directory
 import datetime
 import csv
 
@@ -87,7 +87,7 @@ def write_short_summary(json_summary, cf_errors, incorrect_formula_term_error_in
                         passed_checks['all'][1] += 1
 
     # write summary of results into summary file
-    with open(opath_in + '/short_summary.txt', 'w+') as f:
+    with open(os.path.join(opath_in, 'short_summary.txt'), 'w+') as f:
         f.write("Short summary of checks: \n \n")
         if isinstance(json_summary, pd.DataFrame):
             text_out = "Checking against: " + json_summary['testname'][0]
@@ -141,7 +141,7 @@ def write_long_summary(json_summary_in, opath_in):
                     data_table[prio_cat]['Check level'].append(prio_dict[prio_cat])
                     file_name_old = file_name
 
-        with open(opath_in + '/long_summary_' + prio_dict[prio_cat] + '.csv', 'w', newline='') as file:
+        with open(os.path.join(opath_in, 'long_summary_' + prio_dict[prio_cat] + '.csv'), 'w', newline='') as file:
             writer = csv.writer(file)
             writer.writerow(list(data_table[prio_cat].keys()))
             for row in zip(data_table[prio_cat]['File'], data_table[prio_cat]['Check level'],

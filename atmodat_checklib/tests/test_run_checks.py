@@ -1,7 +1,7 @@
 import os
 from run_checks import run_checks
-import atmodat_checklib.result_output.output_directory as output_directory
-from atmodat_checklib.result_output.summary_creation import extract_overview_output_json, \
+import atmodat_checklib.utils.output_directory_util as output_directory
+from atmodat_checklib.utils.summary_creation_util import extract_overview_output_json, \
     extracts_error_summary_cf_check
 import pandas as pd
 from atmodat_checklib.utils.env_util import set_env_variables

@@ -1,4 +1,4 @@
-"""module output_directory.py to create output directory"""
+"""module output_directory_util.py to create output directory"""
 
 import os
 from datetime import datetime
@@ -23,7 +23,7 @@ def return_files_in_directory_tree(input_path):
         for f in f_names:
             file_names.append(os.path.join(root, f))
     if not file_names:
-        raise RuntimeError('Given direcotry contains no netCDF files')
+        raise RuntimeError('Given directory contains no netCDF files')
 
     return file_names
 
@@ -34,6 +34,6 @@ def return_files_in_directory(input_path):
     for f_names in os.listdir(input_path):
         file_names.append(os.path.join(input_path, f_names))
     if not file_names:
-        raise RuntimeError('Given direcotry contains no netCDF files')
+        raise RuntimeError('Given directory contains no netCDF files')
 
     return file_names

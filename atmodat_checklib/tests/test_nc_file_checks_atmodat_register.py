@@ -261,7 +261,7 @@ def test_date_iso8601_check_invalid_timestring(empty_netcdf):
         ds.close()
 
 
-def test_gobal_attr_resolution_format_check_missing(empty_netcdf):
+def test_global_attr_resolution_format_check_missing(empty_netcdf):
     for attr in ['geospatial_lon_resolution', 'geospatial_lat_resolution', 'geospatial_vertical_resolution']:
         ds = write_global_attribute(empty_netcdf)
         x = GlobalAttrResolutionFormatCheck(kwargs={"status": "recommended", "attribute": attr})
@@ -271,7 +271,7 @@ def test_gobal_attr_resolution_format_check_missing(empty_netcdf):
         ds.close()
 
 
-def test_gobal_attr_resolution_format_check_no_value(empty_netcdf):
+def test_global_attr_resolution_format_check_no_value(empty_netcdf):
     for attr in ['geospatial_lon_resolution', 'geospatial_lat_resolution', 'geospatial_vertical_resolution']:
         for unit in ['W', ' W', 'W ']:
             attr_dict = {attr: unit}
@@ -283,7 +283,7 @@ def test_gobal_attr_resolution_format_check_no_value(empty_netcdf):
             ds.close()
 
 
-def test_gobal_attr_resolution_format_check_no_unit(empty_netcdf):
+def test_global_attr_resolution_format_check_no_unit(empty_netcdf):
     for val in [1, 1.0]:
         for attr in ['geospatial_lon_resolution', 'geospatial_lat_resolution', 'geospatial_vertical_resolution']:
             attr_dict = {attr: str(val)}
@@ -295,7 +295,7 @@ def test_gobal_attr_resolution_format_check_no_unit(empty_netcdf):
             ds.close()
 
 
-def test_gobal_attr_resolution_format_check_invalid_unit(empty_netcdf):
+def test_global_attr_resolution_format_check_invalid_unit(empty_netcdf):
     for val in [1, 1.0]:
         for unit in ['m/ss', 'Ai']:
             for attr in ['geospatial_lon_resolution', 'geospatial_lat_resolution', 'geospatial_vertical_resolution']:
@@ -308,7 +308,7 @@ def test_gobal_attr_resolution_format_check_invalid_unit(empty_netcdf):
                 ds.close()
 
 
-def test_gobal_attr_resolution_format_check_correct(empty_netcdf):
+def test_global_attr_resolution_format_check_correct(empty_netcdf):
     for val in [1, 1.0]:
         for unit in ['W', 'J', 'm/s']:
             for attr in ['geospatial_lon_resolution', 'geospatial_lat_resolution', 'geospatial_vertical_resolution']:
