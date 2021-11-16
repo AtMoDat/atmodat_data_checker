@@ -40,7 +40,7 @@ def main():
     if opath_in:
         if opath_in.strip() == '/':
             raise RuntimeError('Root directory should not be defined as output path!')
-        opath = opath_in
+        opath = os.path.abspath(opath_in)
     # predefined opath
     else:
         # default path with subdirectory containing timestamp of check
