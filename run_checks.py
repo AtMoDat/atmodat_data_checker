@@ -7,8 +7,8 @@ from pathlib import Path
 import subprocess
 import numpy as np
 
-import atmodat_checklib.result_output.output_directory as output_directory
-import atmodat_checklib.result_output.summary_creation as summary_creation
+import atmodat_checklib.utils.output_directory_util as output_directory
+import atmodat_checklib.utils.summary_creation_util as summary_creation
 from atmodat_checklib.utils.env_util import set_env_variables
 
 
@@ -19,7 +19,7 @@ def main():
     os.environ['PYESSV_ARCHIVE_HOME'] = pyessv_archive_home
     os.environ['UDUNITS2_XML_PATH'] = udunits2_xml_path
 
-    idiryml = str(Path(__file__).resolve().parents[0])
+    idiryml = os.path.join(Path(__file__).resolve().parents[0], '')
 
     # record start time
     start_time = datetime.now()
@@ -137,9 +137,8 @@ def cmd_string_creation(check_in, ifiles_in, opath_file_in, filenames_base_in, i
     if check_in == 'atmodat':
 
         # List of output files
-        ofiles_checker = [opath_file_in + check_in + '/' + filename_base + '_' + check_in + '_result.json'
+        ofiles_checker = ['-o ' + os.path.join(opath_file_in, check_in, filename_base + '_' + check_in + '_result.json')
                           for filename_base in filenames_base_in]
-        ofiles_checker = ['-o ' + ofile for ofile in ofiles_checker]
 
         # Output string creation
         tmp_cmd_out = cmd_string_checker((ifiles_in, ofiles_checker), idiryml_in)
@@ -191,12 +190,12 @@ def run_checks(ifile_in, verbose_in, check_types_in, cfversion_in, opath_file, i
             split_string = 'CHECKING NetCDF FILE'
             output_string_files = output_string.split(split_string)[1::]
             for ofile_data_cf in zip(filenames_base, output_string_files):
-                ofile_cf = opath_file + 'CF/' + ofile_data_cf[0] + '_' + check + '_result.txt'
+                ofile_cf = os.path.join(opath_file, 'CF', '') + ofile_data_cf[0] + '_' + check + '_result.txt'
                 with open(ofile_cf, 'w', encoding='utf-8') as f_cf:
                     f_cf.write(split_string + ofile_data_cf[1])
     for filename_base in filenames_base:
         for check in check_types_in:
-            file_verbose = opath_file + check + '/' + filename_base + '_' + check + '_result.txt'
+            file_verbose = os.path.join(opath_file, check, '') + filename_base + '_' + check + '_result.txt'
             if verbose_in:
                 with open(file_verbose, 'r', encoding='utf-8') as f_verbose:
                     if check == 'CF':

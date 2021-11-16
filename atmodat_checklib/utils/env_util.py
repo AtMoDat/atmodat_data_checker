@@ -12,6 +12,7 @@ def set_env_variables():
         atmodat_conda_envpath = os.environ["CONDA"]
 
     # UDUNITS2_XML_PATH
+    udunits2_xml_path_out = None
     if platform.system() == 'Linux' or platform.system() == 'Darwin':
         udunits2_xml_path_out = os.path.join(atmodat_conda_envpath, 'share', 'udunits', 'udunits2.xml')
     elif platform.system() == 'Windows':
