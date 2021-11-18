@@ -1,3 +1,4 @@
 [submodule "AtMoDat_CVs"]
 	path = AtMoDat_CVs
 	url = https://github.com/AtMoDat/AtMoDat_CVs.git
+	branch = master
