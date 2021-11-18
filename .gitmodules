@@ -5,4 +5,4 @@
 [submodule "demo_data"]
 	path = demo_data
 	url = https://github.com/AtMoDat/demo_data
-	branch = master
+	branch = main
