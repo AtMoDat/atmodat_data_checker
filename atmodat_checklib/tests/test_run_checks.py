@@ -5,7 +5,6 @@ from atmodat_checklib.utils.summary_creation_util import extract_overview_output
     extracts_error_summary_cf_check
 import pandas as pd
 from atmodat_checklib.utils.env_util import set_env_variables
-from git import Repo
 from pathlib import Path
 import json
 
@@ -58,12 +57,11 @@ def test_expected_attributes_present(tmpdir):
         tmpdir.mkdir(check)
     tmp_dir_test = os.path.join(str(tmpdir), '')
 
-    tmpdir_demo = tmpdir.mkdir('demo_data')
-    git_url = 'https://github.com/AtMoDat/demo_data.git'
-    Repo.clone_from(git_url, tmpdir_demo)
-    with open(os.path.join(str(tmpdir_demo), 'test_results_atmodat_standard_latest.json'), 'r') as json_file:
+    demo_data = os.path.join(str(Path(__file__).resolve().parents[2]), 'demo_data')
+    with open(os.path.join(str(Path(__file__).resolve().parents[0]), 'test_results',
+                           'test_results_atmodat_standard_v3.0.json'), 'r') as json_file:
         file_check = json.load(json_file)
-    file_list = [os.path.join(str(tmpdir_demo), f) for f in os.listdir(tmpdir_demo) if f.endswith('.nc')]
+    file_list = [os.path.join(str(demo_data), f) for f in os.listdir(demo_data) if f.endswith('.nc')]
     passed_json_checks = run_checks_on_files(tmp_dir_test, file_list)
 
     for file in file_check.keys():
