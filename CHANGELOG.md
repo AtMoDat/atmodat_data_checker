@@ -10,6 +10,7 @@ All notable changes to this project will be documented in this file.
 - Add non-recursive file search when path to multiple files is provided (-pnr option) (#81)
 - Add information on how to update the ATMODAT Standard Compliance Checker (and related packages)
 - Add tests for run_checks.py (check for expected number of missing attributes in demo_data) (#97)
+- Make demo_data a git submodule (#100) 
 
 ### Changed:
 - Add cfunits to environment.yml to fix tests (#52)
