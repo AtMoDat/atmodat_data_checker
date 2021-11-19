@@ -26,6 +26,14 @@ setup_requirements = ['pytest-runner', ]
 test_requirements = ["pytest"]
 
 
+def cv_data():   
+    files = []
+    cv_path='atmodat_checklib/AtMoDat_CVs/pyessv-archive'
+    for r, d, f in os.walk(cv_path):
+        for file in f:
+            files.append(os.path.join(r, file))
+    return files
+
 setup(
     author=__author__,
     author_email=__contact__,
@@ -66,7 +74,7 @@ setup(
     long_description_content_type='text/markdown',
     include_package_data=True,
     keywords='atmodat',
-    name="atmodat_check_lib",
+    name="atmodat_checklib",
     packages=find_packages(include=["atmodat_checklib", "atmodat_checklib.*"]),
     setup_requires=setup_requirements,
     scripts=["run_checks.py"],
