@@ -65,7 +65,7 @@ setup(
     long_description=_long_description,
     long_description_content_type='text/markdown',
     include_package_data=True,
-    keywords='admodat',
+    keywords='atmodat',
     name="atmodat_check_lib",
     packages=find_packages(include=["atmodat_checklib", "atmodat_checklib.*"]),
     setup_requires=setup_requirements,
