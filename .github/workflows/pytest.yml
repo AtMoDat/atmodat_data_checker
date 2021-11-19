@@ -30,7 +30,7 @@ jobs:
           if [ -f mamba_requirements.txt ]; then mamba install --file mamba_requirements.txt; fi
           if [ -f requirements.txt ]; then pip install -e .; fi
       - name: Checkout submodules
-        run: git submodule update --init --recursive
+        run: git submodule update --init --remote --recursive
       - name: Test with pytest
         run: 
           pytest

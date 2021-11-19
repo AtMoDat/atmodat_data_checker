@@ -45,14 +45,14 @@ We set up a binder where you can try out the functionalities of the ATMODAT Stan
 6. Initialize and update the [ATMODAT CVs](https://github.com/AtMoDat/AtMoDat_CVs) submodule, which contains the controlled vocabulary for the ATMODAT Standard.
    ```bash
    git submodule init
-   git submodule update
+   git submodule update  --remote --recursive
    ```
 
 ## Update the preinstalled checker 
 The ATMODAT Standard Compliance Checker and related packages can be updated to its latest version (GitHub master branch) as follows:
 ```bash
 git checkout master
-git pull origin master || git submodule update
+git pull origin master || git submodule update --remote --recursive
 mamba update --file mamba_requirements.txt
 pip install -U -e .
 ```
