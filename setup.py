@@ -26,14 +26,6 @@ setup_requirements = ['pytest-runner', ]
 test_requirements = ["pytest"]
 
 
-def cv_data():   
-    files = []
-    cv_path='atmodat_checklib/AtMoDat_CVs/pyessv-archive'
-    for r, d, f in os.walk(cv_path):
-        for file in f:
-            files.append(os.path.join(r, file))
-    return files
-
 setup(
     author=__author__,
     author_email=__contact__,
