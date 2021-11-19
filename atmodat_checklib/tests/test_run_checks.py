@@ -61,7 +61,8 @@ def test_expected_attributes_present(tmpdir):
     tmpdir_demo = tmpdir.mkdir('demo_data')
     git_url = 'https://github.com/AtMoDat/demo_data.git'
     Repo.clone_from(git_url, tmpdir_demo)
-    with open(os.path.join(str(tmpdir_demo), 'test_results_atmodat_standard_latest.json'), 'r') as json_file:
+
+    with open(os.path.join(str(Path(__file__).resolve().parents[0]), 'test_results', 'test_results_atmodat_standard_v3.0.json'), 'r') as json_file:
         file_check = json.load(json_file)
     file_list = [os.path.join(str(tmpdir_demo), f) for f in os.listdir(tmpdir_demo) if f.endswith('.nc')]
     passed_json_checks = run_checks_on_files(tmp_dir_test, file_list)
