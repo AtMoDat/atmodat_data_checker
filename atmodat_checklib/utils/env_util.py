@@ -20,6 +20,6 @@ def set_env_variables():
 
     # PYESSV_ARCHIVE_PATH
     atmodat_cv_base_path = str(Path(__file__).resolve().parents[1])
-    pyessv_archive_home_out = os.path.join(atmodat_cv_base_path, 'AtMoDat_CVs', 'pyessv-archive')
+    pyessv_archive_home_out = os.path.join(atmodat_cv_base_path, 'AtMoDat_CVs')
 
     return udunits2_xml_path_out, pyessv_archive_home_out

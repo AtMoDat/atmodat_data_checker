@@ -11,8 +11,8 @@ import json
 
 
 prio_dict = {'high_priorities': 'Mandatory', 'medium_priorities': 'Recommended', 'low_priorities': 'Optional'}
-udunits2_xml_path, pyessv_archive_home = set_env_variables()
-os.environ['PYESSV_ARCHIVE_HOME'] = pyessv_archive_home
+udunits2_xml_path, atmodat_cvs = set_env_variables()
+os.environ['PYESSV_ARCHIVE_HOME'] = os.path.join(atmodat_cvs, 'pyessv-archive')
 os.environ['UDUNITS2_XML_PATH'] = udunits2_xml_path
 
 

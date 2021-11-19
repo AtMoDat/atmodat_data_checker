@@ -3,7 +3,6 @@
 import argparse
 import os
 from datetime import datetime
-from pathlib import Path
 import subprocess
 import numpy as np
 
@@ -15,11 +14,11 @@ from atmodat_checklib.utils.env_util import set_env_variables
 def main():
 
     # Set environment variables
-    udunits2_xml_path, pyessv_archive_home = set_env_variables()
-    os.environ['PYESSV_ARCHIVE_HOME'] = pyessv_archive_home
+    udunits2_xml_path, atmodat_cvs = set_env_variables()
+    os.environ['PYESSV_ARCHIVE_HOME'] = os.path.join(atmodat_cvs, 'pyessv-archive')
     os.environ['UDUNITS2_XML_PATH'] = udunits2_xml_path
 
-    idiryml = os.path.join(Path(__file__).resolve().parents[0], '')
+    idiryml = os.path.join(atmodat_cvs, '')
 
     # record start time
     start_time = datetime.now()
@@ -44,7 +43,7 @@ def main():
     # predefined opath
     else:
         # default path with subdirectory containing timestamp of check
-        opath = idiryml
+        opath = os.getcwd()
     opath = os.path.join(opath, 'atmodat_checker_output', '')
 
     # Define version of CF table against which the files shall be checked.
