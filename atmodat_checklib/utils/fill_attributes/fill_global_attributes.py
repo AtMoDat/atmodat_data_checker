@@ -24,7 +24,7 @@ def check_valid_entry(attribute_in, overwrite_in, string_in, gattrs_old_in):
 
 
 def prepare_global_attributes(ifile_csv_in, gattrs_old_in, gattrs_new_in):
-    # Read csv and compare to attributes allready present
+    # Read csv and compare to attributes already present
     df_gattrs = pd.read_csv(ifile_csv_in, header=0, na_values='None')
     for row in df_gattrs.itertuples(index=False):
         attribute, use, overwrite, string = row[:]
@@ -58,7 +58,7 @@ def prepare_global_attributes(ifile_csv_in, gattrs_old_in, gattrs_new_in):
 def command_line_parse():
     """parse command line input"""
     # Parser for command line options
-    parser = argparse.ArgumentParser(description="Fill global attributes of a NetCDF file with predifined data from "
+    parser = argparse.ArgumentParser(description="Fill global attributes of a NetCDF file with predefined data from "
                                                  "csv files.")
     parser.add_argument("-a", "--attribute_path", help="Path where csv for attribute to be filled are located")
     group = parser.add_mutually_exclusive_group()
@@ -68,7 +68,7 @@ def command_line_parse():
     return parser.parse_args()
 
 
-if __name__ == "__main__":
+def main():
 
     status_list = ['mandatory', 'recommended', 'optional']
 
@@ -101,7 +101,7 @@ if __name__ == "__main__":
                     ifile_list.append(os.path.join(root, file))
 
     for ifile in ifile_list:
-        # Check if file has allready been processed and backup of global attributes exits
+        # Check if file has already been processed and backup of global attributes exits
         ifile_name = str(ifile.split('/')[-1])
         savegattr_file = att_dir+'/savegattr/'+ifile_name.split('.nc')[0]+'_attsave.csv'
         if os.path.isfile(savegattr_file):
@@ -126,7 +126,7 @@ if __name__ == "__main__":
             gattrs_dict_new = prepare_global_attributes(att_dir+'/'+status+'_attributes.csv', gattrs_dict_old,
                                                         gattrs_dict_new)
 
-        # Delete all preexisiting global attributes
+        # Delete all preexisting global attributes
         for gattr in f.ncattrs():
             f.delncattr(gattr)
 
@@ -136,4 +136,6 @@ if __name__ == "__main__":
         # Close file
         f.close()
 
-exit()
+
+if __name__ == "__main__":
+    main()

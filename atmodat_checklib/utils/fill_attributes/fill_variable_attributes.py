@@ -1,15 +1,16 @@
 #!/usr/bin/env python
+
 import os
 import warnings
 import argparse
 import pandas as pd
 from netCDF4 import Dataset
-import numpy as np
+
 
 def command_line_parse():
     """parse command line input"""
     # Parser for command line options
-    parser = argparse.ArgumentParser(description="Fill global attributes of a NetCDF file with predifined data from "
+    parser = argparse.ArgumentParser(description="Fill global attributes of a NetCDF file with predefined data from "
                                                  "csv files.")
     parser.add_argument("-a", "--attribute_file", help="Path to csv file the contains variable attributes to be filled")
     group = parser.add_mutually_exclusive_group()
@@ -19,7 +20,7 @@ def command_line_parse():
     return parser.parse_args()
 
 
-if __name__ == "__main__":
+def main():
 
     args = command_line_parse()
     att_file = args.attribute_file
@@ -80,5 +81,9 @@ if __name__ == "__main__":
                 os.rename(ifile, ifile_new)
     for olddir in set(var_olddir_list):
         os.rmdir(olddir)
+
+
+if __name__ == "__main__":
+    main()
 
     exit()
