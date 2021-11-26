@@ -103,7 +103,7 @@ def main():
     for ifile in ifile_list:
         # Check if file has already been processed and backup of global attributes exits
         ifile_name = str(ifile.split('/')[-1])
-        savegattr_file = att_dir+'/savegattr/'+ifile_name.split('.nc')[0]+'_attsave.csv'
+        savegattr_file = os.path.join(att_dir, 'savegattr', ifile_name.split('.nc')[0]+'_attsave.csv')
         if os.path.isfile(savegattr_file):
             gattrs_dict_old = pd.read_csv(savegattr_file).to_dict()
             for key in gattrs_dict_old.keys():
@@ -123,7 +123,7 @@ def main():
         # Prepare global attributes to be written
         gattrs_dict_new = {}
         for status in status_list:
-            gattrs_dict_new = prepare_global_attributes(att_dir+'/'+status+'_attributes.csv', gattrs_dict_old,
+            gattrs_dict_new = prepare_global_attributes(os.path.join(att_dir, status+'_attributes.csv'), gattrs_dict_old,
                                                         gattrs_dict_new)
 
         # Delete all preexisting global attributes
