@@ -3,17 +3,27 @@ test_nc_file_checks_atmodat_register.py
 ======================
 Unit tests for the contents of the atmodat_checklib.register.nc_file_checks_atmodat_register module.
 """
+
+
 import numpy as np
 import pytest
-from atmodat_checklib.register.nc_file_checks_atmodat_register import ConventionsVersionCheck, \
-    GlobalAttrTypeCheck, DateISO8601Check, GlobalAttrResolutionFormatCheck, GlobalAttrVocabCheckByStatus
 import datetime
 import pytz
 import json
 from netCDF4 import Dataset
+import os
+from atmodat_checklib.utils.env_util import set_env_variables
+
 
 msgs_incorrect = "Incorrect output message"
 attribute_list = ['featureType', 'frequency', 'nominal_resolution', 'realm', 'source_type']
+
+
+udunits2_xml_path, pyessv_archive_home = set_env_variables()
+os.environ['PYESSV_ARCHIVE_HOME'] = pyessv_archive_home
+os.environ['UDUNITS2_XML_PATH'] = udunits2_xml_path
+from atmodat_checklib.register.nc_file_checks_atmodat_register import ConventionsVersionCheck, \
+    GlobalAttrTypeCheck, DateISO8601Check, GlobalAttrResolutionFormatCheck, GlobalAttrVocabCheckByStatus  # noqa: E402
 
 
 @pytest.fixture(scope="session")
@@ -251,7 +261,7 @@ def test_date_iso8601_check_invalid_timestring(empty_netcdf):
         ds.close()
 
 
-def test_gobal_attr_resolution_format_check_missing(empty_netcdf):
+def test_global_attr_resolution_format_check_missing(empty_netcdf):
     for attr in ['geospatial_lon_resolution', 'geospatial_lat_resolution', 'geospatial_vertical_resolution']:
         ds = write_global_attribute(empty_netcdf)
         x = GlobalAttrResolutionFormatCheck(kwargs={"status": "recommended", "attribute": attr})
@@ -261,7 +271,7 @@ def test_gobal_attr_resolution_format_check_missing(empty_netcdf):
         ds.close()
 
 
-def test_gobal_attr_resolution_format_check_no_value(empty_netcdf):
+def test_global_attr_resolution_format_check_no_value(empty_netcdf):
     for attr in ['geospatial_lon_resolution', 'geospatial_lat_resolution', 'geospatial_vertical_resolution']:
         for unit in ['W', ' W', 'W ']:
             attr_dict = {attr: unit}
@@ -273,7 +283,7 @@ def test_gobal_attr_resolution_format_check_no_value(empty_netcdf):
             ds.close()
 
 
-def test_gobal_attr_resolution_format_check_no_unit(empty_netcdf):
+def test_global_attr_resolution_format_check_no_unit(empty_netcdf):
     for val in [1, 1.0]:
         for attr in ['geospatial_lon_resolution', 'geospatial_lat_resolution', 'geospatial_vertical_resolution']:
             attr_dict = {attr: str(val)}
@@ -285,7 +295,7 @@ def test_gobal_attr_resolution_format_check_no_unit(empty_netcdf):
             ds.close()
 
 
-def test_gobal_attr_resolution_format_check_invalid_unit(empty_netcdf):
+def test_global_attr_resolution_format_check_invalid_unit(empty_netcdf):
     for val in [1, 1.0]:
         for unit in ['m/ss', 'Ai']:
             for attr in ['geospatial_lon_resolution', 'geospatial_lat_resolution', 'geospatial_vertical_resolution']:
@@ -298,7 +308,7 @@ def test_gobal_attr_resolution_format_check_invalid_unit(empty_netcdf):
                 ds.close()
 
 
-def test_gobal_attr_resolution_format_check_correct(empty_netcdf):
+def test_global_attr_resolution_format_check_correct(empty_netcdf):
     for val in [1, 1.0]:
         for unit in ['W', 'J', 'm/s']:
             for attr in ['geospatial_lon_resolution', 'geospatial_lat_resolution', 'geospatial_vertical_resolution']:

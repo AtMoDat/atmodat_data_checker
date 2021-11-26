@@ -26,8 +26,6 @@ setup_requirements = ['pytest-runner', ]
 test_requirements = ["pytest"]
 
 
-# dev_requirements = [line.strip() for line in open('requirements_dev.txt')]
-
 setup(
     author=__author__,
     author_email=__contact__,
@@ -46,6 +44,7 @@ setup(
         'Natural Language :: English',
         'Operating System :: Microsoft :: Windows',
         'Operating System :: POSIX :: Linux',
+        'Operating System :: macOS :: macOS',
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.6',
@@ -68,12 +67,12 @@ setup(
     include_package_data=True,
     keywords='admodat',
     name="atmodat_check_lib",
-    packages=find_packages(include=["atmodat_check_lib", "atmodat_check_lib.*"]),
+    packages=find_packages(include=["atmodat_checklib", "atmodat_checklib.*"]),
     setup_requires=setup_requirements,
     scripts=["run_checks.py", "utils/fill_global_attributes/fill_global_attributes.py", "utils/fill_variable_attributes/fill_variable_attributes.py"],
+    entry_points={'console_scripts': ['run_checks = run_checks:main']},
     test_suite='tests',
     tests_require=test_requirements,
-    # extras_require={"docs": docs_requirements},
     url='https://github.com/AtMoDat/atmodat_data_checker',
     version=__version__,
     zip_safe=False,

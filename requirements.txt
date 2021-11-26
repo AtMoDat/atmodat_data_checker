@@ -1,4 +1,8 @@
-pyessv
-cc-yaml @ git+https://github.com/cedadev/cc-yaml@master
-compliance-check-lib @ git+https://github.com/cedadev/compliance-check-lib@master
-cfchecker
+pyessv==0.8.4.3
+cc-yaml @ git+https://github.com/cedadev/cc-yaml@70fda996f02e9745ab04453203ccc9e5fc6988c1
+compliance-check-lib @ git+https://github.com/cedadev/compliance-check-lib@c22d8eea1d26a452ceac62ddd22c9a9b4a69599a
+cfchecker==4.1.0
+pandas
+compliance-checker==4.3.2
+cfunits
+pytest

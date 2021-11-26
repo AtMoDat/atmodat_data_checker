@@ -20,17 +20,17 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Add conda to system path
         run: |
-            # $CONDA is an environment variable pointing to the root of the miniconda directory
-            echo $CONDA/bin >> $GITHUB_PATH
+            # "$CONDA" is an environment variable pointing to the root of the miniconda directory
+            echo "$CONDA"/bin >> "$GITHUB_PATH"
+            echo "$CONDA"
       - name: Install dependencies
         run: |
+          conda config --add channels conda-forge
           conda env update --file environment.yml --name base
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          if [ -f mamba_requirements.txt ]; then mamba install --file mamba_requirements.txt; fi
+          if [ -f requirements.txt ]; then pip install -e .; fi
       - name: Checkout submodules
         run: git submodule update --init --recursive
       - name: Test with pytest
         run: 
           pytest
-        env:
-          PYESSV_ARCHIVE_HOME: ${{ github.workspace }}/AtMoDat_CVs/pyessv-archive
-          UDUNITS2_XML_PATH: /usr/share/miniconda/share/udunits/udunits2.xml

@@ -23,7 +23,7 @@ class NCFileCheckBase(CallableCheckBase):
 
     def _atmodat_status_to_level(self, status):
         """
-        jkretz: At the momement, low-level checks are not outputed by the IOOS compliance checker.
+        jkretz: At the moment, low-level checks are not outputted by the IOOS compliance checker.
         The weight of the low-level checks is set to 4 (BaseCheck.HIGH+BaseCheck.LOW) to circumvent this
         """
         atmodat_status = {'mandatory': BaseCheck.HIGH, 'recommended': BaseCheck.MEDIUM,
@@ -105,7 +105,7 @@ class GlobalAttrTypeCheck(NCFileCheckBase):
     defaults = {}
     required_args = ['attribute', 'type', 'status']
     message_templates = ["'{attribute}' global attribute is not present",
-                         "'{attribute}' global attribute check againt unsupported type {type} "
+                         "'{attribute}' global attribute check against unsupported type {type} "
                          "(allowed types are: str, int, float).",
                          "'{attribute}' global attribute is empty",
                          "'{attribute}' global attribute value does not match type {type}"]
