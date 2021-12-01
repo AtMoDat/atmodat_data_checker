@@ -6,6 +6,7 @@ import json
 import pandas as pd
 import warnings
 import datetime
+import math
 
 
 def main():
@@ -29,6 +30,8 @@ def main():
         for fill_type in status_list:
             if fill_type in att_csv_file:
                 fill_csv_file[fill_type] = os.path.join(att_dir, att_csv_file)
+        if 'variable' in att_csv_file:
+            fill_csv_file['variable'] = os.path.join(att_dir, att_csv_file)
 
     if not fill_csv_file:
         raise AssertionError('No csv files with attributes to fill were found in ' + att_dir)
@@ -60,22 +63,83 @@ def main():
                     attrs_dict[var][var_attr] = f.variables[var].getncattr(var_attr)
             open(savegattr_file, 'w').write(json.dumps(attrs_dict, cls=NumpyEncoder))
 
+        # Prepare global attributes to be written
+        global_attrs_write = {}
+        for fill_type in fill_csv_file.keys():
+            if fill_type in status_list:
+                global_attrs_write = prepare_global_attributes(fill_csv_file[fill_type], attrs_dict['global_attr'],
+                                                               global_attrs_write)
+            else:
+                var_attrs_write = prepare_variable_attributes(fill_csv_file[fill_type], attrs_dict)
+
         # Delete all preexisting global attributes
         for gattr in f.ncattrs():
             f.delncattr(gattr)
-
-        if restore:
-            f.setncatts(attrs_dict['global_attr'])
-            continue
-
-        # Prepare global attributes to be written
-        global_attrs_write = {}
-        for status in status_list:
-            global_attrs_write = prepare_global_attributes(os.path.join(att_dir, status+'_attributes.csv'),
-                                                           attrs_dict['global_attr'], global_attrs_write)
-
         # Write new/modified global attributes
-        f.setncatts(global_attrs_write)
+        f.setncatts(attrs_dict['global_attr'])
+        if not restore:
+            f.setncatts(global_attrs_write)
+
+        # Write new/modified variable attribute
+        for var in f.variables:
+            for var_attr in f.variables[var].ncattrs():
+                f.variables[var].delncattr(var_attr)
+
+        var_keys = list(f.variables.keys())
+        for var in var_keys:
+            if var in attrs_dict.keys():
+                for attr, val_attrs in attrs_dict[var].items():
+                    if attr not in ['varname_new', '_FillValue']:
+                        f.variables[var].setncattr(attr, val_attrs)
+            else:
+                for var_old, attr_dict in var_attrs_write.items():
+                    if 'varname_new' in attr_dict:
+                        if var == attr_dict['varname_new']:
+                            f.renameVariable(var, var_old)
+                            for attr, val_attrs in attrs_dict[var_old].items():
+                                if attr not in ['varname_new', '_FillValue']:
+                                    f.variables[var_old].setncattr(attr, val_attrs)
+        if not restore:
+            for var, attr_dict in var_attrs_write.items():
+                if 'varname_new' in attr_dict:
+                    if attr_dict['varname_new'] != var:
+                        if var in f.variables:
+                            f.renameVariable(var, attr_dict['varname_new'])
+                        var = attr_dict['varname_new']
+                for attr, val_attrs in attr_dict.items():
+                    if attr not in ['varname_new', '_FillValue']:
+                        f.variables[var].setncattr(attr, val_attrs)
+
+        f.close()
+
+        break
+
+
+def prepare_variable_attributes(ifile_csv_in, attrs_old_in):
+
+    # Read CSVs
+    varattrs_dict = pd.read_csv(ifile_csv_in, na_values='None').to_dict(orient='list')
+    var_info = {}
+    for var in attrs_old_in.keys():
+        if var != 'global_attr':
+            var_info[var] = attrs_old_in[var]
+            var_info[var] = attrs_old_in[var]
+            if var in varattrs_dict['varname_old']:
+                ind_var = varattrs_dict['varname_old'].index(var)
+                varname_new = varattrs_dict['varname_new'][ind_var]
+                if isinstance(varname_new, str):
+                    if len(varname_new.strip()) != 0:
+                        var_info[var]['varname_new'] = varname_new
+            elif var not in varattrs_dict['varname_old'] and var in varattrs_dict['varname_new']:
+                ind_var = varattrs_dict['varname_new'].index(var)
+            else:
+                continue
+            for tmp in varattrs_dict.keys():
+                if 'varname_old' not in tmp:
+                    att_fill = varattrs_dict[tmp][ind_var]
+                    if not pd.isna(att_fill) and len(att_fill.strip()) != 0:
+                        var_info[var][tmp] = varattrs_dict[tmp][ind_var]
+    return var_info
 
 
 def prepare_global_attributes(ifile_csv_in, gattrs_old_in, gattrs_new_in):
@@ -105,7 +169,8 @@ def prepare_global_attributes(ifile_csv_in, gattrs_old_in, gattrs_new_in):
                 string_out = append_string(history_string, string_old, delimiter=' ')
             else:
                 string_out = append_string(string, string_old, delimiter=' ')
-        gattrs_new_in[attribute] = string_out
+        if string_out:
+            gattrs_new_in[attribute] = string_out
     return gattrs_new_in
 
 
