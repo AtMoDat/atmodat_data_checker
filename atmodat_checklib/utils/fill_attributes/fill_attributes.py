@@ -6,7 +6,6 @@ import json
 import pandas as pd
 import warnings
 import datetime
-import math
 
 
 def main():
@@ -64,7 +63,7 @@ def main():
             open(savegattr_file, 'w').write(json.dumps(attrs_dict, cls=NumpyEncoder))
 
         # Prepare global attributes to be written
-        global_attrs_write = {}
+        global_attrs_write, var_attrs_write = {}, {}
         for fill_type in fill_csv_file.keys():
             if fill_type in status_list:
                 global_attrs_write = prepare_global_attributes(fill_csv_file[fill_type], attrs_dict['global_attr'],
@@ -112,7 +111,27 @@ def main():
 
         f.close()
 
-        break
+        for var, attr_dict in var_attrs_write.items():
+            if 'varname_new' in attr_dict and var != attr_dict['varname_new']:
+                if var in ifile:
+                    # Rename file with backed up attributes
+                    savegattr_file_filepath = os.path.split(savegattr_file)
+                    savegattr_file_new = os.path.join(savegattr_file_filepath[0],
+                                                      savegattr_file_filepath[1].replace(var,
+                                                                                         attr_dict['varname_new']))
+                    os.rename(savegattr_file, savegattr_file_new)
+
+                    # Rename netCDF file itself
+                    file_path_old, file_old = os.path.split(ifile)
+                    file_path_new = file_path_old.replace(var, attr_dict['varname_new'])
+                    file_new = file_old.replace(var, attr_dict['varname_new'])
+                    if file_path_new != file_path_old:
+                        if not os.path.isdir(file_path_new):
+                            os.makedirs(file_path_new)
+                            os.rename(ifile, os.path.join(file_path_new, file_new))
+                            os.rmdir(file_path_old)
+                    else:
+                        os.rename(ifile, os.path.join(file_path_new, file_new))
 
 
 def prepare_variable_attributes(ifile_csv_in, attrs_old_in):
@@ -122,7 +141,6 @@ def prepare_variable_attributes(ifile_csv_in, attrs_old_in):
     var_info = {}
     for var in attrs_old_in.keys():
         if var != 'global_attr':
-            var_info[var] = attrs_old_in[var]
             var_info[var] = attrs_old_in[var]
             if var in varattrs_dict['varname_old']:
                 ind_var = varattrs_dict['varname_old'].index(var)
@@ -143,7 +161,7 @@ def prepare_variable_attributes(ifile_csv_in, attrs_old_in):
 
 
 def prepare_global_attributes(ifile_csv_in, gattrs_old_in, gattrs_new_in):
-    # Read csv and compare to attributes already present
+    # Read csv and compare attributes to those already present
     df_gattrs = pd.read_csv(ifile_csv_in, header=0, na_values='None')
 
     for row in df_gattrs.itertuples(index=False):
@@ -151,10 +169,10 @@ def prepare_global_attributes(ifile_csv_in, gattrs_old_in, gattrs_new_in):
         string_old, string_out = None, None
         if not bool(use):
             if not pd.isna(string):
-                warnings.warn('Global attribute "' + attribute.strip() + '" should not be used but entry provided.')
+                warnings.warn('Global attribute ' + attribute.strip() + ' should not be used but entry provided.')
         else:
             if pd.isna(string) and not append:
-                warnings.warn('Global attribute "' + attribute.strip() + '" should be used but empty entry provided.')
+                warnings.warn('Global attribute ' + attribute.strip() + ' should be used but empty entry provided.')
             if append:
                 try:
                     string_old = gattrs_old_in[attribute]
@@ -225,7 +243,7 @@ def command_line_parse():
                         action="store_true", default=False)
     group = parser.add_mutually_exclusive_group()
     group.add_argument("-p", "--path", help="Add new attributes to all NetCDF in given directory "
-                                            "(including sub-directories)")
+                                            "(including subdirectories)")
     group.add_argument("-f", "--file", help="Add new attributes to given file")
     return parser.parse_args()
 
