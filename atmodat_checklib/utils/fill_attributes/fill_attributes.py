@@ -73,7 +73,7 @@ def main():
         # Delete all preexisting global attributes
         for gattr in f.ncattrs():
             f.delncattr(gattr)
-            
+
         # Write new/modified global attributes
         f.setncatts(attrs_dict['global_attr'])
         if not restore:
