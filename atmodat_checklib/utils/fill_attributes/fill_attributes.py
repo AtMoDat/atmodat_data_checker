@@ -113,29 +113,34 @@ def main():
 
         for var, attr_dict in var_attrs_write.items():
             if 'varname_new' in attr_dict and var != attr_dict['varname_new']:
-                if var in ifile:
-                    # Rename file with backed up attributes
-                    savegattr_file_filepath = os.path.split(savegattr_file)
-                    savegattr_file_new = os.path.join(savegattr_file_filepath[0],
-                                                      savegattr_file_filepath[1].replace(var,
-                                                                                         attr_dict['varname_new']))
-                    os.rename(savegattr_file, savegattr_file_new)
+                if restore:
+                    if attr_dict['varname_new'] in ifile:
+                        rename_path_file(ifile, attr_dict['varname_new'], var, savegattr_file)
+                else:
+                    if var in ifile:
+                        rename_path_file(ifile, var, attr_dict['varname_new'], savegattr_file)
 
-                    # Rename netCDF file itself
-                    file_path_old, file_old = os.path.split(ifile)
-                    file_path_new = file_path_old.replace(var, attr_dict['varname_new'])
-                    file_new = file_old.replace(var, attr_dict['varname_new'])
-                    if file_path_new != file_path_old:
-                        if not os.path.isdir(file_path_new):
-                            os.makedirs(file_path_new)
-                            os.rename(ifile, os.path.join(file_path_new, file_new))
-                            os.rmdir(file_path_old)
-                    else:
-                        os.rename(ifile, os.path.join(file_path_new, file_new))
+
+def rename_path_file(ifile_in, var_in, var_new_in, attr_file):
+    # Rename file with backed up attributes
+    attr_file_filepath = os.path.split(attr_file)
+    attr_file_new = os.path.join(attr_file_filepath[0], attr_file_filepath[1].replace(var_in, var_new_in))
+    os.rename(attr_file, attr_file_new)
+
+    # Rename netCDF file itself
+    file_path_old, file_old = os.path.split(ifile_in)
+    file_path_new = file_path_old.replace(var_in, var_new_in)
+    file_new = file_old.replace(var_in, var_new_in)
+    if file_path_new != file_path_old:
+        if not os.path.isdir(file_path_new):
+            os.makedirs(file_path_new)
+            os.rename(ifile_in, os.path.join(file_path_new, file_new))
+            os.rmdir(file_path_old)
+    else:
+        os.rename(ifile_in, os.path.join(file_path_new, file_new))
 
 
 def prepare_variable_attributes(ifile_csv_in, attrs_old_in):
-
     # Read CSVs
     varattrs_dict = pd.read_csv(ifile_csv_in, na_values='None').to_dict(orient='list')
     var_info = {}
