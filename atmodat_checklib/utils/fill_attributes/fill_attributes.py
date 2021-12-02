@@ -10,8 +10,8 @@ import datetime
 
 def main():
 
+    # Command line parsing
     args = command_line_parse()
-
     att_dir = args.attr_files_path
     ifile = args.file
     ipath = args.path
@@ -20,11 +20,9 @@ def main():
     # Check if path to attribute is given and if CSVs exit
     assert att_dir, "No path to attribute CSV files provided"
 
-    # Which attributes csv files are available
+    # Find all available attribute files
     fill_csv_file = {}
-
     status_list = ['mandatory', 'recommended', 'optional']
-
     for att_csv_file in os.listdir(att_dir):
         for fill_type in status_list:
             if fill_type in att_csv_file:
@@ -32,6 +30,7 @@ def main():
         if 'variable' in att_csv_file:
             fill_csv_file['variable'] = os.path.join(att_dir, att_csv_file)
 
+    # Check if csv files are provided and create directory for backup files
     if not fill_csv_file:
         raise AssertionError('No csv files with attributes to fill were found in ' + att_dir)
     else:
@@ -74,6 +73,7 @@ def main():
         # Delete all preexisting global attributes
         for gattr in f.ncattrs():
             f.delncattr(gattr)
+            
         # Write new/modified global attributes
         f.setncatts(attrs_dict['global_attr'])
         if not restore:
@@ -84,6 +84,7 @@ def main():
             for var_attr in f.variables[var].ncattrs():
                 f.variables[var].delncattr(var_attr)
 
+        # First restore original variable information
         var_keys = list(f.variables.keys())
         for var in var_keys:
             if var in attrs_dict.keys():
@@ -98,6 +99,8 @@ def main():
                             for attr, val_attrs in attrs_dict[var_old].items():
                                 if attr not in ['varname_new', '_FillValue']:
                                     f.variables[var_old].setncattr(attr, val_attrs)
+
+        # Write new variable attributes into file
         if not restore:
             for var, attr_dict in var_attrs_write.items():
                 if 'varname_new' in attr_dict:
@@ -111,6 +114,7 @@ def main():
 
         f.close()
 
+        # Rename file name that contains a variable if a new variable name is provided
         for var, attr_dict in var_attrs_write.items():
             if 'varname_new' in attr_dict and var != attr_dict['varname_new']:
                 if restore:
