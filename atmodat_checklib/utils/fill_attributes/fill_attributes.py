@@ -45,7 +45,7 @@ def main():
 
         # File name of backup file
         ifile_name = str(ifile.split('/')[-1])
-        savegattr_file = os.path.join(backup_dir, ifile_name.split('.nc')[0]+'_attsave.json')
+        savegattr_file = os.path.join(backup_dir, ifile_name.split('.nc')[0] + '_attsave.json')
 
         # Open file
         f = Dataset(ifile, 'a')
@@ -187,8 +187,8 @@ def prepare_global_attributes(ifile_csv_in, gattrs_old_in, gattrs_new_in):
                 string_out = append_string(string, string_old, delimiter=' ')
             elif attribute == 'history':
                 time_string = datetime.datetime.strftime(datetime.datetime.now(tz=datetime.timezone.utc),
-                                                         "%Y-%m-%d %H:%M:%S")+'Z; '
-                history_string = time_string+str(string)+'\n'
+                                                         "%Y-%m-%d %H:%M:%S") + 'Z; '
+                history_string = time_string + str(string) + '\n'
                 string_out = append_string(history_string, string_old, delimiter=' ')
             else:
                 string_out = append_string(string, string_old, delimiter=' ')
