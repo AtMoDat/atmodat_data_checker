@@ -13,6 +13,7 @@ import json
 from netCDF4 import Dataset
 import os
 from atmodat_checklib.utils.env_util import set_env_variables
+from pathlib import Path
 
 
 msgs_incorrect = "Incorrect output message"
@@ -49,8 +50,8 @@ def assert_output_msgs_len(resp_in):
 
 
 def load_cv_json(att_in):
-    ipath_json = 'AtMoDat_CVs/AtMoDat_CV_json/'
-    with open(ipath_json + 'AtMoDat_' + att_in + '.json') as jsonFile:
+    ipath_json = os.path.join(str(Path(__file__).resolve().parents[1]), 'AtMoDat_CVs', 'AtMoDat_CV_json')
+    with open(os.path.join(ipath_json, 'AtMoDat_' + att_in + '.json')) as jsonFile:
         json_object = json.load(jsonFile)
         jsonFile.close()
     return json_object[att_in]

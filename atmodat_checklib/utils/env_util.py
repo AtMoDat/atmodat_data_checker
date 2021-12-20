@@ -19,7 +19,7 @@ def set_env_variables():
         udunits2_xml_path_out = os.path.join(atmodat_conda_envpath, 'Library', 'share', 'udunits', 'udunits2.xml')
 
     # PYESSV_ARCHIVE_PATH
-    atmodat_base_path = str(Path(__file__).resolve().parents[2])
-    pyessv_archive_home_out = os.path.join(atmodat_base_path, 'AtMoDat_CVs', 'pyessv-archive')
+    atmodat_cv_base_path = str(Path(__file__).resolve().parents[1])
+    pyessv_archive_home_out = os.path.join(atmodat_cv_base_path, 'AtMoDat_CVs')
 
     return udunits2_xml_path_out, pyessv_archive_home_out
