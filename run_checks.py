@@ -9,6 +9,7 @@ import numpy as np
 import atmodat_checklib.utils.output_directory_util as output_directory
 import atmodat_checklib.utils.summary_creation_util as summary_creation
 from atmodat_checklib.utils.env_util import set_env_variables
+from atmodat_checklib import __version__
 
 
 def main():
@@ -239,6 +240,8 @@ def command_line_parse():
     parser.add_argument("-s", "--summary", help="Create summary of checker output",
                         action="store_true",
                         default=False)
+    parser.add_argument('-V', '--version', action='version',
+                        version=f'ATMODAT Standard Compliance Checker Version: {__version__}')
     group = parser.add_mutually_exclusive_group()
     group.add_argument("-f", "--file", help="Processes the given file")
     group.add_argument("-p", "--path", help="Processes all files in a given path and subdirectories "
