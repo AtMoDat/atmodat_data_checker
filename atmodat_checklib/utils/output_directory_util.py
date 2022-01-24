@@ -23,7 +23,7 @@ def return_files_in_directory_tree(input_path):
         for f in f_names:
             file_names.append(os.path.join(root, f))
     if not file_names:
-        raise RuntimeError('Given directory contains no netCDF files')
+        raise RuntimeError('Given directory contains no files')
 
     return file_names
 
