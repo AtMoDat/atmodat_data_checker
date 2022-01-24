@@ -53,7 +53,7 @@ def extract_overview_output_json(ifile_in):
     return summary
 
 
-def extracts_error_summary_cf_check(ifile_in, errors_in, warn_in, incorrect_formula_term_error_in):
+def extracts_error_summary_cf_check(ifile_in, cf_verion_in, errors_in, warn_in, incorrect_formula_term_error_in):
     """extracts information from given txt file and returns them as a string"""
     std_name = 'Using Standard Name Table Version '
     with open(ifile_in) as f:
@@ -66,13 +66,15 @@ def extracts_error_summary_cf_check(ifile_in, errors_in, warn_in, incorrect_form
                     errors_in += 1
                 else:
                     incorrect_formula_term_error_in = True
-            if line.startswith('WARN:'):
+            elif line.startswith('WARN:'):
                 warn_in += 1
+            elif line.startswith('Checking against CF Version '):
+                cf_verion_in.append(line.split('Checking against CF Version ')[1])
 
-    return errors_in, warn_in, std_name_table_out, incorrect_formula_term_error_in
+    return cf_verion_in, errors_in, warn_in, std_name_table_out, incorrect_formula_term_error_in
 
 
-def write_short_summary(json_summary, cf_errors, cf_warns, incorrect_formula_term_error_in,
+def write_short_summary(json_summary, cf_version, cf_errors, cf_warns, incorrect_formula_term_error_in,
                         file_counter, std_name_table_in, opath_in):
     """create file which contains the short version of the summary"""
     prio_dict = {'high_priorities': 'Mandatory', 'medium_priorities': 'Recommended', 'low_priorities': 'Optional'}
@@ -95,15 +97,17 @@ def write_short_summary(json_summary, cf_errors, cf_warns, incorrect_formula_ter
 
     # write summary of results into summary file
     with open(os.path.join(opath_in, 'short_summary.txt'), 'w+') as f:
-        f.write("Short summary of checks: \n \n")
+        f.write("=== Short summary === \n \n")
+        f.write(f"ATMODAT Standard Compliance Checker Version: {str(__version__)}\n")
         if isinstance(json_summary, pd.DataFrame):
-            text_out = f"Checking against: {json_summary['testname'][0]}"
-            if std_name_table_in is not None:
-                text_out = f"{text_out}, CF table version: {std_name_table_in} \n"
+            cf_verion_list = list(set(cf_version))
+            if len(cf_verion_list) == 1:
+                cf_version_string = f"CF Version {cf_verion_list[0]}"
             else:
-                text_out = f"{text_out}\n"
+                cf_version_string = 'multiple CF versions'
+            text_out = f"Checking against: ATMODAT Standard {json_summary['testname'][0].split(':')[1]}" \
+                       f", {cf_version_string}\n"
             f.write(text_out)
-            f.write(f"Version of the AtMoDat checker: {str(__version__)}\n")
         f.write(f"Checked at: {datetime.datetime.now().isoformat(timespec='seconds')}\n \n")
         f.write(f"Number of checked files: {str(file_counter)}\n")
         if isinstance(json_summary, pd.DataFrame):
@@ -111,6 +115,8 @@ def write_short_summary(json_summary, cf_errors, cf_warns, incorrect_formula_ter
                 f.write(f"{prio_dict[prio]} checks passed: "
                         f"{str(passed_checks[prio][1])}/{str(passed_checks[prio][0])} ({passed_checks[prio][2]} "
                         f"missing, {passed_checks[prio][3]} error(s)\n")
+        if cf_version_string == 'multiple CF versions':
+            f.write("!!! Checking against multiple CF Versions !!!")
         if cf_errors is not None:
             if incorrect_formula_term_error_in:
                 f.write(f"CF checker errors: {str(cf_errors)} (Ignoring errors related to formula_terms in boundary "
@@ -171,9 +177,11 @@ def create_output_summary(file_counter, opath, check_types_in):
     if 'CF' in check_types_in:
         incorrect_formula_term_error = False
         cf_errors, cf_warns = 0, 0
+        cf_version = []
     else:
         cf_errors, cf_warns = None, None
         incorrect_formula_term_error = None
+        cf_version = None
 
     files = output_directory.return_files_in_directory_tree(opath)
     for file in files:
@@ -181,10 +189,10 @@ def create_output_summary(file_counter, opath, check_types_in):
             json_summary = json_summary.append(extract_overview_output_json(file),
                                                ignore_index=True)
         elif file.endswith("_CF_result.txt"):
-            cf_errors, cf_warns, std_name_table, incorrect_formula_term_error = \
-                extracts_error_summary_cf_check(file, cf_errors, cf_warns, incorrect_formula_term_error)
+            cf_version, cf_errors, cf_warns, std_name_table, incorrect_formula_term_error = \
+                extracts_error_summary_cf_check(file, cf_version, cf_errors, cf_warns, incorrect_formula_term_error)
 
-    write_short_summary(json_summary, cf_errors, cf_warns, incorrect_formula_term_error, file_counter, std_name_table,
-                        opath)
+    write_short_summary(json_summary, cf_version, cf_errors, cf_warns, incorrect_formula_term_error, file_counter,
+                        std_name_table, opath)
     write_long_summary(json_summary, opath)
     return
