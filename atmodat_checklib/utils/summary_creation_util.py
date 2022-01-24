@@ -53,7 +53,7 @@ def extract_overview_output_json(ifile_in):
     return summary
 
 
-def extracts_error_summary_cf_check(ifile_in, errors_in, incorrect_formula_term_error_in):
+def extracts_error_summary_cf_check(ifile_in, errors_in, warn_in, incorrect_formula_term_error_in):
     """extracts information from given txt file and returns them as a string"""
     std_name = 'Using Standard Name Table Version '
     with open(ifile_in) as f:
@@ -66,17 +66,20 @@ def extracts_error_summary_cf_check(ifile_in, errors_in, incorrect_formula_term_
                     errors_in += 1
                 else:
                     incorrect_formula_term_error_in = True
-    return errors_in, std_name_table_out, incorrect_formula_term_error_in
+            if line.startswith('WARN:'):
+                warn_in += 1
+
+    return errors_in, warn_in, std_name_table_out, incorrect_formula_term_error_in
 
 
-def write_short_summary(json_summary, cf_errors, incorrect_formula_term_error_in,
+def write_short_summary(json_summary, cf_errors, cf_warns, incorrect_formula_term_error_in,
                         file_counter, std_name_table_in, opath_in):
     """create file which contains the short version of the summary"""
     prio_dict = {'high_priorities': 'Mandatory', 'medium_priorities': 'Recommended', 'low_priorities': 'Optional'}
-    passed_checks = {'all': [0, 0]}
+    passed_checks = {'all': [0, 0, 0, 0]}  # all, failed, missing, error
     if isinstance(json_summary, pd.DataFrame):
         for prio in prio_dict.keys():
-            passed_checks[prio] = [0, 0]
+            passed_checks[prio] = [0, 0, 0, 0]  # all, failed, missing, error
             checks_prio = json_summary[prio]
             for checks in checks_prio:
                 for check in checks:
@@ -85,31 +88,37 @@ def write_short_summary(json_summary, cf_errors, incorrect_formula_term_error_in
                     if check['value'][0] == check['value'][1]:
                         passed_checks[prio][1] += 1
                         passed_checks['all'][1] += 1
+                    elif check['value'][0] == 1:
+                        passed_checks[prio][2] += 1
+                    else:
+                        passed_checks[prio][3] += 1
 
     # write summary of results into summary file
     with open(os.path.join(opath_in, 'short_summary.txt'), 'w+') as f:
         f.write("Short summary of checks: \n \n")
         if isinstance(json_summary, pd.DataFrame):
-            text_out = "Checking against: " + json_summary['testname'][0]
+            text_out = f"Checking against: {json_summary['testname'][0]}"
             if std_name_table_in is not None:
-                text_out = text_out + ", CF table version: " + std_name_table_in + "\n"
+                text_out = f"{text_out}, CF table version: {std_name_table_in} \n"
             else:
-                text_out = text_out + "\n"
+                text_out = f"{text_out}\n"
             f.write(text_out)
-            f.write("Version of the AtMoDat checker: " + str(__version__) + "\n")
-        f.write("Checked at: " + datetime.datetime.now().isoformat(timespec='seconds') + "\n \n")
-        f.write("Number of checked files: " + str(file_counter) + '\n')
+            f.write(f"Version of the AtMoDat checker: {str(__version__)}\n")
+        f.write(f"Checked at: {datetime.datetime.now().isoformat(timespec='seconds')}\n \n")
+        f.write(f"Number of checked files: {str(file_counter)}\n")
         if isinstance(json_summary, pd.DataFrame):
             for prio in prio_dict.keys():
-                f.write(prio_dict[prio] + " checks passed: " + str(passed_checks[prio][1]) + '/'
-                        + str(passed_checks[prio][0]) + '\n')
+                f.write(f"{prio_dict[prio]} checks passed: "
+                        f"{str(passed_checks[prio][1])}/{str(passed_checks[prio][0])} ({passed_checks[prio][2]} "
+                        f"missing, {passed_checks[prio][3]} error(s)\n")
         if cf_errors is not None:
             if incorrect_formula_term_error_in:
-                f.write("CF checker errors: " + str(cf_errors) + ' (Ignoring errors related to formula_terms '
-                                                                 'in boundary variables. See Known Issues sections in '
-                                                                 'the README.md)')
+                f.write(f"CF checker errors: {str(cf_errors)} (Ignoring errors related to formula_terms in boundary "
+                        f"variables. See Known Issues sections in the README.md)")
             else:
-                f.write("CF checker errors: " + str(cf_errors))
+                f.write(f"CF checker errors: {str(cf_errors)}\n")
+        if cf_warns is not None:
+            f.write(f"CF checker warnings: {str(cf_warns)}")
 
 
 def write_long_summary(json_summary_in, opath_in):
@@ -161,9 +170,9 @@ def create_output_summary(file_counter, opath, check_types_in):
     std_name_table = None
     if 'CF' in check_types_in:
         incorrect_formula_term_error = False
-        cf_errors = 0
+        cf_errors, cf_warns = 0, 0
     else:
-        cf_errors = None
+        cf_errors, cf_warns = None, None
         incorrect_formula_term_error = None
 
     files = output_directory.return_files_in_directory_tree(opath)
@@ -172,9 +181,10 @@ def create_output_summary(file_counter, opath, check_types_in):
             json_summary = json_summary.append(extract_overview_output_json(file),
                                                ignore_index=True)
         elif file.endswith("_CF_result.txt"):
-            cf_errors, std_name_table, incorrect_formula_term_error = \
-                extracts_error_summary_cf_check(file, cf_errors, incorrect_formula_term_error)
+            cf_errors, cf_warns, std_name_table, incorrect_formula_term_error = \
+                extracts_error_summary_cf_check(file, cf_errors, cf_warns, incorrect_formula_term_error)
 
-    write_short_summary(json_summary, cf_errors, incorrect_formula_term_error, file_counter, std_name_table, opath)
+    write_short_summary(json_summary, cf_errors, cf_warns, incorrect_formula_term_error, file_counter, std_name_table,
+                        opath)
     write_long_summary(json_summary, opath)
     return

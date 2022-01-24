@@ -11,7 +11,7 @@ All notable changes to this project will be documented in this file.
 - Add information on how to update the ATMODAT Standard Compliance Checker (and related packages)
 - Add tests for run_checks.py (check for expected number of missing attributes in demo_data) (#97)
 - Add output of version number via -V option (#111)
-- Allow for installation form github via pip (#111) 
+- Allow for installation form GitHub via pip (#111) 
 
 ### Changed:
 - Add cfunits to environment.yml to fix tests (#52)
@@ -27,6 +27,7 @@ All notable changes to this project will be documented in this file.
 - Do not delete content of output directory (#88)
 - Restructure the content and use of submodules (#101) 
 - Make "point" entry in geospatial_lat/lon_resolution a valid entry (#111)
+- Revised short summary output (i.e. number of CF checker warnings and reason for failed checks)
 
 ### Removed:
 
