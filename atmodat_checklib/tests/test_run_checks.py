@@ -48,8 +48,9 @@ def create_output_summary(opath):
         elif file.endswith("_CF_result.txt"):
             cf_errors_out[file] = 0
             cf_warns_out[file] = 0
-            cf_errors_out[file], std_name_table, incorrect_formula_term_error = \
-                extracts_error_summary_cf_check(file, cf_errors_out[file], cf_errors_out[file], incorrect_formula_term_error)
+            cf_errors_out[file], cf_warns_out[file], std_name_table, incorrect_formula_term_error = \
+                extracts_error_summary_cf_check(file, cf_errors_out[file], cf_warns_out[file],
+                                                incorrect_formula_term_error)
     return json_summary_out, cf_errors_out
 
 
