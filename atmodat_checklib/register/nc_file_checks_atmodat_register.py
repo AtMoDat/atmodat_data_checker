@@ -78,7 +78,7 @@ class GlobalAttrResolutionFormatCheck(NCFileCheckBase):
     short_name = "Global attribute: {attribute} format check"
     defaults = {}
     required_args = ['attribute']
-    message_templates = ["'{attribute}' global attribute is not present.",
+    message_templates = ["'{attribute}' global attribute is not present",
                          "'{attribute}' No valid value+unit combination (missing value)",
                          "'{attribute}' No valid value+unit combination (missing unit)",
                          "'{attribute}' No valid value+unit combination (invalid unit)"]
@@ -106,7 +106,7 @@ class GlobalAttrTypeCheck(NCFileCheckBase):
     required_args = ['attribute', 'type', 'status']
     message_templates = ["'{attribute}' global attribute is not present",
                          "'{attribute}' global attribute check against unsupported type {type} "
-                         "(allowed types are: str, int, float).",
+                         "(allowed types are: str, int, float)",
                          "'{attribute}' global attribute is empty",
                          "'{attribute}' global attribute value does not match type {type}"]
 
