@@ -27,7 +27,8 @@ All notable changes to this project will be documented in this file.
 - Do not delete content of output directory (#88)
 - Restructure the content and use of submodules (#101) 
 - Make "point" entry in geospatial_lat/lon_resolution a valid entry (#111)
-- Revised short summary output (i.e. number of CF checker warnings and reason for failed checks)
+- Revised short summary output (i.e. number of CF checker warnings and reason for failed checks) (#111)
+- Fix interpunctation in checker output messages (#111)
 
 ### Removed:
 
