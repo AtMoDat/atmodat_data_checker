@@ -90,7 +90,7 @@ def write_short_summary(json_summary, cf_version, cf_errors, cf_warns, incorrect
                     if check['value'][0] == check['value'][1]:
                         passed_checks[prio][1] += 1
                         passed_checks['all'][1] += 1
-                    elif check['value'][0] == 1:
+                    elif check['value'][0] in [0, 1]:
                         passed_checks[prio][2] += 1
                     else:
                         passed_checks[prio][3] += 1
@@ -105,7 +105,7 @@ def write_short_summary(json_summary, cf_version, cf_errors, cf_warns, incorrect
                 cf_version_string = f"CF Version {cf_verion_list[0]}"
             else:
                 cf_version_string = 'multiple CF versions'
-            text_out = f"Checking against: ATMODAT Standard {json_summary['testname'][0].split(':')[1]}" \
+            text_out = f"Checking against: ATMODAT Standard {list(set(json_summary['testname']))[0].split(':')[1]}" \
                        f", {cf_version_string}\n"
             f.write(text_out)
         f.write(f"Checked at: {datetime.datetime.now().isoformat(timespec='seconds')}\n \n")
@@ -114,7 +114,7 @@ def write_short_summary(json_summary, cf_version, cf_errors, cf_warns, incorrect
             for prio in prio_dict.keys():
                 f.write(f"{prio_dict[prio]} checks passed: "
                         f"{str(passed_checks[prio][1])}/{str(passed_checks[prio][0])} ({passed_checks[prio][2]} "
-                        f"missing, {passed_checks[prio][3]} error(s)\n")
+                        f"missing, {passed_checks[prio][3]} error(s))\n")
         if cf_version_string == 'multiple CF versions':
             f.write("!!! Checking against multiple CF Versions !!!")
         if cf_errors is not None:
@@ -134,7 +134,7 @@ def write_long_summary(json_summary_in, opath_in):
 
     prio_cat_all = ['high_priorities', 'medium_priorities', 'low_priorities']
     prio_dict = {'high_priorities': 'mandatory', 'medium_priorities': 'recommended', 'low_priorities': 'optional'}
-    files_check = json_summary_in['file']
+    files_check = list(json_summary_in['file'])
 
     data_table = {}
     for prio_cat in prio_cat_all:
@@ -144,17 +144,18 @@ def write_long_summary(json_summary_in, opath_in):
         file_name_old = []
         for nf, file in enumerate(files_check):
             file_name = file.split('/')[-1].replace('_atmodat_result.json', '.nc')
-            for check in data_prio[nf]:
-                if check['value'][0] != check['value'][1]:
-                    if file_name_old != file_name:
-                        for key in data_table[prio_cat].keys():
-                            data_table[prio_cat][key].append('')
-                    data_table[prio_cat]['File'].append(file_name)
-                    msgs = check['msgs'][0].split("'")
-                    data_table[prio_cat]['Global Attribute'].append(msgs[1])
-                    data_table[prio_cat]['Error Message'].append(msgs[2].lstrip())
-                    data_table[prio_cat]['Check level'].append(prio_dict[prio_cat])
-                    file_name_old = file_name
+            for checks in data_prio:
+                for check in checks:
+                    if check['value'][0] != check['value'][1]:
+                        if file_name_old != file_name:
+                            for key in data_table[prio_cat].keys():
+                                data_table[prio_cat][key].append('')
+                        data_table[prio_cat]['File'].append(file_name)
+                        msgs = check['msgs'][0].split("'")
+                        data_table[prio_cat]['Global Attribute'].append(msgs[1])
+                        data_table[prio_cat]['Error Message'].append(msgs[2].lstrip())
+                        data_table[prio_cat]['Check level'].append(prio_dict[prio_cat])
+                        file_name_old = file_name
 
         with open(os.path.join(opath_in, 'long_summary_' + prio_dict[prio_cat] + '.csv'), 'w', newline='') as file:
             writer = csv.writer(file)
@@ -186,8 +187,8 @@ def create_output_summary(file_counter, opath, check_types_in):
     files = output_directory.return_files_in_directory_tree(opath)
     for file in files:
         if file.endswith("_result.json") and isinstance(json_summary, pd.DataFrame):
-            json_summary = json_summary.append(extract_overview_output_json(file),
-                                               ignore_index=True)
+            json_summary = pd.concat([json_summary, pd.DataFrame.from_dict(extract_overview_output_json(file),
+                                                                           orient='index').transpose()], axis=0)
         elif file.endswith("_CF_result.txt"):
             cf_version, cf_errors, cf_warns, std_name_table, incorrect_formula_term_error = \
                 extracts_error_summary_cf_check(file, cf_version, cf_errors, cf_warns, incorrect_formula_term_error)
