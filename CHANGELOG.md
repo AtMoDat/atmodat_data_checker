@@ -12,6 +12,7 @@ All notable changes to this project will be documented in this file.
 - Add tests for run_checks.py (check for expected number of missing attributes in demo_data) (#97)
 - Add output of version number via -V option (#111)
 - Allow for installation form GitHub via pip (#111) 
+- Output distinct licences in checked files into extra file (#111)
 
 ### Changed:
 - Add cfunits to environment.yml to fix tests (#52)

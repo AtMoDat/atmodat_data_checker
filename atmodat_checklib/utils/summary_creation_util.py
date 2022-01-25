@@ -79,6 +79,7 @@ def write_short_summary(json_summary, cf_version, cf_errors, cf_warns, incorrect
     """create file which contains the short version of the summary"""
     prio_dict = {'high_priorities': 'Mandatory', 'medium_priorities': 'Recommended', 'low_priorities': 'Optional'}
     passed_checks = {'all': [0, 0, 0, 0]}  # all, failed, missing, error
+    license_list = []
     if isinstance(json_summary, pd.DataFrame):
         for prio in prio_dict.keys():
             passed_checks[prio] = [0, 0, 0, 0]  # all, failed, missing, error
@@ -90,6 +91,11 @@ def write_short_summary(json_summary, cf_version, cf_errors, cf_warns, incorrect
                     if check['value'][0] == check['value'][1]:
                         passed_checks[prio][1] += 1
                         passed_checks['all'][1] += 1
+
+                        # Find used license information
+                        if check['name'] == 'Global attribute: license':
+                            license_list.append(check['msgs'][0])
+
                     elif check['value'][0] in [0, 1]:
                         passed_checks[prio][2] += 1
                     else:
@@ -125,6 +131,12 @@ def write_short_summary(json_summary, cf_version, cf_errors, cf_warns, incorrect
                 f.write(f"CF checker errors: {str(cf_errors)}\n")
         if cf_warns is not None:
             f.write(f"CF checker warnings: {str(cf_warns)}")
+
+    license_list = list(set(license_list))
+    if len(license_list) != 0:
+        with open(os.path.join(opath_in, 'summary_used_licences.txt'), 'w+') as f_lic:
+            for license_str in license_list:
+                f_lic.write(f"{license_str} \n")
 
 
 def write_long_summary(json_summary_in, opath_in):
