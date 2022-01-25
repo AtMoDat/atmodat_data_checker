@@ -126,7 +126,7 @@ def write_short_summary(json_summary, cf_version, cf_errors, cf_warns, incorrect
         if cf_errors is not None:
             if incorrect_formula_term_error_in:
                 f.write(f"CF checker errors: {str(cf_errors)} (Ignoring errors related to formula_terms in boundary "
-                        f"variables. See Known Issues sections in the README.md)")
+                        f"variables. See Known Issues sections in the README.md)\n")
             else:
                 f.write(f"CF checker errors: {str(cf_errors)}\n")
         if cf_warns is not None:
