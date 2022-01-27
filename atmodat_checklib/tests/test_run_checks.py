@@ -38,7 +38,7 @@ def run_checks_on_files(tmpdir, ifiles):
 
 def create_output_summary(opath):
     """main function to create summary output"""
-    json_summary_out, cf_errors_out, incorrect_formula_term_error = {}, {}, None
+    json_summary_out, cf_version, cf_errors_out, cf_warns_out, incorrect_formula_term_error = {}, {}, {}, {}, None
     files = output_directory.return_files_in_directory_tree(opath)
     for file in files:
         if file.endswith("_result.json"):
@@ -46,9 +46,12 @@ def create_output_summary(opath):
             json_summary_out[file] = json_summary_out[file].append(extract_overview_output_json(file),
                                                                    ignore_index=True)
         elif file.endswith("_CF_result.txt"):
+            cf_version[file] = []
             cf_errors_out[file] = 0
-            cf_errors_out[file], std_name_table, incorrect_formula_term_error = \
-                extracts_error_summary_cf_check(file, cf_errors_out[file], incorrect_formula_term_error)
+            cf_warns_out[file] = 0
+            cf_version[file], cf_errors_out[file], cf_warns_out[file], std_name_table, incorrect_formula_term_error = \
+                extracts_error_summary_cf_check(file, cf_version[file], cf_errors_out[file], cf_warns_out[file],
+                                                incorrect_formula_term_error)
     return json_summary_out, cf_errors_out
 
 

@@ -124,7 +124,9 @@ def value_unit_format_conformity(resol_string):
 
     resol_string = resol_string.strip()
 
-    if not check_value_exists(resol_string):
+    if resol_string == 'point':
+        return 4
+    elif not check_value_exists(resol_string):
         # Missing value
         return 1
     else:
