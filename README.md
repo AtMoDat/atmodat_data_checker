@@ -6,9 +6,11 @@ Its core functionality is based on the [IOOS compliance checker](https://github.
 
 In addition, the compliance to the CF Conventions 1.4 or higher is verified with the [CF checker](https://github.com/cedadev/cf-checker).
 
+<!---
 We set up a binder where you can try out the functionalities of the ATMODAT Standard Compliance Checker:
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/AtMoDat/atmodat_data_checker/HEAD?filepath=notebooks)
+-->
 
 ## Installation (tested on Linux, macOS and Windows)
 
