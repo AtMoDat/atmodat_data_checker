@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/286954083.svg)](https://zenodo.org/badge/latestdoi/286954083)
+
 # ATMODAT Standard Compliance Checker
 
 This is a python library that contains checks to ensure compliance with the ATMODAT Standard.
