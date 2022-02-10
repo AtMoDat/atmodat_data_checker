@@ -148,33 +148,32 @@ def write_long_summary(json_summary_in, opath_in):
     prio_dict = {'high_priorities': 'mandatory', 'medium_priorities': 'recommended', 'low_priorities': 'optional'}
     files_check = list(json_summary_in['file'])
 
+    # Read all errors and warnings into dict
     data_table = {}
     for prio_cat in prio_cat_all:
-        data_table[prio_cat] = {}
-        data_prio = json_summary_in[prio_cat]
         data_table[prio_cat] = {'File': [], 'Check level': [], 'Global Attribute': [], 'Error Message': []}
-        file_name_old = []
-        for nf, file in enumerate(files_check):
-            file_name = file.split('/')[-1].replace('_atmodat_result.json', '.nc')
-            for checks in data_prio:
-                for check in checks:
-                    if check['value'][0] != check['value'][1]:
-                        if file_name_old != file_name:
-                            for key in data_table[prio_cat].keys():
-                                data_table[prio_cat][key].append('')
-                        data_table[prio_cat]['File'].append(file_name)
-                        msgs = check['msgs'][0].split("'")
-                        data_table[prio_cat]['Global Attribute'].append(msgs[1])
-                        data_table[prio_cat]['Error Message'].append(msgs[2].lstrip())
-                        data_table[prio_cat]['Check level'].append(prio_dict[prio_cat])
-                        file_name_old = file_name
+        for nf in range(len(files_check)):
+            file_name = json_summary_in.iloc[nf]['file'].split('/')[-1].replace('_atmodat_result.json', '.nc')
+            for key in data_table[prio_cat].keys():
+                data_table[prio_cat][key].append('')
 
+            checks_prio_file = json_summary_in.iloc[nf][prio_cat]
+            for check in checks_prio_file:
+                if check['value'][0] != check['value'][1]:
+                    data_table[prio_cat]['File'].append(file_name)
+                    msgs = check['msgs'][0].split("'")
+                    data_table[prio_cat]['Global Attribute'].append(msgs[1])
+                    data_table[prio_cat]['Error Message'].append(msgs[2].lstrip())
+                    data_table[prio_cat]['Check level'].append(prio_dict[prio_cat])
+
+    for prio_cat in prio_cat_all:
         with open(os.path.join(opath_in, 'long_summary_' + prio_dict[prio_cat] + '.csv'), 'w', newline='') as file:
             writer = csv.writer(file)
             writer.writerow(list(data_table[prio_cat].keys()))
             for row in zip(data_table[prio_cat]['File'], data_table[prio_cat]['Check level'],
                            data_table[prio_cat]['Global Attribute'], data_table[prio_cat]['Error Message']):
                 writer.writerow((list(row)))
+
     return
 
 
