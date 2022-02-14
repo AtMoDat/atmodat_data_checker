@@ -1,8 +1,8 @@
-include CHANGES.md
 include README.md
 include requirements.txt
+include atmodat_checklib/AtMoDat_CVs/atmodat_standard_checks.yml
+recursive-include atmodat_checklib/AtMoDat_CVs *
 
-recursive-include tests *
 recursive-exclude * __pycache__
 recursive-exclude * *.py[co]
 

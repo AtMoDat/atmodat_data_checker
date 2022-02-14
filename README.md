@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/286954083.svg)](https://zenodo.org/badge/latestdoi/286954083)
+
 # ATMODAT Standard Compliance Checker
 
 This is a python library that contains checks to ensure compliance with the ATMODAT Standard.
@@ -6,9 +8,11 @@ Its core functionality is based on the [IOOS compliance checker](https://github.
 
 In addition, the compliance to the CF Conventions 1.4 or higher is verified with the [CF checker](https://github.com/cedadev/cf-checker).
 
+<!---
 We set up a binder where you can try out the functionalities of the ATMODAT Standard Compliance Checker:
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/AtMoDat/atmodat_data_checker/HEAD?filepath=notebooks)
+-->
 
 ## Installation (tested on Linux, macOS and Windows)
 
@@ -45,14 +49,14 @@ We set up a binder where you can try out the functionalities of the ATMODAT Stan
 6. Initialize and update the [ATMODAT CVs](https://github.com/AtMoDat/AtMoDat_CVs) submodule, which contains the controlled vocabulary for the ATMODAT Standard.
    ```bash
    git submodule init
-   git submodule update
+   git submodule update  --remote --recursive
    ```
 
 ## Update the preinstalled checker 
 The ATMODAT Standard Compliance Checker and related packages can be updated to its latest version (GitHub master branch) as follows:
 ```bash
 git checkout master
-git pull origin master || git submodule update
+git pull origin master || git submodule update --remote --recursive
 mamba update --file mamba_requirements.txt
 pip install -U -e .
 ```

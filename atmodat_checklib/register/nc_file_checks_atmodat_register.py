@@ -31,6 +31,35 @@ class NCFileCheckBase(CallableCheckBase):
         self.level = atmodat_status[status]
 
 
+class LicenseAttrCheck(NCFileCheckBase):
+    """
+    The global attribute '{attribute}' must have a valid type '{type}' and should not be empty.
+    """
+    short_name = "Global attribute: {attribute}"
+    defaults = {}
+    required_args = ['attribute', 'type', 'status']
+    message_templates = ["'{attribute}' global attribute is not present",
+                         "'{attribute}' global attribute check against unsupported type {type} "
+                         "(allowed types are: str, int, float)",
+                         "'{attribute}' global attribute is empty",
+                         "'{attribute}' global attribute value does not match type {type}"]
+
+    def _get_result(self, primary_arg):
+        self._atmodat_status_to_level(self.kwargs["status"])
+        ds = primary_arg
+
+        score = nc_util.check_global_attr_type(ds, self.kwargs["attribute"], self.kwargs["type"],)
+        messages = []
+
+        if score < self.out_of:
+            messages.append(self.get_messages()[score])
+        else:
+            messages.append(getattr(ds, self.kwargs["attribute"]).strip())
+
+        return Result(self.level, (score, self.out_of),
+                      self.get_short_name(), messages)
+
+
 class ConventionsVersionCheck(NCFileCheckBase):
     """
     The version number given in the global attribute '{attribute}' must be within a valid range
@@ -78,7 +107,7 @@ class GlobalAttrResolutionFormatCheck(NCFileCheckBase):
     short_name = "Global attribute: {attribute} format check"
     defaults = {}
     required_args = ['attribute']
-    message_templates = ["'{attribute}' global attribute is not present.",
+    message_templates = ["'{attribute}' global attribute is not present",
                          "'{attribute}' No valid value+unit combination (missing value)",
                          "'{attribute}' No valid value+unit combination (missing unit)",
                          "'{attribute}' No valid value+unit combination (invalid unit)"]
@@ -106,7 +135,7 @@ class GlobalAttrTypeCheck(NCFileCheckBase):
     required_args = ['attribute', 'type', 'status']
     message_templates = ["'{attribute}' global attribute is not present",
                          "'{attribute}' global attribute check against unsupported type {type} "
-                         "(allowed types are: str, int, float).",
+                         "(allowed types are: str, int, float)",
                          "'{attribute}' global attribute is empty",
                          "'{attribute}' global attribute value does not match type {type}"]
 

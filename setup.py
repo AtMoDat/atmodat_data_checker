@@ -66,7 +66,7 @@ setup(
     long_description_content_type='text/markdown',
     include_package_data=True,
     keywords='atmodat',
-    name="atmodat_check_lib",
+    name="atmodat_checklib",
     packages=find_packages(include=["atmodat_checklib", "atmodat_checklib.*"]),
     setup_requires=setup_requirements,
     scripts=["run_checks.py", "atmodat_checklib/utils/fill_attributes/fill_attributes.py"],

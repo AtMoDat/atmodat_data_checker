@@ -11,8 +11,8 @@ import json
 
 
 prio_dict = {'high_priorities': 'Mandatory', 'medium_priorities': 'Recommended', 'low_priorities': 'Optional'}
-udunits2_xml_path, pyessv_archive_home = set_env_variables()
-os.environ['PYESSV_ARCHIVE_HOME'] = pyessv_archive_home
+udunits2_xml_path, atmodat_cvs = set_env_variables()
+os.environ['PYESSV_ARCHIVE_HOME'] = os.path.join(atmodat_cvs, 'pyessv-archive')
 os.environ['UDUNITS2_XML_PATH'] = udunits2_xml_path
 
 
@@ -38,7 +38,7 @@ def run_checks_on_files(tmpdir, ifiles):
 
 def create_output_summary(opath):
     """main function to create summary output"""
-    json_summary_out, cf_errors_out, incorrect_formula_term_error = {}, {}, None
+    json_summary_out, cf_version, cf_errors_out, cf_warns_out, incorrect_formula_term_error = {}, {}, {}, {}, None
     files = output_directory.return_files_in_directory_tree(opath)
     for file in files:
         if file.endswith("_result.json"):
@@ -46,9 +46,12 @@ def create_output_summary(opath):
             json_summary_out[file] = json_summary_out[file].append(extract_overview_output_json(file),
                                                                    ignore_index=True)
         elif file.endswith("_CF_result.txt"):
+            cf_version[file] = []
             cf_errors_out[file] = 0
-            cf_errors_out[file], std_name_table, incorrect_formula_term_error = \
-                extracts_error_summary_cf_check(file, cf_errors_out[file], incorrect_formula_term_error)
+            cf_warns_out[file] = 0
+            cf_version[file], cf_errors_out[file], cf_warns_out[file], std_name_table, incorrect_formula_term_error = \
+                extracts_error_summary_cf_check(file, cf_version[file], cf_errors_out[file], cf_warns_out[file],
+                                                incorrect_formula_term_error)
     return json_summary_out, cf_errors_out
 
 
@@ -61,7 +64,9 @@ def test_expected_attributes_present(tmpdir):
     tmpdir_demo = tmpdir.mkdir('demo_data')
     git_url = 'https://github.com/AtMoDat/demo_data.git'
     Repo.clone_from(git_url, tmpdir_demo)
-    with open(os.path.join(str(tmpdir_demo), 'test_results_atmodat_standard_latest.json'), 'r') as json_file:
+
+    with open(os.path.join(str(Path(__file__).resolve().parents[0]), 'test_results',
+                           'test_results_atmodat_standard_v3.0.json'), 'r') as json_file:
         file_check = json.load(json_file)
     file_list = [os.path.join(str(tmpdir_demo), f) for f in os.listdir(tmpdir_demo) if f.endswith('.nc')]
     passed_json_checks = run_checks_on_files(tmp_dir_test, file_list)

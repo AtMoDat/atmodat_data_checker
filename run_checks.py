@@ -3,23 +3,23 @@
 import argparse
 import os
 from datetime import datetime
-from pathlib import Path
 import subprocess
 import numpy as np
 
 import atmodat_checklib.utils.output_directory_util as output_directory
 import atmodat_checklib.utils.summary_creation_util as summary_creation
 from atmodat_checklib.utils.env_util import set_env_variables
+from atmodat_checklib import __version__
 
 
 def main():
 
     # Set environment variables
-    udunits2_xml_path, pyessv_archive_home = set_env_variables()
-    os.environ['PYESSV_ARCHIVE_HOME'] = pyessv_archive_home
+    udunits2_xml_path, atmodat_cvs = set_env_variables()
+    os.environ['PYESSV_ARCHIVE_HOME'] = os.path.join(atmodat_cvs, 'pyessv-archive')
     os.environ['UDUNITS2_XML_PATH'] = udunits2_xml_path
 
-    idiryml = os.path.join(Path(__file__).resolve().parents[0], '')
+    idiryml = os.path.join(atmodat_cvs, '')
 
     # record start time
     start_time = datetime.now()
@@ -44,7 +44,7 @@ def main():
     # predefined opath
     else:
         # default path with subdirectory containing timestamp of check
-        opath = idiryml
+        opath = os.getcwd()
     opath = os.path.join(opath, 'atmodat_checker_output', '')
 
     # Define version of CF table against which the files shall be checked.
@@ -240,6 +240,8 @@ def command_line_parse():
     parser.add_argument("-s", "--summary", help="Create summary of checker output",
                         action="store_true",
                         default=False)
+    parser.add_argument('-V', '--version', action='version',
+                        version=f'ATMODAT Standard Compliance Checker Version: {__version__}')
     group = parser.add_mutually_exclusive_group()
     group.add_argument("-f", "--file", help="Processes the given file")
     group.add_argument("-p", "--path", help="Processes all files in a given path and subdirectories "
