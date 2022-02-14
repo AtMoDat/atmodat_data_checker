@@ -3,6 +3,7 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 ### Added:
+- Remove duplicate from long summary output (#119)
 ### Changed:
 ### Removed:
 
