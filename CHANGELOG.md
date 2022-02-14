@@ -21,7 +21,6 @@ All notable changes to this project will be documented in this file.
 - Add output of version number via -V option (#111)
 - Allow for installation form GitHub via pip (#111)
 - Output distinct licences in checked files into extra file (#111)
->>>>>>> master
 
 ### Changed:
 - Add cfunits to environment.yml to fix tests (#52)

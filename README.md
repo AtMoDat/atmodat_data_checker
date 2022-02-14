@@ -113,7 +113,7 @@ To ensure compliance with the CF Conventions and the ATMODAT Standard, it might 
 ### Usage
 To run this script, it is necessary to provide the directory where the csv files are stored (`-a csv_directory`). The scirpt can modify a single file or all netCDF files in a given directory. In case you provide a directory, all netCDF files will be identified and modified recursively. Use the `-p` option and give the path/directory of the file(s) to be modified. 
 
-The typical command line string to run the attribute filler looks like this:
+The typical command-line string to run the attribute filler looks like this:
   ```bash
   fill_attributes -a csv_directory -p file_path/directory
   ```
