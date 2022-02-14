@@ -45,4 +45,4 @@ git submodule update  --remote --recursive
 mamba install --yes -c conda-forge jupyterlab
 mamba install --yes -c conda-forge cdo nco
 
-python -m ipykernel install --user --name "${$env_name}"kernel
+python -m ipykernel install --user --name "${env_name}"kernel
