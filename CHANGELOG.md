@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 ### Added:
 - Remove duplicate from long summary output (#119)
-- Add attribute filler
+- Add global attribute filler (#102)
 ### Changed:
 ### Removed:
 
