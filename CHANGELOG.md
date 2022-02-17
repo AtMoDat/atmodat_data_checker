@@ -1,12 +1,16 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+
 ## [Unreleased]
+### Added:
+### Changed:
+### Removed:
+
+## Version [1.3] - 2022-02-17
 ### Added:
 - Remove duplicate from long summary output (#119)
 - Add global attribute filler (#102)
-### Changed:
-### Removed:
 
 
 ## Version [1.2] - 2022-01-28
@@ -43,6 +47,7 @@ All notable changes to this project will be documented in this file.
 ## Version [1.1] - 2021-07-07
 This is the state before the CHANGELOG.md has been created. From here on, all changes will be tracked.
 
-[Unreleased]: https://github.com/AtMoDat/atmodat_data_checker/compare/v1.2...HEAD
+[Unreleased]: https://github.com/AtMoDat/atmodat_data_checker/compare/v1.3...HEAD
+[1.3]: https://github.com/AtMoDat/atmodat_data_checker/compare/v1.2...v1.3
 [1.2]: https://github.com/AtMoDat/atmodat_data_checker/compare/v1.1...v1.2
 [1.1]: https://github.com/AtMoDat/atmodat_data_checker/compare/v1.0...v1.1
