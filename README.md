@@ -64,7 +64,7 @@ pip install -U -e .
 ## How to run the ATMODAT Standard Checker
 
 The command `run_checks` can be executed from any directory from within the `atmodat` conda environment. It will perform checks to evaluate the compliance with the ATMODAT Standard.  Compliance with the CF Conventions is checked by a call to the [CF checker](https://github.com/cedadev/cf-checker). The results of the performed checks are provided in the `checker_output` directory. 
-By default, `run_checks` assumes writing permissions in the path where the atmodat checker is installed. If this is not the case, you must specify an output directory where you possess writing permissions with the -op output_path.
+By default, `run_checks` assumes writing permissions in the path where the atmodat checker is installed. If this is not the case, you must specify an output directory where you possess writing permissions with the `-op output_path`.
 
 * To check a single file, use:
    ```bash
@@ -104,7 +104,24 @@ By default, `run_checks` assumes writing permissions in the path where the atmod
   ```bash
   run_checks --help
   ```
-  
+
+## Filling global/variable attribute
+To ensure compliance with the CF Conventions and the ATMODAT Standard, it might be necessary to adapt the variable and global attributes. To support this process, the `fill_attributes` script is provided as part of the checker which can be used to fill the respective attributes into netCDF files from csv files. Basic examples for these csv files are provided [here](atmodat_checklib/utils/fill_attributes/attribute_templates). These files can be modified to add/change global attributes and to rename variables and add/change their respective attributes. 
+
+
+
+### Usage
+To run this script, it is necessary to provide the directory where the csv files are stored (`-a csv_directory`). The scirpt can modify a single file or all netCDF files in a given directory. In case you provide a directory, all netCDF files will be identified and modified recursively. Use the `-p` option and give the path/directory of the file(s) to be modified. 
+
+The typical command-line string to run the attribute filler looks like this:
+  ```bash
+  fill_attributes -a csv_directory -p file_path/directory
+  ```
+Presently, the original fill will simply be amended to save runtime due to reduced I/O operations. A backup of the original global/variable for each file is created in the `csv_directory`. The original state of the file/directory can be restored using the `-r` option (files will nevertheless not be bit-identical):
+  ```bash
+  fill_attributes -r -a csv_directory -p file_path/directory
+  ```
+
 ## Known Issues
 * Presently, there is an unresolved issue in the CF checker (v 4.1.0, [see here](https://github.com/cedadev/cf-checker/issues/75)). Until it will get resolved, this issue will output an error that is related to the `formula_terms` attribute in so-called boundary variables. As this is related to the CF checker, we will simply ignore errors that are related to this issue in the `short_summary` output of the checker.
 
