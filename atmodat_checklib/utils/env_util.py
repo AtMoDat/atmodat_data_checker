@@ -2,21 +2,28 @@ import os
 from pathlib import Path
 import platform
 
+UDUNITS_PATH_WINDOWS=['share', 'udunits']
+UDUNITS_PATH_LINUX=['Library', 'share', 'udunits']
 
 def set_env_variables():
 
     # Verify we are in atmodat conda environment
-    try:
-        atmodat_conda_envpath = os.environ["CONDA_PREFIX"]
-    except KeyError:
-        atmodat_conda_envpath = os.environ["CONDA"]
-
-    # UDUNITS2_XML_PATH
-    udunits2_xml_path_out = None
-    if platform.system() == 'Linux' or platform.system() == 'Darwin':
-        udunits2_xml_path_out = os.path.join(atmodat_conda_envpath, 'share', 'udunits', 'udunits2.xml')
-    elif platform.system() == 'Windows':
-        udunits2_xml_path_out = os.path.join(atmodat_conda_envpath, 'Library', 'share', 'udunits', 'udunits2.xml')
+    if not os.environ["UDUNITS2_XML_PATH"] :
+        
+        if platform.system() == 'Windows' :
+            udunits_local_path=UDUNITS_PATH_WINDOWS
+        else :
+            udunits_local_path=UDUNITS_PATH_LINUX
+            
+        for binpath in os.environ["PATH"].split(':') :
+            searchpath=binpath.split(os.path.sep)[:-1]
+            if os.path.isfile(os.path.join([searchpath]+ udunits_local_path)):
+                udunits2_xml_path_out=os.path.join([binpath]+ udunits_local_path)
+                break
+        if not udunits2_xml_path_out:
+            raise RuntimeError("Could not find udunits xml path")
+    else :
+        udunits2_xml_path_out=os.environ["UDUNITS2_XML_PATH"]
 
     # PYESSV_ARCHIVE_PATH
     atmodat_cv_base_path = str(Path(__file__).resolve().parents[1])
