@@ -4,6 +4,7 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 ### Added:
+- More detailed error message if file suffix ends with `*.NC` (#123)
 ### Changed:
 ### Removed:
 
