@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 ### Added:
 ### Changed:
+- Improve `UDUNITS2_XML_PATH` detection in env_util.py (#121)
 ### Removed:
 
 ## Version [1.3] - 2022-02-17
