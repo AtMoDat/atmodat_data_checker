@@ -74,29 +74,24 @@ def main():
     # Create directory for checker output
     opath_run = output_directory.create_directories(opath, check_types)
 
-    # Run checks
-    file_counter = 0
+    # Single file
     if ifile and not (ipath or ipath_norec):
-        if ifile.endswith(".nc"):
-            if os.path.isfile(ifile):
-                run_checks([ifile], verbose, check_types, cfversion, opath_run, idiryml)
-                file_counter = 1
-            else:
-                raise RuntimeError('File: ' + ifile + ' does not exist')
-        else:
-            print('Skipping ' + ifile + ' as it does not end with ".nc'"")
+        # Check for file ending and add file to list
+        files_check = check_file_suffix([ifile])
+
+    # Multiple files
     elif (ipath or ipath_norec) and not ifile:
+        # Look for files in given directory
         if ipath:
             files_all = output_directory.return_files_in_directory_tree(ipath)
         else:
             files_all = output_directory.return_files_in_directory(ipath_norec)
-        file_nc = []
-        [file_nc.append(file) for file in files_all if file.endswith(".nc")]
-        if len(file_nc) == 0:
-            raise RuntimeError('No netCDF files found in: ' + ipath)
-        else:
-            run_checks(file_nc, verbose, check_types, cfversion, opath_run, idiryml)
-            file_counter = len(file_nc)
+        # Check for file ending and add file to list
+        files_check = check_file_suffix(files_all)
+
+    # Run global attribute checks
+    file_counter = len(files_check)
+    run_checks(files_check, verbose, check_types, cfversion, opath_run, idiryml)
 
     # Create summary of results if specified
     if parsed_summary:
@@ -110,6 +105,20 @@ def main():
 
     # Calculate run time of this script
     print("--- %.4f seconds for checking %s files---" % ((datetime.now() - start_time).total_seconds(), file_counter))
+
+
+def check_file_suffix(ifiles):
+    files_to_check = []
+    for file in ifiles:
+        if not os.path.isfile(file):
+            if not os.path.isdir(file):
+                raise RuntimeError(f'File: {file} does not exist')
+        else:
+            if file.endswith(".nc"):
+                files_to_check.append(file)
+            elif file.endswith(".NC"):
+                raise RuntimeError(f'NetCDF file suffix in {file} must be lower case. Please verify for other files')
+    return files_to_check
 
 
 def utf8len(string_in):
