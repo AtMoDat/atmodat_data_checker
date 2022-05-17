@@ -105,12 +105,15 @@ def write_short_summary(json_summary, cf_version, cf_errors, cf_warns, incorrect
     with open(os.path.join(opath_in, 'short_summary.txt'), 'w+') as f:
         f.write("=== Short summary === \n \n")
         f.write(f"ATMODAT Standard Compliance Checker Version: {str(__version__)}\n")
+
+        # Check for multiple CF Version
+        cf_verion_list = list(set(cf_version))
+        if len(cf_verion_list) == 1:
+            cf_version_string = f"CF Version {cf_verion_list[0].split('-')[1]}"
+        else:
+            cf_version_string = 'multiple CF versions'
+
         if isinstance(json_summary, pd.DataFrame):
-            cf_verion_list = list(set(cf_version))
-            if len(cf_verion_list) == 1:
-                cf_version_string = f"CF Version {cf_verion_list[0].split('-')[1]}"
-            else:
-                cf_version_string = 'multiple CF versions'
             text_out = f"Checking against: ATMODAT Standard {list(set(json_summary['testname']))[0].split(':')[1]}" \
                        f", {cf_version_string}\n"
             f.write(text_out)
@@ -122,7 +125,7 @@ def write_short_summary(json_summary, cf_version, cf_errors, cf_warns, incorrect
                         f"{str(passed_checks[prio][1])}/{str(passed_checks[prio][0])} ({passed_checks[prio][2]} "
                         f"missing, {passed_checks[prio][3]} error(s))\n")
         if cf_version_string == 'multiple CF versions':
-            f.write("!!! Checking against multiple CF Versions !!!")
+            f.write("\n!!! Checking against multiple CF Versions !!!\n")
         if cf_errors is not None:
             if incorrect_formula_term_error_in:
                 f.write(f"CF checker errors: {str(cf_errors)} (Ignoring errors related to formula_terms in boundary "
