@@ -2,7 +2,7 @@ import numpy as np
 import re
 from cfunits import Units
 import dateutil.parser as parser
-from checklib.code.errors import ParameterError
+import requests
 
 
 def check_conventions_version_number(ds, attr, conv_type, min_ver, max_ver):
@@ -42,6 +42,31 @@ def check_conventions_version_number(ds, attr, conv_type, min_ver, max_ver):
         return 2
     else:
         return 3
+
+
+def find_url(ds):
+    regex = r"(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|" \
+            r"(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\".,<>?«»“”‘’]))"
+    attr_url_dict = {}
+    for attr in ds.ncattrs():
+        attr_content = getattr(ds, attr)
+        url = re.findall(regex, attr_content)
+        url_list = [x[0] for x in url]
+        if len(url_list) > 0:
+            attr_url_dict[attr] = url_list
+    return attr_url_dict
+
+
+def check_url_status(url_in):
+    try:
+        response = requests.get(url_in)
+    except:
+        return True
+    else:
+        if response.status_code == 200:
+            return False
+        else:
+            return True
 
 
 def check_global_attr_type(ds, attr, attr_type):

@@ -31,6 +31,35 @@ class NCFileCheckBase(CallableCheckBase):
         self.level = atmodat_status[status]
 
 
+class URLCheck(NCFileCheckBase):
+    """
+    Check for validity of URLs in global attributes
+    """
+    short_name = "URL check"
+    defaults = {}
+    required_args = ['status']
+    message_templates = ["Invalid URL(s) in global attribute(s): "]
+
+    def _get_result(self, primary_arg):
+        self._atmodat_status_to_level(self.kwargs["status"])
+        ds = primary_arg
+        attr_url_dict = nc_util.find_url(ds)
+        score, invalid_url_attr = 1, []
+        for key, item_all in attr_url_dict.items():
+            for item in item_all:
+                if nc_util.check_url_status(item):
+                    score = 0
+                    invalid_url_attr.append(key)
+
+        messages = []
+        if score < self.out_of:
+            messages.append(self.get_messages()[score] + ', '.join(list(set(invalid_url_attr))))
+
+
+        return Result(self.level, (score, self.out_of),
+                      self.get_short_name(), messages)
+
+
 class LicenseAttrCheck(NCFileCheckBase):
     """
     The global attribute '{attribute}' must have a valid type '{type}' and should not be empty.
@@ -55,7 +84,7 @@ class LicenseAttrCheck(NCFileCheckBase):
             messages.append(self.get_messages()[score])
         else:
             messages.append(getattr(ds, self.kwargs["attribute"]).strip())
-
+        print('')
         return Result(self.level, (score, self.out_of),
                       self.get_short_name(), messages)
 
