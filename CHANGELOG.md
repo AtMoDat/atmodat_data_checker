@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 - More detailed error message if file suffix ends with `*.NC` (#123)
 ### Changed:
 - Improve `UDUNITS2_XML_PATH` detection in env_util.py (#121)
+- Fix CF-Checker related issue and slightly revise short summary output (#126)
 ### Removed:
 
 ## Version [1.3] - 2022-02-17

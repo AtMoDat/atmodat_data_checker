@@ -136,8 +136,10 @@ def cmd_string_checker(io_in, idiryml_in):
 
 
 def cmd_string_cf(ifiles_in, cf_version_in):
-    ifile_in_string = " ".join(ifiles_in)
-    return 'cfchecks -v ' + cf_version_in + ' ' + ifile_in_string
+    ostring = []
+    for ifile in ifiles_in:
+        ostring.append('cfchecks -v ' + cf_version_in + ' ' + ifile)
+    return '; '.join(ostring)
 
 
 def cmd_string_creation(check_in, ifiles_in, opath_file_in, filenames_base_in, idiryml_in, cf_version_in):
