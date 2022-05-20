@@ -78,7 +78,7 @@ def orcid_checksum(number):
 
 
 def check_orcid(url_in):
-    orcid = url_in.split('/')[-1].replace('-', '')
+    orcid = url_in.rstrip('/').split('/')[-1].replace('-', '')
     checksum = 0
     for n in orcid:
         checksum = (2 * checksum + int(10 if n == 'X' else n)) % 11
