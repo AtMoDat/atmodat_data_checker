@@ -69,6 +69,25 @@ def check_url_status(url_in):
             return True
 
 
+def orcid_checksum(number):
+    """Calculate the ORICD checksum. A valid ORCID should have a checksum of 1."""
+    checksum = 0
+    for n in number:
+        checksum = (2 * checksum + int(10 if n == 'X' else n)) % 11
+    return checksum
+
+
+def check_orcid(url_in):
+    orcid = url_in.split('/')[-1].replace('-', '')
+    checksum = 0
+    for n in orcid:
+        checksum = (2 * checksum + int(10 if n == 'X' else n)) % 11
+    if checksum == 1:
+        return 1
+    else:
+        return 0
+
+
 def check_global_attr_type(ds, attr, attr_type):
     """
     Checks globals attribute values in a NetCDF Dataset and returns integer

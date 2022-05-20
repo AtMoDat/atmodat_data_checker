@@ -31,6 +31,34 @@ class NCFileCheckBase(CallableCheckBase):
         self.level = atmodat_status[status]
 
 
+class ORCIDCheck(NCFileCheckBase):
+    """
+    Check for validity of ORCIDs in global attributes
+    """
+    short_name = "ORCID check"
+    defaults = {}
+    required_args = ['status']
+    message_templates = ["Invalid ORCID(s) in global attribute(s): "]
+
+    def _get_result(self, primary_arg):
+        self._atmodat_status_to_level(self.kwargs["status"])
+        ds = primary_arg
+        attr_url_dict = nc_util.find_url(ds)
+        invalid_orcid_attr = []
+        for key, item_all in attr_url_dict.items():
+            for item in item_all:
+                if 'orcid.org/' in item:
+                    score = nc_util.check_orcid(item)
+                    if score == 0:
+                        invalid_orcid_attr.append(key)
+        messages = []
+        if score < self.out_of > 0:
+            messages.append(self.get_messages()[score] + ', '.join(list(set(invalid_orcid_attr))))
+
+        return Result(self.level, (score, self.out_of),
+                      self.get_short_name(), messages)
+
+
 class URLCheck(NCFileCheckBase):
     """
     Check for validity of URLs in global attributes
@@ -54,7 +82,6 @@ class URLCheck(NCFileCheckBase):
         messages = []
         if score < self.out_of:
             messages.append(self.get_messages()[score] + ', '.join(list(set(invalid_url_attr))))
-
 
         return Result(self.level, (score, self.out_of),
                       self.get_short_name(), messages)
