@@ -24,7 +24,8 @@ udunits2_xml_path, pyessv_archive_home = set_env_variables()
 os.environ['PYESSV_ARCHIVE_HOME'] = pyessv_archive_home
 os.environ['UDUNITS2_XML_PATH'] = udunits2_xml_path
 from atmodat_checklib.register.nc_file_checks_atmodat_register import ConventionsVersionCheck, \
-    GlobalAttrTypeCheck, DateISO8601Check, GlobalAttrResolutionFormatCheck, GlobalAttrVocabCheckByStatus  # noqa: E402
+    GlobalAttrTypeCheck, DateISO8601Check, GlobalAttrResolutionFormatCheck, GlobalAttrVocabCheckByStatus, URLCheck, \
+    ORCIDCheck  # noqa: E402
 
 
 @pytest.fixture(scope="session")
@@ -46,7 +47,10 @@ def assert_output_msgs_len(resp_in):
     if resp_in.value[0] == resp_in.value[1]:
         assert(len(msgs) == 0)
     else:
-        assert(len(msgs[0].split("'")) == 3), "Incorrect format of error message"
+        if "'" in msgs:
+            assert(len(msgs[0].split("'")) == 3), "Incorrect format of error message"
+        else:
+            assert(len(msgs[0]) > 0), "No error message outputted"
 
 
 def load_cv_json(att_in):
@@ -55,6 +59,42 @@ def load_cv_json(att_in):
         json_object = json.load(jsonFile)
         jsonFile.close()
     return json_object[att_in]
+
+
+def test_url_correct(empty_netcdf):
+    ds = write_global_attribute(empty_netcdf, url_attr1='https://www.google.com/', url_attr2='http://www.google.com/')
+    x = URLCheck(kwargs={"status": "mandatory"})
+    resp = x(ds)
+    assert_output_msgs_len(resp)
+    assert(resp.value == (1, 1)), resp.msgs
+    ds.close()
+
+
+def test_url_incorrect(empty_netcdf):
+    ds = write_global_attribute(empty_netcdf, url_attr="https://www.atmodatiscool.com/")
+    x = URLCheck(kwargs={"status": "mandatory"})
+    resp = x(ds)
+    assert_output_msgs_len(resp)
+    assert(resp.value == (0, 1)), resp.msgs
+    ds.close()
+
+
+def test_orcid_correct(empty_netcdf):
+    ds = write_global_attribute(empty_netcdf, orcid_attr='https://orcid.org/0000-0002-1825-0097')
+    x = ORCIDCheck(kwargs={"status": "mandatory"})
+    resp = x(ds)
+    assert_output_msgs_len(resp)
+    assert(resp.value == (1, 1)), resp.msgs
+    ds.close()
+
+
+def test_orcid_incorrect(empty_netcdf):
+    ds = write_global_attribute(empty_netcdf, orcid_attr='https://orcid.org/0000-0002-1825-0087')
+    x = ORCIDCheck(kwargs={"status": "mandatory"})
+    resp = x(ds)
+    assert_output_msgs_len(resp)
+    assert(resp.value == (0, 1)), resp.msgs
+    ds.close()
 
 
 def test_controlled_vocab_correct(empty_netcdf):
