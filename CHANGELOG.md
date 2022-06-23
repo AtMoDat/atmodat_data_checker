@@ -1,14 +1,17 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-
 ## [Unreleased]
+### Added:
+### Changed:
+### Removed:
+
+## Version [1.3.1] - 2022-06-23
 ### Added:
 - More detailed error message if file suffix ends with `*.NC` (#123)
 ### Changed:
 - Improve `UDUNITS2_XML_PATH` detection in env_util.py (#121)
 - Fix CF-Checker related issue and slightly revise short summary output (#126)
-### Removed:
 
 ## Version [1.3] - 2022-02-17
 ### Added:
@@ -50,7 +53,8 @@ All notable changes to this project will be documented in this file.
 ## Version [1.1] - 2021-07-07
 This is the state before the CHANGELOG.md has been created. From here on, all changes will be tracked.
 
-[Unreleased]: https://github.com/AtMoDat/atmodat_data_checker/compare/v1.3...HEAD
+[Unreleased]: https://github.com/AtMoDat/atmodat_data_checker/compare/v1.3.1...HEAD
+[1.3.1]: https://github.com/AtMoDat/atmodat_data_checker/compare/v1.3...v1.3.1
 [1.3]: https://github.com/AtMoDat/atmodat_data_checker/compare/v1.2...v1.3
 [1.2]: https://github.com/AtMoDat/atmodat_data_checker/compare/v1.1...v1.2
 [1.1]: https://github.com/AtMoDat/atmodat_data_checker/compare/v1.0...v1.1
