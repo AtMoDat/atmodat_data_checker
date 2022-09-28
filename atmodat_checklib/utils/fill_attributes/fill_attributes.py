@@ -75,9 +75,11 @@ def main():
             f.delncattr(gattr)
 
         # Write new/modified global attributes
-        f.setncatts(attrs_dict['global_attr'])
+        global_attrs_write = dict(sorted(global_attrs_write.items()))
         if not restore:
             f.setncatts(global_attrs_write)
+        else:
+            f.setncatts(attrs_dict['global_attr'])
 
         # Write new/modified variable attribute
         for var in f.variables:
@@ -113,16 +115,6 @@ def main():
                         f.variables[var].setncattr(attr, val_attrs)
 
         f.close()
-
-        # Rename file name that contains a variable if a new variable name is provided
-        for var, attr_dict in var_attrs_write.items():
-            if 'varname_new' in attr_dict and var != attr_dict['varname_new']:
-                if restore:
-                    if attr_dict['varname_new'] in ifile:
-                        rename_path_file(ifile, attr_dict['varname_new'], var, savegattr_file)
-                else:
-                    if var in ifile:
-                        rename_path_file(ifile, var, attr_dict['varname_new'], savegattr_file)
 
 
 def rename_path_file(ifile_in, var_in, var_new_in, attr_file):
@@ -190,8 +182,7 @@ def prepare_global_attributes(ifile_csv_in, gattrs_old_in, gattrs_new_in):
             if attribute == 'Conventions':
                 string_out = append_string(string, string_old, delimiter=' ')
             elif attribute == 'history':
-                time_string = datetime.datetime.strftime(datetime.datetime.now(tz=datetime.timezone.utc),
-                                                         "%Y-%m-%d %H:%M:%S") + 'Z; '
+                time_string = datetime.datetime.strftime(datetime.datetime.now(tz=datetime.timezone.utc), '%c: ')
                 history_string = time_string + str(string) + '\n'
                 string_out = append_string(history_string, string_old, delimiter=' ')
             else:
