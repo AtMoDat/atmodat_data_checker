@@ -37,8 +37,6 @@ We set up a binder where you can try out the functionalities of the ATMODAT Stan
    ```bash
    conda env create -f environment.yml
    conda activate atmodat
-   conda config --add channels conda-forge
-   mamba install --file mamba_requirements.txt
    ```
 
 5. Install (and upgrade) atmodat-checker
@@ -57,7 +55,7 @@ The ATMODAT Standard Compliance Checker and related packages can be updated to i
 ```bash
 git checkout master
 git fetch || git pull origin master || git submodule update --remote --recursive
-mamba update --file mamba_requirements.txt
+mamba env update
 pip install -U -e .
 ```
 
