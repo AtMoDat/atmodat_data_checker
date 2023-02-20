@@ -5,4 +5,11 @@ channels:
   - defaults
 dependencies:
   - python=3.8
-  - mamba
+  - pip
+  - pandas
+  - compliance-checker==4.3.2
+  - cfunits
+  - udunits2
+  - pytest
+  - git
+  - gitpython

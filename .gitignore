@@ -106,5 +106,8 @@ ENV/
 *.nc
 *~
 
+# Ignore demo_data
+demo_data/
+
 # Ignore checker_output
 atmodat_checker_output/
