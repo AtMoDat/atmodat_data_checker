@@ -146,8 +146,8 @@ def write_short_summary(json_summary, cf_version, cf_errors, cf_warns, cf_to_be_
                 f.write(f"CF checker errors: {str(cf_errors)} (Ignoring errors related to the leading underscore "
                         f"in the attribute _CoordinateAxisType, which, according to CF convention 2.3 "
                         f"(Naming Conventions), is recommended but not prohibited.)\n")
-            if (not cf_to_be_ignored_errors_in.get('formula_terms', False) and 
-                    not cf_to_be_ignored_errors_in.get('invalid_attribute_name', False)):
+            if (not cf_to_be_ignored_errors_in.get('formula_terms', False)
+                    and not cf_to_be_ignored_errors_in.get('invalid_attribute_name', False)):
                 f.write(f"CF checker errors: {str(cf_errors)}\n")
         if cf_warns is not None:
             f.write(f"CF checker warnings: {str(cf_warns)}")
