@@ -50,7 +50,7 @@ def main():
     # Define version of CF table against which the files shall be checked.
     # Default is auto --> CF table version parsed from global attribute 'Conventions'.
     if cfversion != 'auto':
-        if cfversion not in ('1.4', '1.5', '1.6', '1.7', '1.8'):
+        if cfversion not in ('1.4', '1.5', '1.6', '1.7', '1.8', '1.9', '1.10', '1.11'):
             print('User-defined -cfv option invalid; using \'auto\' instead')
             cfversion = 'auto'
 
