@@ -144,8 +144,8 @@ def write_short_summary(json_summary, cf_version, cf_errors, cf_warns, cf_to_be_
                         f"https://github.com/AtMoDat/atmodat_data_checker#known-issues )\n")
             if cf_to_be_ignored_errors_in.get('invalid_attribute_name', False):
                 f.write(f"CF checker errors: {str(cf_errors)} (Ignoring errors related to the leading underscore "
-                        f"in the attribute _CoordinateAxisType, which, according to CF convention 2.3 "
-                        f"(Naming Conventions), is recommended but not prohibited.)\n")
+                        f"in the attribute _CoordinateAxisType, which, according to CF convention section "
+                        f"Naming Conventions, is recommended but not prohibited.)\n")
             if (not cf_to_be_ignored_errors_in.get('formula_terms', False)
                     and not cf_to_be_ignored_errors_in.get('invalid_attribute_name', False)):
                 f.write(f"CF checker errors: {str(cf_errors)}\n")
