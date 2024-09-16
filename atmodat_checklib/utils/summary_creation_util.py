@@ -53,7 +53,7 @@ def extract_overview_output_json(ifile_in):
     return summary
 
 
-def extracts_error_summary_cf_check(ifile_in, cf_verion_in, errors_in, warn_in, incorrect_formula_term_error_in):
+def extracts_error_summary_cf_check(ifile_in, cf_verion_in, errors_in, warn_in, cf_to_be_ignored_errors_in):
     """extracts information from given txt file and returns them as a string"""
     std_name = 'Using Standard Name Table Version '
     with open(ifile_in) as f:
@@ -62,19 +62,21 @@ def extracts_error_summary_cf_check(ifile_in, cf_verion_in, errors_in, warn_in, 
             if std_name in line:
                 std_name_table_out = line.replace(std_name, '').split(' ')[0]
             if line.startswith('ERROR:'):
-                if '4.3.3' not in line:
-                    errors_in += 1
+                if '4.3.3' in line:
+                    cf_to_be_ignored_errors_in['formula_terms'] = True
+                elif 'Invalid attribute name: _CoordinateAxisType' in line:
+                    cf_to_be_ignored_errors_in['invalid_attribute_name'] = True
                 else:
-                    incorrect_formula_term_error_in = True
+                    errors_in += 1
             elif line.startswith('WARN:'):
                 warn_in += 1
             elif line.startswith('Checking against CF Version '):
                 cf_verion_in.append(line.split('Checking against CF Version ')[1])
 
-    return cf_verion_in, errors_in, warn_in, std_name_table_out, incorrect_formula_term_error_in
+    return cf_verion_in, errors_in, warn_in, std_name_table_out, cf_to_be_ignored_errors_in
 
 
-def write_short_summary(json_summary, cf_version, cf_errors, cf_warns, incorrect_formula_term_error_in,
+def write_short_summary(json_summary, cf_version, cf_errors, cf_warns, cf_to_be_ignored_errors_in,
                         file_counter, std_name_table_in, opath_in):
     """create file which contains the short version of the summary"""
     prio_dict = {'high_priorities': 'Mandatory', 'medium_priorities': 'Recommended', 'low_priorities': 'Optional'}
@@ -136,11 +138,15 @@ def write_short_summary(json_summary, cf_version, cf_errors, cf_warns, incorrect
                         f"missing, {passed_checks[prio][3]} error(s))\n")
             f.write("\n")
         if cf_errors is not None:
-            if incorrect_formula_term_error_in:
+            if cf_to_be_ignored_errors_in.get('formula_terms', False):
                 f.write(f"CF checker errors: {str(cf_errors)} (Ignoring errors related to formula_terms in boundary "
                         f"variables. See Known Issues section "
                         f"https://github.com/AtMoDat/atmodat_data_checker#known-issues )\n")
-            else:
+            if cf_to_be_ignored_errors_in.get('invalid_attribute_name', False):
+                f.write(f"CF checker errors: {str(cf_errors)} (Ignoring errors related to the leading underscore in the "
+                        f"attribute _CoordinateAxisType, which, according to CF convention 2.3 (Naming Conventions), is "
+                        f"recommended but not prohibited.)\n")
+            if not cf_to_be_ignored_errors_in.get('formula_terms', False) and not cf_to_be_ignored_errors_in.get('invalid_attribute_name', False):
                 f.write(f"CF checker errors: {str(cf_errors)}\n")
         if cf_warns is not None:
             f.write(f"CF checker warnings: {str(cf_warns)}")
@@ -200,12 +206,12 @@ def create_output_summary(file_counter, opath, check_types_in):
 
     std_name_table = None
     if 'CF' in check_types_in:
-        incorrect_formula_term_error = False
+        cf_to_be_ignored_errors_in = {'formula_terms': False, 'invalid_attribute_name': False}
         cf_errors, cf_warns = 0, 0
         cf_version = []
     else:
         cf_errors, cf_warns = None, None
-        incorrect_formula_term_error = None
+        cf_to_be_ignored_errors_in = None
         cf_version = None
 
     files = output_directory.return_files_in_directory_tree(opath)
@@ -214,10 +220,10 @@ def create_output_summary(file_counter, opath, check_types_in):
             json_summary = pd.concat([json_summary, pd.DataFrame.from_dict(extract_overview_output_json(file),
                                                                            orient='index').transpose()], axis=0)
         elif file.endswith("_CF_result.txt"):
-            cf_version, cf_errors, cf_warns, std_name_table, incorrect_formula_term_error = \
-                extracts_error_summary_cf_check(file, cf_version, cf_errors, cf_warns, incorrect_formula_term_error)
+            cf_version, cf_errors, cf_warns, std_name_table, cf_to_be_ignored_errors_in= \
+                extracts_error_summary_cf_check(file, cf_version, cf_errors, cf_warns, cf_to_be_ignored_errors_in)
 
-    write_short_summary(json_summary, cf_version, cf_errors, cf_warns, incorrect_formula_term_error, file_counter,
+    write_short_summary(json_summary, cf_version, cf_errors, cf_warns, cf_to_be_ignored_errors_in, file_counter,
                         std_name_table, opath)
     write_long_summary(json_summary, opath)
     return
